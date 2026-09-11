@@ -11,7 +11,7 @@ The problem in classrooms, especially high-poverty ones, is not student motivati
 ## Naming (settled — keep consistent)
 The practice has ONE name: intellectual apprenticeship. The capacity it builds is intellectual authorship. Everything else — the knower-stance, two-register design, the curated/perceptible object, respect-based differentiation, the four-stage progression, the skull station, two-things-per-class — names an ACTION that serves the apprenticeship, not a rival concept.
 ## Voice & style
-- First person, classroom-grounded, flowing prose with em-dashes. Prose, not bullets, in chapter text.
+- First person, classroom-grounded prose. Prose, not bullets, in chapter text. Dashes are sparse (Katherine's Aug 2026 ruling: heavy em dashes are AI sweep residue); her hinges are colons, semicolons, and parentheses. The full voice instruction, the strip list, and the fix versus flag rules live in kvond/Answerable-Teaching at book-compile/voice-guide.md (hard bans in tics-list.md). Read it before drafting or editing.
 - Citations integrated lightly, never as lit-review dumps. Never invent a citation; flag any that needs verifying.
 - She admits her own past errors and critiques structures, not teachers. No manifestos or preaching — cut those, keep the practical content.
 - Scope claims narrowly: state the defensible narrow version, decline the grand one, pre-commit to what would change her mind, and be honest where empirical support is thin.
