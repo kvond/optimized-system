@@ -28,7 +28,7 @@ A pass takes one dated snapshot of the manuscript, runs six lanes over it in par
 | Lane packets and the integrator's output | `revision/packets/<lane>/<chapter>.md` and `revision/integrated/` in `kvond/Answerable-Teaching` | git |
 | Roam graph `kvond`, "Answerable Teaching/" pages, and the repo's `source/` and `writing/` folders | older exports (last nightly publish 2026-07-02). Not the current draft. Reconciliation is decision P18. | read only during a pass |
 
-Engine start: a Cowork session reaches the repos through the GitHub connector and the Doc through the Drive connector on the kvond12 or Red Clay account. A Claude Code session on the Mac reads this skill through `~/.claude/skills` (a symlink into `~/code/answerable-skills/skills`) and works in the clone of `kvond/Answerable-Teaching` (`SYNC.md` puts it at `~/Documents/projects/Answerable-Teaching`). If a path here does not resolve, the account or the clone is wrong; the skill is not broken.
+Engine start: a Cowork session reaches the repos through the GitHub connector and the Doc through the Drive connector on the kvond12 or Red Clay account. A Claude Code session on the Mac reads this skill through `~/.claude/skills` (a symlink into `~/code/answerable-skills/skills`) and works in the clone of `kvond/Answerable-Teaching` (`SYNC.md` names `~/Documents/projects/Answerable-Teaching`, but on 2026-09-12 that folder held only the nightly-publish log; where the clone now lives is an open item for her). If a path here does not resolve, the account or the clone is wrong; the skill is not broken.
 
 ## The four documents that govern every lane
 

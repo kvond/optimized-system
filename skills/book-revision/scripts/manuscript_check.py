@@ -63,7 +63,7 @@ TRACKED_TERMS = [
 
 # Lexical hard bans from tics-list.md (T1–T9). Each is (label, regex, note).
 BANS = [
-    ("T1 genuine", r"\bgenuinely?\b", ""),
+    ("T1 genuine", r"\bgenuine(ly)?\b", ""),
     ("T2 quietly", r"\bquietly\b", "literal uses about an actual quiet room or person are fine"),
     ("T3 deeper", r"\b(runs|goes) deeper\b|\bdeeper truth\b", ""),
     ("T4 felt sense", r"\bfelt sense\b", ""),
@@ -315,12 +315,29 @@ def locate(text: str, needle: str):
     return None
 
 
+RE_ROW_ID = re.compile(r"^[a-z]+-[\w-]+-\d+$")
+
+
+def packet_finds(body: str):
+    """Find strings from a packet: the second cell of every table row whose first cell is a
+    row ID (lane-chapter-NN), plus any 'Find: `...`' in prose. A cell may hold several
+    backticked strings separated by semicolons; each is checked on its own."""
+    finds = []
+    for ln in body.splitlines():
+        if ln.startswith("|"):
+            cells = [c.strip() for c in ln.strip().strip("|").split("|")]
+            if len(cells) >= 2 and RE_ROW_ID.match(cells[0]):
+                finds.extend(re.findall(r"`([^`]+)`", cells[1]))
+    finds.extend(re.findall(r"Find:\s*`([^`]+)`", body))
+    return finds
+
+
 def check_packets(text: str, packets_dir: Path, out: list[str]):
     """Every packet row carries a Find string in backticks; confirm each exists once."""
     out.append("# Packet Find-string check\n")
     for p in sorted(packets_dir.rglob("*.md")):
         body = p.read_text(encoding="utf-8")
-        finds = re.findall(r"Find:\s*`([^`]+)`", body)
+        finds = packet_finds(body)
         bad = []
         for f in finds:
             n = text.count(f) + (text.count(f.replace("'", "’")) if "'" in f else 0)
