@@ -17,7 +17,9 @@ A pass takes one dated snapshot of the manuscript, runs six lanes over it in par
 |---|---|---|
 | The current draft (68,000 words, Preface through Chapter 11 plus a capstone stub) | Google Doc "(4 and 5 next 6 , first 3 chapters feed website)AnswerableTeachingPrefaceCh5 (Working Copy)", id `1RuY6yj9mhqBajj-UYhF_WCQwEpvLKinMma9fKNAStlM` | owned by kvond@udel.edu; shared to the Red Clay and kvond12 accounts |
 | The snapshot a pass works from | `revision/manuscript/working-copy-<date>.md` in `kvond/Answerable-Teaching` | git; export the Doc to markdown at the start of a pass |
-| Chapter 6 as assembled 2026-09-11 ("Doable, Not the Doer") | `book-compile/ch6-doable-not-the-doer-assembled.md` in `kvond/Answerable-Teaching` | git; not yet in the Doc |
+| The AI chapter as assembled 2026-09-11 ("Doable, Not the Doer") | `book-compile/ch6-doable-not-the-doer-assembled.md` in `kvond/Answerable-Teaching` | git; not yet in the Doc |
+| The practice chapter ("Before Inquiry", subtitle "Inquiry Has Prerequisites"), missing from the Doc | `book-compile/ch6-intellectual-mentorship-rewrite.md` (Aug 23, the fuller form) and `revision/reference/ch05-earlier-draft-2026-05.md` (May, her supply of 2026-09-12) in `kvond/Answerable-Teaching` | git; R16 and P22 in the ledger |
+| Rulings recovered from the retired provenance register (title, "the adult who lingers", the pseudonym ledger and name-change log, Moore-Anderson placements) | `revision/reference/rulings-from-register-2026-08.md` in `kvond/Answerable-Teaching` | git |
 | The voice instruction and the hard bans | `book-compile/voice-guide.md`, `book-compile/tics-list.md` in `kvond/Answerable-Teaching` | git |
 | The argument arc, the glossary, the six analytical levels | `reference/argument-arc-and-glossary.md` beside this file | git (`kvond/answerable-skills`) |
 | The decisions ledger | `reference/decisions.md` beside this file | git |
@@ -26,7 +28,7 @@ A pass takes one dated snapshot of the manuscript, runs six lanes over it in par
 | Lane packets and the integrator's output | `revision/packets/<lane>/<chapter>.md` and `revision/integrated/` in `kvond/Answerable-Teaching` | git |
 | Roam graph `kvond`, "Answerable Teaching/" pages, and the repo's `source/` and `writing/` folders | older exports (last nightly publish 2026-07-02). Not the current draft. Reconciliation is decision P18. | read only during a pass |
 
-Engine start: a Cowork session reaches the repos through the GitHub connector and the Doc through the Drive connector on the kvond12 or Red Clay account. A Claude Code session on the Mac reads this skill through `~/.claude/skills` (a symlink into `~/code/answerable-skills/skills`) and works in the clone of `kvond/Answerable-Teaching`. If a path here does not resolve, the account or the clone is wrong; the skill is not broken.
+Engine start: a Cowork session reaches the repos through the GitHub connector and the Doc through the Drive connector on the kvond12 or Red Clay account. A Claude Code session on the Mac reads this skill through `~/.claude/skills` (a symlink into `~/code/answerable-skills/skills`) and works in the clone of `kvond/Answerable-Teaching` (`SYNC.md` puts it at `~/Documents/projects/Answerable-Teaching`). If a path here does not resolve, the account or the clone is wrong; the skill is not broken.
 
 ## The four documents that govern every lane
 
@@ -73,7 +75,7 @@ If two lanes propose different things for the same sentence, the owning lane's r
 
 ## The packet
 
-A packet is one markdown file per chapter per lane: `revision/packets/<lane>/<chapter-id>.md`, where the chapter id is the number or letter as the snapshot names it (`preface`, `intro`, `ch01`, `ch06a`, `ch11`). It opens with a five-line header and then one table.
+A packet is one markdown file per chapter per lane: `revision/packets/<lane>/<chapter-id>.md`, where the chapter id is the number or letter as the snapshot names it (`preface`, `intro`, `ch01`, `ch06a`, `ch11`); the practice chapter, which is not in the snapshot, is `before-inquiry`, and its text is the Aug file named in the table above. It opens with a five-line header and then one table.
 
 ```
 Lane: terms

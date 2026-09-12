@@ -35,10 +35,15 @@ import re
 import sys
 from pathlib import Path
 
+# Current names per the ledger (R18): Peter is the greenhouse student, Paul is the son.
+# Retired names stay in the list so their occurrences are found: Eli (greenhouse), Maya
+# and Joe (Nancy and John), Mekhi (Malik), Kalima (Zara). Tyaire, Jaylen, Theo, Diego,
+# Jair, Christian are the practice chapter's names, unconfirmed as pseudonyms (open item).
 PSEUDONYMS = [
     "Angie", "Nancy", "John", "Toma", "Heidi", "Marcus", "Priya", "Malik", "Ben", "Brian",
-    "Peter", "Eli", "Paul", "Zara", "Kalima", "Noelle", "Gustov", "Lezir", "Karen", "Dana",
-    "Cindy", "Mike", "Frieda", "Freida", "Kimora", "Jair", "Christian", "Maya", "Mekhi",
+    "Peter", "Paul", "James", "Eli", "Zara", "Kalima", "Noelle", "Gustov", "Lezir", "Karen",
+    "Dana", "Cindy", "Mike", "Frieda", "Freida", "Jair", "Christian", "Maya", "Joe", "Mekhi",
+    "Tyaire", "Jaylen", "Theo", "Diego",
 ]
 
 TRACKED_TERMS = [

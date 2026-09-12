@@ -52,8 +52,9 @@ Run the scripts for the deterministic work; let Claude judgment enter only where
   the whole graph).
 - **Layout** — `source/` faithful export, `writing/` tag-stripped reading copy, both under git.
 - **Tracked terms** for the consistency pass (refreshed 2026-09-12 to the public pseudonym
-  set): Angie, Nancy, John, Toma, Heidi, Marcus, Priya, Malik, Ben, Brian, Peter (son), Eli,
-  Zara, Noelle, Gustov, Lezir, Karen, Dana, Cindy, Mike; and the terms legibility,
+  set, corrected 2026-09-12 to the Aug 23 ruling): Angie, Nancy, John, Toma, Heidi, Marcus,
+  Priya, Malik, Ben, Brian, Peter (the greenhouse student), Paul (son), Eli (retired name for
+  Peter; find and rename), Zara, Noelle, Gustov, Lezir, Karen, Dana, Cindy, Mike; and the terms legibility,
   sense-making, meaning-making, time-world, chronotope, adjacent agency, intellectual
   authorship, intellectual apprenticeship, critical aspect, shared object, reframing
   epistemic agency, standing as a knower. Add to this list as coined concepts stabilize;
