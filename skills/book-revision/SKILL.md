@@ -20,7 +20,8 @@ A pass takes one dated snapshot of the manuscript, runs six lanes over it in par
 | The AI chapter as assembled 2026-09-11 ("Doable, Not the Doer") | `book-compile/ch6-doable-not-the-doer-assembled.md` in `kvond/Answerable-Teaching` | git; not yet in the Doc |
 | The practice chapter ("Before Inquiry", subtitle "Inquiry Has Prerequisites"), missing from the Doc | `book-compile/ch6-intellectual-mentorship-rewrite.md` (Aug 23, the fuller form) and `revision/reference/ch05-earlier-draft-2026-05.md` (May, her supply of 2026-09-12) in `kvond/Answerable-Teaching` | git; R16, R20, and R21 in the ledger |
 | Rulings recovered from the retired provenance register (title, "the adult who lingers", the pseudonym ledger and name-change log, Moore-Anderson placements) | `revision/reference/rulings-from-register-2026-08.md` in `kvond/Answerable-Teaching` | git |
-| The voice instruction and the hard bans | `book-compile/voice-guide.md`, `book-compile/tics-list.md` in `kvond/Answerable-Teaching` | git |
+| The voice instruction and the hard bans | `book-compile/voice-guide.md` (marker 15 and four Part 3 checks added by her on 2026-09-12), `book-compile/tics-list.md` in `kvond/Answerable-Teaching` | git |
+| Her manuscript checks of 2026-09-12 (nine checks: student visibility, move names, the theory-movements-moves pipeline, causal overclaims, equity caution, the doubt passage, the IPD citations, the Ito framework, AI voice resistance) | `reference/manuscript-checks.md` beside this file, a verbatim copy of the file inside her `book-compile/answerable-teaching-review.zip` (the review skill she built for another tool; its SKILL.md is not used here) | git; R22 in the ledger |
 | The argument arc, the glossary, the six analytical levels | `reference/argument-arc-and-glossary.md` beside this file | git (`kvond/answerable-skills`) |
 | The decisions ledger | `reference/decisions.md` beside this file | git |
 | The findings the lanes work from | `reference/findings/` beside this file (the external reader's review and the continuity pass of 2026-09-12) | git |
@@ -36,6 +37,7 @@ Engine start: a Cowork session reaches the repos through the GitHub connector an
 2. **The argument arc and glossary** (`reference/argument-arc-and-glossary.md`). Twelve propositions the book advances, the chapter that advances each, the load-bearing terms with their "not this" boundaries, and the six analytical levels every term belongs to, under the master concept, standing as a knower. Katherine ratified this as the spine of the pass on 2026-09-11.
 3. **The decisions ledger** (`reference/decisions.md`). Rulings she has made (R-items) and defaults applied until she rules (P-items). A lane never re-argues an R-item. A lane applies a P-item's default and writes `assumes P-nn` in the packet row so the integrator can find every consequence if she rules the other way.
 4. **The findings** (`reference/findings/`). The external reader's critique and the continuity pass. The lanes have already taken their work items from these; go back to them for the reasoning behind an item, not for new items.
+5. **Her manuscript checks** (`reference/manuscript-checks.md`, 2026-09-12; R22). Nine checks in her words. Each lane runs the ones it owns (arc: 1, 3, 6; terms: 2, 8; claims: 4, 5; notes: 7, 8; every lane and the integrator: 9, the test that a suggestion which sounds like fluent conventional teacher-talk is probably wrong). Where a check names a chapter number, R20's numbering governs (The Moves is Chapter 12, the capstone 13); the move names themselves are the authority, not the number.
 
 ## The prose rule
 
@@ -75,7 +77,7 @@ If two lanes propose different things for the same sentence, the owning lane's r
 
 ## The packet
 
-A packet is one markdown file per chapter per lane: `revision/packets/<lane>/<chapter-id>.md`, where the chapter id is the number or letter as the snapshot names it (`preface`, `intro`, `ch01`, `ch06a`, `ch11`); the practice chapter, which is not in the snapshot, is `before-inquiry`, and its text is the Aug file named in the table above. It opens with a five-line header and then one table.
+A packet is one markdown file per chapter per lane: `revision/packets/<lane>/<chapter-id>.md`, where the chapter id is the number or letter as the snapshot names it (`preface`, `intro`, `ch01`, `ch06a`, `ch11`); the practice chapter, which is not in the snapshot, is `before-inquiry`, and its text is the Aug file named in the table above; the AI chapter in its assembled form (P19), also not in the snapshot, is `doable-not-the-doer`, with the Doc's [6A], [6B], and the principles table read beside it for what the assembly absorbed and what it did not. It opens with a five-line header and then one table.
 
 ```
 Lane: terms
@@ -104,4 +106,4 @@ Run `python3 scripts/manuscript_check.py --in <snapshot> --packets revision/pack
 
 ## What an agent never does
 
-Ask Katherine a question mid-lane that a P-item default already answers. Change a word of hers outside the direct-fix list. Reproduce a student scene from memory or invention. Add a marker system. Delete a file. Work outside its packet folder. Re-argue a ruling.
+Ask Katherine a question mid-lane that a P-item default already answers. Change a word of hers outside the direct-fix list. Reproduce a student scene from memory or invention. Add a marker system. Delete a file. Work outside its packet folder. Re-argue a ruling. Propose a bracket that pulls the argument toward the field's consensus (engagement as the goal, voice and choice as the method, direct instruction as suspect): her check 9 says such a suggestion is probably wrong, and it does not go in a packet.

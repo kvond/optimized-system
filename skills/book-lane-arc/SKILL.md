@@ -7,7 +7,7 @@ description: The argument-arc lane of the Answerable Teaching revision. Maps eve
 
 You are one of six lanes running at once. You own the argument: whether each chapter visibly advances the chain of propositions, whether the chain is stated early enough to carry the reader, and what in a chapter is doing no work for it. You do not own duplicated passages (continuity), term definitions (terms), the seating of claims (claims), or moving apparatus to notes (notes); when you see those, write one row that names the owning lane and move on.
 
-Read first: `book-revision/SKILL.md`, then `book-revision/reference/argument-arc-and-glossary.md` Part 1 (the twelve propositions and the chapter map), then `book-revision/reference/decisions.md` (R1, R4, R8, R15; P1, P3, P6, P10, P13, P14, P19). Then the chapter in the snapshot.
+Read first: `book-revision/SKILL.md`, then `book-revision/reference/argument-arc-and-glossary.md` Part 1 (the twelve propositions and the chapter map), then `book-revision/reference/decisions.md` (R1, R4, R8, R15, R20, R22; P3, P6, P10, P13, P14, P19, P24); then `book-revision/reference/manuscript-checks.md` (her checks 1, 3, and 6 are this lane's). Then the chapter in the snapshot.
 
 ## Procedure, per chapter
 
@@ -29,9 +29,15 @@ Read first: `book-revision/SKILL.md`, then `book-revision/reference/argument-arc
 
 8. **Whole-school chapters (P14).** In 8 and 9: for each institutional passage, one row saying which of the three questions it serves (what classrooms can do; where they hit ceilings; what schools must recognize and credit). Passages serving none are `bracket` candidates for compression. Check that the institutional-level answerability claim (the school answerable to the students it governs) is stated explicitly in Chapter 9; if it is only implied, say where a bracket could carry it.
 
-9. **The Moves (P10).** In Chapter 11: confirm each section keeps one internal order (what the institution saw, what was there, the move, what to avoid, the limit); flag any section that has become a lookup entry (a move with no process around it) and any that has become a second telling (that row goes to continuity). Confirm the guard in the last section stays the spine of the chapter.
+9. **The Moves (P10).** In The Moves (Chapter 12 under R20): confirm each section keeps one internal order (what the institution saw, what was there, the move, what to avoid, the limit); flag any section that has become a lookup entry (a move with no process around it) and any that has become a second telling (that row goes to continuity). Confirm the guard in the last section stays the spine of the chapter.
 
-10. **The capstone (proposition 12).** Chapter 12 is a stub. Do not draft it. Write one row listing, with Find strings, every sentence in Chapters 10 and 11 that already says what the capstone will say (the apprenticeship in intellectual authorship), so she can see what she has.
+10. **The capstone (proposition 12).** Chapter 13 under R20 is a stub. Do not draft it. Write one row listing, with Find strings, every sentence in Chapters 10 and 11 that already says what the capstone will say (the apprenticeship in intellectual authorship), so she can see what she has.
+
+11. **Student visibility (her check 1; voice guide marker 15).** Where the chapter first engages dialogue as a method or a solution (dialogue, Socratic seminar, classroom talk, student voice), confirm it names the gap between the object's visibility and the student's: dialogic methods assume the student is already willing to speak; the perceptible object, joint attention and proximity, and legitimate peripheral participation are the conditions that precede dialogue; without them forced talk produces pseudo-agency. One row per chapter: `stands` with the Find string of the sentence that names it, or a `bracket` saying where the gap should be named and what the passage should say, in her words where she has them (the voice guide quotes her sentence). Once per chapter, not per section.
+
+12. **The theory-movements-moves pipeline (her check 3; P24).** Where the chapter discusses a theory (Variation Theory, Vygotsky, Lave and Wenger, Ito, Bakhtin, Matusov), confirm it connects the theory to one of her five movements (the perceptible object; joint attention and proximity; legitimate peripheral participation; dialogic answerability; graduated transfer) or to a classroom move named as The Moves names it. A theory discussed without that connection gets a `bracket` row naming the movement and the move it should reach. The capstone is the exception: it makes the pipeline explicit. The twelve propositions stay the arc; the movements are the pipeline inside propositions 6 and 11 (P24), and this lane does not re-map one onto the other.
+
+13. **The doubt passage (her check 6).** In the capstone, when it exists: the acknowledgment that the improvement may be in the teaching, the perception, or the population is the method, not a weakness. No row proposes to soften, hedge, or cut it; a row that finds it missing from a draft that should carry it is an `open-item` for her.
 
 ## Work items already known
 

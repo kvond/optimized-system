@@ -7,7 +7,7 @@ description: The claims lane of the Answerable Teaching revision. Finds every ca
 
 You own what the book asserts and whether each assertion is seated in the kind of claim it is. You do not own citations, years, or the verification of what a scholar said (notes), nor the wording of definitions (terms). A claim that is wrong about a source is a notes row; a claim that is broader than the evidence is yours.
 
-Read first: `book-revision/SKILL.md` (the claim types); `decisions.md` (R5, R11, R12; P11, P12, P13, P14); the voice guide's marker 4 (the scale-check aside) and Part 3 (single-clause overreach is voice: mark the reviewer risk, do not remove). Then the chapter.
+Read first: `book-revision/SKILL.md` (the claim types); `decisions.md` (R5, R11, R12, R17, R22; P11, P12, P13, P14); `book-revision/reference/manuscript-checks.md` (her checks 4 and 5 are this lane's); the voice guide's marker 4 (the scale-check aside) and Part 3 (single-clause overreach is voice: mark the reviewer risk, do not remove). Then the chapter.
 
 ## The five kinds, and what each needs
 
@@ -18,6 +18,10 @@ An **interpretive** claim reads a case. It needs the case on the page and the re
 1. **Extract.** Every sentence that generalizes or asserts a cause. The words that usually mark one: always, never, systematically, literally, teaches for, produces, creates, especially prevalent, most, the system, schools (as subject), teachers (as subject), any percentage, any "cannot". Also every sentence a hostile reviewer would quote. List them with Find strings; this table is the packet's first table (columns: Find, kind as written, kind it should be, fits the evidence on the page yes/no).
 
 2. **Seat.** For each, decide the kind. Where the sentence is already seated (a scene precedes it, a source follows it, a scope clause is present, or it is voice with a scale-check nearby), the row says `stands` and why. Where it is not, one `bracket` row with the reseating: the same force, the earned modal, the scope clause, or the mechanism. The reader's review gives the pattern: "creates disengagement" becomes "can contribute to disengagement by repeatedly treating students' self-originated sense-making as irrelevant, mistaken, or disruptive". Write the bracket in her register (plain declarative, no hedge stack, no "none of this means"). Never a "some might argue".
+
+2a. **Causal overclaims (her check 4).** Inside the seating: "produces", "never", "by design", "the system has colonized you" and their kin assert causation beyond the evidence unless the mechanism and the scope are on the page. Her softer forms are the bracket's vocabulary: "can produce", "often", "creates conditions for", "is likely to reinforce", "may be experienced as". Voice is still voice (R12): a rhetorical diagnosis keeps its word and gets the reviewer-risk clause, not the softer form.
+
+2b. **Equity caution (her check 5).** Any sentence that homogenizes low-income communities or reads as deficit framing gets a `bracket` with the bounded form in her words: "many high-poverty families", "many students arrive with thin participation histories", "many caregivers who are exhausted", "students may arrive at the same phase simultaneously". The book's own claim is the test: institutional designs presume resources unevenly distributed across households and schools and then read the mismatch as individual shortcoming; a bracket must not slip into the framing the book critiques.
 
 3. **Voice, marked.** For a rhetorical diagnosis, do not propose a replacement (R12). Propose, in a bracket, where the scale-check aside would sit if one is missing, and mark the reviewer risk in one clause ("a reviewer will camp on 'literally'"). "Effort porn", "epistemic gaslighting", "flip the sucker", the Montessori joke, "zombification": R12 rows only.
 

@@ -37,4 +37,4 @@ Read first: `book-revision/SKILL.md` (the prose rule, the ownership table, the p
 
 ## What you never do
 
-Apply a bracket's content as if it were a fix. Rewrite a sentence to make a fix read better. Apply a row from a lane that does not own the passage. Integrate with a lane missing. Touch the snapshot, the Doc, or Roam.
+Apply a bracket's content as if it were a fix. Rewrite a sentence to make a fix read better. Apply a row from a lane that does not own the passage. Integrate with a lane missing. Touch the snapshot, the Doc, or Roam. Place a bracket that pulls the argument toward the field's consensus (her check 9 in `reference/manuscript-checks.md`): when a lane's bracket reads as fluent conventional teacher-talk (engagement as the goal, voice and choice as the method, direct instruction as suspect), it is carried as a note with that objection, not placed.

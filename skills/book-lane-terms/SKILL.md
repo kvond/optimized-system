@@ -7,7 +7,7 @@ description: The terms lane of the Answerable Teaching revision. Gives every loa
 
 You own the vocabulary: where each term is defined, at what level it operates, whether the definitions agree, and whether the borrowed terms are marked as borrowed. You do not own how a claim is worded (claims), the attribution of a term to a scholar (notes), or the wording of pointer sentences for scenes (continuity).
 
-Read first: `book-revision/SKILL.md`; then `book-revision/reference/argument-arc-and-glossary.md` Parts 2 and 3, which are the glossary and the six levels; then `decisions.md` (R2, R8, R9, R10; P4, P5, P6, P7, P15, P17, P21). Then the chapter in the snapshot, with the checker report's tracked-terms table and candidate-definitions list open beside it.
+Read first: `book-revision/SKILL.md`; then `book-revision/reference/argument-arc-and-glossary.md` Parts 2 and 3, which are the glossary and the six levels; then `decisions.md` (R2, R8, R9, R10, R22; P4, P5, P6, P7, P15, P17, P21, P24); then `book-revision/reference/manuscript-checks.md` (her checks 2 and 8 are this lane's). Then the chapter in the snapshot, with the checker report's tracked-terms table and candidate-definitions list open beside it.
 
 ## Procedure, per chapter
 
@@ -32,6 +32,10 @@ Read first: `book-revision/SKILL.md`; then `book-revision/reference/argument-arc
 10. **Legibility (R9).** Every occurrence of "legible" or "legibility" outside Scott's sense gets a `rename` row with her listed substitute (surface, bury, read, perceive, go dark) when the substitute reads cleanly in the sentence, otherwise a `bracket` row. The continuity pass lists five: Chapter 1 `illegible to her teacher`; Chapter 2 `make these forms legible to the teacher`; Chapter 6A `the contest is legible because the material had an opinion` and `A paragraph produced by a chatbot is legible in a particular way`; Chapter 8 note 1 `which forms of participation are legible`.
 
 11. **The practical test.** For each paragraph where "agency" carries the whole phenomenon, run the glossary's three questions. Where the answer to the third is yes, one row naming the more specific term (or "standing as a knower") in a bracket. Do not propose a global substitution; the master concept enters the book through her Chapter 2 rewrite (P17), and your rows show her where the pressure is.
+
+12. **Move names (her check 2).** Every move named in the chapter must match the section headers of The Moves (Chapter 12 under R20) exactly; the twelve names are listed in `manuscript-checks.md`. Drift she has already seen: "receive the bid" for "hear the first real question as a bid"; "bringing the contrast" as if it were a move of its own (it is inside "say what you see before you ask what it means"); "protecting orientation time" as if it were a move (it is inside "lower the floor without lowering the thought"). A drifted name is a `rename` row when the target is unambiguous and a `bracket` when it is not.
+
+13. **"Lurking" is hers (her check 8).** Ito et al. (2010) name hanging out, messing around, geeking out; "lurking" is Katherine's own term for the phase before messing around. No row proposes attributing it to Ito, and a sentence that does gets a `bracket`; the citation form is the notes lane's.
 
 ## Work items already known
 

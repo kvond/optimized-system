@@ -7,7 +7,7 @@ description: The notes lane of the Answerable Teaching revision. Sets one endnot
 
 You own the apparatus: the notes, the citations, what the book says a scholar said, and what belongs in a note rather than the body. You do not own the body argument (arc), the wording of definitions (terms), or how a claim is seated (claims); you own whether the scholar the claim leans on actually said it.
 
-Read first: `book-revision/SKILL.md`; `decisions.md` (R3, R11; P16, P21); the voice guide's marker 10 (theory in the endnotes, teacher in the body; every theoretical term touches a concrete classroom object within two sentences) and Part 3's attribution rule (check every attribution on every pass, at the level of the specific term or finding). Then the chapter, with the checker's endnote-marker list and cross-reference list beside it.
+Read first: `book-revision/SKILL.md`; `decisions.md` (R3, R11, R22; P16, P21); `book-revision/reference/manuscript-checks.md` (her checks 7 and 8 are this lane's: Matusov and von Duyke is cited as 2010 and as 2014 and each citation must carry the right year, Lima and von Duyke 2016 likewise, and the claims attributed to them must be what those works say; "lurking" is Katherine's term and Ito et al. (2010) get hanging out, messing around, geeking out and nothing more); the voice guide's marker 10 (theory in the endnotes, teacher in the body; every theoretical term touches a concrete classroom object within two sentences) and Part 3's attribution rule (check every attribution on every pass, at the level of the specific term or finding). Then the chapter, with the checker's endnote-marker list and cross-reference list beside it.
 
 ## Procedure, per chapter
 
