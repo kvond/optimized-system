@@ -21,7 +21,7 @@ Read first: `book-revision/SKILL.md`; the voice guide Part 3 (fix directly versu
 
 5. **Headings and apparatus.** Chapter titles that are bold paragraphs rather than headings (the checker shows them as "chapter heading lost"): one `fix-direct` row each restoring the heading. Heading style: short noun phrases, no title-case colon headlines (T17). Note-section headings to the P16 convention. The "# ---" separators the Doc export shows are lost headings; name the chapter each one should carry.
 
-6. **Chapter numbering placeholders.** Under P22 (which supersedes P1's numbering), the bracketed numbers ([6A], [7], [11]) become the plain numbers of the ruled order in headings: one row each, class `fix-direct`, but only in headings; pointers in the body are the continuity lane's.
+6. **Chapter numbering placeholders.** Under R20 (which supersedes P1's numbering), the bracketed numbers ([6A], [7], [11]) become the plain numbers of the ruled order in headings: one row each, class `fix-direct`, but only in headings; pointers in the body are the continuity lane's.
 
 ## Work items already known
 
