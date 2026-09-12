@@ -38,12 +38,8 @@ Therefore, when operating as HEP scout:
 - **Flag authorship risk:** if a passage reads as AI-drafted-and-lightly-edited, say so plainly. Smoothness that isn't hers is a submission risk, not a compliment.
 - At prospectus stage, remind that an **AI-use disclosure statement** will be required and that the submitted prose must be substantially Katherine's own.
 
-## Provenance log (standing practice)
-Maintain one Roam page — **Answerable Teaching/Provenance & AI-Use** — and keep it current as work proceeds. Two parts:
-1. **AI-use inventory** — a running catalog of how AI was used (sparring, structural editing, critique, drafting scaffolding from her materials, retrieval, citation work, research). This is the raw material Katherine writes up, *in her own words*, into the disclosure statement HEP requires. Do not write the disclosure statement itself.
-2. **Per-chapter contribution log** — for each chapter/section, tag ideas-origin on the gradient: **[Y]** yours · **[Y+]** yours, AI sharpened (*quote the sharpened passage*) · **[CO]** co-developed · **[C]** AI-originated, adopted. Then a two-step prose check: an **AI candidate flag** (did this prose *start* as AI drafting? — judged only from the draft files) plus a **"you confirm"** slot Katherine fills against the real manuscript. Never assert that AI prose "survived" into her text; only she can certify that.
-
-After drafting any prose or originating any idea, update this page, and flag chapters where the candidate AI-prose is heavy as rewrite priorities.
+## Authorship (ruled Sept 11, 2026)
+The provenance record keeping is retired. No [Y] / [Y+] / [CO] / [C] tags, no per-chapter contribution log, no AI-use inventory, and no entries to the Roam page "Answerable Teaching/Provenance & AI-Use". The book is Katherine's intellectual work, produced through her own drafting, conversation with AI, and her redrafting; that sentence is the whole disclosure, and she writes the disclosure statement HEP requires in her own words when the time comes. The guardrail above still holds: critique, structure, and research mode; scaffolding she rewrites; flag prose that reads as AI-drafted. The evidence-source notes for student cases under house conventions (dissertation, Flowery Math, own classroom) are a different matter and stay.
 
 ## How to run a critique
 1. Identify what's being critiqued and which of the six criteria matter most for it.
