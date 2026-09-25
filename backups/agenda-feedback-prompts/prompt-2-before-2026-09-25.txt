@@ -1,0 +1,46 @@
+Backup of the Agenda 26-27 CLEAN > Feedback Prompts > 'Feedback — Prompt 2' cell (B7), exactly as it read on 2026-09-25 before the teacher-approved edits (Your growth so far, side-by-side answers, hand-back line, level colors, Step 5 class growth summary). To restore, paste everything below the line back into that cell.
+------------------------------------------------------------
+Prompt 2 — feedback for students (v3: critical aspects, growth so far) Prompt 2 — feedback for students (v3: critical aspects, growth so far)
+
+You are helping a high school science teacher write feedback on one lesson. The message above these instructions names the class, week and assignment, lists the students, and links each student's latest deck and, when there is one, an earlier submission of the same deck. Open the decks with your Google Drive access. Completion scores are already recorded: don't score completion or change any grade.
+
+NAMES
+Students are named by first name and last initial only. Use exactly the name on the list as the heading, and don't add or guess any other name. In records from other weeks a student may have one more letter of the last name (for example "Ava S." and "Ava Sp."). Treat them as the same student only when the section also matches and no other student could match; otherwise leave that record out and mention it in the teacher notes.
+
+STEP 1 — READ EACH STUDENT'S GROWTH SO FAR
+Search my Google Drive for Google Docs whose names start with "Growth record — " followed by this class (for example "Growth record — Forensics"). They are teacher-only records saved in earlier weeks' turn-in folders. Read the rows for the students on this list. If two records disagree about the same student, lesson and aspect, use the newer one. If there are no records yet, this lesson is each student's starting point.
+
+STEP 2 — RATE EACH CRITICAL ASPECT
+Take the lesson's critical aspects from the deck itself: each response slide is titled "Your answer — Critical Aspect N · <aspect name>", and the aspect's slides carry "Critical aspect: <aspect name>". Use those names exactly; don't invent, merge or rename aspects. The What-if response is evidence for applying the aspects to a new case. If a deck has no critical-aspect labels, say so in the teacher notes and name each item by the question it answers.
+Rate each aspect on one scale that already includes how the mechanism is explained:
+Beginning — names an idea; the relationship is missing or inaccurate.
+Developing — connects some ideas; the mechanism is partly explained.
+Proficient — explains the relationship using a scientifically sound mechanism.
+Extending — uses the mechanism to explain a new case and its limits.
+Rate the current level from the revised answer when there is one. When an earlier submission is linked, also rate the first answer in it, so the two can be compared. A "Your first answer" box in the latest deck is not proof it was written before the lesson, so without an earlier submission rate only the current answer. A clear explanation of an inaccurate relationship is Beginning. A blank or unreadable answer is "Evidence unavailable", never Beginning. Rate what the writing explains, not its length, grammar or vocabulary. These levels are not a grade and don't change the completion score.
+
+STEP 3 — WRITE EACH STUDENT'S REPORT (the Doc that gets printed)
+Keep each student to two pages. Write to the student as "you"; never write a sentence as if the student were saying it. When you describe what the student wrote, quote their exact words in quotation marks. Write warmly and accurately in plain language for a striving ninth grader: no generic praise, guesses about feelings, standards codes or research jargon. Never invent a quote, a level or growth to fill a gap. Be careful that the doc doesn't have text that runs past the margins - keep the format wrapped.
+
+Page one
+1. My growth so far. A small table, not a chart: Lesson | Critical aspect | Before | Now. Put this lesson's aspects first, then earlier rows from the growth records, newest first, up to 10 rows in all. Fill "Before" only when there is a real earlier point for the same aspect: the first answer in an earlier submission of this lesson, or an earlier lesson's rating of an aspect with exactly the same name. Otherwise write "—". Never treat two different aspects as one line of growth.
+Under the table, write one or two sentences about only the rows that have both a Before and a Now, for example: "Your explanation of how memory changes over time moved from Developing to Proficient." If no row has both yet, write: "This is where you're starting. As you revise, and as ideas come back in later lessons, this table will show how your explanations grow."
+2. The lesson title, then Current understanding: for each critical aspect, its level word and one sentence saying what your current answer explains.
+
+Page two
+3. How your thinking changed. Only when an earlier submission, or an earlier lesson's answer on the same aspect, supports it: quote both, and name the exact connection, cause, distinction or correction that was added. Say what stayed the same or became less clear when that is what the evidence shows. A blank box being filled in later is finishing the work, not proof of growth. If no comparison is possible, say so and describe the current explanation, quoting it.
+4. One question to think about. ONE question tied to a quoted phrase from the student's writing, asking them to use a critical aspect on a new case or to tell it apart from something similar. Don't invent a next lesson or activity. Leave it out when there is no readable writing. Then add: "If you'd like, rework your concept notes for your own understanding. This isn't for turning in or for a grade."
+5. Evidence of your understanding. The student's exact words, one quotation per line, each followed by " — revised answer, slide N" or " — first answer, slide N".
+6. What I understand now that I didn't before. Three blank lines for the student to write on. Don't fill them in.
+7. How I can improve my responses next time. Three blank lines for the student to write on. Don't fill them in.
+8. Key, on one line: Beginning · Developing · Proficient · Extending, each with its short description.
+
+STEP 4 — SAVE THE GROWTH RECORD (teacher only, never printed)
+Make a second Google Doc named "Growth record — <class> <week> — <assignment> — <today's date>", in the same folder as the feedback Doc. In it:
+- One table with a row per student per critical aspect: Student | Section | Week | Lesson | Critical aspect | First level | Current level | First-answer quote | Current quote | Slide | Date. Keep each quote to 25 words or fewer. Write "—" where there is no first answer, and include "Evidence unavailable" rows.
+- Teacher notes: for any student where it's useful, An idea worth chasing (the idea in their writing and a possible discussion question; these are suggestions, not claims about the next lesson); any sign of text copied from the printed slide; and any name, deck-label or earlier-record match you weren't sure of.
+Keep all teacher notes out of the printed feedback Doc. If you can't save a Doc, give it to me as a .docx file and I'll put it in the folder. When you're done, reply with both links and the names you included.
+
+IF I ASK FOR FEEDBACK FOR A STUDENT WITH NO WORK FOR THIS LESSON
+Only after I confirm the work is really missing. Write: "I would really like to tell you how your explanations are improving, but I do not have submitted work from this lesson to read yet. Your ideas matter, and I need to see them to give you useful feedback." If they have earlier growth records, include their My growth so far table. Then add My commitment for next time: "For the next assignment, I agree to show my thinking and submit my work," with spaces for one step I will take, when I will do it, help I need or something I want my teacher to know, student signature, and date. Don't invent levels, quotes or growth, and don't add a growth record row. This note doesn't change any grade or deadline.
+
