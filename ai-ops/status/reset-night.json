@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2026-10-12T01:25:00.422424+00:00",
+  "as_of": "2026-10-12T01:26:35.650152+00:00",
   "deadline": "2026-10-12T06:00:00-04:00",
   "overall": "foundation_complete_with_explicit_migration_and_export_blockers",
   "new_repos": [],
@@ -31,6 +31,20 @@
     "model": "unpinned; actual_execution_unverified"
   },
   "background_reset_work_remaining": [],
-  "retirement_markers": [],
-  "github_pr": null
+  "retirement_markers": [
+    {
+      "repository": "kvond/Answerable-Teaching",
+      "marker": "https://github.com/kvond/Answerable-Teaching/issues/1",
+      "mode": "in-repository issue",
+      "deleted": false
+    },
+    {
+      "repository": "kvond/answerable-pipeline-backup",
+      "marker": "https://github.com/kvond/answerable-skills/issues/2",
+      "mode": "central linked issue because archived source returned403",
+      "deleted": false
+    }
+  ],
+  "github_pr": "https://github.com/kvond/answerable-skills/pull/1",
+  "execution_state": "stopping_before_deadline_no_continuation"
 }

@@ -12,7 +12,7 @@ Created: none. Reused: kvond/answerable-skills (private durable rules, compact b
 
 ## Retirement and repositories needing review
 
-Only explicitly defunct kvond/Answerable-Teaching and archived kvond/answerable-pipeline-backup are marked RETIRE / DELETE-REVIEW. Nine unique reusable legacy files preserved exactly with source commit, original paths, byte sizes and SHA256; three private manuscript JSON inventories remain in the legacy Git bundle, outside GitHub’s reusable layer. Pipeline’s nine code/config files already match answerable-skills. No deletions. Marker receipts are recorded in status when published.
+Only explicitly defunct kvond/Answerable-Teaching and archived kvond/answerable-pipeline-backup are marked RETIRE / DELETE-REVIEW. Nine unique reusable legacy files preserved exactly with source commit, original paths, byte sizes and SHA256; three private manuscript JSON inventories remain in the legacy Git bundle, outside GitHub’s reusable layer. Pipeline’s nine code/config files already match answerable-skills. No deletions. Verified markers: [Answerable Teaching issue](https://github.com/kvond/Answerable-Teaching/issues/1) and [pipeline review issue](https://github.com/kvond/answerable-skills/issues/2). Archived pipeline rejected in-place description change (403); it stays unchanged.
 
 Loaded legacy com.kvond.answerable-publish invokes missing ~/Documents/projects/Answerable-Teaching/nightly-publish.sh at 19:30 and 23:00 local time. Current readback: not running, three historical runs, last exit 127. It remains unchanged. Archived feedback-system has substantial unique code and a Render blueprint; REVIEW until live consumers verified. Other repositories remain KEEP/REVIEW; no broad retirement.
 
@@ -64,4 +64,4 @@ Blockers: complete account exports/project documents unavailable; protected Docu
 2. Keep all old accounts/repositories/schedules until unique exports/project documents and dependency checks pass. Choose encrypted archive handling for T7.
 3. Use existing UD personal tasks while replacement contracts remain staged. No funding or new connector approval is needed to read the foundation.
 
-Review the GitHub draft foundation PR and retirement markers; do not deploy the runtime or delete legacy repositories from this report alone.
+Review [the private draft foundation PR](https://github.com/kvond/answerable-skills/pull/1) and retirement markers; do not deploy the runtime or delete legacy repositories from this report alone.

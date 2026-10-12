@@ -1,0 +1,32 @@
+{
+  "before": [
+    {
+      "nameWithOwner": "kvond/Answerable-Teaching",
+      "description": "My book manuscript",
+      "isArchived": false,
+      "isPrivate": true
+    },
+    {
+      "nameWithOwner": "kvond/answerable-pipeline-backup",
+      "description": "",
+      "isArchived": true,
+      "isPrivate": true
+    }
+  ],
+  "markers": [
+    {
+      "repository": "kvond/Answerable-Teaching",
+      "marker": "https://github.com/kvond/Answerable-Teaching/issues/1",
+      "mode": "in-repository issue",
+      "deleted": false
+    },
+    {
+      "repository": "kvond/answerable-pipeline-backup",
+      "marker": "https://github.com/kvond/answerable-skills/issues/2",
+      "mode": "central linked issue because archived source returned403",
+      "deleted": false
+    }
+  ],
+  "in_place_archived_description_change": "rejected403; unchanged",
+  "all_source_repositories_retained": true
+}

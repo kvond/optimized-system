@@ -1,0 +1,12 @@
+[
+  {
+    "id": "morning-roster-check-and-submission-tidy",
+    "toml_sha256_at_handoff": "2f153270bf291298bba457c2e3c254b9a9fa99f1fb1a7f6927188f640268862e",
+    "modification_by_reset": false
+  },
+  {
+    "id": "morning-student-feedback-and-print-checklist",
+    "toml_sha256_at_handoff": "ef48d5efbc8ebc3ec767c3eb7be7d74e9fb09ef3724aa4aaffc33d76c1a4da92",
+    "modification_by_reset": false
+  }
+]

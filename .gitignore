@@ -80,3 +80,5 @@ ai-ops/runtime/tests/__pycache__/
 !/ai-ops/runtime/routes.schema.json
 !/ai-ops/status/reset-night.json
 !/ai-ops/workflow-contracts/school-current.json
+!/ai-ops/migration-manifests/retirement-markers.json
+!/ai-ops/status/school-jobs-unchanged.json

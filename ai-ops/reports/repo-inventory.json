@@ -2986,7 +2986,9 @@
         }
       ],
       "open_pull_requests": [],
-      "recommended_classification": "KEEP"
+      "recommended_classification": "KEEP",
+      "classification": "KEEP",
+      "dependencies_status": "See preservation and cloud/launchd reports; live dependency independence not proved"
     },
     {
       "defaultBranchRef": {
@@ -3007,7 +3009,9 @@
         }
       ],
       "open_pull_requests": [],
-      "recommended_classification": "KEEP"
+      "recommended_classification": "KEEP",
+      "classification": "KEEP",
+      "dependencies_status": "See preservation and cloud/launchd reports; live dependency independence not proved"
     },
     {
       "defaultBranchRef": {
@@ -3028,7 +3032,9 @@
         }
       ],
       "open_pull_requests": [],
-      "recommended_classification": "KEEP"
+      "recommended_classification": "KEEP",
+      "classification": "KEEP",
+      "dependencies_status": "See preservation and cloud/launchd reports; live dependency independence not proved"
     },
     {
       "defaultBranchRef": {
@@ -3049,7 +3055,9 @@
         }
       ],
       "open_pull_requests": [],
-      "recommended_classification": "REVIEW"
+      "recommended_classification": "REVIEW",
+      "classification": "REVIEW",
+      "dependencies_status": "See preservation and cloud/launchd reports; live dependency independence not proved"
     },
     {
       "defaultBranchRef": {
@@ -3070,7 +3078,9 @@
         }
       ],
       "open_pull_requests": [],
-      "recommended_classification": "KEEP"
+      "recommended_classification": "KEEP",
+      "classification": "KEEP",
+      "dependencies_status": "See preservation and cloud/launchd reports; live dependency independence not proved"
     },
     {
       "defaultBranchRef": {
@@ -3091,7 +3101,9 @@
         }
       ],
       "open_pull_requests": [],
-      "recommended_classification": "REVIEW"
+      "recommended_classification": "REVIEW",
+      "classification": "REVIEW",
+      "dependencies_status": "See preservation and cloud/launchd reports; live dependency independence not proved"
     },
     {
       "defaultBranchRef": {
@@ -3112,7 +3124,9 @@
         }
       ],
       "open_pull_requests": [],
-      "recommended_classification": "RETIRE / DELETE-REVIEW"
+      "recommended_classification": "RETIRE / DELETE-REVIEW",
+      "classification": "RETIRE / DELETE-REVIEW",
+      "dependencies_status": "See preservation and cloud/launchd reports; live dependency independence not proved"
     },
     {
       "defaultBranchRef": {
@@ -3133,7 +3147,9 @@
         }
       ],
       "open_pull_requests": [],
-      "recommended_classification": "REVIEW"
+      "recommended_classification": "REVIEW",
+      "classification": "REVIEW",
+      "dependencies_status": "See preservation and cloud/launchd reports; live dependency independence not proved"
     },
     {
       "defaultBranchRef": {
@@ -3154,7 +3170,9 @@
         }
       ],
       "open_pull_requests": [],
-      "recommended_classification": "REVIEW"
+      "recommended_classification": "REVIEW",
+      "classification": "REVIEW",
+      "dependencies_status": "See preservation and cloud/launchd reports; live dependency independence not proved"
     },
     {
       "defaultBranchRef": {
@@ -3183,7 +3201,9 @@
         }
       ],
       "open_pull_requests": [],
-      "recommended_classification": "REVIEW"
+      "recommended_classification": "REVIEW",
+      "classification": "REVIEW",
+      "dependencies_status": "See preservation and cloud/launchd reports; live dependency independence not proved"
     },
     {
       "defaultBranchRef": {
@@ -3204,7 +3224,9 @@
         }
       ],
       "open_pull_requests": [],
-      "recommended_classification": "RETIRE / DELETE-REVIEW"
+      "recommended_classification": "RETIRE / DELETE-REVIEW",
+      "classification": "RETIRE / DELETE-REVIEW",
+      "dependencies_status": "See preservation and cloud/launchd reports; live dependency independence not proved"
     },
     {
       "name": "tank-and-flow-models",
@@ -3224,7 +3246,9 @@
         }
       ],
       "open_pull_requests": [],
-      "recommended_classification": "REVIEW"
+      "recommended_classification": "REVIEW",
+      "classification": "REVIEW",
+      "dependencies_status": "See preservation and cloud/launchd reports; live dependency independence not proved"
     }
   ],
   "limitations": [
