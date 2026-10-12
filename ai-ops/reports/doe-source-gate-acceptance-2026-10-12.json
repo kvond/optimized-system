@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "verified_at_utc": "2026-10-12T22:35:49.808987+00:00",
+  "ordinary_HTTP_source_complete": true,
+  "source": {
+    "source_url": "https://www.applitrack.com/joindelawareschools/onlineapp/default.aspx?AppliTrackPostingSearch=location%3A%22Delaware+Department+of+Education%22",
+    "coverage_id": "DOE-exact-location-filter-v1",
+    "anonymous_public_read": true,
+    "model_calls": 0,
+    "shell_sha256": "1455e0ca8a03aa50f1b65acab100b4319040aa9286a1f02af554bef5c2135d10",
+    "output_sha256": "67bc0117a470fd301fe53932355ef4d8f87d23f3d5773acbb08f8526671874b3",
+    "posting_count": 3,
+    "posting_source_url": "https://www.applitrack.com/joindelawareschools/onlineapp/jobpostings/Output.asp?AppliTrackPostingSearch=location%3A%22Delaware+Department+of+Education%22&",
+    "complete_exact_scope_read": true
+  },
+  "seed_counts": {
+    "new": 3,
+    "materially_changed": 0,
+    "unchanged": 0,
+    "closed": 0
+  },
+  "repeat_counts": {
+    "new": 0,
+    "materially_changed": 0,
+    "unchanged": 3,
+    "closed": 0
+  },
+  "partial_counts": {
+    "new": null,
+    "materially_changed": null,
+    "unchanged": null,
+    "closed": null
+  },
+  "partial_preserved_prior_state": true,
+  "private_receipt_path": "/Volumes/AI-Private-Archive/AI-Archive/state/ai-ops/receipts/doe-http-adapter-proof-20261012T223546Z.json",
+  "private_receipt_sha256": "9dde7d410c3e9f3239520eaf61601f50099c2cb51ad3f7e9a1b4e6714aed9783",
+  "private_receipt_readback_verified": true,
+  "paid_model_calls": 0,
+  "coverage": "exact public DOE location filter only; no statewide or candidate coverage",
+  "cloud_or_schedule_integration_enabled": false
+}

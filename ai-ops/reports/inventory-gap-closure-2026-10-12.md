@@ -13,7 +13,7 @@ Step 2, the private operations repository and published handoff, is complete on 
 
 Katherine is keeping the listed accounts. No account retirement or automatic switch is planned. Source labels identify where older history comes from; they do not mean the account will be closed.
 
-Katherine reports that both exports have started and will be placed on the drive. This is a user-reported request state; exact provider/account identity and completed downloaded files have not been independently verified. [The pending acquisition receipt](exports-pending-2026-10-12.json) records a bounded directory check with no new complete export observed. Earlier export-loop/client-block receipts remain historical attempt evidence and do not establish the outcome of these new user-started requests.
+Katherine reports that both exports have started and will be placed on the drive. Matching email notices now corroborate both main kvond@udel.edu requests: ChatGPT progress at 18:24:35 Eastern and Claude readiness at 18:26:18. Completed downloaded files remain unverified. [The pending acquisition receipt](exports-pending-2026-10-12.json) records a bounded directory check with no new complete export observed. Earlier export-loop/client-block receipts remain historical attempt evidence and do not establish the outcome of these new user-started requests.
 
 The next acquisition action is to verify complete files, provider/account/date and content coverage when downloads appear, preserve them in the encrypted container and record checksum/readback receipts. Do not open or copy raw contents into Git. A provider notice, started request or file named .zip alone is not a complete backup.
 

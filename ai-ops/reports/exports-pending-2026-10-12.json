@@ -3,8 +3,8 @@
   "observed_at_utc": "2026-10-12T22:28:38.357968+00:00",
   "user_reported_exports_started": 2,
   "user_reported_downloads_expected_on_drive": true,
-  "providers_and_accounts_explicitly_identified_in_new_report": false,
-  "provider_request_acceptance_independently_verified": false,
+  "providers_and_accounts_explicitly_identified_in_new_report": true,
+  "provider_request_acceptance_independently_verified": true,
   "new_complete_downloads_observed": 0,
   "scope": "bounded metadata listing: T7 root plus one directory level excluding AI-Archive; AI-Archive/raw and mounted encrypted raw directories through three levels; no whole-drive claim",
   "private_archive_mounted": true,
@@ -12,5 +12,43 @@
   "raw_contents_read": false,
   "raw_contents_in_git": false,
   "next_action": "verify complete downloaded files and source identity before encrypted acquisition/checksum/readback",
-  "earlier_failures": "dated previous attempt evidence; current user-started request outcome unknown"
+  "earlier_failures": "dated previous attempt evidence; current user-started request outcome unknown",
+  "latest_notice_verified_at_utc": "2026-10-12T22:37:09.433640+00:00",
+  "provider_notice_headers_verified": true,
+  "provider_request_progress_independently_correlated": true,
+  "verification_method": "matched notice subjects, sender domains, original recipient and dates in connected Gmail; no body/link stored",
+  "mail_authentication_headers_checked": false,
+  "notices": [
+    {
+      "provider": "ChatGPT",
+      "account_email": "kvond@udel.edu",
+      "phase": "export_started",
+      "notice_subject": "ChatGPT - Your data export has started",
+      "sender_domain": "tm.openai.com",
+      "notice_at_utc": "2026-10-12T22:24:35Z",
+      "notice_at_eastern": "2026-10-12 18:24:35 America/New_York"
+    },
+    {
+      "provider": "Claude",
+      "account_email": "kvond@udel.edu",
+      "phase": "export_in_progress",
+      "notice_subject": "Your data export is in progress",
+      "sender_domain": "mail.anthropic.com",
+      "notice_at_utc": "2026-10-12T22:25:52Z",
+      "notice_at_eastern": "2026-10-12 18:25:52 America/New_York"
+    },
+    {
+      "provider": "Claude",
+      "account_email": "kvond@udel.edu",
+      "phase": "export_ready",
+      "notice_subject": "Your data is ready for download",
+      "sender_domain": "mail.anthropic.com",
+      "notice_at_utc": "2026-10-12T22:26:18Z",
+      "notice_at_eastern": "2026-10-12 18:26:18 America/New_York"
+    }
+  ],
+  "claude_ready_notice_verified": true,
+  "chatgpt_ready_notice_verified": false,
+  "last_bounded_drive_check_at_utc": "2026-10-12T22:37:36.915860Z",
+  "new_candidate_download_or_partial_files_observed": 0
 }

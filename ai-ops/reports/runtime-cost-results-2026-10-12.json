@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "verified_at_utc": "2026-10-12T20:32:25.867880+00:00",
+  "verified_at_utc": "2026-10-12T22:37:09.433640+00:00",
   "repository": "kvond/optimized-system",
   "repository_renamed_from": "kvond/answerable-skills",
   "tests": {
-    "count": 65,
-    "duration_seconds": 2.775,
+    "count": 70,
+    "duration_seconds": 3.539,
     "status": "passed",
-    "scope": "synthetic/local; no live workflow or paid-provider acceptance"
+    "scope": "synthetic/local suite; live public source acceptance reported separately; no paid-provider or scheduled-cloud acceptance"
   },
   "context": {
     "baseline_words": 2863,
@@ -86,5 +86,13 @@
     "candidate_matching_performed": false
   },
   "live_task_prompt_changed": true,
-  "live_task_change_receipt": "reports/job-watch-change-2026-10-12.json"
+  "live_task_change_receipt": "reports/job-watch-change-2026-10-12.json",
+  "doe_http_adapter": {
+    "implementation": "runtime/doe_source.py",
+    "targeted_tests": 5,
+    "HTTP_source_receipt": "reports/doe-source-adapter-2026-10-12.json",
+    "HTTP_to_private_gate_receipt": "reports/doe-source-gate-acceptance-2026-10-12.json",
+    "exact_public_DOE_filter_only": true,
+    "cloud_schedule_integration_verified": false
+  }
 }

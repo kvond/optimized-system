@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "verified_at_utc": "2026-10-12T22:33:17.487909+00:00",
+  "method": "ordinary public HTTP followed only the script source explicitly declared by the exact approved filter shell; no JavaScript execution",
+  "status": "complete",
+  "reason": null,
+  "evidence": {
+    "source_url": "https://www.applitrack.com/joindelawareschools/onlineapp/default.aspx?AppliTrackPostingSearch=location%3A%22Delaware+Department+of+Education%22",
+    "coverage_id": "DOE-exact-location-filter-v1",
+    "anonymous_public_read": true,
+    "model_calls": 0,
+    "shell_sha256": "b39b1b56e5993ab6bf0d2047028758cde30211424cc9f8ac8771e58852399ac3",
+    "output_sha256": "161727e0173844f264f0dc2aed40dfe1a2d7b2cfaed8f9e15f3b5b3cc10b4ac9",
+    "posting_count": 3,
+    "posting_source_url": "https://www.applitrack.com/joindelawareschools/onlineapp/jobpostings/Output.asp?AppliTrackPostingSearch=location%3A%22Delaware+Department+of+Education%22&",
+    "complete_exact_scope_read": true
+  },
+  "stable_ids": [
+    "37293",
+    "37362",
+    "37300"
+  ],
+  "description_character_counts": [
+    12310,
+    6074,
+    5444
+  ],
+  "limitations": [
+    "Exact DOE location filter only, not statewide coverage.",
+    "No candidate matching, cloud scheduling integration or billing savings proven.",
+    "Caller must explicitly grant this exact source and privacy/coverage key before gate state writes.",
+    "No source content, cookies or browser credentials stored in Git."
+  ]
+}
