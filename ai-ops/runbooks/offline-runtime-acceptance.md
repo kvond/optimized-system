@@ -1,6 +1,6 @@
 # Offline runtime acceptance
 
-The runtime currently has 41 tests covering archive preservation, private cache/receipts, deterministic execution, budget reservations, and bounded local stopping. These are synthetic/local acceptance checks; no cloud deployment, school workflow, paid provider, scheduled account or live connector is accepted by this suite.
+The runtime suite covers archive preservation, private cache/receipts, deterministic execution, budget reservations, bounded local stopping, compact source-verified context and encrypted-drive storage. The [current implementation receipt](../reports/runtime-cost-results-2026-10-12.json) records the latest full-suite count and duration; the previous checkpoint had 41 tests. These are synthetic/local acceptance checks; no cloud deployment, school workflow, paid provider, scheduled account or live connector is accepted by this suite.
 
 ## Run and inspect
 

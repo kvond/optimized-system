@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "verified_at_utc": "2026-10-12T20:00:27.996964+00:00",
+  "repository": "kvond/optimized-system",
+  "repository_renamed_from": "kvond/answerable-skills",
+  "tests": {
+    "count": 57,
+    "duration_seconds": 2.749,
+    "status": "passed",
+    "scope": "synthetic/local; no live workflow or paid-provider acceptance"
+  },
+  "context": {
+    "baseline_words": 2863,
+    "selected_words": 391,
+    "max_words": 400,
+    "max_bundles": 2,
+    "measurements": [
+      {
+        "query": "cost cutting cheapest model budget",
+        "selected_words": 391,
+        "word_reduction_percent": 86.34,
+        "bundles": [
+          "ai-operating-decisions.md",
+          "workflow-preferences.md"
+        ],
+        "manifest_sha256": "2a05c9d99106b39f796ff4bdd81e6b72196671a1d0f820e21df993818516fd7d"
+      },
+      {
+        "query": "job monitoring recurring workflow",
+        "selected_words": 374,
+        "word_reduction_percent": 86.94,
+        "bundles": [
+          "workflow-preferences.md",
+          "school-workflow-rules.md"
+        ],
+        "manifest_sha256": "2a05c9d99106b39f796ff4bdd81e6b72196671a1d0f820e21df993818516fd7d"
+      },
+      {
+        "query": "writing voice substack prose",
+        "selected_words": 393,
+        "word_reduction_percent": 86.27,
+        "bundles": [
+          "substack-observed-voice.md",
+          "substack-voice.md"
+        ],
+        "manifest_sha256": "2a05c9d99106b39f796ff4bdd81e6b72196671a1d0f820e21df993818516fd7d"
+      }
+    ],
+    "unit": "exact whitespace words including provenance headers",
+    "token_count": null,
+    "dollar_savings_measured": false,
+    "model_calls": 0
+  },
+  "working_storage": {
+    "root": "/Volumes/AI-Private-Archive/AI-Archive/state/ai-ops",
+    "cache_database": "/Volumes/AI-Private-Archive/AI-Archive/state/ai-ops/cache.sqlite",
+    "usage_database": "/Volumes/AI-Private-Archive/AI-Archive/state/ai-ops/usage.sqlite",
+    "receipts_directory": "/Volumes/AI-Private-Archive/AI-Archive/state/ai-ops/receipts",
+    "verification": {
+      "mount": "/Volumes/AI-Private-Archive",
+      "backing_image": "/Volumes/T7/AI-Archive/AI-Private-Archive-v2.sparsebundle",
+      "filesystem": "apfs",
+      "encryption_verified": true,
+      "mount_verified": true
+    },
+    "ownership_enforcement_required": false,
+    "directory_mode": "0700",
+    "file_mode": "0600",
+    "database_integrity": "quick_check ok",
+    "synthetic_result_readback": "passed; sum10",
+    "private_demo_receipt_sha256": "4ad91946522c196e2e14b3305cc9a02a1f805632f33e10dc1133d369faa181a8",
+    "paid_dispatches": 0,
+    "per_user_isolation_claimed": false,
+    "desktop_commander_independent_resolver_readback": true
+  },
+  "live_schedules_changed": false,
+  "cloud_settings_changed": false,
+  "paid_routes_enabled": false,
+  "full_chat_backups_complete": false,
+  "raw_histories_or_databases_in_git": false
+}

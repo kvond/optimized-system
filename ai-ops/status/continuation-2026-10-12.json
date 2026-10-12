@@ -1,16 +1,17 @@
 {
   "schema_version": 3,
-  "updated_at": "2026-10-12T19:03:42.278771+00:00",
+  "updated_at": "2026-10-12T20:00:27.996964+00:00",
   "phase": "daytime-continuation",
   "overall_status": "partial",
   "authorization": "User resumed October12 after completed overnight cutoff; requested durable GitHub handoff and clarified current account is main account",
   "handoff": {
-    "repository": "kvond/answerable-skills",
+    "repository": "kvond/optimized-system",
     "branch": "reset-night-2026-10-11",
     "path": "ai-ops/HANDOFF.md",
-    "draft_pr": "https://github.com/kvond/answerable-skills/pull/1",
+    "draft_pr": "https://github.com/kvond/optimized-system/pull/1",
     "state": "checkpoint_on_named_branch; verify remote head before resuming",
-    "automatic_account_switch": false
+    "automatic_account_switch": false,
+    "renamed_from": "kvond/answerable-skills"
   },
   "account": {
     "current_main": true,
@@ -27,22 +28,22 @@
   },
   "usage_snapshot": {
     "source": "live Codex get_usage_limits",
-    "weekly_remaining_percent": 84,
+    "weekly_remaining_percent": 79,
     "window_minutes": 10080,
     "short_term_remaining_percent": null,
     "ordinary_usage_allowed": true,
     "existing_credits_present": true,
     "recommendation": "No credit purchase needed now; recheck actual limits",
     "purchase_performed": false,
-    "observed_at_utc": "2026-10-12T16:28:27.967421+00:00",
-    "previous_weekly_remaining_percent": 87,
+    "observed_at_utc": "2026-10-12T20:00:27.996964+00:00",
+    "previous_weekly_remaining_percent": 84,
     "spend_control_reached": false,
     "plan_type": "plus",
-    "weekly_used_percent": 16,
+    "weekly_used_percent": 21,
     "official_guidance": "https://learn.chatgpt.com/docs/pricing"
   },
   "runtime": {
-    "test_count": 41,
+    "test_count": 57,
     "status": "local_tested",
     "execution": "trusted offline deterministic functions",
     "paid_dispatch_implemented": false,
@@ -50,7 +51,11 @@
     "external_supervisor_required": true,
     "private_runtime_state_outside_git": true,
     "cloud_plan_requirement_satisfied": true,
-    "production_pilot_required_for_original_reset": false
+    "production_pilot_required_for_original_reset": false,
+    "tests_verified_at_utc": "2026-10-12T20:00:27.996964+00:00",
+    "compact_context_implemented": true,
+    "external_encrypted_working_state_verified": true,
+    "current_receipt": "reports/runtime-cost-results-2026-10-12.json"
   },
   "archive": {
     "root": "/Volumes/T7/AI-Archive",
@@ -151,6 +156,20 @@
       "mounted_apfs": true,
       "owners_enabled": false,
       "raw_archive_file_count": 0
+    },
+    "working_runtime_storage": {
+      "root": "/Volumes/AI-Private-Archive/AI-Archive/state/ai-ops",
+      "cache_database": "/Volumes/AI-Private-Archive/AI-Archive/state/ai-ops/cache.sqlite",
+      "usage_database": "/Volumes/AI-Private-Archive/AI-Archive/state/ai-ops/usage.sqlite",
+      "receipts_directory": "/Volumes/AI-Private-Archive/AI-Archive/state/ai-ops/receipts",
+      "verification": {
+        "mount": "/Volumes/AI-Private-Archive",
+        "backing_image": "/Volumes/T7/AI-Archive/AI-Private-Archive-v2.sparsebundle",
+        "filesystem": "apfs",
+        "encryption_verified": true,
+        "mount_verified": true
+      },
+      "ownership_enforcement_required": false
     }
   },
   "exports": [
@@ -308,7 +327,10 @@
     "reports/personal-hub-provenance-2026-10-12.md",
     "retirement-preservation/answerable-pipeline-backup/asset-reconciliation.md",
     "reports/protected-storage-verification-2026-10-12.md",
-    "reports/account-identity-verification-2026-10-12.json"
+    "reports/account-identity-verification-2026-10-12.json",
+    "reports/cost-cutting-implementation-2026-10-12.md",
+    "reports/runtime-cost-results-2026-10-12.json",
+    "worker-registry/roles-and-schedules.md"
   ],
   "knowledge": {
     "compact_bundle_count": 11,
@@ -318,7 +340,12 @@
     "reflection_bank_policy_verified": true,
     "aug23_voice_moves_verified": true,
     "original_stored_voice_script_available": false,
-    "preferred_voice_acceptance_verified": false
+    "preferred_voice_acceptance_verified": false,
+    "deterministic_retrieval": {
+      "receipt": "reports/runtime-cost-results-2026-10-12.json",
+      "requires_declared_private_sources": true,
+      "raw_source_bodies_emitted": false
+    }
   },
   "future_acceptance_gates": [
     "authenticated bounded source adapter and transactional state for a selected production pilot",

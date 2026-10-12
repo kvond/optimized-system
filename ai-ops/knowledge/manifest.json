@@ -9,8 +9,11 @@
         "sha256": "d9b2e2935a9b08ccc0cf42b78da60f1d3a0e317012f96c30c0c463f135bbb230"
       },
       {
-        "path": "skills/book-revision/reference/decisions.md",
-        "sha256": "b3ea7de4f01639d3d5f2ac7915ff39eb2e174d9231d2d498625fdabec223420e"
+        "path": "/Volumes/AI-Private-Archive/AI-Archive/preservation/operational-sources/book-decisions-b3ea7de4.md",
+        "sha256": "b3ea7de4f01639d3d5f2ac7915ff39eb2e174d9231d2d498625fdabec223420e",
+        "scope": "local_only_source",
+        "original_source_path": "/Users/katherinevonduyke/code/answerable-skills/skills/book-revision/reference/decisions.md",
+        "notes": "Exact historical operational source preserved privately; named examples remain outside new Git assets. Source body is never emitted by context retrieval."
       },
       {
         "path": "docs/book-project/Project Instructions.md",
@@ -48,8 +51,11 @@
         "sha256": "d9b2e2935a9b08ccc0cf42b78da60f1d3a0e317012f96c30c0c463f135bbb230"
       },
       {
-        "path": "skills/book-revision/reference/decisions.md",
-        "sha256": "b3ea7de4f01639d3d5f2ac7915ff39eb2e174d9231d2d498625fdabec223420e"
+        "path": "/Volumes/AI-Private-Archive/AI-Archive/preservation/operational-sources/book-decisions-b3ea7de4.md",
+        "sha256": "b3ea7de4f01639d3d5f2ac7915ff39eb2e174d9231d2d498625fdabec223420e",
+        "scope": "local_only_source",
+        "original_source_path": "/Users/katherinevonduyke/code/answerable-skills/skills/book-revision/reference/decisions.md",
+        "notes": "Exact historical operational source preserved privately; named examples remain outside new Git assets. Source body is never emitted by context retrieval."
       }
     ],
     "bundle_sha256": "512ab1191b9b3f9d23b354eafaf6139ad849b02be1874a29ad26f40fe0afa798",
@@ -65,8 +71,11 @@
         "sha256": "dc5d0c05d47789bf7506342d6a47424a0714a37e42a9e3ab7f966c14d4f0891b"
       },
       {
-        "path": "skills/book-revision/reference/decisions.md",
-        "sha256": "b3ea7de4f01639d3d5f2ac7915ff39eb2e174d9231d2d498625fdabec223420e"
+        "path": "/Volumes/AI-Private-Archive/AI-Archive/preservation/operational-sources/book-decisions-b3ea7de4.md",
+        "sha256": "b3ea7de4f01639d3d5f2ac7915ff39eb2e174d9231d2d498625fdabec223420e",
+        "scope": "local_only_source",
+        "original_source_path": "/Users/katherinevonduyke/code/answerable-skills/skills/book-revision/reference/decisions.md",
+        "notes": "Exact historical operational source preserved privately; named examples remain outside new Git assets. Source body is never emitted by context retrieval."
       }
     ],
     "bundle_sha256": "bff9ad621db0a53d159c722bb9499b89f3b5589f76a8cf487eace4a2a2eb675c",
@@ -108,8 +117,11 @@
         "sha256": "9482d3c24e20aa39bf350a1616f4438fccc82015c13cd946f0c589be7ad8d33d"
       },
       {
-        "path": "skills/book-revision/reference/decisions.md",
-        "sha256": "b3ea7de4f01639d3d5f2ac7915ff39eb2e174d9231d2d498625fdabec223420e"
+        "path": "/Volumes/AI-Private-Archive/AI-Archive/preservation/operational-sources/book-decisions-b3ea7de4.md",
+        "sha256": "b3ea7de4f01639d3d5f2ac7915ff39eb2e174d9231d2d498625fdabec223420e",
+        "scope": "local_only_source",
+        "original_source_path": "/Users/katherinevonduyke/code/answerable-skills/skills/book-revision/reference/decisions.md",
+        "notes": "Exact historical operational source preserved privately; named examples remain outside new Git assets. Source body is never emitted by context retrieval."
       },
       {
         "path": "/Users/katherinevonduyke/code/answerable-skills/audits/ai-account-audit-2026-10-11.md",
