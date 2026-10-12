@@ -1,0 +1,45 @@
+# AI-system consolidation: start here
+
+Updated October 12, 2026. This is the durable continuation checkpoint for Katherine's current main account or a later authorized account. Katherine now prefers continuing on this main account and considering credits when needed. Do not automatically switch accounts, retire an account, buy credits, or infer an account's email from a display name. The current desktop email remains unverified; Katherine confirmed this is her main account.
+
+## Resume safely
+
+1. Read this file, [continuation status](status/continuation-2026-10-12.json), [today's report](reports/continuation-2026-10-12.md), and the [original reset report](reports/reset-night-2026-10-11.md). The original overnight cutoff was honored; Katherine explicitly authorized daytime continuation on October 12. No new recurring reset job was created.
+2. Use private repository `kvond/answerable-skills`, branch `reset-night-2026-10-11`, [draft PR 1](https://github.com/kvond/answerable-skills/pull/1). Check the actual remote head and local status before editing. Do not reset existing dirty checkouts. All new work is staged in the isolated clone described below.
+3. Continue the unfinished work below using deterministic tools first. Preserve source data, account assets, teaching content and grade history. Keep raw chats, student data, financial/health history, credentials and runtime databases outside GitHub. Read the [privacy rules](privacy-rules/storage.md) and the runtime acceptance runbook before integration.
+4. Verify source evidence, destination readback and receipts before claiming completion. A configuration, active schedule, successful export request or ready download email is not a completed workflow or verified archive.
+
+## Verified checkpoint
+
+- Existing private repository reused; no new core repository. Old Answerable Teaching and pipeline have reversible retirement-review markers: [Teaching issue 1](https://github.com/kvond/Answerable-Teaching/issues/1), [pipeline review issue 2](https://github.com/kvond/answerable-skills/issues/2). Original repos, loaded launch agents and history remain intact.
+- External archive `/Volumes/T7/AI-Archive`: three preserved Git bundles and ten original checksum entries match. Terminal access now works. T7 is ExFAT; encryption is unverified. FileVault on the Mac is off. No new raw account export downloaded to these unprotected locations.
+- Local deterministic foundation has **41 passing tests**. Source/privacy/revision/expiry cache, partial component reuse, deterministic route selection, atomic SQLite result plus receipt, actual readback, usage reservations and provider/workflow/combined daily/monthly caps are implemented. Paid dispatch is absent. Callbacks are trusted pure offline functions; an external supervisor is required to bound execution. See [offline acceptance runbook](runbooks/offline-runtime-acceptance.md).
+- Five personal schedules already appear under `kvond@udel.edu` ChatGPT Plus. The `kvond12@gmail.com` ChatGPT Free Active view had no rows. UD Claude (`kvond@udel.edu`) Pro has no scheduled tasks. This is an inventory finding; no schedule migration/cutover was performed.
+- Fresh Codex usage tool: 89% weekly allowance remaining, ordinary usage allowed, existing credits present. Short-term window unavailable. This snapshot does not identify an email or establish another browser account's allowance. No credit purchase is needed to continue now; recheck when approaching an actual limit.
+
+## School ownership restriction
+
+Katherine's original instruction was to identify the 6:30 and 7:30 jobs before altering ownership and to leave them unchanged during the overnight reset. Both are local Codex heartbeat automations, not a Google Cloud Scheduler job. Their ACTIVE state and exact prompt hashes remain unchanged.
+
+| Job | Weekday time, Eastern | Target chat | Latest observed model metadata |
+|---|---|---|---|
+| morning-roster-check-and-submission-tidy | 6:30 AM | 01a0fc18-96be-7873-8386-da8a6b110384 | gpt-6-astra, October 12 |
+| morning-student-feedback-and-print-checklist | 7:30 AM | 01a0f4ed-2d87-7e62-9056-46f5ac441ef3 | gpt-6-luna, October 12 |
+
+Models are not pinned in the saved schedule. Runtime turn metadata identifies the observed model, not a successful school destination write. Desktop account email is still unverified. School Hub's separately configured `openai/gpt-6-luna` backend and its Cloud Run revision are separate facts. Retain existing ownership until Katherine requests a change and a replacement's schedule, access, destination and successful test/readback are verified.
+
+## Unfinished work and smallest next actions
+
+1. **Raw account history:** both Claude export requests are confirmed by provider email. UD export is ready; kvond12 export is processing. Links expire, so reacquire only if needed. UD ChatGPT export was attempted once but redirected to UD Central Authentication Service; success is unconfirmed. Do not repeat that uncertain request. Complete normal user authentication and establish recoverable protected archive storage before downloading raw private exports. Do not inspect passwords, cookies or token files.
+2. **Distillation:** nine compact reusable knowledge bundles exist with provenance. Exact Wilmington grading and full Substack template sources remain gaps. Use named verified documents or acquired exports to fill these; do not invent missing rules or import entire raw histories into prompts/GitHub.
+3. **Deterministic integration:** implement a narrow bounded, authenticated source adapter before a production pilot. Personal Hub MCP currently uses public Run invocation plus path-token prototype; do not widen it for sensitive data. Verify deployed-image/source mapping, caller IAM, bounded indexed reads, privacy partitions, atomic Firestore state and source-version concurrency. No cloud mutation/deployment occurred.
+4. **Personal schedules:** staged contracts exist. Verify each desired task's timezone, inputs and output destination, then test an accepted replacement before disabling an old task. Resolve birthday/news cart-policy conflict explicitly. No purchases, cart changes or messages to other people are authorized by this handoff.
+5. **Account identity:** label accounts with emails and execution surface. Await Katherine's current main-account email; do not infer it from the Codex account ID or Google input account. Current main account stays active. UD ChatGPT remains a possible later destination.
+
+## Local recovery pointers
+
+Workspace: `/Users/katherinevonduyke/Documents/Claude/2026-10-11/remote-desktop-commander-plugin-app-6a057d268ebc81919918d37eec718425-5`.
+
+Isolated clone: `work/core`. User-facing packet: `outputs/AI-ops-handoff`. Original skills checkout `~/code/answerable-skills` and main School Hub checkout are dirty; preserve them. `~/answerable` has unpushed work already preserved in a bundle. Private runtime state stays under `work/`, outside this Git tree.
+
+Remote Desktop Commander device `d99c01bf-3b21-4c4a-89c7-32cd05f3f991`: verify online before use. Browser UI must use supported CUA controls and current account/profile checks. A future chat must independently confirm access to GitHub, Drive, desktop and archive; this packet does not grant access or prove delivery to another account.

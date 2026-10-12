@@ -1,0 +1,112 @@
+{
+  "schema_version": 3,
+  "updated_at": "2026-10-12T15:09:27.769648+00:00",
+  "phase": "daytime-continuation",
+  "overall_status": "partial",
+  "authorization": "User resumed October12 after completed overnight cutoff; requested durable GitHub handoff and clarified current account is main account",
+  "handoff": {
+    "repository": "kvond/answerable-skills",
+    "branch": "reset-night-2026-10-11",
+    "path": "ai-ops/HANDOFF.md",
+    "draft_pr": "https://github.com/kvond/answerable-skills/pull/1",
+    "state": "checkpoint_on_named_branch; verify remote head before resuming",
+    "automatic_account_switch": false
+  },
+  "account": {
+    "current_main": true,
+    "email": null,
+    "email_status": "awaiting_user_label; not exposed by usage tool",
+    "switch_preference": "continue current main account"
+  },
+  "usage_snapshot": {
+    "source": "live Codex get_usage_limits",
+    "weekly_remaining_percent": 89,
+    "window_minutes": 10080,
+    "short_term_remaining_percent": null,
+    "ordinary_usage_allowed": true,
+    "existing_credits_present": true,
+    "recommendation": "No credit purchase needed now; recheck actual limits",
+    "purchase_performed": false
+  },
+  "runtime": {
+    "test_count": 41,
+    "status": "local_tested",
+    "execution": "trusted offline deterministic functions",
+    "paid_dispatch_implemented": false,
+    "cloud_deployed": false,
+    "external_supervisor_required": true,
+    "private_runtime_state_outside_git": true
+  },
+  "archive": {
+    "root": "/Volumes/T7/AI-Archive",
+    "terminal_access_verified": true,
+    "original_checksum_entries_verified": 10,
+    "git_bundles_verified": 3,
+    "encryption_verified": false,
+    "filevault_on": false,
+    "new_raw_exports_downloaded": false
+  },
+  "exports": [
+    {
+      "platform": "ChatGPT",
+      "account_email": "kvond@udel.edu",
+      "state": "attempted_unconfirmed_authentication_required",
+      "request_repeated": false,
+      "auth_surface": "UD Central Authentication Service"
+    },
+    {
+      "platform": "Claude",
+      "account_email": "kvond@udel.edu",
+      "state": "ready_email_verified_not_downloaded",
+      "requested_once": true,
+      "request_email_at": "2026-10-12T15:02:52Z",
+      "ready_email_at": "2026-10-12T15:03:20Z"
+    },
+    {
+      "platform": "Claude",
+      "account_email": "kvond12@gmail.com",
+      "state": "processing_email_verified_not_downloaded",
+      "requested_once": true,
+      "request_email_at": "2026-10-12T15:04:50Z"
+    }
+  ],
+  "school": {
+    "jobs_changed": false,
+    "scheduler": "local Codex heartbeat",
+    "desktop_email": null,
+    "models_pinned": false,
+    "jobs": [
+      {
+        "id": "morning-roster-check-and-submission-tidy",
+        "weekday_time_eastern": "06:30",
+        "target_thread": "01a0fc18-96be-7873-8386-da8a6b110384",
+        "observed_model": "gpt-6-astra"
+      },
+      {
+        "id": "morning-student-feedback-and-print-checklist",
+        "weekday_time_eastern": "07:30",
+        "target_thread": "01a0f4ed-2d87-7e62-9056-46f5ac441ef3",
+        "observed_model": "gpt-6-luna"
+      }
+    ],
+    "destination_success_not_verified": true
+  },
+  "personal_schedules": {
+    "ud_chatgpt_active_count": 5,
+    "source_chatgpt_active_count_observed": 0,
+    "ud_claude_scheduled_count": 0,
+    "cutover_performed": false
+  },
+  "remaining": [
+    "protected recoverable raw export storage and account authentication",
+    "exact Wilmington and Substack template sources",
+    "authenticated bounded live source adapter and Firestore transactions",
+    "personal schedule replacement destination/timezone/test acceptance",
+    "current main account email label"
+  ],
+  "source_evidence": [
+    "reports/continuation-2026-10-12.md",
+    "runbooks/offline-runtime-acceptance.md",
+    "reports/reset-night-2026-10-11.md"
+  ]
+}
