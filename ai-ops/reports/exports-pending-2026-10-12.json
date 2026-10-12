@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "observed_at_utc": "2026-10-12T22:28:38.357968+00:00",
+  "user_reported_exports_started": 2,
+  "user_reported_downloads_expected_on_drive": true,
+  "providers_and_accounts_explicitly_identified_in_new_report": false,
+  "provider_request_acceptance_independently_verified": false,
+  "new_complete_downloads_observed": 0,
+  "scope": "bounded metadata listing: T7 root plus one directory level excluding AI-Archive; AI-Archive/raw and mounted encrypted raw directories through three levels; no whole-drive claim",
+  "private_archive_mounted": true,
+  "existing_private_manifest_count": 1,
+  "raw_contents_read": false,
+  "raw_contents_in_git": false,
+  "next_action": "verify complete downloaded files and source identity before encrypted acquisition/checksum/readback",
+  "earlier_failures": "dated previous attempt evidence; current user-started request outcome unknown"
+}

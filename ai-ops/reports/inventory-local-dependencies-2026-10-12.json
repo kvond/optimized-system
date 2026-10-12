@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "verified_at_utc": "2026-10-12T22:25:40.718391+00:00",
+  "scope": "named legacy publisher metadata and four active skill entrypoints; static explicit local-reference coverage only",
+  "publisher": {
+    "label": "com.kvond.answerable-publish",
+    "plist_present": true,
+    "source_script_executed": false,
+    "job_changed": false,
+    "plist_sha256": "1d1ba04320d56c6f7312ad0d1829f3e5298d73f135127f765c427f09bbeb7bf4",
+    "calendar_intervals": [
+      {
+        "Hour": 19,
+        "Minute": 30
+      },
+      {
+        "Hour": 23,
+        "Minute": 0
+      }
+    ],
+    "program_paths": [
+      {
+        "path": "/bin/bash",
+        "exists": true
+      },
+      {
+        "path": "/Users/katherinevonduyke/Documents/projects/Answerable-Teaching/nightly-publish.sh",
+        "exists": false
+      }
+    ],
+    "loaded_query_returncode": 0,
+    "state": "not running",
+    "runs": "4",
+    "last_exit_code": "127",
+    "environment_or_logs_published": false
+  },
+  "skills": [
+    {
+      "skill": "book-revision",
+      "entrypoint_present": true,
+      "entrypoint_sha256": "54d7e6445e211cec7013302b8fff9552d09e93130d52edf34bcf0b3fc5d0c376",
+      "entrypoint_resolved_path": "/Users/katherinevonduyke/code/answerable-skills/skills/book-revision/SKILL.md",
+      "matched_legacy_local_path_references": [
+        {
+          "path": "/Users/katherinevonduyke/code/answerable-skills/skills",
+          "exists": true
+        }
+      ],
+      "legacy_name_present": true
+    },
+    {
+      "skill": "book-integrate",
+      "entrypoint_present": true,
+      "entrypoint_sha256": "74abb51e96050f128d3a6a205671fd7b10b0e0d9c10b95a340dfe589a7a92f94",
+      "entrypoint_resolved_path": "/Users/katherinevonduyke/code/answerable-skills/skills/book-integrate/SKILL.md",
+      "matched_legacy_local_path_references": [],
+      "legacy_name_present": false
+    },
+    {
+      "skill": "book-ops",
+      "entrypoint_present": true,
+      "entrypoint_sha256": "fbcaa07bf54424f97ffa52bf7001cc354400a6798bfbe55b9a0fe5914d2579f3",
+      "entrypoint_resolved_path": "/Users/katherinevonduyke/code/answerable-skills/skills/book-ops/SKILL.md",
+      "matched_legacy_local_path_references": [],
+      "legacy_name_present": false
+    },
+    {
+      "skill": "manuscript-ops",
+      "entrypoint_present": true,
+      "entrypoint_sha256": "ced56fe14d8326aa86d00f63836b48827b2628f3002662a022d14606a2fe96b5",
+      "entrypoint_resolved_path": "/Users/katherinevonduyke/code/answerable-skills/skills/manuscript-ops/SKILL.md",
+      "matched_legacy_local_path_references": [],
+      "legacy_name_present": true
+    }
+  ],
+  "raw_skill_prose_or_private_URLs_published": false,
+  "source_files_changed": false,
+  "retirement_clearance": false
+}

@@ -1,8 +1,8 @@
 # Durable execution architecture
 
-Reuse private kvond/answerable-skills for compact rules/contracts/skills and this ai-ops namespace. Existing Personal-Hub is a candidate backend, not yet approved for new autonomous workers. School Workflow Hub remains independent and unchanged.
+Reuse private kvond/optimized-system for compact rules/contracts/skills and this ai-ops namespace. Existing Personal-Hub is a candidate backend, not yet approved for new autonomous workers. School Workflow Hub remains independent and unchanged.
 
-Canonical content: Google Drive/Docs, Roam and existing domain repositories. Archive: /Volumes/T7/AI-Archive, with sanitized copies verified; recoverable encrypted raw storage remains pending. Persistent state: local private SQLite for this foundation; a future Firestore adapter requires atomic authorization/budget and cancellation acceptance.
+Canonical content: Google Drive/Docs, Roam and existing domain repositories. Archive: sanitized operational packets at /Volumes/T7/AI-Archive; verified encrypted v2 APFS container mounted at /Volumes/AI-Private-Archive/AI-Archive for raw history and private state. Full raw export acquisition remains incomplete. Persistent state: private SQLite on that mounted encrypted container for this foundation; a future Firestore adapter requires atomic authorization/budget and cancellation acceptance.
 
 Trigger → validate source access/coverage → fingerprints → cache lookup → deterministic work → sufficient authorized worker → save result/receipt → notify only on material change, failure or required action. A missing source is a blocker, not unchanged input.
 

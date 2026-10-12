@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "updated_at": "2026-10-12T21:02:24.518520+00:00",
+  "updated_at": "2026-10-12T22:28:38.357968+00:00",
   "phase": "daytime-continuation",
   "overall_status": "partial",
   "authorization": "User resumed October12 after completed overnight cutoff; requested durable GitHub handoff and clarified current account is main account",
@@ -11,7 +11,8 @@
     "draft_pr": "https://github.com/kvond/optimized-system/pull/1",
     "state": "checkpoint_on_named_branch; verify remote head before resuming",
     "automatic_account_switch": false,
-    "renamed_from": "kvond/answerable-skills"
+    "renamed_from": "kvond/answerable-skills",
+    "step_2_private_operations_home_complete": true
   },
   "account": {
     "current_main": true,
@@ -24,7 +25,9 @@
       "automatic_switch": false,
       "confirmation_date": "2026-10-12"
     },
-    "identity_receipt": "reports/account-identity-verification-2026-10-12.json"
+    "identity_receipt": "reports/account-identity-verification-2026-10-12.json",
+    "all_listed_accounts_retained_by_latest_user_direction": true,
+    "account_retirement_planned": false
   },
   "usage_snapshot": {
     "source": "live Codex get_usage_limits",
@@ -353,7 +356,13 @@
     "reports/vacancy-gate-acceptance-2026-10-12.json",
     "reports/main-export-continuation-2026-10-12.json",
     "reports/finder-codex-inventory-2026-10-12.json",
-    "reports/finder-repo-preservation-2026-10-12.json"
+    "reports/finder-repo-preservation-2026-10-12.json",
+    "reports/inventory-repo-gap-check-2026-10-12.json",
+    "reports/inventory-finder-gap-check-2026-10-12.json",
+    "reports/inventory-local-dependencies-2026-10-12.json",
+    "reports/inventory-cloud-gap-check-2026-10-12.md",
+    "reports/inventory-gap-closure-2026-10-12.md",
+    "reports/exports-pending-2026-10-12.json"
   ],
   "knowledge": {
     "compact_bundle_count": 11,
@@ -403,7 +412,12 @@
     "finder_coverage": "three visible root dates/workspaces; bounded ac/work, m/work and helper-output metadata; hidden/deeper/Git status unverified",
     "bounded_workspace_copies_preserved": true,
     "workspace_preservation_receipt": "reports/finder-repo-preservation-2026-10-12.json",
-    "original_workspace_checksum_parity_verified": false
+    "original_workspace_checksum_parity_verified": false,
+    "latest_gap_closure_receipt": "reports/inventory-gap-closure-2026-10-12.md",
+    "original_repo_gap_entries_checked": 84,
+    "repo_gaps_resolved": 79,
+    "missing_git_metadata_entries": 5,
+    "step_1_complete": false
   },
   "browser_policy_observation": {
     "blocked_action": "opening chrome://settings/downloads",
@@ -445,5 +459,21 @@
     "anthropic_notices_observed": 4,
     "chatgpt_acceptance_or_ready_notices_observed": 0,
     "no_pending_request_inference": false
+  },
+  "user_reported_exports": {
+    "schema_version": 1,
+    "observed_at_utc": "2026-10-12T22:28:38.357968+00:00",
+    "user_reported_exports_started": 2,
+    "user_reported_downloads_expected_on_drive": true,
+    "providers_and_accounts_explicitly_identified_in_new_report": false,
+    "provider_request_acceptance_independently_verified": false,
+    "new_complete_downloads_observed": 0,
+    "scope": "bounded metadata listing: T7 root plus one directory level excluding AI-Archive; AI-Archive/raw and mounted encrypted raw directories through three levels; no whole-drive claim",
+    "private_archive_mounted": true,
+    "existing_private_manifest_count": 1,
+    "raw_contents_read": false,
+    "raw_contents_in_git": false,
+    "next_action": "verify complete downloaded files and source identity before encrypted acquisition/checksum/readback",
+    "earlier_failures": "dated previous attempt evidence; current user-started request outcome unknown"
   }
 }

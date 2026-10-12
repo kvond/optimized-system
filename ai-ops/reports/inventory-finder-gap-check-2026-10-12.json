@@ -1,0 +1,69 @@
+{
+  "checked_at_utc": "2026-10-12T22:26:02.755451+00:00",
+  "method": "normal native Finder Go to Folder and list expansion; filenames/kinds/sizes only",
+  "scope": "three observed workspace roots and their direct output/work children; not whole Mac",
+  "hidden_display": "Initially off proven by hub-pr39 16 visible items; enabled and .git/.github/.dockerignore/.gitignore appeared,20items; restored off with same shortcut after bounded checks",
+  "workspace_roots": [
+    {
+      "path": "2026-09-16/ac",
+      "direct_entries": [
+        "outputs",
+        "work"
+      ],
+      "direct_hidden_inclusive_listing_complete": true,
+      "outputs_direct_files": 8,
+      "outputs_names": [
+        "all-classes-submission-audit-2026-09-23.md",
+        "forensics-schoology-links-2026-09-23.md",
+        "forensics-week03-dashboard-read-only-findings.md",
+        "issue-37-pr-39-anatomy-read-only-verification.md",
+        "issue-37-pr-39-private-evidence.json",
+        "school-workflow-run-2026-09-22.json",
+        "school-workflow-run-2026-09-22.md",
+        "submission-and-page02-todo.md"
+      ],
+      "work_direct_entries": [
+        "hub-pr39",
+        "issue37-private"
+      ],
+      "git_at_workspace_root": "not present in hidden-inclusive listing",
+      "deeper_scope": "hub-pr39 root20hidden-inclusive entries, .git folder verified; deeper content not re-enumerated; both work folders already copied privately with prior bounded receipt; source parity still unverified"
+    },
+    {
+      "path": "2026-09-30/m",
+      "direct_entries": [
+        "outputs",
+        "work"
+      ],
+      "direct_hidden_inclusive_listing_complete": true,
+      "outputs_direct_files": 0,
+      "work_direct_entries": [],
+      "git_at_workspace_root": "not present in hidden-inclusive listing",
+      "recursive_coverage": "Empty output/work children under displayed hidden-inclusive listing"
+    },
+    {
+      "path": "2026-09-17/fix-only-the-current-page-2",
+      "direct_entries": [
+        "outputs"
+      ],
+      "direct_hidden_inclusive_listing_complete": true,
+      "outputs_direct_entries": [
+        "school-browser-companion-0.2.0"
+      ],
+      "helper_files": 12,
+      "git_at_workspace_root": "not present in hidden-inclusive listing",
+      "helper_git": "not present in hidden-inclusive12file listing",
+      "recursive_coverage": "outputs/helper contains12direct files and no visible subdirectories"
+    }
+  ],
+  "source_bodies_opened": false,
+  "permissions_changed": false,
+  "copied_or_deleted": false,
+  "original_source_metadata_note": "Finder/iCloud upload activity observed during navigation; no explicit file-content edit performed",
+  "complete_whole_mac_inventory": false,
+  "complete_recursive_source_inventory": false,
+  "remaining_gaps": [
+    "ac/work deep source checksum parity unresolved; copied-private inventory exists",
+    "Account/cloud exports and other directories remain separate scope"
+  ]
+}
