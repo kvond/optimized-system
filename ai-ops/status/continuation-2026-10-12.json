@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "updated_at": "2026-10-12T20:00:27.996964+00:00",
+  "updated_at": "2026-10-12T21:02:24.518520+00:00",
   "phase": "daytime-continuation",
   "overall_status": "partial",
   "authorization": "User resumed October12 after completed overnight cutoff; requested durable GitHub handoff and clarified current account is main account",
@@ -28,22 +28,22 @@
   },
   "usage_snapshot": {
     "source": "live Codex get_usage_limits",
-    "weekly_remaining_percent": 79,
+    "weekly_remaining_percent": 78,
     "window_minutes": 10080,
     "short_term_remaining_percent": null,
     "ordinary_usage_allowed": true,
     "existing_credits_present": true,
     "recommendation": "No credit purchase needed now; recheck actual limits",
     "purchase_performed": false,
-    "observed_at_utc": "2026-10-12T20:00:27.996964+00:00",
-    "previous_weekly_remaining_percent": 84,
+    "observed_at_utc": "2026-10-12T20:32:25.867880+00:00",
+    "previous_weekly_remaining_percent": 79,
     "spend_control_reached": false,
     "plan_type": "plus",
-    "weekly_used_percent": 21,
+    "weekly_used_percent": 22,
     "official_guidance": "https://learn.chatgpt.com/docs/pricing"
   },
   "runtime": {
-    "test_count": 57,
+    "test_count": 65,
     "status": "local_tested",
     "execution": "trusted offline deterministic functions",
     "paid_dispatch_implemented": false,
@@ -52,10 +52,11 @@
     "private_runtime_state_outside_git": true,
     "cloud_plan_requirement_satisfied": true,
     "production_pilot_required_for_original_reset": false,
-    "tests_verified_at_utc": "2026-10-12T20:00:27.996964+00:00",
+    "tests_verified_at_utc": "2026-10-12T20:32:25.867880+00:00",
     "compact_context_implemented": true,
     "external_encrypted_working_state_verified": true,
-    "current_receipt": "reports/runtime-cost-results-2026-10-12.json"
+    "current_receipt": "reports/runtime-cost-results-2026-10-12.json",
+    "vacancy_gate_implemented": true
   },
   "archive": {
     "root": "/Volumes/T7/AI-Archive",
@@ -176,15 +177,25 @@
     {
       "platform": "ChatGPT",
       "account_email": "kvond@udel.edu",
-      "state": "university_two_factor_code_required_export_unconfirmed",
+      "state": "normal_main_browser_access_verified; email_verification_accepted; export_confirmation_returned_to_device_verification; acceptance_unconfirmed",
       "request_repeated": false,
-      "auth_surface": "UD CAS 2FA on registered device",
+      "auth_surface": "current OpenAI iPhone/email flow; prior UD CAS observation historical",
       "browser_saved_login_submitted_once": true,
       "password_read_or_copied": false,
       "remember_browser_changed": false,
-      "two_factor_code_read": false,
+      "two_factor_code_read": true,
       "code_resent": false,
-      "export_success_verified": false
+      "export_success_verified": false,
+      "prior_state": "university_two_factor_code_required_export_unconfirmed",
+      "matching_email_code_submission_verified": true,
+      "code_value_stored": false,
+      "email_code_resends": 0,
+      "current_receipt": "reports/main-export-continuation-2026-10-12.json",
+      "two_factor_code_read_scope": "matching authorized email OTP only; value not stored",
+      "latest_authentication_state": "expired after successful matching email verification and renewed export verification",
+      "current_handoff_auth_tab_valid": false,
+      "expired_authentication_tab_closed": true,
+      "final_authentication_observed_at_utc": "2026-10-12T20:58:45.535Z"
     },
     {
       "platform": "Claude",
@@ -310,13 +321,19 @@
     "owner_email_verified": "kvond@udel.edu",
     "fresh_ui_verification": "reports/personal-schedule-verification-2026-10-12.json",
     "dated_news_output_observed": true,
-    "migration_direction_already_observed": true
+    "migration_direction_already_observed": true,
+    "educator_watch_prompt_updated": true,
+    "educator_watch_exact_readback_verified": true,
+    "educator_watch_owner_or_cadence_changed": false,
+    "other_four_changed": false,
+    "weekly_candidate_scope_distinct_verified": true,
+    "local_gate_cloud_bridge_verified": false
   },
   "remaining": [
-    "fresh source-Claude ready-route browser security block; source ChatGPT export acceptance unconfirmed; UD registered-device 2FA separate",
+    "fresh source-Claude ready-route browser security block; source ChatGPT export acceptance unconfirmed; main export confirmation loops after successful email verification; acceptance unconfirmed",
     "complete raw account export acquisition/checksums/coverage and unique-asset distillation",
     "current rubric/source-voice gaps and Katherine judgment where applicable",
-    "protected Documents/Codex inventory access and unresolved legacy consumer coverage"
+    "deeper Documents/Codex inventory/preservation after verified Finder top-level access and unresolved legacy consumer coverage"
   ],
   "source_evidence": [
     "reports/continuation-2026-10-12.md",
@@ -330,7 +347,13 @@
     "reports/account-identity-verification-2026-10-12.json",
     "reports/cost-cutting-implementation-2026-10-12.md",
     "reports/runtime-cost-results-2026-10-12.json",
-    "worker-registry/roles-and-schedules.md"
+    "worker-registry/roles-and-schedules.md",
+    "reports/job-watch-change-2026-10-12.json",
+    "reports/vacancy-gate-2026-10-12.md",
+    "reports/vacancy-gate-acceptance-2026-10-12.json",
+    "reports/main-export-continuation-2026-10-12.json",
+    "reports/finder-codex-inventory-2026-10-12.json",
+    "reports/finder-repo-preservation-2026-10-12.json"
   ],
   "knowledge": {
     "compact_bundle_count": 11,
@@ -373,7 +396,14 @@
     "documents_codex_local_read": "PermissionError errno1",
     "documents_codex_desktop_commander_read": "DENIED; no directory entries returned",
     "root_cause": "unverified; generic connector denial names possible permission/cloud-file/FDA causes",
-    "permission_changes_performed": false
+    "permission_changes_performed": false,
+    "finder_gui_access": true,
+    "finder_inventory_receipt": "reports/finder-codex-inventory-2026-10-12.json",
+    "recursive_inventory_complete": false,
+    "finder_coverage": "three visible root dates/workspaces; bounded ac/work, m/work and helper-output metadata; hidden/deeper/Git status unverified",
+    "bounded_workspace_copies_preserved": true,
+    "workspace_preservation_receipt": "reports/finder-repo-preservation-2026-10-12.json",
+    "original_workspace_checksum_parity_verified": false
   },
   "browser_policy_observation": {
     "blocked_action": "opening chrome://settings/downloads",
@@ -406,7 +436,9 @@
     "accessible_matching_codes_agent_handling_user_authorized": true,
     "code_values_in_git": false,
     "ask_user_find_or_copy_again": false,
-    "only_registered_device_ud_2fa_requires_device": true
+    "only_registered_device_ud_2fa_requires_device": false,
+    "current_main_email_option_was_agent_handled": true,
+    "current_main_export_confirmation_loop_unresolved": true
   },
   "export_mail_search": {
     "scope": "in:anywhere newer_than:2d; focused export notices",

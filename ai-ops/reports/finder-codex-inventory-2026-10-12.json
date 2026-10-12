@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "verified_at_utc": "2026-10-12T20:54:06.198685+00:00",
+  "root": "/Users/katherinevonduyke/Documents/Codex",
+  "method": "normal Finder New Window and Go to Folder; visible metadata only",
+  "gui_read_access_verified": true,
+  "visible_root_folders": [
+    "2026-09-16",
+    "2026-09-17",
+    "2026-09-30"
+  ],
+  "visible_workspaces": [
+    "2026-09-16/ac",
+    "2026-09-17/fix-only-the-current-page-2",
+    "2026-09-30/m"
+  ],
+  "visible_nested_folders": [
+    "2026-09-16/ac/outputs",
+    "2026-09-16/ac/work",
+    "2026-09-17/fix-only-the-current-page-2/outputs",
+    "2026-09-17/fix-only-the-current-page-2/outputs/school-browser-companion-0.2.0",
+    "2026-09-30/m/outputs",
+    "2026-09-30/m/work"
+  ],
+  "coverage": "visible root/children plus bounded direct listings of ac/work, m/work and helper output; hidden entries, repository metadata and deeper directories unverified",
+  "source_bodies_opened": false,
+  "recursive_complete_inventory": false,
+  "new_permissions_granted": false,
+  "security_settings_changed": false,
+  "bulk_copy_or_retirement_performed": false,
+  "inventory_window_no_longer_available_for_deeper_read": false,
+  "root_cause_of_background_access_denial": "unverified; Finder access is separate evidence",
+  "nested_metadata_reads": [
+    {
+      "path": "2026-09-16/ac/work",
+      "visible_item_count": 2,
+      "directories": [
+        {
+          "name": "hub-pr39",
+          "modified_display": "Sep 23, 2026 at 12:08 PM"
+        },
+        {
+          "name": "issue37-private",
+          "modified_display": "Sep 23, 2026 at 12:06 PM"
+        }
+      ],
+      "bodies_opened": false
+    },
+    {
+      "path": "2026-09-30/m/work",
+      "visible_item_count": 0,
+      "hidden_entries_checked": false,
+      "bodies_opened": false
+    },
+    {
+      "path": "2026-09-17/fix-only-the-current-page-2/outputs/school-browser-companion-0.2.0",
+      "visible_item_count": 12,
+      "files": [
+        {
+          "name": "background.js",
+          "size_display": "9 KB"
+        },
+        {
+          "name": "config.js",
+          "size_display": "176 bytes"
+        },
+        {
+          "name": "executor.js",
+          "size_display": "13 KB"
+        },
+        {
+          "name": "hub-content.js",
+          "size_display": "8 KB"
+        },
+        {
+          "name": "ic-adapter.js",
+          "size_display": "23 KB"
+        },
+        {
+          "name": "ic-content.js",
+          "size_display": "4 KB"
+        },
+        {
+          "name": "manifest.json",
+          "size_display": "1 KB"
+        },
+        {
+          "name": "plan.js",
+          "size_display": "8 KB"
+        },
+        {
+          "name": "popup.css",
+          "size_display": "305 bytes"
+        },
+        {
+          "name": "popup.html",
+          "size_display": "1 KB"
+        },
+        {
+          "name": "popup.js",
+          "size_display": "739 bytes"
+        },
+        {
+          "name": "protocol.js",
+          "size_display": "11 KB"
+        }
+      ],
+      "bodies_opened": false,
+      "current_loaded_extension_state": "unverified; folder presence is not loaded runtime evidence"
+    }
+  ],
+  "finder_current_window": "school-browser-companion-0.2.0"
+}

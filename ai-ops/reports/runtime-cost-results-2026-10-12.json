@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "verified_at_utc": "2026-10-12T20:00:27.996964+00:00",
+  "verified_at_utc": "2026-10-12T20:32:25.867880+00:00",
   "repository": "kvond/optimized-system",
   "repository_renamed_from": "kvond/answerable-skills",
   "tests": {
-    "count": 57,
-    "duration_seconds": 2.749,
+    "count": 65,
+    "duration_seconds": 2.775,
     "status": "passed",
     "scope": "synthetic/local; no live workflow or paid-provider acceptance"
   },
@@ -77,5 +77,14 @@
   "cloud_settings_changed": false,
   "paid_routes_enabled": false,
   "full_chat_backups_complete": false,
-  "raw_histories_or_databases_in_git": false
+  "raw_histories_or_databases_in_git": false,
+  "vacancy_gate": {
+    "implementation": "runtime/vacancies.py",
+    "targeted_tests": 8,
+    "live_bounded_source_receipt": "reports/vacancy-gate-acceptance-2026-10-12.json",
+    "cloud_bridge_verified": false,
+    "candidate_matching_performed": false
+  },
+  "live_task_prompt_changed": true,
+  "live_task_change_receipt": "reports/job-watch-change-2026-10-12.json"
 }

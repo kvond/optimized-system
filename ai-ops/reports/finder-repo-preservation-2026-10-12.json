@@ -1,0 +1,83 @@
+{
+  "verified_at_utc": "2026-10-12T21:01:06.616647+00:00",
+  "source_root": "/Users/katherinevonduyke/Documents/Codex/2026-09-16/ac/work",
+  "destination": "/Volumes/AI-Private-Archive/AI-Archive/preservation/repos/finder-ac-2026-10-12-170030",
+  "source_get_info": [
+    {
+      "folder": "hub-pr39",
+      "bytes": 7357577,
+      "items": 499
+    },
+    {
+      "folder": "issue37-private",
+      "bytes": 7081613,
+      "items": 81
+    }
+  ],
+  "combined_source_bytes": 14439190,
+  "copy_method": "ordinary Finder Copy/Paste into unique encrypted destination",
+  "finder_completion": "two destination folders visible; no copy progress indicator",
+  "new_permission_or_security_prompt": false,
+  "source_bodies_opened": false,
+  "originals_preserved": true,
+  "source_permission_changes": false,
+  "source_metadata_note": "hub-pr39 displayed modified Today5PM after GetInfo, before copy; cause unverified, no explicit source-body or permission mutation performed",
+  "copies": [
+    {
+      "folder": "hub-pr39",
+      "copied_regular_files": 737,
+      "copied_subdirectories": 190,
+      "symlink_files_not_hashed": 0,
+      "copied_total_bytes": 7378069,
+      "git_metadata_kind": "directory",
+      "copied_file_hash_readback": true,
+      "source_checksum_comparison": "unavailable; source shell reads denied",
+      "source_get_info_difference": "Copied bytes exceed initial Finder total by20,492; Finder item count differs from hidden-inclusive copied traversal. Cause unverified; no exact source parity claim."
+    },
+    {
+      "folder": "issue37-private",
+      "copied_regular_files": 79,
+      "copied_subdirectories": 1,
+      "symlink_files_not_hashed": 0,
+      "copied_total_bytes": 7081613,
+      "git_metadata_kind": "absent",
+      "copied_file_hash_readback": true,
+      "source_checksum_comparison": "unavailable; source shell reads denied"
+    }
+  ],
+  "private_checksum_manifest": "copied-checksums-private.json inside encrypted destination; raw paths/hashes not published",
+  "complete_source_checksum_verification": false,
+  "retirement_or_deletion": false,
+  "copied_git_metadata": {
+    "evidence": "copied repository only; source parity unverified",
+    "origin_sanitized": "https://github.com/kvond/school-workflow-hub.git",
+    "branch": "codex/agenda-weekly-source-read",
+    "commit_sha": "7136cff72710236ee7aed3740e761081552cdb1a",
+    "commit_date": "2026-09-23T12:04:55-04:00",
+    "status_read_success": true,
+    "dirty": true,
+    "counts": {
+      "untracked": 0,
+      "staged": 1,
+      "modified": 7,
+      "conflicted": 0
+    },
+    "upstream": null,
+    "ahead_behind": null,
+    "network_or_scripts_executed": false
+  },
+  "new_archive_permissions": [
+    {
+      "item": "destination directory",
+      "before": "0o700",
+      "after": "0o700",
+      "scope": "new item only"
+    },
+    {
+      "item": "private checksum manifest",
+      "before": "0o644",
+      "after": "0o600",
+      "scope": "new item only"
+    }
+  ]
+}

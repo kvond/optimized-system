@@ -36,4 +36,8 @@ Measured October 12 against all 11 existing bundles (2,863 whitespace words), us
 | Job monitoring / recurring workflow | 374 | 86.94% |
 | Writing voice / Substack prose | 393 | 86.27% |
 
-These measure actual deterministic text input reduction, not tokenizer counts, dollar savings or live job-monitoring acceptance. Job monitoring retrieves existing workflow rules; it does not invent a missing full job contract. Seven targeted tests pass, including explicit historical-source byte matching and per-bundle receipt association after ranking. The complete runtime suite passed 57 tests in 2.749 seconds at this checkpoint.
+These measure actual deterministic text input reduction, not tokenizer counts, dollar savings or live job-monitoring acceptance. Job monitoring retrieves existing workflow rules; it does not invent a missing full job contract. Seven targeted tests pass, including explicit historical-source byte matching and per-bundle receipt association after ranking. The prior complete runtime suite passed 57 tests in 2.749 seconds; the current vacancy checkpoint passed 65 tests in 2.775 seconds.
+
+## Public vacancy comparison
+
+`vacancies.VacancyGate` accepts normalized evidence from an independently verified source adapter and explicit per-workflow `Grant` objects. It writes private history and receipts under the resolved encrypted state path. Anonymous public pages require `requires_authentication=False`; private grants default to requiring authentication. Incomplete reads return blocked/unknown counts and preserve prior state. No candidate profile/matching, fetcher, schedule or cloud bridge is included. See [bounded acceptance](../reports/vacancy-gate-2026-10-12.md) and [exact receipt](../reports/vacancy-gate-acceptance-2026-10-12.json). The existing cloud task has a saved generic repeat rule; it has no verified access to this local database.

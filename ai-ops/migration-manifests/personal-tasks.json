@@ -2,7 +2,7 @@
   "source_account_assumption_corrected": true,
   "kvond12_active_task_rows": 0,
   "ud_active_task_rows": 5,
-  "no_tasks_changed": true,
+  "no_tasks_changed": false,
   "raw_sensitive_prompts_copied_to_github": false,
   "jobs": [
     {
@@ -18,7 +18,7 @@
       "current_outputs": "source task/chat; delivery channel/test receipt unverified",
       "replacement_status": "STAGED; disabled until tested",
       "proposed_execution": "deterministic retrieval/fingerprints \u2192 cheapest authorized bounded API; UD Claude background if contract/tool benefit demonstrated",
-      "maintenance_owner": "Katherine via private answerable-skills contracts",
+      "maintenance_owner": "Katherine via private optimized-system contracts",
       "cutover_gates": [
         "correct timezone/schedule",
         "same approved input scopes",
@@ -41,7 +41,7 @@
       "current_outputs": "source task/chat; delivery channel/test receipt unverified",
       "replacement_status": "STAGED; disabled until tested",
       "proposed_execution": "deterministic retrieval/fingerprints \u2192 cheapest authorized bounded API; UD Claude background if contract/tool benefit demonstrated",
-      "maintenance_owner": "Katherine via private answerable-skills contracts",
+      "maintenance_owner": "Katherine via private optimized-system contracts",
       "cutover_gates": [
         "correct timezone/schedule",
         "same approved input scopes",
@@ -49,7 +49,8 @@
         "successful test/readback",
         "ownership documented"
       ],
-      "old_task_disabled": false
+      "old_task_disabled": false,
+      "prompt_update": "Generic repeat-work rule saved; original prefix exact readback; no owner/frequency/criteria/destination change"
     },
     {
       "name": "Birthday Gift Workflow",
@@ -64,7 +65,7 @@
       "current_outputs": "source task/chat; delivery channel/test receipt unverified",
       "replacement_status": "STAGED; disabled until tested",
       "proposed_execution": "deterministic retrieval/fingerprints \u2192 cheapest authorized bounded API; UD Claude background if contract/tool benefit demonstrated",
-      "maintenance_owner": "Katherine via private answerable-skills contracts",
+      "maintenance_owner": "Katherine via private optimized-system contracts",
       "cutover_gates": [
         "correct timezone/schedule",
         "same approved input scopes",
@@ -87,7 +88,7 @@
       "current_outputs": "source task/chat; delivery channel/test receipt unverified",
       "replacement_status": "STAGED; disabled until tested",
       "proposed_execution": "deterministic retrieval/fingerprints \u2192 cheapest authorized bounded API; UD Claude background if contract/tool benefit demonstrated",
-      "maintenance_owner": "Katherine via private answerable-skills contracts",
+      "maintenance_owner": "Katherine via private optimized-system contracts",
       "cutover_gates": [
         "correct timezone/schedule",
         "same approved input scopes",
@@ -110,7 +111,7 @@
       "current_outputs": "source task/chat; delivery channel/test receipt unverified",
       "replacement_status": "STAGED; disabled until tested",
       "proposed_execution": "deterministic retrieval/fingerprints \u2192 cheapest authorized bounded API; UD Claude background if contract/tool benefit demonstrated",
-      "maintenance_owner": "Katherine via private answerable-skills contracts",
+      "maintenance_owner": "Katherine via private optimized-system contracts",
       "cutover_gates": [
         "correct timezone/schedule",
         "same approved input scopes",
@@ -118,7 +119,12 @@
         "successful test/readback",
         "ownership documented"
       ],
-      "old_task_disabled": false
+      "old_task_disabled": false,
+      "scope_verification": "Separate production/media-management candidate and source contract; not merged with educator watch"
     }
-  ]
+  ],
+  "updated_at_utc": "2026-10-12T20:49:54.271137+00:00",
+  "schedule_owner_or_cadence_changed": false,
+  "educator_watch_prompt_update_receipt": "reports/job-watch-change-2026-10-12.json",
+  "weekly_scope_distinct_verified": true
 }
