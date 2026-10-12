@@ -63,3 +63,20 @@ ai-ops/runtime/__pycache__/
 ai-ops/runtime/tests/__pycache__/
 *.sqlite
 *.sqlite-*
+
+# Reviewed sanitized AI operations schemas/manifests only
+!/ai-ops/cache-schema/record.json
+!/ai-ops/knowledge/manifest.json
+!/ai-ops/migration-manifests/answerable-preservation.json
+!/ai-ops/migration-manifests/personal-tasks.json
+!/ai-ops/reports/archive-browser-inventory.json
+!/ai-ops/reports/archive-verification.json
+!/ai-ops/reports/cloud-inventory.json
+!/ai-ops/reports/external-drive-inventory.json
+!/ai-ops/reports/repo-inventory.json
+!/ai-ops/retirement-preservation/Answerable-Teaching/book-compile/compile-src/package.json
+!/ai-ops/runtime/contracts.schema.json
+!/ai-ops/runtime/routes.example.json
+!/ai-ops/runtime/routes.schema.json
+!/ai-ops/status/reset-night.json
+!/ai-ops/workflow-contracts/school-current.json

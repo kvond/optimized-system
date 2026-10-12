@@ -1,0 +1,119 @@
+[
+  {
+    "bundle": "teaching-principles.md",
+    "privacy_class": "private_operational",
+    "provenance": "distilled local source policies; audit observations reported, not live acceptance",
+    "sources": [
+      {
+        "path": "skills/book-revision/reference/argument-arc-and-glossary.md",
+        "sha256": "d9b2e2935a9b08ccc0cf42b78da60f1d3a0e317012f96c30c0c463f135bbb230"
+      },
+      {
+        "path": "skills/book-revision/reference/decisions.md",
+        "sha256": "b3ea7de4f01639d3d5f2ac7915ff39eb2e174d9231d2d498625fdabec223420e"
+      },
+      {
+        "path": "docs/book-project/Project Instructions.md",
+        "sha256": "dc5d0c05d47789bf7506342d6a47424a0714a37e42a9e3ab7f966c14d4f0891b"
+      }
+    ]
+  },
+  {
+    "bundle": "wilmington-grading.md",
+    "privacy_class": "private_operational",
+    "provenance": "distilled local source policies; audit observations reported, not live acceptance",
+    "sources": [
+      {
+        "path": "skills/block-update/SKILL.md",
+        "sha256": "9482d3c24e20aa39bf350a1616f4438fccc82015c13cd946f0c589be7ad8d33d"
+      },
+      {
+        "path": "skills/daily-agenda/SKILL.md",
+        "sha256": "1742e4b9706c1641d227df8364fe079f3b866e6db1e72423f9acedbb88d1fe28"
+      }
+    ]
+  },
+  {
+    "bundle": "answerable-teaching-concepts.md",
+    "privacy_class": "private_operational",
+    "provenance": "distilled local source policies; audit observations reported, not live acceptance",
+    "sources": [
+      {
+        "path": "skills/book-revision/reference/argument-arc-and-glossary.md",
+        "sha256": "d9b2e2935a9b08ccc0cf42b78da60f1d3a0e317012f96c30c0c463f135bbb230"
+      },
+      {
+        "path": "skills/book-revision/reference/decisions.md",
+        "sha256": "b3ea7de4f01639d3d5f2ac7915ff39eb2e174d9231d2d498625fdabec223420e"
+      }
+    ]
+  },
+  {
+    "bundle": "writing-voice.md",
+    "privacy_class": "private_operational",
+    "provenance": "distilled local source policies; audit observations reported, not live acceptance",
+    "sources": [
+      {
+        "path": "docs/book-project/Project Instructions.md",
+        "sha256": "dc5d0c05d47789bf7506342d6a47424a0714a37e42a9e3ab7f966c14d4f0891b"
+      },
+      {
+        "path": "skills/book-revision/reference/decisions.md",
+        "sha256": "b3ea7de4f01639d3d5f2ac7915ff39eb2e174d9231d2d498625fdabec223420e"
+      }
+    ]
+  },
+  {
+    "bundle": "substack-voice.md",
+    "privacy_class": "private_operational",
+    "provenance": "distilled local source policies; audit observations reported, not live acceptance",
+    "sources": [
+      {
+        "path": "skills/writing-block/SKILL.md",
+        "sha256": "9d63db70764972fb6d5a8ecbbe537d662fa448af6be7da98818eb56dbb1f30fd"
+      },
+      {
+        "path": "skills/chapter-bank/SKILL.md",
+        "sha256": "a764490388c1400c064effca69622734d3bcd652abd70d8ed19318c6c6b9fc23"
+      },
+      {
+        "path": "docs/book-project/Project Instructions.md",
+        "sha256": "dc5d0c05d47789bf7506342d6a47424a0714a37e42a9e3ab7f966c14d4f0891b"
+      }
+    ]
+  },
+  {
+    "bundle": "workflow-preferences.md",
+    "privacy_class": "private_operational",
+    "provenance": "distilled local source policies; audit observations reported, not live acceptance",
+    "sources": [
+      {
+        "path": "skills/writing-block/SKILL.md",
+        "sha256": "9d63db70764972fb6d5a8ecbbe537d662fa448af6be7da98818eb56dbb1f30fd"
+      },
+      {
+        "path": "skills/block-update/SKILL.md",
+        "sha256": "9482d3c24e20aa39bf350a1616f4438fccc82015c13cd946f0c589be7ad8d33d"
+      },
+      {
+        "path": "skills/book-revision/reference/decisions.md",
+        "sha256": "b3ea7de4f01639d3d5f2ac7915ff39eb2e174d9231d2d498625fdabec223420e"
+      },
+      {
+        "path": "audits/ai-account-audit-2026-10-11.md",
+        "sha256": "c36809199d80112445f991104bb8d0005c162ab2b4da84a898f6154b46b6ff86"
+      }
+    ]
+  },
+  {
+    "bundle": "account-history-index.md",
+    "privacy_class": "private_operational",
+    "provenance": "distilled local source policies; audit observations reported, not live acceptance",
+    "sources": [
+      {
+        "path": "audits/ai-account-audit-2026-10-11.md",
+        "sha256": "c36809199d80112445f991104bb8d0005c162ab2b4da84a898f6154b46b6ff86"
+      }
+    ]
+  }
+]

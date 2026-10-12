@@ -1,0 +1,3243 @@
+{
+  "local": [
+    {
+      "name": "scheduled-runs",
+      "path": "/Users/katherinevonduyke/Claude/projects 2/scheduled-runs",
+      "remote": "git@github.com:kvond/scheduled-runs.git",
+      "privacy": "private",
+      "branch": "main",
+      "dirty": false,
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "0\t0",
+      "divergence_basis": "local upstream refs; not fetched",
+      "unpushed_commit_count": "0",
+      "last_activity": "2026-07-10T11:17:56-04:00",
+      "worktrees": "worktree /Users/katherinevonduyke/Claude/projects 2/scheduled-runs\nHEAD c78fcef4645375487c7e0ab1537ed6b24c34fce1\nbranch refs/heads/main",
+      "tracked_file_count": 14,
+      "top_level_paths": [
+        "README.md",
+        "aihs-update",
+        "answerable-nightly-distill",
+        "author-block",
+        "book-ops-inventory-rebuild",
+        "book-ops-monthly-full-sweep",
+        "daily-brief-v2",
+        "daily-spanish-lesson",
+        "learning-block-agenda",
+        "overnight-book-graph-build",
+        "second-brain-distill",
+        "sunday-weekly-sweep",
+        "tags-pages-sweep",
+        "wilmu-update"
+      ],
+      "classification": "REVIEW",
+      "purpose": "Archived recurring definitions; README says every job retired September 17, actual app schedules require independent verification."
+    },
+    {
+      "name": "Answerable-Teaching",
+      "path": "/Users/katherinevonduyke/Claude/projects 2/Answerable-Teaching",
+      "remote": "",
+      "privacy": "unknown",
+      "branch": "",
+      "dirty": "unknown",
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "",
+      "divergence_basis": "local upstream refs; not fetched",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "",
+      "worktrees": "",
+      "tracked_file_count": 0,
+      "top_level_paths": [],
+      "classification": "REVIEW",
+      "purpose": "Incomplete or unmatched checkout; review required",
+      "git_integrity": "Incomplete .git metadata; no HEAD"
+    },
+    {
+      "name": "answerable-skills",
+      "path": "/Users/katherinevonduyke/code/answerable-skills",
+      "remote": "https://github.com/kvond/answerable-skills.git",
+      "privacy": "private",
+      "branch": "main",
+      "dirty": true,
+      "changed_paths": [],
+      "untracked_files": [
+        "audits/ai-account-audit-2026-10-11.md",
+        "audits/chatgpt-audit-prompt-2026-10-11.md",
+        "audits/ud-claude-audit-prompt-2026-10-11.md",
+        "audits/ud-claude-deep-audit-2026-10-11.md"
+      ],
+      "ahead_behind": "0\t0",
+      "divergence_basis": "local upstream refs; not fetched",
+      "unpushed_commit_count": "0",
+      "last_activity": "2026-09-11T22:19:45-04:00",
+      "worktrees": "worktree /Users/katherinevonduyke/code/answerable-skills\nHEAD 99226e0a7dbbf8e5e563b6c86b271a1d0418c313\nbranch refs/heads/main",
+      "tracked_file_count": 334,
+      "top_level_paths": [
+        "\"docs",
+        ".gitignore",
+        "README.md",
+        "SKILL_LOCATIONS.md",
+        "archive",
+        "audits",
+        "docs",
+        "prompts",
+        "push.sh",
+        "reference",
+        "scripts",
+        "skills",
+        "tools"
+      ],
+      "classification": "KEEP",
+      "purpose": "Reusable skills, scripts, workflow specifications and compact teaching/book knowledge; active Claude skills symlink target."
+    },
+    {
+      "name": "feedback-system",
+      "path": "/Users/katherinevonduyke/code/feedback-system",
+      "remote": "https://github.com/kvond/feedback-system.git",
+      "privacy": "private",
+      "branch": "main",
+      "dirty": true,
+      "changed_paths": [],
+      "untracked_files": [
+        "engine/scripts/extract_and_grade.py.bak-2026-08-10"
+      ],
+      "ahead_behind": "0\t0",
+      "divergence_basis": "local upstream refs; not fetched",
+      "unpushed_commit_count": "0",
+      "last_activity": "2026-08-10T18:47:32Z",
+      "worktrees": "worktree /Users/katherinevonduyke/code/feedback-system\nHEAD c63d493ef741d6163be5edac09830c2447d65695\nbranch refs/heads/main",
+      "tracked_file_count": 74,
+      "top_level_paths": [
+        ".claude",
+        ".gitignore",
+        "BUILD_PLAN.md",
+        "SEPTEMBER_KICKOFF.md",
+        "STATUS.md",
+        "engine",
+        "render.yaml",
+        "webapp"
+      ],
+      "classification": "REVIEW",
+      "purpose": "Archived feedback webapp and legacy pipeline engine; Render blueprint exists, deployment status unknown."
+    },
+    {
+      "name": "answerable",
+      "path": "/Users/katherinevonduyke/answerable",
+      "remote": "https://github.com/kvond/answerable-skills.git",
+      "privacy": "private",
+      "branch": "main",
+      "dirty": false,
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "2\t0",
+      "divergence_basis": "local upstream refs; not fetched",
+      "unpushed_commit_count": "2",
+      "last_activity": "2026-09-03T13:07:35Z",
+      "worktrees": "worktree /Users/katherinevonduyke/answerable\nHEAD 5bfea61fd51628ba8ea3f5fb425fcf73d518f90c\nbranch refs/heads/main",
+      "tracked_file_count": 66,
+      "top_level_paths": [
+        ".gitignore",
+        "README.md",
+        "SKILL_LOCATIONS.md",
+        "archive",
+        "docs",
+        "prompts",
+        "reference",
+        "skills",
+        "tools"
+      ],
+      "classification": "REVIEW",
+      "purpose": "Reusable skills, scripts, workflow specifications and compact teaching/book knowledge; active Claude skills symlink target."
+    },
+    {
+      "name": "scheduled-runs",
+      "path": "/Users/katherinevonduyke/skills_recon/clones/scheduled-runs",
+      "remote": "https://github.com/kvond/scheduled-runs.git",
+      "privacy": "private",
+      "branch": "main",
+      "dirty": false,
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "0\t0",
+      "divergence_basis": "local upstream refs; not fetched",
+      "unpushed_commit_count": "0",
+      "last_activity": "2026-07-10T11:17:56-04:00",
+      "worktrees": "worktree /Users/katherinevonduyke/skills_recon/clones/scheduled-runs\nHEAD c78fcef4645375487c7e0ab1537ed6b24c34fce1\nbranch refs/heads/main",
+      "tracked_file_count": 14,
+      "top_level_paths": [
+        "README.md",
+        "aihs-update",
+        "answerable-nightly-distill",
+        "author-block",
+        "book-ops-inventory-rebuild",
+        "book-ops-monthly-full-sweep",
+        "daily-brief-v2",
+        "daily-spanish-lesson",
+        "learning-block-agenda",
+        "overnight-book-graph-build",
+        "second-brain-distill",
+        "sunday-weekly-sweep",
+        "tags-pages-sweep",
+        "wilmu-update"
+      ],
+      "classification": "REVIEW",
+      "purpose": "Archived recurring definitions; README says every job retired September 17, actual app schedules require independent verification."
+    },
+    {
+      "name": "Answerable-Teaching",
+      "path": "/Users/katherinevonduyke/skills_recon/clones/Answerable-Teaching",
+      "remote": "https://github.com/kvond/Answerable-Teaching.git",
+      "privacy": "private",
+      "branch": "main",
+      "dirty": false,
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "0\t0",
+      "divergence_basis": "local upstream refs; not fetched",
+      "unpushed_commit_count": "0",
+      "last_activity": "2026-08-23T18:07:35-04:00",
+      "worktrees": "worktree /Users/katherinevonduyke/skills_recon/clones/Answerable-Teaching\nHEAD 2b896243787184b767c5407bf81f6547c7199662\nbranch refs/heads/main",
+      "tracked_file_count": 84,
+      "top_level_paths": [
+        ".gitignore",
+        "README.md",
+        "SYNC.md",
+        "book-compile",
+        "book-ops",
+        "com.kvond.answerable-publish.plist",
+        "nightly-publish.sh",
+        "scripts",
+        "site",
+        "source",
+        "sync.sh",
+        "writing"
+      ],
+      "classification": "RETIRE / DELETE-REVIEW",
+      "purpose": "Legacy manuscript, compilation, book-ops and revision tooling; Google Docs is canonical per current instruction."
+    },
+    {
+      "name": "answerable-skills",
+      "path": "/Users/katherinevonduyke/skills_recon/pre_reconcile_2026-08-29_1542/answerable-skills",
+      "remote": "https://github.com/kvond/answerable-skills.git",
+      "privacy": "private",
+      "branch": "main",
+      "dirty": false,
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "0\t0",
+      "divergence_basis": "local upstream refs; not fetched",
+      "unpushed_commit_count": "0",
+      "last_activity": "2026-08-29T19:31:45Z",
+      "worktrees": "worktree /Users/katherinevonduyke/skills_recon/pre_reconcile_2026-08-29_1542/answerable-skills\nHEAD 7a84b6a51e2f329f0ac3bffc70003a0856a2304c\nbranch refs/heads/main",
+      "tracked_file_count": 80,
+      "top_level_paths": [
+        "\"docs",
+        ".gitignore",
+        "README.md",
+        "archive",
+        "docs",
+        "prompts",
+        "scripts",
+        "skills",
+        "tools"
+      ],
+      "classification": "REVIEW",
+      "purpose": "Reusable skills, scripts, workflow specifications and compact teaching/book knowledge; active Claude skills symlink target."
+    },
+    {
+      "name": "answerable",
+      "path": "/Users/katherinevonduyke/skills_recon/pre_reconcile_2026-08-29_1542/answerable",
+      "remote": "https://github.com/kvond/answerable-skills.git",
+      "privacy": "private",
+      "branch": "main",
+      "dirty": false,
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "1\t0",
+      "divergence_basis": "local upstream refs; not fetched",
+      "unpushed_commit_count": "1",
+      "last_activity": "2026-08-29T14:20:10-04:00",
+      "worktrees": "worktree /Users/katherinevonduyke/skills_recon/pre_reconcile_2026-08-29_1542/answerable\nHEAD dbd6244272bdce83382c41328da8b9ee34026156\nbranch refs/heads/main",
+      "tracked_file_count": 64,
+      "top_level_paths": [
+        ".gitignore",
+        "README.md",
+        "SKILL_LOCATIONS.md",
+        "archive",
+        "docs",
+        "prompts",
+        "reference",
+        "skills",
+        "tools"
+      ],
+      "classification": "REVIEW",
+      "purpose": "Reusable skills, scripts, workflow specifications and compact teaching/book knowledge; active Claude skills symlink target."
+    },
+    {
+      "name": "helper-autosave",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-09-30/th/work/helper-autosave",
+      "remote": "https://github.com/kvond/school-workflow-hub",
+      "privacy": "private",
+      "branch": "handoff/helper-autosave",
+      "dirty": false,
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "1\t0",
+      "unpushed_commit_count": "1",
+      "last_activity": "2026-10-01T06:27:04-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "audit-bound-native-teacher-readiness",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/audit-bound-native-teacher-readiness",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/audit.py"
+      ],
+      "untracked_files": [
+        "tests/test_audit_bound_native_teacher.py"
+      ],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T15:32:32-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "audit-form-source-readiness",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/audit-form-source-readiness",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "codex/audit-form-source-readiness",
+      "dirty": false,
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "0\t0",
+      "unpushed_commit_count": "0",
+      "last_activity": "2026-10-11T17:09:03-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "crossweek-matched-source-context",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/crossweek-matched-source-context",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/review_context.py",
+        "src/hub_v2/static/app.js",
+        "src/hub_v2/work.py",
+        "tests/hub-morning-ui.test.mjs"
+      ],
+      "untracked_files": [
+        "tests/test_crossweek_source_context.py",
+        "tests/test_exact_teacher_routing_priority.py"
+      ],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T14:49:58-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "exact-crossweek-accepted-intake",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/exact-crossweek-accepted-intake",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/work.py"
+      ],
+      "untracked_files": [
+        "tests/test_crossweek_accepted_intake.py"
+      ],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T15:32:00-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "exact-reasoning-policy",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/exact-reasoning-policy",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "codex/exact-reasoning-policy",
+      "dirty": true,
+      "changed_paths": [
+        "ocs/START_HERE.md",
+        "src/hub_v2/work.py"
+      ],
+      "untracked_files": [
+        "tests/test_exact_reasoning_policy.py"
+      ],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T15:54:09-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "exact-teacher-routing-priority",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/exact-teacher-routing-priority",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/work.py"
+      ],
+      "untracked_files": [
+        "tests/test_exact_teacher_routing_priority.py"
+      ],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T14:49:58-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "former-source-history-review",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/former-source-history-review",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "codex/former-source-history-review",
+      "dirty": true,
+      "changed_paths": [
+        "ocs/START_HERE.md",
+        "src/hub_v2/review_context.py",
+        "src/hub_v2/static/app.js",
+        "src/hub_v2/student_archive.py",
+        "tests/hub-morning-ui.test.mjs",
+        "tests/test_review_former_student_work.py"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T14:49:58-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "helper-partial-component-map",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/helper-partial-component-map",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "codex/helper-partial-component-map",
+      "dirty": true,
+      "changed_paths": [
+        "ocs/START_HERE.md",
+        "src/hub_v2/app.py",
+        "src/hub_v2/morning.py",
+        "tests/test_morning_partial_components.py"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T14:49:58-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-IC-dirty-Save-edge-local",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-IC-dirty-Save-edge-local",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rowser-extension/ic-entry.js",
+        "browser-extension/tests/ic-entry-executor.test.cjs"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T05:04:37-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-IC-dirty-Save-edge-local-v2",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-IC-dirty-Save-edge-local-v2",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rowser-extension/ic-entry.js",
+        "browser-extension/tests/ic-entry-executor.test.cjs"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T05:04:37-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-IC-recognized-score-events-local-v3",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-IC-recognized-score-events-local-v3",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rowser-extension/ic-entry.js",
+        "browser-extension/tests/ic-entry-executor.test.cjs"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T05:04:37-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-Observation-preferred-folder-recheck",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-Observation-preferred-folder-recheck",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/completion.py"
+      ],
+      "untracked_files": [
+        "tests/test_recheck_preferred_folder_canonical_event.py"
+      ],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T02:41:13-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-W06-combined-assessment",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-W06-combined-assessment",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "ocs/COMBINED_ASSESSMENTS.md",
+        "src/hub_v2/app.py",
+        "src/hub_v2/combined_assessment.py",
+        "src/hub_v2/completion.py",
+        "src/hub_v2/morning.py",
+        "src/hub_v2/native_feedback.py",
+        "src/hub_v2/static/app.js",
+        "src/hub_v2/work.py",
+        "tests/combined-assessment-ui.test.mjs",
+        "tests/test_combined_assessment.py"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-10T23:18:31-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-W06-combined-assessment-v2",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-W06-combined-assessment-v2",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "ocs/COMBINED_ASSESSMENTS.md",
+        "src/hub_v2/app.py",
+        "src/hub_v2/combined_assessment.py",
+        "src/hub_v2/completion.py",
+        "src/hub_v2/morning.py",
+        "src/hub_v2/native_feedback.py",
+        "src/hub_v2/static/app.js",
+        "src/hub_v2/work.py",
+        "tests/combined-assessment-ui.test.mjs",
+        "tests/test_combined_assessment.py"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-10T23:18:31-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-actual-received",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-actual-received",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "codex/actual-received-response-binding",
+      "dirty": false,
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "0\t33",
+      "unpushed_commit_count": "0",
+      "last_activity": "2026-10-10T12:52:12-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-anatomy-activity",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-anatomy-activity",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "codex/anatomy-activity-bindings",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/completion.py",
+        "src/hub_v2/response_binding.py"
+      ],
+      "untracked_files": [
+        "tests/test_anatomy_activity_binding.py"
+      ],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-10T13:40:48-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-anatomy-bank-label",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-anatomy-bank-label",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/completion.py"
+      ],
+      "untracked_files": [
+        "tests/test_completion_coded_bank_term_labels.py"
+      ],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-10T20:45:12-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-authentic-choice-highlight",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-authentic-choice-highlight",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/completion.py",
+        "src/hub_v2/graphical_choice.py"
+      ],
+      "untracked_files": [
+        "tests/test_eyewitness_choice_highlight.py"
+      ],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-10T22:01:15-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-combined-parallel-source-capture-840a",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-combined-parallel-source-capture-840a",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rowser-extension/manifest.json",
+        "browser-extension/tests/morning-runtime.test.cjs",
+        "browser-extension/tests/readback-helper-update-recovery.test.cjs",
+        "browser-extension/tests/receipt-version027-recovery.test.cjs",
+        "browser-extension/tests/typing-helper-update-recovery.test.cjs",
+        "src/hub_v2/combined_assessment.py",
+        "tests/test_combined_parallel_sources.py"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T09:41:15-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-combined-request-source-cache",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-combined-request-source-cache",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/app.py",
+        "src/hub_v2/combined_assessment.py",
+        "src/hub_v2/google.py",
+        "src/hub_v2/morning.py",
+        "tests/test_combined_request_captures.py"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T03:29:42-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-combined-request-source-cache-v2",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-combined-request-source-cache-v2",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/app.py",
+        "src/hub_v2/combined_assessment.py",
+        "src/hub_v2/google.py",
+        "src/hub_v2/morning.py",
+        "tests/test_combined_request_captures.py"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T03:29:42-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-current-helper-ui-copy",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-current-helper-ui-copy",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/static/app.js"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-10T23:18:31-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-current-receipt-verified-recovery",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-current-receipt-verified-recovery",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rowser-extension/morning-background.js",
+        "browser-extension/popup.js",
+        "browser-extension/tests/manual-now-popup.test.cjs",
+        "browser-extension/tests/morning-runtime.test.cjs"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T02:41:13-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-current-receipt-verified-recovery-v2",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-current-receipt-verified-recovery-v2",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rowser-extension/morning-background.js",
+        "browser-extension/popup.js",
+        "browser-extension/tests/manual-now-popup.test.cjs",
+        "browser-extension/tests/morning-runtime.test.cjs"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T02:41:13-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-deploy",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-deploy",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "codex/hub-source-match-deploy",
+      "dirty": false,
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "0\t12",
+      "unpushed_commit_count": "0",
+      "last_activity": "2026-10-11T11:15:52-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-explicit-manual-all-days",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-explicit-manual-all-days",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rowser-extension/README.md",
+        "browser-extension/morning-background.js",
+        "browser-extension/popup.html",
+        "browser-extension/popup.js",
+        "browser-extension/tests/morning-runtime.test.cjs"
+      ],
+      "untracked_files": [
+        "browser-extension/tests/manual-now-popup.test.cjs"
+      ],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-10T21:23:16-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-eyewitness-choice",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-eyewitness-choice",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "codex/eyewitness-choice",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/completion.py",
+        "src/hub_v2/graphical_choice.py",
+        "tests/test_eyewitness_choice_binding.py"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-10T14:17:58-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-eyewitness-choice-v3",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-eyewitness-choice-v3",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "codex/eyewitness-choice-v3",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/completion.py",
+        "src/hub_v2/graphical_choice.py",
+        "tests/test_eyewitness_choice_binding.py"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-10T14:47:20-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-eyewitness-choice-v4",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-eyewitness-choice-v4",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "codex/eyewitness-choice-v4",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/completion.py",
+        "src/hub_v2/graphical_choice.py",
+        "tests/test_eyewitness_choice_binding.py"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-10T14:47:20-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-eyewitness-choice-v5",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-eyewitness-choice-v5",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "codex/eyewitness-choice-v5",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/completion.py",
+        "src/hub_v2/graphical_choice.py",
+        "tests/test_eyewitness_choice_binding.py"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-10T14:47:20-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-eyewitness-orphan-revision",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-eyewitness-orphan-revision",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/completion.py",
+        "src/hub_v2/graphical_choice.py"
+      ],
+      "untracked_files": [
+        "tests/test_eyewitness_revision_without_choice_code.py"
+      ],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-10T22:01:15-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-eyewitness-three-parser-combined",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-eyewitness-three-parser-combined",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/completion.py",
+        "src/hub_v2/graphical_choice.py"
+      ],
+      "untracked_files": [
+        "tests/test_eyewitness_revision_without_choice_code.py",
+        "tests/test_response_review_slide_context.py"
+      ],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-10T22:01:15-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-eyewitness-three-parser-combined-v2",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-eyewitness-three-parser-combined-v2",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/completion.py",
+        "src/hub_v2/graphical_choice.py"
+      ],
+      "untracked_files": [
+        "tests/test_eyewitness_choice_highlight.py",
+        "tests/test_eyewitness_revision_without_choice_code.py",
+        "tests/test_response_review_slide_context.py"
+      ],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-10T22:01:15-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-feedback-repair-eligibility",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-feedback-repair-eligibility",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "codex/verified-technical-repair-feedback",
+      "dirty": true,
+      "changed_paths": [
+        "ocs/FEEDBACK_V2.md",
+        "src/hub_v2/native_feedback.py",
+        "src/hub_v2/source_repair_provenance.py",
+        "src/school_workflow_hub/adapters/assessment_save.py",
+        "tests/test_assessment_capture.py",
+        "tests/test_source_repair_provenance.py"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-10T13:40:48-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-feedback-source-date",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-feedback-source-date",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "codex/feedback-source-date-preservation",
+      "dirty": false,
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "0\t32",
+      "unpushed_commit_count": "0",
+      "last_activity": "2026-10-10T13:12:40-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-four-reviewed-integration",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-four-reviewed-integration",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "ocs/COMBINED_ASSESSMENTS.md",
+        "src/hub_v2/app.py",
+        "src/hub_v2/combined_assessment.py",
+        "src/hub_v2/completion.py",
+        "src/hub_v2/google.py",
+        "src/hub_v2/morning.py",
+        "src/hub_v2/native_feedback.py",
+        "src/hub_v2/native_teacher_source.py",
+        "src/hub_v2/received_rows.py",
+        "src/hub_v2/response_binding.py",
+        "src/hub_v2/static/app.js",
+        "src/hub_v2/work.py",
+        "tests/combined-assessment-ui.test.mjs",
+        "tests/test_combined_assessment.py",
+        "tests/test_native_teacher_source.py",
+        "tests/test_student_found_codes.py",
+        "tests/test_types_received_row_variants.py"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-10T23:18:31-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-four-reviewed-integration-v2",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-four-reviewed-integration-v2",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "ocs/COMBINED_ASSESSMENTS.md",
+        "src/hub_v2/app.py",
+        "src/hub_v2/combined_assessment.py",
+        "src/hub_v2/completion.py",
+        "src/hub_v2/google.py",
+        "src/hub_v2/morning.py",
+        "src/hub_v2/native_feedback.py",
+        "src/hub_v2/native_teacher_source.py",
+        "src/hub_v2/received_rows.py",
+        "src/hub_v2/response_binding.py",
+        "src/hub_v2/static/app.js",
+        "src/hub_v2/work.py",
+        "tests/combined-assessment-ui.test.mjs",
+        "tests/test_combined_assessment.py",
+        "tests/test_native_teacher_source.py",
+        "tests/test_student_found_codes.py",
+        "tests/test_types_received_row_variants.py"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-10T23:18:31-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-helper-partial-explicit-recheck",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-helper-partial-explicit-recheck",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rowser-extension/manifest.json",
+        "browser-extension/morning-background.js",
+        "browser-extension/tests/morning-runtime.test.cjs"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T01:06:07-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-helper-partial-explicit-recheck-v2",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-helper-partial-explicit-recheck-v2",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rowser-extension/manifest.json",
+        "browser-extension/morning-background.js",
+        "browser-extension/tests/morning-runtime.test.cjs"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T01:06:07-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-helper024-combined-events-and-recovery",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-helper024-combined-events-and-recovery",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rowser-extension/ic-entry.js",
+        "browser-extension/manifest.json",
+        "browser-extension/morning-background.js",
+        "browser-extension/popup.html",
+        "browser-extension/popup.js",
+        "browser-extension/tests/ic-entry-executor.test.cjs",
+        "browser-extension/tests/morning-runtime.test.cjs",
+        "browser-extension/tests/readback-helper-update-recovery.test.cjs"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T05:04:37-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-helper024-readback-recovery",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-helper024-readback-recovery",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rowser-extension/manifest.json",
+        "browser-extension/morning-background.js",
+        "browser-extension/popup.html",
+        "browser-extension/popup.js",
+        "browser-extension/tests/morning-runtime.test.cjs"
+      ],
+      "untracked_files": [
+        "browser-extension/tests/readback-helper-update-recovery.test.cjs"
+      ],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T05:04:37-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-helper025-feedback-fields-reason-combined",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-helper025-feedback-fields-reason-combined",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rowser-extension/ic-entry.js",
+        "browser-extension/manifest.json",
+        "browser-extension/morning-background.js",
+        "browser-extension/popup.html",
+        "browser-extension/popup.js",
+        "browser-extension/tests/ic-entry-executor.test.cjs",
+        "browser-extension/tests/morning-runtime.test.cjs",
+        "browser-extension/tests/readback-helper-update-recovery.test.cjs",
+        "browser-extension/tests/typing-helper-update-recovery.test.cjs",
+        "docs/STUDENT_RECORDS.md",
+        "src/hub_v2/completion.py",
+        "src/hub_v2/feedback_pdf.py",
+        "src/hub_v2/imported_original_feedback.py",
+        "src/hub_v2/morning.py",
+        "src/hub_v2/original_field_graphics.py",
+        "src/hub_v2/student_archive.py",
+        "src/hub_v2/writing_fields.py",
+        "tests/test_imported_worksheet_feedback.py",
+        "tests/test_morning_held_route_reason.py",
+        "tests/test_original_field_graphics.py",
+        "tests/test_original_writing_fields.py"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T06:14:52-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-helper025-postblur-and-checked-typing",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-helper025-postblur-and-checked-typing",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rowser-extension/ic-entry.js",
+        "browser-extension/manifest.json",
+        "browser-extension/morning-background.js",
+        "browser-extension/popup.html",
+        "browser-extension/popup.js",
+        "browser-extension/tests/ic-entry-executor.test.cjs",
+        "browser-extension/tests/morning-runtime.test.cjs",
+        "browser-extension/tests/readback-helper-update-recovery.test.cjs"
+      ],
+      "untracked_files": [
+        "browser-extension/tests/typing-helper-update-recovery.test.cjs"
+      ],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T06:14:52-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-helper026-and-exported-fields-combined",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-helper026-and-exported-fields-combined",
+      "remote": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-deploy",
+      "privacy": "unknown",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rowser-extension/ic-entry.js",
+        "browser-extension/manifest.json",
+        "browser-extension/morning-background.js",
+        "browser-extension/popup.html",
+        "browser-extension/popup.js",
+        "browser-extension/tests/ic-entry-executor.test.cjs",
+        "browser-extension/tests/morning-runtime.test.cjs",
+        "browser-extension/tests/readback-helper-update-recovery.test.cjs",
+        "browser-extension/tests/typing-helper-update-recovery.test.cjs",
+        "src/hub_v2/morning.py",
+        "src/hub_v2/writing_fields.py",
+        "tests/test_hub_morning.py",
+        "tests/test_original_writing_style_resource_roles.py"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T07:31:41-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-helper026-checked-typing-recovery",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-helper026-checked-typing-recovery",
+      "remote": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-deploy",
+      "privacy": "unknown",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rowser-extension/manifest.json",
+        "browser-extension/morning-background.js",
+        "browser-extension/popup.html",
+        "browser-extension/popup.js",
+        "browser-extension/tests/typing-helper-update-recovery.test.cjs"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T07:31:41-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-import-source-capture-combined-v2",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-import-source-capture-combined-v2",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "ocs/STUDENT_RECORDS.md",
+        "src/hub_v2/app.py",
+        "src/hub_v2/combined_assessment.py",
+        "src/hub_v2/google.py",
+        "src/hub_v2/morning.py",
+        "src/hub_v2/student_archive.py",
+        "tests/test_combined_request_captures.py",
+        "tests/test_imported_original_archive.py"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T03:29:42-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-imported-worksheet-feedback",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-imported-worksheet-feedback",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "ocs/STUDENT_RECORDS.md",
+        "src/hub_v2/imported_original_feedback.py",
+        "src/hub_v2/student_archive.py",
+        "tests/test_imported_worksheet_feedback.py"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T05:04:37-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-imported-worksheet-feedback-v2-root-context",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-imported-worksheet-feedback-v2-root-context",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "ocs/STUDENT_RECORDS.md",
+        "src/hub_v2/feedback_pdf.py",
+        "src/hub_v2/student_archive.py"
+      ],
+      "untracked_files": [
+        "src/hub_v2/imported_original_feedback.py",
+        "tests/test_imported_worksheet_feedback.py"
+      ],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T06:14:52-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-morning-eligible-receipt",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-morning-eligible-receipt",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rowser-extension/manifest.json",
+        "browser-extension/morning-hub.js",
+        "browser-extension/tests/morning-runtime.test.cjs",
+        "src/hub_v2/app.py"
+      ],
+      "untracked_files": [
+        "browser-extension/tests/morning-eligible-bridge.test.cjs",
+        "src/hub_v2/morning_entry.py",
+        "tests/test_morning_eligible_entry.py"
+      ],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T02:41:13-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-morning-entry-request-capture",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-morning-entry-request-capture",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/app.py",
+        "tests/test_morning_entry_request_capture.py"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T09:27:34-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-morning022-recovery-orientation-combined",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-morning022-recovery-orientation-combined",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rowser-extension/manifest.json",
+        "browser-extension/morning-background.js",
+        "browser-extension/morning-hub.js",
+        "browser-extension/popup.js",
+        "browser-extension/tests/manual-now-popup.test.cjs",
+        "browser-extension/tests/morning-eligible-bridge.test.cjs",
+        "browser-extension/tests/morning-runtime.test.cjs",
+        "src/hub_v2/app.py",
+        "src/hub_v2/completion.py",
+        "src/hub_v2/morning_entry.py",
+        "tests/test_morning_eligible_entry.py",
+        "tests/test_recheck_preferred_folder_canonical_event.py"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T02:41:13-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-morning022-recovery-orientation-combined-v2",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-morning022-recovery-orientation-combined-v2",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rowser-extension/manifest.json",
+        "browser-extension/morning-background.js",
+        "browser-extension/morning-hub.js",
+        "browser-extension/popup.js",
+        "browser-extension/tests/manual-now-popup.test.cjs",
+        "browser-extension/tests/morning-eligible-bridge.test.cjs",
+        "browser-extension/tests/morning-runtime.test.cjs",
+        "src/hub_v2/app.py",
+        "src/hub_v2/completion.py",
+        "src/hub_v2/morning_entry.py",
+        "tests/test_morning_eligible_entry.py",
+        "tests/test_recheck_preferred_folder_canonical_event.py"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T02:41:13-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-named-native-archive-local-3c97",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-named-native-archive-local-3c97",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/named_archival_work.py",
+        "src/hub_v2/student_archive.py",
+        "tests/test_named_archival_work.py"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T08:48:56-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-native-teacher-read-v1",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-native-teacher-read-v1",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "src/hub_v2/completion.py",
+        "src/hub_v2/google.py",
+        "src/hub_v2/native_teacher_source.py",
+        "tests/test_native_teacher_source.py",
+        "tests/test_student_found_codes.py"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-10T23:18:31-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-nextyear-exported-bindings-local-v4",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-nextyear-exported-bindings-local-v4",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/writing_fields.py"
+      ],
+      "untracked_files": [
+        "tests/test_original_writing_style_resource_roles.py"
+      ],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T07:31:41-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-nextyear-original-field-graphics",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-nextyear-original-field-graphics",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/completion.py"
+      ],
+      "untracked_files": [
+        "src/hub_v2/original_field_graphics.py",
+        "src/hub_v2/writing_fields.py",
+        "tests/test_original_field_graphics.py",
+        "tests/test_original_writing_fields.py"
+      ],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T05:04:37-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-nextyear-original-field-graphics-v2",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-nextyear-original-field-graphics-v2",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/completion.py"
+      ],
+      "untracked_files": [
+        "src/hub_v2/original_field_graphics.py",
+        "src/hub_v2/writing_fields.py",
+        "tests/test_original_field_graphics.py",
+        "tests/test_original_writing_fields.py"
+      ],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T05:04:37-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-nextyear-original-writing-fields",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-nextyear-original-writing-fields",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/completion.py"
+      ],
+      "untracked_files": [
+        "src/hub_v2/writing_fields.py",
+        "tests/test_original_writing_fields.py"
+      ],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T03:29:42-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-nextyear-original-writing-fields-current-bbaf",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-nextyear-original-writing-fields-current-bbaf",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/completion.py"
+      ],
+      "untracked_files": [
+        "src/hub_v2/writing_fields.py",
+        "tests/test_original_writing_fields.py"
+      ],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T05:04:37-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-nextyear-original-writing-fields-current-bbaf-v2",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-nextyear-original-writing-fields-current-bbaf-v2",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/completion.py",
+        "src/hub_v2/writing_fields.py",
+        "tests/test_original_writing_fields.py"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T05:04:37-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-nextyear-original-writing-fields-current-bbaf-v3",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-nextyear-original-writing-fields-current-bbaf-v3",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/completion.py",
+        "src/hub_v2/writing_fields.py",
+        "tests/test_original_writing_fields.py"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T05:04:37-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-observation-held-route-context",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-observation-held-route-context",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/morning.py"
+      ],
+      "untracked_files": [
+        "tests/test_morning_held_route_reason.py"
+      ],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T06:14:52-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-observation-held-route-context-v2",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-observation-held-route-context-v2",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/morning.py"
+      ],
+      "untracked_files": [
+        "tests/test_morning_held_route_reason.py"
+      ],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T06:14:52-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-repair",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-repair",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "main",
+      "dirty": true,
+      "changed_paths": [
+        "rowser-extension/README.md",
+        "browser-extension/entry.js",
+        "browser-extension/ic-entry.js",
+        "browser-extension/manifest.json",
+        "browser-extension/morning-background.js",
+        "browser-extension/morning.js",
+        "browser-extension/tests/entry-runtime.test.cjs",
+        "browser-extension/tests/entry.test.cjs",
+        "browser-extension/tests/morning.test.cjs",
+        "docs/AGENDA_PROMPTS.md",
+        "docs/FEEDBACK_V2.md",
+        "prompts/README.md",
+        "src/hub_v2/morning.py",
+        "src/hub_v2/static/app.js",
+        "src/hub_v2/static/index.html",
+        "src/hub_v2/work.py",
+        "tests/test_hub_morning.py",
+        "tests/test_hub_v2.py",
+        "web/teacher-prompts.json"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "0\t84",
+      "unpushed_commit_count": "0",
+      "last_activity": "2026-10-02T13:24:25-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-response-review-slide-context",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-response-review-slide-context",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/completion.py"
+      ],
+      "untracked_files": [
+        "tests/test_response_review_slide_context.py"
+      ],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-10T22:01:15-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-routine-deploy",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-routine-deploy",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "codex/teacher-load-reduction",
+      "dirty": false,
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "0\t0",
+      "unpushed_commit_count": "0",
+      "last_activity": "2026-10-08T12:51:05-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-schoology-imported-originals",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-schoology-imported-originals",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "ocs/STUDENT_RECORDS.md",
+        "src/hub_v2/student_archive.py"
+      ],
+      "untracked_files": [
+        "tests/test_imported_original_archive.py"
+      ],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T03:29:42-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-source-changed-explicit-recovery-023",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-source-changed-explicit-recovery-023",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rowser-extension/manifest.json",
+        "browser-extension/morning-background.js",
+        "browser-extension/popup.js",
+        "browser-extension/tests/morning-runtime.test.cjs"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T04:32:34-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-types-brainstorm-workspace",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-types-brainstorm-workspace",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/completion.py",
+        "src/hub_v2/response_binding.py",
+        "src/hub_v2/workspace_binding.py",
+        "tests/test_prefilled_writing_workspace.py"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-10T22:35:55-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-types-evidence-activity",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-types-evidence-activity",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "codex/types-evidence-activity",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/completion.py",
+        "src/hub_v2/response_binding.py",
+        "tests/test_types_evidence_activity_binding.py"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-10T14:17:58-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-types-received-row-variants",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-types-received-row-variants",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/received_rows.py",
+        "src/hub_v2/response_binding.py",
+        "tests/test_types_received_row_variants.py"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-10T22:35:55-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-types-received-row-variants-current",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-types-received-row-variants-current",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/received_rows.py",
+        "src/hub_v2/response_binding.py",
+        "tests/test_types_received_row_variants.py"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-10T23:18:31-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-types-received-row-variants-v2",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-types-received-row-variants-v2",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "src/hub_v2/received_rows.py",
+        "src/hub_v2/response_binding.py",
+        "tests/test_types_received_row_variants.py"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-10T23:18:31-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-types-received-row-variants-v3",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-types-received-row-variants-v3",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "src/hub_v2/received_rows.py",
+        "src/hub_v2/response_binding.py",
+        "tests/test_types_received_row_variants.py"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-10T23:18:31-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-verified-form-older-folder-history",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/hub-verified-form-older-folder-history",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/completion.py"
+      ],
+      "untracked_files": [
+        "tests/test_completion_older_routed_folder_history.py"
+      ],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-10T21:23:16-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "receipt-only-long-readback-deadline",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/receipt-only-long-readback-deadline",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "codex/receipt-only-long-readback-deadline",
+      "dirty": true,
+      "changed_paths": [
+        "rowser-extension/README.md",
+        "browser-extension/manifest.json",
+        "browser-extension/morning-background.js",
+        "browser-extension/morning-hub.js",
+        "browser-extension/tests/morning-eligible-bridge.test.cjs",
+        "browser-extension/tests/morning-runtime.test.cjs",
+        "browser-extension/tests/readback-helper-update-recovery.test.cjs",
+        "browser-extension/tests/typing-helper-update-recovery.test.cjs"
+      ],
+      "untracked_files": [
+        "browser-extension/tests/virtual-deadline-clock.cjs"
+      ],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T15:54:09-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "review-context-23",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/review-context-23",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "codex/source-resolutions-9-24",
+      "dirty": false,
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "0\t0",
+      "unpushed_commit_count": "0",
+      "last_activity": "2026-10-11T14:15:42-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "source-history-raw-provider-metadata-b523",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/source-history-raw-provider-metadata-b523",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "codex/source-history-raw-provider-metadata",
+      "dirty": true,
+      "changed_paths": [
+        "rc/hub_v2/source_history_dispositions.py",
+        "tests/test_source_history_dispositions.py",
+        "tests/test_source_history_raw_metadata.py",
+        "tests/test_source_history_single_component.py"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T15:54:09-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "source-history-single-mapped-component",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/source-history-single-mapped-component",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": true,
+      "changed_paths": [
+        "ocs/START_HERE.md",
+        "src/hub_v2/source_history_dispositions.py"
+      ],
+      "untracked_files": [
+        "tests/test_source_history_single_component.py"
+      ],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T15:32:32-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "source-resolution-live-read",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/source-resolution-live-read",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "",
+      "dirty": false,
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-10-11T13:37:27-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "source-review-dispositions",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20/work/source-review-dispositions",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "codex/exact-intake-and-lesson-readiness",
+      "dirty": false,
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "0\t0",
+      "unpushed_commit_count": "0",
+      "last_activity": "2026-10-11T15:54:09-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-verify",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-05/referenced-chatgpt-conversation-this-is-an/work/hub-verify",
+      "remote": "https://github.com/kvond/school-workflow-hub",
+      "privacy": "private",
+      "branch": "codex/helper-assignment-labels",
+      "dirty": false,
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "0\t0",
+      "unpushed_commit_count": "0",
+      "last_activity": "2026-10-05T20:19:37-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "helper-score-input-selector",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-07/helper-score-input-selector",
+      "remote": "https://github.com/kvond/school-workflow-hub",
+      "privacy": "private",
+      "branch": "fix/helper-score-input-selector-0.5.2",
+      "dirty": false,
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-09-30T20:42:54-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "helper-score-input-selector-origin",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-07/helper-score-input-selector-origin",
+      "remote": "https://github.com/kvond/school-workflow-hub",
+      "privacy": "private",
+      "branch": "fix/helper-score-input-selector-0.5.2-main",
+      "dirty": true,
+      "changed_paths": [
+        "rowser-extension/README.md",
+        "browser-extension/background.js",
+        "browser-extension/entry.js",
+        "browser-extension/ic-adapter.js",
+        "browser-extension/ic-entry.js",
+        "browser-extension/manifest.json",
+        "browser-extension/morning-background.js",
+        "browser-extension/morning.js",
+        "browser-extension/popup.html",
+        "browser-extension/popup.js",
+        "browser-extension/tests/entry-runtime.test.cjs",
+        "browser-extension/tests/entry.test.cjs",
+        "browser-extension/tests/ic-adapter.test.cjs",
+        "browser-extension/tests/morning-runtime.test.cjs",
+        "src/hub_v2/static/app.js"
+      ],
+      "untracked_files": [
+        "outputs/"
+      ],
+      "ahead_behind": "0\t0",
+      "unpushed_commit_count": "0",
+      "last_activity": "2026-10-05T20:06:51-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "core",
+      "path": "/Users/katherinevonduyke/Documents/Claude/2026-10-11/remote-desktop-commander-plugin-app-6a057d268ebc81919918d37eec718425-5/work/core",
+      "remote": "https://github.com/kvond/answerable-skills.git",
+      "privacy": "unknown",
+      "branch": "main",
+      "dirty": false,
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "0\t0",
+      "unpushed_commit_count": "0",
+      "last_activity": "2026-09-25T08:02:38-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "SchoolWorkflowHub",
+      "path": "/Users/katherinevonduyke/Documents/Claude/Codex/2026-09-09/referenced-chatgpt-conversation-this-is-an/SchoolWorkflowHub",
+      "remote": "",
+      "privacy": "unknown",
+      "branch": "build/shared-foundation-20260913",
+      "dirty": true,
+      "changed_paths": [
+        "GENTS.md",
+        "NEXT_SESSION.md",
+        "README.md",
+        "config/example.json",
+        "docs/ACCESS_STATUS.md",
+        "docs/ARCHITECTURE.md",
+        "docs/IMPLEMENTATION_LOG.md",
+        "src/school_workflow_hub/cli.py",
+        "src/school_workflow_hub/core/config.py",
+        "src/school_workflow_hub/core/database.py",
+        "src/school_workflow_hub/core/safe_logging.py",
+        "src/school_workflow_hub/core/schedule.py",
+        "src/school_workflow_hub/core/spine.py"
+      ],
+      "untracked_files": [
+        ".github/",
+        "config/manifests/",
+        "docs/CLOUD_MIGRATION.md",
+        "docs/CONTINUATION_20260914.md",
+        "docs/PRIVATE_INPUT.md",
+        "docs/RESEARCH_COLLECTION_PROTOCOL.md",
+        "docs/TEACHING_SYSTEM_20260914.md",
+        "docs/TODOIST_PROGRESS_20260914.md",
+        "docs/TOMORROW_TESTS.md",
+        "docs/workstreams/A-continuation-20260914.md",
+        "docs/workstreams/B-continuation-20260914.md",
+        "docs/workstreams/C-continuation-20260914.md",
+        "docs/workstreams/teaching-agenda-20260914.md",
+        "docs/workstreams/teaching-grading-20260914.md",
+        "docs/workstreams/teaching-roster-20260914.md",
+        "scripts/acceptance_preview.py",
+        "scripts/cloud_validation.py",
+        "scripts/run_all_tests.py",
+        "src/school_workflow_hub/adapters/guarded_platform.py",
+        "src/school_workflow_hub/adapters/private_input.py",
+        "src/school_workflow_hub/core/pipeline.py",
+        "src/school_workflow_hub/core/workflow.py",
+        "src/school_workflow_hub/workflows/curriculum_pipeline.py",
+        "src/school_workflow_hub/workflows/feedback_pipeline.py",
+        "src/school_workflow_hub/workflows/lesson_generator.py",
+        "src/school_workflow_hub/workflows/reporting_pipeline.py",
+        "src/school_workflow_hub/workflows/research_pipeline.py",
+        "src/school_workflow_hub/workflows/roster_reconciliation.py",
+        "src/school_workflow_hub/workflows/schoology_gradebook.py",
+        "src/school_workflow_hub/workflows/system_demo.py",
+        "tests/fixtures/curriculum_calendars.json",
+        "tests/fixtures/feedback_pipeline_cases.json",
+        "tests/fixtures/platform_links.json",
+        "tests/test_acceptance_harness.py",
+        "tests/test_cloud_validation.py",
+        "tests/test_curriculum_cross_review.py",
+        "tests/test_curriculum_pipeline.py",
+        "tests/test_feedback_pipeline.py",
+        "tests/test_guarded_platform.py",
+        "tests/test_lesson_generator.py",
+        "tests/test_private_input.py",
+        "tests/test_reporting_pipeline.py",
+        "tests/test_research_pipeline.py",
+        "tests/test_roster_reconciliation.py",
+        "tests/test_schoology_gradebook.py",
+        "tests/test_system_end_to_end.py",
+        "tests/test_teaching_continuity.py",
+        "tests/test_workflow_integration.py",
+        "tests/test_workflow_schedule.py"
+      ],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-09-13T12:40:40-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "cloud-release-20260914",
+      "path": "/Users/katherinevonduyke/Documents/Claude/Codex/2026-09-09/referenced-chatgpt-conversation-this-is-an/work/cloud-release-20260914",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "main",
+      "dirty": false,
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "0\t0",
+      "unpushed_commit_count": "0",
+      "last_activity": "2026-09-14T16:48:04-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "cloud-run-bootstrap",
+      "path": "/Users/katherinevonduyke/Documents/Claude/Codex/2026-09-14/i-d/work/cloud-run-bootstrap",
+      "remote": "",
+      "privacy": "unknown",
+      "branch": "",
+      "dirty": false,
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub-cloud",
+      "path": "/Users/katherinevonduyke/Documents/Claude/Codex/2026-09-14/new-chat/work/hub-cloud",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "build/workflow-inputs-20260914",
+      "dirty": false,
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-09-16T09:28:33-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "roster-connect",
+      "path": "/Users/katherinevonduyke/Documents/Claude/Codex/2026-09-16/ac/work/roster-connect",
+      "remote": "https://github.com/kvond/school-workflow-hub.git",
+      "privacy": "private",
+      "branch": "main",
+      "dirty": false,
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "0\t5",
+      "unpushed_commit_count": "0",
+      "last_activity": "2026-09-16T10:30:59-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "dashboard-code",
+      "path": "/Users/katherinevonduyke/Documents/Claude/Codex/2026-09-16/all-the-submissions-went-to-this/work/dashboard-code",
+      "remote": "",
+      "privacy": "unknown",
+      "branch": "",
+      "dirty": false,
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "dashboard-section-code",
+      "path": "/Users/katherinevonduyke/Documents/Claude/Codex/2026-09-16/all-the-submissions-went-to-this/work/dashboard-section-code",
+      "remote": "",
+      "privacy": "unknown",
+      "branch": "",
+      "dirty": false,
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "dashboard-write",
+      "path": "/Users/katherinevonduyke/Documents/Claude/Codex/2026-09-16/i-n/work/dashboard-write",
+      "remote": "/Users/katherinevonduyke/Documents/Codex/2026-09-14/new-chat/work/hub-cloud",
+      "privacy": "unknown",
+      "branch": "build/workflow-inputs-20260914",
+      "dirty": true,
+      "changed_paths": [
+        "rc/school_workflow_hub/web.py",
+        "web/agenda-connection.mjs",
+        "web/browser-runs.mjs",
+        "web/index.html",
+        "web/pages.mjs"
+      ],
+      "untracked_files": [
+        "web/tests/workflow-requests.test.mjs",
+        "web/workflow-requests.mjs"
+      ],
+      "ahead_behind": "7\t0",
+      "unpushed_commit_count": "7",
+      "last_activity": "2026-09-16T15:43:57-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "grade-links",
+      "path": "/Users/katherinevonduyke/Documents/Claude/Codex/2026-09-16/i-n/work/grade-links",
+      "remote": "/Users/katherinevonduyke/Documents/Codex/2026-09-14/new-chat/work/hub-cloud",
+      "privacy": "unknown",
+      "branch": "feedback-grade-links",
+      "dirty": false,
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "1\t0",
+      "unpushed_commit_count": "1",
+      "last_activity": "2026-09-16T16:41:14-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "manual-backend",
+      "path": "/Users/katherinevonduyke/Documents/Claude/Codex/2026-09-16/i-n/work/manual-backend",
+      "remote": "",
+      "privacy": "unknown",
+      "branch": "main",
+      "dirty": false,
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "1\t0",
+      "unpushed_commit_count": "1",
+      "last_activity": "2026-09-16T16:40:48-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "hub",
+      "path": "/Users/katherinevonduyke/Documents/Claude/Codex/2026-09-17/fix-only-the-current-page-2/work/hub",
+      "remote": "",
+      "privacy": "unknown",
+      "branch": "",
+      "dirty": false,
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "answerable-pipeline-backup",
+      "path": "/Users/katherinevonduyke/Documents/Claude/answerable-pipeline-backup",
+      "remote": "https://github.com/kvond/answerable-pipeline-backup.git",
+      "privacy": "unknown",
+      "branch": "main",
+      "dirty": "unknown",
+      "changed_paths": [
+        "EOUT"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "TIMEOUT",
+      "unpushed_commit_count": "TIMEOUT",
+      "last_activity": "TIMEOUT",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "feedback-system",
+      "path": "/Users/katherinevonduyke/Documents/Claude/feedback-system",
+      "remote": "https://github.com/kvond/feedback-system.git",
+      "privacy": "unknown",
+      "branch": "main",
+      "dirty": false,
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "0\t0",
+      "unpushed_commit_count": "0",
+      "last_activity": "2026-07-19T12:03:36-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "Answerable-Teaching",
+      "path": "/Users/katherinevonduyke/Documents/Claude/projects 2/Answerable-Teaching",
+      "remote": "git@github.com:kvond/Answerable-Teaching.git",
+      "privacy": "unknown",
+      "branch": "main",
+      "dirty": "unknown",
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "0\t0",
+      "unpushed_commit_count": "0",
+      "last_activity": "2026-08-23T18:07:35-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history",
+      "git_integrity": "Incomplete .git metadata; no HEAD"
+    },
+    {
+      "name": "ecosystem-site",
+      "path": "/Users/katherinevonduyke/Documents/Claude/projects 2/ecosystem-site",
+      "remote": "",
+      "privacy": "unknown",
+      "branch": "main",
+      "dirty": false,
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "unknown",
+      "unpushed_commit_count": "unknown",
+      "last_activity": "2026-07-19T12:25:41-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "feedback-system",
+      "path": "/Users/katherinevonduyke/Documents/Claude/projects 2/feedback-system",
+      "remote": "git@github.com:kvond/feedback-system.git",
+      "privacy": "unknown",
+      "branch": "main",
+      "dirty": false,
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "0\t0",
+      "unpushed_commit_count": "0",
+      "last_activity": "2026-07-19T12:03:36-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "scheduled-runs",
+      "path": "/Users/katherinevonduyke/Documents/Claude/projects 2/scheduled-runs",
+      "remote": "git@github.com:kvond/scheduled-runs.git",
+      "privacy": "unknown",
+      "branch": "main",
+      "dirty": false,
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "0\t0",
+      "unpushed_commit_count": "0",
+      "last_activity": "2026-07-10T11:17:56-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "school-workflow-hub",
+      "path": "/Users/katherinevonduyke/Documents/Claude/school-workflow-hub",
+      "remote": "https://github.com/kvond/school-workflow-hub",
+      "privacy": "private",
+      "branch": "main",
+      "dirty": true,
+      "changed_paths": [
+        "ocs/START_HERE.md",
+        "src/hub_v2/answers.py",
+        "src/hub_v2/work.py"
+      ],
+      "untracked_files": [],
+      "ahead_behind": "1\t29",
+      "unpushed_commit_count": "1",
+      "last_activity": "2026-09-30T20:42:54-04:00",
+      "classification": "KEEP",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "school-workflow-hub-bio-sheet",
+      "path": "/Users/katherinevonduyke/Documents/Claude/school-workflow-hub-bio-sheet",
+      "remote": "https://github.com/kvond/school-workflow-hub",
+      "privacy": "private",
+      "branch": "feat/biology-answers-school-sheet",
+      "dirty": false,
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "0\t0",
+      "unpushed_commit_count": "0",
+      "last_activity": "2026-10-01T10:52:27-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    },
+    {
+      "name": "school-workflow-hub-ic-map",
+      "path": "/Users/katherinevonduyke/Documents/Claude/school-workflow-hub-ic-map",
+      "remote": "https://github.com/kvond/school-workflow-hub",
+      "privacy": "private",
+      "branch": "feat/ic-map-and-run-now",
+      "dirty": false,
+      "changed_paths": [],
+      "untracked_files": [],
+      "ahead_behind": "0\t0",
+      "unpushed_commit_count": "0",
+      "last_activity": "2026-10-01T10:11:34-04:00",
+      "classification": "REVIEW",
+      "purpose": "School Workflow Hub working copy; preserve local edits and branch history"
+    }
+  ],
+  "github": [
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "School Workflow Hub: reviewed code and synthetic tests only. No school records or credentials.",
+      "isArchived": false,
+      "isPrivate": true,
+      "name": "school-workflow-hub",
+      "nameWithOwner": "kvond/school-workflow-hub",
+      "pushedAt": "2026-10-11T21:14:50Z",
+      "url": "https://github.com/kvond/school-workflow-hub",
+      "purpose": "Production school orchestration and reviewed synthetic code/test repository.",
+      "branches": [
+        {
+          "name": "build/workflow-inputs-20260914",
+          "sha": "e99e8667d546b4d14d7ec5e05deca53344d39998"
+        },
+        {
+          "name": "claude/class-summary-page",
+          "sha": "0fc27be4096fd205afb64b6e8e247439fa636b41"
+        },
+        {
+          "name": "claude/student-report-v3",
+          "sha": "d330932b0d7875d0576519deb015e2812ed8d18b"
+        },
+        {
+          "name": "codex/assignment-specific-form-links",
+          "sha": "8ca0a915f749f8e8c40536963fa46368463a4149"
+        },
+        {
+          "name": "codex/audit-form-source-readiness",
+          "sha": "cf94a2f0795827873101657d3c44df99b5bdeaeb"
+        },
+        {
+          "name": "codex/exact-intake-and-lesson-readiness",
+          "sha": "b523a271aff519f2a7aa3f65973a8fd18e7a371b"
+        },
+        {
+          "name": "codex/feedback-quote-boundary",
+          "sha": "9ad51e471fca2441d8590fc9c99d155dd155f2df"
+        },
+        {
+          "name": "codex/feedback-school-date",
+          "sha": "4e5bbb07d4951d809e5b0d0fdf7cf65c080c07f9"
+        },
+        {
+          "name": "codex/helper-assignment-labels",
+          "sha": "0eda502c4846d8a1f43a5ace19b5cd34ea69d614"
+        },
+        {
+          "name": "codex/hub-provider-verification",
+          "sha": "b36a3496021ea6517ec8352c1b864f94a2170ba9"
+        },
+        {
+          "name": "codex/issue-37-shared-form-intake",
+          "sha": "e0bad968f083eccc4ebd72d8a7cc5ed70e44fb6a"
+        },
+        {
+          "name": "codex/morning-source-resolutions",
+          "sha": "1a0d4c374c824d6ef06711372ade57f02bde4d7d"
+        },
+        {
+          "name": "codex/multiple-lessons-per-week",
+          "sha": "8c12d733a1696b55ed09fd2b8d8c1b57d2d14963"
+        },
+        {
+          "name": "codex/native-feedback-verification",
+          "sha": "3f06d883870182f475d2d648f2778546a8d902a9"
+        },
+        {
+          "name": "codex/page2-submission-visibility",
+          "sha": "c9e56f0498c3b9894458e8eaa8de482f9678b95a"
+        },
+        {
+          "name": "codex/refresh-imported-form-files",
+          "sha": "2bc0e616e237cc4056d7e5811dfe640577c0cb47"
+        },
+        {
+          "name": "codex/review-context-23-live-fixes",
+          "sha": "b838f11e82fc7ac90c38410445910f983a2b458a"
+        },
+        {
+          "name": "codex/review-context-23",
+          "sha": "f483da82071f60a49652492de4111abcca061588"
+        },
+        {
+          "name": "codex/simplify-morning-routine",
+          "sha": "f4762654061a156cadf14fa37b44630fb70499c7"
+        },
+        {
+          "name": "codex/source-resolutions-9-24",
+          "sha": "7f17978737686a4f8da94f5287794a1a74741592"
+        },
+        {
+          "name": "codex/source-review-dispositions",
+          "sha": "51281d1e6e5f88ad69b9a4f48551df0c511516e4"
+        },
+        {
+          "name": "codex/submission-refresh-lesson-scope",
+          "sha": "10a70857c0187f6d37d1602d1d2045d501051c55"
+        },
+        {
+          "name": "codex/submission-source-counts",
+          "sha": "d022fd625b4567dcb4292a68db07614fcb4d4841"
+        },
+        {
+          "name": "codex/teacher-load-reduction",
+          "sha": "7ae92d005f4c1d0e0f7664bcfd11ba151c3de3af"
+        },
+        {
+          "name": "docs/helper-live-acceptance",
+          "sha": "279e4aba0adcb30630499237a326088fc2730ebe"
+        },
+        {
+          "name": "docs/prompt-version-alignment",
+          "sha": "501c916d69c0e4bc42efeeb87ba9b64e8df07e0d"
+        },
+        {
+          "name": "feat/assessment-dashboard",
+          "sha": "c459941546059c4a6925920db5d5d453ce5ada8d"
+        },
+        {
+          "name": "feat/assessment-provider",
+          "sha": "3d5e40325c8ca67a5198db4c4cec5f3fcd72a796"
+        },
+        {
+          "name": "feat/assessment-save",
+          "sha": "02a4bb1eb66830da0645f0165aeea6bfccd8c5b8"
+        },
+        {
+          "name": "feat/biology-answers-school-sheet",
+          "sha": "20ddf9b25c290d7ff9cd719434a10263776a9055"
+        },
+        {
+          "name": "feat/census-reconciliation",
+          "sha": "4eabdea1ab5fd56b8a034c6a1f2fd41ac639d082"
+        },
+        {
+          "name": "feat/chat-handoff-builder",
+          "sha": "2154d960ef5eb998e61db737f9509cd09c58643d"
+        },
+        {
+          "name": "feat/control-panel-page",
+          "sha": "7dc4a02af45556b0a0274bd80ee1636e9132aab3"
+        },
+        {
+          "name": "feat/helper-autosave",
+          "sha": "cebcd4ba272072731ea0228cd7074fd912679cf3"
+        },
+        {
+          "name": "feat/hosted-run-directions",
+          "sha": "a4bc77d4bfbdd69268219697bdc0ed6e28ba4a72"
+        },
+        {
+          "name": "feat/hub-v2-agenda-edit",
+          "sha": "24a3004dbbf5d7cd47c1c4aa04479e80536d7370"
+        },
+        {
+          "name": "feat/hub-v2-answers",
+          "sha": "bf1792dba6afa6ed1dec6ef77c9732bf7997926a"
+        },
+        {
+          "name": "feat/hub-v2-assignment-marks",
+          "sha": "6b76f9d2599a3c351457d19585691cd9e0cb2829"
+        },
+        {
+          "name": "feat/hub-v2-chrome-helper-enters-ic",
+          "sha": "2e6ed7f7e8b33029b2c1436fbbf3cd6aaf7f6743"
+        },
+        {
+          "name": "feat/hub-v2-claude-ext-entry-prompt",
+          "sha": "2cdc66dc4cb273dbdc84a34327a375f5c373b9fa"
+        },
+        {
+          "name": "feat/hub-v2-feedback-chatgpt",
+          "sha": "1568f348fdf5c16c9d1c1074bf2d1b409de2b6f7"
+        },
+        {
+          "name": "feat/hub-v2-feedback-folder",
+          "sha": "d5f89834fa11fb0ee328dce77ae45d744cc08e27"
+        },
+        {
+          "name": "feat/hub-v2-link-check",
+          "sha": "105f134f9c49740d243ccbc8a55433b26f23d0e0"
+        },
+        {
+          "name": "feat/hub-v2-monday-prompt-button",
+          "sha": "09270a647f693a8c1d32f7151e6790bacfe34cc0"
+        },
+        {
+          "name": "feat/hub-v2-move-lesson",
+          "sha": "ccf79d52fd228df20c98f2a8ebf6d5fac5bc1aea"
+        },
+        {
+          "name": "feat/hub-v2-move-slides-and-links",
+          "sha": "2e210df49eb9577511d7606f27bc050f31aa2fa9"
+        },
+        {
+          "name": "feat/hub-v2-new-students-excused",
+          "sha": "63b0427a648d5618971b1287c4f25a12f26676af"
+        },
+        {
+          "name": "feat/hub-v2-research-autofill",
+          "sha": "b5205400d99eb18bdd5dd7fd32a3f52d7d9feaf8"
+        },
+        {
+          "name": "feat/hub-v2-roster-flags-week",
+          "sha": "989a2030cfaed0596957c6ed58bef5fde8fae6d4"
+        },
+        {
+          "name": "feat/hub-v2-routine-lesson-planning",
+          "sha": "232fc84d9f1bfc6dd0e670630ac6e974c84f772a"
+        },
+        {
+          "name": "feat/hub-v2-routine-page",
+          "sha": "e7752fe91f09626aa604e2c405e23ab63b8cd1e0"
+        },
+        {
+          "name": "feat/hub-v2-second-turnin-name",
+          "sha": "4c15f77a95cdf4d62c1bd5ffc07156f646c0c534"
+        },
+        {
+          "name": "feat/hub-v2-section-folders",
+          "sha": "a9369f766c459b79ebba2d7c98c7903bdf47c59b"
+        },
+        {
+          "name": "feat/hub-v2-shared-form",
+          "sha": "48f06b9f0a62963b9f9b98e57b2043202139cec9"
+        },
+        {
+          "name": "feat/hub-v2-tidy-renames-student-files",
+          "sha": "beeb6a509dc34fe554c3b03abed2a30339a8e5ab"
+        },
+        {
+          "name": "feat/hub-v2-two-lessons-a-week",
+          "sha": "d5a4c1a93eca6a1e4f2fea7b523dd6eab963b189"
+        },
+        {
+          "name": "feat/hub-v2-wrong-form",
+          "sha": "ea5c42c7558536040d3685f67b812f7e4b5f93ba"
+        },
+        {
+          "name": "feat/hub-v2",
+          "sha": "e20e31c7cc6d85dec105548fb35f39e0376f012d"
+        },
+        {
+          "name": "feat/hub-v3-hardening",
+          "sha": "79959dab0e3565b97fdb03565a55aa55802859b3"
+        },
+        {
+          "name": "feat/self-contained-handoff-block",
+          "sha": "17f2380bc52246c8a4e901ff23c25ed2690e059b"
+        },
+        {
+          "name": "feat/submission-monitoring",
+          "sha": "b04586cf8ab639d53a5d36d711d8e38274ae1c51"
+        },
+        {
+          "name": "feat/third-meeting-deadline",
+          "sha": "5eb71cf5d1859e1004c6db28527646f43795bfae"
+        },
+        {
+          "name": "feat/usable-assessment-workflow",
+          "sha": "e4af367ab21c37decd08da0d5328480aeb5bb2fe"
+        },
+        {
+          "name": "feedback/delivery-queue",
+          "sha": "9259b789173e44fc036dc2b79a8fdc16056e8ee4"
+        },
+        {
+          "name": "fix/agenda-dashboard-optional",
+          "sha": "77240a6b464646b8b4363e84481faa6741abf8f6"
+        },
+        {
+          "name": "fix/agenda-prompt-rows",
+          "sha": "023ea7ac9b8c36223a3a43bccc9db7d523ad1db3"
+        },
+        {
+          "name": "fix/census-id-order-validation",
+          "sha": "ea1945c2e3882a0a3b4211f7200e008995103d96"
+        },
+        {
+          "name": "fix/dashboard-grading-recovery-20260917",
+          "sha": "d21bcb6a95dbe8ad94205175b7cf0075ba75f494"
+        },
+        {
+          "name": "fix/distinguish-scan-from-saved-records",
+          "sha": "c164ceb8f27d8410ca0cc7c4773c2d3c49793abe"
+        },
+        {
+          "name": "fix/exception-detector",
+          "sha": "6dbdb1ae52b360673ddac2eec16449eecf6e158f"
+        },
+        {
+          "name": "fix/form-first-submission-intake",
+          "sha": "e9c835f96ca64bae265e2403e0e26eb562bae2f1"
+        },
+        {
+          "name": "fix/form-first-submission-routing",
+          "sha": "00bd48c765be6e13812428e9ef569f3f90fdc7e3"
+        },
+        {
+          "name": "fix/form-source-rebaseline",
+          "sha": "833bbb2f112d589c84d95d008c61ab8df1508853"
+        },
+        {
+          "name": "fix/historical-submission-coverage",
+          "sha": "4d59825c6f3100f97efe891da3667a1d9f26116a"
+        },
+        {
+          "name": "fix/hub-v2-as-read-without-name",
+          "sha": "43376059ce7534fdfbd7dda80c1bebbdfaf3cdad"
+        },
+        {
+          "name": "fix/hub-v2-feedback-teacher-claude",
+          "sha": "1344ad76c4c185f73292b1b3667c1b0e88feed53"
+        },
+        {
+          "name": "fix/hub-v2-folder-scope",
+          "sha": "630fae9f627a92d4bc638286bdf1e573a2430fa1"
+        },
+        {
+          "name": "fix/hub-v2-growth-record-names",
+          "sha": "214f0bdaacc19c172de299ea354bc144d4ae2caf"
+        },
+        {
+          "name": "fix/hub-v2-helper-list-names",
+          "sha": "403ead5d33765f142d96413db1a70b86b66a171b"
+        },
+        {
+          "name": "fix/hub-v2-lesson-folders",
+          "sha": "e4b5836d1ca4bb61f6a0562375746570b5a65793"
+        },
+        {
+          "name": "fix/hub-v2-link-check-published",
+          "sha": "fa440268f278012c0381417df5a4e92d34aa592a"
+        },
+        {
+          "name": "fix/hub-v2-monday-prompt-scores-sheet",
+          "sha": "1e92aa52897f39fb164d5f8e10ea5dd7896e1eb2"
+        },
+        {
+          "name": "fix/hub-v2-no-zeros-before-start",
+          "sha": "adf1cb85d18d6cd0db3f683cb3c6a7b4659fcbb8"
+        },
+        {
+          "name": "fix/hub-v2-one-question-slides",
+          "sha": "f44c4e57094eb766a35ca684921686c6b6f421c8"
+        },
+        {
+          "name": "fix/hub-v2-roster-starts-the-clock",
+          "sha": "b52dde61851c90c7dc13653115784f9f92b7db3a"
+        },
+        {
+          "name": "fix/hub-v2-routine-scoring-timeline",
+          "sha": "a45da4808480f309c5f69d2c75922b3333453981"
+        },
+        {
+          "name": "fix/hub-v2-score-by-the-copys-own-list",
+          "sha": "8072285fa2e632b629f26bd59a5eb547cfdbd78c"
+        },
+        {
+          "name": "fix/hub-v2-score-older-copies",
+          "sha": "6f152daf8943469b3e5ac55bb7c78b7338f22238"
+        },
+        {
+          "name": "fix/hub-v2-score-only-answerable-and-keep-higher",
+          "sha": "a8008ff0dc17cbed7b6e0fb1b48299484ca8ee2a"
+        },
+        {
+          "name": "fix/hub-v2-scores-sheet-name",
+          "sha": "8da79dbd0e77408a1e4652266a243e38e2f008e0"
+        },
+        {
+          "name": "fix/hub-v2-scoring-real-decks",
+          "sha": "1942e6aecceb03a2164c3f3ed050f4a0379b8f9f"
+        },
+        {
+          "name": "fix/hub-v2-second-deck",
+          "sha": "a78d26f57d6c6bd691289be9711cb3284006f538"
+        },
+        {
+          "name": "fix/hub-v2-sibling-decks",
+          "sha": "cc0023b5609c0b0db08cfde65409952af12011dd"
+        },
+        {
+          "name": "fix/hub-v2-turnin-folder",
+          "sha": "822a742b650addd9a44783b900f1d1e611fa445f"
+        },
+        {
+          "name": "fix/hub-v2-wrong-form-shared-rows",
+          "sha": "13b1625d819470e1f635cd2f02e8c78d578408df"
+        },
+        {
+          "name": "fix/ic-final-status-and-prompt2",
+          "sha": "59771b374648625d8026aa1dac50c0929e3b501a"
+        },
+        {
+          "name": "fix/ic-list-skips-unsorted",
+          "sha": "737e81e0a9d5aa0f8c847b79ec69f7ae4d9f7915"
+        },
+        {
+          "name": "fix/issue-111-verification",
+          "sha": "1b4b8fea342db2c825666d1c2322bfb801dd98fd"
+        },
+        {
+          "name": "fix/legacy-compact-assessment-manifest",
+          "sha": "2ca2a8474b3390e784c6be6a36e6a1d7d9c8ed2e"
+        },
+        {
+          "name": "fix/legacy-gap-scan",
+          "sha": "df37f09c833a60c4b3f5401ddc695c7dd44f9cc3"
+        },
+        {
+          "name": "fix/legacy-manifest-id-order",
+          "sha": "fcf5052819785ee6b2390c0e378898ffa30be49b"
+        },
+        {
+          "name": "fix/lesson-card-trim",
+          "sha": "635507f502c1fc61be739670dcf98edaa508d283"
+        },
+        {
+          "name": "fix/lesson-folder-recovery",
+          "sha": "0741bcff9afaae8dc8e017e71c6e4abe2e1e705b"
+        },
+        {
+          "name": "fix/monitor-panel-autoload",
+          "sha": "b0e0c0055fe101cdfcd17085e4a436c9747086b0"
+        },
+        {
+          "name": "fix/monitor-roster-identity",
+          "sha": "e03efda3059d8f2e1a82bb17156d34644401ae5a"
+        },
+        {
+          "name": "fix/morning-routine-auto-entry-copy",
+          "sha": "cfe7cfdaa0bb833df730e957ba98b0309c0f59d7"
+        },
+        {
+          "name": "fix/per-assignment-form-routing",
+          "sha": "371bc5676a471f5019a9dff01eefcbd141c8a2fb"
+        },
+        {
+          "name": "fix/print-sheet-and-status",
+          "sha": "085cd12c683e5c41882b90e6b3021f6160f4b8f2"
+        },
+        {
+          "name": "fix/prompts-match-agenda",
+          "sha": "1f671e9b5d6d14183b7a1a239eca2f73a03e5cd1"
+        },
+        {
+          "name": "fix/provider-dependency-code",
+          "sha": "6dc7f13cb54cc681954865e650d44adffda29f1e"
+        },
+        {
+          "name": "fix/provider-key-whitespace",
+          "sha": "22a5a5ae08d1273a8af26f93e5c959cac20b06e8"
+        },
+        {
+          "name": "fix/retire-biology-answer-archive",
+          "sha": "17526995bd92c97857bd77bdf69336297840473d"
+        },
+        {
+          "name": "fix/review-panel-stability",
+          "sha": "e8456fc600b6bcfdc36585d4f24f41ca11a4ddeb"
+        },
+        {
+          "name": "fix/roster-backed-submission-matching",
+          "sha": "0063fc84e44719a10baaf94989cf4b4eeb10bf95"
+        },
+        {
+          "name": "fix/routine-monday-home-computer",
+          "sha": "8aab747d6e14e7dd4239157d6e0a537650cc48a8"
+        },
+        {
+          "name": "fix/second-turn-in-column",
+          "sha": "1631b7ecdfb77b3d68e3c0b61ac575d67cbaffd9"
+        },
+        {
+          "name": "fix/shared-form-intake-20260922",
+          "sha": "9224f386a08db1a22c82778728b01c115fddce19"
+        },
+        {
+          "name": "fix/sort-by-deck-names",
+          "sha": "5fe31fc9089f2f1f44ba7986f5d8fe1af35014a5"
+        },
+        {
+          "name": "fix/space-marker-ids",
+          "sha": "dd0e90c7dd2a4d8c77d89026e2d40993edde7a4a"
+        },
+        {
+          "name": "fix/turnin-folder-name-guard",
+          "sha": "4ceff617091c1aa6ed5e46274cb7273be8a06cde"
+        },
+        {
+          "name": "fix/validation-gate-expected-skips",
+          "sha": "d97efd40d8b1510f7034359a114d88b8d8e22f24"
+        },
+        {
+          "name": "handoff/helper-autosave",
+          "sha": "889609fc3d511ea36f500b53d9c2e5e9e3c611d5"
+        },
+        {
+          "name": "handoff/ic-map-and-run-now",
+          "sha": "b0c7c6a17a93871665ef74e6433adbd8d334f2dd"
+        },
+        {
+          "name": "handoff/morning-spec-amendments",
+          "sha": "dd55cc619af8eca611e6c0a6a6541738d06158fb"
+        },
+        {
+          "name": "handoff/roster-in-morning-run",
+          "sha": "082d313db4238612a82fc3dd6f6e52a44b32c1d9"
+        },
+        {
+          "name": "hardening/deck-release-gate",
+          "sha": "85c3cb10ec4e52ae4421df0d31f3f41bbe9e293e"
+        },
+        {
+          "name": "main",
+          "sha": "51d1f19facd4757da8f7a00947b5ace2e89dc8e3"
+        },
+        {
+          "name": "routine-lesson-opener",
+          "sha": "e50b51a421894715527f169f479fcae8ba623812"
+        },
+        {
+          "name": "routine-manual-section",
+          "sha": "74e5bc27238e7ef39b524bbac89283d58ecf88fa"
+        },
+        {
+          "name": "routine-page-simple",
+          "sha": "35e02d178fadc1df26ee9fd423fc9ce9dfddd0b1"
+        },
+        {
+          "name": "runtime/openai-provider",
+          "sha": "b589c740bcbfd0f7e6d7a87c4db0e002c814a5f5"
+        },
+        {
+          "name": "ui/hub-v3-today-lessons",
+          "sha": "c64bf9446bf7f7677f2aa6f401df11679d3b71a0"
+        }
+      ],
+      "open_pull_requests": [],
+      "recommended_classification": "KEEP"
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Safe monthly maintenance for the kvond GitHub account: stale items, archiving, retention rules, storage checks. Report-only by default.",
+      "isArchived": false,
+      "isPrivate": true,
+      "name": "github-maintenance",
+      "nameWithOwner": "kvond/github-maintenance",
+      "pushedAt": "2026-10-01T17:26:34Z",
+      "url": "https://github.com/kvond/github-maintenance",
+      "purpose": "Periodic private GitHub inventory and reversible retention maintenance.",
+      "branches": [
+        {
+          "name": "main",
+          "sha": "249108ae4624f841720076bea115bf0e3563b4e1"
+        }
+      ],
+      "open_pull_requests": [],
+      "recommended_classification": "KEEP"
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "",
+      "isArchived": false,
+      "isPrivate": true,
+      "name": "answerable-skills",
+      "nameWithOwner": "kvond/answerable-skills",
+      "pushedAt": "2026-09-25T12:02:38Z",
+      "url": "https://github.com/kvond/answerable-skills",
+      "purpose": "Reusable skills, scripts, workflow specifications and compact teaching/book knowledge; active Claude skills symlink target.",
+      "branches": [
+        {
+          "name": "main",
+          "sha": "67d81cd8312542bd84e8560b55fc631613cf374a"
+        }
+      ],
+      "open_pull_requests": [],
+      "recommended_classification": "KEEP"
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "all the scheduled runs on cowork",
+      "isArchived": false,
+      "isPrivate": true,
+      "name": "scheduled-runs",
+      "nameWithOwner": "kvond/scheduled-runs",
+      "pushedAt": "2026-09-17T11:14:28Z",
+      "url": "https://github.com/kvond/scheduled-runs",
+      "purpose": "Archived recurring definitions; README says every job retired September 17, actual app schedules require independent verification.",
+      "branches": [
+        {
+          "name": "main",
+          "sha": "ca4e7d1c793ea9b0c89e72639d84a1ad3aa5da19"
+        }
+      ],
+      "open_pull_requests": [],
+      "recommended_classification": "REVIEW"
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Home tasks",
+      "isArchived": false,
+      "isPrivate": true,
+      "name": "Personal-Hub",
+      "nameWithOwner": "kvond/Personal-Hub",
+      "pushedAt": "2026-09-15T18:06:59Z",
+      "url": "https://github.com/kvond/Personal-Hub",
+      "purpose": "Existing personal-workflow FastAPI/Firestore/Cloud Run foundation.",
+      "branches": [
+        {
+          "name": "main",
+          "sha": "180e1174d232418f9fe6521297e053fae4d0e576"
+        }
+      ],
+      "open_pull_requests": [],
+      "recommended_classification": "KEEP"
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Dated classroom field-note journal \u2014 compiled for ChatGPT and Claude",
+      "isArchived": false,
+      "isPrivate": true,
+      "name": "field-notes",
+      "nameWithOwner": "kvond/field-notes",
+      "pushedAt": "2026-09-15T02:16:20Z",
+      "url": "https://github.com/kvond/field-notes",
+      "purpose": "Potentially private teaching/research field journal; review without moving raw records into new core.",
+      "branches": [
+        {
+          "name": "main",
+          "sha": "b618dfa884c49a13ecebf5348390d17d2ca22e4e"
+        }
+      ],
+      "open_pull_requests": [],
+      "recommended_classification": "REVIEW"
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "My book manuscript",
+      "isArchived": false,
+      "isPrivate": true,
+      "name": "Answerable-Teaching",
+      "nameWithOwner": "kvond/Answerable-Teaching",
+      "pushedAt": "2026-09-12T13:03:04Z",
+      "url": "https://github.com/kvond/Answerable-Teaching",
+      "purpose": "Legacy manuscript, compilation, book-ops and revision tooling; Google Docs is canonical per current instruction.",
+      "branches": [
+        {
+          "name": "main",
+          "sha": "76acdd7c999fc25a63081164bdcbfc26cd36fa91"
+        }
+      ],
+      "open_pull_requests": [],
+      "recommended_classification": "RETIRE / DELETE-REVIEW"
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "",
+      "isArchived": false,
+      "isPrivate": true,
+      "name": "answerable-teaching-system",
+      "nameWithOwner": "kvond/answerable-teaching-system",
+      "pushedAt": "2026-09-09T14:11:07Z",
+      "url": "https://github.com/kvond/answerable-teaching-system",
+      "purpose": "Read-only deterministic agenda-change prototype and synthetic tests; no live integration per README.",
+      "branches": [
+        {
+          "name": "main",
+          "sha": "4c6d2c8275a3651bc023f51b6f403612792385fe"
+        }
+      ],
+      "open_pull_requests": [],
+      "recommended_classification": "REVIEW"
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "Website for the book Answerable Teaching",
+      "isArchived": false,
+      "isPrivate": true,
+      "name": "answerableteaching-com",
+      "nameWithOwner": "kvond/answerableteaching-com",
+      "pushedAt": "2026-08-23T20:56:36Z",
+      "url": "https://github.com/kvond/answerableteaching-com",
+      "purpose": "Book website; deployment dependencies require live verification.",
+      "branches": [
+        {
+          "name": "main",
+          "sha": "cdfebc11ba52dc809a5467ceec98eb77bb6952fe"
+        }
+      ],
+      "open_pull_requests": [],
+      "recommended_classification": "REVIEW"
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "",
+      "isArchived": true,
+      "isPrivate": true,
+      "name": "feedback-system",
+      "nameWithOwner": "kvond/feedback-system",
+      "pushedAt": "2026-08-10T18:51:28Z",
+      "url": "https://github.com/kvond/feedback-system",
+      "purpose": "Archived feedback webapp and legacy pipeline engine; Render blueprint exists, deployment status unknown.",
+      "branches": [
+        {
+          "name": "claude/add-agency-section-kaslhq",
+          "sha": "630a7c9c4de3fc99de7cda3df4625884169c26fe"
+        },
+        {
+          "name": "claude/biology-cycle-02-decks-mo6b95",
+          "sha": "3f7c18dc85264f135783e39ad07e56df179fa296"
+        },
+        {
+          "name": "main",
+          "sha": "c63d493ef741d6163be5edac09830c2447d65695"
+        }
+      ],
+      "open_pull_requests": [],
+      "recommended_classification": "REVIEW"
+    },
+    {
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "description": "",
+      "isArchived": true,
+      "isPrivate": true,
+      "name": "answerable-pipeline-backup",
+      "nameWithOwner": "kvond/answerable-pipeline-backup",
+      "pushedAt": "2026-08-10T12:30:43Z",
+      "url": "https://github.com/kvond/answerable-pipeline-backup",
+      "purpose": "Archived backup of deployed pipeline scripts/specifications; script bytes duplicated in answerable-skills.",
+      "branches": [
+        {
+          "name": "main",
+          "sha": "9f767c70c21b74f1beee423b5b5ab51111de8618"
+        }
+      ],
+      "open_pull_requests": [],
+      "recommended_classification": "RETIRE / DELETE-REVIEW"
+    },
+    {
+      "name": "tank-and-flow-models",
+      "nameWithOwner": "Answerable-Teaching/tank-and-flow-models",
+      "isPrivate": false,
+      "description": "For Biology lessons",
+      "url": "https://github.com/Answerable-Teaching/tank-and-flow-models",
+      "pushedAt": "2026-08-06T16:30:21Z",
+      "isArchived": false,
+      "defaultBranchRef": {
+        "name": "main"
+      },
+      "branches": [
+        {
+          "name": "main",
+          "sha": "95ce35114790d4b6fdc82002de99ea52706a1dc4"
+        }
+      ],
+      "open_pull_requests": [],
+      "recommended_classification": "REVIEW"
+    }
+  ],
+  "limitations": [
+    "Documents/Codex access denied; home scan may miss protected or hidden checkouts",
+    "ahead/behind uses local refs, no fetch during initial inventory",
+    "classification feedback-system requires confirmation of pipeline identity"
+  ],
+  "existing_core_recommendation": "Reuse answerable-skills for reusable knowledge. Evaluate Personal-Hub as execution/state foundation; avoid new repository unless domain separation is necessary.",
+  "dependencies": {
+    "claude_skills": "~/.claude/skills -> ~/code/answerable-skills/skills",
+    "legacy_feedback": "Archived feedback-system has Render blueprint and optional Anthropic/Composio integrations; live deployment unknown.",
+    "book_ops": "Roam pull/dedup, export, document compilation and manuscript checks; archived schedules reference book ops.",
+    "personal_hub": "Cloud Run/Firestore graceful-fold-341018 us-east4 per README; live state not verified by this inventory."
+  },
+  "core_recommendation": "Reuse answerable-skills for skills/knowledge. Evaluate existing Personal-Hub FastAPI/Firestore/Cloud Run personal backend before creating any new core repository."
+}

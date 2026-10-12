@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-10-12T01:25:00.422424+00:00",
+  "deadline": "2026-10-12T06:00:00-04:00",
+  "overall": "foundation_complete_with_explicit_migration_and_export_blockers",
+  "new_repos": [],
+  "reused_repo": "kvond/answerable-skills",
+  "production_changes": false,
+  "schedules_changed": false,
+  "archive": {
+    "path": "/Volumes/T7/AI-Archive",
+    "verified_files": 11,
+    "git_bundles": 3,
+    "encryption_verified": false,
+    "complete_account_exports": false
+  },
+  "cache_router": {
+    "local_tests_passed": 12,
+    "deployed": false,
+    "paid_routes_enabled": false
+  },
+  "personal_jobs": {
+    "current_owner": "UD ChatGPT",
+    "active_count": 5,
+    "replacement_status": "staged_not_enabled"
+  },
+  "school_jobs": {
+    "0630": "local Codex heartbeat: morning-roster-check-and-submission-tidy",
+    "0730": "local Codex heartbeat: morning-student-feedback-and-print-checklist",
+    "account": "prior_audit_UD; fresh_desktop_identity_unverified",
+    "model": "unpinned; actual_execution_unverified"
+  },
+  "background_reset_work_remaining": [],
+  "retirement_markers": [],
+  "github_pr": null
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "implementation_status": "metadata interchange design; runtime cache/budget subset tested",
+  "required_identity": [
+    "workflow_id",
+    "workflow_version",
+    "source_hashes",
+    "date_window",
+    "configuration_version",
+    "privacy_class",
+    "privacy_partition"
+  ],
+  "record_fields": [
+    "cache_key",
+    "source_fingerprints",
+    "created_at",
+    "last_checked",
+    "expires_at",
+    "result_location",
+    "provider",
+    "model",
+    "input_tokens",
+    "cached_tokens",
+    "output_tokens",
+    "estimated_cost",
+    "actual_cost",
+    "execution_duration",
+    "status",
+    "error",
+    "retry_state",
+    "receipt_id"
+  ],
+  "invalidation": {
+    "unchanged": "reuse successful authorized unexpired result; still validate source coverage",
+    "partial": "one CacheContract per verified source component; recompute changed component then aggregate against component revisions",
+    "full": "new key or scoped invalidation",
+    "uncertain": "do not reuse; block and reconcile"
+  },
+  "privacy": "payload and ledger outside GitHub; no raw content here"
+}

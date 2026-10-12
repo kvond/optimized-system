@@ -1,0 +1,7 @@
+{
+ "version":"local-foundation-v1",
+ "routes":[
+  {"name":"local-validated-extraction","provider":"local","capability":0,"estimated_cost":"0","privacy_partitions":["synthetic"],"deterministic":true,"enabled":true},
+  {"name":"unconfigured-small-model","provider":"adapter-required","capability":1,"estimated_cost":"0.01","privacy_partitions":["synthetic"],"deterministic":false,"enabled":false}
+ ]
+}

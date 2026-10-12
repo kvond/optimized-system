@@ -1,0 +1,880 @@
+{
+  "checked_at_utc": "2026-10-12T01:11:41.972913+00:00",
+  "scope": "read-only; no secret payloads accessed",
+  "projects": [
+    {
+      "project": {
+        "createTime": "2026-09-15T14:18:12.573Z",
+        "lifecycleState": "ACTIVE",
+        "name": "School Workflow Hub 54879",
+        "projectId": "school-workflow-hub-54879",
+        "projectNumber": "611166743877"
+      },
+      "run_services": [
+        {
+          "name": "school-workflow-hub",
+          "region": "us-central1",
+          "url": "https://school-workflow-hub-oqen344x6q-uc.a.run.app",
+          "latestReadyRevision": "school-workflow-hub-00267-wrx",
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100,
+              "revisionName": "school-workflow-hub-00267-wrx"
+            }
+          ],
+          "service_annotations": {
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "587.0.0",
+            "run.googleapis.com/iap-enabled": "true",
+            "run.googleapis.com/ingress": "all",
+            "run.googleapis.com/ingress-status": "all",
+            "run.googleapis.com/maxScale": "1",
+            "run.googleapis.com/operation-id": "f92001b0-00cf-47bc-868a-aadb28e2b359",
+            "run.googleapis.com/urls": "[\"https://school-workflow-hub-611166743877.us-central1.run.app\",\"https://school-workflow-hub-oqen344x6q-uc.a.run.app\"]",
+            "serving.knative.dev/creator": "kvond12@gmail.com",
+            "serving.knative.dev/lastModifier": "kvond12@gmail.com"
+          },
+          "template_annotations": {
+            "autoscaling.knative.dev/maxScale": "20",
+            "autoscaling.knative.dev/minScale": "0",
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "587.0.0",
+            "run.googleapis.com/cpu-throttling": "true",
+            "run.googleapis.com/sessionAffinity": "false",
+            "run.googleapis.com/startup-cpu-boost": "true"
+          },
+          "serviceAccountName": "611166743877-compute@developer.gserviceaccount.com",
+          "containers": [
+            {
+              "image": "us-central1-docker.pkg.dev/school-workflow-hub-54879/cloud-run-source-deploy/school-workflow-hub/school-workflow-hub:51d1f19facd4757da8f7a00947b5ace2e89dc8e3",
+              "resources": {
+                "limits": {
+                  "cpu": "1000m",
+                  "memory": "512Mi"
+                }
+              },
+              "env": [
+                {
+                  "name": "HUB_AGENDA_READ_ENABLED",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_AGENDA_SPREADSHEET_ID",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_READER_SERVICE_ACCOUNT",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_IAP_AUDIENCE",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_ALLOWED_EMAILS",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_STATE_BACKEND",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_STATE_PROJECT",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_STATE_DATABASE",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_STATE_SERVICE_ACCOUNT",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_STATE_PROBE_ORIGINS",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_STATE_ACCEPTANCE_PROBE",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_GRADING_SPREADSHEET_ID",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_SUBMISSIONS_ROOT_FOLDER",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_TURNIN_FORM_ID",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_ROSTER_SPREADSHEET_ID",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_ROSTER_TABS",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_ROSTER_COLUMN_LAYOUTS",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_ROSTER_SECTION_IDS",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_INTAKE_WORKBOOK_WRITES",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_DRY_RUN",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_SCHOOL_EMAIL_DOMAINS",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_EMAIL_USERNAME_PREFIX",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_INTAKE_DECK_ASSIGNMENTS",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_ASSIGNMENT_FORM_IDS",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_BIOLOGY_ANSWERS_SPREADSHEET_ID",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_IC_ASSIGNMENT_MAP",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_SCORES_ENTERED_SPREADSHEET_ID",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_ASSESSMENT_MODEL",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_AI_PROVIDER",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_OPENAI_API_KEY",
+                  "configured": true,
+                  "secretRef": {
+                    "key": "1",
+                    "name": "hub-openai-api-key"
+                  }
+                },
+                {
+                  "name": "HUB_GROWTH_REPORT_URL",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_GROWTH_TEACHING_URL",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_GROWTH_REPORT_AS_OF",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_STUDENT_RECORDS_ROOT_FOLDER",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_STUDENT_RECORDS_COURSE_FOLDERS",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_TEACHER_REPORTS_COURSE_FOLDERS",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_FEEDBACK_DRIVE_ROOT_ID",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_FEEDBACK_DRIVE_FOLDERS",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_STUDENT_RECORDS_IDENTITY_SCOPE_ROOT",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_FEEDBACK_DAILY_PACKETS_FOLDER",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_ACCEPTED_FORM_ROUTES",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_WEEK_EXCLUSIONS",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_BIOLOGY_ANALYSIS_URL",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_STUDENT_WORK_INDEX_URL",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_FEEDBACK_CHECKLIST_URL",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_STUDENT_RECORDS_RECORDS_FOLDER",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_COMPLETION_READINESS_HOLDS",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_ROSTER_ONLY_SECTIONS",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_COMBINED_ASSESSMENTS",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_FORM_TEACHER_SOURCES",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_ASSIGNMENT_EXCLUSIONS",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "HUB_SOURCE_HISTORY_DISPOSITIONS",
+                  "configured": true,
+                  "secretRef": null
+                }
+              ],
+              "volumeMounts": null
+            }
+          ],
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-10-11T21:18:03.918671Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-10-11T21:17:52.770959Z",
+              "status": "True",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2026-10-11T21:18:03.886387Z",
+              "status": "True",
+              "type": "RoutesReady"
+            }
+          ],
+          "iam_policy": {
+            "bindings": [
+              {
+                "members": [
+                  "serviceAccount:service-611166743877@gcp-sa-iap.iam.gserviceaccount.com"
+                ],
+                "role": "roles/run.invoker"
+              }
+            ],
+            "etag": "BwZbh984tXw=",
+            "version": 1
+          }
+        }
+      ],
+      "run_jobs": [],
+      "scheduler_locations": {
+        "error": "ERROR: (gcloud.scheduler.locations.list) [kvond12@gmail.com] does not have permission to access projects instance [school-workflow-hub-54879] (or it may not exist): Cloud Scheduler API has not been used in project school-workflow-hub-54879 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/cloudscheduler.googleapis.com/overview?project=school-workflow-hub-54879 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry. This command is authenticated as kvond12@gmail.com which is the active account specified by the [core/account] property.\nCloud Scheduler API has not been used in project school-workflow-hub-54879 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/cloudscheduler.googleapis.com/overview?project=school-workflow-hub-54879 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.\nGoogle developers console API activation\nhttps://console.developers.google.com/apis/api/cloudscheduler.googleapis.com/overview?project=school-workflow-hub-54879\n- '@type': type.googleapis.co"
+      },
+      "secrets": [
+        {
+          "name": "projects/611166743877/secrets/Hub-runtime",
+          "createTime": "2026-09-18T16:14:58.532701Z",
+          "replication": {
+            "automatic": {}
+          }
+        },
+        {
+          "name": "projects/611166743877/secrets/Hub-runtime3",
+          "createTime": "2026-09-18T16:37:52.466031Z",
+          "replication": {
+            "automatic": {}
+          }
+        },
+        {
+          "name": "projects/611166743877/secrets/hub-anthropic-api-key",
+          "createTime": "2026-09-18T16:15:47.884556Z",
+          "replication": {
+            "automatic": {}
+          }
+        },
+        {
+          "name": "projects/611166743877/secrets/hub-openai-api-key",
+          "createTime": "2026-10-05T18:13:54.577697Z",
+          "replication": {
+            "automatic": {}
+          }
+        }
+      ],
+      "enabled_apis": [
+        "analyticshub.googleapis.com",
+        "artifactregistry.googleapis.com",
+        "bigquery.googleapis.com",
+        "bigqueryconnection.googleapis.com",
+        "bigquerydatapolicy.googleapis.com",
+        "bigquerydatatransfer.googleapis.com",
+        "bigquerymigration.googleapis.com",
+        "bigqueryreservation.googleapis.com",
+        "bigquerystorage.googleapis.com",
+        "cloudapis.googleapis.com",
+        "cloudbuild.googleapis.com",
+        "cloudtrace.googleapis.com",
+        "containeranalysis.googleapis.com",
+        "containerregistry.googleapis.com",
+        "dataform.googleapis.com",
+        "dataplex.googleapis.com",
+        "datastore.googleapis.com",
+        "drive.googleapis.com",
+        "firebaserules.googleapis.com",
+        "firestore.googleapis.com",
+        "forms.googleapis.com",
+        "iam.googleapis.com",
+        "iamcredentials.googleapis.com",
+        "iap.googleapis.com",
+        "logging.googleapis.com",
+        "monitoring.googleapis.com",
+        "pubsub.googleapis.com",
+        "run.googleapis.com",
+        "secretmanager.googleapis.com",
+        "servicemanagement.googleapis.com",
+        "serviceusage.googleapis.com",
+        "sheets.googleapis.com",
+        "slides.googleapis.com",
+        "sql-component.googleapis.com",
+        "storage-api.googleapis.com",
+        "storage-component.googleapis.com",
+        "storage.googleapis.com",
+        "telemetry.googleapis.com"
+      ],
+      "billing": {
+        "billingAccountName": "billingAccounts/01D684-9E9CE7-E1C3B9",
+        "billingEnabled": true,
+        "name": "projects/school-workflow-hub-54879/billingInfo",
+        "projectId": "school-workflow-hub-54879"
+      },
+      "scheduler_jobs": {
+        "coverage": "blocked",
+        "reason": "Cloud Scheduler API disabled; no jobs inventory claim"
+      },
+      "firestore_databases": [
+        {
+          "appEngineIntegrationMode": "DISABLED",
+          "concurrencyMode": "PESSIMISTIC",
+          "createTime": "2026-09-15T22:45:35.728530Z",
+          "databaseEdition": "STANDARD",
+          "deleteProtectionState": "DELETE_PROTECTION_ENABLED",
+          "earliestVersionTime": "2026-10-12T00:12:11.895843Z",
+          "etag": "IJKm95mms5cDMIqPzYLV8ZYD",
+          "freeTier": true,
+          "locationId": "us-central1",
+          "name": "projects/school-workflow-hub-54879/databases/(default)",
+          "pointInTimeRecoveryEnablement": "POINT_IN_TIME_RECOVERY_DISABLED",
+          "realtimeUpdatesMode": "REALTIME_UPDATES_MODE_ENABLED",
+          "type": "FIRESTORE_NATIVE",
+          "uid": "3a6d79c1-7fc2-4009-930d-148a40ae890e",
+          "updateTime": "2026-09-15T22:45:35.728530Z",
+          "versionRetentionPeriod": "3600s"
+        }
+      ],
+      "storage_buckets": [
+        {
+          "acl": [
+            {
+              "entity": "project-owners-611166743877",
+              "projectTeam": {
+                "projectNumber": "611166743877",
+                "team": "owners"
+              },
+              "role": "OWNER"
+            },
+            {
+              "entity": "project-editors-611166743877",
+              "projectTeam": {
+                "projectNumber": "611166743877",
+                "team": "editors"
+              },
+              "role": "OWNER"
+            },
+            {
+              "entity": "project-viewers-611166743877",
+              "projectTeam": {
+                "projectNumber": "611166743877",
+                "team": "viewers"
+              },
+              "role": "READER"
+            }
+          ],
+          "creation_time": "2026-10-08T21:58:01+0000",
+          "default_acl": [
+            {
+              "entity": "project-owners-611166743877",
+              "projectTeam": {
+                "projectNumber": "611166743877",
+                "team": "owners"
+              },
+              "role": "OWNER"
+            },
+            {
+              "entity": "project-editors-611166743877",
+              "projectTeam": {
+                "projectNumber": "611166743877",
+                "team": "editors"
+              },
+              "role": "OWNER"
+            },
+            {
+              "entity": "project-viewers-611166743877",
+              "projectTeam": {
+                "projectNumber": "611166743877",
+                "team": "viewers"
+              },
+              "role": "READER"
+            }
+          ],
+          "default_storage_class": "STANDARD",
+          "generation": 1791496680656820974,
+          "location": "US",
+          "location_type": "multi-region",
+          "metageneration": 1,
+          "name": "school-workflow-hub-54879_cloudbuild",
+          "public_access_prevention": "inherited",
+          "rpo": "DEFAULT",
+          "soft_delete_policy": {
+            "effectiveTime": "2026-10-08T21:58:01.234000+00:00",
+            "retentionDurationSeconds": "604800"
+          },
+          "storage_url": "gs://school-workflow-hub-54879_cloudbuild/",
+          "uniform_bucket_level_access": false,
+          "update_time": "2026-10-08T21:58:01+0000"
+        }
+      ],
+      "artifact_repositories": [
+        {
+          "createTime": "2026-10-08T21:58:35.943356Z",
+          "format": "DOCKER",
+          "mode": "STANDARD_REPOSITORY",
+          "name": "projects/school-workflow-hub-54879/locations/us/repositories/gcr.io",
+          "sizeBytes": "85413490",
+          "updateTime": "2026-10-08T22:09:15.705869Z",
+          "vulnerabilityScanningConfig": {
+            "enablementState": "SCANNING_DISABLED",
+            "enablementStateReason": "API containerscanning.googleapis.com is not enabled."
+          }
+        },
+        {
+          "createTime": "2026-09-15T15:49:06.403707Z",
+          "description": "Cloud Run Source Deployments",
+          "format": "DOCKER",
+          "mode": "STANDARD_REPOSITORY",
+          "name": "projects/school-workflow-hub-54879/locations/us-central1/repositories/cloud-run-source-deploy",
+          "satisfiesPzi": true,
+          "sizeBytes": "2983938869",
+          "updateTime": "2026-10-11T21:16:43.144384Z",
+          "vulnerabilityScanningConfig": {
+            "enablementState": "SCANNING_DISABLED",
+            "enablementStateReason": "API containerscanning.googleapis.com is not enabled.",
+            "lastEnableTime": "2026-09-15T15:48:56.826292211Z"
+          }
+        }
+      ]
+    },
+    {
+      "project": {
+        "createTime": "2022-02-11T18:22:44.247Z",
+        "lifecycleState": "ACTIVE",
+        "name": "My First Project",
+        "projectId": "graceful-fold-341018",
+        "projectNumber": "127203905033"
+      },
+      "run_services": [
+        {
+          "name": "personal-hub-api",
+          "region": "us-east4",
+          "url": "https://personal-hub-api-dvypsqfnpq-uk.a.run.app",
+          "latestReadyRevision": "personal-hub-api-00001-dkz",
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100,
+              "revisionName": "personal-hub-api-00001-dkz"
+            }
+          ],
+          "service_annotations": {
+            "run.googleapis.com/build-enable-automatic-updates": "false",
+            "run.googleapis.com/build-id": "ef6cf407-2dd8-4f76-bd96-2e0282d64656",
+            "run.googleapis.com/build-image-uri": "us-east4-docker.pkg.dev/graceful-fold-341018/cloud-run-source-deploy/personal-hub-api",
+            "run.googleapis.com/build-name": "projects/127203905033/locations/us-east4/builds/ef6cf407-2dd8-4f76-bd96-2e0282d64656",
+            "run.googleapis.com/build-source-location": "gs://run-sources-graceful-fold-341018-us-east4/services/personal-hub-api/1789494416.870631-f0bc309fd7d846788fb7203c3eff6c22.zip#1789494417056789",
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "583.0.0",
+            "run.googleapis.com/ingress": "all",
+            "run.googleapis.com/ingress-status": "all",
+            "run.googleapis.com/maxScale": "20",
+            "run.googleapis.com/operation-id": "45f6be3a-f7f2-4cf4-9e1a-50a2f8849b0b",
+            "run.googleapis.com/urls": "[\"https://personal-hub-api-127203905033.us-east4.run.app\",\"https://personal-hub-api-dvypsqfnpq-uk.a.run.app\"]",
+            "serving.knative.dev/creator": "kvond12@gmail.com",
+            "serving.knative.dev/lastModifier": "kvond12@gmail.com"
+          },
+          "template_annotations": {
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "583.0.0",
+            "run.googleapis.com/startup-cpu-boost": "true"
+          },
+          "serviceAccountName": "personal-hub-api@graceful-fold-341018.iam.gserviceaccount.com",
+          "containers": [
+            {
+              "image": "us-east4-docker.pkg.dev/graceful-fold-341018/cloud-run-source-deploy/personal-hub-api@sha256:5afd2665237ee5c57eabe435bf8501ed629ac95b2aa01e4537b3e7719960e5d5",
+              "resources": {
+                "limits": {
+                  "cpu": "1000m",
+                  "memory": "512Mi"
+                }
+              },
+              "env": [
+                {
+                  "name": "GOOGLE_CLOUD_PROJECT",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "FIRESTORE_DATABASE",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "AUTH_MODE",
+                  "configured": true,
+                  "secretRef": null
+                }
+              ],
+              "volumeMounts": null
+            }
+          ],
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-09-15T17:47:55.875461Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-09-15T17:47:54.013535Z",
+              "status": "True",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2026-09-15T17:47:55.830529Z",
+              "status": "True",
+              "type": "RoutesReady"
+            }
+          ],
+          "iam_policy": {
+            "etag": "ACAB"
+          }
+        },
+        {
+          "name": "personal-hub-mcp",
+          "region": "us-east4",
+          "url": "https://personal-hub-mcp-dvypsqfnpq-uk.a.run.app",
+          "latestReadyRevision": "personal-hub-mcp-00001-q8k",
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100,
+              "revisionName": "personal-hub-mcp-00001-q8k"
+            }
+          ],
+          "service_annotations": {
+            "run.googleapis.com/build-enable-automatic-updates": "false",
+            "run.googleapis.com/build-id": "7a6e45a9-d87e-4247-8588-9f3c330ed568",
+            "run.googleapis.com/build-image-uri": "us-east4-docker.pkg.dev/graceful-fold-341018/cloud-run-source-deploy/personal-hub-mcp",
+            "run.googleapis.com/build-name": "projects/127203905033/locations/us-east4/builds/7a6e45a9-d87e-4247-8588-9f3c330ed568",
+            "run.googleapis.com/build-source-location": "gs://run-sources-graceful-fold-341018-us-east4/services/personal-hub-mcp/1789495738.110344-713743eaed1f4a72a4190160405cf388.zip#1789495738214699",
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "583.0.0",
+            "run.googleapis.com/ingress": "all",
+            "run.googleapis.com/ingress-status": "all",
+            "run.googleapis.com/maxScale": "20",
+            "run.googleapis.com/operation-id": "7a8eaffb-6139-4eb1-ac32-a2ee69a19cfd",
+            "run.googleapis.com/urls": "[\"https://personal-hub-mcp-127203905033.us-east4.run.app\",\"https://personal-hub-mcp-dvypsqfnpq-uk.a.run.app\"]",
+            "serving.knative.dev/creator": "kvond12@gmail.com",
+            "serving.knative.dev/lastModifier": "kvond12@gmail.com"
+          },
+          "template_annotations": {
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "583.0.0",
+            "run.googleapis.com/startup-cpu-boost": "true"
+          },
+          "serviceAccountName": "personal-hub-api@graceful-fold-341018.iam.gserviceaccount.com",
+          "containers": [
+            {
+              "image": "us-east4-docker.pkg.dev/graceful-fold-341018/cloud-run-source-deploy/personal-hub-mcp@sha256:7314bc9c68ec7ffd6574988cb6cbaef9aef3e336faff04410e9a075541bb6370",
+              "resources": {
+                "limits": {
+                  "cpu": "1000m",
+                  "memory": "512Mi"
+                }
+              },
+              "env": [
+                {
+                  "name": "GOOGLE_CLOUD_PROJECT",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "FIRESTORE_DATABASE",
+                  "configured": true,
+                  "secretRef": null
+                },
+                {
+                  "name": "MCP_PATH_TOKEN",
+                  "configured": true,
+                  "secretRef": {
+                    "key": "latest",
+                    "name": "personal-hub-mcp-path-token"
+                  }
+                }
+              ],
+              "volumeMounts": null
+            }
+          ],
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-09-15T18:10:06.551029Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-09-15T18:10:05.185238Z",
+              "status": "True",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2026-09-15T18:10:06.501288Z",
+              "status": "True",
+              "type": "RoutesReady"
+            }
+          ],
+          "iam_policy": {
+            "bindings": [
+              {
+                "members": [
+                  "allUsers"
+                ],
+                "role": "roles/run.invoker"
+              }
+            ],
+            "etag": "BwZbiXSvYto=",
+            "version": 1
+          }
+        }
+      ],
+      "run_jobs": [],
+      "scheduler_locations": {
+        "error": "ERROR: (gcloud.scheduler.locations.list) [kvond12@gmail.com] does not have permission to access projects instance [graceful-fold-341018] (or it may not exist): Cloud Scheduler API has not been used in project graceful-fold-341018 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/cloudscheduler.googleapis.com/overview?project=graceful-fold-341018 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry. This command is authenticated as kvond12@gmail.com which is the active account specified by the [core/account] property.\nCloud Scheduler API has not been used in project graceful-fold-341018 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/cloudscheduler.googleapis.com/overview?project=graceful-fold-341018 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.\nGoogle developers console API activation\nhttps://console.developers.google.com/apis/api/cloudscheduler.googleapis.com/overview?project=graceful-fold-341018\n- '@type': type.googleapis.com/google.rpc.ErrorInfo\n  domai"
+      },
+      "secrets": [
+        {
+          "name": "projects/127203905033/secrets/personal-hub-mcp-path-token",
+          "createTime": "2026-09-15T18:08:48.858210Z",
+          "replication": {
+            "automatic": {}
+          }
+        }
+      ],
+      "enabled_apis": [
+        "artifactregistry.googleapis.com",
+        "bigquery.googleapis.com",
+        "bigquerystorage.googleapis.com",
+        "cloudapis.googleapis.com",
+        "cloudbuild.googleapis.com",
+        "cloudtrace.googleapis.com",
+        "containerregistry.googleapis.com",
+        "datastore.googleapis.com",
+        "firebaserules.googleapis.com",
+        "firestore.googleapis.com",
+        "iam.googleapis.com",
+        "iamcredentials.googleapis.com",
+        "logging.googleapis.com",
+        "monitoring.googleapis.com",
+        "pubsub.googleapis.com",
+        "run.googleapis.com",
+        "secretmanager.googleapis.com",
+        "servicemanagement.googleapis.com",
+        "serviceusage.googleapis.com",
+        "sql-component.googleapis.com",
+        "storage-api.googleapis.com",
+        "storage-component.googleapis.com",
+        "storage.googleapis.com",
+        "telemetry.googleapis.com"
+      ],
+      "billing": {
+        "billingAccountName": "billingAccounts/01D684-9E9CE7-E1C3B9",
+        "billingEnabled": true,
+        "name": "projects/graceful-fold-341018/billingInfo",
+        "projectId": "graceful-fold-341018"
+      },
+      "scheduler_jobs": {
+        "coverage": "blocked",
+        "reason": "Cloud Scheduler API disabled; no jobs inventory claim"
+      },
+      "firestore_databases": [
+        {
+          "appEngineIntegrationMode": "DISABLED",
+          "concurrencyMode": "PESSIMISTIC",
+          "createTime": "2026-09-15T15:36:51.150107Z",
+          "databaseEdition": "STANDARD",
+          "deleteProtectionState": "DELETE_PROTECTION_DISABLED",
+          "earliestVersionTime": "2026-10-12T00:12:20.138742Z",
+          "etag": "IJXS7p2ms5cDMPmE6ruU8ZYD",
+          "freeTier": true,
+          "keyPrefix": "k",
+          "locationId": "northamerica-northeast1",
+          "name": "projects/graceful-fold-341018/databases/(default)",
+          "pointInTimeRecoveryEnablement": "POINT_IN_TIME_RECOVERY_DISABLED",
+          "realtimeUpdatesMode": "REALTIME_UPDATES_MODE_ENABLED",
+          "type": "FIRESTORE_NATIVE",
+          "uid": "14c4fc29-815e-4f33-85ff-8edf6cebb4d2",
+          "updateTime": "2026-09-15T15:36:51.150107Z",
+          "versionRetentionPeriod": "3600s"
+        }
+      ],
+      "storage_buckets": [
+        {
+          "cors_config": [
+            {
+              "method": [
+                "GET"
+              ],
+              "origin": [
+                "https://*.cloud.google.com",
+                "https://*.corp.google.com",
+                "https://*.corp.google.com:*",
+                "https://*.cloud.google",
+                "https://*.byoid.goog"
+              ]
+            }
+          ],
+          "creation_time": "2026-09-15T17:46:56+0000",
+          "default_storage_class": "STANDARD",
+          "generation": 1789494416458938019,
+          "labels": {
+            "used-by": "cloudrun"
+          },
+          "location": "US-EAST4",
+          "location_type": "region",
+          "metageneration": 1,
+          "name": "run-sources-graceful-fold-341018-us-east4",
+          "public_access_prevention": "inherited",
+          "satisfies_pzs": true,
+          "soft_delete_policy": {
+            "effectiveTime": "2026-09-15T17:46:56.831000+00:00",
+            "retentionDurationSeconds": "604800"
+          },
+          "storage_url": "gs://run-sources-graceful-fold-341018-us-east4/",
+          "uniform_bucket_level_access": true,
+          "update_time": "2026-09-15T17:46:56+0000"
+        }
+      ],
+      "artifact_repositories": [
+        {
+          "createTime": "2026-09-15T17:46:52.729046Z",
+          "description": "Cloud Run Source Deployments",
+          "format": "DOCKER",
+          "mode": "STANDARD_REPOSITORY",
+          "name": "projects/graceful-fold-341018/locations/us-east4/repositories/cloud-run-source-deploy",
+          "satisfiesPzi": true,
+          "satisfiesPzs": true,
+          "sizeBytes": "134509695",
+          "updateTime": "2026-09-15T18:09:44.819458Z",
+          "vulnerabilityScanningConfig": {
+            "enablementState": "SCANNING_DISABLED",
+            "enablementStateReason": "API containerscanning.googleapis.com is not enabled.",
+            "lastEnableTime": "2026-09-15T17:46:43.695320248Z"
+          }
+        }
+      ]
+    }
+  ],
+  "blockers": []
+}

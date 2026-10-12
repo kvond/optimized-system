@@ -1,0 +1,192 @@
+{
+  "checked_at": "2026-10-12T01:12:57.432772+00:00",
+  "mode": "read-only metadata; no browser interaction",
+  "scope": "top-level Downloads/Documents names and Chrome profile cache/installed extension manifest safe fields only",
+  "archives": [],
+  "chrome_profiles": [
+    {
+      "directory": "Default",
+      "display_name": "PROFESSIONAL",
+      "account_present": true,
+      "extensions": [
+        {
+          "id": "ghbmnnjooekpmoecnnnilnnbdlolhkhi",
+          "version": "1.110.1",
+          "name": "__MSG_extName__",
+          "status": "installed files; enabled state unverified"
+        },
+        {
+          "id": "hehggadaopoacecdllhhajmbjkdcmajg",
+          "version": "1.26.901.11451",
+          "name": "ChatGPT",
+          "status": "installed files; enabled state unverified"
+        },
+        {
+          "id": "fcoeoabgfenejglbffodgkkbkcdhcgfn",
+          "version": "1.0.100",
+          "name": "Claude",
+          "status": "installed files; enabled state unverified"
+        },
+        {
+          "id": "nmmhkkegccagdldgiimedpiccmgmieda",
+          "version": "1.0.0.6",
+          "name": "__MSG_APP_NAME__",
+          "status": "installed files; enabled state unverified"
+        },
+        {
+          "id": "kbfnbcaeplbcioakkpcpgfkobkghlhen",
+          "version": "14.1336.0",
+          "name": "Grammarly: AI Writing Assistant and Grammar Checker App",
+          "status": "installed files; enabled state unverified"
+        }
+      ]
+    },
+    {
+      "directory": "Profile 29",
+      "display_name": "redclay.k12.de.us",
+      "account_present": true,
+      "extensions": [
+        {
+          "id": "ghbmnnjooekpmoecnnnilnnbdlolhkhi",
+          "version": "1.110.1",
+          "name": "__MSG_extName__",
+          "status": "installed files; enabled state unverified"
+        },
+        {
+          "id": "lmjegmlicamnimmfhcmpkclmigmmcbeh",
+          "version": "3.10",
+          "name": "__MSG_extensionName__",
+          "status": "installed files; enabled state unverified"
+        },
+        {
+          "id": "jgfbgkjjlonelmpenhpfeeljjlcgnkpe",
+          "version": "12.7",
+          "name": "ClassLink OneClick Extension",
+          "status": "installed files; enabled state unverified"
+        },
+        {
+          "id": "fcoeoabgfenejglbffodgkkbkcdhcgfn",
+          "version": "1.0.100",
+          "name": "Claude",
+          "status": "installed files; enabled state unverified"
+        },
+        {
+          "id": "ikkacbocgfepbhbjkdfbjdbhfgpgfjee",
+          "version": "5.0.0.0",
+          "name": "GoGuardian License",
+          "status": "installed files; enabled state unverified"
+        },
+        {
+          "id": "haldlgldplgnggkjaafhelgiaglafanh",
+          "version": "4.1.245",
+          "name": "GoGuardian",
+          "status": "installed files; enabled state unverified"
+        },
+        {
+          "id": "nmmhkkegccagdldgiimedpiccmgmieda",
+          "version": "1.0.0.6",
+          "name": "__MSG_APP_NAME__",
+          "status": "installed files; enabled state unverified"
+        },
+        {
+          "id": "inomeogfingihgjfjlpeplalcfajhgai",
+          "version": "2.1",
+          "name": "Chrome Remote Desktop",
+          "status": "installed files; enabled state unverified"
+        },
+        {
+          "id": "dnollkdkikklpdganoecjcmmlddbennb",
+          "version": "3.2.0",
+          "name": "__MSG_AppName__",
+          "status": "installed files; enabled state unverified"
+        },
+        {
+          "id": "ecnphlgnajanjnkcmbpancdjoidceilk",
+          "version": "2.0.25540",
+          "name": "Kami for Google Chrome\u2122",
+          "status": "installed files; enabled state unverified"
+        }
+      ]
+    },
+    {
+      "directory": "Profile 4",
+      "display_name": "Katherine",
+      "account_present": true,
+      "extensions": [
+        {
+          "id": "ghbmnnjooekpmoecnnnilnnbdlolhkhi",
+          "version": "1.110.1",
+          "name": "__MSG_extName__",
+          "status": "installed files; enabled state unverified"
+        },
+        {
+          "id": "nenlahapcbofgnanklpelkaejcehkggg",
+          "version": "0.1.1397",
+          "name": "Capital One Shopping: Save Now",
+          "status": "installed files; enabled state unverified"
+        },
+        {
+          "id": "blillmbchncajnhkjfdnincfndboieik",
+          "version": "2.1.4",
+          "name": "Glasp Web Highlighter: PDF & Web Highlight",
+          "status": "installed files; enabled state unverified"
+        },
+        {
+          "id": "jgfbgkjjlonelmpenhpfeeljjlcgnkpe",
+          "version": "12.7",
+          "name": "ClassLink OneClick Extension",
+          "status": "installed files; enabled state unverified"
+        },
+        {
+          "id": "iblgdcjagdifpikcobibfpkddkphllmc",
+          "version": "5.0.0",
+          "name": "Southwest Airlines Rapid Rewards Shopping\u00ae",
+          "status": "installed files; enabled state unverified"
+        },
+        {
+          "id": "hehggadaopoacecdllhhajmbjkdcmajg",
+          "version": "1.26.901.11451",
+          "name": "ChatGPT",
+          "status": "installed files; enabled state unverified"
+        },
+        {
+          "id": "ejcfepkfckglbgocfkanmcdngdijcgld",
+          "version": "1.11",
+          "name": "ChatGPT search",
+          "status": "installed files; enabled state unverified"
+        },
+        {
+          "id": "fcoeoabgfenejglbffodgkkbkcdhcgfn",
+          "version": "1.0.100",
+          "name": "Claude",
+          "status": "installed files; enabled state unverified"
+        },
+        {
+          "id": "baafhiocpgpaahonnkhkhbkggbhmefld",
+          "version": "4.3.1",
+          "name": "__MSG_extensionName__",
+          "status": "installed files; enabled state unverified"
+        },
+        {
+          "id": "nmmhkkegccagdldgiimedpiccmgmieda",
+          "version": "1.0.0.6",
+          "name": "__MSG_APP_NAME__",
+          "status": "installed files; enabled state unverified"
+        },
+        {
+          "id": "kbfnbcaeplbcioakkpcpgfkobkghlhen",
+          "version": "14.1336.0",
+          "name": "Grammarly: AI Writing Assistant and Grammar Checker App",
+          "status": "installed files; enabled state unverified"
+        }
+      ]
+    }
+  ],
+  "access_errors": [
+    {
+      "path": "/Users/katherinevonduyke/Documents",
+      "error": "[Errno 1] Operation not permitted: '/Users/katherinevonduyke/Documents'"
+    }
+  ],
+  "codex_identity": "Unverified; auth files excluded to avoid tokens. Parent controls nonsecret UI verification."
+}

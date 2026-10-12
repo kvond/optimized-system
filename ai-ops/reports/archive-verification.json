@@ -1,0 +1,88 @@
+{
+  "checked_at": "2026-10-12T01:23:58.402471+00:00",
+  "source": "outputs/archive-contents",
+  "external_path": "/Volumes/T7/AI-Archive",
+  "readback": "Finder copied external contents into outputs/archive-readback",
+  "all_files_matched": true,
+  "files": [
+    {
+      "path": "README.md",
+      "size_bytes": 865,
+      "sha256": "bcaceb42bbc5073191a38aec28a9ac05fae55dc1be2281f407bea224ad15e8e5",
+      "readback_sha256": "bcaceb42bbc5073191a38aec28a9ac05fae55dc1be2281f407bea224ad15e8e5",
+      "matched": true
+    },
+    {
+      "path": "preservation/repos/answerable-unpushed.bundle",
+      "size_bytes": 250794,
+      "sha256": "cd0cd1b0838232b9fafe5a613609cfe9b0aa790abaa404a788c3f4e16377ba6a",
+      "readback_sha256": "cd0cd1b0838232b9fafe5a613609cfe9b0aa790abaa404a788c3f4e16377ba6a",
+      "matched": true
+    },
+    {
+      "path": "preservation/repos/answerable-pipeline-backup.bundle",
+      "size_bytes": 171043,
+      "sha256": "49235078ecd6315a469d6f7f633fc3ec19f7597aea804771fb64e4bc89dd46d1",
+      "readback_sha256": "49235078ecd6315a469d6f7f633fc3ec19f7597aea804771fb64e4bc89dd46d1",
+      "matched": true
+    },
+    {
+      "path": "preservation/repos/Answerable-Teaching.bundle",
+      "size_bytes": 2196043,
+      "sha256": "0749a521cca8d83ac7065425151a5c4abd47a8043520bd4b7f9669adad8f9252",
+      "readback_sha256": "0749a521cca8d83ac7065425151a5c4abd47a8043520bd4b7f9669adad8f9252",
+      "matched": true
+    },
+    {
+      "path": "checksums/SHA256SUMS",
+      "size_bytes": 1026,
+      "sha256": "386e31f7843e99a2d197d988bfe59e63111d7303c83f186a8e519b8d3333b7f5",
+      "readback_sha256": "386e31f7843e99a2d197d988bfe59e63111d7303c83f186a8e519b8d3333b7f5",
+      "matched": true
+    },
+    {
+      "path": "manifests/archive-browser-inventory.json",
+      "size_bytes": 6521,
+      "sha256": "e8c80bed2c1da80dfc10d75f452f92429b81f181fc079686f7e43bfa2b7871b2",
+      "readback_sha256": "e8c80bed2c1da80dfc10d75f452f92429b81f181fc079686f7e43bfa2b7871b2",
+      "matched": true
+    },
+    {
+      "path": "manifests/repo-inventory.json",
+      "size_bytes": 125385,
+      "sha256": "966d15f95b4b533f1f155f309ebc141f6cc718d4b71572fe82b7d197fe9df48c",
+      "readback_sha256": "966d15f95b4b533f1f155f309ebc141f6cc718d4b71572fe82b7d197fe9df48c",
+      "matched": true
+    },
+    {
+      "path": "manifests/preservation-manifest.json",
+      "size_bytes": 3506,
+      "sha256": "9ac2e5d9d0cb9fab78dc889099d053e43d5a71aaea5a503b8433676e649f45d0",
+      "readback_sha256": "9ac2e5d9d0cb9fab78dc889099d053e43d5a71aaea5a503b8433676e649f45d0",
+      "matched": true
+    },
+    {
+      "path": "manifests/external-drive-inventory.json",
+      "size_bytes": 588,
+      "sha256": "0b28ec751b5fffb68fbc2c0b677fa460e264dc370529f9348e5acc1d2bc4656f",
+      "readback_sha256": "0b28ec751b5fffb68fbc2c0b677fa460e264dc370529f9348e5acc1d2bc4656f",
+      "matched": true
+    },
+    {
+      "path": "manifests/scheduler-inventory.json",
+      "size_bytes": 26049,
+      "sha256": "96ad750f6bb4faf4bf29c9bddd46c140bb214ed98c27d14056d34a5097e26e59",
+      "readback_sha256": "96ad750f6bb4faf4bf29c9bddd46c140bb214ed98c27d14056d34a5097e26e59",
+      "matched": true
+    },
+    {
+      "path": "manifests/export-items.json",
+      "size_bytes": 1997,
+      "sha256": "d46b53d01b25964bd781f57a770c9a5b81d06fa1616becb3c5276e9bf3f9bd82",
+      "readback_sha256": "d46b53d01b25964bd781f57a770c9a5b81d06fa1616becb3c5276e9bf3f9bd82",
+      "matched": true
+    }
+  ],
+  "encryption_verified": false,
+  "complete_ai_exports": false
+}

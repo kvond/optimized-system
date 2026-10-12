@@ -1,0 +1,18 @@
+{
+ "$schema":"https://json-schema.org/draft/2020-12/schema",
+ "title":"Provider-neutral execution request",
+ "type":"object","additionalProperties":false,
+ "required":["request_id","privacy_partition","source_id","source_revision","task_type","contract_version","route_version","inputs","required_capability","deadline_utc"],
+ "properties":{
+  "request_id":{"type":"string","minLength":1},
+  "privacy_partition":{"type":"string","minLength":1},
+  "source_id":{"type":"string","minLength":1},
+  "source_revision":{"type":"string","minLength":1},
+  "task_type":{"type":"string","minLength":1},
+  "contract_version":{"type":"string","minLength":1},
+  "route_version":{"type":"string","minLength":1},
+  "inputs":{"type":"object"},
+  "required_capability":{"type":"integer","minimum":0},
+  "deadline_utc":{"type":"string","format":"date-time","pattern":"Z$"}
+ }
+}
