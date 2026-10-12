@@ -1,0 +1,61 @@
+{
+  "verified_at_utc": "2026-10-12T16:34:10.237238+00:00",
+  "image_path": "/Volumes/T7/AI-Archive/AI-Private-Archive-v2.sparsebundle",
+  "encryption_verified": true,
+  "mount_point": "/Volumes/AI-Private-Archive",
+  "private_root": "/Volumes/AI-Private-Archive/AI-Archive",
+  "filesystem": "APFS",
+  "owners_enabled": false,
+  "private_root_mode": "0700",
+  "canary_mode": "0600",
+  "ownership_matches_executor": true,
+  "synthetic_copy_readback_sha256": "f65e14b3f41bde340a74d34ca83e1a2b73ada744e21af051a73d818b0dae2470",
+  "password_entered_or_read_by_agent": false,
+  "password_recovery_after_unmount_tested": false,
+  "raw_exports_downloaded": false,
+  "schema_version": 1,
+  "report_compiled_at_utc": "2026-10-12T16:49:58.830185+00:00",
+  "evidence_scope": "Root-verified storage receipt plus root-reported subsequent ownership/provider/authentication observations; no raw export content",
+  "ownership_blocker": {
+    "state": "admin_authorization_required",
+    "attempts": "ordinary diskutil, sudo -n diskutil, and fresh Desktop Commander diskutil require administrator authorization",
+    "owners_enabled": false,
+    "desktop_commander_process_pid": 60748,
+    "desktop_commander_process_absent_verified": true,
+    "ownership_enablement_success": false,
+    "raw_download_gate_passed": false
+  },
+  "provider_probes": {
+    "claude_exports": {
+      "accounts": [
+        "kvond@udel.edu",
+        "kvond12@gmail.com"
+      ],
+      "method": "HEAD",
+      "status": 403,
+      "host": "claude.ai",
+      "response_bodies_read": false,
+      "signed_links_stored": false,
+      "interpretation": "HEAD rejection does not prove export unavailable or expired; use normal authenticated browser download after storage gate",
+      "download_success": false
+    },
+    "source_chatgpt": {
+      "account_email": "kvond12@gmail.com",
+      "plan": "Free",
+      "ordinary_mac_signin_restored_verified": true,
+      "prior_authentication_expired": true,
+      "fresh_export_confirmation_success": false,
+      "current_ui": "Check Your Inbox; one-time-code field",
+      "ipad_opened": false,
+      "codes_read": false,
+      "resends_performed": false,
+      "request_state": "authentication_pending_unconfirmed",
+      "email_alternative_chosen": true
+    }
+  },
+  "limits": [
+    "OwnersEnabled=false remains actual storage blocker; displayed modes do not prove enforceable per-user ownership on this mount.",
+    "Encryption and current mount verified; recoverable password unlock after unmount/remount not tested.",
+    "No raw exports downloaded; no successful export or complete archive claim."
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "updated_at": "2026-10-12T16:28:27.967421+00:00",
+  "updated_at": "2026-10-12T16:57:07.079304+00:00",
   "phase": "daytime-continuation",
   "overall_status": "partial",
   "authorization": "User resumed October12 after completed overnight cutoff; requested durable GitHub handoff and clarified current account is main account",
@@ -14,15 +14,16 @@
   },
   "account": {
     "current_main": true,
-    "email": null,
-    "email_status": "awaiting_user_label; not exposed by usage tool",
+    "email": "kvond@udel.edu",
+    "email_status": "verified profile email; account ID exactly matches current live Codex usage account",
     "switch_preference": "continue current main account",
     "user_confirmed_roles": {
-      "main_chatgpt": "current signed-in ChatGPT/Codex account; email not exposed",
+      "main_chatgpt": "current signed-in ChatGPT/Codex, kvond@udel.edu",
       "other_ai_account": "UD Claude (kvond@udel.edu)",
       "automatic_switch": false,
       "confirmation_date": "2026-10-12"
-    }
+    },
+    "identity_receipt": "reports/account-identity-verification-2026-10-12.json"
   },
   "usage_snapshot": {
     "source": "live Codex get_usage_limits",
@@ -56,10 +57,10 @@
     "terminal_access_verified": true,
     "original_checksum_entries_verified": 10,
     "git_bundles_verified": 3,
-    "encryption_verified": false,
+    "encryption_verified": true,
     "filevault_on": false,
     "new_raw_exports_downloaded": false,
-    "protected_container_created": false,
+    "protected_container_created": true,
     "protected_storage_attempt": {
       "state": "creator app stopped; PID absence verified; partial image preserved",
       "intended_path": "/Volumes/T7/AI-Archive/AI-Private-Archive.sparsebundle",
@@ -72,14 +73,25 @@
       "shared_controller_stopped": false
     },
     "protected_storage_recovery": {
-      "state": "reviewable form prepared; Save not clicked; awaiting human private credential entry",
+      "state": "encrypted image created by user; current APFS mount and synthetic copy/readback verified; ownership enforcement awaits Mac administrator",
       "intended_path": "/Volumes/T7/AI-Archive/AI-Private-Archive-v2.sparsebundle",
       "format": "APFS",
       "image_format": "SPARSEBUNDLE",
       "encryption_setting": "AES-256",
       "size_setting": "20 GB",
-      "actual_encryption_verified": false
-    }
+      "actual_encryption_verified": true,
+      "user_confirmed_password_entry": true,
+      "mount_point": "/Volumes/AI-Private-Archive",
+      "private_root": "/Volumes/AI-Private-Archive/AI-Archive",
+      "owners_enabled": false,
+      "root_mode": "0700",
+      "canary_mode": "0600",
+      "password_recovery_after_unmount_tested": false,
+      "verification_receipt": "reports/protected-storage-verification-2026-10-12.json",
+      "raw_download_gate_passed": false
+    },
+    "encryption_scope": "AI-Private-Archive-v2.sparsebundle only; T7 filesystem unchanged",
+    "t7_filesystem_encryption_verified": false
   },
   "exports": [
     {
@@ -95,7 +107,15 @@
       "state": "ready_email_verified_not_downloaded",
       "requested_once": true,
       "request_email_at": "2026-10-12T15:02:52Z",
-      "ready_email_at": "2026-10-12T15:03:20Z"
+      "ready_email_at": "2026-10-12T15:03:20Z",
+      "metadata_probe": {
+        "method": "HEAD",
+        "status": 403,
+        "host": "claude.ai",
+        "body_read": false,
+        "link_or_tokens_in_reports": false,
+        "download_verified": false
+      }
     },
     {
       "platform": "Claude",
@@ -103,24 +123,40 @@
       "state": "ready_email_verified_not_downloaded",
       "requested_once": true,
       "request_email_at": "2026-10-12T15:04:50Z",
-      "ready_email_at": "2026-10-12T15:05:46Z"
+      "ready_email_at": "2026-10-12T15:05:46Z",
+      "metadata_probe": {
+        "method": "HEAD",
+        "status": 403,
+        "host": "claude.ai",
+        "body_read": false,
+        "link_or_tokens_in_reports": false,
+        "download_verified": false
+      }
     },
     {
       "platform": "ChatGPT",
       "account_email": "kvond12@gmail.com",
-      "state": "attempted_unconfirmed_authentication_required",
-      "request_repeated": false,
-      "confirmation_clicked_once": true,
+      "state": "authentication_pending_email_code_unconfirmed",
+      "request_repeated": true,
+      "confirmation_clicked_once": false,
       "account_settings_email_verified": true,
-      "auth_surface": "approve sign-in in already signed-in ChatGPT iPad app",
+      "auth_surface": "email code on this Mac; user prohibited iPad use",
       "export_success_verified": false,
-      "raw_downloaded": false
+      "raw_downloaded": false,
+      "prior_authentication_expired": true,
+      "ordinary_mac_signin_restored_verified": true,
+      "confirmation_attempts": 2,
+      "repeat_after_reconciliation": true,
+      "reconciliation": "prior auth handle displayed session ended; account email/Free directly verified again; targeted OpenAI export mail search returned none; no successful export receipt",
+      "ipad_opened": false,
+      "codes_read": false,
+      "resends_performed": false
     }
   ],
   "school": {
     "jobs_changed": false,
     "scheduler": "local Codex heartbeat",
-    "desktop_email": null,
+    "desktop_email": "kvond@udel.edu",
     "models_pinned": false,
     "jobs": [
       {
@@ -136,7 +172,10 @@
         "observed_model": "gpt-6-luna"
       }
     ],
-    "destination_success_not_verified": true
+    "destination_success_not_verified": true,
+    "desktop_identity_verified": true,
+    "internal_dispatcher_retry_verified": true,
+    "retry_evidence_scope": "static installed local heartbeat dispatcher only; transport/app-server/model retries unverified"
   },
   "personal_schedules": {
     "ud_chatgpt_active_count": 5,
@@ -149,11 +188,10 @@
     "migration_direction_already_observed": true
   },
   "remaining": [
-    "protected recoverable raw export storage and required user authentication",
+    "Mac administrator authorization for ownership enforcement and remaining Mac/email/UD authentication",
     "complete raw account export acquisition/checksums/coverage and unique-asset distillation",
     "current rubric/source-voice gaps and Katherine judgment where applicable",
-    "protected Documents/Codex inventory access and unresolved legacy consumer coverage",
-    "current main account email label"
+    "protected Documents/Codex inventory access and unresolved legacy consumer coverage"
   ],
   "source_evidence": [
     "reports/continuation-2026-10-12.md",
@@ -162,7 +200,9 @@
     "reports/source-consolidation-2026-10-12.md",
     "reports/completion-audit-2026-10-12.md",
     "reports/personal-hub-provenance-2026-10-12.md",
-    "retirement-preservation/answerable-pipeline-backup/asset-reconciliation.md"
+    "retirement-preservation/answerable-pipeline-backup/asset-reconciliation.md",
+    "reports/protected-storage-verification-2026-10-12.md",
+    "reports/account-identity-verification-2026-10-12.json"
   ],
   "knowledge": {
     "compact_bundle_count": 11,
@@ -201,5 +241,11 @@
     "documents_codex_desktop_commander_read": "DENIED; no directory entries returned",
     "root_cause": "unverified; generic connector denial names possible permission/cloud-file/FDA causes",
     "permission_changes_performed": false
+  },
+  "browser_policy_observation": {
+    "blocked_action": "opening chrome://settings/downloads",
+    "reason": "browser URL policy permits only HTTP/HTTPS",
+    "workaround_attempted": false,
+    "safe_download_plan": "ordinary per-download save dialog into protected destination when available; no global settings change"
   }
 }

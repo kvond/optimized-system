@@ -45,3 +45,7 @@ Prompt SHA256: `13daff66e928ab309cf8ae31113d8de9cf8421d15f5d488b821c4347f8cec15d
 **Outputs:** 06:30 source filing/index/checklist/readiness before separate 07:00 Chrome helper; 07:30 individual private feedback, science-writing reports, teacher reports, checklist/index and dated immutable daily print packet.
 
 Full sanitized exact prompts are retained in the JSON. No jobs were modified; no student identities retained.
+
+Current daytime desktop identity update: [profile receipt](account-identity-verification-2026-10-12.json) verifies kvond@udel.edu / Plus, with account ID matching the current live Codex usage tool. The saved schedules do not pin an account/model; this does not retroactively prove historical run identity, dispatcher retry policy or a school destination write. Existing ownership is unchanged.
+
+Installed dispatcher retry evidence (app26.1002.52244): blocked starts defer their next check by up to60seconds; eligible runs advance the next scheduled run before startTurn. Inspected start/completion failures are logged without an immediate dispatcher rerun. The ten-minute completion-observer timeout drops its waiter; it does not prove cancellation. Underlying app-server/transport/model retries remain unverified, so do not promise end-to-end zero retry. [Source locators and package hashes](school-schedule-verification-2026-10-12.json) make this static observation reproducible. [Official scheduling documentation](https://learn.chatgpt.com/docs/automations?surface=app) does not specify retry policy. No school workflow was run or changed.

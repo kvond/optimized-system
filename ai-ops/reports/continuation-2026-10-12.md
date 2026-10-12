@@ -53,3 +53,15 @@ Source ChatGPT Account settings directly verified kvond12@gmail.com / Free. Rece
 Katherine explicitly confirmed the current account is her main ChatGPT account and UD Claude is her other AI account. This overrides earlier UD ChatGPT-primary proposals. Desktop email remains unverified; no automatic switch or purchase occurred. The live Codex snapshot now shows16 percent weekly used/84 percent remaining, existing credits and allowed usage; the short-term window remains unavailable.
 
 A metadata-only Desktop Commander fallback for Documents/Codex returned DENIED and no directory entries. Its generic message lists possible permission, cloud-only file or Full Disk Access causes; no specific root cause is established. No permission changes or broad retries were performed.
+
+## Encrypted image and Mac-only export continuation
+
+Fresh metadata proves the user-created v2 sparse bundle encrypted=YES and bound to its APFS mount. A synthetic copy/readback and mode/owner checks pass. OwnersEnabled=false remains an actual administrator-authorization blocker; normal diskutil, sudo-n and Desktop Commander all stopped at that requirement, and the Desktop Commander process is terminal. Read the [storage verification report](protected-storage-verification-2026-10-12.md). No raw download started; future password recovery after unmount/remount is untested.
+
+Source kvond12 ChatGPT's original authentication displayed session ended. After ordinary Mac sign-in, its exact email/Free plan was verified again and targeted export-email search found no receipt. One reconciled fresh export confirmation remains unconfirmed at the Mac email-code step after Try with email. No iPad was opened; no code read, password copied or prompt resent. UD CAS remains a separate unresolved flow. Both Claude export links rejected metadata-only HEAD with403; no bodies or signed URLs were saved. Their ready notices remain verified, not downloaded archives.
+
+The user is teaching and requested autonomous work unless genuinely needed. Continue independent source/receipt work; preserve existing credential prompts for later user completion. Chrome internal download-settings navigation was rejected by browser security policy, which allows HTTP/HTTPS only. No alternate route to that blocked setting was attempted; a normal per-download save dialog remains the safe acquisition plan where available.
+
+## Current main account resolved
+
+A documented metadata-only Codex account/read request (refreshToken=false) returned kvond@udel.edu / Plus. The same temporary connection's account/rateLimits/read ID exactly matched the current usage-tool account ID. The owned process was stopped; no credential files, tokens, cookies or keychain were inspected and no login/model/schedule change occurred. Read the [profile receipt](account-identity-verification-2026-10-12.json). This resolves the current desktop-email blocker: main ChatGPT/Codex and retained UD Claude both use kvond@udel.edu as separate provider accounts. Source kvond12@gmail.com export work remains source preservation, without switching the main account. Historical execution and destination success remain separate evidence.
