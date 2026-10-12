@@ -65,3 +65,9 @@ The user is teaching and requested autonomous work unless genuinely needed. Cont
 ## Current main account resolved
 
 A documented metadata-only Codex account/read request (refreshToken=false) returned kvond@udel.edu / Plus. The same temporary connection's account/rateLimits/read ID exactly matched the current usage-tool account ID. The owned process was stopped; no credential files, tokens, cookies or keychain were inspected and no login/model/schedule change occurred. Read the [profile receipt](account-identity-verification-2026-10-12.json). This resolves the current desktop-email blocker: main ChatGPT/Codex and retained UD Claude both use kvond@udel.edu as separate provider accounts. Source kvond12@gmail.com export work remains source preservation, without switching the main account. Historical execution and destination success remain separate evidence.
+
+## Latest required authentication gate
+
+Fresh current-state check still has v2 encryption YES/APFS mounted, ownership enforcement false and zero raw files. Source kvond12 Mac email-code prompt is live. The browser's saved UD username and masked password were already filled; normal Login was submitted once, without reading or copying the password. CAS now shows a two-factor code sent to the registered device. No alternate-device resend or Remember this browser change occurred; export success remains unconfirmed.
+
+A strict original-requirement review found no remaining necessary independent source/implementation work under the existing authorizations. The same Mac administrator requirement is revalidated across three consecutive turns: initial privilege attempts, requested checkbox-location UI, and current actual ownership flag. Remaining substantive work needs authentication, protected-folder access or source/user decisions. This passes the blocked audit after checkpoint publication; it does not pass completion.

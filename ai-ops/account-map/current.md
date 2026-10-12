@@ -6,7 +6,7 @@ Latest user direction: this running account is Katherine's main account; she pre
 |---|---|---|
 | Current main ChatGPT/Codex account | kvond@udel.edu | Plus; documented account/read profile email verified and rate-limit account ID exactly matches the current usage tool; user confirmed primary |
 | Source ChatGPT browser | kvond12@gmail.com | Free account; email directly verified in Account settings; Active scheduled view had no rows; ordinary Mac sign-in restored; reconciled export confirmation awaits email-code authentication on this Mac; no iPad use |
-| UD ChatGPT browser | kvond@udel.edu | Plus; five active personal tasks; export reauthentication pending at UD CAS, separate from the signed-in browsing session |
+| UD ChatGPT browser | kvond@udel.edu | Plus; five active personal tasks; browser-filled saved CAS login submitted; registered-device 2FA pending; export success unconfirmed, separate from browsing session |
 | Source Claude browser | kvond12@gmail.com | Menu verified; provider email confirms export ready; not downloaded |
 | UD Claude browser | kvond@udel.edu | Pro menu verified; scheduled view empty; provider email confirms export ready |
 | Remote Desktop Commander connector | kvond12@gmail.com | who_am_i verified October12; one online Mac; remote-call allowance1% remaining, separate from Codex limits |

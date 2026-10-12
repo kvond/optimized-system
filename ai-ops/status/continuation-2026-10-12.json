@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "updated_at": "2026-10-12T16:57:07.079304+00:00",
+  "updated_at": "2026-10-12T17:10:45.480045+00:00",
   "phase": "daytime-continuation",
   "overall_status": "partial",
   "authorization": "User resumed October12 after completed overnight cutoff; requested durable GitHub handoff and clarified current account is main account",
@@ -91,15 +91,28 @@
       "raw_download_gate_passed": false
     },
     "encryption_scope": "AI-Private-Archive-v2.sparsebundle only; T7 filesystem unchanged",
-    "t7_filesystem_encryption_verified": false
+    "t7_filesystem_encryption_verified": false,
+    "latest_revalidation": {
+      "observed_at_utc": "2026-10-12T17:10:45.480045+00:00",
+      "encrypted": true,
+      "mounted_apfs": true,
+      "owners_enabled": false,
+      "raw_archive_file_count": 0
+    }
   },
   "exports": [
     {
       "platform": "ChatGPT",
       "account_email": "kvond@udel.edu",
-      "state": "attempted_unconfirmed_authentication_required",
+      "state": "university_two_factor_code_required_export_unconfirmed",
       "request_repeated": false,
-      "auth_surface": "UD Central Authentication Service"
+      "auth_surface": "UD CAS 2FA on registered device",
+      "browser_saved_login_submitted_once": true,
+      "password_read_or_copied": false,
+      "remember_browser_changed": false,
+      "two_factor_code_read": false,
+      "code_resent": false,
+      "export_success_verified": false
     },
     {
       "platform": "Claude",
@@ -188,7 +201,7 @@
     "migration_direction_already_observed": true
   },
   "remaining": [
-    "Mac administrator authorization for ownership enforcement and remaining Mac/email/UD authentication",
+    "Mac administrator authorization for ownership enforcement, kvond12 Mac email code, and UD registered-device 2FA",
     "complete raw account export acquisition/checksums/coverage and unique-asset distillation",
     "current rubric/source-voice gaps and Katherine judgment where applicable",
     "protected Documents/Codex inventory access and unresolved legacy consumer coverage"
@@ -247,5 +260,17 @@
     "reason": "browser URL policy permits only HTTP/HTTPS",
     "workaround_attempted": false,
     "safe_download_plan": "ordinary per-download save dialog into protected destination when available; no global settings change"
+  },
+  "blocked_audit": {
+    "observed_at_utc": "2026-10-12T17:10:45.480045+00:00",
+    "same_mac_administrator_gate_revalidated_across_three_consecutive_turns": true,
+    "sequence": [
+      "original continuation: diskutil, sudo-n and Desktop Commander required administrator; OwnersEnabled=false",
+      "user-triggered location turn: actual Info checkbox remained checked and locked",
+      "current continuation: mounted image OwnersEnabled=false and zero raw files; source code field live; saved UD login advances only to device 2FA"
+    ],
+    "independent_required_work_review": "No necessary safe source/implementation work remains without authentication, protected-folder access or source/user decisions; original cloud plan satisfied, migration contracts staged, runtime and source-preservation checkpoints already complete",
+    "full_goal_complete": false,
+    "readiness": "human_or_external_state_required; blocked audit passed; full goal remains incomplete"
   }
 }
