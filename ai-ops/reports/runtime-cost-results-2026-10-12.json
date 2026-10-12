@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "verified_at_utc": "2026-10-12T22:37:09.433640+00:00",
+  "verified_at_utc": "2026-10-12T23:14:36.869927+00:00",
   "repository": "kvond/optimized-system",
   "repository_renamed_from": "kvond/answerable-skills",
   "tests": {
-    "count": 70,
-    "duration_seconds": 3.539,
+    "count": 83,
+    "duration_seconds": 4.396,
     "status": "passed",
     "scope": "synthetic/local suite; live public source acceptance reported separately; no paid-provider or scheduled-cloud acceptance"
   },
@@ -94,5 +94,14 @@
     "HTTP_to_private_gate_receipt": "reports/doe-source-gate-acceptance-2026-10-12.json",
     "exact_public_DOE_filter_only": true,
     "cloud_schedule_integration_verified": false
+  },
+  "doe_operator": {
+    "implementation": "runtime/doe_check.py",
+    "targeted_tests": 13,
+    "actual_desktop_commander_acceptance": "reports/doe-operator-acceptance-2026-10-12.json",
+    "start_method": "spawn",
+    "same_request_no_refetch_verified": true,
+    "scheduled": false,
+    "paid_calls": 0
   }
 }

@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "observed_at_utc": "2026-10-12T23:14:43.309106+00:00",
+  "inspection_method": "Normal existing signed-in PROFESSIONAL browser; exact existing session opened read-only; no prompt submitted",
+  "requested_source_url": "https://claude.ai/cowork/cse_012vR37GM3SbnzSTn67jhvdB",
+  "resolved_source_url": "https://claude.ai/chat/edbdc0e0-d488-8095-af71-588d7225f535",
+  "source_title": "Paper grading rubric",
+  "source_event_timestamp_verified": false,
+  "evidence_class": "existing session output and subsequent user feedback; not independently verified assignment rubric",
+  "displayed_rubric_table": {
+    "columns": [
+      "Criterion",
+      "Rating",
+      "Points"
+    ],
+    "criteria": [
+      {
+        "criterion": "Grammar/Spelling",
+        "displayed_rating": "Fully Developed",
+        "displayed_points": 15
+      },
+      {
+        "criterion": "Content",
+        "displayed_rating": "Fully Developed",
+        "displayed_points": 50
+      },
+      {
+        "criterion": "APA Formatting",
+        "displayed_rating": "Fully Developed",
+        "displayed_points": 20
+      },
+      {
+        "criterion": "Writing",
+        "displayed_rating": "Fully Developed",
+        "displayed_points": 15
+      }
+    ],
+    "displayed_total": 100,
+    "criterion_maxima_independently_verified": false,
+    "all_band_definitions_verified": false
+  },
+  "user_feedback_observed": {
+    "rubric_table_approved_in_session": true,
+    "comment_preference": "two substantive praises instead of a long praise list"
+  },
+  "formal_binding": {
+    "explicit_course_code_verified": false,
+    "explicit_assignment_title_verified": false,
+    "explicit_course_period_verified": false,
+    "authoritative_assignment_rubric_source_verified": false,
+    "general_current_assignment_scoring_authority_claimed": false
+  },
+  "limitations": [
+    "Displayed point rows accompany a proposed full-score assessment; not proof of all rubric maxima or bands.",
+    "User acceptance applies to the displayed session draft; do not silently apply it to other assignments or courses.",
+    "Existing source contains student-specific assessment; no student names, cases, paper excerpts, comments or grade-write claims copied into these reports.",
+    "Assistant-reported grading/posting activity was not independently verified and is outside this inspection.",
+    "This source does not resolve missing original Substack voice script or preferred-voice acceptance."
+  ],
+  "changes": {
+    "new_prompt_or_model_call": false,
+    "grading_or_delivery_performed": false,
+    "project_restored": false,
+    "knowledge_bundle_changed": false
+  }
+}

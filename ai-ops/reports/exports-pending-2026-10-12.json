@@ -11,13 +11,13 @@
   "existing_private_manifest_count": 1,
   "raw_contents_read": false,
   "raw_contents_in_git": false,
-  "next_action": "verify complete downloaded files and source identity before encrypted acquisition/checksum/readback",
-  "earlier_failures": "dated previous attempt evidence; current user-started request outcome unknown",
+  "next_action": "Acquire complete user/provider downloads when available; verify account, coverage, SHA256 and encrypted copy/readback. Do not request duplicate exports or repeat a known blocked route without a relevant state change.",
+  "earlier_failures": "Previous attempts are dated historical evidence. The new main-Claude request is now independently ready and its normal ready route reproduced the client block; main ChatGPT processing remains separate.",
   "latest_notice_verified_at_utc": "2026-10-12T22:37:09.433640+00:00",
   "provider_notice_headers_verified": true,
   "provider_request_progress_independently_correlated": true,
   "verification_method": "matched notice subjects, sender domains, original recipient and dates in connected Gmail; no body/link stored",
-  "mail_authentication_headers_checked": false,
+  "mail_authentication_headers_checked": true,
   "notices": [
     {
       "provider": "ChatGPT",
@@ -49,6 +49,68 @@
   ],
   "claude_ready_notice_verified": true,
   "chatgpt_ready_notice_verified": false,
-  "last_bounded_drive_check_at_utc": "2026-10-12T22:37:36.915860Z",
-  "new_candidate_download_or_partial_files_observed": 0
+  "last_bounded_drive_check_at_utc": "2026-10-12T23:07:46.650307+00:00",
+  "new_candidate_download_or_partial_files_observed": 0,
+  "latest_drive_check": {
+    "observed_at_utc": "2026-10-12T23:07:46.650307+00:00",
+    "since_utc": "2026-10-12T22:00:00+00:00",
+    "checks": [
+      {
+        "root": "/Volumes/T7",
+        "depth": 1,
+        "exclusions": [
+          "AI-Archive"
+        ],
+        "readable": true,
+        "recent_archive_candidates": 0,
+        "errors": [],
+        "exists": true
+      },
+      {
+        "root": "/Volumes/T7/AI-Archive/raw",
+        "depth": 3,
+        "exclusions": [],
+        "readable": true,
+        "recent_archive_candidates": 0,
+        "errors": [],
+        "exists": true
+      },
+      {
+        "root": "/Volumes/AI-Private-Archive/AI-Archive/raw",
+        "depth": 3,
+        "exclusions": [],
+        "readable": true,
+        "recent_archive_candidates": 0,
+        "errors": [],
+        "exists": true
+      },
+      {
+        "root": "/Users/katherinevonduyke/Downloads",
+        "depth": 1,
+        "exclusions": [],
+        "readable": true,
+        "recent_archive_candidates": 0,
+        "errors": [],
+        "exists": true
+      }
+    ],
+    "candidate_count": 0,
+    "candidate_paths_withheld": true,
+    "whole_drive_claim": false
+  },
+  "mail_authentication_evidence": "original Anthropic SPF/DKIM/DMARC pass at university mail boundary; forwarding ARC pass, final Gmail DKIM neutral/DMARC fail consistent with observed forwarding; no blanket current-mail authentication claim",
+  "current_main_claude_normal_download": {
+    "account_email": "kvond@udel.edu",
+    "provider_notice_at_utc": "2026-10-12T22:26:18Z",
+    "browser_email_verified": true,
+    "normal_email_ready_link_opened": true,
+    "result": "Chrome ERR_BLOCKED_BY_CLIENT at storage.googleapis.com",
+    "new_file_saved": false,
+    "security_settings_changed": false,
+    "signed_link_published": false,
+    "observed_at_utc": "2026-10-12T23:13:02.745077+00:00"
+  },
+  "last_chatgpt_notice_search_at_utc": "2026-10-12T23:17:00.334291+00:00",
+  "last_chatgpt_search_scope": "in:anywhere after2026-10-12T22:00Z fromopenai.com export/data-ready subjects",
+  "last_chatgpt_search_matches": 1
 }
