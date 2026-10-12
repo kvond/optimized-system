@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "updated_at": "2026-10-12T17:10:45.480045+00:00",
+  "updated_at": "2026-10-12T18:49:13.445531+00:00",
   "phase": "daytime-continuation",
   "overall_status": "partial",
   "authorization": "User resumed October12 after completed overnight cutoff; requested durable GitHub handoff and clarified current account is main account",
@@ -59,7 +59,7 @@
     "git_bundles_verified": 3,
     "encryption_verified": true,
     "filevault_on": false,
-    "new_raw_exports_downloaded": false,
+    "new_raw_exports_downloaded": true,
     "protected_container_created": true,
     "protected_storage_attempt": {
       "state": "creator app stopped; PID absence verified; partial image preserved",
@@ -73,7 +73,7 @@
       "shared_controller_stopped": false
     },
     "protected_storage_recovery": {
-      "state": "encrypted image created by user; current APFS mount and synthetic copy/readback verified; ownership enforcement awaits Mac administrator",
+      "state": "encrypted image and current mount verified; direct protected acquisition permitted; ownership enforcement optional enhancement",
       "intended_path": "/Volumes/T7/AI-Archive/AI-Private-Archive-v2.sparsebundle",
       "format": "APFS",
       "image_format": "SPARSEBUNDLE",
@@ -88,11 +88,58 @@
       "canary_mode": "0600",
       "password_recovery_after_unmount_tested": false,
       "verification_receipt": "reports/protected-storage-verification-2026-10-12.json",
-      "raw_download_gate_passed": false
+      "raw_download_gate_passed": true,
+      "ownership_enforcement_required_by_original_request": false,
+      "per_user_isolation_verified": false
     },
     "encryption_scope": "AI-Private-Archive-v2.sparsebundle only; T7 filesystem unchanged",
     "t7_filesystem_encryption_verified": false,
-    "latest_revalidation": {
+    "acquisition_authority": "prefer direct encrypted destination; normal provider inbound in verified private per-user local path then immediate SHA256/readback-verified encrypted copy allowed; preserve originals/no deletion; no raw Git/shared paths or unnecessary internal filling; local inbound at-rest encryption not claimed",
+    "direct_only_required_by_original_request": false,
+    "save_link_as_probe": {
+      "target_was": "HTML provider landing page, not actual ZIP",
+      "extension_warning": "cancelled before file existed",
+      "raw_export_downloaded": false
+    },
+    "raw_download_scope": "provider manifest only; source history not acquired",
+    "complete_account_exports": false,
+    "latest_acquisition": {
+      "account_email": "kvond12@gmail.com",
+      "platform": "Claude",
+      "file_type": "provider_export_manifest",
+      "protected_path": "/Volumes/AI-Private-Archive/AI-Archive/raw/claude/kvond12/claude-kvond12-2026-10-12.json",
+      "size_bytes": 1549,
+      "sha256": "2f0c4ba548029f2830245b36f17710e7dd3bb6e3477bda81ccb51eb013247e7a",
+      "valid_json": true,
+      "independent_readback_verified": true,
+      "export_created_at_utc": "2026-10-12T15:05:46.097703+00:00",
+      "expected_parts": [
+        "light_metadata",
+        "projects",
+        "memories",
+        "frames",
+        "conversations"
+      ],
+      "raw_file_count": 1,
+      "complete_part_count": 0,
+      "complete": false,
+      "private_receipt_path": "/Volumes/AI-Private-Archive/AI-Archive/manifests/claude-kvond12-acquisition-20261012T184241Z.json"
+    },
+    "component_acquisition_block": {
+      "authorized_manifest_listed_GET": "HTTP403; no files or partial downloads",
+      "ordinary_authenticated_browser": "legitimate provider redirect to storage.googleapis.com then ERR_BLOCKED_BY_CLIENT",
+      "signed_urls_or_raw_bodies_in_git": false,
+      "same_outcome_alternate_browser_api_security_workarounds_allowed": false,
+      "ownership_is_cause": false,
+      "accounts_with_observed_browser_block": [
+        "kvond12@gmail.com",
+        "kvond@udel.edu"
+      ],
+      "retained_account_file_saved": false,
+      "extension_list_attribution": "no cause established",
+      "exact_cause": "unknown"
+    },
+    "historical_storage_revalidation": {
       "observed_at_utc": "2026-10-12T17:10:45.480045+00:00",
       "encrypted": true,
       "mounted_apfs": true,
@@ -117,7 +164,7 @@
     {
       "platform": "Claude",
       "account_email": "kvond@udel.edu",
-      "state": "ready_email_verified_not_downloaded",
+      "state": "ready_email_verified; ordinary_signed_in_export_route_browser_security_block; no_file_saved",
       "requested_once": true,
       "request_email_at": "2026-10-12T15:02:52Z",
       "ready_email_at": "2026-10-12T15:03:20Z",
@@ -128,12 +175,16 @@
         "body_read": false,
         "link_or_tokens_in_reports": false,
         "download_verified": false
-      }
+      },
+      "browser_menu_account_verified": true,
+      "plan_observed": "Pro",
+      "ordinary_browser_result": "storage.googleapis.com ERR_BLOCKED_BY_CLIENT",
+      "raw_file_saved": false
     },
     {
       "platform": "Claude",
       "account_email": "kvond12@gmail.com",
-      "state": "ready_email_verified_not_downloaded",
+      "state": "manifest_verified_encrypted; components_not_acquired_browser_security_block",
       "requested_once": true,
       "request_email_at": "2026-10-12T15:04:50Z",
       "ready_email_at": "2026-10-12T15:05:46Z",
@@ -144,26 +195,35 @@
         "body_read": false,
         "link_or_tokens_in_reports": false,
         "download_verified": false
-      }
+      },
+      "manifest_downloaded": true,
+      "history_components_downloaded": false,
+      "complete": false
     },
     {
       "platform": "ChatGPT",
       "account_email": "kvond12@gmail.com",
-      "state": "authentication_pending_email_code_unconfirmed",
+      "state": "matching_email_verification_succeeded; later source authentication expired; export acceptance unconfirmed",
       "request_repeated": true,
-      "confirmation_clicked_once": false,
       "account_settings_email_verified": true,
-      "auth_surface": "email code on this Mac; user prohibited iPad use",
+      "auth_surface": "renewed iPad/email verification on Mac; no iPad used",
       "export_success_verified": false,
       "raw_downloaded": false,
       "prior_authentication_expired": true,
       "ordinary_mac_signin_restored_verified": true,
-      "confirmation_attempts": 2,
       "repeat_after_reconciliation": true,
       "reconciliation": "prior auth handle displayed session ended; account email/Free directly verified again; targeted OpenAI export mail search returned none; no successful export receipt",
       "ipad_opened": false,
-      "codes_read": false,
-      "resends_performed": false
+      "codes_read": true,
+      "code_value_stored": false,
+      "email_code_handling_explicitly_user_authorized": true,
+      "matching_code_submission_verified": true,
+      "historical_confirmation_attempts_before_latest_code_progress": 2,
+      "expired_session_resend_attempts": 1,
+      "expired_session_resend_result": "SessionEnded/invalid_state; no fresh code accepted",
+      "latest_successful_verification_resend_attempts": 0,
+      "latest_source_authentication_state": "expired after verified matching email flow then renewed export verification",
+      "current_handoff_auth_tab_valid": false
     }
   ],
   "school": {
@@ -201,7 +261,7 @@
     "migration_direction_already_observed": true
   },
   "remaining": [
-    "Mac administrator authorization for ownership enforcement, kvond12 Mac email code, and UD registered-device 2FA",
+    "source ChatGPT export acceptance/unconfirmed verification flow and UD registered-device 2FA; source Claude components hit Chrome ERR_BLOCKED_BY_CLIENT",
     "complete raw account export acquisition/checksums/coverage and unique-asset distillation",
     "current rubric/source-voice gaps and Katherine judgment where applicable",
     "protected Documents/Codex inventory access and unresolved legacy consumer coverage"
@@ -259,7 +319,7 @@
     "blocked_action": "opening chrome://settings/downloads",
     "reason": "browser URL policy permits only HTTP/HTTPS",
     "workaround_attempted": false,
-    "safe_download_plan": "ordinary per-download save dialog into protected destination when available; no global settings change"
+    "safe_download_plan": "ordinary authenticated provider route; prefer protected save destination; verified private local inbound then immediate encrypted verified copy permitted; no global setting changes or policy bypass"
   },
   "blocked_audit": {
     "observed_at_utc": "2026-10-12T17:10:45.480045+00:00",
@@ -271,6 +331,27 @@
     ],
     "independent_required_work_review": "No necessary safe source/implementation work remains without authentication, protected-folder access or source/user decisions; original cloud plan satisfied, migration contracts staged, runtime and source-preservation checkpoints already complete",
     "full_goal_complete": false,
-    "readiness": "human_or_external_state_required; blocked audit passed; full goal remains incomplete"
+    "readiness": "ownership gate superseded; legitimate manifest acquisition advanced; component security block and export authentication/source gaps remain",
+    "status": "superseded_agent_added_ownership_gate",
+    "superseded_at_utc": "2026-10-12T18:26:40.405701+00:00"
+  },
+  "privacy_portal_observation": {
+    "official_portal": "https://privacy.openai.com",
+    "ordinary_load_and_reload": "blank after normal load/reload and waiting",
+    "export_acceptance_verified": false,
+    "policy_bypass_attempted": false,
+    "security_settings_changed": false
+  },
+  "email_code_policy": {
+    "accessible_matching_codes_agent_handling_user_authorized": true,
+    "code_values_in_git": false,
+    "ask_user_find_or_copy_again": false,
+    "only_registered_device_ud_2fa_requires_device": true
+  },
+  "export_mail_search": {
+    "scope": "in:anywhere newer_than:2d; focused export notices",
+    "anthropic_notices_observed": 4,
+    "chatgpt_acceptance_or_ready_notices_observed": 0,
+    "no_pending_request_inference": false
   }
 }
