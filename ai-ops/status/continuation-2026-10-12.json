@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "updated_at": "2026-10-12T18:49:13.445531+00:00",
+  "updated_at": "2026-10-12T19:03:42.278771+00:00",
   "phase": "daytime-continuation",
   "overall_status": "partial",
   "authorization": "User resumed October12 after completed overnight cutoff; requested durable GitHub handoff and clarified current account is main account",
@@ -137,7 +137,13 @@
       ],
       "retained_account_file_saved": false,
       "extension_list_attribution": "no cause established",
-      "exact_cause": "unknown"
+      "exact_cause": "unknown",
+      "evidence_status": "previous attempts plus newly ready sourceClaude normal route reproduced same browser block",
+      "explicit_user_requested_normal_retry_after_state_change_allowed": true,
+      "fresh_ready_source_route_result": "ERR_BLOCKED_BY_CLIENT; no Save panel/no new file",
+      "fresh_source_ready_time": "2026-10-12T19:00Z",
+      "fresh_ready_time_precision": "minute",
+      "extra_security_workaround_or_setting_change": false
     },
     "historical_storage_revalidation": {
       "observed_at_utc": "2026-10-12T17:10:45.480045+00:00",
@@ -184,8 +190,8 @@
     {
       "platform": "Claude",
       "account_email": "kvond12@gmail.com",
-      "state": "manifest_verified_encrypted; components_not_acquired_browser_security_block",
-      "requested_once": true,
+      "state": "fresh_request_accepted_and_ready; normal_fresh_download_route_ERR_BLOCKED_BY_CLIENT; original_manifest_only",
+      "requested_once": false,
       "request_email_at": "2026-10-12T15:04:50Z",
       "ready_email_at": "2026-10-12T15:05:46Z",
       "metadata_probe": {
@@ -198,7 +204,34 @@
       },
       "manifest_downloaded": true,
       "history_components_downloaded": false,
-      "complete": false
+      "complete": false,
+      "request_count": 2,
+      "latest_request_acceptance_verified": true,
+      "latest_request_acceptance_time": "2026-10-12T18:59Z",
+      "latest_request_time_precision": "minute",
+      "latest_request_email_subject": "Your data export is in progress",
+      "latest_request_recipient_verified": true,
+      "latest_request_sender_signature_domain": "mail.anthropic.com",
+      "latest_request_ready_verified": true,
+      "latest_request_download_verified": false,
+      "prior_link_retry_outcome": "Expired link; link has been used; provider requests new export",
+      "normal_retry_explicit_user_authorized": true,
+      "prior_used_link_proof": {
+        "path": "outputs/claude-used-link-retry-2026-10-12.jpg",
+        "sha256": "edc06a81fee7a14a77850fa48bd365bcd2e592a3c0c01679faad5e8347942ee5"
+      },
+      "latest_request_ready_time": "2026-10-12T19:00Z",
+      "latest_ready_time_precision": "minute",
+      "fresh_download_save_panel_observed": false,
+      "fresh_download_file_saved": false,
+      "latest_request_acceptance_proof": {
+        "path": "outputs/claude-export-request-2026-10-12-1459.jpg",
+        "sha256": "f9cb5f9767a915d6e0e7489782d55e545cb276d18b02cc4ecb8f2905c6f0c616"
+      },
+      "fresh_ready_route_block_proof": {
+        "path": "outputs/claude-storage-blocked-retry-2026-10-12.jpg",
+        "sha256": "1e31c82170439c639bc0e8d20fe5a615a74997099d8b880544efe6c98561fc41"
+      }
     },
     {
       "platform": "ChatGPT",
@@ -261,7 +294,7 @@
     "migration_direction_already_observed": true
   },
   "remaining": [
-    "source ChatGPT export acceptance/unconfirmed verification flow and UD registered-device 2FA; source Claude components hit Chrome ERR_BLOCKED_BY_CLIENT",
+    "fresh source-Claude ready-route browser security block; source ChatGPT export acceptance unconfirmed; UD registered-device 2FA separate",
     "complete raw account export acquisition/checksums/coverage and unique-asset distillation",
     "current rubric/source-voice gaps and Katherine judgment where applicable",
     "protected Documents/Codex inventory access and unresolved legacy consumer coverage"
