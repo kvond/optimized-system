@@ -85,3 +85,7 @@ ai-ops/runtime/tests/__pycache__/
 !/ai-ops/status/continuation-2026-10-12.json
 !/ai-ops/knowledge/source-receipts-2026-10-12.json
 !/ai-ops/reports/personal-schedule-verification-2026-10-12.json
+
+!/ai-ops/reports/personal-hub-provenance-2026-10-12.json
+!/ai-ops/reports/school-schedule-verification-2026-10-12.json
+!/ai-ops/retirement-preservation/answerable-pipeline-backup/asset-reconciliation.json

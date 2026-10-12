@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "updated_at": "2026-10-12T15:49:48.740439+00:00",
+  "updated_at": "2026-10-12T16:28:27.967421+00:00",
   "phase": "daytime-continuation",
   "overall_status": "partial",
   "authorization": "User resumed October12 after completed overnight cutoff; requested durable GitHub handoff and clarified current account is main account",
@@ -16,21 +16,29 @@
     "current_main": true,
     "email": null,
     "email_status": "awaiting_user_label; not exposed by usage tool",
-    "switch_preference": "continue current main account"
+    "switch_preference": "continue current main account",
+    "user_confirmed_roles": {
+      "main_chatgpt": "current signed-in ChatGPT/Codex account; email not exposed",
+      "other_ai_account": "UD Claude (kvond@udel.edu)",
+      "automatic_switch": false,
+      "confirmation_date": "2026-10-12"
+    }
   },
   "usage_snapshot": {
     "source": "live Codex get_usage_limits",
-    "weekly_remaining_percent": 87,
+    "weekly_remaining_percent": 84,
     "window_minutes": 10080,
     "short_term_remaining_percent": null,
     "ordinary_usage_allowed": true,
     "existing_credits_present": true,
     "recommendation": "No credit purchase needed now; recheck actual limits",
     "purchase_performed": false,
-    "observed_at_utc": "2026-10-12T15:43:25.832847+00:00",
-    "previous_weekly_remaining_percent": 89,
+    "observed_at_utc": "2026-10-12T16:28:27.967421+00:00",
+    "previous_weekly_remaining_percent": 87,
     "spend_control_reached": false,
-    "plan_type": "plus"
+    "plan_type": "plus",
+    "weekly_used_percent": 16,
+    "official_guidance": "https://learn.chatgpt.com/docs/pricing"
   },
   "runtime": {
     "test_count": 41,
@@ -39,7 +47,9 @@
     "paid_dispatch_implemented": false,
     "cloud_deployed": false,
     "external_supervisor_required": true,
-    "private_runtime_state_outside_git": true
+    "private_runtime_state_outside_git": true,
+    "cloud_plan_requirement_satisfied": true,
+    "production_pilot_required_for_original_reset": false
   },
   "archive": {
     "root": "/Volumes/T7/AI-Archive",
@@ -51,12 +61,24 @@
     "new_raw_exports_downloaded": false,
     "protected_container_created": false,
     "protected_storage_attempt": {
-      "state": "incomplete_ui_creation_running; no password or completion result exposed",
+      "state": "creator app stopped; PID absence verified; partial image preserved",
       "intended_path": "/Volumes/T7/AI-Archive/AI-Private-Archive.sparsebundle",
       "logical_size_observed": 0,
       "encrypted_observed": false,
       "password_entered_by_agent": false,
-      "do_not_retry_without_reconciliation": true
+      "do_not_retry_without_reconciliation": true,
+      "creator_pid": 55969,
+      "creator_stopped_verified": true,
+      "shared_controller_stopped": false
+    },
+    "protected_storage_recovery": {
+      "state": "reviewable form prepared; Save not clicked; awaiting human private credential entry",
+      "intended_path": "/Volumes/T7/AI-Archive/AI-Private-Archive-v2.sparsebundle",
+      "format": "APFS",
+      "image_format": "SPARSEBUNDLE",
+      "encryption_setting": "AES-256",
+      "size_setting": "20 GB",
+      "actual_encryption_verified": false
     }
   },
   "exports": [
@@ -82,6 +104,17 @@
       "requested_once": true,
       "request_email_at": "2026-10-12T15:04:50Z",
       "ready_email_at": "2026-10-12T15:05:46Z"
+    },
+    {
+      "platform": "ChatGPT",
+      "account_email": "kvond12@gmail.com",
+      "state": "attempted_unconfirmed_authentication_required",
+      "request_repeated": false,
+      "confirmation_clicked_once": true,
+      "account_settings_email_verified": true,
+      "auth_surface": "approve sign-in in already signed-in ChatGPT iPad app",
+      "export_success_verified": false,
+      "raw_downloaded": false
     }
   ],
   "school": {
@@ -112,20 +145,24 @@
     "cutover_performed": false,
     "owner_email_verified": "kvond@udel.edu",
     "fresh_ui_verification": "reports/personal-schedule-verification-2026-10-12.json",
-    "dated_news_output_observed": true
+    "dated_news_output_observed": true,
+    "migration_direction_already_observed": true
   },
   "remaining": [
-    "protected recoverable raw export storage and UD reauthentication",
-    "current assignment/final-paper rubric binding; original voice script and preferred acceptance",
-    "authenticated bounded live source adapter and Firestore transactions before production pilot",
-    "personal schedule replacement destination/timezone/input/test acceptance before cutover",
+    "protected recoverable raw export storage and required user authentication",
+    "complete raw account export acquisition/checksums/coverage and unique-asset distillation",
+    "current rubric/source-voice gaps and Katherine judgment where applicable",
+    "protected Documents/Codex inventory access and unresolved legacy consumer coverage",
     "current main account email label"
   ],
   "source_evidence": [
     "reports/continuation-2026-10-12.md",
     "runbooks/offline-runtime-acceptance.md",
     "reports/reset-night-2026-10-11.md",
-    "reports/source-consolidation-2026-10-12.md"
+    "reports/source-consolidation-2026-10-12.md",
+    "reports/completion-audit-2026-10-12.md",
+    "reports/personal-hub-provenance-2026-10-12.md",
+    "retirement-preservation/answerable-pipeline-backup/asset-reconciliation.md"
   ],
   "knowledge": {
     "compact_bundle_count": 11,
@@ -136,5 +173,33 @@
     "aug23_voice_moves_verified": true,
     "original_stored_voice_script_available": false,
     "preferred_voice_acceptance_verified": false
+  },
+  "future_acceptance_gates": [
+    "authenticated bounded source adapter and transactional state for a selected production pilot",
+    "timezone/input/destination/test acceptance before any personal schedule replacement",
+    "legacy source-pointer/consumer resolution before actual repository or publisher retirement"
+  ],
+  "connectors": {
+    "desktop_commander": {
+      "email": "kvond12@gmail.com",
+      "device_online_verified": true,
+      "remote_calls_remaining_percent_snapshot": 1,
+      "not_codex_desktop_identity_proof": true
+    }
+  },
+  "retirement_preservation": {
+    "pipeline_tracked_assets": 34,
+    "exact_current_matches": 27,
+    "unique_assets_retained_in_bundle": 7,
+    "unique_policy_sources_distilled": 3,
+    "active_book_skill_legacy_dependencies": true,
+    "clearance_for_deletion": false,
+    "book_editorial_sources_distilled": 2
+  },
+  "inventory_access": {
+    "documents_codex_local_read": "PermissionError errno1",
+    "documents_codex_desktop_commander_read": "DENIED; no directory entries returned",
+    "root_cause": "unverified; generic connector denial names possible permission/cloud-file/FDA causes",
+    "permission_changes_performed": false
   }
 }

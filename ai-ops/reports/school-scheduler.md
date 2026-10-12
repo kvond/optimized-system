@@ -1,5 +1,7 @@
 # Read-only scheduler inventory
 
+October12 follow-up: this original overnight snapshot is retained below. Fresh [schedule verification](school-schedule-verification-2026-10-12.json) confirms both ACTIVE schedules, exact target bindings and unchanged prompt hashes. Current [continuation report](continuation-2026-10-12.md) records observed same-day model metadata and the verified T7/loaded-publisher findings that supersede older unknowns here. None proves a successful school destination write; no job changed.
+
 2026-10-12T01:12:13.235986+00:00
 
 Two ACTIVE weekday Codex heartbeat jobs verified from current persisted TOMLs. ACTIVE proves configuration, not execution.

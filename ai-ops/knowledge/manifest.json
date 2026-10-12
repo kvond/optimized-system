@@ -151,7 +151,7 @@
     "bundle": "ai-operating-decisions.md",
     "privacy_class": "private_operational",
     "sources": [],
-    "bundle_sha256": "4b99548fb2a3b5cd0af26b649c59f9605e9ff87770c0320823dea8dae8221229",
+    "bundle_sha256": "1d216801cc4c31ad07e623863fda9e33b0546a363a91871a104e9562f927a8a4",
     "updated_observation_date": "2026-10-12",
     "provenance": "October11 user reset instructions plus latest October12 main-account clarification; direct user messages supersede historical role proposals"
   },

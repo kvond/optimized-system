@@ -98,5 +98,23 @@
       "flags": [],
       "size_bytes": 17395
     }
-  ]
+  ],
+  "editorial_source_preservation": {
+    "source_commit": "76acdd7c999fc25a63081164bdcbfc26cd36fa91",
+    "files": [
+      {
+        "path": "book-compile/voice-guide.md",
+        "sha256": "9a45d93b3123245d896674c6904e2009c98a14a97770e473210ecf59c68f1e07"
+      },
+      {
+        "path": "book-compile/tics-list.md",
+        "sha256": "0b6b81980390005385829ed74754eabb4f9a1da58439f1bb7d82243f45819bc5"
+      }
+    ],
+    "exact_commit_blob_hashes_verified": true,
+    "full_source_retained_in_original_bundle": true,
+    "sanitized_summary": "ai-ops/retirement-preservation/Answerable-Teaching/general-editorial-rules.md",
+    "raw_examples_or_manuscript_copied": false,
+    "active_skill_changed": false
+  }
 }

@@ -1,0 +1,21 @@
+{
+  "checked_at_utc": "2026-10-12T16:03:17.121183+00:00",
+  "jobs_changed": false,
+  "jobs": [
+    {
+      "id": "morning-roster-check-and-submission-tidy",
+      "status": "ACTIVE",
+      "rrule": "RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;BYHOUR=6;BYMINUTE=30;BYSECOND=0",
+      "prompt_sha256": "24abf8f2962839ad7505ce94441385ffde33ea8800f2a247e34c0a14a6aa4820",
+      "target_thread_id": "01a0fc18-96be-7873-8386-da8a6b110384"
+    },
+    {
+      "id": "morning-student-feedback-and-print-checklist",
+      "status": "ACTIVE",
+      "rrule": "RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;BYHOUR=7;BYMINUTE=30;BYSECOND=0",
+      "prompt_sha256": "13daff66e928ab309cf8ae31113d8de9cf8421d15f5d488b821c4347f8cec15d",
+      "target_thread_id": "01a0f4ed-2d87-7e62-9056-46f5ac441ef3"
+    }
+  ],
+  "identity_note": "local configured owner; desktop email not exposed by this evidence"
+}
