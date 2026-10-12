@@ -1,5 +1,7 @@
 # AI Archive specification
 
+Current checkpoint, October12: terminal reads and writes to T7 now succeed. Ten original checksum entries match, and eight sanitized handoff files were copied to `exports/ai-ops-handoff-a5f5acc` with direct source/destination SHA256 readback. This supersedes the historical CLI-access limitations below. Both Claude account exports are now ready by provider email, but no new raw account export is downloaded. T7 encryption remains unverified, FileVault is off, and an encrypted container is needed for raw histories. See [protected archive setup](protected-archive.md).
+
 Intended stable root /Volumes/T7/AI-Archive. raw/chatgpt/{kvond12,ud}, raw/claude/{kvond12,ud}, raw/perplexity, raw/other, manifests, exports, checksums, preservation/repos.
 
 For each item record source_platform, account, export_date, source_date_range, source_path, file_path, size_bytes, sha256, privacy_class, extraction_status, notes. Unknown fields null. Copy only; SHA256 verify source and destination; preserve originals.

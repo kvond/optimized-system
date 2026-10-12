@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "privacy_class": "private_operational_receipts_only",
+  "representation": "provider returned readable text, not raw native file",
+  "sources": [
+    {
+      "source_key": "source-fetch-0",
+      "id": "1VjB0lMb3Fq7Ddox3wxOqYyig6QBv4ILTyWCIGMRd3Dk",
+      "url": "https://docs.google.com/document/d/1VjB0lMb3Fq7Ddox3wxOqYyig6QBv4ILTyWCIGMRd3Dk/edit?usp=drivesdk",
+      "title": "WILMU HUB",
+      "modified_time": "2026-08-22T13:14:46.336Z",
+      "readable_text_sha256": "854621f98be301ef1301529f74f5dd6005403940523e12a6b1b33db03feed58c",
+      "text_size_bytes": 359,
+      "raw_text_stored_in_git": false,
+      "status": "content_read_verified"
+    },
+    {
+      "source_key": "source-fetch-1",
+      "id": "14LXWm2C5wVM_ftX-iJ5vC6cT3svxcOzOhtl7SVK_0Bw",
+      "url": "https://docs.google.com/document/d/14LXWm2C5wVM_ftX-iJ5vC6cT3svxcOzOhtl7SVK_0Bw/edit?usp=drivesdk",
+      "title": "Substack \u2014 six posts from Ch3 & Ch4 (Sept 12 \u2013 Oct 17, 2026)",
+      "modified_time": "2026-09-11T10:30:44.324Z",
+      "readable_text_sha256": "84ea140aae22efc026d7bb9b36bb6e3e0d9e3aa2c3cdf653f565dda6053c415d",
+      "text_size_bytes": 33001,
+      "raw_text_stored_in_git": false,
+      "status": "content_read_verified"
+    },
+    {
+      "source_key": "course-resource-1",
+      "id": "1l5CgVNlGuRk8bIKt3nElxIioVlXE5jdwKBP2YBZZSx0",
+      "url": "https://docs.google.com/document/d/1l5CgVNlGuRk8bIKt3nElxIioVlXE5jdwKBP2YBZZSx0/edit?usp=drivesdk",
+      "title": "OLI_7106_Course_Map ",
+      "modified_time": "2026-07-22T16:19:56.228Z",
+      "readable_text_sha256": "5242e89304eef416f8d200458f395649d90c8ac47868551b5e039fe4ff62a6fb",
+      "text_size_bytes": 7569,
+      "raw_text_stored_in_git": false,
+      "status": "content_read_verified"
+    },
+    {
+      "source_key": "rubric-source-0",
+      "id": "1nHoo7T5KW0PR6dtsIIFX4-F0-5feHvlOOmE0VsAmRiU",
+      "url": "https://docs.google.com/document/d/1nHoo7T5KW0PR6dtsIIFX4-F0-5feHvlOOmE0VsAmRiU/edit?usp=drivesdk",
+      "title": "OLI_7106_M2_Rubric",
+      "modified_time": "2026-06-10T18:06:33.620Z",
+      "readable_text_sha256": "1df6d8b19bceebbe5451c8600e776aa81d9e3a61dfa5c0fc28bd5e8018787948",
+      "text_size_bytes": 5391,
+      "raw_text_stored_in_git": false,
+      "status": "content_read_verified"
+    },
+    {
+      "source_key": "rubric-source-1",
+      "id": "1yFdw2K2CQQoQpJIj57Y7zgbkl6F0oDIHwvaYT9lK_Hw",
+      "url": "https://docs.google.com/document/d/1yFdw2K2CQQoQpJIj57Y7zgbkl6F0oDIHwvaYT9lK_Hw/edit?usp=drivesdk",
+      "title": "OLI_7106_M3_Rubric",
+      "modified_time": "2026-05-16T02:44:03.767Z",
+      "readable_text_sha256": "a73d01dbe616a853db70960f76cc03c57d71312df919b321407b7cb581becab5",
+      "text_size_bytes": 5370,
+      "raw_text_stored_in_git": false,
+      "status": "content_read_verified"
+    },
+    {
+      "id": "1OG25stqpcUmSFCdAMrZrofZL5LnjCWx_DWIla2O2mfM",
+      "url": "https://docs.google.com/document/d/1OG25stqpcUmSFCdAMrZrofZL5LnjCWx_DWIla2O2mfM/edit?usp=drivesdk",
+      "title": "Answerable Teaching \u2014 Reflection Ledger + Substack Bank",
+      "modified_time": "2026-10-11T17:32:24.023Z",
+      "status": "content_read_verified",
+      "readable_text_sha256": null,
+      "raw_text_stored_in_git": false
+    },
+    {
+      "id": "1PP92guWzPlBJcoRuXCijh5FGQUXvx5LCFuzL-0Ij3g8",
+      "url": "https://docs.google.com/document/d/1PP92guWzPlBJcoRuXCijh5FGQUXvx5LCFuzL-0Ij3g8/edit?usp=drivesdk",
+      "title": "substack articles",
+      "modified_time": "2026-10-04T22:41:10.739Z",
+      "status": "content_read_verified; topic proposals only",
+      "readable_text_sha256": null,
+      "raw_text_stored_in_git": false
+    },
+    {
+      "source_type": "claude_project_memory",
+      "account_email": "kvond@udel.edu",
+      "url": "https://claude.ai/cowork/project/01a02518-24b9-774a-86bf-0912ee705f23",
+      "project": "Scholarly Writing",
+      "memory": "Grading Template",
+      "source_ui_updated_date": "2026-09-11",
+      "status": "generalized_body_read_verified",
+      "raw_text_stored_in_git": false
+    },
+    {
+      "source_type": "claude_project_memory",
+      "account_email": "kvond@udel.edu",
+      "url": "https://claude.ai/project/019ecc6d-2648-7210-8c0d-92c467d52248",
+      "project": "WilmU 7106",
+      "memory": "Principles",
+      "source_ui_updated_date": "2026-09-11",
+      "status": "generalized_body_read_verified",
+      "raw_text_stored_in_git": false
+    },
+    {
+      "source_type": "claude_chat",
+      "account_email": "kvond@udel.edu",
+      "url": "https://claude.ai/chat/e05b1a38-1e7a-4db2-94cc-554d64550838",
+      "title": "Writing Substack articles with skill scripts",
+      "source_ui_date": "2026-08-23",
+      "status": "voice moves and corrections read verified; original script unavailable in that session; preferred acceptance unverified",
+      "raw_text_stored_in_git": false
+    }
+  ],
+  "compiled_at_utc": "2026-10-12T15:43:25.832847+00:00",
+  "observation_scope": "Sources were read at separate times on 2026-10-12; provider modification times describe sources, not the read time."
+}

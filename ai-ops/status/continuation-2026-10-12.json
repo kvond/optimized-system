@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "updated_at": "2026-10-12T15:09:27.769648+00:00",
+  "updated_at": "2026-10-12T15:43:25.832847+00:00",
   "phase": "daytime-continuation",
   "overall_status": "partial",
   "authorization": "User resumed October12 after completed overnight cutoff; requested durable GitHub handoff and clarified current account is main account",
@@ -20,13 +20,17 @@
   },
   "usage_snapshot": {
     "source": "live Codex get_usage_limits",
-    "weekly_remaining_percent": 89,
+    "weekly_remaining_percent": 87,
     "window_minutes": 10080,
     "short_term_remaining_percent": null,
     "ordinary_usage_allowed": true,
     "existing_credits_present": true,
     "recommendation": "No credit purchase needed now; recheck actual limits",
-    "purchase_performed": false
+    "purchase_performed": false,
+    "observed_at_utc": "2026-10-12T15:43:25.832847+00:00",
+    "previous_weekly_remaining_percent": 89,
+    "spend_control_reached": false,
+    "plan_type": "plus"
   },
   "runtime": {
     "test_count": 41,
@@ -44,7 +48,8 @@
     "git_bundles_verified": 3,
     "encryption_verified": false,
     "filevault_on": false,
-    "new_raw_exports_downloaded": false
+    "new_raw_exports_downloaded": false,
+    "protected_container_created": false
   },
   "exports": [
     {
@@ -65,9 +70,10 @@
     {
       "platform": "Claude",
       "account_email": "kvond12@gmail.com",
-      "state": "processing_email_verified_not_downloaded",
+      "state": "ready_email_verified_not_downloaded",
       "requested_once": true,
-      "request_email_at": "2026-10-12T15:04:50Z"
+      "request_email_at": "2026-10-12T15:04:50Z",
+      "ready_email_at": "2026-10-12T15:05:46Z"
     }
   ],
   "school": {
@@ -95,18 +101,32 @@
     "ud_chatgpt_active_count": 5,
     "source_chatgpt_active_count_observed": 0,
     "ud_claude_scheduled_count": 0,
-    "cutover_performed": false
+    "cutover_performed": false,
+    "owner_email_verified": "kvond@udel.edu",
+    "fresh_ui_verification": "reports/personal-schedule-verification-2026-10-12.json",
+    "dated_news_output_observed": true
   },
   "remaining": [
-    "protected recoverable raw export storage and account authentication",
-    "exact Wilmington and Substack template sources",
-    "authenticated bounded live source adapter and Firestore transactions",
-    "personal schedule replacement destination/timezone/test acceptance",
+    "protected recoverable raw export storage and UD reauthentication",
+    "current assignment/final-paper rubric binding; original voice script and preferred acceptance",
+    "authenticated bounded live source adapter and Firestore transactions before production pilot",
+    "personal schedule replacement destination/timezone/input/test acceptance before cutover",
     "current main account email label"
   ],
   "source_evidence": [
     "reports/continuation-2026-10-12.md",
     "runbooks/offline-runtime-acceptance.md",
-    "reports/reset-night-2026-10-11.md"
-  ]
+    "reports/reset-night-2026-10-11.md",
+    "reports/source-consolidation-2026-10-12.md"
+  ],
+  "knowledge": {
+    "compact_bundle_count": 11,
+    "general_graduate_template_verified": true,
+    "historical_oli7106_m2_m3_verified": true,
+    "dip_principles_verified": true,
+    "reflection_bank_policy_verified": true,
+    "aug23_voice_moves_verified": true,
+    "original_stored_voice_script_available": false,
+    "preferred_voice_acceptance_verified": false
+  }
 }

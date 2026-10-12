@@ -83,3 +83,5 @@ ai-ops/runtime/tests/__pycache__/
 !/ai-ops/migration-manifests/retirement-markers.json
 !/ai-ops/status/school-jobs-unchanged.json
 !/ai-ops/status/continuation-2026-10-12.json
+!/ai-ops/knowledge/source-receipts-2026-10-12.json
+!/ai-ops/reports/personal-schedule-verification-2026-10-12.json
