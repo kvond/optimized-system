@@ -2,7 +2,9 @@
 
 The T7 archive is verified for sanitized preservation. It is ExFAT with encryption unverified; the Mac's FileVault is off. Existing preserved source files stay intact. Raw private account histories await a recoverable encrypted container.
 
-Use a new encrypted disk image within `/Volumes/T7/AI-Archive`, without formatting the drive. Proposed image: `AI-Private-Archive.sparsebundle`, mounted as `AI-Private-Archive`, APFS, AES256, logical maximum20GB. A sparse bundle grows with stored data. This is a proposed destination, not an existing encrypted image or mount.
+Use a new encrypted disk image within `/Volumes/T7/AI-Archive`, without formatting the drive. Intended image: `AI-Private-Archive.sparsebundle`, mounted as `AI-Private-Archive`, APFS, AES256, logical maximum20GB. A sparse bundle grows with stored data.
+
+October12 UI attempt: Disk Utility's new-image fields were verified as the existing T7 AI-Archive folder, APFS, GUID partition map, Sparse Bundle Image (UDSB), 256-bit AES and20GB. Save started a Creating disk image dialog, but no password-entry or completion result was exposed. A partial bundle exists at the intended path with zero logical size and no bands; `hdiutil isencrypted` returns NO. No password was entered by the agent. Treat this as incomplete and unprotected. Preserve and reconcile this operation before retrying; do not overwrite the path, assume encryption, mount it for private work or download raw histories into it.
 
 Katherine must enter and retain the new archive password privately in macOS. Do not put it in a chat, tool argument, environment variable, GitHub, manifest or report. Apple warns that losing the password makes the contents inaccessible. [Apple's disk-image guide](https://support.apple.com/en-ie/guide/disk-utility/dskutl11888/mac) documents encrypted images and password entry. The installed `hdiutil` manual documents APFS, SPARSEBUNDLE, AES256, and interactive passphrase handling; do not pass a password on the command line.
 
