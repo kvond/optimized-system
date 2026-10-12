@@ -1,0 +1,25 @@
+{
+  "verified_at_utc": "2026-10-12T23:41:27.306863+00:00",
+  "source": "Root live normal browser UI readback",
+  "owner_email": "kvond@udel.edu",
+  "plan": "Plus",
+  "task_name": "Weekly Job Scan",
+  "task_id": "6a845332fa248191810a32f978f39b9a",
+  "action": "Pause exact task to cancel future scheduled runs",
+  "current_status": "PAUSED",
+  "readback": [
+    "Paused \u00b7 Last run Wednesday",
+    "Resume Weekly Job Scan"
+  ],
+  "active_other_tasks": 4,
+  "other_four_pause_controls_verified": true,
+  "task_deleted": false,
+  "history_retained": true,
+  "replacement_requested": false,
+  "auto_resume_authorized": false,
+  "raw_prompt_stored": false,
+  "fresh_reload_pause_persisted_verified": true,
+  "fresh_reload_active_task_count": 4,
+  "screenshot_sha256": "ece42a63b784769dacbc26531abc1940676ccb6b452ae1cccc1e98fc8d3c5872",
+  "screenshot_file": "bonnie-job-schedule-paused-2026-10-12.jpg"
+}

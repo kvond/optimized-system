@@ -1,7 +1,7 @@
 {
   "source_account_assumption_corrected": true,
   "kvond12_active_task_rows": 0,
-  "ud_active_task_rows": 5,
+  "ud_active_task_rows": 4,
   "no_tasks_changed": false,
   "raw_sensitive_prompts_copied_to_github": false,
   "jobs": [
@@ -102,15 +102,15 @@
       "name": "Weekly Job Scan",
       "id": "6a845332fa248191810a32f978f39b9a",
       "current_owner": "UD ChatGPT",
-      "status": "ACTIVE confirmed live UI",
-      "displayed_schedule": "Wednesday 7:00 AM",
+      "status": "PAUSED confirmed live UI; future scheduled runs cancelled",
+      "displayed_schedule": "Historical Wednesday 7:00 AM; currently paused",
       "timezone": "UI client America/New_York; backend TZID not exposed",
       "prompt_storage": "sanitized capability summary here; exact original retained in UD task",
       "required_capabilities": "official live listings and candidate-profile match; verification receipt; no applications",
       "inputs": "private candidate criteria; employer pages; prior reported listings",
       "current_outputs": "source task/chat; delivery channel/test receipt unverified",
-      "replacement_status": "STAGED; disabled until tested",
-      "proposed_execution": "deterministic retrieval/fingerprints \u2192 cheapest authorized bounded API; UD Claude background if contract/tool benefit demonstrated",
+      "replacement_status": "No replacement requested",
+      "proposed_execution": "None; do not auto-resume",
       "maintenance_owner": "Katherine via private optimized-system contracts",
       "cutover_gates": [
         "correct timezone/schedule",
@@ -119,12 +119,15 @@
         "successful test/readback",
         "ownership documented"
       ],
-      "old_task_disabled": false,
-      "scope_verification": "Separate production/media-management candidate and source contract; not merged with educator watch"
+      "old_task_disabled": true,
+      "scope_verification": "Separate production/media-management candidate and source contract; not merged with educator watch",
+      "history_retained": true,
+      "current_receipt": "reports/bonnie-job-schedule-cancelled-2026-10-12.json"
     }
   ],
-  "updated_at_utc": "2026-10-12T20:49:54.271137+00:00",
+  "updated_at_utc": "2026-10-12T23:41:27.306863+00:00",
   "schedule_owner_or_cadence_changed": false,
   "educator_watch_prompt_update_receipt": "reports/job-watch-change-2026-10-12.json",
-  "weekly_scope_distinct_verified": true
+  "weekly_scope_distinct_verified": true,
+  "weekly_task_pause_receipt": "reports/bonnie-job-schedule-cancelled-2026-10-12.json"
 }

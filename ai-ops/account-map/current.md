@@ -4,7 +4,7 @@ Katherine is keeping the listed accounts. Main ChatGPT/Codex is **kvond@udel.edu
 
 | Surface | Email | Verified state |
 |---|---|---|
-| Main ChatGPT/Codex | kvond@udel.edu | Plus; profile and usage-account ID match; five active personal tasks. User-started export accepted at22:24:35 UTC; complete download pending. |
+| Main ChatGPT/Codex | kvond@udel.edu | Plus; profile and usage-account ID match; four active personal tasks; Weekly Job Scan is paused. User-started export accepted at22:24:35 UTC; complete download pending. |
 | UD Claude | kvond@udel.edu | Pro; normal browser menu verified again. User-started export ready at22:26:18 UTC; genuine new ready route again reached Chrome ERR_BLOCKED_BY_CLIENT; no complete file saved. |
 | Source ChatGPT | kvond12@gmail.com | Free; checked Active view had no rows. Earlier export confirmation loop/expired authentication does not establish acceptance. |
 | Source Claude | kvond12@gmail.com | Menu email verified again; one earlier manifest archived, five expected parts/zero complete. Earlier fresh source-ready route was client-blocked. |

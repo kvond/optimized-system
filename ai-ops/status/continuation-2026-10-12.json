@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "updated_at": "2026-10-12T23:17:00.334291+00:00",
+  "updated_at": "2026-10-12T23:41:27.306863+00:00",
   "phase": "daytime-continuation",
   "overall_status": "partial",
   "authorization": "User explicitly resumed after original overnight cutoff and requested inventory first, then remaining list, multiple agents and Desktop Commander without routine interruptions.",
@@ -338,7 +338,7 @@
     "retry_evidence_scope": "static installed local heartbeat dispatcher only; transport/app-server/model retries unverified"
   },
   "personal_schedules": {
-    "ud_chatgpt_active_count": 5,
+    "ud_chatgpt_active_count": 4,
     "source_chatgpt_active_count_observed": 0,
     "ud_claude_scheduled_count": 0,
     "cutover_performed": false,
@@ -349,9 +349,17 @@
     "educator_watch_prompt_updated": true,
     "educator_watch_exact_readback_verified": true,
     "educator_watch_owner_or_cadence_changed": false,
-    "other_four_changed": false,
     "weekly_candidate_scope_distinct_verified": true,
-    "local_gate_cloud_bridge_verified": false
+    "local_gate_cloud_bridge_verified": false,
+    "weekly_job_scan_status": "PAUSED; future runs cancelled; task/history retained",
+    "weekly_job_scan_pause_receipt": "reports/bonnie-job-schedule-cancelled-2026-10-12.json",
+    "weekly_job_scan_replacement_requested": false,
+    "weekly_job_scan_auto_resume_authorized": false,
+    "other_three_active_tasks_changed": false,
+    "changes_since_initial_verification": [
+      "educator watch repeat-rule addition",
+      "Weekly Job Scan paused by user request"
+    ]
   },
   "remaining": [
     "Complete main-account export acquisition: ChatGPT accepted/processing; Claude ready but new normal ready route client-blocked. No complete files observed in bounded checks.",
