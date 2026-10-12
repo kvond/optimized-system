@@ -57,3 +57,9 @@ token*
 !docs/pipeline-v1-archive/*.docx
 !docs/pipeline-v1-archive/*.xlsx
 !archive/katherine-ops-plugin-scaffolding/*.json
+
+# AI operations private runtime/cache artifacts
+ai-ops/runtime/__pycache__/
+ai-ops/runtime/tests/__pycache__/
+*.sqlite
+*.sqlite-*
