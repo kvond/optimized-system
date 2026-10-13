@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "verified_at_utc": "2026-10-13T00:22:18.752365+00:00",
+  "calendar_review": {
+    "id": "calendar-and-school-email-review",
+    "status": "ACTIVE",
+    "daily_time": "04:30",
+    "timezone": "America/New_York",
+    "current_school_outlook_session_verified": true,
+    "home_calendar_connector_verified": true,
+    "first_scheduled_run_verified": false
+  },
+  "overnight_cost_work": {
+    "id": "overnight-ai-operations-cost-reduction",
+    "status": "ACTIVE",
+    "hourly_minute": 25,
+    "hard_stop_at_utc": "2026-10-13T09:30:00Z",
+    "hard_stop_local": "2026-10-13 05:30 America/New_York",
+    "last_wake_checkpoint_only": true,
+    "no_new_login_requests_overnight": true
+  },
+  "school6_30_and7_30_jobs_unchanged": true,
+  "no_messages_to_others_sent": true
+}

@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
-  "updated_at": "2026-10-12T23:41:27.306863+00:00",
-  "phase": "daytime-continuation",
+  "updated_at": "2026-10-13T00:22:18.752365+00:00",
+  "phase": "bounded-overnight-cost-continuation",
   "overall_status": "partial",
   "authorization": "User explicitly resumed after original overnight cutoff and requested inventory first, then remaining list, multiple agents and Desktop Commander without routine interruptions.",
   "handoff": {
@@ -46,16 +46,16 @@
     "official_guidance": "https://learn.chatgpt.com/docs/pricing"
   },
   "runtime": {
-    "test_count": 83,
+    "test_count": 134,
     "status": "local_tested",
-    "execution": "trusted offline deterministic functions",
+    "execution": "trusted deterministic public adapters and private source gates; fixed CLI entries accepted",
     "paid_dispatch_implemented": false,
     "cloud_deployed": false,
     "external_supervisor_required": true,
     "private_runtime_state_outside_git": true,
     "cloud_plan_requirement_satisfied": true,
     "production_pilot_required_for_original_reset": false,
-    "tests_verified_at_utc": "2026-10-12T23:14:36.869927+00:00",
+    "tests_verified_at_utc": "2026-10-13T00:22:18.752365+00:00",
     "compact_context_implemented": true,
     "external_encrypted_working_state_verified": true,
     "current_receipt": "reports/runtime-cost-results-2026-10-12.json",
@@ -64,7 +64,9 @@
     "HTTP_to_private_gate_verified": true,
     "live_cloud_schedule_integration_verified": false,
     "doe_operator_command_implemented": true,
-    "doe_operator_actual_desktop_commander_acceptance_verified": true
+    "doe_operator_actual_desktop_commander_acceptance_verified": true,
+    "existing_task_configuration_readback_verified": true,
+    "first_new_scheduled_execution_verified": false
   },
   "archive": {
     "root": "/Volumes/T7/AI-Archive",
@@ -355,17 +357,23 @@
     "weekly_job_scan_pause_receipt": "reports/bonnie-job-schedule-cancelled-2026-10-12.json",
     "weekly_job_scan_replacement_requested": false,
     "weekly_job_scan_auto_resume_authorized": false,
-    "other_three_active_tasks_changed": false,
+    "other_three_active_tasks_changed": true,
     "changes_since_initial_verification": [
       "educator watch repeat-rule addition",
-      "Weekly Job Scan paused by user request"
-    ]
+      "Weekly Job Scan paused by user request",
+      "DOE,News,Birthday deterministic entry connections; exact original prefixes retained",
+      "4:30AM calendar/email review",
+      "overnight cost work hard stop5:30AM October13"
+    ],
+    "news_and_birthday_prompts_changed": true,
+    "current_cost_connection_receipt": "reports/personal-cost-connections-2026-10-12.json",
+    "new_calendar_review_receipt": "reports/calendar-review-and-overnight-2026-10-12.json"
   },
   "remaining": [
     "Complete main-account export acquisition: ChatGPT accepted/processing; Claude ready but new normal ready route client-blocked. No complete files observed in bounded checks.",
     "Inventory external-service access boundaries: Render live service/disk/consumer metadata and API-disabled Cloud Scheduler coverage remain unverified; direct protected-source historical hashes unavailable.",
     "Source applicability gaps: original stored voice script, preferred-voice acceptance and current final-paper rubric binding remain unverified.",
-    "Any personal workflow cutover requires exact timezone/input/destination and accepted readback; no duplicate tasks or paid worker enabled."
+    "First scheduled-run receipts for the newly connected workers are pending; no duplicate/cutover/paid worker. Birthday future-source refresh and original civic judgment remain required."
   ],
   "source_evidence": [
     "reports/continuation-2026-10-12.md",
@@ -630,5 +638,116 @@
     "last_chatgpt_notice_search_at_utc": "2026-10-12T23:17:00.334291+00:00",
     "last_chatgpt_search_scope": "in:anywhere after2026-10-12T22:00Z fromopenai.com export/data-ready subjects",
     "last_chatgpt_search_matches": 1
+  },
+  "cost_progress": {
+    "schema_version": 1,
+    "verified_at_utc": "2026-10-13T00:22:18.752365+00:00",
+    "scope": "authorized1-4 existing personal worker integrations",
+    "connections": [
+      {
+        "worker": "doe-watch",
+        "task_id": "6ac29fe996ac81918b03a7d59354ef9f",
+        "owner": "kvond@udel.edu",
+        "original_prompt_sha256": "86b44d7cae3fe3298ee786d9f7fd67a151e3ccb07a68a20a3a78253deda4c221",
+        "saved_prompt_sha256": "3361d8250b251ebfac553a79098ecff5b61ffcc0fefd2a52353f92fa192276f9",
+        "original_exact_prefix_preserved": true,
+        "saved_prompt_exact_readback_verified": true,
+        "owner_cadence_criteria_destination_unchanged": true,
+        "existing_task_configured": true,
+        "entry": "/Volumes/T7/AI-Archive/ops/doe.py",
+        "scheduled_run_acceptance_verified": false
+      },
+      {
+        "worker": "news",
+        "task_id": "6aa2783463288191aa4b53146177bf6c",
+        "owner": "kvond@udel.edu",
+        "original_prompt_sha256": "4e895463c8ca558eb7c685600d0c059caf3737da42fbe4d16512dd213b33d6f8",
+        "saved_prompt_sha256": "b5bea2886d89908c3f3788425e4e234dfb64d476b8efd2608f2fade5d513dcb6",
+        "original_exact_prefix_preserved": true,
+        "saved_prompt_exact_readback_verified": true,
+        "owner_cadence_criteria_destination_unchanged": true,
+        "existing_task_configured": true,
+        "entry": "/Volumes/T7/AI-Archive/ops/news.py",
+        "scheduled_run_acceptance_verified": false
+      },
+      {
+        "worker": "birthday",
+        "task_id": "6aa9962611648191b900495a9ea89cd8",
+        "owner": "kvond@udel.edu",
+        "original_prompt_sha256": "bc174af1d8c8fea12ba7d2e8dfd8c8fe8d04990418383665423b23c30a2a6382",
+        "saved_prompt_sha256": "bf5507ae6f119b9497f66c73c0a99dbe89998c27b95c1a52e055834b2c1b627f",
+        "original_exact_prefix_preserved": true,
+        "saved_prompt_exact_readback_verified": true,
+        "owner_cadence_criteria_destination_unchanged": true,
+        "existing_task_configured": true,
+        "entry": "/Volumes/T7/AI-Archive/ops/birthday.py",
+        "scheduled_run_acceptance_verified": false
+      }
+    ],
+    "runtime_tests": {
+      "status": "passed",
+      "count": 134,
+      "duration_seconds": 4.55,
+      "log_sha256": "770557ec9e2626f83fe32bf3947c33cddb3d7ae650dfbfcc3d9dbee94267c04e"
+    },
+    "originals_private_encrypted": true,
+    "raw_prompts_in_git": false,
+    "doe": {
+      "desktop_commander_exit_code": 0,
+      "complete_exact_DOE_source": true,
+      "statewide_coverage_claimed": false,
+      "source_counts": {
+        "unchanged": 3,
+        "new": 0,
+        "materially_changed": 0,
+        "closed": 0
+      },
+      "default_payload": "title/url/record hashes; exact-ID detail from immutable saved snapshot",
+      "candidate_review_or_report_proof_claimed": false
+    },
+    "news": {
+      "fixed_public_feed_count": 5,
+      "headline_count": 5,
+      "digest_words": 53,
+      "compact_context_words": 187,
+      "full_civic_policy_coverage_claimed": false,
+      "prepared_is_delivered": false,
+      "actual_output_ack_required": true,
+      "acquisition_limit_seconds": 45,
+      "cleanup_join_budget_seconds": 4
+    },
+    "birthday": {
+      "desktop_commander_exit_code": 0,
+      "current30day_eligible_count": 1,
+      "current_window_hold_count": 0,
+      "out_of_window_reconciliation_holds": 2,
+      "compact_context_words": 146,
+      "future_source_refresh_required": true,
+      "cart_purchase_contact_message_actions": 0
+    },
+    "shared_birthday": {
+      "status": "verified_reuse",
+      "business_date": "2026-10-12",
+      "eligible_within21_days": 1,
+      "eligible_within7_days": 0,
+      "duplicate_source_read_skipped": true,
+      "api_reads": 0,
+      "ai_calls": 0,
+      "out_of_window_hold_count": 2
+    },
+    "paid_calls": 0,
+    "dollar_savings_measured": false,
+    "weekly_job_scan_paused": true,
+    "school_jobs_changed": false,
+    "first_scheduled_runs_pending": true
+  },
+  "overnight": {
+    "id": "overnight-ai-operations-cost-reduction",
+    "status": "ACTIVE",
+    "hourly_minute": 25,
+    "hard_stop_at_utc": "2026-10-13T09:30:00Z",
+    "hard_stop_local": "2026-10-13 05:30 America/New_York",
+    "last_wake_checkpoint_only": true,
+    "no_new_login_requests_overnight": true
   }
 }

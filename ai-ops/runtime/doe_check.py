@@ -135,6 +135,9 @@ def check(request_id, *, paths=None):
 
 def summary(receipt,artifact,*,reused):
     return {'namespace':NAMESPACE,'request_id':receipt['request_id'],'status':receipt['status'],
+            'source_observed_utc':receipt['source_observed_utc'],
+            'checked_at_utc':receipt['checked_at_utc'],
+            'reused_snapshot_requires_freshness_check':reused,
             'counts':receipt['counts'],'source_revision':receipt['source_revision'],
             'result_sha256':receipt['result_sha256'],'receipt_path':str(artifact),
             'receipt_readback_verified':True,'reused_request':reused,'ai_calls':0,

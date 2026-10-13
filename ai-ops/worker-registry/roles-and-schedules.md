@@ -35,3 +35,15 @@ The educator Job Watch’s narrow repeat rule has been saved and read back; owne
 App requirements describe platform behavior, not successful task execution. Older Claude Pro/Max schedules from before October 6 may remain local; none was observed active in UD Claude ([Anthropic platform guide](https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile)). Portable registry: private `kvond/optimized-system`.
 
 The [DOE operator command](../runbooks/doe-operator-check.md) is now implemented and accepted through Desktop Commander with encrypted receipt readback and same-request reuse. It performs zero AI calls and runs only on demand;83 tests passed at this checkpoint. It has no fixed scheduled time or candidate analysis.
+
+## October12 evening additions
+
+| Job | Apps/source access | Schedule and accepted state |
+|---|---|---|
+| Calendar and school email review | Codex awake; home Calendar connector; school Chrome Outlook signed in; encrypted archive mounted | Daily4:30AM America/New_York; savedACTIVE, first scheduled run pending. |
+| Existing DOE Watch | Main ChatGPT Work; Desktop Commander; public official sources; T7/verified encrypted state | Original daily monitoring retained; deterministic DOE entry configured/read back. Other district/charter sources retained. |
+| Existing News Briefing | Main ChatGPT Work; Desktop Commander; fixed public feeds plus original civic sources; home Calendar/Todoist | Original daily4:30AM displayed schedule retained; dedupe/context/shared birthday preflight configured/read back. |
+| Existing Birthday Workflow | Main ChatGPT Work; home Calendar/Todoist; Desktop Commander/encrypted archive | Original Monday-morning schedule retained; fresh private input refresh and deterministic gate configured/read back. |
+| Overnight AI-ops audit | Codex/agents, Desktop Commander as available, private GitHub/encrypted state | Hourly bounded follow-up; stop5:30AM Eastern October13,5:25wake checkpoint-only. No routine sign-in requests. |
+
+School6:30/7:30 schedules and separate7AM IC helper remain unchanged. Bonnie remains paused. Current task bindings/test/source limitations: [connected receipt](../reports/personal-cost-connections-2026-10-12.md).

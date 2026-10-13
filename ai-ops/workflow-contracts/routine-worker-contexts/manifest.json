@@ -1,0 +1,286 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-10-12T23:59:17.685610+00:00",
+  "status": "three existing workers connected through verified local CLI; scheduled-run receipts pending",
+  "live_workers_changed_here": false,
+  "original_prompts_replaced": false,
+  "refresh_rule": "Re-run worker_context.py before each local use or deliberate live prompt revision; cached appendix never bypasses missing/changed source verification. Cloud tasks receive a dated static appendix, not access to the local retriever.",
+  "workers": [
+    {
+      "worker": "doe-watch",
+      "task_id": "6ac29fe996ac81918b03a7d59354ef9f",
+      "context_words": 141,
+      "bundle_count": 1,
+      "max_words": 400,
+      "context_sha256": "347f6fdee313ba9e5de4db9d950abc3e629d6f133c5b55c5e880bbe499cf5d67",
+      "manifest_sha256": "2a05c9d99106b39f796ff4bdd81e6b72196671a1d0f820e21df993818516fd7d",
+      "provenance_fingerprint": "028189ef5473293d54e0fd8c9e824183131af34d5103138014075fb8d7be0928",
+      "sources": [
+        {
+          "bundle": "workflow-preferences.md",
+          "bundle_sha256": "dc42cb14f598df64baabc1e602e38cf8c445c129e584092d85f0ad29d50d50f8",
+          "paragraph_sha256": [
+            "ad4fbf96d57d7d4ca6e22a449878725b9c5af0ce6edb009ec9e56e91a5488dd2",
+            "533b3324bd5297e68235789ce598de04d2c9f1fe104db4d29dc9fd3a12e3b74e"
+          ],
+          "provenance": "distilled local source policies; audit observations reported, not live acceptance",
+          "source_fingerprints": [
+            {
+              "path": "skills/writing-block/SKILL.md",
+              "sha256": "9d63db70764972fb6d5a8ecbbe537d662fa448af6be7da98818eb56dbb1f30fd"
+            },
+            {
+              "path": "skills/block-update/SKILL.md",
+              "sha256": "9482d3c24e20aa39bf350a1616f4438fccc82015c13cd946f0c589be7ad8d33d"
+            },
+            {
+              "path": "/Volumes/AI-Private-Archive/AI-Archive/preservation/operational-sources/book-decisions-b3ea7de4.md",
+              "sha256": "b3ea7de4f01639d3d5f2ac7915ff39eb2e174d9231d2d498625fdabec223420e"
+            },
+            {
+              "path": "/Users/katherinevonduyke/code/answerable-skills/audits/ai-account-audit-2026-10-11.md",
+              "sha256": "c36809199d80112445f991104bb8d0005c162ab2b4da84a898f6154b46b6ff86"
+            }
+          ],
+          "live_receipt_path": null,
+          "live_receipt_sha256": null,
+          "remote_source_revalidated": false
+        }
+      ],
+      "original_task_binding": {
+        "task_id": "6ac29fe996ac81918b03a7d59354ef9f",
+        "original_prompt_sha256": "86b44d7cae3fe3298ee786d9f7fd67a151e3ccb07a68a20a3a78253deda4c221"
+      },
+      "ready_for_live_append": false,
+      "on_demand_policy_only": false,
+      "all_bundle_words": 2863,
+      "word_reduction_vs_all_bundles_percent": 95.08,
+      "paid_calls": 0,
+      "live_task_edited": false,
+      "dollar_savings_measured": false,
+      "context_file": "doe-watch.md",
+      "source_prompt_preserved": true,
+      "destination_unchanged": true,
+      "existing_task_configured": true,
+      "saved_prompt_exact_readback_verified": true,
+      "static_append_used": false,
+      "fresh_cli_retrieval_configured": true
+    },
+    {
+      "worker": "news",
+      "task_id": "6aa2783463288191aa4b53146177bf6c",
+      "context_words": 187,
+      "bundle_count": 2,
+      "max_words": 400,
+      "context_sha256": "78336e50122948db8631d9126f7203c04513c89ca44ddb9fb3ddf0ae3a895d49",
+      "manifest_sha256": "2a05c9d99106b39f796ff4bdd81e6b72196671a1d0f820e21df993818516fd7d",
+      "provenance_fingerprint": "d1fd0420fe6247f76f2824e15c690705c887601fcfb10d2231d8915d8310a3f5",
+      "sources": [
+        {
+          "bundle": "workflow-preferences.md",
+          "bundle_sha256": "dc42cb14f598df64baabc1e602e38cf8c445c129e584092d85f0ad29d50d50f8",
+          "paragraph_sha256": [
+            "ad4fbf96d57d7d4ca6e22a449878725b9c5af0ce6edb009ec9e56e91a5488dd2",
+            "533b3324bd5297e68235789ce598de04d2c9f1fe104db4d29dc9fd3a12e3b74e"
+          ],
+          "provenance": "distilled local source policies; audit observations reported, not live acceptance",
+          "source_fingerprints": [
+            {
+              "path": "skills/writing-block/SKILL.md",
+              "sha256": "9d63db70764972fb6d5a8ecbbe537d662fa448af6be7da98818eb56dbb1f30fd"
+            },
+            {
+              "path": "skills/block-update/SKILL.md",
+              "sha256": "9482d3c24e20aa39bf350a1616f4438fccc82015c13cd946f0c589be7ad8d33d"
+            },
+            {
+              "path": "/Volumes/AI-Private-Archive/AI-Archive/preservation/operational-sources/book-decisions-b3ea7de4.md",
+              "sha256": "b3ea7de4f01639d3d5f2ac7915ff39eb2e174d9231d2d498625fdabec223420e"
+            },
+            {
+              "path": "/Users/katherinevonduyke/code/answerable-skills/audits/ai-account-audit-2026-10-11.md",
+              "sha256": "c36809199d80112445f991104bb8d0005c162ab2b4da84a898f6154b46b6ff86"
+            }
+          ],
+          "live_receipt_path": null,
+          "live_receipt_sha256": null,
+          "remote_source_revalidated": false
+        },
+        {
+          "bundle": "teaching-principles.md",
+          "bundle_sha256": "3961031b5e5db7591405f6e12de2036227e7d8b0dd0dc3f487bd1bd0e34f6d52",
+          "paragraph_sha256": [
+            "6ad611a7bd5bc600107353f4bed71b4502556839c98618cca9ad52c186af1c7d"
+          ],
+          "provenance": "distilled local source policies; audit observations reported, not live acceptance",
+          "source_fingerprints": [
+            {
+              "path": "skills/book-revision/reference/argument-arc-and-glossary.md",
+              "sha256": "d9b2e2935a9b08ccc0cf42b78da60f1d3a0e317012f96c30c0c463f135bbb230"
+            },
+            {
+              "path": "/Volumes/AI-Private-Archive/AI-Archive/preservation/operational-sources/book-decisions-b3ea7de4.md",
+              "sha256": "b3ea7de4f01639d3d5f2ac7915ff39eb2e174d9231d2d498625fdabec223420e"
+            },
+            {
+              "path": "docs/book-project/Project Instructions.md",
+              "sha256": "dc5d0c05d47789bf7506342d6a47424a0714a37e42a9e3ab7f966c14d4f0891b"
+            }
+          ],
+          "live_receipt_path": null,
+          "live_receipt_sha256": null,
+          "remote_source_revalidated": false
+        }
+      ],
+      "original_task_binding": {
+        "task_id": "6aa2783463288191aa4b53146177bf6c",
+        "original_prompt_sha256": "4e895463c8ca558eb7c685600d0c059caf3737da42fbe4d16512dd213b33d6f8"
+      },
+      "ready_for_live_append": false,
+      "on_demand_policy_only": false,
+      "all_bundle_words": 2863,
+      "word_reduction_vs_all_bundles_percent": 93.47,
+      "paid_calls": 0,
+      "live_task_edited": false,
+      "dollar_savings_measured": false,
+      "context_file": "news.md",
+      "source_prompt_preserved": true,
+      "destination_unchanged": true,
+      "existing_task_configured": true,
+      "saved_prompt_exact_readback_verified": true,
+      "static_append_used": false,
+      "fresh_cli_retrieval_configured": true
+    },
+    {
+      "worker": "birthday",
+      "task_id": "6aa9962611648191b900495a9ea89cd8",
+      "context_words": 146,
+      "bundle_count": 1,
+      "max_words": 400,
+      "context_sha256": "da19afbc3a216fb4c0b7527f1691846105729c3a7e4097b0361d85a09c3d171e",
+      "manifest_sha256": "2a05c9d99106b39f796ff4bdd81e6b72196671a1d0f820e21df993818516fd7d",
+      "provenance_fingerprint": "1d3d2b31f5bc19cdac73716429cd3353f521d13c0cf7d3af42c65f222773d1f2",
+      "sources": [
+        {
+          "bundle": "workflow-preferences.md",
+          "bundle_sha256": "dc42cb14f598df64baabc1e602e38cf8c445c129e584092d85f0ad29d50d50f8",
+          "paragraph_sha256": [
+            "ad4fbf96d57d7d4ca6e22a449878725b9c5af0ce6edb009ec9e56e91a5488dd2",
+            "533b3324bd5297e68235789ce598de04d2c9f1fe104db4d29dc9fd3a12e3b74e"
+          ],
+          "provenance": "distilled local source policies; audit observations reported, not live acceptance",
+          "source_fingerprints": [
+            {
+              "path": "skills/writing-block/SKILL.md",
+              "sha256": "9d63db70764972fb6d5a8ecbbe537d662fa448af6be7da98818eb56dbb1f30fd"
+            },
+            {
+              "path": "skills/block-update/SKILL.md",
+              "sha256": "9482d3c24e20aa39bf350a1616f4438fccc82015c13cd946f0c589be7ad8d33d"
+            },
+            {
+              "path": "/Volumes/AI-Private-Archive/AI-Archive/preservation/operational-sources/book-decisions-b3ea7de4.md",
+              "sha256": "b3ea7de4f01639d3d5f2ac7915ff39eb2e174d9231d2d498625fdabec223420e"
+            },
+            {
+              "path": "/Users/katherinevonduyke/code/answerable-skills/audits/ai-account-audit-2026-10-11.md",
+              "sha256": "c36809199d80112445f991104bb8d0005c162ab2b4da84a898f6154b46b6ff86"
+            }
+          ],
+          "live_receipt_path": null,
+          "live_receipt_sha256": null,
+          "remote_source_revalidated": false
+        }
+      ],
+      "original_task_binding": {
+        "task_id": "6aa9962611648191b900495a9ea89cd8",
+        "original_prompt_sha256": "bc174af1d8c8fea12ba7d2e8dfd8c8fe8d04990418383665423b23c30a2a6382"
+      },
+      "ready_for_live_append": false,
+      "on_demand_policy_only": false,
+      "all_bundle_words": 2863,
+      "word_reduction_vs_all_bundles_percent": 94.9,
+      "paid_calls": 0,
+      "live_task_edited": false,
+      "dollar_savings_measured": false,
+      "context_file": "birthday.md",
+      "source_prompt_preserved": true,
+      "destination_unchanged": true,
+      "existing_task_configured": true,
+      "saved_prompt_exact_readback_verified": true,
+      "static_append_used": false,
+      "fresh_cli_retrieval_configured": true
+    },
+    {
+      "worker": "writing-on-demand",
+      "task_id": null,
+      "context_words": 274,
+      "bundle_count": 2,
+      "max_words": 400,
+      "context_sha256": "dd313754af6dc323d371242e161a92316682af06f00d54748d16cdab2861c1c7",
+      "manifest_sha256": "2a05c9d99106b39f796ff4bdd81e6b72196671a1d0f820e21df993818516fd7d",
+      "provenance_fingerprint": "0f024a878c9545d4a5bd4f3502145005ae007e9ed8369a78c33c76a8c5535c8b",
+      "sources": [
+        {
+          "bundle": "writing-voice.md",
+          "bundle_sha256": "bff9ad621db0a53d159c722bb9499b89f3b5589f76a8cf487eace4a2a2eb675c",
+          "paragraph_sha256": [
+            "1ffc4168925544733bc3b0d64ad93977b76680bc6ffa371ad678faeaa2f5cccb",
+            "2c1948d02f9c7af0c744d88ff512e1250ae4993539de25e0664bbd43e1e1aaee"
+          ],
+          "provenance": "distilled local source policies; audit observations reported, not live acceptance",
+          "source_fingerprints": [
+            {
+              "path": "docs/book-project/Project Instructions.md",
+              "sha256": "dc5d0c05d47789bf7506342d6a47424a0714a37e42a9e3ab7f966c14d4f0891b"
+            },
+            {
+              "path": "/Volumes/AI-Private-Archive/AI-Archive/preservation/operational-sources/book-decisions-b3ea7de4.md",
+              "sha256": "b3ea7de4f01639d3d5f2ac7915ff39eb2e174d9231d2d498625fdabec223420e"
+            }
+          ],
+          "live_receipt_path": null,
+          "live_receipt_sha256": null,
+          "remote_source_revalidated": false
+        },
+        {
+          "bundle": "substack-voice.md",
+          "bundle_sha256": "fb43c7c0b971b3a88921ae2afa1d102c2eaf608ce57c76950688c2da205b0446",
+          "paragraph_sha256": [
+            "d96e98402fcc6c15da95a5739741ce452fadfe98a01d2540dbc2c70dafbeac81",
+            "60efb100113662fb4eef13b6b660a6d25f556039ee0f16339ab7107d9070eb77",
+            "7936534b1291fe058c60dbbdfb96e223e1dc0ae618c4c433cddcb4250df98421"
+          ],
+          "provenance": "Live source text observed; general rules distilled only; inference and historical/current applicability are explicit in bundle",
+          "source_fingerprints": [
+            {
+              "path": "skills/writing-block/SKILL.md",
+              "sha256": "9d63db70764972fb6d5a8ecbbe537d662fa448af6be7da98818eb56dbb1f30fd"
+            },
+            {
+              "path": "skills/chapter-bank/SKILL.md",
+              "sha256": "a764490388c1400c064effca69622734d3bcd652abd70d8ed19318c6c6b9fc23"
+            },
+            {
+              "path": "docs/book-project/Project Instructions.md",
+              "sha256": "dc5d0c05d47789bf7506342d6a47424a0714a37e42a9e3ab7f966c14d4f0891b"
+            }
+          ],
+          "live_receipt_path": "source-receipts-2026-10-12.json",
+          "live_receipt_sha256": "4ca57c40a907d506621f387edef7e5f304fdeb59028af8cb824ed7ff964245fa",
+          "remote_source_revalidated": false
+        }
+      ],
+      "original_task_binding": null,
+      "ready_for_live_append": false,
+      "on_demand_policy_only": true,
+      "all_bundle_words": 2863,
+      "word_reduction_vs_all_bundles_percent": 90.43,
+      "paid_calls": 0,
+      "live_task_edited": false,
+      "dollar_savings_measured": false,
+      "context_file": "writing-on-demand.md"
+    }
+  ],
+  "current_connection_receipt": "../../reports/personal-cost-connections-2026-10-12.json"
+}
