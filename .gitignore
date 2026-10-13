@@ -95,3 +95,4 @@ ai-ops/runtime/tests/__pycache__/
 !/ai-ops/reports/activity-register-todoist-2026-10-13.json
 !/ai-ops/reports/school-claude-friday-time-correction-2026-10-13.json
 !ai-ops/reports/school-lesson-workflow-consolidation-2026-10-13.json
+!ai-ops/reports/shared-checklist-schoology-launchers-2026-10-13.json

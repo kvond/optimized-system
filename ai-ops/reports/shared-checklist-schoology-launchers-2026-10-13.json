@@ -1,0 +1,110 @@
+{
+  "recorded_at_utc": "2026-10-13T16:47:09.858167+00:00",
+  "canonical_completion_checklist": "https://docs.google.com/document/d/150CzIzvbE0WQSnlQdIQHD3UNODr-L40_su5_ODbvUwI/edit?tab=t.0",
+  "visual_launch_hub": "https://docs.google.com/document/d/1iH_HE29CGEPxB86ZCmGCRqYUllV3bBnqFH4szfsFNcQ/edit?tab=t.0",
+  "account": "katherine.vonduyke@redclay.k12.de.us",
+  "schoology_changes": [
+    {
+      "course": "Forensics 0476 1",
+      "course_id": "8509076519",
+      "page_id": "8606487523",
+      "action": "updated Evidence Collection copy link to current Agenda deck",
+      "saved_readback": true,
+      "published_setting_preserved": true,
+      "instructions_preserved": true
+    },
+    {
+      "course": "Forensics 0476 2",
+      "course_id": "8509076521",
+      "page_id": "8568701785",
+      "action": "updated Evidence Collection copy link to current Agenda deck",
+      "saved_readback": true,
+      "published_setting_preserved": true,
+      "instructions_preserved": true
+    },
+    {
+      "course": "Honors Human AnatomyPhysiology 0448 1",
+      "course_id": "8509076512",
+      "page_id": "8608330645",
+      "target_folder_id": "1040535699",
+      "action": "created Skeletal System deck and turn-in page after verified empty target",
+      "saved_readback": true,
+      "published": true,
+      "agenda_links_verified": true,
+      "form_opened_in_school_session": true,
+      "form_title_verified": true,
+      "student_role_upload_acceptance": false
+    }
+  ],
+  "unchanged_verified": [
+    {
+      "page_id": "8600921119",
+      "topic": "Sketching the Scene",
+      "agenda_deck_match": true,
+      "form_route_verified": true
+    },
+    {
+      "page_id": "8562694253",
+      "topic": "Crime Scene to Courtroom",
+      "agenda_deck_match": true,
+      "form_route_verified": false
+    }
+  ],
+  "source_limits": [
+    "No Form submission, grade, recipient message or access permission change",
+    "Student role/upload acceptance and image restoration not verified",
+    "Missing separate Photography, standalone History and unchanged inaccessible Unit 1 Review remain source gaps",
+    "Bounded lesson-page work, not full-course coverage"
+  ],
+  "hub_context_count": 7,
+  "desktop_shortcut_links_built": 5,
+  "new_links": 4,
+  "reused_link": "Morning",
+  "manual_school_launcher_profile_tabs_verified": true,
+  "new_tasks_or_schedules": false,
+  "grades_messages_or_permission_changes": false,
+  "preservation": "private local originals retained; encrypted archive unmounted",
+  "prepared_prompt_characters_trimmed": 4000,
+  "prepared_prompt_sha256_trimmed_utf8": "d18215fa6392c2df3d538e50a99f7ae3bf46d704d9f7d792d1f4f22c752d700a",
+  "updated_live_prompt_saved": true,
+  "updated_prompt_exact_readback": true,
+  "status": "live_navigation_tests_verified_two_access_gaps_no_task_execution",
+  "live_readback_verified_at_utc": "2026-10-13T16:55:39.562Z",
+  "task_settings_preserved": [
+    "Manual",
+    "Default model",
+    "Automatically approve"
+  ],
+  "run_now_used": false,
+  "notes_verified_completion_subitems_added_and_struck": 5,
+  "original_broad_checklist_requests_unchanged": true,
+  "visual_hub_notes_intro_link_verified": true,
+  "visual_hub_one_page_native_screenshot_at_50_percent_verified": true,
+  "both_google_docs_zoom_restored_percent": 100,
+  "self_contained_native_shortcut_apps_built": 4,
+  "new_native_shortcut_apps_launched": true,
+  "self_contained_native_shortcut_app_launch_tests_pending": 0,
+  "managed_desktop_links_repointed_to_native_apps": 4,
+  "existing_school_morning_unchanged": true,
+  "old_home_attempt_cancelled": "only identity-checked own PIDs; new Home navigation verified",
+  "private_navigation_diagnostics": {
+    "count": 4,
+    "status": "navigation_request_complete",
+    "exit_code": 0,
+    "permission_grants": 0
+  },
+  "launcher_readiness": {
+    "Manual School": "correct school profile, existing manual task and both Agenda course tabs verified",
+    "Home": "Calendar and Todoist each kvond12@gmail.com verified",
+    "Friday": "same Friday2:15 task, Agenda/Hub/ClassLink navigation verified; Hub IC unavailable, direct iTracker unverified",
+    "Writing": "professional profile Claude kvond@udel.edu verified; private GitHub signed-out404 requires login"
+  },
+  "access_gaps": [
+    "Friday Hub reports IC unavailable; direct iTracker not verified",
+    "Writing private GitHub signed-out404; existing account login needed"
+  ],
+  "task_execution": false,
+  "checkpoint_updated_at_utc": "2026-10-13T17:05:25.384439+00:00",
+  "notes_remaining_readiness": "GitHub sign-in, IC connection/direct iTracker; no pending shortcut-navigation tests",
+  "hub_writing_system_cell": "highlights exact GitHub sign-in step"
+}
