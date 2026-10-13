@@ -1,12 +1,12 @@
 # Friday iTracker missed-lesson notices
 
-Requested October 13, 2026. Intended execution owner: school Claude, katherine.vonduyke@redclay.k12.de.us, using the authorized school Chrome profile. Requested cadence: every Friday afternoon. Use 3:00 PM America/New_York as the explicit afternoon default; saved cadence and actual execution are separate receipts. No notification has been sent by this setup.
+Requested October 13, 2026. Intended execution owner: school Claude, katherine.vonduyke@redclay.k12.de.us, using the authorized school Chrome profile. Requested cadence: every Friday afternoon. Katherine confirmed Friday 2:15 PM America/New_York. The existing task was corrected and read back as active, every Friday at 2:15 PM, with next run displayed as October 16 at 2:15 PM. Backend timezone remains unexposed; saved cadence and actual execution are separate receipts. No notification was sent by this correction. See the [timing correction receipt](../reports/school-claude-friday-time-correction-2026-10-13.json).
 
 Reuses the school Claude **Grade and assignment notification task**. Its prior dry run stopped because IC blank/zero scores did not establish missing work. The user's current request authorizes notes to the affected student and their verified guardians; it does not authorize inventing a missing-work definition or guessing recipients.
 
 ## Instructions for the requested scheduled school task
 
-Every Friday at 3:00 PM America/New_York, use Katherine's authorized school Chrome profile to prepare and, when the checks below are satisfied and existing permissions allow, publish an iTracker academic note to each affected student and their verified guardians identifying that student's three most recent confirmed missed lessons in Katherine's current classes. Include fewer than three when fewer are confirmed; do not send a missing-work note when none are confirmed.
+Every Friday at 2:15 PM America/New_York, use Katherine's authorized school Chrome profile to prepare and, when the checks below are satisfied and existing permissions allow, publish an iTracker academic note to each affected student and their verified guardians identifying that student's three most recent confirmed missed lessons in Katherine's current classes. Include fewer than three when fewer are confirmed; do not send a missing-work note when none are confirmed.
 
 Verify the school account, current school year/course/section and exact roster. Read current lesson titles and authoritative due dates from the live Agenda/assignment mapping. Select lessons actually taught and already due at the Friday cutoff, respecting exemptions, extensions, attendance-related exceptions and teacher corrections. Use full lesson/assignment names and due dates, with authorized student-facing work links where available.
 
