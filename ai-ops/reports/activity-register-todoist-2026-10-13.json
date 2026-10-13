@@ -1,0 +1,67 @@
+{
+  "checked_at_utc": "2026-10-13 15:02:47 UTC",
+  "source": "Fresh Todoist profile/project/task connector readbacks; current local Codex saved settings; current school Claude setup receipt",
+  "account": {
+    "email": "kvond12@gmail.com",
+    "timezone": "America/New_York"
+  },
+  "project": {
+    "id": "6hhj927j3jrJ8pF9",
+    "name": "Develop Teacher System hub/python/ai"
+  },
+  "manual_section": {
+    "id": "6hjwpw3cgrW4W9mh",
+    "name": "Manual actions and AI setup"
+  },
+  "manual_tasks": [
+    {
+      "id": "6hjwq37wp63PF6W9",
+      "content": "Open the optimized activities register and finish manual setup choices",
+      "due_date": "2026-10-13",
+      "recurring": false,
+      "duration": "15m",
+      "checked": false,
+      "read_back": true
+    },
+    {
+      "id": "6hjwq3947cGX7FHh",
+      "content": "Prepare the Mac for tomorrow's scheduled AI work",
+      "due_date": "2026-10-13T21:00:00",
+      "recurring": "every Sunday, Monday, Tuesday, Wednesday, Thursday at 9pm",
+      "duration": "5m",
+      "checked": false,
+      "read_back": true
+    },
+    {
+      "id": "6hjwq3GRjwCp7QPh",
+      "content": "Print and hand out verified feedback when ready",
+      "due_date": "2026-10-14T07:45:00",
+      "recurring": "every weekday at 7:45am",
+      "duration": "10m",
+      "checked": false,
+      "read_back": true
+    }
+  ],
+  "existing_prep_descriptions_linked": [
+    "6hP3Pg2qPM7FX6jC",
+    "6hP3Pg3XxmJm9WcC",
+    "6hcjwVm84HVfvprm",
+    "6hj3gQ4CVR3rGVvh",
+    "6hj3gV7GcPmMfwg9"
+  ],
+  "preserved": "Existing dates, recurrences, priorities, labels and checked states; no AI automation changes or job runs.",
+  "coverage": {
+    "workflows": 13,
+    "original_todoist_build_entries": 26,
+    "inherited_skills": 29,
+    "weekday_rows": 7,
+    "manual_rows": 8
+  },
+  "caveats": [
+    "Manual reminder times are adjustable planning choices.",
+    "Saved tasks are not execution receipts.",
+    "Current IC-helper loading and monthly sweep live status remain unverified.",
+    "Original 33 technical acceptance items remain separate and linked.",
+    "No live automated library upkeep job was created."
+  ]
+}
