@@ -41,7 +41,7 @@ The original archive-location/specification, documented router ladder, cloud pla
 ## Separate added school requests
 
 - **Lesson review/code repair — saved Manual, exact readback:** [requested contract](../workflow-contracts/school-lesson-review-and-code-repair.md). Saved task receipt is complete; remaining work is the exact historical deck/slide45 result and remaining eligible lecture slides, native code repair and added-text-box Notes counting. Parser change, meaningful fixtures, deployment and real readback remain independent acceptance.
-- **Friday iTracker notices — saved enabled Friday3 PM, exact readback:** [requested contract](../workflow-contracts/school-friday-itracker-notices.md). Saved cadence/readback is complete; verify complete missed-lesson evidence, actual recipient controls, private dedupe history, publish/readback and first real execution; no notification is claimed.
+- **Friday iTracker notices — saved enabled Friday 2:15 PM, exact readback:** [requested contract](../workflow-contracts/school-friday-itracker-notices.md). The [2:15 PM correction](school-claude-friday-time-correction-2026-10-13.json) has saved cadence and exact prompt readback; verify complete missed-lesson evidence, actual recipient controls, private dedupe history, publish/readback and first real execution; no notification is claimed.
 
 ## Completed in this October13 turn
 
