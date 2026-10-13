@@ -1,6 +1,6 @@
 # Optimized activities and weekly operating plan
 
-Updated October 13, 2026. The shared [AIHS HUB working checklist](https://docs.google.com/document/d/1iH_HE29CGEPxB86ZCmGCRqYUllV3bBnqFH4szfsFNcQ/edit?tab=t.0) is canonical for current school work. This is the sanitized reusable operations register: activities, saved schedules, missing builds, existing skills and Katherine's manual Todoist steps. The Word/Markdown download is a dated copy of this register. Prior versions remain in Git history.
+Updated October 13, 2026. The shared [Notes for Codex shared checklist](https://docs.google.com/document/d/150CzIzvbE0WQSnlQdIQHD3UNODr-L40_su5_ODbvUwI/edit?tab=t.0) is canonical for current school work. This is the sanitized reusable operations register: activities, saved schedules, missing builds, existing skills and Katherine's manual Todoist steps. The Word/Markdown download is a dated copy of this register. Prior versions remain in Git history.
 
 **Checkbox key:** ☐ still needs to be made or finished; ☑ exists/configuration made; ? historical existence or current loading needs verification. A checked box does not mean a successful run. Read the state column before relying on it.
 
@@ -158,3 +158,6 @@ All 29 inherited skill entry files exist. These checked boxes mean the file exis
 Startup evidence: [official OpenAI scheduled-task requirements](https://learn.chatgpt.com/docs/automations) and [remote host requirements](https://learn.chatgpt.com/docs/remote-connections). Local work needs the host/project/app available; remote/browser jobs also need their established authenticated source sessions. Existing privacy boundaries and permissions remain in force.
 
 No full histories, student records, notice bodies, financial inputs, signed links, credentials or databases belong in GitHub. Keep them in authorized private systems and the encrypted external archive. No new purchase, paid API, permission/security expansion, grade run or account retirement was performed for this register.
+
+
+Current checklist/launcher state: Notes for Codex owns completion; AIHS HUB owns visual navigation. Current4000-character manual prompt has exact live readback. Four native launcher navigation tests passed without executing tasks; Friday IC/iTracker and Writing GitHub access remain limited. See [current receipt](../reports/shared-checklist-schoology-launchers-2026-10-13.json) and [handoff](../HANDOFF.md).
