@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-10-12T01:16:09.170041+00:00",
+  "path": "/Volumes/T7",
+  "device": "disk4s1",
+  "external": true,
+  "protocol": "USB",
+  "filesystem": "ExFAT",
+  "solid_state": true,
+  "free_bytes": 828658286592,
+  "media_read_only": false,
+  "volume_read_only": false,
+  "encryption": "unverified; no encryption evidence in diskutil info",
+  "writes_performed": false,
+  "deadline_guard": "Existing work/deadline_guard.py wraps direct child command until 2026-10-12T10:00:00Z; descendant process groups and agent/UI tools not independently covered; no perpetual job installed."
+}

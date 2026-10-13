@@ -1,0 +1,62 @@
+{
+  "checked_at_utc": "2026-10-12T16:57:07.079304+00:00",
+  "jobs_changed": false,
+  "jobs": [
+    {
+      "id": "morning-roster-check-and-submission-tidy",
+      "status": "ACTIVE",
+      "rrule": "RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;BYHOUR=6;BYMINUTE=30;BYSECOND=0",
+      "prompt_sha256": "24abf8f2962839ad7505ce94441385ffde33ea8800f2a247e34c0a14a6aa4820",
+      "target_thread_id": "01a0fc18-96be-7873-8386-da8a6b110384"
+    },
+    {
+      "id": "morning-student-feedback-and-print-checklist",
+      "status": "ACTIVE",
+      "rrule": "RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;BYHOUR=7;BYMINUTE=30;BYSECOND=0",
+      "prompt_sha256": "13daff66e928ab309cf8ae31113d8de9cf8421d15f5d488b821c4347f8cec15d",
+      "target_thread_id": "01a0f4ed-2d87-7e62-9056-46f5ac441ef3"
+    }
+  ],
+  "identity_note": "current signed-in Codex email kvond@udel.edu verified by profile and exact usage-account ID match; schedules do not pin account or model; no historical execution claim",
+  "previous_schedule_check_at_utc": "2026-10-12T16:03:17.121183+00:00",
+  "installed_dispatcher_evidence": {
+    "app_version": "26.1002.52244",
+    "package_path": "/Applications/ChatGPT.app/Contents/Resources/app.asar",
+    "package_sha256": "40efd7acdf03a24817fcd7f35684fc2173b154df06774243cb4ab227e36fa915",
+    "asset_path": "/.vite/build/main-B6ZOwXa3.js",
+    "asset_sha256": "ce6850f8b8405b159e0afa70ed0379a1a7bcd628970cf4afb42299f5c633f0b9",
+    "source_kind": "static installed code reviewed by root/cloud; root verified package hash",
+    "tick_seconds": 30,
+    "recent_run_guard_seconds": 60,
+    "blocked_start_deferral": "min(next scheduled run, now+60seconds) for missing/busy/renderer states",
+    "eligible_start_order": "advance next scheduled run before startTurn",
+    "start_or_completion_failure": "logged Scheduled run failed; inspected catch/finally clears in-flight state without immediate dispatcher rerun",
+    "completion_waiter_timeout_seconds": 600,
+    "waiter_timeout_is_cancellation_proof": false,
+    "all_transport_or_model_retries_verified": false,
+    "source_locators": [
+      {
+        "function": "vl",
+        "utf8_byte_offset": 186786,
+        "one_based_line": 89
+      },
+      {
+        "function": "Ol",
+        "utf8_byte_offset": 190209,
+        "one_based_line": 89
+      },
+      {
+        "function": "Ll",
+        "utf8_byte_offset": 203786,
+        "one_based_line": 91
+      },
+      {
+        "function": "Xl",
+        "utf8_byte_offset": 211637,
+        "one_based_line": 91
+      }
+    ],
+    "official_reference": "https://learn.chatgpt.com/docs/automations?surface=app",
+    "official_docs_define_retry_policy": false
+  }
+}

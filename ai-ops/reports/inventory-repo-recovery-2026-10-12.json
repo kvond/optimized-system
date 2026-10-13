@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "verified_at_utc": "2026-10-12T23:09:42.127673+00:00",
+  "scope": "Five existing missing-Git-metadata inventory entries only; no repository repair or external fetch",
+  "storage_verification": {
+    "mount": "/Volumes/AI-Private-Archive",
+    "backing_image": "/Volumes/T7/AI-Archive/AI-Private-Archive-v2.sparsebundle",
+    "filesystem": "apfs",
+    "encryption_verified": true,
+    "mount_verified": true
+  },
+  "preflight_total_bytes": 13824604,
+  "affected_folders_preserved": 5,
+  "shared_recovery_git_directories_preserved": 2,
+  "all_snapshots_readback_verified": true,
+  "access_denial_observed": false,
+  "repositories": [
+    {
+      "affected_path": "/Users/katherinevonduyke/Claude/projects 2/Answerable-Teaching",
+      "preservation": {
+        "snapshot_path": "/Volumes/AI-Private-Archive/AI-Archive/preservation/repo-recovery-20261012/affected-copy-1",
+        "file_count": 213,
+        "bytes": 3520330,
+        "manifest_path": "/Volumes/AI-Private-Archive/AI-Archive/preservation/repo-recovery-20261012/affected-copy-1-manifest.json",
+        "manifest_sha256": "c4bff6a55ae710f0057ca7e5b8467cdced965ee21615d1f87f48e54e3fcca71a",
+        "sha256_readback_verified": true
+      },
+      "original_modified": false,
+      "reconstruction_performed": false,
+      "classification": "incomplete_legacy_answerable_copy_with_verified_sibling",
+      "cause": "original .git directory lacks HEAD; complete same-project sibling verifies its commit",
+      "recovery_pointer": {
+        "repository_path": "/Users/katherinevonduyke/Documents/Claude/projects 2/Answerable-Teaching",
+        "verified_head_sha": "2b896243787184b767c5407bf81f6547c7199662",
+        "head_committed_at": "2026-08-23T18:07:35-04:00",
+        "matching_relative_path_and_content_count": null,
+        "nonmatching_or_absent_source_file_count": null,
+        "content_preservation_required": true,
+        "exact_equivalence_claimed": false
+      }
+    },
+    {
+      "affected_path": "/Users/katherinevonduyke/Documents/Claude/Codex/2026-09-14/i-d/work/cloud-run-bootstrap",
+      "preservation": {
+        "snapshot_path": "/Volumes/AI-Private-Archive/AI-Archive/preservation/repo-recovery-20261012/affected-copy-2",
+        "file_count": 317,
+        "bytes": 2761188,
+        "manifest_path": "/Volumes/AI-Private-Archive/AI-Archive/preservation/repo-recovery-20261012/affected-copy-2-manifest.json",
+        "manifest_sha256": "41dd5f319fced2f464c602a21d3f9fbc55f15f8936010ff54b6ec3a4982626cc",
+        "sha256_readback_verified": true
+      },
+      "original_modified": false,
+      "reconstruction_performed": false,
+      "classification": "known_broken_mirrored_worktree_pointer",
+      "cause": "copied .git marker retains original Documents/Codex path; corresponding complete Git metadata exists under Documents/Claude/Codex",
+      "recovery_pointer": {
+        "mirrored_worktree_gitdir": "/Users/katherinevonduyke/Documents/Claude/Codex/2026-09-14/new-chat/work/hub-cloud/.git/worktrees/cloud-run-bootstrap",
+        "common_gitdir": "/Users/katherinevonduyke/Documents/Claude/Codex/2026-09-14/new-chat/work/hub-cloud/.git",
+        "verified_branch": "feat/teaching-results-v1",
+        "verified_head_sha": "3420b079ab869727e911293db3b3afd7197707bc",
+        "head_committed_at": "2026-09-15T18:55:45-04:00",
+        "tracked_changed_count": 0,
+        "untracked_count": 0,
+        "common_metadata_preservation": {
+          "snapshot_path": "/Volumes/AI-Private-Archive/AI-Archive/preservation/repo-recovery-20261012/recovery-git-metadata-1",
+          "file_count": 672,
+          "bytes": 1327156,
+          "manifest_path": "/Volumes/AI-Private-Archive/AI-Archive/preservation/repo-recovery-20261012/recovery-git-metadata-1-manifest.json",
+          "manifest_sha256": "6b22b398b287af9f0777ab36b2319a4d982650105bec6e2a9b8189dbf3b666d4",
+          "sha256_readback_verified": true
+        }
+      }
+    },
+    {
+      "affected_path": "/Users/katherinevonduyke/Documents/Claude/Codex/2026-09-16/all-the-submissions-went-to-this/work/dashboard-code",
+      "preservation": {
+        "snapshot_path": "/Volumes/AI-Private-Archive/AI-Archive/preservation/repo-recovery-20261012/affected-copy-3",
+        "file_count": 231,
+        "bytes": 1654443,
+        "manifest_path": "/Volumes/AI-Private-Archive/AI-Archive/preservation/repo-recovery-20261012/affected-copy-3-manifest.json",
+        "manifest_sha256": "bdec6be2247c5d5eb4a4de206872b4f6355e983a0d916e746db6186bd826a741",
+        "sha256_readback_verified": true
+      },
+      "original_modified": false,
+      "reconstruction_performed": false,
+      "classification": "known_broken_mirrored_worktree_pointer",
+      "cause": "copied .git marker retains original Documents/Codex path; corresponding complete Git metadata exists under Documents/Claude/Codex",
+      "recovery_pointer": {
+        "mirrored_worktree_gitdir": "/Users/katherinevonduyke/Documents/Claude/Codex/2026-09-16/ac/work/roster-connect/.git/worktrees/dashboard-code",
+        "common_gitdir": "/Users/katherinevonduyke/Documents/Claude/Codex/2026-09-16/ac/work/roster-connect/.git",
+        "verified_branch": "feat/private-grading-view-20260916",
+        "verified_head_sha": "daac857d9811b75a9324b519b8d328d9429746c7",
+        "head_committed_at": "2026-09-16T15:43:04-04:00",
+        "tracked_changed_count": 0,
+        "untracked_count": 0,
+        "common_metadata_preservation": {
+          "snapshot_path": "/Volumes/AI-Private-Archive/AI-Archive/preservation/repo-recovery-20261012/recovery-git-metadata-2",
+          "file_count": 154,
+          "bytes": 860951,
+          "manifest_path": "/Volumes/AI-Private-Archive/AI-Archive/preservation/repo-recovery-20261012/recovery-git-metadata-2-manifest.json",
+          "manifest_sha256": "d7abaa052ed63d40395bb6a95247362f67b33b91338b5c99b49676131ce0838b",
+          "sha256_readback_verified": true
+        }
+      }
+    },
+    {
+      "affected_path": "/Users/katherinevonduyke/Documents/Claude/Codex/2026-09-16/all-the-submissions-went-to-this/work/dashboard-section-code",
+      "preservation": {
+        "snapshot_path": "/Volumes/AI-Private-Archive/AI-Archive/preservation/repo-recovery-20261012/affected-copy-4",
+        "file_count": 246,
+        "bytes": 1762924,
+        "manifest_path": "/Volumes/AI-Private-Archive/AI-Archive/preservation/repo-recovery-20261012/affected-copy-4-manifest.json",
+        "manifest_sha256": "be20a2917af6c0700be4d1bc5fcfa52f8583095d09c1799f3fc7913001fa5aaf",
+        "sha256_readback_verified": true
+      },
+      "original_modified": false,
+      "reconstruction_performed": false,
+      "classification": "known_broken_mirrored_worktree_pointer",
+      "cause": "copied .git marker retains original Documents/Codex path; corresponding complete Git metadata exists under Documents/Claude/Codex",
+      "recovery_pointer": {
+        "mirrored_worktree_gitdir": "/Users/katherinevonduyke/Documents/Claude/Codex/2026-09-16/ac/work/roster-connect/.git/worktrees/dashboard-section-code",
+        "common_gitdir": "/Users/katherinevonduyke/Documents/Claude/Codex/2026-09-16/ac/work/roster-connect/.git",
+        "verified_branch": "fix/grading-section-default-20260916",
+        "verified_head_sha": "2cc1a0071235549f0e980b17e8d265a225bac43f",
+        "head_committed_at": "2026-09-16T15:43:57-04:00",
+        "tracked_changed_count": 0,
+        "untracked_count": 0,
+        "common_metadata_preservation": {
+          "snapshot_path": "/Volumes/AI-Private-Archive/AI-Archive/preservation/repo-recovery-20261012/recovery-git-metadata-2",
+          "file_count": 154,
+          "bytes": 860951,
+          "manifest_path": "/Volumes/AI-Private-Archive/AI-Archive/preservation/repo-recovery-20261012/recovery-git-metadata-2-manifest.json",
+          "manifest_sha256": "d7abaa052ed63d40395bb6a95247362f67b33b91338b5c99b49676131ce0838b",
+          "sha256_readback_verified": true
+        }
+      }
+    },
+    {
+      "affected_path": "/Users/katherinevonduyke/Documents/Claude/Codex/2026-09-17/fix-only-the-current-page-2/work/hub",
+      "preservation": {
+        "snapshot_path": "/Volumes/AI-Private-Archive/AI-Archive/preservation/repo-recovery-20261012/affected-copy-5",
+        "file_count": 259,
+        "bytes": 1937612,
+        "manifest_path": "/Volumes/AI-Private-Archive/AI-Archive/preservation/repo-recovery-20261012/affected-copy-5-manifest.json",
+        "manifest_sha256": "0aefb82d7bda86e89663d2e65c192e387d54ca3ab18f434325bc847b3359222c",
+        "sha256_readback_verified": true
+      },
+      "original_modified": false,
+      "reconstruction_performed": false,
+      "classification": "known_broken_mirrored_worktree_pointer",
+      "cause": "copied .git marker retains original Documents/Codex path; corresponding complete Git metadata exists under Documents/Claude/Codex",
+      "recovery_pointer": {
+        "mirrored_worktree_gitdir": "/Users/katherinevonduyke/Documents/Claude/Codex/2026-09-14/new-chat/work/hub-cloud/.git/worktrees/hub",
+        "common_gitdir": "/Users/katherinevonduyke/Documents/Claude/Codex/2026-09-14/new-chat/work/hub-cloud/.git",
+        "verified_branch": "feat/page2-school-browser-posting",
+        "verified_head_sha": "8f9d044b5f76e6a954fd8d5eb581e2ad2f780941",
+        "head_committed_at": "2026-09-17T10:42:30-04:00",
+        "tracked_changed_count": 21,
+        "untracked_count": 3,
+        "common_metadata_preservation": {
+          "snapshot_path": "/Volumes/AI-Private-Archive/AI-Archive/preservation/repo-recovery-20261012/recovery-git-metadata-1",
+          "file_count": 672,
+          "bytes": 1327156,
+          "manifest_path": "/Volumes/AI-Private-Archive/AI-Archive/preservation/repo-recovery-20261012/recovery-git-metadata-1-manifest.json",
+          "manifest_sha256": "6b22b398b287af9f0777ab36b2319a4d982650105bec6e2a9b8189dbf3b666d4",
+          "sha256_readback_verified": true
+        }
+      }
+    }
+  ],
+  "next_action": "No repair needed to conclude inventory classification. Any later reconstruction must use isolated copies, preserve recovered worktree branches and source changes, and independently verify intended working copy.",
+  "limitations": [
+    "Recovery pointers verified with existing local objects only; no current remote branch claim.",
+    "Raw filenames and per-file hashes remain in encrypted private manifests, not Git.",
+    "Incomplete Answerable folder is not asserted equivalent to its sibling; all content preserved. Optional full sibling content comparison was stopped when one source read remained pending; no equivalence claim is needed for recovery."
+  ],
+  "available_bytes_after_preservation": 19691982848,
+  "provenance_followup": {
+    "verified_existing_bindings": [
+      "Substack canonical Reflection Ledger + Bank is bound to the live source receipt; August 23 chat is separately bound with acceptance unverified.",
+      "Generalized grading template is bound to UD Scholarly Writing project memory; Summer 2026 OLI rubrics are separately indexed with historical scope.",
+      "Historical book decisions are bound to exact encrypted b3ea source snapshot; general editorial rules retain source hashes."
+    ],
+    "remaining_not_inferred": [
+      "Missing original stored Substack voice script and preferred-voice acceptance.",
+      "Current assignment denominator and separate Scholarly Writing final-paper rubric."
+    ],
+    "canonical_binding_changes_needed": false
+  }
+}

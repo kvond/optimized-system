@@ -1,0 +1,36 @@
+{
+  "checked_at_utc": "2026-10-12T15:52:47.745683+00:00",
+  "scope": "one existing build metadata + service/revision metadata + local inspected commit; no private payloads",
+  "project": "graceful-fold-341018",
+  "region": "us-east4",
+  "build": {
+    "id": "ef6cf407-2dd8-4f76-bd96-2e0282d64656",
+    "status": "SUCCESS",
+    "create_time_utc": "2026-09-15T17:46:57.561469719Z",
+    "finish_time_utc": "2026-09-15T17:47:35.186796Z",
+    "image_digest": "sha256:5afd2665237ee5c57eabe435bf8501ed629ac95b2aa01e4537b3e7719960e5d5",
+    "resolved_storage_source": {
+      "bucket": "run-sources-graceful-fold-341018-us-east4",
+      "object": "services/personal-hub-api/1789494416.870631-f0bc309fd7d846788fb7203c3eff6c22.zip",
+      "generation": "1789494417056789"
+    },
+    "resolved_repo_source": null,
+    "resolved_git_source": null
+  },
+  "service": {
+    "name": "personal-hub-api",
+    "latest_ready_revision": "personal-hub-api-00001-dkz",
+    "traffic_percent": 100,
+    "ready": true,
+    "image_digest": "sha256:5afd2665237ee5c57eabe435bf8501ed629ac95b2aa01e4537b3e7719960e5d5"
+  },
+  "inspected_repo_commit": "180e1174d232418f9fe6521297e053fae4d0e576",
+  "build_to_deployed_image_match": true,
+  "repo_commit_to_build_verified": false,
+  "source_payload_downloaded": false,
+  "source_payload_read": false,
+  "signed_urls_created": false,
+  "cloud_mutations": false,
+  "original_requirement": "cloud orchestration plan or minimal implementation; satisfied as staged plan",
+  "future_pilot_acceptance": "not required for original plan; still requires caller/source authorization and source/deployed-code linkage plus chosen workflow receipts"
+}

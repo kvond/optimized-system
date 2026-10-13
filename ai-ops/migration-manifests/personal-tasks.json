@@ -1,0 +1,133 @@
+{
+  "source_account_assumption_corrected": true,
+  "kvond12_active_task_rows": 0,
+  "ud_active_task_rows": 4,
+  "no_tasks_changed": false,
+  "raw_sensitive_prompts_copied_to_github": false,
+  "jobs": [
+    {
+      "name": "Daily News Briefing",
+      "id": "6aa2783463288191aa4b53146177bf6c",
+      "current_owner": "UD ChatGPT",
+      "status": "ACTIVE confirmed live UI",
+      "displayed_schedule": "Daily 4:30 AM",
+      "timezone": "UI client America/New_York; backend TZID not exposed",
+      "prompt_storage": "sanitized capability summary here; exact original retained in UD task",
+      "required_capabilities": "public research; current sources; education/AI/book relevance; separate private financial work",
+      "inputs": "official news sources, private calendar and Todoist gift history",
+      "current_outputs": "source task/chat; delivery channel/test receipt unverified",
+      "replacement_status": "STAGED; disabled until tested",
+      "proposed_execution": "deterministic retrieval/fingerprints \u2192 cheapest authorized bounded API; UD Claude background if contract/tool benefit demonstrated",
+      "maintenance_owner": "Katherine via private optimized-system contracts",
+      "cutover_gates": [
+        "correct timezone/schedule",
+        "same approved input scopes",
+        "verified destination",
+        "successful test/readback",
+        "ownership documented"
+      ],
+      "old_task_disabled": false
+    },
+    {
+      "name": "Delaware Education Job Watch",
+      "id": "6ac29fe996ac81918b03a7d59354ef9f",
+      "current_owner": "UD ChatGPT",
+      "status": "ACTIVE confirmed live UI",
+      "displayed_schedule": "Daily monitoring; exact time unexposed",
+      "timezone": "UI client America/New_York; backend TZID not exposed",
+      "prompt_storage": "sanitized capability summary here; exact original retained in UD task",
+      "required_capabilities": "official job retrieval plus bounded suitability comparison; notify only new matches",
+      "inputs": "private role/qualification profile, prior vacancy fingerprints",
+      "current_outputs": "source task/chat; delivery channel/test receipt unverified",
+      "replacement_status": "STAGED; disabled until tested",
+      "proposed_execution": "deterministic retrieval/fingerprints \u2192 cheapest authorized bounded API; UD Claude background if contract/tool benefit demonstrated",
+      "maintenance_owner": "Katherine via private optimized-system contracts",
+      "cutover_gates": [
+        "correct timezone/schedule",
+        "same approved input scopes",
+        "verified destination",
+        "successful test/readback",
+        "ownership documented"
+      ],
+      "old_task_disabled": false,
+      "prompt_update": "Generic repeat-work rule saved; original prefix exact readback; no owner/frequency/criteria/destination change"
+    },
+    {
+      "name": "Birthday Gift Workflow",
+      "id": "6aa9962611648191b900495a9ea89cd8",
+      "current_owner": "UD ChatGPT",
+      "status": "ACTIVE confirmed live UI",
+      "displayed_schedule": "Monday Morning; exact time unexposed",
+      "timezone": "UI client America/New_York; backend TZID not exposed",
+      "prompt_storage": "sanitized capability summary here; exact original retained in UD task",
+      "required_capabilities": "deterministic calendar/history reconciliation; bounded gift research after preferences; no contacts/carts/purchases",
+      "inputs": "primary Calendar Routine and Todoist Birthday Books & Gifts; family checks remain restricted",
+      "current_outputs": "source task/chat; delivery channel/test receipt unverified",
+      "replacement_status": "STAGED; disabled until tested",
+      "proposed_execution": "deterministic retrieval/fingerprints \u2192 cheapest authorized bounded API; UD Claude background if contract/tool benefit demonstrated",
+      "maintenance_owner": "Katherine via private optimized-system contracts",
+      "cutover_gates": [
+        "correct timezone/schedule",
+        "same approved input scopes",
+        "verified destination",
+        "successful test/readback",
+        "ownership documented"
+      ],
+      "old_task_disabled": false
+    },
+    {
+      "name": "Daily Finance Brief",
+      "id": "6aad057be3548191ab9fb3a994074788",
+      "current_owner": "UD ChatGPT",
+      "status": "ACTIVE confirmed live UI",
+      "displayed_schedule": "Daily 4:30 AM",
+      "timezone": "UI client America/New_York; backend TZID not exposed",
+      "prompt_storage": "sanitized capability summary here; exact original retained in UD task",
+      "required_capabilities": "restricted decision support; no transactions",
+      "inputs": "exact financial source prompt remains in original UD task; no runtime connector verified",
+      "current_outputs": "source task/chat; delivery channel/test receipt unverified",
+      "replacement_status": "STAGED; disabled until tested",
+      "proposed_execution": "deterministic retrieval/fingerprints \u2192 cheapest authorized bounded API; UD Claude background if contract/tool benefit demonstrated",
+      "maintenance_owner": "Katherine via private optimized-system contracts",
+      "cutover_gates": [
+        "correct timezone/schedule",
+        "same approved input scopes",
+        "verified destination",
+        "successful test/readback",
+        "ownership documented"
+      ],
+      "old_task_disabled": false
+    },
+    {
+      "name": "Weekly Job Scan",
+      "id": "6a845332fa248191810a32f978f39b9a",
+      "current_owner": "UD ChatGPT",
+      "status": "PAUSED confirmed live UI; future scheduled runs cancelled",
+      "displayed_schedule": "Historical Wednesday 7:00 AM; currently paused",
+      "timezone": "UI client America/New_York; backend TZID not exposed",
+      "prompt_storage": "sanitized capability summary here; exact original retained in UD task",
+      "required_capabilities": "official live listings and candidate-profile match; verification receipt; no applications",
+      "inputs": "private candidate criteria; employer pages; prior reported listings",
+      "current_outputs": "source task/chat; delivery channel/test receipt unverified",
+      "replacement_status": "No replacement requested",
+      "proposed_execution": "None; do not auto-resume",
+      "maintenance_owner": "Katherine via private optimized-system contracts",
+      "cutover_gates": [
+        "correct timezone/schedule",
+        "same approved input scopes",
+        "verified destination",
+        "successful test/readback",
+        "ownership documented"
+      ],
+      "old_task_disabled": true,
+      "scope_verification": "Separate production/media-management candidate and source contract; not merged with educator watch",
+      "history_retained": true,
+      "current_receipt": "reports/bonnie-job-schedule-cancelled-2026-10-12.json"
+    }
+  ],
+  "updated_at_utc": "2026-10-12T23:41:27.306863+00:00",
+  "schedule_owner_or_cadence_changed": false,
+  "educator_watch_prompt_update_receipt": "reports/job-watch-change-2026-10-12.json",
+  "weekly_scope_distinct_verified": true,
+  "weekly_task_pause_receipt": "reports/bonnie-job-schedule-cancelled-2026-10-12.json"
+}

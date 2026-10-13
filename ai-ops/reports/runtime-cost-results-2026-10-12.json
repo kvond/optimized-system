@@ -1,0 +1,250 @@
+{
+  "schema_version": 1,
+  "verified_at_utc": "2026-10-13T00:38:52.239687+00:00",
+  "repository": "kvond/optimized-system",
+  "repository_renamed_from": "kvond/answerable-skills",
+  "tests": {
+    "status": "passed",
+    "count": 141,
+    "duration_seconds": 4.203,
+    "log_sha256": "1536eaaf6d2e14fa6abb83b8aeab3723cd2aa68755274b05843ade371a8bfeee"
+  },
+  "context": {
+    "baseline_words": 2863,
+    "selected_words": 391,
+    "max_words": 400,
+    "max_bundles": 2,
+    "measurements": [
+      {
+        "query": "cost cutting cheapest model budget",
+        "selected_words": 391,
+        "word_reduction_percent": 86.34,
+        "bundles": [
+          "ai-operating-decisions.md",
+          "workflow-preferences.md"
+        ],
+        "manifest_sha256": "2a05c9d99106b39f796ff4bdd81e6b72196671a1d0f820e21df993818516fd7d"
+      },
+      {
+        "query": "job monitoring recurring workflow",
+        "selected_words": 374,
+        "word_reduction_percent": 86.94,
+        "bundles": [
+          "workflow-preferences.md",
+          "school-workflow-rules.md"
+        ],
+        "manifest_sha256": "2a05c9d99106b39f796ff4bdd81e6b72196671a1d0f820e21df993818516fd7d"
+      },
+      {
+        "query": "writing voice substack prose",
+        "selected_words": 393,
+        "word_reduction_percent": 86.27,
+        "bundles": [
+          "substack-observed-voice.md",
+          "substack-voice.md"
+        ],
+        "manifest_sha256": "2a05c9d99106b39f796ff4bdd81e6b72196671a1d0f820e21df993818516fd7d"
+      }
+    ],
+    "unit": "exact whitespace words including provenance headers",
+    "token_count": null,
+    "dollar_savings_measured": false,
+    "model_calls": 0
+  },
+  "working_storage": {
+    "root": "/Volumes/AI-Private-Archive/AI-Archive/state/ai-ops",
+    "cache_database": "/Volumes/AI-Private-Archive/AI-Archive/state/ai-ops/cache.sqlite",
+    "usage_database": "/Volumes/AI-Private-Archive/AI-Archive/state/ai-ops/usage.sqlite",
+    "receipts_directory": "/Volumes/AI-Private-Archive/AI-Archive/state/ai-ops/receipts",
+    "verification": {
+      "mount": "/Volumes/AI-Private-Archive",
+      "backing_image": "/Volumes/T7/AI-Archive/AI-Private-Archive-v2.sparsebundle",
+      "filesystem": "apfs",
+      "encryption_verified": true,
+      "mount_verified": true
+    },
+    "ownership_enforcement_required": false,
+    "directory_mode": "0700",
+    "file_mode": "0600",
+    "database_integrity": "quick_check ok",
+    "synthetic_result_readback": "passed; sum10",
+    "private_demo_receipt_sha256": "4ad91946522c196e2e14b3305cc9a02a1f805632f33e10dc1133d369faa181a8",
+    "paid_dispatches": 0,
+    "per_user_isolation_claimed": false,
+    "desktop_commander_independent_resolver_readback": true
+  },
+  "live_schedules_changed": true,
+  "cloud_settings_changed": false,
+  "paid_routes_enabled": false,
+  "full_chat_backups_complete": false,
+  "raw_histories_or_databases_in_git": false,
+  "vacancy_gate": {
+    "implementation": "runtime/vacancies.py",
+    "targeted_tests": 8,
+    "live_bounded_source_receipt": "reports/vacancy-gate-acceptance-2026-10-12.json",
+    "cloud_bridge_verified": false,
+    "candidate_matching_performed": false
+  },
+  "live_task_prompt_changed": true,
+  "live_task_change_receipt": "reports/personal-cost-connections-2026-10-12.json",
+  "doe_http_adapter": {
+    "implementation": "runtime/doe_source.py",
+    "targeted_tests": 5,
+    "HTTP_source_receipt": "reports/doe-source-adapter-2026-10-12.json",
+    "HTTP_to_private_gate_receipt": "reports/doe-source-gate-acceptance-2026-10-12.json",
+    "exact_public_DOE_filter_only": true,
+    "cloud_schedule_integration_verified": false
+  },
+  "doe_operator": {
+    "implementation": "runtime/doe_check.py",
+    "targeted_tests": 13,
+    "actual_desktop_commander_acceptance": "reports/doe-operator-acceptance-2026-10-12.json",
+    "start_method": "spawn",
+    "same_request_no_refetch_verified": true,
+    "scheduled": false,
+    "paid_calls": 0
+  },
+  "personal_cost_connections": {
+    "schema_version": 1,
+    "verified_at_utc": "2026-10-13T00:22:18.752365+00:00",
+    "scope": "authorized1-4 existing personal worker integrations",
+    "connections": [
+      {
+        "worker": "doe-watch",
+        "task_id": "6ac29fe996ac81918b03a7d59354ef9f",
+        "owner": "kvond@udel.edu",
+        "original_prompt_sha256": "86b44d7cae3fe3298ee786d9f7fd67a151e3ccb07a68a20a3a78253deda4c221",
+        "saved_prompt_sha256": "3361d8250b251ebfac553a79098ecff5b61ffcc0fefd2a52353f92fa192276f9",
+        "original_exact_prefix_preserved": true,
+        "saved_prompt_exact_readback_verified": true,
+        "owner_cadence_criteria_destination_unchanged": true,
+        "existing_task_configured": true,
+        "entry": "/Users/katherinevonduyke/Documents/Claude/2026-10-11/remote-desktop-commander-plugin-app-6a057d268ebc81919918d37eec718425-5/work/core/ai-ops/runtime/doe_worker.py",
+        "scheduled_run_acceptance_verified": false,
+        "installed_entry_option": "/Volumes/T7/AI-Archive/ops/doe.py",
+        "saved_request_template": "doe-watch-YYYYMMDDTHHMMSSZ",
+        "actual_UTC_template_substitution_required": true
+      },
+      {
+        "worker": "news",
+        "task_id": "6aa2783463288191aa4b53146177bf6c",
+        "owner": "kvond@udel.edu",
+        "original_prompt_sha256": "4e895463c8ca558eb7c685600d0c059caf3737da42fbe4d16512dd213b33d6f8",
+        "saved_prompt_sha256": "b5bea2886d89908c3f3788425e4e234dfb64d476b8efd2608f2fade5d513dcb6",
+        "original_exact_prefix_preserved": true,
+        "saved_prompt_exact_readback_verified": true,
+        "owner_cadence_criteria_destination_unchanged": true,
+        "existing_task_configured": true,
+        "entry": "/Volumes/T7/AI-Archive/ops/news.py",
+        "scheduled_run_acceptance_verified": false
+      },
+      {
+        "worker": "birthday",
+        "task_id": "6aa9962611648191b900495a9ea89cd8",
+        "owner": "kvond@udel.edu",
+        "original_prompt_sha256": "bc174af1d8c8fea12ba7d2e8dfd8c8fe8d04990418383665423b23c30a2a6382",
+        "saved_prompt_sha256": "bf5507ae6f119b9497f66c73c0a99dbe89998c27b95c1a52e055834b2c1b627f",
+        "original_exact_prefix_preserved": true,
+        "saved_prompt_exact_readback_verified": true,
+        "owner_cadence_criteria_destination_unchanged": true,
+        "existing_task_configured": true,
+        "entry": "/Volumes/T7/AI-Archive/ops/birthday.py",
+        "scheduled_run_acceptance_verified": false
+      }
+    ],
+    "runtime_tests": {
+      "status": "passed",
+      "count": 141,
+      "duration_seconds": 4.203,
+      "log_sha256": "1536eaaf6d2e14fa6abb83b8aeab3723cd2aa68755274b05843ade371a8bfeee"
+    },
+    "originals_private_encrypted": true,
+    "raw_prompts_in_git": false,
+    "doe": {
+      "desktop_commander_exit_code": 0,
+      "complete_exact_DOE_source": true,
+      "statewide_coverage_claimed": false,
+      "source_counts": {
+        "unchanged": 3,
+        "new": 0,
+        "materially_changed": 0,
+        "closed": 0
+      },
+      "default_payload": "title/url/record hashes; exact-ID detail from immutable saved snapshot",
+      "candidate_review_or_report_proof_claimed": false
+    },
+    "news": {
+      "fixed_public_feed_count": 5,
+      "headline_count": 5,
+      "digest_words": 53,
+      "compact_context_words": 187,
+      "full_civic_policy_coverage_claimed": false,
+      "prepared_is_delivered": false,
+      "actual_output_ack_required": true,
+      "acquisition_limit_seconds": 45,
+      "cleanup_join_budget_seconds": 4
+    },
+    "birthday": {
+      "desktop_commander_exit_code": 0,
+      "current30day_eligible_count": 1,
+      "current_window_hold_count": 0,
+      "out_of_window_reconciliation_holds": 2,
+      "compact_context_words": 146,
+      "future_source_refresh_required": true,
+      "cart_purchase_contact_message_actions": 0
+    },
+    "shared_birthday": {
+      "status": "verified_reuse",
+      "business_date": "2026-10-12",
+      "eligible_within21_days": 1,
+      "eligible_within7_days": 0,
+      "duplicate_source_read_skipped": true,
+      "api_reads": 0,
+      "ai_calls": 0,
+      "out_of_window_hold_count": 2
+    },
+    "paid_calls": 0,
+    "dollar_savings_measured": false,
+    "weekly_job_scan_paused": true,
+    "school_jobs_changed": false,
+    "first_scheduled_runs_pending": true,
+    "runtime_freshness_verification": {
+      "verified_at_utc": "2026-10-13T00:38:52.239687+00:00",
+      "new_regression_tests": 7,
+      "news_reused_packet_must_match_current_Eastern_business_date": true,
+      "cross_day_reuse_does_not_refetch_or_change_original": true,
+      "news_delivery_exposes_source_observation_window_date_age": true,
+      "cross_midnight_delivery_rejected_before_birthday_reuse": true,
+      "literal_request_timestamp_placeholders_rejected_before_work": true,
+      "automatic_request_ID_generation_or_retry": false,
+      "historical_output_acknowledgment_preserved": true,
+      "installed_entries_actual_placeholder_readback": [
+        {
+          "entry": "/Volumes/T7/AI-Archive/ops/news.py",
+          "entry_sha256": "469566fc1cf8d878cb9c79882c78c22c3d7cc50d42afd834c6da5bc8641240c7",
+          "exit_code": 2,
+          "status": "failed_closed",
+          "reason": "literal_request_timestamp_placeholder"
+        },
+        {
+          "entry": "/Volumes/T7/AI-Archive/ops/birthday.py",
+          "entry_sha256": "afb0129c0f04003132ea0b186f934b67b97192c6a51b18b98f0d4dd9bae91645",
+          "exit_code": 2,
+          "status": "blocked",
+          "reason": "literal_request_timestamp_placeholder"
+        },
+        {
+          "entry": "/Volumes/T7/AI-Archive/ops/doe.py",
+          "entry_sha256": "be8713c107f9967e285e11d96d11cbb0a72865b9057c3a85394623c29639b644",
+          "exit_code": 2,
+          "status": "failed_closed",
+          "reason": "literal_request_timestamp_placeholder"
+        }
+      ],
+      "new_live_source_reads": 0,
+      "paid_dispatches": 0,
+      "scheduled_run_acceptance_claimed": false
+    }
+  },
+  "schedule_change_receipt": "reports/calendar-review-and-overnight-2026-10-12.json"
+}

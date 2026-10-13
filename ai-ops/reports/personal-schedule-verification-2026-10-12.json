@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-12T15:37:50.297524+00:00",
+  "surface": "ChatGPT browser UI; account checkmark and visible task controls",
+  "owner_email": "kvond@udel.edu",
+  "plan_badge": "Plus",
+  "active_count": 5,
+  "changed": false,
+  "backend_timezone": null,
+  "private_prompts_and_result_bodies_stored": false,
+  "tasks": [
+    {
+      "name": "Daily News Briefing",
+      "id": "6aa2783463288191aa4b53146177bf6c",
+      "active": true,
+      "ui_mode_badge": "Work",
+      "frequency": "Daily",
+      "visible_time": "04:30 AM",
+      "end_repeat": "Never",
+      "dated_output_observed": "2026-10-12",
+      "observed_chat_url": "https://chatgpt.com/c/6acc9bbd-09b4-83ea-982d-5253e0d83a2a?automationId=6aa2783463288191aa4b53146177bf6c&messageId=finalAgentTurnStart",
+      "receipt_scope": "Dated briefing displayed in task detail and existing chat opened; connector coverage/private section/durable external delivery not verified"
+    },
+    {
+      "name": "Birthday Gift Workflow",
+      "id": "6aa9962611648191b900495a9ea89cd8",
+      "active": true,
+      "ui_mode_badge": "Work",
+      "frequency": "Weekly Monday",
+      "visible_time": "Morning; exact clock not exposed",
+      "end_repeat": "Never"
+    },
+    {
+      "name": "Delaware Education Job Watch",
+      "id": "6ac29fe996ac81918b03a7d59354ef9f",
+      "active": true,
+      "ui_mode_badge": "Work",
+      "frequency": "Monitoring",
+      "visible_time": null,
+      "schedule_controls_exposed": false
+    },
+    {
+      "name": "Daily Finance Brief",
+      "id": "6aad057be3548191ab9fb3a994074788",
+      "active": true,
+      "ui_mode_badge": null,
+      "frequency": "Daily",
+      "visible_time": "04:30 AM",
+      "end_repeat": "Never"
+    },
+    {
+      "name": "Weekly Job Scan",
+      "id": "6a845332fa248191810a32f978f39b9a",
+      "active": true,
+      "ui_mode_badge": null,
+      "frequency": "Weekly Wednesday",
+      "visible_time": "07:00 AM",
+      "end_repeat": "Never"
+    }
+  ],
+  "save_buttons_remained_disabled": true,
+  "missing_acceptance": [
+    "backend timezone",
+    "exact clock for Morning and monitoring",
+    "input connector access",
+    "task-specific private delivery readback",
+    "last successful receipt for other four tasks",
+    "cart-policy conflict resolution"
+  ],
+  "not_current_desktop_identity_proof": true
+}

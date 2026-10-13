@@ -1,0 +1,120 @@
+{
+  "source_repository": "kvond/Answerable-Teaching",
+  "source_commit": "76acdd7c999fc25a63081164bdcbfc26cd36fa91",
+  "files": [
+    {
+      "path": "book-ops/vocabulary.json",
+      "sha256": "2b18a117f4f327c8b58d767b2975215fcddb3115d7425e3dc4a7fda57efca58e",
+      "identical_in_answerable_skills": [],
+      "disposition": "private data archive only",
+      "flags": [],
+      "size_bytes": 1959
+    },
+    {
+      "path": "book-ops/dedup_candidates.json",
+      "sha256": "af878de17cf98206212262721dce7b68a61839e46e1cb2e4added7e96aab74a9",
+      "identical_in_answerable_skills": [],
+      "disposition": "private data archive only",
+      "flags": [],
+      "size_bytes": 93178
+    },
+    {
+      "path": "book-ops/inventory.json",
+      "sha256": "02ea652c59f3b8e7dce9c359e6aa82845fd8ebf4b0b415a99bfdcf873531ff93",
+      "identical_in_answerable_skills": [],
+      "disposition": "private data archive only",
+      "flags": [],
+      "size_bytes": 164794
+    },
+    {
+      "path": "book-ops/scripts/roam_pull.py",
+      "sha256": "bc39f3a2c13e00916145494c9ef8735fe75ca9a249c317a408ace0cfeaee2f89",
+      "identical_in_answerable_skills": [],
+      "disposition": "staged exact code copy",
+      "flags": [],
+      "size_bytes": 5935
+    },
+    {
+      "path": "book-ops/scripts/on_create_check.py",
+      "sha256": "698fb4612cf193cdbc2466ae443421ac72f5b39f69f9406da54025184eaaa816",
+      "identical_in_answerable_skills": [],
+      "disposition": "staged exact code copy",
+      "flags": [],
+      "size_bytes": 4264
+    },
+    {
+      "path": "book-ops/scripts/requirements.txt",
+      "sha256": "f1aaef533985b7eec4bf744e306802e4d0e75b26d2ddcd19803897cb3552122e",
+      "identical_in_answerable_skills": [],
+      "disposition": "staged exact code copy",
+      "flags": [],
+      "size_bytes": 30
+    },
+    {
+      "path": "book-ops/scripts/dedup_sweep.py",
+      "sha256": "1c88a6eaec04f679bb9f7e82da5b6ef33dedc948ca115f5602471f10a2dd87d7",
+      "identical_in_answerable_skills": [],
+      "disposition": "staged exact code copy",
+      "flags": [],
+      "size_bytes": 9303
+    },
+    {
+      "path": "book-compile/compile-src/build_docx.js",
+      "sha256": "115506c7d485658e16091dae42f03daada4197045c70685ff4e11bd485be4a52",
+      "identical_in_answerable_skills": [],
+      "disposition": "staged exact code copy",
+      "flags": [],
+      "size_bytes": 7135
+    },
+    {
+      "path": "book-compile/compile-src/package.json",
+      "sha256": "1ad896461fe8445ff4dd51ba2afbe8d116b1a46b8ca4aae721418b5150354e34",
+      "identical_in_answerable_skills": [],
+      "disposition": "staged exact code copy",
+      "flags": [],
+      "size_bytes": 49
+    },
+    {
+      "path": "scripts/export_pages.py",
+      "sha256": "a9a286c0a3f0ca5c7d1c863704c3468cf3ed6acff9bb72595334f82c5ec29a01",
+      "identical_in_answerable_skills": [],
+      "disposition": "staged exact code copy",
+      "flags": [],
+      "size_bytes": 11589
+    },
+    {
+      "path": "scripts/render_reading.py",
+      "sha256": "fdb430e3e9f69e1125ebfa9643cc1f37f00f731fa7518f8566ae92beaff9d616",
+      "identical_in_answerable_skills": [],
+      "disposition": "staged exact code copy",
+      "flags": [],
+      "size_bytes": 4827
+    },
+    {
+      "path": "revision/tools/manuscript_check.py",
+      "sha256": "3017e0e1ff8583d20c9daea81da97ce3c0cad6a02018d37b28eac258673a5dc0",
+      "identical_in_answerable_skills": [],
+      "disposition": "staged exact code copy",
+      "flags": [],
+      "size_bytes": 17395
+    }
+  ],
+  "editorial_source_preservation": {
+    "source_commit": "76acdd7c999fc25a63081164bdcbfc26cd36fa91",
+    "files": [
+      {
+        "path": "book-compile/voice-guide.md",
+        "sha256": "9a45d93b3123245d896674c6904e2009c98a14a97770e473210ecf59c68f1e07"
+      },
+      {
+        "path": "book-compile/tics-list.md",
+        "sha256": "0b6b81980390005385829ed74754eabb4f9a1da58439f1bb7d82243f45819bc5"
+      }
+    ],
+    "exact_commit_blob_hashes_verified": true,
+    "full_source_retained_in_original_bundle": true,
+    "sanitized_summary": "ai-ops/retirement-preservation/Answerable-Teaching/general-editorial-rules.md",
+    "raw_examples_or_manuscript_copied": false,
+    "active_skill_changed": false
+  }
+}

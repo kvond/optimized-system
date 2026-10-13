@@ -1,0 +1,188 @@
+[
+  {
+    "bundle": "teaching-principles.md",
+    "privacy_class": "private_operational",
+    "provenance": "distilled local source policies; audit observations reported, not live acceptance",
+    "sources": [
+      {
+        "path": "skills/book-revision/reference/argument-arc-and-glossary.md",
+        "sha256": "d9b2e2935a9b08ccc0cf42b78da60f1d3a0e317012f96c30c0c463f135bbb230"
+      },
+      {
+        "path": "/Volumes/AI-Private-Archive/AI-Archive/preservation/operational-sources/book-decisions-b3ea7de4.md",
+        "sha256": "b3ea7de4f01639d3d5f2ac7915ff39eb2e174d9231d2d498625fdabec223420e",
+        "scope": "local_only_source",
+        "original_source_path": "/Users/katherinevonduyke/code/answerable-skills/skills/book-revision/reference/decisions.md",
+        "notes": "Exact historical operational source preserved privately; named examples remain outside new Git assets. Source body is never emitted by context retrieval."
+      },
+      {
+        "path": "docs/book-project/Project Instructions.md",
+        "sha256": "dc5d0c05d47789bf7506342d6a47424a0714a37e42a9e3ab7f966c14d4f0891b"
+      }
+    ],
+    "bundle_sha256": "3961031b5e5db7591405f6e12de2036227e7d8b0dd0dc3f487bd1bd0e34f6d52",
+    "updated_observation_date": "2026-10-12"
+  },
+  {
+    "bundle": "wilmington-grading.md",
+    "privacy_class": "private_operational",
+    "provenance": "Live source text observed; general rules distilled only; inference and historical/current applicability are explicit in bundle",
+    "sources": [
+      {
+        "path": "skills/block-update/SKILL.md",
+        "sha256": "9482d3c24e20aa39bf350a1616f4438fccc82015c13cd946f0c589be7ad8d33d"
+      },
+      {
+        "path": "skills/daily-agenda/SKILL.md",
+        "sha256": "1742e4b9706c1641d227df8364fe079f3b866e6db1e72423f9acedbb88d1fe28"
+      }
+    ],
+    "bundle_sha256": "915ec22c69aef95f9387cdb5a0bcc5dbb8cd0764cbe6d4b05665df0c7b428924",
+    "updated_observation_date": "2026-10-12",
+    "live_source_receipts": "source-receipts-2026-10-12.json"
+  },
+  {
+    "bundle": "answerable-teaching-concepts.md",
+    "privacy_class": "private_operational",
+    "provenance": "distilled local source policies; audit observations reported, not live acceptance",
+    "sources": [
+      {
+        "path": "skills/book-revision/reference/argument-arc-and-glossary.md",
+        "sha256": "d9b2e2935a9b08ccc0cf42b78da60f1d3a0e317012f96c30c0c463f135bbb230"
+      },
+      {
+        "path": "/Volumes/AI-Private-Archive/AI-Archive/preservation/operational-sources/book-decisions-b3ea7de4.md",
+        "sha256": "b3ea7de4f01639d3d5f2ac7915ff39eb2e174d9231d2d498625fdabec223420e",
+        "scope": "local_only_source",
+        "original_source_path": "/Users/katherinevonduyke/code/answerable-skills/skills/book-revision/reference/decisions.md",
+        "notes": "Exact historical operational source preserved privately; named examples remain outside new Git assets. Source body is never emitted by context retrieval."
+      }
+    ],
+    "bundle_sha256": "512ab1191b9b3f9d23b354eafaf6139ad849b02be1874a29ad26f40fe0afa798",
+    "updated_observation_date": "2026-10-12"
+  },
+  {
+    "bundle": "writing-voice.md",
+    "privacy_class": "private_operational",
+    "provenance": "distilled local source policies; audit observations reported, not live acceptance",
+    "sources": [
+      {
+        "path": "docs/book-project/Project Instructions.md",
+        "sha256": "dc5d0c05d47789bf7506342d6a47424a0714a37e42a9e3ab7f966c14d4f0891b"
+      },
+      {
+        "path": "/Volumes/AI-Private-Archive/AI-Archive/preservation/operational-sources/book-decisions-b3ea7de4.md",
+        "sha256": "b3ea7de4f01639d3d5f2ac7915ff39eb2e174d9231d2d498625fdabec223420e",
+        "scope": "local_only_source",
+        "original_source_path": "/Users/katherinevonduyke/code/answerable-skills/skills/book-revision/reference/decisions.md",
+        "notes": "Exact historical operational source preserved privately; named examples remain outside new Git assets. Source body is never emitted by context retrieval."
+      }
+    ],
+    "bundle_sha256": "bff9ad621db0a53d159c722bb9499b89f3b5589f76a8cf487eace4a2a2eb675c",
+    "updated_observation_date": "2026-10-12"
+  },
+  {
+    "bundle": "substack-voice.md",
+    "privacy_class": "private_operational",
+    "provenance": "Live source text observed; general rules distilled only; inference and historical/current applicability are explicit in bundle",
+    "sources": [
+      {
+        "path": "skills/writing-block/SKILL.md",
+        "sha256": "9d63db70764972fb6d5a8ecbbe537d662fa448af6be7da98818eb56dbb1f30fd"
+      },
+      {
+        "path": "skills/chapter-bank/SKILL.md",
+        "sha256": "a764490388c1400c064effca69622734d3bcd652abd70d8ed19318c6c6b9fc23"
+      },
+      {
+        "path": "docs/book-project/Project Instructions.md",
+        "sha256": "dc5d0c05d47789bf7506342d6a47424a0714a37e42a9e3ab7f966c14d4f0891b"
+      }
+    ],
+    "bundle_sha256": "fb43c7c0b971b3a88921ae2afa1d102c2eaf608ce57c76950688c2da205b0446",
+    "updated_observation_date": "2026-10-12",
+    "live_source_receipts": "source-receipts-2026-10-12.json"
+  },
+  {
+    "bundle": "workflow-preferences.md",
+    "privacy_class": "private_operational",
+    "provenance": "distilled local source policies; audit observations reported, not live acceptance",
+    "sources": [
+      {
+        "path": "skills/writing-block/SKILL.md",
+        "sha256": "9d63db70764972fb6d5a8ecbbe537d662fa448af6be7da98818eb56dbb1f30fd"
+      },
+      {
+        "path": "skills/block-update/SKILL.md",
+        "sha256": "9482d3c24e20aa39bf350a1616f4438fccc82015c13cd946f0c589be7ad8d33d"
+      },
+      {
+        "path": "/Volumes/AI-Private-Archive/AI-Archive/preservation/operational-sources/book-decisions-b3ea7de4.md",
+        "sha256": "b3ea7de4f01639d3d5f2ac7915ff39eb2e174d9231d2d498625fdabec223420e",
+        "scope": "local_only_source",
+        "original_source_path": "/Users/katherinevonduyke/code/answerable-skills/skills/book-revision/reference/decisions.md",
+        "notes": "Exact historical operational source preserved privately; named examples remain outside new Git assets. Source body is never emitted by context retrieval."
+      },
+      {
+        "path": "/Users/katherinevonduyke/code/answerable-skills/audits/ai-account-audit-2026-10-11.md",
+        "sha256": "c36809199d80112445f991104bb8d0005c162ab2b4da84a898f6154b46b6ff86",
+        "scope": "local_only_private_audit; excluded from repository and portable source ZIP"
+      }
+    ],
+    "bundle_sha256": "dc42cb14f598df64baabc1e602e38cf8c445c129e584092d85f0ad29d50d50f8",
+    "updated_observation_date": "2026-10-12"
+  },
+  {
+    "bundle": "account-history-index.md",
+    "privacy_class": "private_operational",
+    "provenance": "distilled local source policies; audit observations reported, not live acceptance",
+    "sources": [
+      {
+        "path": "/Users/katherinevonduyke/code/answerable-skills/audits/ai-account-audit-2026-10-11.md",
+        "sha256": "c36809199d80112445f991104bb8d0005c162ab2b4da84a898f6154b46b6ff86",
+        "scope": "local_only_private_audit; excluded from repository and portable source ZIP"
+      }
+    ],
+    "bundle_sha256": "0ec7c919fd6f6cad21fcdf137ac941c83354ca5b64e6b8689f7d0e78d7c80fb3",
+    "updated_observation_date": "2026-10-12"
+  },
+  {
+    "bundle": "school-workflow-rules.md",
+    "privacy_class": "private_operational",
+    "sources": [
+      {
+        "path": "ai-ops/workflow-contracts/school-current.json",
+        "sha256": "96ad750f6bb4faf4bf29c9bddd46c140bb214ed98c27d14056d34a5097e26e59"
+      }
+    ],
+    "bundle_sha256": "ccf524eb18f6e4b5b2750421cdac43ecbd2b18a129e3d488b02a822ba8ab87d7",
+    "updated_observation_date": "2026-10-12",
+    "provenance": "Persisted school prompt rules; successful operation not established"
+  },
+  {
+    "bundle": "ai-operating-decisions.md",
+    "privacy_class": "private_operational",
+    "sources": [],
+    "bundle_sha256": "528204953ed11366886d4cbe9d8cf8a2dc2a02be33f66a765ed5d3bfc0c57aa7",
+    "updated_observation_date": "2026-10-12",
+    "provenance": "October11 user reset instructions plus latest October12 main-account clarification; direct user messages supersede historical role proposals"
+  },
+  {
+    "bundle": "wilmington-dip-conventions.md",
+    "privacy_class": "private_operational",
+    "sources": [],
+    "bundle_sha256": "b0395ffcce7baa952ed7cef4db0dda2804de43f527d94b1d4b501988e2fed9df",
+    "updated_observation_date": "2026-10-12",
+    "live_source_receipts": "source-receipts-2026-10-12.json",
+    "provenance": "Live source text observed; general rules distilled only; inference and historical/current applicability are explicit in bundle"
+  },
+  {
+    "bundle": "substack-observed-voice.md",
+    "privacy_class": "private_operational",
+    "sources": [],
+    "bundle_sha256": "5837575c0b0387e9cff3424292bcb3e60ee02a0fd3b04241df188aa50c397898",
+    "updated_observation_date": "2026-10-12",
+    "live_source_receipts": "source-receipts-2026-10-12.json",
+    "provenance": "Live source text observed; general rules distilled only; inference and historical/current applicability are explicit in bundle"
+  }
+]

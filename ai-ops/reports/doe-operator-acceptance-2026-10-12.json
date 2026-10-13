@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "verified_at_utc": "2026-10-12T23:14:36.869927+00:00",
+  "tool": "runtime/doe_check.py",
+  "source_scope": "fixed exact public DOE Frontline location filter",
+  "execution": "Remote Desktop Commander on verified Mac; PID79716 completed exit0 in2.86s",
+  "source_acceptance": {
+    "namespace": "doe-operator-watch",
+    "request_id": "DOE-operator-20261012-spawn-acceptance-1",
+    "status": "complete",
+    "source_revision": "fdb7362fd1ef857f0ff9494f30487b3a56fd9bb4a298f261f28d26f43cb87a38",
+    "source_observed_utc": "2026-10-12T23:13:08.283702+00:00",
+    "result_sha256": "f5a7339d060089577acbcc84e4e922ddf538fd1c9f1dc66e5c7ed50c47b3ff08",
+    "counts": {
+      "closed": 0,
+      "materially_changed": 0,
+      "new": 0,
+      "unchanged": 3
+    },
+    "ai_calls": 0
+  },
+  "private_receipt_path": "/Volumes/AI-Private-Archive/AI-Archive/state/ai-ops/receipts/doe-operator-watch-717a565962835bd6aa877acf3e3fc045224dff64dc71b61a5cba6fd2f4a2fe4a.json",
+  "private_receipt_sha256": "5e1f7f1407c08cb63f745d2fb8b11cd9f8f00c978390cd6c82d5621d785128d9",
+  "private_receipt_bytes": 26534,
+  "mode": "0600",
+  "readback_verified": true,
+  "same_request_id_reuse_verified": true,
+  "same_request_refetch_performed": false,
+  "request_namespace_separate": true,
+  "identical_approved_public_source_fingerprints_shared_by_grant": true,
+  "candidate_matching": false,
+  "scheduled": false,
+  "paid_calls": 0,
+  "cloud_deployment": false,
+  "acquisition_seconds": 45,
+  "cleanup_join_seconds": 4,
+  "start_method": "spawn",
+  "initial_failed_request_preserved": true,
+  "initial_failure": {
+    "request_id": "DOE-operator-20261012-1920-seed",
+    "status": "blocked",
+    "counts": null,
+    "cause": "not established: previous wrapper did not retain worker diagnostics",
+    "source_state_preserved": true
+  },
+  "tests": {
+    "count": 83,
+    "duration_seconds": 4.396,
+    "status": "passed",
+    "operator_tests": 13,
+    "log_path": "work/runtime-suite-20261012-operator.txt"
+  },
+  "raw_source_bodies_in_git_or_stdout": false
+}

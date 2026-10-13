@@ -1,0 +1,383 @@
+{
+  "source_repo": "kvond/answerable-pipeline-backup",
+  "source_commit": "9f767c70c21b74f1beee423b5b5ab51111de8618",
+  "comparison_repo": "kvond/answerable-skills",
+  "comparison_commit": "5544b4e81d284810864b0849c476d742f360210f",
+  "comparison_scope": "current isolated clone tracked files; no raw content in report",
+  "assets": [
+    {
+      "path": "MANIFEST.md",
+      "size_bytes": 31688,
+      "sha256": "76c278a24aad0e14d45d06b5e99727961c80b705bca5ccefc57939400bf204fb",
+      "category": "historical_deployment_index",
+      "identical_current_paths": [],
+      "status": "retain_in_verified_git_bundle",
+      "notes": "Contains legacy source/deployment mappings; operational index, not a current runtime receipt. No live payload read."
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 999,
+      "sha256": "a89ab91daeee969d412211bd6d6de011226d3781f231abefc8e0a72715a1a474",
+      "category": "backup_scope_document",
+      "identical_current_paths": [],
+      "status": "retain_in_verified_git_bundle",
+      "notes": "Historical scope/refresh description; no runtime implementation."
+    },
+    {
+      "path": "archive/MANIFEST_PRE-MIGRATION_2026-08-07.md",
+      "size_bytes": 28116,
+      "sha256": "853beca5e7c319b00a7c2d663af49563bd2546dc2657e3dfde1c5d95daf9c44a",
+      "category": "historical_deployment_index",
+      "identical_current_paths": [],
+      "status": "retain_in_verified_git_bundle",
+      "notes": "Older deployment/index snapshot; superseded historical evidence, not active configuration."
+    },
+    {
+      "path": "archive/legacy/scripts/PREFLIGHT.md",
+      "size_bytes": 1060,
+      "sha256": "b7f11fec5fca2a11dfc5f5d9c47b057e84207ca3c66f2d9efdc410123bf42013",
+      "category": "policy_document",
+      "identical_current_paths": [
+        "docs/pipeline-v1-archive/PREFLIGHT.md"
+      ],
+      "status": "preserved_exact_bytes"
+    },
+    {
+      "path": "archive/legacy/scripts/lesson-router-SKILL.md",
+      "size_bytes": 8626,
+      "sha256": "7b264c0b261d4087d8bb69e21ebaac50e9e3ae53713240b08b8dff2cfc134938",
+      "category": "policy_document",
+      "identical_current_paths": [
+        "docs/pipeline-v1-archive/lesson-router-SKILL.md"
+      ],
+      "status": "preserved_exact_bytes"
+    },
+    {
+      "path": "archive/legacy/scripts/pipeline_invariants.json",
+      "size_bytes": 3718,
+      "sha256": "92efa376e99db78a82ae50859b34e485284ad7f90df9e5ee1b28ca4bd55db4f8",
+      "category": "code_config",
+      "identical_current_paths": [
+        "scripts/pipeline_invariants.json"
+      ],
+      "status": "preserved_exact_bytes"
+    },
+    {
+      "path": "archive/legacy/scripts/pipeline_lint.py",
+      "size_bytes": 3057,
+      "sha256": "22477170fcf480cf7a565b1b16306007f947ca37a9ad08c2061c55fcc58589b4",
+      "category": "code_config",
+      "identical_current_paths": [
+        "scripts/pipeline_lint.py"
+      ],
+      "status": "preserved_exact_bytes"
+    },
+    {
+      "path": "archive/legacy/scripts/workflow-c-SKILL.md",
+      "size_bytes": 8030,
+      "sha256": "4473da9da6d29e4c46dd5b20153a1c934d2d3faaae848fbc7aaa5b288bded455",
+      "category": "policy_document",
+      "identical_current_paths": [
+        "docs/pipeline-v1-archive/workflow-c-SKILL.md"
+      ],
+      "status": "preserved_exact_bytes"
+    },
+    {
+      "path": "archive/legacy/scripts/workflow-c-growth-doc-format.md",
+      "size_bytes": 7156,
+      "sha256": "7fa8a304fdb73e767bb9cb129a76cf765d6f5f785fb6addb9fb4258f9ffe51cc",
+      "category": "policy_document",
+      "identical_current_paths": [
+        "docs/pipeline-v1-archive/workflow-c-growth-doc-format.md"
+      ],
+      "status": "preserved_exact_bytes"
+    },
+    {
+      "path": "archive/legacy/scripts/workflow_b_lint.py",
+      "size_bytes": 3029,
+      "sha256": "6214015a3c368537b8d8a936c9b433014b393f6a04dae27372a48f767456c224",
+      "category": "code_config",
+      "identical_current_paths": [
+        "scripts/workflow_b_lint.py"
+      ],
+      "status": "preserved_exact_bytes"
+    },
+    {
+      "path": "archive/legacy/vt-lesson-skills/03-vt-insert-slides-question-types.md",
+      "size_bytes": 11489,
+      "sha256": "fd8deac04df688b44e62333c45afedb94f2b5ec73e9cd147d8c58f901111494a",
+      "category": "policy_document",
+      "identical_current_paths": [
+        "docs/tpt-drive-snapshot/VT Lesson Skills - Claude?/03-vt-insert-slides-question-types.md",
+        "docs/tpt/vt-lesson-skills/03-vt-insert-slides-question-types.md"
+      ],
+      "status": "preserved_exact_bytes"
+    },
+    {
+      "path": "archive/legacy/vt-lesson-skills/05-extract-lesson-materials-SKILL.md",
+      "size_bytes": 9170,
+      "sha256": "e301299715ce99132b553e07396a8e36c9c1ba278d920d9897cf4421c3797211",
+      "category": "policy_document",
+      "identical_current_paths": [
+        "docs/tpt-drive-snapshot/VT Lesson Skills - Claude?/05-extract-lesson-materials-SKILL.md",
+        "docs/tpt/vt-lesson-skills/05-extract-lesson-materials-SKILL.md"
+      ],
+      "status": "preserved_exact_bytes"
+    },
+    {
+      "path": "docs/Final_Prompts_Student_and_Teacher.md",
+      "size_bytes": 5869,
+      "sha256": "f09b576bf0719dec902e81ea9cf8dceafb4ccf6aa657c3a6d90f888827b604c4",
+      "category": "legacy_reusable_policy",
+      "identical_current_paths": [],
+      "status": "general_operational_lessons_distilled; original retained_in_verified_git_bundle",
+      "notes": "Unique prompt text; preserve historically, reconcile against current school scoring/feedback authority before any use."
+    },
+    {
+      "path": "docs/Render_App_Change_Spec.md",
+      "size_bytes": 6368,
+      "sha256": "275768e04e4bfe9a38ae2fda3c3f0c7d5e048c71cb7aef3b1ceb5f6572e3660e",
+      "category": "legacy_deployment_change_spec",
+      "identical_current_paths": [],
+      "status": "general_operational_lessons_distilled; original retained_in_verified_git_bundle",
+      "notes": "Unique specification names legacy Render service feedback-system-u1br and retirement of older grading/email paths; proposed change is not deployed-state proof."
+    },
+    {
+      "path": "docs/What_Good_Thinking_Looks_Like_student_handout.docx",
+      "size_bytes": 10238,
+      "sha256": "27af94d28495213987d10c4f92d593d4afe796d698612da2dce6e1a80c580d06",
+      "category": "generic_legacy_handout",
+      "identical_current_paths": [],
+      "status": "retain_binary_in_archive_then_review_compact_rubric",
+      "identical_extracted_text_paths": [],
+      "notes": "Generic handout with conceptual accuracy/evidence/mechanism labels; no identical normalized document text in current tracked DOCX files."
+    },
+    {
+      "path": "plugins/katherine-ops/skills/formative-pipeline-v2/SKILL.md",
+      "size_bytes": 14872,
+      "sha256": "11f5a885b394e6490418f112205836ed983fbf8a17d1b7a5e28863df8cb02c92",
+      "category": "policy_document",
+      "identical_current_paths": [
+        "skills/formative-pipeline-v2/SKILL.md"
+      ],
+      "status": "preserved_exact_bytes"
+    },
+    {
+      "path": "scripts/aspect_extractor.py",
+      "size_bytes": 7032,
+      "sha256": "3ea2409d3524a50176cbc1b621274843f0e8c209191aed3b6b53c4c9ef62fcbc",
+      "category": "code_config",
+      "identical_current_paths": [
+        "scripts/aspect_extractor.py"
+      ],
+      "status": "preserved_exact_bytes"
+    },
+    {
+      "path": "scripts/deck_lint.py",
+      "size_bytes": 7168,
+      "sha256": "4e0e50fb8e0d0c8c947192fa3e3e7ef7115b274fe4a713b52c0c57058eba836b",
+      "category": "code_config",
+      "identical_current_paths": [
+        "docs/pipeline-v1-archive/deck_lint.py"
+      ],
+      "status": "preserved_exact_bytes"
+    },
+    {
+      "path": "scripts/extract_and_grade.py",
+      "size_bytes": 14585,
+      "sha256": "4e74e8b2ece81783eff3bad5c60d7ada11e87dfcd9e72f75a1dcca2696204fcb",
+      "category": "code_config",
+      "identical_current_paths": [
+        "scripts/extract_and_grade.py"
+      ],
+      "status": "preserved_exact_bytes"
+    },
+    {
+      "path": "scripts/extract_and_grade_rewrites.py",
+      "size_bytes": 12986,
+      "sha256": "ad9989221ae415aa0656770fccd6d3a17e9cec5dc073302e793dc3f84580c4b3",
+      "category": "code_config",
+      "identical_current_paths": [
+        "scripts/extract_and_grade_rewrites.py"
+      ],
+      "status": "preserved_exact_bytes"
+    },
+    {
+      "path": "scripts/lesson_name_guard.py",
+      "size_bytes": 3064,
+      "sha256": "0d323787d0853bd24a1c24cd1ebf6e1a943a4a69e6a4be06b414aa5013623665",
+      "category": "code_config",
+      "identical_current_paths": [
+        "scripts/lesson_name_guard.py"
+      ],
+      "status": "preserved_exact_bytes"
+    },
+    {
+      "path": "scripts/lesson_router.py",
+      "size_bytes": 25287,
+      "sha256": "a14c4e2b16e9b99dde169c49532b30b37080a99fffda34b96774c88eecdb5d5e",
+      "category": "code_config",
+      "identical_current_paths": [
+        "docs/pipeline-v1-archive/lesson_router.py"
+      ],
+      "status": "preserved_exact_bytes"
+    },
+    {
+      "path": "skills/01-feedback-system-master-spec.md",
+      "size_bytes": 17597,
+      "sha256": "beff4a0d03ceac6faa4fcaab047b27a25af93d8d126ac6cba88776004551e041",
+      "category": "policy_document",
+      "identical_current_paths": [
+        "docs/pipeline-v1-archive/01-feedback-system-master-spec.md"
+      ],
+      "status": "preserved_exact_bytes"
+    },
+    {
+      "path": "skills/02-vt-insert-slides-SKILL-UPDATED.md",
+      "size_bytes": 24719,
+      "sha256": "c5804e7445f137bbd990e800dd6ebbbe284908bf300209102fa5949a5bf67a28",
+      "category": "policy_document",
+      "identical_current_paths": [
+        "docs/tpt-drive-snapshot/VT Lesson Skills - Claude?/02-vt-insert-slides-SKILL-UPDATED.md"
+      ],
+      "status": "preserved_exact_bytes"
+    },
+    {
+      "path": "skills/04-vt-insert-slides-slide-layouts-UPDATED.md",
+      "size_bytes": 17491,
+      "sha256": "c3117d79494be2bd580597d6019f27901ff2bec3bb506f5234a958dcc64e2a64",
+      "category": "policy_document",
+      "identical_current_paths": [
+        "docs/tpt-drive-snapshot/VT Lesson Skills - Claude?/04-vt-insert-slides-slide-layouts-UPDATED.md",
+        "docs/tpt/vt-lesson-skills/04-vt-insert-slides-slide-layouts-UPDATED.md"
+      ],
+      "status": "preserved_exact_bytes"
+    },
+    {
+      "path": "skills/08-workflow-b-SKILL.md",
+      "size_bytes": 17642,
+      "sha256": "9d1369b910338cf1dc4381c545be3dc9a8e6d977cdedb563ec67ef018735ec11",
+      "category": "policy_document",
+      "identical_current_paths": [
+        "docs/pipeline-v1-archive/08-workflow-b-SKILL.md"
+      ],
+      "status": "preserved_exact_bytes"
+    },
+    {
+      "path": "skills/11-workflow-b2-SKILL.md",
+      "size_bytes": 14293,
+      "sha256": "a8ff3c98b0e2c5ea73c41565337f739f2d7fccaa59411ce82ce4bfb93bc0971a",
+      "category": "policy_document",
+      "identical_current_paths": [
+        "docs/pipeline-v1-archive/11-workflow-b2-SKILL.md"
+      ],
+      "status": "preserved_exact_bytes"
+    },
+    {
+      "path": "skills/15-workflow-b1-SKILL.md",
+      "size_bytes": 13609,
+      "sha256": "488d974fd73db7e870f82068c9187877f61d446cc64c55663e0bc20aad801ec6",
+      "category": "policy_document",
+      "identical_current_paths": [
+        "docs/pipeline-v1-archive/15-workflow-b1-SKILL.md"
+      ],
+      "status": "preserved_exact_bytes"
+    },
+    {
+      "path": "skills/16-agency-scan-SKILL.md",
+      "size_bytes": 10039,
+      "sha256": "a2c4e11671b5da8d111e78fad29426521045b2af7f912891148688e9b4222f41",
+      "category": "policy_document",
+      "identical_current_paths": [
+        "docs/pipeline-v1-archive/16-agency-scan-SKILL.md"
+      ],
+      "status": "preserved_exact_bytes"
+    },
+    {
+      "path": "skills/17-formative-pipeline-v2-SKILL.md",
+      "size_bytes": 14872,
+      "sha256": "11f5a885b394e6490418f112205836ed983fbf8a17d1b7a5e28863df8cb02c92",
+      "category": "policy_document",
+      "identical_current_paths": [
+        "skills/formative-pipeline-v2/SKILL.md"
+      ],
+      "status": "preserved_exact_bytes"
+    },
+    {
+      "path": "skills/AI_COACH_PROMPTS_v3.md",
+      "size_bytes": 4922,
+      "sha256": "6b520b220df80a72cd601831372d6e13e378c0a367848017e0c28fc680b4b8a0",
+      "category": "legacy_reusable_policy_with_unresolved_conflict",
+      "identical_current_paths": [],
+      "status": "general_operational_lessons_distilled; original retained_in_verified_git_bundle",
+      "notes": "Unique prompts and explicit unresolved teacher/student report authorship issue; legacy completion/gradebook assumptions do not override current policy."
+    },
+    {
+      "path": "skills/KICKOFF_SCAN.md",
+      "size_bytes": 3731,
+      "sha256": "0579eb5fad26b380c6f7761c891bddd0d14a6df8a625e275ad0b2ff8b7867bf9",
+      "category": "policy_document",
+      "identical_current_paths": [
+        "docs/pipeline-v1-archive/KICKOFF_SCAN.md"
+      ],
+      "status": "preserved_exact_bytes"
+    },
+    {
+      "path": "skills/PIPELINE_CHECKLIST.md",
+      "size_bytes": 10968,
+      "sha256": "932d6c80b69c6e697b0ebe16a041c5853e6ab4a7beffbba0524d27e8c98d696c",
+      "category": "policy_document",
+      "identical_current_paths": [
+        "docs/pipeline-v1-archive/PIPELINE_CHECKLIST.md"
+      ],
+      "status": "preserved_exact_bytes"
+    },
+    {
+      "path": "skills/aspect_grader_spec.md",
+      "size_bytes": 8195,
+      "sha256": "f75f94108002fff8121c02e3274d60cf2228cd70689e4557ab1af0e8e9a77c90",
+      "category": "policy_document",
+      "identical_current_paths": [
+        "docs/pipeline-v1-archive/aspect_grader_spec (download).md"
+      ],
+      "status": "preserved_exact_bytes"
+    }
+  ],
+  "checked_at_utc": "2026-10-12T15:53:41.676273+00:00",
+  "summary": {
+    "tracked_files": 34,
+    "exact_byte_duplicates": 27,
+    "unique_bytes": 7,
+    "unique_reusable_policy_or_spec_candidates": 3,
+    "unique_binary_handout": 1,
+    "historical_indexes_and_readme": 3,
+    "content_copied_to_git": false,
+    "repository_modified": false
+  },
+  "remaining_dependencies": [
+    {
+      "source": "skills/book-revision/SKILL.md:19-23,29,32",
+      "dependency": "Explicit source/snapshot/voice/reference/output paths in Answerable-Teaching; active loaded skill still depends on retained legacy assets",
+      "status": "verified_source_reference; live invocation unknown"
+    },
+    {
+      "source": "Answerable-Teaching/SYNC.md:21",
+      "dependency": "~/Documents/projects/Answerable-Teaching/sync.sh invocation documented",
+      "status": "historical_source_reference; script presence/runtime unknown"
+    },
+    {
+      "source": "launchd com.kvond.answerable-publish",
+      "dependency": "nightly-publish.sh path remains loaded; last readback exit127",
+      "status": "prior_live_receipt; preserved not disabled"
+    },
+    {
+      "source": "docs/Render_App_Change_Spec.md:1",
+      "dependency": "feedback-system-u1br legacy Render target",
+      "status": "source-name verified; live Render status/access unknown"
+    }
+  ],
+  "smallest_next_preservation_action": "Retain already verified complete pipeline Git bundle. Review three unique policy/spec candidates and distill only reusable current-compatible rules to private knowledge with source hashes; keep original handout and manifests in archive. No deletion/disable. Before any legacy repo removal, map book-revision source pointers to Google Docs or sanitized preserved references.",
+  "verified_at_utc": "2026-10-12T16:06:28.414691+00:00",
+  "root_hash_and_tracked_set_verification": true,
+  "sanitized_policy_summary": "legacy-policy-summary.md"
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "verified_at_utc": "2026-10-12T20:28:42.929395+00:00",
+  "source_url": "https://www.applitrack.com/joindelawareschools/onlineapp/default.aspx?AppliTrackPostingSearch=location%3A%22Delaware+Department+of+Education%22",
+  "authority_url": "https://education.delaware.gov/about-doe/employment/",
+  "source_observed_at_utc": "2026-10-12T20:28:06.412000+00:00",
+  "coverage": "DOE location filter only; 3 of 3 rendered postings; not all Delaware",
+  "metadata_only_HTTP_read_complete": false,
+  "browser_rendered_scope_complete": true,
+  "anonymous_public_access": true,
+  "authentication_required": false,
+  "seed_counts": {
+    "new": 3,
+    "materially_changed": 0,
+    "unchanged": 0,
+    "closed": 0
+  },
+  "repeat_counts": {
+    "new": 0,
+    "materially_changed": 0,
+    "unchanged": 3,
+    "closed": 0
+  },
+  "partial_control": {
+    "status": "blocked",
+    "counts": {
+      "new": null,
+      "materially_changed": null,
+      "unchanged": null,
+      "closed": null
+    },
+    "prior_source_state_preserved": true
+  },
+  "private_receipt_path": "/Volumes/AI-Private-Archive/AI-Archive/state/ai-ops/receipts/vacancy-doe-proof-20261012T202806Z.json",
+  "private_receipt_sha256": "61af9ad700d94833b98d759aa0e4432cd429d981270bd461b5507993f56fcdaf",
+  "paid_dispatches": 0,
+  "candidate_matching_performed": false,
+  "new_job_matches_claimed": false,
+  "scheduled_source_adapter_enabled": false,
+  "cloud_task_access_to_local_cache_verified": false
+}

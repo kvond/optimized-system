@@ -1,0 +1,58 @@
+{
+  "checked_at_utc": "2026-10-12T23:08:42.295739+00:00",
+  "destination": "/Volumes/AI-Private-Archive/AI-Archive/preservation/repos/finder-parity-20261012-190708",
+  "method": "new ordinary Finder copies, encrypted-location SHA256 comparison; no source shell read",
+  "hub_pr39": {
+    "old_files": 737,
+    "new_files": 737,
+    "old_bytes": 7378069,
+    "new_bytes": 7378069,
+    "changed_added_removed_files": 0,
+    "all737_regular_files_sha256_match": true,
+    "finder_initial_bytes": 7357577,
+    "difference_bytes": 20492,
+    "identified_metadata": [
+      {
+        "path": ".DS_Store",
+        "bytes": 8196
+      },
+      {
+        "path": "tests/.DS_Store",
+        "bytes": 6148
+      },
+      {
+        "path": ".git/.DS_Store",
+        "bytes": 6148
+      }
+    ],
+    "metadata_total": 20492,
+    "interpretation": "The three Finder metadata files total exactly the initial byte discrepancy. Both complete copy snapshots have identical file sets and hashes. No pre-GetInfo source file manifest exists, so historical absence/timing of those metadata files is not proven.",
+    "parity_scope": "two source-acquired Finder snapshots match; direct live-source hash comparison remains unavailable"
+  },
+  "ac_outputs": {
+    "preserved_files": 8,
+    "total_bytes": 84905,
+    "hash_readback": true,
+    "raw_contents_published": false
+  },
+  "source_files_edited_or_deleted": false,
+  "source_permissions_changed": false,
+  "permission_security_prompts": false,
+  "hidden_display_used": false,
+  "roles_audit": {
+    "consistent": [
+      "active vs proposed split",
+      "personal display times vs unknown backend timezone",
+      "separate educator and production candidate searches",
+      "school helper current loaded setting unverified",
+      "no forcedClaude paidroute/API runtime claim"
+    ],
+    "remaining_build_order": [
+      "finish account export acquisition without security bypass",
+      "source/profile-specific read-only vacancy fingerprint adapter and failed-read receipt test",
+      "measure repeat-rule unchanged output before claiming saving",
+      "test private destination/reuse receipt before personal cutover",
+      "keep school schedules/helper ownership unchanged and verify loaded helper read-only separately"
+    ]
+  }
+}
