@@ -100,6 +100,8 @@ def acquire(*,deadline=45,worker=_collect_worker,_context=None):
 
 def check(request_id,*,paths=None,fetcher=fetch,now=None):
  if not isinstance(request_id,str) or not request_id.strip() or len(request_id)>300:raise ValueError('bounded request id required')
+ current=stamp(now or dt.datetime.now(dt.timezone.utc));local_current=current.astimezone(ZoneInfo('America/New_York'))
+ expected_start=local_current.replace(hour=0,minute=0,second=0,microsecond=0);expected_end=expected_start+dt.timedelta(days=1)
  paths=paths or resolve_storage(initialize=True)
  def verify():return resolve_storage(paths.root,mount=paths.proof['mount'],image=paths.proof['backing_image'],probe=paths.probe,environ={})
  verify();artifact=paths.receipts/('news-'+hashlib.sha256(request_id.encode()).hexdigest()+'.json')
@@ -107,6 +109,8 @@ def check(request_id,*,paths=None,fetcher=fetch,now=None):
   if artifact.is_symlink() or artifact.stat().st_mode&0o077:raise ValueError('unsafe existing packet')
   packet=json.loads(artifact.read_text());claimed=packet.pop('packet_sha256')
   if packet.get('request_id')!=request_id or digest(packet)!=claimed:raise ValueError('packet identity/hash mismatch')
+  window=packet.get('window')
+  if not isinstance(window,list) or len(window)!=2 or [stamp(dt.datetime.fromisoformat(v)) for v in window]!=[expected_start,expected_end]:raise ValueError('historical packet request requires fresh current-run identity; no refetch')
   packet['packet_sha256']=claimed;return packet
  database=paths.root/'news.sqlite'
  if database.exists():
@@ -136,8 +140,15 @@ def check(request_id,*,paths=None,fetcher=fetch,now=None):
  if json.loads(artifact.read_text())!=packet:raise ValueError('packet readback mismatch')
  return packet
 
-def delivery(packet):
+def delivery(packet,*,now=None):
  out={k:packet[k] for k in ('request_id','status','headline_count','digest_words','packet_sha256','coverage','paid_calls','headlines','digest','fallback_required','source_evidence','civic_evidence')}
+ out['observed_at']=packet['observed_at'];out['window']=packet['window']
+ out['packet_business_date']=stamp(dt.datetime.fromisoformat(packet['window'][0])).astimezone(ZoneInfo('America/New_York')).date().isoformat()
+ out['reuse_policy']='current Eastern business day only; immutable historical packets retained for acknowledgment'
+ evaluated=stamp(now or dt.datetime.now(dt.timezone.utc))
+ out['current_business_date']=evaluated.astimezone(ZoneInfo('America/New_York')).date().isoformat()
+ out['packet_reuse_status']='current_business_day' if out['packet_business_date']==out['current_business_date'] else 'historical_only'
+ out['packet_age_seconds']=(evaluated-stamp(dt.datetime.fromisoformat(packet['observed_at']))).total_seconds()
  try:
   context=build_context('news')
   if context['context_words']>400 or context['context_words']!=len(context['context'].split()) or hashlib.sha256(context['context'].encode()).hexdigest()!=context['context_sha256']:raise ValueError('context verification mismatch')
@@ -168,11 +179,15 @@ def acknowledge(request_id,output_path,*,paths=None):
 
 def main():
  parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--request-id',required=True);parser.add_argument('--acknowledge-output',type=Path,help='separate private JSON: request_id, packet_sha256, digest, final_brief');args=parser.parse_args()
+ if 'ACTUAL_UTC_RUN_TIME' in args.request_id:
+  print(json.dumps({'status':'failed_closed','reason':'literal_request_timestamp_placeholder','paid_calls':0}));return 2
  try:
   if args.acknowledge_output:
    print(json.dumps(acknowledge(args.request_id,args.acknowledge_output),sort_keys=True));return 0
   packet=check(args.request_id)
   output=delivery(packet)
+  if output.get('packet_reuse_status')!='current_business_day':
+   print(json.dumps({'status':'failed_closed','reason':'packet_crossed_business_date_boundary','paid_calls':0}));return 2
   try: output['birthday_source_reuse']=reuse_for_news(args.request_id)
   except Exception:
    output['birthday_source_reuse']={'status':'hold','counts':None,'duplicate_source_read_skipped':False,

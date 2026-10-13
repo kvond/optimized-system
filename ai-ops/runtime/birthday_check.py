@@ -72,6 +72,8 @@ def run(request_id,*,paths=None,now=None):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--request-id',required=True);args=parser.parse_args()
+    if args.request_id.strip() in {'ACTUAL_UTC_RUN_TIME','doe-watch-YYYYMMDDTHHMMSSZ','YYYYMMDDTHHMMSSZ'}:
+        print(json.dumps({'status':'blocked','counts':None,'reason':'literal_request_timestamp_placeholder','ai_calls':0}));return 2
     try:result=run(args.request_id)
     except Exception:
         print(json.dumps({'status':'blocked','counts':None,'reason':'private_input_storage_scope_or_readback_unverified','ai_calls':0}));return 2

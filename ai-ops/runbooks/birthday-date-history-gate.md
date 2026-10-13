@@ -40,3 +40,5 @@ Current scoped acceptance: all19canonical existing gift-history records were ins
 6. Read back input bytes/hash, then invoke `birthday_check.py --request-id <unique actual run ID>`. Save full eligible/reconciliation packet privately; use public counts/hash/status only in portable receipts. Same request ID with differing inputs fails; preserve earlier receipts. Calendar/history source evidence must be fresh this business day. A partial family's known eligible items remain visible, while any current-window unknown prevents an all-clear.
 
 News may reuse verified date/history evidence while retaining its original21/7-day thresholds. The Birthday helper's30-day gate does not replace News policy, authorize ordering, or collapse the tasks.
+
+Request-ID guard: replace timestamp templates with one actual UTC ID before invoking the CLI. Literal `ACTUAL_UTC_RUN_TIME` or DOE timestamp templates fail before work. Preserve that ID for same-request readback; never silently generate another after an uncertain result.

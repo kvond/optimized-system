@@ -7,7 +7,7 @@ import news_check
 class NewsBirthdayMainTests(unittest.TestCase):
  def execute(self,reuse=None,error=None):
   packet={'synthetic_packet':True}
-  feed={'request_id':'synthetic-run','status':'partial','digest':'Synthetic public headline','headline_count':1,'paid_calls':0,'packet_sha256':'fixture-hash'}
+  feed={'request_id':'synthetic-run','status':'partial','digest':'Synthetic public headline','headline_count':1,'paid_calls':0,'packet_sha256':'fixture-hash','packet_reuse_status':'current_business_day'}
   stream=io.StringIO()
   with patch.object(sys,'argv',['news_check.py','--request-id','synthetic-run']),patch.object(news_check,'check',return_value=packet) as check,patch.object(news_check,'delivery',return_value=feed.copy()) as delivery,patch.object(news_check,'reuse_for_news',return_value=reuse,side_effect=error) as shared,patch.object(news_check,'acquire',side_effect=AssertionError('no actual source access')),contextlib.redirect_stdout(stream):
    code=news_check.main()

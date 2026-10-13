@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "updated_at": "2026-10-13T00:22:18.752365+00:00",
+  "updated_at": "2026-10-13T00:38:52.239687+00:00",
   "phase": "bounded-overnight-cost-continuation",
   "overall_status": "partial",
   "authorization": "User explicitly resumed after original overnight cutoff and requested inventory first, then remaining list, multiple agents and Desktop Commander without routine interruptions.",
@@ -31,22 +31,22 @@
   },
   "usage_snapshot": {
     "source": "live Codex get_usage_limits",
-    "weekly_remaining_percent": 78,
+    "checked_at_utc": "2026-10-13T00:37:48Z",
+    "weekly_used_percent": 28,
+    "weekly_remaining_percent": 72,
     "window_minutes": 10080,
     "short_term_remaining_percent": null,
-    "ordinary_usage_allowed": true,
-    "existing_credits_present": true,
-    "recommendation": "No credit purchase needed now; recheck actual limits",
-    "purchase_performed": false,
-    "observed_at_utc": "2026-10-12T20:32:25.867880+00:00",
-    "previous_weekly_remaining_percent": 79,
-    "spend_control_reached": false,
     "plan_type": "plus",
-    "weekly_used_percent": 22,
-    "official_guidance": "https://learn.chatgpt.com/docs/pricing"
+    "spend_control_reached": false,
+    "purchase_performed": false,
+    "dollar_savings_measured": false,
+    "previous_weekly_remaining_percent": 78,
+    "ordinary_usage_allowed": true,
+    "recommendation": "Preserve capacity for 04:30 review and school jobs; stop discretionary work below20percent weekly remaining.",
+    "per_worker_provider_cost_or_tokens_available": false
   },
   "runtime": {
-    "test_count": 134,
+    "test_count": 141,
     "status": "local_tested",
     "execution": "trusted deterministic public adapters and private source gates; fixed CLI entries accepted",
     "paid_dispatch_implemented": false,
@@ -55,7 +55,7 @@
     "private_runtime_state_outside_git": true,
     "cloud_plan_requirement_satisfied": true,
     "production_pilot_required_for_original_reset": false,
-    "tests_verified_at_utc": "2026-10-13T00:22:18.752365+00:00",
+    "tests_verified_at_utc": "2026-10-13T00:38:52.239687+00:00",
     "compact_context_implemented": true,
     "external_encrypted_working_state_verified": true,
     "current_receipt": "reports/runtime-cost-results-2026-10-12.json",
@@ -66,7 +66,9 @@
     "doe_operator_command_implemented": true,
     "doe_operator_actual_desktop_commander_acceptance_verified": true,
     "existing_task_configuration_readback_verified": true,
-    "first_new_scheduled_execution_verified": false
+    "first_new_scheduled_execution_verified": false,
+    "news_current_business_date_reuse_verified": true,
+    "literal_request_placeholders_rejected": true
   },
   "archive": {
     "root": "/Volumes/T7/AI-Archive",
@@ -654,8 +656,11 @@
         "saved_prompt_exact_readback_verified": true,
         "owner_cadence_criteria_destination_unchanged": true,
         "existing_task_configured": true,
-        "entry": "/Volumes/T7/AI-Archive/ops/doe.py",
-        "scheduled_run_acceptance_verified": false
+        "entry": "/Users/katherinevonduyke/Documents/Claude/2026-10-11/remote-desktop-commander-plugin-app-6a057d268ebc81919918d37eec718425-5/work/core/ai-ops/runtime/doe_worker.py",
+        "scheduled_run_acceptance_verified": false,
+        "installed_entry_option": "/Volumes/T7/AI-Archive/ops/doe.py",
+        "saved_request_template": "doe-watch-YYYYMMDDTHHMMSSZ",
+        "actual_UTC_template_substitution_required": true
       },
       {
         "worker": "news",
@@ -686,9 +691,9 @@
     ],
     "runtime_tests": {
       "status": "passed",
-      "count": 134,
-      "duration_seconds": 4.55,
-      "log_sha256": "770557ec9e2626f83fe32bf3947c33cddb3d7ae650dfbfcc3d9dbee94267c04e"
+      "count": 141,
+      "duration_seconds": 4.203,
+      "log_sha256": "1536eaaf6d2e14fa6abb83b8aeab3723cd2aa68755274b05843ade371a8bfeee"
     },
     "originals_private_encrypted": true,
     "raw_prompts_in_git": false,
@@ -739,7 +744,44 @@
     "dollar_savings_measured": false,
     "weekly_job_scan_paused": true,
     "school_jobs_changed": false,
-    "first_scheduled_runs_pending": true
+    "first_scheduled_runs_pending": true,
+    "runtime_freshness_verification": {
+      "verified_at_utc": "2026-10-13T00:38:52.239687+00:00",
+      "new_regression_tests": 7,
+      "news_reused_packet_must_match_current_Eastern_business_date": true,
+      "cross_day_reuse_does_not_refetch_or_change_original": true,
+      "news_delivery_exposes_source_observation_window_date_age": true,
+      "cross_midnight_delivery_rejected_before_birthday_reuse": true,
+      "literal_request_timestamp_placeholders_rejected_before_work": true,
+      "automatic_request_ID_generation_or_retry": false,
+      "historical_output_acknowledgment_preserved": true,
+      "installed_entries_actual_placeholder_readback": [
+        {
+          "entry": "/Volumes/T7/AI-Archive/ops/news.py",
+          "entry_sha256": "469566fc1cf8d878cb9c79882c78c22c3d7cc50d42afd834c6da5bc8641240c7",
+          "exit_code": 2,
+          "status": "failed_closed",
+          "reason": "literal_request_timestamp_placeholder"
+        },
+        {
+          "entry": "/Volumes/T7/AI-Archive/ops/birthday.py",
+          "entry_sha256": "afb0129c0f04003132ea0b186f934b67b97192c6a51b18b98f0d4dd9bae91645",
+          "exit_code": 2,
+          "status": "blocked",
+          "reason": "literal_request_timestamp_placeholder"
+        },
+        {
+          "entry": "/Volumes/T7/AI-Archive/ops/doe.py",
+          "entry_sha256": "be8713c107f9967e285e11d96d11cbb0a72865b9057c3a85394623c29639b644",
+          "exit_code": 2,
+          "status": "failed_closed",
+          "reason": "literal_request_timestamp_placeholder"
+        }
+      ],
+      "new_live_source_reads": 0,
+      "paid_dispatches": 0,
+      "scheduled_run_acceptance_claimed": false
+    }
   },
   "overnight": {
     "id": "overnight-ai-operations-cost-reduction",

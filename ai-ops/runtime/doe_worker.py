@@ -64,6 +64,10 @@ def main():
     parser.add_argument('--request-id', required=True)
     parser.add_argument('--vacancy-id', help='One exact public ID from the verified saved snapshot')
     args = parser.parse_args()
+    if args.request_id.strip() in {'ACTUAL_UTC_RUN_TIME','doe-watch-YYYYMMDDTHHMMSSZ','YYYYMMDDTHHMMSSZ'}:
+        print(json.dumps({'status':'failed_closed','listings':None,
+                          'reason':'literal_request_timestamp_placeholder','ai_calls':0}))
+        return 2
     try:
         result = packet(args.request_id, args.vacancy_id)
     except Exception:
