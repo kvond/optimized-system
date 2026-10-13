@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "verified_at_utc": "2026-10-13T00:22:18.752365+00:00",
+  "verified_at_utc": "2026-10-13T02:23:12.645912+00:00",
   "calendar_review": {
     "id": "calendar-and-school-email-review",
     "status": "ACTIVE",
@@ -12,12 +12,39 @@
   },
   "overnight_cost_work": {
     "id": "overnight-ai-operations-cost-reduction",
-    "status": "ACTIVE",
+    "status": "PAUSED",
     "hourly_minute": 25,
     "hard_stop_at_utc": "2026-10-13T09:30:00Z",
     "hard_stop_local": "2026-10-13 05:30 America/New_York",
     "last_wake_checkpoint_only": true,
-    "no_new_login_requests_overnight": true
+    "no_new_login_requests_overnight": true,
+    "stop_readback": {
+      "verified_at_utc": "2026-10-13T02:23:12.645912+00:00",
+      "overnight_monitor_id": "overnight-ai-operations-cost-reduction",
+      "previous_status": "ACTIVE",
+      "status": "PAUSED",
+      "reason": "Currently authorized useful local integration and correction work completed; remaining source routes unchanged, future scheduled results unavailable. Stop repeated polling under the saved monitor instruction.",
+      "prompt_cadence_owner_preserved": true,
+      "prompt_sha256": "865a3b7cfd6ab93d361ea1df732ccf7288b0f5b42dd1310625ff688f50cc8472",
+      "remaining_are_not_claimed_complete": [
+        "first new scheduled worker execution receipts",
+        "complete provider chat exports",
+        "existing API/signup/browser access boundaries",
+        "unverified source applicability"
+      ],
+      "source_export_queries_this_wake": 0,
+      "known_blocked_routes_retried": 0,
+      "new_paid_dispatches": 0,
+      "calendar_review_id": "calendar-and-school-email-review",
+      "calendar_review_status": "ACTIVE",
+      "calendar_review_time_eastern": "04:30",
+      "school_jobs_changed": false,
+      "bonnie_schedule_resume_performed": false,
+      "hard_stop_utc_retained": "2026-10-13T09:30:00Z",
+      "no_next_night_continuation": true,
+      "latest_weekly_remaining_percent": 72,
+      "usage_checked_at_utc": "2026-10-13T02:22:01Z"
+    }
   },
   "school6_30_and7_30_jobs_unchanged": true,
   "no_messages_to_others_sent": true

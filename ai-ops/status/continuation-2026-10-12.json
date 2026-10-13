@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
-  "updated_at": "2026-10-13T00:38:52.239687+00:00",
-  "phase": "bounded-overnight-cost-continuation",
+  "updated_at": "2026-10-13T02:23:12.645912+00:00",
+  "phase": "saved-checkpoint-overnight-monitor-paused",
   "overall_status": "partial",
   "authorization": "User explicitly resumed after original overnight cutoff and requested inventory first, then remaining list, multiple agents and Desktop Commander without routine interruptions.",
   "handoff": {
@@ -31,7 +31,7 @@
   },
   "usage_snapshot": {
     "source": "live Codex get_usage_limits",
-    "checked_at_utc": "2026-10-13T00:37:48Z",
+    "checked_at_utc": "2026-10-13T02:22:01Z",
     "weekly_used_percent": 28,
     "weekly_remaining_percent": 72,
     "window_minutes": 10080,
@@ -785,11 +785,14 @@
   },
   "overnight": {
     "id": "overnight-ai-operations-cost-reduction",
-    "status": "ACTIVE",
+    "status": "PAUSED",
     "hourly_minute": 25,
     "hard_stop_at_utc": "2026-10-13T09:30:00Z",
     "hard_stop_local": "2026-10-13 05:30 America/New_York",
     "last_wake_checkpoint_only": true,
-    "no_new_login_requests_overnight": true
+    "no_new_login_requests_overnight": true,
+    "stop_receipt": "reports/calendar-review-and-overnight-2026-10-12.json",
+    "stopped_at_utc": "2026-10-13T02:23:12.645912+00:00",
+    "reason": "Currently authorized useful local integration and correction work completed; remaining source routes unchanged, future scheduled results unavailable. Stop repeated polling under the saved monitor instruction."
   }
 }
