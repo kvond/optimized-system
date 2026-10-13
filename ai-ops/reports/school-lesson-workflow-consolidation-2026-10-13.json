@@ -1,0 +1,55 @@
+{
+  "prepared_at_utc": "2026-10-13T15:52:10.682747+00:00",
+  "task_id": "trig_01A9JrvwJsRizEc7fnTakTCp",
+  "account": "katherine.vonduyke@redclay.k12.de.us",
+  "frequency": "Manual",
+  "canonical_working_list": "https://docs.google.com/document/d/1iH_HE29CGEPxB86ZCmGCRqYUllV3bBnqFH4szfsFNcQ/edit?tab=t.0",
+  "git_role": "sanitized reusable contracts/history",
+  "prompt_characters_trimmed": 3960,
+  "prepared_prompt_sha256_trimmed_utf8": "ba511d141f1e1ee7902f80348cc1c8e8412bbff49f298968b9fb5e3b74c56f07",
+  "live_prompt_saved": true,
+  "prompt_exact_readback": true,
+  "restoration_verified": false,
+  "schoology_pages_verified": false,
+  "task_executed": false,
+  "specialized_skill_files_changed": false,
+  "existing_schedules_changed": false,
+  "status": "live_manual_prompt_saved_exact_readback_bounded_schoology_pages_verified_restoration_remaining",
+  "verified_at_utc": "2026-10-13T16:08:33.685452+00:00",
+  "task_name": "Lesson workflow \u2014 restore, enhance, code and Schoology",
+  "readback_evidence": "complete saved Instructions matched trimmed prepared prompt after Save and reopen Edit",
+  "account_explicitly_verified": true,
+  "settings_preserved": [
+    "Manual",
+    "Default model",
+    "Automatically approve"
+  ],
+  "run_now_used": false,
+  "schoology_bounded_pages_verified": true,
+  "schoology_page_acceptance": {
+    "corrected_existing_page_id": "8608195287",
+    "created_page_id": "8608282304",
+    "verified_empty_target_folder_id": "1040535688",
+    "verified_page_count": 2,
+    "published_and_saved_content_readback": true,
+    "student_facing_deck_and_agenda_form_links_verified": true,
+    "incorrect_links_and_stale_due_text_removed": true,
+    "original_content_preservation": "narrow original content privately preserved locally; encrypted archive was unmounted",
+    "full_course_page_coverage_verified": false,
+    "student_upload_acceptance_verified": false
+  },
+  "source_review_scope": {
+    "ap_weekly_records": 2,
+    "forensics_weekly_records": 2,
+    "annual_coverage_verified": false
+  },
+  "forensics_source_holds": [
+    "Search/Photography visible deck and folder links conflict with raw Agenda bindings",
+    "History and Courtroom labels point to the same Courtroom master; separate History deck unverified",
+    "Unit 1 Review deck returned 404 under the school connector; missing versus inaccessible unresolved"
+  ],
+  "original_content_preservation_scope": [
+    "existing manual task instructions/settings",
+    "corrected existing Schoology page title/body/link targets"
+  ]
+}
