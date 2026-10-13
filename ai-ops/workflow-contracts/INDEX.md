@@ -1,6 +1,6 @@
 # Workflow contract catalog
 
-**Start here:** [Optimized activities and weekly operating plan](../worker-registry/roles-and-schedules.md). It is the single checkbox activity/skill/schedule register, including original Todoist build items, School Work Hub weekday scope and Katherine's manual Todoist actions. This catalog supplies the supporting reusable contracts.
+**Start here:** [Optimized activities and weekly operating plan](../worker-registry/roles-and-schedules.md). It records existing schedules, three retained consolidated activity groups and inherited skill references. Katherine manages manual tasks directly in Todoist; deleted Hub items are not recreated. This catalog supplies the supporting reusable contracts.
 
 October 13, 2026 checkpoint. The [Notes for Codex shared checklist](https://docs.google.com/document/d/150CzIzvbE0WQSnlQdIQHD3UNODr-L40_su5_ODbvUwI/edit?tab=t.0) owns current school work. GitHub holds sanitized reusable contracts/history. This index fixes discoverability; it does not supply missing parameterized contracts, current rubric/voice acceptance or live execution receipts. Protected original criteria remain authoritative. Both newly requested school Claude tasks are now saved with exact prompt readback; execution remains unverified. See [setup receipt](../reports/school-claude-task-setup-2026-10-13.json). Maintenance: optimized-system operations; execution owners and source boundaries below are separate.
 
