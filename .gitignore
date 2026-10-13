@@ -93,3 +93,4 @@ ai-ops/runtime/tests/__pycache__/
 !/ai-ops/reports/protected-storage-verification-2026-10-12.json
 !ai-ops/reports/account-identity-verification-2026-10-12.json
 !/ai-ops/reports/activity-register-todoist-2026-10-13.json
+!/ai-ops/reports/school-claude-friday-time-correction-2026-10-13.json
