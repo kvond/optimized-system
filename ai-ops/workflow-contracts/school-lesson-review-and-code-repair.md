@@ -1,8 +1,20 @@
 # School lesson review, repair and feedback-code recovery
 
-Requested October 13, 2026. Execution owner: school Claude, katherine.vonduyke@redclay.k12.de.us, school Chrome profile. Maintenance owner: optimized-system operations. Requested task cadence: manual/on demand; this does not replace or duplicate the historical monthly sweep. Live task save/readback is recorded separately.
+Requested October 13, 2026. Execution owner: school Claude, katherine.vonduyke@redclay.k12.de.us, school Chrome profile. Maintenance owner: optimized-system operations. Requested task cadence: manual/on demand; this does not replace or duplicate the historical monthly sweep. Original task save/readback is historical; consolidated prompt saved and exactly read back; no task run occurred.
 
 This reproduces the existing school workflow rather than introducing a generic prompt drafter. Sources: school Claude's **Slide enhancement with code** and **Lesson deck embedding codes** tasks; installed school-lesson-audit and school-slides-sweep contracts. Their reported repairs are historical observations, not a current whole-deck pass.
+
+
+## One ordered lesson workflow — consolidation saved; bounded page acceptance
+
+Use the existing Manual school Claude task `trig_01A9JrvwJsRizEc7fnTakTCp`: restore original/VT material → eligible enhancement → native code/visual checks → Schoology lesson-page preparation. Keep specialized skill files intact. Exact slash names `/restore-vt-slides` and `/vt-gemini-enhance` are user supplied; stored availability has not been verified. Preserve the specified School CHATGPT Katherine restoration owner and School Claude Ext enhancement owner where those executors are needed; the task coordinates the chain, not a silent account transfer. Friday iTracker remains separate.
+
+The [shared AIHS HUB Google Doc](https://docs.google.com/document/d/1iH_HE29CGEPxB86ZCmGCRqYUllV3bBnqFH4szfsFNcQ/edit?tab=t.0) is the canonical current working checklist. GitHub holds sanitized reusable operations/history; dated Word files are copies. The supplied [Agenda tab](https://docs.google.com/spreadsheets/d/1m4qhXb5M7y0nMNJHeuxu2J4eFXokIKYxiGVyOfpg-uY/edit?gid=170607847#gid=170607847) and [turn-in root](https://drive.google.com/drive/u/0/folders/176_HMDjg7fqacEal6giPsjuHqaVPs8vB?safe=active) require exact lesson mapping and existing-access verification.
+
+- **UNFINISHED: urgent Forensics and Anatomy/A&P VT restoration.** Preserve native original decks first. Compare slide/object coverage against VT decks, explicitly including omitted pictures/image-only slides, diagrams, videos, interesting examples, notes and activities. Preserve meaningful original material and purposeful repetition; no automatic VT compression or native-master PowerPoint round trip. Render every original/current lesson slide and inspect coverage before passing.
+- **UNFINISHED: Schoology lesson-page preparation.** Verify course/lesson page and authorized additive/corrective changes; include verified student-facing deck/copy and actual Agenda Form links. Map supplied-root response folders privately; never publish response-folder or student-file links on student pages. Preserve old page/source, verify access and reopen actual page/link content. Root access is not proof of correct lesson-folder mapping. Do not submit Forms or invent folders/mappings.
+
+[Saved exact prompt](school-lesson-review-and-code-repair.claude.txt) and [consolidation receipt](../reports/school-lesson-workflow-consolidation-2026-10-13.json) record exact live prompt save/readback and two bounded published Schoology page readbacks. No Run Now occurred. Corrected page 8608195287 and created page 8608282304 in verified-empty folder 1040535688 have matching student-facing deck/Form links; narrow originals were privately preserved locally while encrypted storage was unmounted. Full course coverage, student upload acceptance, restoration and parser deployment remain unfinished; unresolved Forensics source bindings remain. Existing 4:30, 6:30, 7:30, Friday 2:15 and Bonnie pause remain unchanged.
 
 ## Instructions for the requested school task
 
