@@ -1,0 +1,45 @@
+{
+  "checked_at_utc": "2026-10-13T13:14:19.773Z",
+  "account": "katherine.vonduyke@redclay.k12.de.us",
+  "workspace": "school Claude organization",
+  "browser": "Chrome school profile",
+  "plan_label": "not independently verified; both requested tasks saved without purchase or upgrade",
+  "before": "No scheduled tasks yet",
+  "tasks": [
+    {
+      "name": "Lesson slides \u2014 review, repair and feedback codes",
+      "id": "trig_01A9JrvwJsRizEc7fnTakTCp",
+      "url": "https://claude.ai/scheduled-task/trig_01A9JrvwJsRizEc7fnTakTCp",
+      "frequency": "Manual",
+      "prompt_exact_readback": true,
+      "prompt_sha256": "0f6d7d94f551e3e3b9f335cd89207c5b48d1ba9bda9075db81fb526a6b8790f0",
+      "executed": false
+    },
+    {
+      "name": "Friday iTracker \u2014 last three missed lessons",
+      "id": "trig_018b7U6kN8YegmEHuTsj8rQ9",
+      "url": "https://claude.ai/scheduled-task/trig_018b7U6kN8YegmEHuTsj8rQ9",
+      "frequency": "Weekly",
+      "day": "Friday",
+      "time_display": "15:00 / 3:00 PM",
+      "requested_timezone": "America/New_York",
+      "backend_timezone_exposed": false,
+      "enabled": true,
+      "enabled_evidence": "saved task menu offers Pause",
+      "prompt_exact_readback": true,
+      "prompt_sha256": "575a7d979339d492ee5a4c11fd1d8290f0de3bb71f12a9aeaee5417e597eaa01",
+      "executed": false,
+      "notifications_sent": 0
+    }
+  ],
+  "upkeep_schedule_created": false,
+  "calendar_review_preference_saved": "Do not report overlaps.",
+  "calendar_review_time_unchanged": "4:30 AM America/New_York",
+  "paid_api_calls": 0,
+  "morning_school_codex_jobs_changed": false,
+  "unchanged_morning_jobs": [
+    "morning-roster-check-and-submission-tidy",
+    "morning-student-feedback-and-print-checklist"
+  ],
+  "school_task_permission_setting": "Existing form default Automatically approve retained; no connector, sharing or security permission grant performed"
+}
