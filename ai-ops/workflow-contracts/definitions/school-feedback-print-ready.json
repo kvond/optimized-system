@@ -70,6 +70,12 @@
       "required": true,
       "coverage": "bounded",
       "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:current-deterministic-missing-work-and-eligibility-policy",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
     }
   ],
   "outputs": [
@@ -145,7 +151,9 @@
       "Daily packet uses actual Eastern saved-feedback date, entire PDF readback and manifest. Include current student report types; exclude teacher reports and only proven duplicate representations.",
       "Before send, verify immutable PDF/manifest and current expiry, durably record intent and obtain the first successful send_allowed_once claim for the exact batch.",
       "One claim allows one Gmail send only. Confirm with actual SENT/raw MIME, exact sender/recipient/subject/attachment hash and private claim token; any uncertainty stops sending and holds the batch.",
-      "Drain at most ten newly eligible batches; packet expansion sends only new contributions. Never use Printed/Handed marks as deduplication or delivery evidence."
+      "Drain at most ten newly eligible batches; packet expansion sends only new contributions. Never use Printed/Handed marks as deduplication or delivery evidence.",
+      "Resolve current deployed deterministic missing-work-zero and two-week submission-window policy; eligible automatic zeros and later higher-only replacements require its complete-coverage, original-event and exclusion gates.",
+      "Never choose the eligibility-window anchor from discovery or modified dates. If authoritative policy or coverage is unavailable, hold dependent zero/replacement decisions; exact Photosynthesis empty intake still waits."
     ],
     "uncertain_write_policy": "stop_and_reconcile"
   },

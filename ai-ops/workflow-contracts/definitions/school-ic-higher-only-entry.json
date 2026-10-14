@@ -56,6 +56,12 @@
       "required": true,
       "coverage": "complete",
       "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:current-deterministic-missing-work-and-eligibility-policy",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
     }
   ],
   "outputs": [
@@ -110,7 +116,9 @@
       "Count meaningful usable received Notes/Concept Bank and Revision separately with coded blanks in denominators; zero denominator is N/A, never zero.",
       "Missing codes/scores or unfinished readable matched work alone do not hold grades; source access, identity, wrong lesson and ambiguous response remain separate safeguards.",
       "Apply the exact registered Photosynthesis repair-first exception and current exclusions; wait on verified empty intake without inventing a missing-work zero.",
-      "Any uncertain save/readback stops all further helper writes; no automatic retry, block clearing or new approval popup."
+      "Any uncertain save/readback stops all further helper writes; no automatic retry, block clearing or new approval popup.",
+      "Resolve current deployed deterministic missing-work-zero and two-week submission-window policy; eligible automatic zeros and later higher-only replacements require its complete-coverage, original-event and exclusion gates.",
+      "Never choose the eligibility-window anchor from discovery or modified dates. If authoritative policy or coverage is unavailable, hold dependent zero/replacement decisions; exact Photosynthesis empty intake still waits."
     ],
     "uncertain_write_policy": "stop_and_reconcile"
   },

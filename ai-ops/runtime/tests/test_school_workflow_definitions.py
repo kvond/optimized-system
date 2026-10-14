@@ -145,6 +145,22 @@ class SchoolWorkflowDefinitionsTest(unittest.TestCase):
         self.assertIn('at most three', checks)
         self.assertIn('private:current-friday-task-authority-and-owner', {x['source_ref'] for x in c['sources']})
 
+    def test_missing_work_zero_and_window_require_authoritative_policy(self):
+        for name in ('school-ic-higher-only-entry', 'school-feedback-print-ready',
+                     'school-morning-report-resolution'):
+            c = self.contracts[name]
+            policy = [x for x in c['sources'] if x['source_ref'] ==
+                      'private:current-deterministic-missing-work-and-eligibility-policy']
+            self.assertEqual(len(policy), 1)
+            self.assertTrue(policy[0]['required'])
+            self.assertEqual(policy[0]['coverage'], 'complete')
+            checks = ' '.join(c['policy']['dependency_checks'])
+            for required in ('eligible automatic zeros', 'two-week submission-window',
+                             'complete-coverage', 'original-event',
+                             'Photosynthesis empty intake still waits'):
+                self.assertIn(required, checks)
+            self.assertIn('infer-absence-from-provider-failure', c['policy']['prohibited_actions'])
+
     def test_setup_and_lesson_acceptance_require_native_factors(self):
         setup = self.contracts['school-assignment-setup']
         self.assertTrue({'submit-fake-student-work', 'publish-private-response-links',

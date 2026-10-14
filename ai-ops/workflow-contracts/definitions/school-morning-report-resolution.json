@@ -62,6 +62,12 @@
       "required": true,
       "coverage": "bounded",
       "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:current-deterministic-missing-work-and-eligibility-policy",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
     }
   ],
   "outputs": [
@@ -118,7 +124,9 @@
       "Ask only genuine teaching/identity/lesson decisions or necessary access actions, normally at most three numbered questions, each with context, evidence, exact blocker and concrete choices.",
       "Preserve unanswered questions once in existing private records; continue independent work. On an answer reread current source and resume without asking for another continue.",
       "Teacher notes are task requests within existing authority, never permission for new recipients, broader sharing, changed grade policy, credential access or spending.",
-      "Keep this follow-up on home Codex until a destination capability trial and coordinated one-owner cutover are verified; do not move other morning jobs."
+      "Keep this follow-up on home Codex until a destination capability trial and coordinated one-owner cutover are verified; do not move other morning jobs.",
+      "Resolve current deployed deterministic missing-work-zero and two-week submission-window policy; eligible automatic zeros and later higher-only replacements require its complete-coverage, original-event and exclusion gates.",
+      "Never choose the eligibility-window anchor from discovery or modified dates. If authoritative policy or coverage is unavailable, hold dependent zero/replacement decisions; exact Photosynthesis empty intake still waits."
     ],
     "uncertain_write_policy": "stop_and_reconcile"
   },

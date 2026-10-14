@@ -120,6 +120,20 @@ the authorized Agenda-page-one path, preserve answers/history, verify additive
 code repairs and exact saved revisions, then follow normal scoring/helper
 verification. Keep that final checklist step pending until verified.
 
+The teacher's authorized missing-work rule includes eligible automatic zeros and
+later higher-only replacements within the two-week submission window. Before
+that policy is applied, resolve `private:current-deterministic-missing-work-and-eligibility-policy`
+to the actual deployed Hub policy, its complete-coverage requirements, exact
+window-start event, cutoff and current exclusions. Verify the required original
+submission events; discovery/file-modified dates never establish the start.
+The current saved routine text does not fully specify this calculation, so this
+catalog requires the authoritative binding rather than inventing arithmetic or
+an anchor. If it cannot be verified, hold only the dependent zero/replacement
+scope and continue independent work. This requirement never converts incomplete
+sources, an unrated report, N/A, or the exact not-yet-submitted Photosynthesis
+exception into zero, and it never gives the feedback/follow-up owner a grade
+writer. Only the existing helper applies eligible grade changes.
+
 After uncertain writes, stop the dependent write path. Never retry a grade save,
 email, model operation or publish merely because a response was lost. Preserve
 intent, reservation, source revisions and native receipt. Reconcile the exact
