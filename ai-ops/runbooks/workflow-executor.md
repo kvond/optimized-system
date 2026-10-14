@@ -6,7 +6,7 @@ This bridge implements one bounded operation: validate an explicitly configured 
 
 Import `WorkflowExecutor` and `CatalogValidationAdapter` from `ai-ops/runtime/workflow_executor.py`. Create the adapter from an explicit trusted allowlist of one to 64 regular local JSON files, each at most 64 KiB. Files, parent paths and state may not be symlinks. The adapter uses the existing contract validator; its saved output contains only workflow IDs, contract versions, content hashes and a count. A duplicate workflow ID or malformed definition blocks execution.
 
-The exact supported contract binding is:
+The canonical definition is `ai-ops/workflow-contracts/definitions/technical-catalog-validation.json`. Select it through `resolve_intent` with domain `technical` and operation `validate-workflow-catalog`; do not substitute the synthetic test fixture for a canonical run. The exact supported contract binding is:
 
 - Domain `technical`, execution kind `deterministic`, resolved executor `local-deterministic-runtime`, provider `local`, cost `0`, no accounts.
 - Required capability list exactly `local-catalog-validation`; sole allowed operation `validate-workflow-catalog`.
