@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "workflow_id": "ops-overnight-optimization-targets-2-5-7-8",
+  "contract_version": "2026-10-14.1",
+  "title": "Bounded existing optimization continuation and acceptance",
+  "domain": "ai-ops",
+  "owners": {
+    "execution_owner_ref": "private:current-owner:ops-overnight-optimization-targets-2-5-7-8",
+    "maintenance_owner_ref": "private:technical-maintainer"
+  },
+  "execution": {
+    "executor_ref": "private:existing-executor:ops-overnight-optimization-targets-2-5-7-8",
+    "account_refs": [
+      "private:main-codex"
+    ],
+    "required_capabilities": [
+      "local-python",
+      "local-git",
+      "private-artifact-readback",
+      "task-output-readback"
+    ],
+    "privacy_partition": "ai-ops-private",
+    "concurrency_key": "private:workflow-writer:ops-overnight-optimization-targets-2-5-7-8"
+  },
+  "trigger": {
+    "kind": "existing_schedule",
+    "schedule_ref": "Local Codex::overnight-optimization-targets-2-5-7-8"
+  },
+  "sources": [
+    {
+      "source_ref": "private:canonical-overnight-plan",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:current-capability-evidence",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:current-scheduler-registry",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:agent-patches-and-acceptance-receipts",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    }
+  ],
+  "outputs": [
+    {
+      "output_ref": "private:canonical-plan-and-morning-handoff",
+      "kind": "report",
+      "verification": "content_and_destination_readback"
+    }
+  ],
+  "policy": {
+    "allowed_actions": [
+      "review-preserved-source",
+      "validate-scoped-patches",
+      "prepare-integration-handoff"
+    ],
+    "prohibited_actions": [
+      "publish-externally",
+      "send-messages",
+      "change-live-schedules",
+      "delete-source-history",
+      "copy-private-content-to-core",
+      "retire-accounts",
+      "enable-disabled-discovery-apis",
+      "migrate-unverified-executor",
+      "clear-uncertain-grade-save",
+      "purchase-credits"
+    ],
+    "dependency_checks": [
+      "Resolve private source, output, account and executor bindings; unresolved required bindings block dependent work.",
+      "Verify current authorization, tested capabilities and one shared writer lease, including independent external sessions.",
+      "Read exact source revisions and completeness; unavailable or partial sources never establish no work.",
+      "Preserve prior complete state and reconcile uncertain output with its original request ID before any repeat write.",
+      "Keep current home Codex technical owner; account identity, tested capability, scheduler configuration and completed execution are distinct facts.",
+      "Use current plan deadlines and ownership; sole coordinator owns canonical plan writes, integration, deployments and authorized schedule cutovers.",
+      "Preserve first, reuse canonical core/runtime, deterministic work first, no new service or provider authority from a role label.",
+      "Current school routines remain here; release worker/browser ownership before their source windows and leave no competing background mutation.",
+      "Questions are short numbered unresolved choices; continue independent work and resume dependent work after actual answer, never from silence."
+    ],
+    "uncertain_write_policy": "stop_and_reconcile"
+  },
+  "success_checks": [
+    "Report verified complete, partial and blocked per canonical target with actual saved evidence and one next step for each blocker.",
+    "No task is marked complete from a plan, ACTIVE schedule, simulated adapter or deployment Ready flag.",
+    "Handoff lists exact source commit, tests, limitations, rollback and shared-write owner; no live cutover claimed by this contract extraction.",
+    "Record exact request, source revisions, output hash and native destination readback; label remaining coverage gaps."
+  ],
+  "failure": {
+    "max_safe_read_retries": 1,
+    "continue_independent_work": true,
+    "report_next_step": true
+  },
+  "provenance": {
+    "contract_refs": [
+      "ai-ops/knowledge/ai-operating-decisions.md",
+      "ai-ops/runtime/README.md",
+      "private:canonical-overnight-plan-20261014",
+      "private:scheduler-registry-20261014",
+      "ai-ops/workflow-contracts/non-school-contracts.md#ops-overnight-optimization-targets-2-5-7-8"
+    ]
+  }
+}

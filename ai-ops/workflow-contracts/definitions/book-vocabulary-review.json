@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "workflow_id": "book-vocabulary-review",
+  "contract_version": "2026-10-14.1",
+  "title": "Book vocabulary and chapter-bank reconciliation proposals",
+  "domain": "book",
+  "owners": {
+    "execution_owner_ref": "private:current-owner:book-vocabulary-review",
+    "maintenance_owner_ref": "private:technical-maintainer"
+  },
+  "execution": {
+    "executor_ref": "private:authorized-executor:book-vocabulary-review",
+    "account_refs": [
+      "private:domain-account:book"
+    ],
+    "required_capabilities": [
+      "book-graph-read",
+      "local-python",
+      "private-artifact-readback"
+    ],
+    "privacy_partition": "book-private",
+    "concurrency_key": "private:book-graph-writer"
+  },
+  "trigger": {
+    "kind": "on_demand"
+  },
+  "sources": [
+    {
+      "source_ref": "private:book-graph-inventory",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:book-vocabulary-aliases-pins",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:book-state-and-candidate-registry",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    }
+  ],
+  "outputs": [
+    {
+      "output_ref": "private:book-vocabulary-review",
+      "kind": "report",
+      "verification": "content_and_destination_readback"
+    }
+  ],
+  "policy": {
+    "allowed_actions": [
+      "read-graph-inventory",
+      "run-delta-or-full-sweep",
+      "save-review-proposals"
+    ],
+    "prohibited_actions": [
+      "publish-externally",
+      "send-messages",
+      "change-live-schedules",
+      "delete-source-history",
+      "copy-private-content-to-core",
+      "merge-or-rename-pages",
+      "mint-graph-pages",
+      "delete-graph-nodes",
+      "restore-retired-authorship-tags"
+    ],
+    "dependency_checks": [
+      "Resolve private source, output, account and executor bindings; unresolved required bindings block dependent work.",
+      "Verify current authorization, tested capabilities and one shared writer lease, including independent external sessions.",
+      "Read exact source revisions and completeness; unavailable or partial sources never establish no work.",
+      "Preserve prior complete state and reconcile uncertain output with its original request ID before any repeat write.",
+      "Refresh inventory and aliases, pinned never-merge pairs, flagged pair keys and watermark; stale inventory blocks on-create clearance.",
+      "Use matching.py and existing delta/full/on_create scripts. Delta is normal changed-input review; full sweep is explicit wider review.",
+      "Keep node kinds distinct; exclude archives, deliberate Final supersession and Draft parallel trees from destructive dedup proposals.",
+      "Title-match clear is not semantic uniqueness; review distinctive terms and canonical homes before any later approved mint.",
+      "No graph mutation occurs in this review contract. Preserve legacy apply tiers as source history; do not infer current write approval."
+    ],
+    "uncertain_write_policy": "stop_and_reconcile"
+  },
+  "success_checks": [
+    "Review identifies each pair, layer, evidence and keep-separate or alias/merge recommendation without applying it.",
+    "Already adjudicated pairs and pinned distinctions stay preserved; existing bank or Published-as candidates are not duplicated.",
+    "Any later state stamp must describe an actual verified run, never merely a page edit timestamp.",
+    "Record exact request, source revisions, output hash and native destination readback; label remaining coverage gaps."
+  ],
+  "failure": {
+    "max_safe_read_retries": 1,
+    "continue_independent_work": true,
+    "report_next_step": true
+  },
+  "provenance": {
+    "contract_refs": [
+      "skills/book-ops/SKILL.md",
+      "skills/chapter-bank/SKILL.md",
+      "ai-ops/knowledge/writing-voice.md",
+      "private:source-project-audit-20261014",
+      "ai-ops/workflow-contracts/non-school-contracts.md#book-vocabulary-review"
+    ]
+  }
+}

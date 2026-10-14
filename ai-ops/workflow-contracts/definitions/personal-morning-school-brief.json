@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "workflow_id": "personal-morning-school-brief",
+  "contract_version": "2026-10-14.1",
+  "title": "Existing cloud morning brief pending exact-policy reconciliation",
+  "domain": "personal",
+  "owners": {
+    "execution_owner_ref": "private:current-owner:personal-morning-school-brief",
+    "maintenance_owner_ref": "private:technical-maintainer"
+  },
+  "execution": {
+    "executor_ref": "private:existing-executor:personal-morning-school-brief",
+    "account_refs": [
+      "private:main-chatgpt",
+      "private:home-google",
+      "private:school-google"
+    ],
+    "required_capabilities": [
+      "home-calendar-read",
+      "school-calendar-read",
+      "received-school-mail-read",
+      "task-output-readback"
+    ],
+    "privacy_partition": "personal-private",
+    "concurrency_key": "private:day-review-shared-output"
+  },
+  "trigger": {
+    "kind": "existing_schedule",
+    "schedule_ref": "Main ChatGPT::6acdf6ea52008191b4734193fffcfaf1"
+  },
+  "sources": [
+    {
+      "source_ref": "private:morning-brief-current-task-policy",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:morning-brief-bound-calendars",
+      "required": true,
+      "coverage": "bounded",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:morning-brief-received-mail",
+      "required": true,
+      "coverage": "bounded",
+      "max_age_seconds": 300
+    }
+  ],
+  "outputs": [
+    {
+      "output_ref": "private:existing-morning-brief-task-output",
+      "kind": "report",
+      "verification": "content_and_destination_readback"
+    }
+  ],
+  "policy": {
+    "allowed_actions": [
+      "verify-existing-brief-policy",
+      "read-bound-calendar-mail",
+      "save-existing-scope-brief"
+    ],
+    "prohibited_actions": [
+      "publish-externally",
+      "send-messages",
+      "change-live-schedules",
+      "delete-source-history",
+      "copy-private-content-to-core",
+      "edit-calendar-events",
+      "reply-to-mail",
+      "change-tasks",
+      "change-grades",
+      "silently-consolidate-schedules"
+    ],
+    "dependency_checks": [
+      "Resolve private source, output, account and executor bindings; unresolved required bindings block dependent work.",
+      "Verify current authorization, tested capabilities and one shared writer lease, including independent external sessions.",
+      "Read exact source revisions and completeness; unavailable or partial sources never establish no work.",
+      "Preserve prior complete state and reconcile uncertain output with its original request ID before any repeat write.",
+      "Current registry reports active configuration only; exact full task policy, backend timezone and output receipt must be resolved before conversion.",
+      "Retained scope is school-day classes, after-school schedule and coverage from connected calendars/mail; last 24 hours mail needs source verification.",
+      "Compare actual same-date output and source coverage with local day review before coordinator selects one owner; do not silently disable either.",
+      "Do not import local day-review windows or historical preferences as if they were this task original prompt."
+    ],
+    "uncertain_write_policy": "stop_and_reconcile"
+  },
+  "success_checks": [
+    "Exact existing scope and destination verified, sources paged and coverage gaps explicit.",
+    "One correct existing-task output read back; no duplicate review or consolidation completion claimed from matching titles.",
+    "Record exact request, source revisions, output hash and native destination readback; label remaining coverage gaps."
+  ],
+  "failure": {
+    "max_safe_read_retries": 1,
+    "continue_independent_work": true,
+    "report_next_step": true
+  },
+  "provenance": {
+    "contract_refs": [
+      "private:scheduler-registry-20261014",
+      "ai-ops/workflow-contracts/home-and-school-day-review.md",
+      "ai-ops/workflow-contracts/non-school-contracts.md#personal-morning-school-brief"
+    ]
+  }
+}

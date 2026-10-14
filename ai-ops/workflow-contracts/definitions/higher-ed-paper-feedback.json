@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "workflow_id": "higher-ed-paper-feedback",
+  "contract_version": "2026-10-14.1",
+  "title": "Evidence-based graduate feedback draft for instructor review",
+  "domain": "higher-ed",
+  "owners": {
+    "execution_owner_ref": "private:current-owner:higher-ed-paper-feedback",
+    "maintenance_owner_ref": "private:technical-maintainer"
+  },
+  "execution": {
+    "executor_ref": "private:authorized-executor:higher-ed-paper-feedback",
+    "account_refs": [
+      "private:domain-account:higher-ed"
+    ],
+    "required_capabilities": [
+      "native-document-read",
+      "private-artifact-readback"
+    ],
+    "privacy_partition": "higher-ed-private",
+    "concurrency_key": "private:workflow-writer:higher-ed-paper-feedback"
+  },
+  "trigger": {
+    "kind": "on_demand"
+  },
+  "sources": [
+    {
+      "source_ref": "private:current-paper-and-assignment",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:current-course-rubric",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:current-feedback-template-binding",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    }
+  ],
+  "outputs": [
+    {
+      "output_ref": "private:instructor-feedback-draft",
+      "kind": "artifact",
+      "verification": "content_and_destination_readback"
+    },
+    {
+      "output_ref": "private:student-feedback-draft",
+      "kind": "artifact",
+      "verification": "content_and_destination_readback"
+    }
+  ],
+  "policy": {
+    "allowed_actions": [
+      "read-paper-and-rubric",
+      "draft-evidence-based-feedback",
+      "save-instructor-review"
+    ],
+    "prohibited_actions": [
+      "publish-externally",
+      "send-messages",
+      "change-live-schedules",
+      "delete-source-history",
+      "copy-private-content-to-core",
+      "post-grades",
+      "deliver-student-feedback",
+      "invent-rubric-or-denominator",
+      "apply-unapproved-deductions"
+    ],
+    "dependency_checks": [
+      "Resolve private source, output, account and executor bindings; unresolved required bindings block dependent work.",
+      "Verify current authorization, tested capabilities and one shared writer lease, including independent external sessions.",
+      "Read exact source revisions and completeness; unavailable or partial sources never establish no work.",
+      "Preserve prior complete state and reconcile uncertain output with its original request ID before any repeat write.",
+      "Verify paper identity, assignment/course, actual current rubric bands/weights/denominator and instructor scoring scope before scored drafting.",
+      "If rubric binding is unavailable, continue evidence-only observations and leave score unresolved; never substitute historical Summer rubrics.",
+      "Use verified seven-section UD template. Archived six-part template, two-issue cap, reflective exclusion and clipped voice require explicit reconciliation.",
+      "Keep full instructor deduction ledger and student-facing feedback consistent; concerns outside rubric are unscored open calls."
+    ],
+    "uncertain_write_policy": "stop_and_reconcile"
+  },
+  "success_checks": [
+    "Header, rubric table if bound, genre flag, actual quoted commendation, deduction ledger, student-facing version and open calls are present as applicable.",
+    "Every proposed point decision cites exact paper evidence and applicable criterion; no invented quotation or location.",
+    "Saved outputs are instructor-review drafts; no grade approval, posting or delivery is inferred.",
+    "Record exact request, source revisions, output hash and native destination readback; label remaining coverage gaps."
+  ],
+  "failure": {
+    "max_safe_read_retries": 1,
+    "continue_independent_work": true,
+    "report_next_step": true
+  },
+  "provenance": {
+    "contract_refs": [
+      "ai-ops/workflow-contracts/graduate-paper-feedback.md",
+      "ai-ops/knowledge/wilmington-grading.md",
+      "ai-ops/workflow-contracts/oli-7106-summer-2026-rubrics.md",
+      "private:source-workflow-comparison-20261014",
+      "private:source-memory-artifact-audit-20261014",
+      "ai-ops/workflow-contracts/non-school-contracts.md#higher-ed-paper-feedback"
+    ]
+  }
+}
