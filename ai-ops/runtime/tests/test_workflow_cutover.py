@@ -85,6 +85,22 @@ class InvocationTests(unittest.TestCase):
         invalid[0]['targets'] = ['runbook.md#Missing heading']
         with self.assertRaises(CutoverError): verify_coverage(self.prompt, invalid, self.root)
 
+    def test_every_coverage_target_requires_a_verified_artifact_pin(self):
+        # The reviewed policy must not drift merely because its heading survives.
+        (self.root/'unpinned.md').write_text('# Required\nOriginal policy.')
+        candidate = copy.deepcopy(self.candidate)
+        candidate['coverage'][0]['targets'] = ['unpinned.md#Required']
+        for body in ('# Required\nOriginal policy.', '# Required\nChanged policy.'):
+            (self.root/'unpinned.md').write_text(body)
+            with self.subTest(body=body):
+                with self.assertRaisesRegex(CutoverError, 'coverage target is not pinned'):
+                    self.verify(candidate=candidate)
+
+    def test_coverage_can_target_the_verified_contract_or_procedure(self):
+        candidate = copy.deepcopy(self.candidate)
+        candidate['coverage'][0]['targets'] = ['contract.json']
+        self.assertTrue(self.verify(candidate=candidate)['validation_only'])
+
     def test_no_duplicate_registry_binding_or_changed_owner(self):
         self.registry['records'].append(copy.deepcopy(self.registry['records'][0]))
         (self.root/'registry.json').write_text(json.dumps(self.registry))
@@ -150,6 +166,17 @@ class OwnershipTests(unittest.TestCase):
         self.checks.update(new_disabled_readback=True, rollback_source_verified=True)
         self.assertEqual(self.act('rollback', old='PAUSED')['old'], 'ACTIVE')
         with self.assertRaises(CutoverError): self.act('rollback', old='PAUSED', new='ACTIVE')
+
+    def test_rollback_requires_current_authority_and_no_running_writer(self):
+        self.checks.update(new_disabled_readback=True, rollback_source_verified=True)
+        for key in ('current_authority', 'no_running_job'):
+            for value in (False, None, 'true', 1):
+                with self.subTest(key=key, value=value):
+                    self.checks[key] = value
+                    with self.assertRaisesRegex(CutoverError, 'rollback authority and idle writer'):
+                        self.act('rollback', old='PAUSED')
+            self.checks[key] = True
+        self.assertEqual(self.act('rollback', old='PAUSED')['old'], 'ACTIVE')
 
     def test_lost_write_response_never_retries_or_rolls_back_side_effect(self):
         self.checks.update(new_disabled_readback=True, rollback_source_verified=True)

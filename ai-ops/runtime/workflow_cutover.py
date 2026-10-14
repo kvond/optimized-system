@@ -71,7 +71,9 @@ def verify_bundle(candidate, checkout, workflow_id, contract_sha256):
         raise CutoverError('supported local conversion required')
     if candidate['workflow_id'] != workflow_id or candidate['contract']['sha256'] != contract_sha256:
         raise CutoverError('invocation identity mismatch')
-    verify_pins(checkout, [candidate['contract']] + candidate['procedures'])
+    pins = [candidate['contract']] + candidate['procedures']
+    verify_pins(checkout, pins)
+    pinned_paths = {pin['path'] for pin in pins}
     definition = validate_workflow(json.loads((Path(checkout) / candidate['contract']['path']).read_text()))
     if (definition['workflow_id'] != workflow_id or
             definition['contract_version'] != candidate['contract_version'] or
@@ -99,6 +101,10 @@ def verify_bundle(candidate, checkout, workflow_id, contract_sha256):
     policy = Path(candidate['policy_backup_path']).read_text()
     if digest(policy.encode()) != candidate['original']['prompt_sha256']:
         raise CutoverError('preserved policy changed')
+    for item in candidate['coverage']:
+        for target in item.get('targets', []):
+            if target.partition('#')[0] not in pinned_paths:
+                raise CutoverError('coverage target is not pinned')
     verify_coverage(policy, candidate['coverage'], checkout)
     bindings = Path(candidate['bindings']['path']).read_bytes()
     if digest(bindings) != candidate['bindings']['sha256']:
@@ -147,6 +153,11 @@ def transition(action, *, old_state, new_state, checks, uncertain_write=False):
             raise CutoverError('old disabled readback required')
         return {'old': 'PAUSED', 'new': 'ACTIVE', 'next': 'native-both-states-and-output-readback'}
     if action == 'rollback' and old_state in {'PAUSED', 'ACTIVE'} and new_state in {'PAUSED', 'ABSENT'}:
+        # Pausing a schedule does not establish that an earlier invocation has
+        # stopped. Current authority and idle/fenced native writers are still
+        # required before restoring the original owner.
+        if any(checks.get(key) is not True for key in ('current_authority', 'no_running_job')):
+            raise CutoverError('current rollback authority and idle writer evidence required')
         if checks.get('rollback_source_verified') is not True or checks.get('new_disabled_readback') is not True:
             raise CutoverError('verified rollback and replacement-disabled readback required')
         return {'old': 'ACTIVE', 'new': new_state, 'next': 'native-original-state-readback'}
