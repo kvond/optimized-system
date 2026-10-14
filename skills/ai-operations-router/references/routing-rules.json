@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "rule_version": "2026-10-14.1",
+  "execution_kinds": ["deterministic", "coding", "browser", "assisted"],
+  "coding_executor_refs": ["home-codex"],
+  "executor_kind_limits": {
+    "school-claude": ["browser"],
+    "school-chrome-helper": ["browser"]
+  },
+  "exclusive_capability_executors": {
+    "school-ic-helper-write": ["school-chrome-helper"]
+  },
+  "exclusive_operation_executors": {
+    "helper-enter-eligible-blank": ["school-chrome-helper"],
+    "helper-raise-lower-score": ["school-chrome-helper"],
+    "helper-save-reload-readback": ["school-chrome-helper"]
+  },
+  "max_capability_age_seconds": 86400,
+  "max_context_age_seconds": 300
+}

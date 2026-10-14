@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "workflow_id": "school-friday-missed-lesson-notices",
+  "contract_version": "2026-10-14.1",
+  "title": "Verified missed-lesson notice procedure with current-authority gate",
+  "domain": "school",
+  "owners": {
+    "execution_owner_ref": "existing-school-notice-owner",
+    "maintenance_owner_ref": "codex-school-maintenance"
+  },
+  "execution": {
+    "executor_ref": "existing-school-notice-owner",
+    "account_refs": [
+      "school-google",
+      "school-ic"
+    ],
+    "required_capabilities": [
+      "school-hub-read",
+      "school-ic-roster-read",
+      "school-native-browser-read",
+      "school-itracker-notice-publish"
+    ],
+    "privacy_partition": "school-private",
+    "concurrency_key": "school-shared-browser-and-sources"
+  },
+  "trigger": {
+    "kind": "existing_schedule",
+    "schedule_ref": "School Claude::trig_018b7U6kN8YegmEHuTsj8rQ9"
+  },
+  "sources": [
+    {
+      "source_ref": "private:current-friday-task-authority-and-owner",
+      "required": true,
+      "coverage": "bounded",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:complete-current-submission-coverage",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:current-roster-due-dates-flags-extensions",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:exact-itracker-audience",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:weekly-notice-delivery-history",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    }
+  ],
+  "outputs": [
+    {
+      "output_ref": "private:itracker-exact-note-and-audience-receipt",
+      "kind": "receipt",
+      "verification": "content_and_destination_readback"
+    },
+    {
+      "output_ref": "private:friday-notice-coverage-result",
+      "kind": "report",
+      "verification": "content_and_destination_readback"
+    }
+  ],
+  "policy": {
+    "allowed_actions": [
+      "prepare-confirmed-missed-lesson-notice",
+      "publish-currently-authorized-exact-notice-once",
+      "readback-saved-note-and-audience"
+    ],
+    "prohibited_actions": [
+      "copy-credentials-or-profiles",
+      "broaden-sharing",
+      "delete-or-restore-source-history",
+      "infer-absence-from-provider-failure",
+      "retry-uncertain-write",
+      "clear-uncertainty-automatically",
+      "change-teacher-delivery-marks",
+      "invent-identity-or-lesson-match",
+      "create-competing-schedule",
+      "write-ic-grades",
+      "send-feedback-email",
+      "guess-guardian-recipient",
+      "broadcast-student-details",
+      "send-without-current-explicit-authority",
+      "send-duplicate-weekly-notice",
+      "change-guardian-record",
+      "claim-guardian-read-from-saved-note"
+    ],
+    "dependency_checks": [
+      "Resolve private references and verify exact school identity, tested capability, current authority and sole active owner before dependent work.",
+      "Acquire the shared browser/source lease including external sessions; a declared concurrency key or missing receipt is not proof that another writer is idle.",
+      "Read current authoritative sources and compare relevant revisions immediately before each mutation; stop that mutation on changed, partial or unavailable evidence.",
+      "Keep private records and raw evidence outside Git; a configured task, schema validation or open tab never establishes completed execution.",
+      "Historical Friday 14:15 configuration is not fresh activation or execution evidence. Verify actual current native task, owner, cadence/timezone and explicit send scope before any send.",
+      "School Claude capability is untested in the current map; preserve historical task and hold execution until the intended owner and representative capability are verified.",
+      "Prior notices or copied task text never grant new recurring send authority. Resolve current explicit teacher authorization for exact affected students and verified guardians.",
+      "Use complete current sources, canonical membership, taught/due lessons, exemptions, extensions and teacher corrections; blank/zero grades alone never prove missing work.",
+      "Select at most three genuinely missed lessons by most recent authoritative due date, fewer if fewer confirmed; no notice when none qualify.",
+      "Confirm actual student/guardian recipients and composed exact note before publishing; include only requested lesson/date/action details.",
+      "Check private duplicate key of Friday date, student, selected lessons and recipient identities; durably record intent and read back saved note/audience once.",
+      "Uncertain publish/delivery stops that action and preserves its draft/receipt; never retry automatically or claim a guardian read it."
+    ],
+    "uncertain_write_policy": "stop_and_reconcile"
+  },
+  "success_checks": [
+    "Each reported published note has verified current authority, complete eligibility, exact audience, duplicate check and native saved readback.",
+    "Aggregate result distinguishes eligible, actually published/read back and held counts; no notice body or recipient identifier enters Git.",
+    "No claim of operational scheduling or first successful Friday execution without a separate actual run receipt."
+  ],
+  "failure": {
+    "max_safe_read_retries": 2,
+    "continue_independent_work": true,
+    "report_next_step": true
+  },
+  "provenance": {
+    "contract_refs": [
+      "ai-ops/workflow-contracts/school-operations-runbook.md#school-friday-missed-lesson-notices",
+      "ai-ops/workflow-contracts/school-friday-itracker-notices.md",
+      "private:current-friday-task-verification"
+    ]
+  }
+}

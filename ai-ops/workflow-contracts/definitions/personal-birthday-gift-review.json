@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "workflow_id": "personal-birthday-gift-review",
+  "contract_version": "2026-10-14.1",
+  "title": "Existing birthday source refresh and gift planning review",
+  "domain": "personal",
+  "owners": {
+    "execution_owner_ref": "private:current-owner:personal-birthday-gift-review",
+    "maintenance_owner_ref": "private:technical-maintainer"
+  },
+  "execution": {
+    "executor_ref": "private:existing-executor:personal-birthday-gift-review",
+    "account_refs": [
+      "private:main-chatgpt",
+      "private:home-google",
+      "private:gift-history"
+    ],
+    "required_capabilities": [
+      "current-calendar-and-history-read",
+      "local-python",
+      "encrypted-private-state",
+      "task-output-readback"
+    ],
+    "privacy_partition": "personal-private",
+    "concurrency_key": "private:news-and-birthday-source-state"
+  },
+  "trigger": {
+    "kind": "existing_schedule",
+    "schedule_ref": "Main ChatGPT::6aa9962611648191b900495a9ea89cd8"
+  },
+  "sources": [
+    {
+      "source_ref": "private:birthday-current-task-policy",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:bound-routine-calendar",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 86400
+    },
+    {
+      "source_ref": "private:bound-gift-history",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 86400
+    },
+    {
+      "source_ref": "private:confirmed-family-crosswalk",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 86400
+    }
+  ],
+  "outputs": [
+    {
+      "output_ref": "private:existing-birthday-task-output",
+      "kind": "report",
+      "verification": "content_and_destination_readback"
+    },
+    {
+      "output_ref": "private:birthday-private-receipt",
+      "kind": "receipt",
+      "verification": "content_and_destination_readback"
+    }
+  ],
+  "policy": {
+    "allowed_actions": [
+      "refresh-bound-birthday-sources",
+      "reconcile-exact-occurrences",
+      "save-private-review"
+    ],
+    "prohibited_actions": [
+      "publish-externally",
+      "send-messages",
+      "change-live-schedules",
+      "delete-source-history",
+      "copy-private-content-to-core",
+      "change-carts",
+      "purchase",
+      "contact-recipients",
+      "infer-family-membership",
+      "close-gift-from-planning-status"
+    ],
+    "dependency_checks": [
+      "Resolve private source, output, account and executor bindings; unresolved required bindings block dependent work.",
+      "Verify current authorization, tested capabilities and one shared writer lease, including independent external sessions.",
+      "Read exact source revisions and completeness; unavailable or partial sources never establish no work.",
+      "Preserve prior complete state and reconcile uncertain output with its original request ID before any repeat write.",
+      "Page bound calendar and project/history sources completely; source identity and current Eastern business-date observations are required.",
+      "Use birthday_check.py after its runbook refresh; 30-day window and exact date plus exact confirmed name/alias crosswalk control.",
+      "Only verified sent/purchased/ordered evidence for exact occurrence closes it; prior-year, pending, selected or unknown purchase detail cannot.",
+      "Keep scoped holds visible; any current-window unknown prevents all-clear. No fuzzy family identity or inferred leap-day occurrence.",
+      "Resolve current schedule time/timezone and capable source refresh bridge; later user gift decisions are separate from this read-only review."
+    ],
+    "uncertain_write_policy": "stop_and_reconcile"
+  },
+  "success_checks": [
+    "Private normalized inputs and output packet read back under same request identity; repeated changed inputs with same ID fail closed.",
+    "Known eligible occurrences and unresolved holds remain distinct; partial source never becomes an empty or completed family list.",
+    "Existing task output matches saved packet; no cart, purchase, contact or automatic Todoist choice applied.",
+    "Record exact request, source revisions, output hash and native destination readback; label remaining coverage gaps."
+  ],
+  "failure": {
+    "max_safe_read_retries": 1,
+    "continue_independent_work": true,
+    "report_next_step": true
+  },
+  "provenance": {
+    "contract_refs": [
+      "ai-ops/runbooks/birthday-date-history-gate.md",
+      "ai-ops/runtime/birthday_check.py",
+      "ai-ops/workflow-contracts/routine-worker-contexts/birthday.md",
+      "private:scheduler-registry-20261014",
+      "ai-ops/workflow-contracts/non-school-contracts.md#personal-birthday-gift-review"
+    ]
+  }
+}

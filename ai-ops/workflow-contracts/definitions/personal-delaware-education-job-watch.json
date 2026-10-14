@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "workflow_id": "personal-delaware-education-job-watch",
+  "contract_version": "2026-10-14.1",
+  "title": "Existing education job watch with bounded DOE source evidence",
+  "domain": "personal",
+  "owners": {
+    "execution_owner_ref": "private:current-owner:personal-delaware-education-job-watch",
+    "maintenance_owner_ref": "private:technical-maintainer"
+  },
+  "execution": {
+    "executor_ref": "private:existing-executor:personal-delaware-education-job-watch",
+    "account_refs": [
+      "private:main-chatgpt",
+      "private:job-watch-profile"
+    ],
+    "required_capabilities": [
+      "approved-public-source-read",
+      "local-python",
+      "encrypted-private-state",
+      "task-output-readback"
+    ],
+    "privacy_partition": "personal-private",
+    "concurrency_key": "private:workflow-writer:personal-delaware-education-job-watch"
+  },
+  "trigger": {
+    "kind": "existing_schedule",
+    "schedule_ref": "Main ChatGPT::6ac29fe996ac81918b03a7d59354ef9f"
+  },
+  "sources": [
+    {
+      "source_ref": "private:doe-current-task-and-criteria",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:approved-doe-source-grant",
+      "required": true,
+      "coverage": "bounded",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:doe-prior-listing-history",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    }
+  ],
+  "outputs": [
+    {
+      "output_ref": "private:existing-doe-task-output",
+      "kind": "report",
+      "verification": "content_and_destination_readback"
+    },
+    {
+      "output_ref": "private:doe-private-receipt",
+      "kind": "receipt",
+      "verification": "content_and_destination_readback"
+    }
+  ],
+  "policy": {
+    "allowed_actions": [
+      "read-approved-doe-listings",
+      "compare-exact-source-history",
+      "save-job-review"
+    ],
+    "prohibited_actions": [
+      "publish-externally",
+      "send-messages",
+      "change-live-schedules",
+      "delete-source-history",
+      "copy-private-content-to-core",
+      "apply-for-jobs",
+      "contact-employers",
+      "infer-statewide-completeness",
+      "reopen-paused-other-job-watch"
+    ],
+    "dependency_checks": [
+      "Resolve private source, output, account and executor bindings; unresolved required bindings block dependent work.",
+      "Verify current authorization, tested capabilities and one shared writer lease, including independent external sessions.",
+      "Read exact source revisions and completeness; unavailable or partial sources never establish no work.",
+      "Preserve prior complete state and reconcile uncertain output with its original request ID before any repeat write.",
+      "Resolve current recurrence/timezone, actual worker binding, private criteria and destination; retained historical prompt binding is insufficient.",
+      "Use doe_worker.py and its exact approved source grant; DOE filter coverage is not statewide coverage.",
+      "First complete read seeds state; partial reads preserve prior listings and unknown counts, never inferred closures.",
+      "Keep original candidate criteria private and separate from public source gate; report fit only with verified criteria and actual listing evidence.",
+      "Use bounded child cleanup and immutable snapshot/readback; unknown cleanup or missing atomic artifact blocks refetch."
+    ],
+    "uncertain_write_policy": "stop_and_reconcile"
+  },
+  "success_checks": [
+    "Packet names exact source coverage and source revision with actual changes or unchanged state.",
+    "Any suitability judgment cites verified current criteria and listing; no notification/application inferred from a packet.",
+    "Existing task destination and private receipt read back; statewide coverage and scheduled success are not claimed from DOE-only acceptance.",
+    "Record exact request, source revisions, output hash and native destination readback; label remaining coverage gaps."
+  ],
+  "failure": {
+    "max_safe_read_retries": 1,
+    "continue_independent_work": true,
+    "report_next_step": true
+  },
+  "provenance": {
+    "contract_refs": [
+      "ai-ops/runbooks/doe-operator-check.md",
+      "ai-ops/runtime/doe_worker.py",
+      "ai-ops/workflow-contracts/routine-worker-contexts/doe-watch.md",
+      "private:scheduler-registry-20261014",
+      "ai-ops/workflow-contracts/non-school-contracts.md#personal-delaware-education-job-watch"
+    ]
+  }
+}

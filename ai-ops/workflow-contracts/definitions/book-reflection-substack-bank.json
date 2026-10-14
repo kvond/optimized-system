@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "workflow_id": "book-reflection-substack-bank",
+  "contract_version": "2026-10-14.1",
+  "title": "Reflection preservation and focused manuscript or bank proposals",
+  "domain": "book",
+  "owners": {
+    "execution_owner_ref": "private:current-owner:book-reflection-substack-bank",
+    "maintenance_owner_ref": "private:technical-maintainer"
+  },
+  "execution": {
+    "executor_ref": "private:authorized-executor:book-reflection-substack-bank",
+    "account_refs": [
+      "private:domain-account:book"
+    ],
+    "required_capabilities": [
+      "native-document-read",
+      "private-artifact-readback"
+    ],
+    "privacy_partition": "book-private",
+    "concurrency_key": "private:book-manuscript-writer"
+  },
+  "trigger": {
+    "kind": "on_demand"
+  },
+  "sources": [
+    {
+      "source_ref": "private:canonical-reflection-ledger",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:current-manuscript",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:published-and-banked-inventory",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:preferred-voice-and-editorial-scope",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    }
+  ],
+  "outputs": [
+    {
+      "output_ref": "private:reflection-placement-review",
+      "kind": "artifact",
+      "verification": "content_and_destination_readback"
+    }
+  ],
+  "policy": {
+    "allowed_actions": [
+      "read-preserved-reflection",
+      "draft-placement-proposal",
+      "save-private-candidate"
+    ],
+    "prohibited_actions": [
+      "publish-externally",
+      "send-messages",
+      "change-live-schedules",
+      "delete-source-history",
+      "copy-private-content-to-core",
+      "rewrite-canonical-manuscript",
+      "schedule-publication",
+      "invent-classroom-scene",
+      "duplicate-reflection-ledger"
+    ],
+    "dependency_checks": [
+      "Resolve private source, output, account and executor bindings; unresolved required bindings block dependent work.",
+      "Verify current authorization, tested capabilities and one shared writer lease, including independent external sessions.",
+      "Read exact source revisions and completeness; unavailable or partial sources never establish no work.",
+      "Preserve prior complete state and reconcile uncertain output with its original request ID before any repeat write.",
+      "Verify full original reflection and original date are preserved in the canonical ledger before distillation.",
+      "Work forward on the current developing chapter; record conceptual significance, tensions, chapter/location/action/reason.",
+      "Compare both published and banked inventory and Published-as markers before one-thought candidacy.",
+      "Keep exact-session voice observations separate from inferred profiles; preferred voice confirmation remains a binding requirement.",
+      "Queue fields are Date, Title, One thought, Source, Status, File link; candidate dates at least seven days apart."
+    ],
+    "uncertain_write_policy": "stop_and_reconcile"
+  },
+  "success_checks": [
+    "Read back original-preservation reference and private proposal with one claim and one sourced example.",
+    "Proposal, draft, banked, scheduled and published remain distinct; only actual accepted state is reported.",
+    "Missing preferred voice or publication inventory is explicit; no invented anecdote, source or approval.",
+    "Record exact request, source revisions, output hash and native destination readback; label remaining coverage gaps."
+  ],
+  "failure": {
+    "max_safe_read_retries": 1,
+    "continue_independent_work": true,
+    "report_next_step": true
+  },
+  "provenance": {
+    "contract_refs": [
+      "ai-ops/workflow-contracts/reflection-substack-bank.md",
+      "ai-ops/knowledge/substack-voice.md",
+      "skills/chapter-bank/SKILL.md",
+      "ai-ops/workflow-contracts/non-school-contracts.md#book-reflection-substack-bank"
+    ]
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "workflow_id": "book-manuscript-operations",
+  "contract_version": "2026-10-14.1",
+  "title": "Current manuscript checks and derived reading artifacts",
+  "domain": "book",
+  "owners": {
+    "execution_owner_ref": "private:current-owner:book-manuscript-operations",
+    "maintenance_owner_ref": "private:technical-maintainer"
+  },
+  "execution": {
+    "executor_ref": "private:authorized-executor:book-manuscript-operations",
+    "account_refs": [
+      "private:domain-account:book"
+    ],
+    "required_capabilities": [
+      "native-document-read",
+      "local-python",
+      "private-artifact-readback"
+    ],
+    "privacy_partition": "book-private",
+    "concurrency_key": "private:book-manuscript-writer"
+  },
+  "trigger": {
+    "kind": "on_demand"
+  },
+  "sources": [
+    {
+      "source_ref": "private:current-manuscript",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:book-decision-and-voice-sources",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:book-source-manifest",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    }
+  ],
+  "outputs": [
+    {
+      "output_ref": "private:book-derived-checks",
+      "kind": "artifact",
+      "verification": "content_and_destination_readback"
+    }
+  ],
+  "policy": {
+    "allowed_actions": [
+      "read-current-manuscript",
+      "run-deterministic-checks",
+      "save-derived-review"
+    ],
+    "prohibited_actions": [
+      "publish-externally",
+      "send-messages",
+      "change-live-schedules",
+      "delete-source-history",
+      "copy-private-content-to-core",
+      "rewrite-canonical-manuscript",
+      "restore-retired-authorship-tags",
+      "invent-case-or-citation",
+      "replace-current-draft-with-legacy-export"
+    ],
+    "dependency_checks": [
+      "Resolve private source, output, account and executor bindings; unresolved required bindings block dependent work.",
+      "Verify current authorization, tested capabilities and one shared writer lease, including independent external sessions.",
+      "Read exact source revisions and completeness; unavailable or partial sources never establish no work.",
+      "Preserve prior complete state and reconcile uncertain output with its original request ID before any repeat write.",
+      "Latest author draft controls; current Google Docs binding must be verified. Roam and old exports are reconciliation sources only.",
+      "Load current book-revision decisions and voice/tics references; record unresolved P-item assumptions without inventing rulings.",
+      "Use existing manuscript_check and check_consistency for their actual supported formats; check_citations.py is planned, not implemented.",
+      "This invocation produces checks/derived artifacts only; chapter integration and manuscript writeback need their own accepted change list."
+    ],
+    "uncertain_write_policy": "stop_and_reconcile"
+  },
+  "success_checks": [
+    "Preserve original chapter text; report exact unique Find locations and actual citation/source gaps.",
+    "Separate mechanical checks, substantive bracketed proposals and open editorial calls; no manuscript tags added.",
+    "Read back derived artifact and source version; rendering is not editorial or publication acceptance.",
+    "Record exact request, source revisions, output hash and native destination readback; label remaining coverage gaps."
+  ],
+  "failure": {
+    "max_safe_read_retries": 1,
+    "continue_independent_work": true,
+    "report_next_step": true
+  },
+  "provenance": {
+    "contract_refs": [
+      "skills/manuscript-ops/SKILL.md",
+      "skills/book-revision/SKILL.md",
+      "skills/book-revision/reference/decisions.md",
+      "ai-ops/knowledge/writing-voice.md",
+      "private:source-memory-artifact-audit-20261014",
+      "ai-ops/workflow-contracts/non-school-contracts.md#book-manuscript-operations"
+    ]
+  }
+}

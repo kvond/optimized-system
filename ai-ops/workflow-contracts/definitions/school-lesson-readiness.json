@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "workflow_id": "school-lesson-readiness",
+  "contract_version": "2026-10-14.1",
+  "title": "Bounded native lesson readiness and code-repair procedure",
+  "domain": "school",
+  "owners": {
+    "execution_owner_ref": "existing-lesson-workflow-owner",
+    "maintenance_owner_ref": "codex-school-maintenance"
+  },
+  "execution": {
+    "executor_ref": "existing-lesson-workflow-owner",
+    "account_refs": [
+      "school-google",
+      "school-ic"
+    ],
+    "required_capabilities": [
+      "school-native-browser-read",
+      "school-native-lesson-repair"
+    ],
+    "privacy_partition": "school-private",
+    "concurrency_key": "school-shared-browser-and-sources"
+  },
+  "trigger": {
+    "kind": "on_demand"
+  },
+  "sources": [
+    {
+      "source_ref": "private:current-agenda-lesson-scope",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:current-teaching-manual-all-applicable-tabs",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:actual-native-original-and-current-decks",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:existing-lesson-task-owner-and-authority",
+      "required": true,
+      "coverage": "bounded",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:current-checklist-and-decisions",
+      "required": true,
+      "coverage": "bounded",
+      "max_age_seconds": 300
+    }
+  ],
+  "outputs": [
+    {
+      "output_ref": "private:native-lesson-repair-readback",
+      "kind": "receipt",
+      "verification": "content_and_destination_readback"
+    },
+    {
+      "output_ref": "private:lesson-readiness-factor-checklist",
+      "kind": "report",
+      "verification": "content_and_destination_readback"
+    }
+  ],
+  "policy": {
+    "allowed_actions": [
+      "inspect-original-and-current-native-slides",
+      "perform-authorized-bounded-lesson-repair",
+      "verify-native-codes-and-rendered-coverage",
+      "prepare-exact-student-facing-lms-page"
+    ],
+    "prohibited_actions": [
+      "copy-credentials-or-profiles",
+      "broaden-sharing",
+      "delete-or-restore-source-history",
+      "infer-absence-from-provider-failure",
+      "retry-uncertain-write",
+      "clear-uncertainty-automatically",
+      "change-teacher-delivery-marks",
+      "invent-identity-or-lesson-match",
+      "create-competing-schedule",
+      "write-ic-grades",
+      "send-feedback-email",
+      "send-student-or-guardian-message",
+      "change-school-schedules",
+      "overwrite-student-answers",
+      "submit-student-form",
+      "roundtrip-native-master-through-powerpoint",
+      "treat-code-count-as-visual-completion"
+    ],
+    "dependency_checks": [
+      "Resolve private references and verify exact school identity, tested capability, current authority and sole active owner before dependent work.",
+      "Acquire the shared browser/source lease including external sessions; a declared concurrency key or missing receipt is not proof that another writer is idle.",
+      "Read current authoritative sources and compare relevant revisions immediately before each mutation; stop that mutation on changed, partial or unavailable evidence.",
+      "Keep private records and raw evidence outside Git; a configured task, schema validation or open tab never establishes completed execution.",
+      "Catalog only: first verify current existing task owner/capability and exact bounded scope; no school-account migration or new schedule follows from this definition.",
+      "An independent lesson implementation may own the exact sources. Confirm ownership before any browser/deck action and retain that owner.",
+      "Resolve current Agenda, original/current deck IDs and source/manual revisions; inspect all original/current slides including image-only material before claiming full coverage.",
+      "Follow installed school-assignment-setup and current lesson-audit/sweep rules; keep restoration, enhancement, codes, native appearance and LMS route checks distinct.",
+      "Preserve purposeful repetition, originals, notes, response regions, protected slides and valid codes. Enhance only eligible content before VT/code integration.",
+      "Read current Skill 3 and Appendix B before code repair; preserve existing IDs, pair by question identity and prevent duplicate markers outside student writing.",
+      "Count verified genuine added Notes boxes separately from baseline and Revision; exclude prompts/templates/decorations/empty placeholders and disclose unknown distributed-baseline provenance.",
+      "A parser/deployment repair is separate from a prompt or native code edit; readable matched missing codes alone do not hold grades, except exact current Photosynthesis repair-first scope.",
+      "Recheck exact native source and applicable manual revision before writing; verify changed objects, complete rendered coverage, saved links and retained answers afterward."
+    ],
+    "uncertain_write_policy": "stop_and_reconcile"
+  },
+  "success_checks": [
+    "Bounded receipt distinguishes actual native restoration, codes, visual/content coverage, exact Form/folder/LMS links, source revisions and all unverified factors.",
+    "Every change preserves original IDs/history and has native saved/rendered readback; current source reader acceptance remains separate.",
+    "Writing this contract, saving a task or checking a small page set never completes the separate live lesson-readiness project."
+  ],
+  "failure": {
+    "max_safe_read_retries": 2,
+    "continue_independent_work": true,
+    "report_next_step": true
+  },
+  "provenance": {
+    "contract_refs": [
+      "ai-ops/workflow-contracts/school-operations-runbook.md#school-lesson-readiness",
+      "ai-ops/workflow-contracts/school-lesson-review-and-code-repair.md",
+      "skill:school-assignment-setup",
+      "skill:school-lesson-audit",
+      "skill:school-slides-sweep"
+    ]
+  }
+}

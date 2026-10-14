@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "workflow_id": "personal-calendar-school-email-review",
+  "contract_version": "2026-10-14.1",
+  "title": "Existing daily home calendars and received school-mail review",
+  "domain": "personal",
+  "owners": {
+    "execution_owner_ref": "private:current-owner:personal-calendar-school-email-review",
+    "maintenance_owner_ref": "private:technical-maintainer"
+  },
+  "execution": {
+    "executor_ref": "private:existing-executor:personal-calendar-school-email-review",
+    "account_refs": [
+      "private:main-codex",
+      "private:home-google",
+      "private:school-google"
+    ],
+    "required_capabilities": [
+      "home-calendar-read",
+      "school-calendar-read",
+      "received-school-mail-read",
+      "task-output-readback"
+    ],
+    "privacy_partition": "personal-private",
+    "concurrency_key": "private:day-review-shared-output"
+  },
+  "trigger": {
+    "kind": "existing_schedule",
+    "schedule_ref": "Local Codex::calendar-and-school-email-review"
+  },
+  "sources": [
+    {
+      "source_ref": "private:home-calendars-including-routine",
+      "required": true,
+      "coverage": "bounded",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:school-calendar",
+      "required": true,
+      "coverage": "bounded",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:received-school-outlook-inbox",
+      "required": true,
+      "coverage": "bounded",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:last-verified-day-review-receipt",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    }
+  ],
+  "outputs": [
+    {
+      "output_ref": "private:existing-day-review-chat",
+      "kind": "report",
+      "verification": "content_and_destination_readback"
+    }
+  ],
+  "policy": {
+    "allowed_actions": [
+      "page-bounded-calendars",
+      "read-received-school-mail",
+      "save-concise-day-review"
+    ],
+    "prohibited_actions": [
+      "publish-externally",
+      "send-messages",
+      "change-live-schedules",
+      "delete-source-history",
+      "copy-private-content-to-core",
+      "edit-calendar-events",
+      "reply-to-mail",
+      "change-tasks",
+      "change-grades",
+      "report-overlaps"
+    ],
+    "dependency_checks": [
+      "Resolve private source, output, account and executor bindings; unresolved required bindings block dependent work.",
+      "Verify current authorization, tested capabilities and one shared writer lease, including independent external sessions.",
+      "Read exact source revisions and completeness; unavailable or partial sources never establish no work.",
+      "Preserve prior complete state and reconcile uncertain output with its original request ID before any repeat write.",
+      "Retain current local Codex owner and 04:30 Eastern schedule; serialize with separate morning brief before any proposed consolidation.",
+      "Verify home and school identities separately; page today and tomorrow completely, including Routine and school commitments.",
+      "Read actual received Outlook/Exchange since last verified receipt, bounded to last two business days; Gmail/forwarded messages are partial only.",
+      "Do not report overlaps. Identify missing times, school-day markers/duties/classes, preparation deadlines and home commitments.",
+      "Distinguish direct requests from forwarded/self-sent summaries; inaccessible session remains an explicit coverage gap."
+    ],
+    "uncertain_write_policy": "stop_and_reconcile"
+  },
+  "success_checks": [
+    "One compact daily review includes Eastern times, calendar concerns and few messages needing an answer, with exact available source links.",
+    "Coverage describes each separate calendar/mail source and bounded window; no full-inbox claim from partial connectors.",
+    "Daily requested review delivered once to existing chat; no reply, event edit or duplicate schedule.",
+    "Record exact request, source revisions, output hash and native destination readback; label remaining coverage gaps."
+  ],
+  "failure": {
+    "max_safe_read_retries": 1,
+    "continue_independent_work": true,
+    "report_next_step": true
+  },
+  "provenance": {
+    "contract_refs": [
+      "ai-ops/workflow-contracts/home-and-school-day-review.md",
+      "private:scheduler-registry-20261014",
+      "ai-ops/workflow-contracts/non-school-contracts.md#personal-calendar-school-email-review"
+    ]
+  }
+}

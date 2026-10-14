@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "workflow_id": "higher-ed-dip-review",
+  "contract_version": "2026-10-14.1",
+  "title": "DIP argument and manual-alignment review",
+  "domain": "higher-ed",
+  "owners": {
+    "execution_owner_ref": "private:current-owner:higher-ed-dip-review",
+    "maintenance_owner_ref": "private:technical-maintainer"
+  },
+  "execution": {
+    "executor_ref": "private:authorized-executor:higher-ed-dip-review",
+    "account_refs": [
+      "private:domain-account:higher-ed"
+    ],
+    "required_capabilities": [
+      "native-document-read",
+      "private-artifact-readback"
+    ],
+    "privacy_partition": "higher-ed-private",
+    "concurrency_key": "private:workflow-writer:higher-ed-dip-review"
+  },
+  "trigger": {
+    "kind": "on_demand"
+  },
+  "sources": [
+    {
+      "source_ref": "private:current-dip-paper",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:current-dip-manual-and-assignment",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:dip-construct-literature-evidence",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    }
+  ],
+  "outputs": [
+    {
+      "output_ref": "private:dip-review-draft",
+      "kind": "artifact",
+      "verification": "content_and_destination_readback"
+    }
+  ],
+  "policy": {
+    "allowed_actions": [
+      "read-current-manual",
+      "review-dip-through-line",
+      "save-review-observations"
+    ],
+    "prohibited_actions": [
+      "publish-externally",
+      "send-messages",
+      "change-live-schedules",
+      "delete-source-history",
+      "copy-private-content-to-core",
+      "post-grades",
+      "invent-current-manual-rules",
+      "impose-historical-scope-formula",
+      "rewrite-student-paper"
+    ],
+    "dependency_checks": [
+      "Resolve private source, output, account and executor bindings; unresolved required bindings block dependent work.",
+      "Verify current authorization, tested capabilities and one shared writer lease, including independent external sessions.",
+      "Read exact source revisions and completeness; unavailable or partial sources never establish no work.",
+      "Preserve prior complete state and reconcile uncertain output with its original request ID before any repeat write.",
+      "Bind current manual and assignment before treating preserved conventions as requirements; report exact native-source gaps.",
+      "Trace Chapter I through-line and construct/measure fit from cited text; literature grouping and cause claims need source evidence.",
+      "Keep possible root causes provisional; assessment may confirm, revise or overturn them.",
+      "Separate assessment, indicator, measurement and outcomes; pair manual and literature terms consistently after current manual verification.",
+      "Reconcile historical scope-formula conflict against advisor guide; do not impose it or invent current grading authority."
+    ],
+    "uncertain_write_policy": "stop_and_reconcile"
+  },
+  "success_checks": [
+    "Every observation links an exact paper location and applicable manual/research evidence or is labeled provisional.",
+    "Leadership readers receive defined terms and visible distinctions between contextual suggestion and assessment findings.",
+    "No numerical grade or current-manual compliance claim is made with unresolved native sources.",
+    "Record exact request, source revisions, output hash and native destination readback; label remaining coverage gaps."
+  ],
+  "failure": {
+    "max_safe_read_retries": 1,
+    "continue_independent_work": true,
+    "report_next_step": true
+  },
+  "provenance": {
+    "contract_refs": [
+      "ai-ops/knowledge/wilmington-dip-conventions.md",
+      "private:source-project-audit-20261014",
+      "private:source-memory-artifact-audit-20261014",
+      "ai-ops/workflow-contracts/non-school-contracts.md#higher-ed-dip-review"
+    ]
+  }
+}

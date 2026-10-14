@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "workflow_id": "personal-finance-brief",
+  "contract_version": "2026-10-14.1",
+  "title": "Restricted existing finance brief source-binding scaffold",
+  "domain": "personal",
+  "owners": {
+    "execution_owner_ref": "private:current-owner:personal-finance-brief",
+    "maintenance_owner_ref": "private:technical-maintainer"
+  },
+  "execution": {
+    "executor_ref": "private:existing-executor:personal-finance-brief",
+    "account_refs": [
+      "private:main-chatgpt",
+      "private:restricted-finance"
+    ],
+    "required_capabilities": [
+      "restricted-finance-source-read",
+      "task-output-readback"
+    ],
+    "privacy_partition": "personal-private",
+    "concurrency_key": "private:workflow-writer:personal-finance-brief"
+  },
+  "trigger": {
+    "kind": "existing_schedule",
+    "schedule_ref": "Main ChatGPT::6aad057be3548191ab9fb3a994074788"
+  },
+  "sources": [
+    {
+      "source_ref": "private:finance-current-task-policy",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:finance-authorized-source-bindings",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:finance-current-source-evidence",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    }
+  ],
+  "outputs": [
+    {
+      "output_ref": "private:existing-finance-task-output",
+      "kind": "report",
+      "verification": "content_and_destination_readback"
+    }
+  ],
+  "policy": {
+    "allowed_actions": [
+      "verify-finance-source-binding",
+      "read-authorized-finance-sources",
+      "draft-restricted-finance-summary"
+    ],
+    "prohibited_actions": [
+      "publish-externally",
+      "send-messages",
+      "change-live-schedules",
+      "delete-source-history",
+      "copy-private-content-to-core",
+      "trade",
+      "transfer-funds",
+      "change-financial-records",
+      "infer-financial-profile",
+      "substitute-public-news-for-account-data"
+    ],
+    "dependency_checks": [
+      "Resolve private source, output, account and executor bindings; unresolved required bindings block dependent work.",
+      "Verify current authorization, tested capabilities and one shared writer lease, including independent external sessions.",
+      "Read exact source revisions and completeness; unavailable or partial sources never establish no work.",
+      "Preserve prior complete state and reconcile uncertain output with its original request ID before any repeat write.",
+      "Source export has finance metadata only; exact current task body, clock/timezone, sources and destination are unverified requirements.",
+      "No finance task may run from this scaffold until current private source scope and authorized destination are actually read under correct identity.",
+      "Use only verified source figures and as-of dates; distinguish unavailable data from zero balances or no activity.",
+      "Do not copy financial history, profiles or account identifiers into core or another provider."
+    ],
+    "uncertain_write_policy": "stop_and_reconcile"
+  },
+  "success_checks": [
+    "Summary uses only resolved current source evidence, explicitly marks missing coverage and stays in restricted existing destination.",
+    "No balance, source, recommendation, delivery or successful scheduled execution is fabricated from metadata.",
+    "Record exact request, source revisions, output hash and native destination readback; label remaining coverage gaps."
+  ],
+  "failure": {
+    "max_safe_read_retries": 1,
+    "continue_independent_work": true,
+    "report_next_step": true
+  },
+  "provenance": {
+    "contract_refs": [
+      "ai-ops/workflow-contracts/personal-staged.md",
+      "private:source-project-audit-20261014",
+      "private:scheduler-registry-20261014",
+      "ai-ops/workflow-contracts/non-school-contracts.md#personal-finance-brief"
+    ]
+  }
+}

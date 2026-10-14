@@ -18,6 +18,7 @@ Usage (run via Cowork / Claude Code):
         --report report.csv --resolved resolved_picks.csv
 """
 import argparse, csv, os, re, sqlite3, sys, zipfile
+from pathlib import Path
 from xml.etree import ElementTree as ET
 
 IMG_RE = re.compile(
@@ -33,18 +34,17 @@ def read_text(path):
         try:
             with zipfile.ZipFile(path) as z:
                 xml = z.read("word/document.xml")
-            # strip tags, keep text nodes
-            text = re.sub(r"<[^>]+>", " ", xml.decode("utf-8", "ignore"))
-            return re.sub(r"\s+", " ", text)
-        except Exception as e:
-            print(f"  ! could not read {path}: {e}", file=sys.stderr)
-            return ""
+            tree = ET.fromstring(xml)
+            ns = {"w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main"}
+            return "\n".join("".join(t.text or "" for t in p.findall(".//w:t", ns))
+                             for p in tree.findall(".//w:p", ns))
+        except (OSError, KeyError, zipfile.BadZipFile, UnicodeError, ET.ParseError) as e:
+            raise ValueError("unreadable selection document") from e
     try:
-        with open(path, encoding="utf-8", errors="ignore") as f:
+        with open(path, encoding="utf-8") as f:
             return f.read()
-    except Exception as e:
-        print(f"  ! could not read {path}: {e}", file=sys.stderr)
-        return ""
+    except (OSError, UnicodeError) as e:
+        raise ValueError("unreadable selection document") from e
 
 
 def candidate_keys(mention):
@@ -73,16 +73,30 @@ def build_index(con):
 
 
 def resolve(mention, idx):
+    # A qualified selection is an identity, not a hint to discard. In particular,
+    # never fall back from a missing exact path to another file with that basename.
+    selected = mention.strip()
+    qualified = os.path.dirname(selected) != ""
+    if qualified:
+        if not os.path.isabs(selected):
+            return "missing", os.path.basename(selected).lower(), "", "", ""
+        hits = [h for values in idx.values() for h in values
+                if os.path.normpath(h[0]) == os.path.normpath(selected)]
+        return resolve_hits(os.path.basename(selected).lower(), hits)
     for key in candidate_keys(mention):
         if key in idx:
-            hits = idx[key]
-            primary = [h for h in hits if h[1] == 0]  # prefer non-duplicates
-            pool = primary if primary else hits
-            if len(pool) == 1:
-                p, _, ev, taken = pool[0]
-                return "resolved", key, p, ev, taken
-            return "ambiguous", key, "|".join(h[0] for h in pool), "", ""
+            return resolve_hits(key, idx[key])
     return "missing", os.path.basename(mention.strip()).lower(), "", "", ""
+
+
+def resolve_hits(key, hits):
+    if not hits or any(not os.path.isfile(h[0]) or not os.access(h[0], os.R_OK) for h in hits):
+        return "missing", key, "|".join(h[0] for h in hits), "", ""
+    if len(hits) != 1:
+        # Duplicate-content flags do not choose the user's intended physical file.
+        return "ambiguous", key, "|".join(h[0] for h in hits), "", ""
+    p, _, ev, taken = hits[0]
+    return "resolved", key, p, ev, taken
 
 
 def main():
@@ -93,7 +107,8 @@ def main():
     ap.add_argument("--resolved", default="resolved_picks.csv")
     args = ap.parse_args()
 
-    con = sqlite3.connect(args.db)
+    database = Path(args.db).resolve(strict=True)
+    con = sqlite3.connect(database.as_uri() + "?mode=ro", uri=True)
     idx = build_index(con)
 
     report_rows, resolved_rows = [], []
@@ -104,9 +119,23 @@ def main():
         f for f in os.listdir(args.kids_dir)
         if os.path.splitext(f)[1].lower() in {".md", ".txt", ".docx"}
     )
+    if not kid_files:
+        raise ValueError("no selection files; coverage is unknown")
+    # Validate all inputs and destinations before replacing either prior report.
+    protected = [database] + [Path(args.kids_dir, kf).resolve() for kf in kid_files]
+    protected += [Path(h[0]).resolve() for values in idx.values() for h in values]
+    targets = [Path(args.report).resolve(), Path(args.resolved).resolve()]
+    if targets[0] == targets[1] or any(t in protected for t in targets):
+        raise ValueError("report destination aliases an input or the other report")
+    for target in targets:
+        if target.exists() and any(p.exists() and os.path.samefile(target, p) for p in protected):
+            raise ValueError("report destination aliases an input")
+    if targets[0].exists() and targets[1].exists() and os.path.samefile(*targets):
+        raise ValueError("report destinations alias each other")
+    texts = {kf: read_text(os.path.join(args.kids_dir, kf)) for kf in kid_files}
     for kf in kid_files:
         kid = os.path.splitext(kf)[0]
-        text = read_text(os.path.join(args.kids_dir, kf))
+        text = texts[kf]
         mentions = []
         seen = set()
         for m in IMG_RE.findall(text):
@@ -114,6 +143,8 @@ def main():
             if m and m.lower() not in seen:
                 seen.add(m.lower())
                 mentions.append(m)
+        if not mentions:
+            raise ValueError("selection file has no recognized photo mentions; coverage is unknown")
         per_kid.setdefault(kid, {"resolved": 0, "ambiguous": 0, "missing": 0})
         for mention in mentions:
             status, fname, path, ev, taken = resolve(mention, idx)
@@ -151,7 +182,12 @@ def main():
     if counts["ambiguous"] or counts["missing"]:
         print("\n  STOP: fix ambiguous/missing picks before any ordering or editing stage.")
     con.close()
+    return 1 if counts["ambiguous"] or counts["missing"] else 0
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        sys.exit(main())
+    except (OSError, ValueError, sqlite3.Error) as exc:
+        print(f"STOP: selection/catalog read or destination validation failed ({type(exc).__name__}); prior reports require reconciliation.", file=sys.stderr)
+        sys.exit(2)

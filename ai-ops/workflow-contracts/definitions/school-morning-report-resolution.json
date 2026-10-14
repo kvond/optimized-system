@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "workflow_id": "school-morning-report-resolution",
+  "contract_version": "2026-10-14.1",
+  "title": "Resolve current Hub morning report and resume answered issues",
+  "domain": "school",
+  "owners": {
+    "execution_owner_ref": "home-codex",
+    "maintenance_owner_ref": "codex-school-maintenance"
+  },
+  "execution": {
+    "executor_ref": "home-codex",
+    "account_refs": [
+      "school-google",
+      "school-ic"
+    ],
+    "required_capabilities": [
+      "school-hub-read",
+      "school-native-browser-read",
+      "school-hub-authorized-repair"
+    ],
+    "privacy_partition": "school-private",
+    "concurrency_key": "school-shared-browser-and-sources"
+  },
+  "trigger": {
+    "kind": "existing_schedule",
+    "schedule_ref": "Local Codex::resolve-morning-hub-report"
+  },
+  "sources": [
+    {
+      "source_ref": "private:hub-today-system-notes",
+      "required": true,
+      "coverage": "bounded",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:current-agenda-bindings",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:existing-hub-tasks-checklist",
+      "required": true,
+      "coverage": "bounded",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:actual-morning-helper-feedback-receipts",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:active-writer-ownership",
+      "required": true,
+      "coverage": "bounded",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:pending-question-answers",
+      "required": true,
+      "coverage": "bounded",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:current-deterministic-missing-work-and-eligibility-policy",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    }
+  ],
+  "outputs": [
+    {
+      "output_ref": "private:hub-resolved-issue-readback",
+      "kind": "receipt",
+      "verification": "content_and_destination_readback"
+    },
+    {
+      "output_ref": "private:existing-checklist-questions-and-next-steps",
+      "kind": "report",
+      "verification": "content_and_destination_readback"
+    }
+  ],
+  "policy": {
+    "allowed_actions": [
+      "investigate-current-hub-conflict",
+      "repair-authorized-non-racing-defect",
+      "reconcile-existing-receipts",
+      "record-numbered-decision-question",
+      "resume-answered-issue",
+      "prepare-next-safe-window-repair"
+    ],
+    "prohibited_actions": [
+      "copy-credentials-or-profiles",
+      "broaden-sharing",
+      "delete-or-restore-source-history",
+      "infer-absence-from-provider-failure",
+      "retry-uncertain-write",
+      "clear-uncertainty-automatically",
+      "change-teacher-delivery-marks",
+      "invent-identity-or-lesson-match",
+      "create-competing-schedule",
+      "write-ic-grades",
+      "start-second-grade-writer",
+      "launch-competing-feedback-job",
+      "send-feedback-email",
+      "send-student-or-guardian-message",
+      "mutate-source-after-cutoff",
+      "clear-helper-recovery-block",
+      "repeat-unchanged-question",
+      "disable-weekday-helper-entry",
+      "certify-all-assignments-from-one-panel"
+    ],
+    "dependency_checks": [
+      "Resolve private references and verify exact school identity, tested capability, current authority and sole active owner before dependent work.",
+      "Acquire the shared browser/source lease including external sessions; a declared concurrency key or missing receipt is not proof that another writer is idle.",
+      "Read current authoritative sources and compare relevant revisions immediately before each mutation; stop that mutation on changed, partial or unavailable evidence.",
+      "Keep private records and raw evidence outside Git; a configured task, schema validation or open tab never establishes completed execution.",
+      "Verify current report date/run IDs and independent grade, feedback, filing and index evidence; label older receipts historical.",
+      "Keep before-07:00 source/content/binding repairs in the existing preparation task records; at 08:00 investigate and prepare them, never race helper/feedback frozen sources or panels.",
+      "Technical repairs require current canonical repo instructions, tested change, established authorized release and deployed/source/destination readback.",
+      "Do not start competing writers. Missing receipt is not evidence another job is idle; preserve uncertain-grade recovery until exact existing scope is reconciled.",
+      "Ask only genuine teaching/identity/lesson decisions or necessary access actions, normally at most three numbered questions, each with context, evidence, exact blocker and concrete choices.",
+      "Preserve unanswered questions once in existing private records; continue independent work. On an answer reread current source and resume without asking for another continue.",
+      "Teacher notes are task requests within existing authority, never permission for new recipients, broader sharing, changed grade policy, credential access or spending.",
+      "Keep this follow-up on home Codex until a destination capability trial and coordinated one-owner cutover are verified; do not move other morning jobs.",
+      "Resolve current deployed deterministic missing-work-zero and two-week submission-window policy; eligible automatic zeros and later higher-only replacements require its complete-coverage, original-event and exclusion gates.",
+      "Never choose the eligibility-window anchor from discovery or modified dates. If authoritative policy or coverage is unavailable, hold dependent zero/replacement decisions; exact Photosynthesis empty intake still waits."
+    ],
+    "uncertain_write_policy": "stop_and_reconcile"
+  },
+  "success_checks": [
+    "Each resolved issue has actual source/deployed/destination evidence and saved current Hub/checklist readback with teacher notes preserved.",
+    "Remaining issues name exact class/section, lesson, verified student scope/link/slide or explicitly unverified fields, concrete cause, next action and owner.",
+    "Report No questions for you when none are needed; otherwise preserve one compact numbered question list and continue independent work.",
+    "No grade completion claim lacks exact helper receipt and IC evidence; no unchanged blocker receives repeated polling or duplicate questions."
+  ],
+  "failure": {
+    "max_safe_read_retries": 2,
+    "continue_independent_work": true,
+    "report_next_step": true
+  },
+  "provenance": {
+    "contract_refs": [
+      "ai-ops/workflow-contracts/school-operations-runbook.md#school-morning-report-resolution",
+      "private:current-automation/resolve-morning-hub-report",
+      "private:current-automation/morning-roster-check-and-submission-tidy"
+    ]
+  }
+}

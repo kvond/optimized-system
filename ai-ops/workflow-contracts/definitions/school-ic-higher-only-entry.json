@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "workflow_id": "school-ic-higher-only-entry",
+  "contract_version": "2026-10-14.1",
+  "title": "Existing helper exact mapped higher-only grade entry",
+  "domain": "school",
+  "owners": {
+    "execution_owner_ref": "school-chrome-helper",
+    "maintenance_owner_ref": "codex-school-maintenance"
+  },
+  "execution": {
+    "executor_ref": "school-chrome-helper",
+    "account_refs": [
+      "school-google",
+      "school-ic"
+    ],
+    "required_capabilities": [
+      "school-hub-read",
+      "school-ic-roster-read",
+      "school-ic-helper-write"
+    ],
+    "privacy_partition": "school-private",
+    "concurrency_key": "school-shared-browser-and-sources"
+  },
+  "trigger": {
+    "kind": "existing_schedule",
+    "schedule_ref": "School Chrome helper::kkficpedebnobolfpkpkpfagelofbmde"
+  },
+  "sources": [
+    {
+      "source_ref": "private:frozen-hub-scores-and-source-revisions",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:ic-exact-assignment-map",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:ic-assignment-roster-and-flags",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:helper-recovery-and-receipts",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:school-current-decisions",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:current-deterministic-missing-work-and-eligibility-policy",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    }
+  ],
+  "outputs": [
+    {
+      "output_ref": "private:helper-exact-cell-readback-receipt",
+      "kind": "receipt",
+      "verification": "content_and_destination_readback"
+    },
+    {
+      "output_ref": "private:hub-per-assignment-grade-result",
+      "kind": "report",
+      "verification": "content_and_destination_readback"
+    }
+  ],
+  "policy": {
+    "allowed_actions": [
+      "helper-enter-eligible-blank",
+      "helper-raise-lower-score",
+      "keep-higher-or-exempt-score",
+      "helper-save-reload-readback",
+      "reconcile-existing-helper-receipt"
+    ],
+    "prohibited_actions": [
+      "copy-credentials-or-profiles",
+      "broaden-sharing",
+      "delete-or-restore-source-history",
+      "infer-absence-from-provider-failure",
+      "retry-uncertain-write",
+      "clear-uncertainty-automatically",
+      "change-teacher-delivery-marks",
+      "invent-identity-or-lesson-match",
+      "create-competing-schedule",
+      "start-second-grade-writer",
+      "lower-ic-score",
+      "change-exempt-flags-or-comments",
+      "retry-uncertain-grade-save",
+      "clear-helper-recovery-block",
+      "ask-per-assignment-approval",
+      "grade-from-provisional-filing-name",
+      "infer-zero-from-empty-or-unreadable-intake",
+      "set-or-clear-missing-late-flags"
+    ],
+    "dependency_checks": [
+      "Resolve private references and verify exact school identity, tested capability, current authority and sole active owner before dependent work.",
+      "Acquire the shared browser/source lease including external sessions; a declared concurrency key or missing receipt is not proof that another writer is idle.",
+      "Read current authoritative sources and compare relevant revisions immediately before each mutation; stop that mutation on changed, partial or unavailable evidence.",
+      "Keep private records and raw evidence outside Git; a configured task, schema validation or open tab never establishes completed execution.",
+      "Only the existing registered Chrome helper may write IC grades; a catalog entry or Codex dispatch does not grant another writer.",
+      "Freeze exact source revisions and IC school-year, section, term, assignment, component and ten-point binding; recheck before writing and stop if changed.",
+      "Require complete current assignment membership, verified identity and source eligibility; keep Study Hall outside grading.",
+      "Fill eligible blanks or raise lower scores only; preserve higher grades, Exempt flags, comments and history.",
+      "Count meaningful usable received Notes/Concept Bank and Revision separately with coded blanks in denominators; zero denominator is N/A, never zero.",
+      "Missing codes/scores or unfinished readable matched work alone do not hold grades; source access, identity, wrong lesson and ambiguous response remain separate safeguards.",
+      "Apply the exact registered Photosynthesis repair-first exception and current exclusions; wait on verified empty intake without inventing a missing-work zero.",
+      "Any uncertain save/readback stops all further helper writes; no automatic retry, block clearing or new approval popup.",
+      "Resolve current deployed deterministic missing-work-zero and two-week submission-window policy; eligible automatic zeros and later higher-only replacements require its complete-coverage, original-event and exclusion gates.",
+      "Never choose the eligibility-window anchor from discovery or modified dates. If authoritative policy or coverage is unavailable, hold dependent zero/replacement decisions; exact Photosynthesis empty intake still waits."
+    ],
+    "uncertain_write_policy": "stop_and_reconcile"
+  },
+  "success_checks": [
+    "Exact destination cells were saved, reloaded and read back against frozen source revisions and assignment bindings.",
+    "Per class, section, assignment and component: distinguish entered, raised, kept, left, unattempted and unconfirmed results with receipt evidence.",
+    "An unresolved receipt has one exact recovery scope and next step; no verified save prompts the teacher to save again."
+  ],
+  "failure": {
+    "max_safe_read_retries": 2,
+    "continue_independent_work": true,
+    "report_next_step": true
+  },
+  "provenance": {
+    "contract_refs": [
+      "ai-ops/workflow-contracts/school-operations-runbook.md#school-ic-higher-only-entry",
+      "private:current-chrome-helper-contract",
+      "private:current-automation/morning-roster-check-and-submission-tidy",
+      "private:school-authorized-filing-and-exclusions"
+    ]
+  }
+}

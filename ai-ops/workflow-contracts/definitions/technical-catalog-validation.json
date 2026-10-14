@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "workflow_id": "technical-catalog-validation",
+  "contract_version": "2026-10-14.1",
+  "title": "Validate the canonical local workflow catalog",
+  "domain": "technical",
+  "owners": {
+    "execution_owner_ref": "home-codex",
+    "maintenance_owner_ref": "home-codex"
+  },
+  "execution": {
+    "executor_ref": "local-deterministic-runtime",
+    "account_refs": [],
+    "required_capabilities": ["local-catalog-validation"],
+    "privacy_partition": "ai-ops-private",
+    "concurrency_key": "technical-catalog-validation"
+  },
+  "trigger": {"kind": "on_demand"},
+  "sources": [{
+    "source_ref": "source:canonical-workflow-catalog",
+    "required": true,
+    "coverage": "complete",
+    "max_age_seconds": 300
+  }],
+  "outputs": [{
+    "output_ref": "output:catalog-validation",
+    "kind": "report",
+    "verification": "content_and_destination_readback"
+  }],
+  "policy": {
+    "allowed_actions": ["validate-workflow-catalog"],
+    "prohibited_actions": ["external-write", "dispatch-provider", "change-live-schedules", "grade-students", "send-messages"],
+    "dependency_checks": ["Local catalog execution lease held"],
+    "uncertain_write_policy": "stop_and_reconcile"
+  },
+  "success_checks": [
+    "Exact complete catalog IDs, versions and file digests match the saved runner result and destination readback.",
+    "A repeated identical request reads the original receipt; changed input cannot reuse its request ID.",
+    "This proves local catalog validation only, never execution or migration of the catalog's other workflows."
+  ],
+  "failure": {
+    "max_safe_read_retries": 1,
+    "continue_independent_work": true,
+    "report_next_step": true
+  },
+  "provenance": {
+    "contract_refs": ["ai-ops/runbooks/workflow-executor.md", "ai-ops/runtime/workflow_executor.py"]
+  }
+}

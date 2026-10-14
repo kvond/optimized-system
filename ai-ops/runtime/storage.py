@@ -30,8 +30,15 @@ def verified_mount(mount: Path,image: Path) -> dict:
     images=plistlib.loads(_command(['hdiutil','info','-plist'])).get('images',[])
     matched=[i for i in images if any(s.get('mount-point')==str(mount) for s in i.get('system-entities',[]))]
     if len(matched)!=1 or Path(matched[0].get('image-path','')).resolve()!=image.resolve():raise StorageError('mount does not match intended encrypted backing image')
-    encryption=_command(['hdiutil','isencrypted',str(image)]).decode(errors='replace')
-    if not re.search(r'^encrypted:\s*YES\s*$',encryption,re.M):raise StorageError('backing-image encryption unverified; no writes')
+    # The mounted image's fresh authoritative metadata avoids reopening an
+    # attached sparsebundle (isencrypted can fail with Resource temporarily
+    # unavailable). Never accept a truthy string/integer or override false.
+    if 'image-encrypted' in matched[0]:
+        if matched[0]['image-encrypted'] is not True:
+            raise StorageError('backing-image encryption unverified; no writes')
+    else:
+        encryption=_command(['hdiutil','isencrypted',str(image)]).decode(errors='replace')
+        if not re.search(r'^encrypted:\s*YES\s*$',encryption,re.M):raise StorageError('backing-image encryption unverified; no writes')
     return {'mount':str(mount),'backing_image':str(image),'filesystem':'apfs','encryption_verified':True,'mount_verified':True}
 
 @dataclass(frozen=True)

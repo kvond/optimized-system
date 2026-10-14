@@ -58,4 +58,65 @@ class StorageTests(unittest.TestCase):
   paths=self.resolve(initialize=True);initialize_state(paths);config=paths.root/'runtime-storage.json';config.write_text('{"other":true}')
   with self.assertRaises(StorageError):initialize_state(paths)
   self.assertEqual(config.read_text(),'{"other":true}')
+class VerifiedMountMetadataTests(unittest.TestCase):
+ def setUp(self):
+  import plistlib
+  from unittest.mock import patch
+  self.mount=pathlib.Path('/Volumes/Synthetic-Private-Archive')
+  self.image=pathlib.Path('/Volumes/Synthetic-Backing/archive.sparsebundle')
+  self.disk={'MountPoint':str(self.mount),'FilesystemType':'apfs'}
+  self.entry={'image-path':str(self.image),'image-encrypted':True,
+              'system-entities':[{'mount-point':str(self.mount)}]}
+  self.entries=[self.entry];self.fallback=b'encrypted: YES\n';self.calls=[]
+  def command(argv):
+   self.calls.append(argv)
+   if argv[:2]==['diskutil','info']:return plistlib.dumps(self.disk)
+   if argv[:2]==['hdiutil','info']:return plistlib.dumps({'images':self.entries})
+   if argv[:2]==['hdiutil','isencrypted']:return self.fallback
+   raise AssertionError('unexpected command')
+  for target,kwargs in [('storage.os.path.ismount',{'return_value':True}),
+                        ('storage.Path.is_dir',{'return_value':True}),
+                        ('storage._command',{'side_effect':command})]:
+   mocker=patch(target,**kwargs);mocker.start();self.addCleanup(mocker.stop)
+ def verify(self):
+  from storage import verified_mount
+  return verified_mount(self.mount,self.image)
+ def test_true_exact_mounted_metadata_does_not_reopen_busy_image(self):
+  self.assertTrue(self.verify()['encryption_verified'])
+  self.assertFalse(any(c[:2]==['hdiutil','isencrypted'] for c in self.calls))
+ def test_false_nonboolean_metadata_never_falls_back_to_yes(self):
+  for value in (False,1,'true'):
+   self.entry['image-encrypted']=value
+   with self.assertRaises(StorageError):self.verify()
+  self.assertFalse(any(c[:2]==['hdiutil','isencrypted'] for c in self.calls))
+ def test_missing_encryption_metadata_requires_noninteractive_yes_probe(self):
+  self.entry.pop('image-encrypted')
+  self.assertTrue(self.verify()['encryption_verified'])
+  self.assertIn(['hdiutil','isencrypted',str(self.image)],self.calls)
+  self.fallback=b'encrypted: NO\n'
+  with self.assertRaises(StorageError):self.verify()
+ def test_fallback_busy_failure_does_not_infer_encryption(self):
+  from unittest.mock import patch
+  self.entry.pop('image-encrypted')
+  original=__import__('storage')._command
+  def busy(argv):
+   if argv[:2]==['hdiutil','isencrypted']:raise StorageError('busy image')
+   return original(argv)
+  with patch('storage._command',side_effect=busy):
+   with self.assertRaises(StorageError):self.verify()
+ def test_wrong_image_or_duplicate_mount_binding_rejected(self):
+  self.entry['image-path']='/Volumes/Synthetic-Backing/wrong.sparsebundle'
+  with self.assertRaises(StorageError):self.verify()
+  self.entry['image-path']=str(self.image);self.entries.append(dict(self.entry))
+  with self.assertRaises(StorageError):self.verify()
+ def test_wrong_mount_or_filesystem_rejected_despite_encrypted_true(self):
+  self.disk['MountPoint']='/Volumes/Wrong'
+  with self.assertRaises(StorageError):self.verify()
+  self.disk['MountPoint']=str(self.mount);self.disk['FilesystemType']='exfat'
+  with self.assertRaises(StorageError):self.verify()
+ def test_fresh_changed_metadata_rejects_previously_verified_image(self):
+  self.assertTrue(self.verify()['encryption_verified'])
+  self.entry['image-encrypted']=False
+  with self.assertRaises(StorageError):self.verify()
+
 if __name__=='__main__':unittest.main()

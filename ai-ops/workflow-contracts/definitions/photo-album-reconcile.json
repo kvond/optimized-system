@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "workflow_id": "photo-album-reconcile",
+  "contract_version": "2026-10-14.1",
+  "title": "Read-only photo catalog and album selection reconciliation",
+  "domain": "photo",
+  "owners": {
+    "execution_owner_ref": "private:current-owner:photo-album-reconcile",
+    "maintenance_owner_ref": "private:technical-maintainer"
+  },
+  "execution": {
+    "executor_ref": "private:authorized-executor:photo-album-reconcile",
+    "account_refs": [
+      "private:domain-account:photo"
+    ],
+    "required_capabilities": [
+      "local-file-read",
+      "local-python",
+      "private-artifact-readback"
+    ],
+    "privacy_partition": "photo-private",
+    "concurrency_key": "private:workflow-writer:photo-album-reconcile"
+  },
+  "trigger": {
+    "kind": "on_demand"
+  },
+  "sources": [
+    {
+      "source_ref": "private:confirmed-photo-library-binding",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:album-selection-files",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:photo-catalog",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    }
+  ],
+  "outputs": [
+    {
+      "output_ref": "private:photo-review-csv",
+      "kind": "report",
+      "verification": "content_and_destination_readback"
+    },
+    {
+      "output_ref": "private:photo-resolved-picks-csv",
+      "kind": "artifact",
+      "verification": "content_and_destination_readback"
+    }
+  ],
+  "policy": {
+    "allowed_actions": [
+      "read-album-selection",
+      "read-photo-catalog",
+      "save-reconciliation-reports"
+    ],
+    "prohibited_actions": [
+      "publish-externally",
+      "send-messages",
+      "change-live-schedules",
+      "delete-source-history",
+      "copy-private-content-to-core",
+      "move-photos",
+      "edit-photos",
+      "delete-photos",
+      "rewrite-selections",
+      "order-album",
+      "purchase"
+    ],
+    "dependency_checks": [
+      "Resolve private source, output, account and executor bindings; unresolved required bindings block dependent work.",
+      "Verify current authorization, tested capabilities and one shared writer lease, including independent external sessions.",
+      "Read exact source revisions and completeness; unavailable or partial sources never establish no work.",
+      "Preserve prior complete state and reconcile uncertain output with its original request ID before any repeat write.",
+      "Bind actual working folder, selection directory and mounted library; never guess paths or infer identity from cloud thumbnails.",
+      "Verify catalog freshness against selection/library changes; rebuild only through a separately authorized index invocation.",
+      "Selection files must all be readable; exact absolute paths disambiguate. Missing real files and ambiguous basenames remain holds.",
+      "Reports may overwrite only their bound derived destinations, never database, source selection or original photo files.",
+      "Read CSV status and real file existence as well as exit code; clean reconciliation does not authorize arranging or editing."
+    ],
+    "uncertain_write_policy": "stop_and_reconcile"
+  },
+  "success_checks": [
+    "Both CSVs read back; every selection mention has a resolved, ambiguous or missing result.",
+    "Resolved means one actual readable file; chronological order retains date provenance and cannot promote filesystem time to capture time.",
+    "Any unreadable, missing or ambiguous input stops downstream album actions and names the smallest specific correction.",
+    "Record exact request, source revisions, output hash and native destination readback; label remaining coverage gaps."
+  ],
+  "failure": {
+    "max_safe_read_retries": 1,
+    "continue_independent_work": true,
+    "report_next_step": true
+  },
+  "provenance": {
+    "contract_refs": [
+      "skills/photo-album-reconcile/SKILL.md",
+      "skills/photo-album-reconcile/scripts/reconcile_picks.py",
+      "private:source-memory-artifact-audit-20261014",
+      "ai-ops/workflow-contracts/non-school-contracts.md#photo-album-reconcile"
+    ]
+  }
+}
