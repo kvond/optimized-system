@@ -94,6 +94,29 @@ class SchoolReadTrialTest(unittest.TestCase):
             self.after['request']['range'] = rectangle
             self.assertIn('read_scope_exceeds_trial_bound', self.compare()['problems'])
 
+    def test_repeated_native_response_outside_requested_rectangle_is_held(self):
+        # Repetition is not evidence of correct scope: both captures may carry
+        # the same mislabeled native response, still below the global 50/200 cap.
+        for values in ([['row']] * 4, [['column'] * 5],
+                       [['first'], ['second', '', '', '', 'outside']]):
+            with self.subTest(values=values):
+                for capture in (self.before, self.after):
+                    capture['response']['structuredContent']['values'] = values
+                result = self.compare()
+                self.assertEqual(result['status'], 'held')
+                self.assertIn('response_exceeds_requested_range', result['problems'])
+                self.assertNotIn('bounded_content_changed', result['problems'])
+
+    def test_native_response_may_omit_trailing_blank_rows_and_cells(self):
+        # Google Sheets legitimately omits trailing empties; a short/ragged
+        # nonempty result is still bounded by the requested A1:D3 rectangle.
+        for values in ([['present']], [['present'], ['another', 'value']],
+                       [['first', '', '', 'fourth'], [], ['third row']]):
+            with self.subTest(values=values):
+                for capture in (self.before, self.after):
+                    capture['response']['structuredContent']['values'] = values
+                self.assertEqual(self.compare()['status'], 'matched')
+
     def test_unknown_source_or_non_school_contract_is_invalid(self):
         self.source = 'private:unknown-source'
         with self.assertRaises(TrialError):

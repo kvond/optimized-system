@@ -39,9 +39,10 @@ def _time(value):
 
 
 def _bounded_rectangle(value):
+    """Return the permitted (width, height), or None for an unbounded scope."""
     match = re.fullmatch(r'([A-Z]{1,3})([1-9][0-9]*):([A-Z]{1,3})([1-9][0-9]*)', value)
     if not match:
-        return False
+        return None
     left, top, right, bottom = match.groups()
     def column(label):
         number = 0
@@ -50,7 +51,9 @@ def _bounded_rectangle(value):
         return number
     width = column(right) - column(left) + 1
     height = int(bottom) - int(top) + 1
-    return width > 0 and 0 < height <= 50 and width * height <= 200
+    if width > 0 and 0 < height <= 50 and width * height <= 200:
+        return width, height
+    return None
 
 
 def compare_reads(workflow, source_ref, binding, before, after, *, now):
@@ -102,7 +105,8 @@ def compare_reads(workflow, source_ref, binding, before, after, *, now):
         rectangle = request.get('range')
         if not isinstance(sheet, str) or not isinstance(rectangle, str):
             raise TrialError('request: exact sheet_name and range required')
-        if not _bounded_rectangle(rectangle):
+        dimensions = _bounded_rectangle(rectangle)
+        if dimensions is None:
             problems.append('read_scope_exceeds_trial_bound')
         if f'{sheet}!{rectangle}' != binding['range'] or data.get('range') != binding['range']:
             problems.append('range_mismatch')
@@ -115,6 +119,14 @@ def compare_reads(workflow, source_ref, binding, before, after, *, now):
         if isinstance(values, list) and (len(values) > 50 or
                 sum(len(row) for row in values if isinstance(row, list)) > 200):
             problems.append('read_scope_exceeds_trial_bound')
+        if dimensions is not None and isinstance(values, list):
+            width, height = dimensions
+            # Native Sheets reads omit trailing empty rows/cells, so enforce
+            # upper bounds only. A matching range label cannot legitimize data
+            # returned outside the exact frozen rectangle.
+            if len(values) > height or any(
+                    len(row) > width for row in values if isinstance(row, list)):
+                problems.append('response_exceeds_requested_range')
         hashes.append(_digest(data))
     if times[1] < times[0]:
         problems.append('read_order_invalid')
