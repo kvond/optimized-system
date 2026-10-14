@@ -1,6 +1,14 @@
 # Local provider-neutral foundation
 
-This is a local, tested library, not a deployed service, worker, provider integration or schedule. No model/network calls are present. SQLite state stays private and must never enter GitHub. JSON contracts/configuration contain no credentials. The example enables only a synthetic deterministic route; it does not grant school-data or paid-provider authority.
+## October 14 integration candidate
+
+The [21-definition catalog](../workflow-contracts/INDEX.md) and [router interface](../../skills/ai-operations-router/references/interface.md) are now connected by one [bounded executor bridge](../runbooks/workflow-executor.md): **local catalog validation only** through the existing Controller, encrypted storage and native result/receipt readback. This is not a domain-workflow dispatcher. Additional school/provider operations remain unsupported until their own adapter, ownership, capability and output evidence are accepted.
+
+The [school read package](../runbooks/school-repetitive-execution.md) is separate evidence tooling. Its real home-Codex connector trial does not establish School Claude execution, a report date/run ID or completed morning work. See the [dated release note](../reports/overnight-integration-2026-10-14.md) for source tests versus actual bounded acceptance and remaining publication/install gates. Existing commands below retain their narrower scope; earlier totals are dated checkpoints.
+
+## Preserved foundation and tools
+
+This is a local, tested library, not a deployed service, worker, provider integration or schedule. The core foundation itself makes no model/network calls; the separately documented public DOE reader below performs bounded HTTP reads. SQLite state stays private and must never enter GitHub. JSON contracts/configuration contain no credentials. The example enables only a synthetic deterministic route; it does not grant school-data or paid-provider authority.
 
 `foundation.py` implements source-revision/inputs/contract/route/privacy-keyed cache, success-only reuse, explicit UTC expiry, scoped invalidation, SQLite serialized budget reservations, idempotent settlement, bounded routing, and owned POSIX process-group stopping. All dollar amounts use integer microdollars internally. Unknown budget and exhausted budget fail closed. Estimates are bounds supplied by a future approved adapter, not price evidence. Actual overruns are recorded and block subsequent spending; a request cannot guarantee its provider price from an estimate. Reservations remain charged against availability across uncertain outcomes and process crashes; cancel only a proven unstarted execution. Provider adapters must not dispatch until their reservation commits.
 
@@ -36,7 +44,7 @@ Measured October 12 against all 11 existing bundles (2,863 whitespace words), us
 | Job monitoring / recurring workflow | 374 | 86.94% |
 | Writing voice / Substack prose | 393 | 86.27% |
 
-These measure actual deterministic text input reduction, not tokenizer counts, dollar savings or live job-monitoring acceptance. Job monitoring retrieves existing workflow rules; it does not invent a missing full job contract. Seven targeted tests pass, including explicit historical-source byte matching and per-bundle receipt association after ranking. The prior complete runtime suite passed 57 tests in 2.749 seconds; the current vacancy checkpoint passed 70 tests in 3.539 seconds.
+These measure actual deterministic text input reduction, not tokenizer counts, dollar savings or live job-monitoring acceptance. Job monitoring retrieves existing workflow rules; it does not invent a missing full job contract. Seven targeted tests pass, including explicit historical-source byte matching and per-bundle receipt association after ranking. At that October 12 checkpoint, the prior complete runtime suite passed 57 tests in 2.749 seconds and the vacancy checkpoint passed 70 tests in 3.539 seconds. These are historical totals, not the October 14 integration count.
 
 ## Public vacancy comparison
 

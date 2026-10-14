@@ -1,12 +1,36 @@
-# Optimized activities and weekly operating plan
+# Workflow ownership and schedule guide
 
-Updated October 13, 2026. The shared [Notes for Codex shared checklist](https://docs.google.com/document/d/150CzIzvbE0WQSnlQdIQHD3UNODr-L40_su5_ODbvUwI/edit?tab=t.0) is canonical for current school work. AIHS HUB is scoped to school work and AI-system upkeep; specific home/writing activities belong on Katherine’s separate hub, whose destination is not supplied here. Katherine owns live Hub edits; the retained consolidated activity groups below follow her current scope. Deleted content is not restored. No separate-hub move or creation is claimed. This remains the global sanitized reusable operations register, retaining global context and the 29-skill reference catalog: activities, saved schedules, missing builds, existing skills and Katherine's manual Todoist steps. The Word/Markdown download is a dated copy of this register. Prior versions remain in Git history.
+## Current state — October 14, 2026
+
+The **single operational inventory** is the existing private 102-record registry, resolved through `private:scheduler-registry-20261014`. It retains all 98 earlier records and reconciles known additions and historical gaps. This source file explains ownership and points to procedures; it is not another inventory, scheduler or editable live checklist. Actual account identifiers, controller IDs, prompts, definition hashes and run receipts stay in their existing private records.
+
+The October 14 reconciliation found 16 configured/loaded active entries, one potentially active unresolved school event trigger, two historically known/current-unverified School Claude tasks and two unavailable Cloud Scheduler scopes. This is bounded provider coverage, not proof all external schedules are known or that any listed job succeeded. No disabled API was enabled to discover jobs.
+
+| Existing routine | Current owner and setting | Acceptance boundary |
+| --- | --- | --- |
+| 04:30 calendar/school-email review | Local Codex; daily active definition | Possible overlap with the main ChatGPT school brief remains unresolved; compare exact inputs/outputs before changing either owner. |
+| 06:30 preparation, repair, roster/submission tidy | Local Codex; weekday active definition | Current repair prompt includes complete source/identity and filing rules. Source-changing work respects the before-07:00 window. |
+| 07:00 eligible IC entry | Existing school Chrome helper; same-day opt-in/configuration evidence | Helper alone writes grades; enabled state is not a successful run. Existing receipt failure/uncertain-save recovery must be reconciled by that owner. |
+| 07:30 feedback/print-ready | Local Codex; weekday active definition | Existing private filing/outbox and exact content/destination readback; Printed/Handed remain teacher-controlled. |
+| 08:00 Hub report follow-up | Local Codex; weekday active definition | Current report date/run IDs, actual receipts and smallest safe repair; first scheduled acceptance is separate. |
+| Prior inventory/reset monitor | Paused and expired | Do not resume or reuse it for the new overnight work. |
+| Temporary October 14–15 continuation | Separate local Codex active definition | Operational migration/deployment freeze 05:00; final October 15 05:30 Eastern cutoff. Coordinator ends the temporary continuation after the checkpoint. A first successful wake must be recorded from execution. |
+
+The school ownership sequence is unchanged. The 06:30 preparation and 08:00 reconciliation share existing issue history; they are not two independent repair writers. Exact clock spacing is not a lock. The overnight continuation can overlap the 04:30 read routine, so the coordinator serializes shared browser use and checks independent writers. Home UD Claude Code keeps its independent active work; School Claude/school-computer migration remains unverified. Desktop Commander quota is exhausted; native/API availability alone does not accept a replacement route.
+
+Use the [21-definition catalog](../workflow-contracts/INDEX.md), [account/executor map](../account-map/current.md), [school runbook](../workflow-contracts/school-operations-runbook.md), and [release acceptance](../reports/overnight-integration-2026-10-14.md). The [scheduler cutover runbook](../runbooks/workflow-scheduler-cutover.md) describes the checked-in preparation/gate tooling. Candidate invocations and rollback material remain private/inactive until the coordinator verifies equivalent behavior, destination capability, exact owner and output. Main-provider timing/source/output gaps, historical School Claude state, the unresolved event trigger and disabled Scheduler scopes remain explicit holds. No migration follows from publishing a contract.
+
+## Dated activity and skill reference — October 13
+
+The retained tables below are the October 13 view, not fresh scheduler state. Their completion/configuration marks, source limitations and timing observations remain historical; the private October 14 registry and current native receipts govern operations.
+
+Updated October 13, 2026. The shared [Notes for Codex shared checklist](https://docs.google.com/document/d/150CzIzvbE0WQSnlQdIQHD3UNODr-L40_su5_ODbvUwI/edit?tab=t.0) is canonical for current school work. AIHS HUB is scoped to school work and AI-system upkeep; specific home/writing activities belong on Katherine’s separate hub, whose destination is not supplied here. Katherine owns live Hub edits; the retained consolidated activity groups below follow her current scope. Deleted content is not restored. No separate-hub move or creation is claimed. This dated source view retains global context and the 29-skill reference catalog: activities, saved schedules, missing builds, existing skills and Katherine's manual Todoist steps. The Word/Markdown download is a dated copy. Prior versions remain in Git history.
 
 **Checkbox key:** ☐ still needs to be made or finished; ☑ exists/configuration made; ? historical existence or current loading needs verification. A checked box does not mean a successful run. Read the state column before relying on it.
 
-Main ChatGPT/Codex: kvond@udel.edu; UD Claude is a separate provider account using that address. School Claude: katherine.vonduyke@redclay.k12.de.us in school Chrome. Home Todoist: kvond12@gmail.com, timezone America/New_York verified October 13. School 6:30/7:30 jobs retain current Codex ownership. Bonnie and the expired overnight monitor stay paused.
+Historical October 13 role labels: main ChatGPT/Codex, separate UD Claude, School Claude organization and home Todoist. Actual account identifiers resolve privately. Home Todoist timezone was verified as America/New_York. School 6:30/7:30 jobs retained Codex ownership; Bonnie and the expired overnight monitor stayed paused.
 
-## Existing scheduled and manual AI workflows
+## Historical scheduled and manual AI workflows — October 13
 
 | Made | Activity | Execution owner | When | Apps and sources | Verified state and remaining acceptance |
 | --- | --- | --- | --- | --- | --- |
@@ -28,9 +52,9 @@ Personal task clocks are displayed UI settings with backend timezone unexposed. 
 
 [Workflow contracts](../workflow-contracts/INDEX.md) · [Original School Claude setup](../reports/school-claude-task-setup-2026-10-13.json) · [Friday 2:15 PM correction](../reports/school-claude-friday-time-correction-2026-10-13.json) · [Personal helper connections](../reports/personal-cost-connections-2026-10-12.md).
 
-## Consolidated activities
+## Retained consolidated activities — October 13
 
-This active view follows Katherine’s retained Hub groups. Deleted/cancelled items are not recreated; previous detailed inventories remain in Git history. Groups share a purpose, not an invented executor or schedule.
+This dated view follows Katherine’s retained Hub groups. Deleted/cancelled items are not recreated; previous detailed inventories remain in Git history. Groups share a purpose, not an invented executor or schedule.
 
 | Retained group | Components | Existing owner / acceptance |
 | --- | --- | --- |
@@ -40,7 +64,7 @@ This active view follows Katherine’s retained Hub groups. Deleted/cancelled it
 
 Retained separate future productization: generalize the teaching workflow for other teachers. This is not required for the current routine and has no newly created executor.
 
-## What School Work Hub automates by day
+## Historical weekly operating view — October 13
 
 The Hub supplies state and processing; the Codex morning jobs and Chrome IC helper are separate executors. The table describes saved jobs and standing contracts, not a claim that every capability runs in cloud or has completed. No fresh autonomous Hub Cloud Scheduler inventory is established.
 
@@ -62,7 +86,7 @@ On demand: the saved School Claude lesson repair task reviews native slides and 
 
 Manual scheduling is managed directly in Todoist; this register does not recreate chores or deleted items.
 
-## Existing reusable skills
+## Inherited reusable skill reference — October 13
 
 All 29 inherited skill entry files exist. These checked boxes mean the file exists. Current applicability, account binding and successful execution remain unverified until independently accepted. Do not recreate a skill merely because a schedule is absent.
 
@@ -98,7 +122,7 @@ All 29 inherited skill entry files exist. These checked boxes mean the file exis
 | ☑ | [wegmans-grocery-order](../../skills/wegmans-grocery-order/SKILL.md) | On-demand grocery preparation; no automatic purchase. |
 | ☑ | [writing-block](../../skills/writing-block/SKILL.md) | Bounded writing brief; current canonical-source/consumer binding pending. |
 
-## Deterministic support and operating boundaries
+## Historical deterministic support — October 13
 
 | Made | Capability | Current acceptance |
 | --- | --- | --- |
@@ -110,11 +134,11 @@ All 29 inherited skill entry files exist. These checked boxes mean the file exis
 | ☑ | Encrypted archive manifest and checksum tooling | Working encrypted state; full provider histories still incomplete. |
 | ? | Legacy Answerable launchd publisher | Loaded historical consumer with missing nightly-publish.sh/exit 127; preserved, not a healthy worker. |
 
-[Exact remaining technical acceptance checklist](../reports/specific-remaining-work-2026-10-13.md) · [Handoff](../HANDOFF.md) · [Publication PR 1](https://github.com/kvond/optimized-system/pull/1). After verified merge, use the [default-main register](https://github.com/kvond/optimized-system/blob/main/ai-ops/worker-registry/roles-and-schedules.md); while a merge remains pending, use the published reset-night-2026-10-11 branch.
+[October 13 technical checklist](../reports/specific-remaining-work-2026-10-13.md) · [Current handoff](../HANDOFF.md) · [Historical publication PR 1](https://github.com/kvond/optimized-system/pull/1). The canonical repository already uses default `main`; the October 14 integration candidate still needs its own publication/install readback. The earlier reset-night branch is retained history, not the current source selection.
 
 Startup evidence: [official OpenAI scheduled-task requirements](https://learn.chatgpt.com/docs/automations) and [remote host requirements](https://learn.chatgpt.com/docs/remote-connections). Local work needs the host/project/app available; remote/browser jobs also need their established authenticated source sessions. Existing privacy boundaries and permissions remain in force.
 
 No full histories, student records, notice bodies, financial inputs, signed links, credentials or databases belong in GitHub. Keep them in authorized private systems and the encrypted external archive. No new purchase, paid API, permission/security expansion, grade run or account retirement was performed for this register.
 
 
-Current checklist/launcher state: Notes for Codex owns completion; AIHS HUB owns school/AI-system visual navigation; separate home/writing hub destination is not supplied here ; Katherine controls live Hub content; do not restore deleted material or add TODO clutter. Current4000-character manual prompt has exact live readback. Four native launcher navigation tests passed without executing tasks; Friday IC/iTracker and Writing GitHub access remain limited. See [current receipt](../reports/shared-checklist-schoology-launchers-2026-10-13.json) and [handoff](../HANDOFF.md).
+Historical October 13 checklist/launcher state: Notes for Codex owns completion; AIHS HUB owns school/AI-system visual navigation; separate home/writing hub destination is not supplied here ; Katherine controls live Hub content; do not restore deleted material or add TODO clutter. Current4000-character manual prompt has exact live readback. Four native launcher navigation tests passed without executing tasks; Friday IC/iTracker and Writing GitHub access remain limited. See [current receipt](../reports/shared-checklist-schoology-launchers-2026-10-13.json) and [handoff](../HANDOFF.md).

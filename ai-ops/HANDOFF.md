@@ -1,6 +1,28 @@
 # AI-system reset — current handoff
 
-## Current bounded continuation October 13
+## Current integration state — October 14, 2026
+
+The canonical private repository is **optimized-system**, already renamed from answerable-skills; default `main` was verified at the start of this run. The October 14 aggregate is an integration candidate. Publication, adoption of published main and local router-skill installation remain coordinator actions. Preserve older active-consumer checkouts, their skill links and the independently active home UD Claude Code environment.
+
+Use the [21-definition catalog](workflow-contracts/INDEX.md), [account/executor map](account-map/current.md), [ownership guide](worker-registry/roles-and-schedules.md) and [dated acceptance/release note](reports/overnight-integration-2026-10-14.md). The canonical editable plan and account-map destination resolve through `private:canonical-overnight-plan-20261014`. The only operational schedule inventory is the existing private 102-record registry at `private:scheduler-registry-20261014`; Git contains procedures and symbolic references, not a competing registry.
+
+| Work | Actual October 14 state |
+| --- | --- |
+| Portable contracts and router | Twenty-one definitions, a versioned format/validator, evidence-gated routing, question/answer continuation and handoff interface are integrated locally. These are tested requirements and routing logic; private bindings, native attachments and actual workflow execution still need their own evidence. |
+| Existing runtime bridge | The one new adapter supports local catalog validation only. Earlier actual seven-definition catalog → router → existing Controller → encrypted storage → saved content/receipt readback and same-request reuse passed under a synthetic technical contract. Acceptance using the new versioned technical catalog-validation contract against the full integrated catalog remains pending. |
+| Repetitive school package | Reusable bounded invocations and read-comparison helper are present. Home Codex performed two matching native school Sheet header reads and private local output readback. The header lacked report date/run IDs; no morning-workflow completion or School Claude execution was proven. |
+| Executor roles | Home UD Claude Code is code-capable in its independent session; technical repair remains Codex. School Claude and the school computer remain unverified destinations. Desktop Commander is quota-exhausted; operation-specific native/API alternatives are available. |
+| Existing school ownership | 06:30 preparation stays local Codex; 07:00 IC writes stay with the Chrome helper; 07:30 feedback and 08:00 report follow-up stay local Codex. Schedule settings, helper opt-in and actual grade/feedback receipts are separate facts. No owner migration is claimed. |
+| Overnight ownership | The old inventory/reset monitor remains paused. A separate temporary continuation is configured active for October 14–15, with operational changes frozen at 05:00 and final cutoff October 15 05:30 Eastern. A saved active schedule is not a successful wake. |
+| Preservation and exports | Existing acquired source/account material remains preserved as reported in private October 14 evidence. Katherine explicitly declined further export downloads October 14. Older pending-export/acquisition instructions below are superseded; do not reopen them. Native attachment and full-history completeness are not inferred. |
+
+The coordinator owns release, live install, scheduler mutations, native canonical-Doc updates and final readback. This source change performs none of them. Pending destination trials, uncertain receipts, real school outputs and independent acceptance remain open. Configured schedules and passing catalog tests do not prove grades, feedback delivery, notices or lesson readiness. Exact release/cutover/rollback commands and private evidence locations are in the coordinator's private integration handoff.
+
+## Dated history — October 12–13
+
+The following checkpoints preserve what was observed then. Their account allowances, export instructions, publication status, school source state and test totals are historical. Apply the October 14 decisions and current native receipts before acting; old “current” wording does not renew an instruction.
+
+## Historical bounded continuation — October 13
 
 Notes for Codex now has eight exact verified completions crossed off, including DTGSS critical/conceptual within/across-lesson figures. Biology Syllabus/Safety Symbols page 8608568859 was created and saved/read back; optional status and old web link preserved. Four additional Biology pages saved/read back: DNA Structure 8608588993, DNA Replication 8608592614, Meiosis 8608596714 and Genes 8608600093; five new Biology pages total. Dihybrid remains uncreated: current 33-slide source has only one-trait material; empty editor cancelled without external change. Broader all-class/all-marking-period coverage stays open. Source snapshot has 26 Biology future pairs and 19/32 A&P future populated rows; 19 Forensics future deck IDs are 404, not proven absent. Canonical manual browser source reports deleted; no recovery/source-code edits. Body Tissues 13-original+4-VT comparison confirms omissions but no repair and new flow source remains unbound. Added-Notes draft passes 88 synthetic tests but falsely credits unmarked teacher/decorative boxes; NOT landed/deployed. No student-role/upload, full-course release or real grading acceptance.
 
@@ -8,7 +30,7 @@ Follow the three retained consolidated activity groups. AIHS HUB and Todoist are
 
 Fourth-period Biology inventory found nine empty folders; seven have topic-supported source pairs, but no fourth-period pages were published. The active school browser changed courses during editing, and the destination guard stopped further writes. A&P source review confirms three different-unit bindings (Endocrine to Senses, Blood to Endocrine, Heart to Blood); same-unit continuation gaps and Digestive reuse are qualified separately in the receipt. Do not promote native metadata to lesson readiness or silently repair unresolved mappings.
 
-## School lesson workflow consolidation saved
+## Historical school lesson workflow consolidation — October 13
 
 Canonical current school working list: [Notes for Codex](https://docs.google.com/document/d/150CzIzvbE0WQSnlQdIQHD3UNODr-L40_su5_ODbvUwI/edit?tab=t.0). GitHub maintains sanitized reusable operations/history; Word files are dated copies. The existing manual School Claude lesson task was renamed Lesson workflow — restore, enhance, code and Schoology and initially saved with exact 3960-character prompt readback (historical; current 4000-character prompt verified below); Manual/model/approval retained, no Run Now. Two bounded published Schoology pages (8608195287 corrected; 8608282304 created in verified-empty folder 1040535688) have exact matching deck/Form readback; response-folder/student links and stale due text removed. Narrow originals were privately preserved locally while the encrypted archive was unmounted. Urgent Forensics/A&P restoration, unresolved Forensics source bindings, parser deployment, student upload acceptance and full course page coverage remain UNFINISHED; native originals, every-slide render and slide/object coverage must be verified. Specialized skills and owner boundaries remain; Friday notices and existing schedules are separate. [Contract](workflow-contracts/school-lesson-review-and-code-repair.md) · [Consolidation receipt](reports/school-lesson-workflow-consolidation-2026-10-13.json).
 
@@ -28,9 +50,9 @@ Updated October 13, 2026. **The overnight monitor is PAUSED and its October 13 5
 
 **Operations publication is tracked by [PR 1](https://github.com/kvond/optimized-system/pull/1) into default `main`.** Verify the PR's actual merged state and default-branch content before relying on publication; the earlier draft-only observations are historical. The workflow library is a partial consolidated foundation and the router is locally implemented; DOE/News/Birthday still bypass its central dispatch/usage ledger. Publishing these files does not make either fully operational. Read the [workflow catalog](workflow-contracts/INDEX.md) and [specific remaining work](reports/specific-remaining-work-2026-10-13.md).
 
-Start with [current machine status](status/continuation-2026-10-12.json), [fourteen-task build order](reports/build-order-acceptance-2026-10-12.md), [current inventory](reports/inventory-gap-closure-2026-10-12.md), [current exports](reports/exports-pending-2026-10-12.json), and [AI jobs/apps/schedules](worker-registry/roles-and-schedules.md). Earlier attempt details remain in dated reports and Git history; use current receipts for present state.
+Historical October 12 references: [machine status](status/continuation-2026-10-12.json), [fourteen-task build order](reports/build-order-acceptance-2026-10-12.md), [inventory](reports/inventory-gap-closure-2026-10-12.md), and [export observations](reports/exports-pending-2026-10-12.json). These are dated evidence; use the October 14 state above and current native receipts before acting.
 
-## Verified work
+## Historical verified work — October 12–13
 
 | Work | Actual state |
 |---|---|
@@ -44,17 +66,17 @@ Start with [current machine status](status/continuation-2026-10-12.json), [fourt
 | Legacy repository review |Three bundles and34-asset reconciliation preserve original/unique assets. Reversible [Teaching review](https://github.com/kvond/Answerable-Teaching/issues/1) and [pipeline review](https://github.com/kvond/optimized-system/issues/2) remain. Original repositories/consumers not deleted or disabled. |
 | Cloud/router plan |Original requirement permits a staged plan; minimal provider-neutral deterministic-first plan and router/cost controls are complete locally. No extra platform, paid dispatch or deployment is required to claim that plan. |
 
-## Remaining boundaries
+## Historical boundaries — October 12–13
 
 **Step 1 full inventory remains partial.** The bounded accessible gap pass is finished; direct protected-source historical hashes, whole-Mac recursive coverage and live external-service coverage are not claimed. Four active skill entrypoints still depend on the original checkout. The old publisher remains loaded with a missing script and exit 127. Render normal Google sign-in for kvond12 reached an account-not-exist/signup boundary; no account was created. Both Cloud Scheduler console pages require API Enable; APIs unchanged and job inventory blocked, not verified empty. [Cloud continuation](reports/inventory-cloud-continuation-2026-10-12.md).
 
-**Complete chat backups remain pending.** Main ChatGPT's user-started export is accepted/processing at 22:24:35 UTC. Main Claude is ready at 22:26:18 UTC; its genuine new ready link was opened in the verified main session and again reached Chrome ERR_BLOCKED_BY_CLIENT at Google Storage. No new complete file was observed in bounded T7/encrypted-raw/Downloads checks. One earlier source-Claude manifest 1,549 bytes is preserved, five expected parts/zero complete. Provider readiness is not backup completion. Do not request duplicates or repeat a known blocked route without a relevant change. Acquire normal user/provider files, verify account/coverage/SHA256 and encrypted copy/readback; preserve originals and keep raw bodies/signed URLs out of Git. [Current acquisition](reports/exports-pending-2026-10-12.json).
+**Historical October 12 export snapshot — superseded by the October 14 decision against further downloads.** Main ChatGPT's user-started export is accepted/processing at 22:24:35 UTC. Main Claude is ready at 22:26:18 UTC; its genuine new ready link was opened in the verified main session and again reached Chrome ERR_BLOCKED_BY_CLIENT at Google Storage. No new complete file was observed in bounded T7/encrypted-raw/Downloads checks. One earlier source-Claude manifest 1,549 bytes is preserved, five expected parts/zero complete. Provider readiness is not backup completion. The then-pending acquisition instructions are retired; do not request or download additional exports. Preserve already acquired originals and keep raw bodies/signed URLs out of Git. [Dated acquisition evidence](reports/exports-pending-2026-10-12.json).
 
 **Knowledge applicability remains bounded.** Current final-paper rubric, original stored voice script and preferred-voice acceptance are not established. Existing seven-section feedback/DIP/historical rubric/observed voice bundles have provenance; do not substitute historical criteria for current grading. [Source consolidation](reports/source-consolidation-2026-10-12.md).
 
 **Existing personal workers are connected.** The on-demand DOE CLI itself creates no schedule or candidate judgment. The existing Watch is configured to invoke it through Desktop Commander; first scheduled-run acceptance is pending. News/Birthday are likewise configured in place, with verified local reads and source gates. Same exact approved public source fingerprints may be reused; candidate scopes remain separate. Weekly Job Scan is paused by explicit user request; retain its separate historical scope and do not auto-resume or create a replacement. Verify exact timezone, authorized inputs, destination and accepted readback before cutover. News/birthday cart-policy conflict remains unresolved; no purchase/cart/message action is authorized here.
 
-## School ownership
+## Historical school ownership — October 12
 
 | Job | Owner/scheduler | Weekday time Eastern | Latest observed model / target |
 |---|---|---|---|
@@ -63,17 +85,17 @@ Start with [current machine status](status/continuation-2026-10-12.json), [fourt
 
 Both persisted ACTIVE prompts/schedules remain unchanged. Models are observed turn metadata, not pinned saved settings. The separate Chrome IC helper's standing7:00 AM contract is unchanged; current loaded setting remains unverified. Installed dispatcher retry/deferral is statically inspected; underlying transport/model retries and fresh destination success are not established. No new school grade run is required to prove reset preservation. [School receipt](reports/school-schedule-verification-2026-10-12.json).
 
-## Resume and recover
+## Historical resume/recovery notes — October 12–13
 
 Workspace `/Users/katherinevonduyke/Documents/Claude/2026-10-11/remote-desktop-commander-plugin-app-6a057d268ebc81919918d37eec718425-5`; isolated clone `work/core`; user-facing packet `outputs/AI-ops-handoff`. Verify actual private GitHub HEAD/content and the packet publication receipt before continuing. Preserve dirty source checkouts, loaded consumers and prior blocked/complete receipts. Do not repair or retire original copies merely because recovery pointers exist.
 
-Desktop Commander connector **kvond12@gmail.com**, device **d99c01bf-3b21-4c4a-89c7-32cd05f3f991** online at check; its 1% remote-call allowance is separate from Codex limits. Existing ordinary main/source browser profiles were reconciled without account logout or security changes. Do not use the iPad. Accessible matching email codes are agent-handled under prior authorization; values stay out of reports. Receiving chats independently verify access and identity; the packet is context, not credentials.
+Historical October 12 Desktop Commander observation: the established connector device was online with 1% remote-call allowance remaining, separate from Codex limits. The October 14 quota-exhausted evidence supersedes that allowance; actual device/account identifiers resolve privately. Existing ordinary main/source browser profiles were reconciled without account logout or security changes. Do not use the iPad. Accessible matching email codes are agent-handled under prior authorization; values stay out of reports. Receiving chats independently verify access and identity; the packet is context, not credentials.
 
 Original cutoff and prior verification-loop/client-block details are preserved in [original reset report](reports/reset-night-2026-10-11.md) and [dated continuation](reports/continuation-2026-10-12.md). Current authoritative state is above. Full continuation goal is partial at the listed acquisition/access/source boundaries; no question or routine action is being sent to Katherine.
 
-## Current overnight continuation
+## Historical overnight continuation — October 12–13
 
-[Connected worker acceptance](reports/personal-cost-connections-2026-10-12.md) covers items1–4 and shared fresh birthday evidence. The current suite passes 141 tests. Calendar/email review is configured daily 4:30 AM Eastern; current school Outlook sign-in and inbox review succeeded. Private school/family bodies remain encrypted and outside Git/portable packet. Overnight continuation runs safe audit work only and stops by5:30AM Eastern October 13; its5:25wake is checkpoint-only. No further login is currently needed. New ready metadata or actual completed files trigger export acquisition; unchanged blocked routes are not retried. First scheduled-run receipts and complete provider exports remain pending.
+[Connected worker acceptance](reports/personal-cost-connections-2026-10-12.md) covers items1–4 and shared fresh birthday evidence. The current suite passes 141 tests. Calendar/email review is configured daily 4:30 AM Eastern; current school Outlook sign-in and inbox review succeeded. Private school/family bodies remain encrypted and outside Git/portable packet. Overnight continuation runs safe audit work only and stops by5:30AM Eastern October 13; its5:25wake is checkpoint-only. No further login is currently needed. At that checkpoint, ready metadata/files were potential acquisition triggers. The October 14 decision retired further export downloads; do not follow those older triggers. First scheduled-run receipts were still pending at that historical observation.
 
 
 Latest overnight correction: News request reuse now requires today's Eastern business-day window and exposes its observation/date/age. Prior-day IDs fail without refetch; midnight-crossing delivery stops before Birthday evidence is attached. The three worker CLIs reject unresolved UTC placeholders before work. Seven new regressions and installed-entry rejection/readback pass; current full suite is 141 tests. Actual saved-task executions and per-worker provider costs remain unverified. Latest live Codex quota is 72 percent weekly remaining at 00:37:48 UTC; no purchase or paid dispatch occurred. Continue only changed actionable evidence, preserving the 4:30 review and 5:30 hard stop.
@@ -94,7 +116,7 @@ Katherine requested completion of the GitHub pulls. The open-PR search found onl
 The supplied AIHS HUB Word layout was filled in as a separate user-facing copy, preserving the Downloads original. It includes highlighted manual actions, native checkboxes, the weekly school operating plan and all 26 original build items. The initial document requested Friday iTracker at 2:15 PM while the original School Claude setup displayed 3 PM. Katherine then confirmed 2:15 PM; the saved schedule and updated Word copy now match, with the correction receipt above. No grade, student notice or Todoist state was changed.
 
 
-## Current shared checklist and launcher acceptance
+## Historical shared checklist and launcher acceptance — October 13
 
 [Notes for Codex](https://docs.google.com/document/d/150CzIzvbE0WQSnlQdIQHD3UNODr-L40_su5_ODbvUwI/edit?tab=t.0) owns completion; [AIHS HUB](https://docs.google.com/document/d/1iH_HE29CGEPxB86ZCmGCRqYUllV3bBnqFH4szfsFNcQ/edit?tab=t.0) is scoped to school work and AI-system upkeep under Katherine’s latest instruction. Specific home and writing activities belong on a separate hub designated by Katherine; its destination was not supplied here. Katherine owns live Hub edits. Follow her retained three consolidated activity groups; do not restore deleted/cancelled content, recreate jobs or add TODO clutter. Older filled/cleared table observations are historical, not a restoration request. No separate-hub creation or migration is claimed. The earlier seven-context view is historical evidence. Five newly added exact verified Notes subitems were struck; original broad requests retained. Hub intro links Notes; one-page native view inspected at 50%, then both Docs restored 100%. Current4000-character task prompt saved/reopened with exact equality; Manual/Default model/Automatically approve unchanged, no Run Now.
 
