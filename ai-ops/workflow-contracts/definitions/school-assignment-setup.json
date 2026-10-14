@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "workflow_id": "school-assignment-setup",
+  "contract_version": "2026-10-14.1",
+  "title": "One-time exact Agenda to Form to Schoology setup",
+  "domain": "school",
+  "owners": {
+    "execution_owner_ref": "existing-assignment-setup-owner",
+    "maintenance_owner_ref": "codex-school-maintenance"
+  },
+  "execution": {
+    "executor_ref": "existing-assignment-setup-owner",
+    "account_refs": [
+      "school-google",
+      "school-ic"
+    ],
+    "required_capabilities": [
+      "school-native-browser-read",
+      "school-native-lesson-repair"
+    ],
+    "privacy_partition": "school-private",
+    "concurrency_key": "school-shared-browser-and-sources"
+  },
+  "trigger": {
+    "kind": "on_demand"
+  },
+  "sources": [
+    {
+      "source_ref": "private:selected-agenda-course-term-assignments",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:actual-current-teacher-and-student-material",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:exact-form-upload-destination",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:current-schoology-pages-and-access",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:existing-setup-receipts",
+      "required": true,
+      "coverage": "bounded",
+      "max_age_seconds": 300
+    }
+  ],
+  "outputs": [
+    {
+      "output_ref": "private:assignment-chain-factor-receipt",
+      "kind": "receipt",
+      "verification": "content_and_destination_readback"
+    },
+    {
+      "output_ref": "private:existing-assignment-setup-checklist",
+      "kind": "report",
+      "verification": "content_and_destination_readback"
+    }
+  ],
+  "policy": {
+    "allowed_actions": [
+      "read-live-assignment-chain",
+      "repair-authorized-exact-source-link",
+      "repair-authorized-form-route",
+      "repair-authorized-student-facing-page",
+      "verify-each-setup-factor"
+    ],
+    "prohibited_actions": [
+      "copy-credentials-or-profiles",
+      "broaden-sharing",
+      "delete-or-restore-source-history",
+      "infer-absence-from-provider-failure",
+      "retry-uncertain-write",
+      "clear-uncertainty-automatically",
+      "change-teacher-delivery-marks",
+      "invent-identity-or-lesson-match",
+      "create-competing-schedule",
+      "write-ic-grades",
+      "send-feedback-email",
+      "send-student-or-guardian-message",
+      "submit-fake-student-work",
+      "create-recurring-setup-job",
+      "publish-private-response-links",
+      "restore-retired-form",
+      "invent-assignment-in-empty-class"
+    ],
+    "dependency_checks": [
+      "Resolve private references and verify exact school identity, tested capability, current authority and sole active owner before dependent work.",
+      "Acquire the shared browser/source lease including external sessions; a declared concurrency key or missing receipt is not proof that another writer is idle.",
+      "Read current authoritative sources and compare relevant revisions immediately before each mutation; stop that mutation on changed, partial or unavailable evidence.",
+      "Keep private records and raw evidence outside Git; a configured task, schema validation or open tab never establishes completed execution.",
+      "Bounded one-time invocation only: read current scope/authority and existing receipt before creating or repairing; a grading exclusion does not erase requested future setup.",
+      "Use installed school-assignment-setup and its native-workflow references for Forms/Schoology; include listed courses in scope without inventing assignments.",
+      "Match course/section, lesson component, dates and current source content; preserve separate same-week lessons and approved shared Forms.",
+      "Verify Form identity, published/accepting state, intended audience, class selector and required upload question; exact upload View folder, parents/access and actual Hub-reader list/read are separate checks.",
+      "Verify saved Schoology page identity, parent/order, body hrefs, published availability and intended student deck access/content; a copy suffix or title is insufficient.",
+      "A Form-only repair cannot pass a full chain requiring student material; pending sharing/permission choices remain pending and are not implied by this catalog.",
+      "Resume first unverified factor and re-read target before retrying save/create; never submit student work merely to test setup."
+    ],
+    "uncertain_write_policy": "stop_and_reconcile"
+  },
+  "success_checks": [
+    "Expected assignment/component scope reconciles to fresh evidence for identity, Form, upload destination, Hub reader, Schoology page and student material.",
+    "Receipt separately counts full setups, partial Form/page repairs, retired exceptions, unassigned slots and exact pending factors.",
+    "Existing private checklist contains saved factor evidence; a local gate checker result is not a live verifier."
+  ],
+  "failure": {
+    "max_safe_read_retries": 2,
+    "continue_independent_work": true,
+    "report_next_step": true
+  },
+  "provenance": {
+    "contract_refs": [
+      "ai-ops/workflow-contracts/school-operations-runbook.md#school-assignment-setup",
+      "skill:school-assignment-setup",
+      "skill:school-assignment-setup/references/native-workflow.md",
+      "skill:school-assignment-setup/references/receipt-schema.md"
+    ]
+  }
+}

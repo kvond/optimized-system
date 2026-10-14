@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "workflow_id": "school-morning-preparation-and-repair",
+  "contract_version": "2026-10-14.1",
+  "title": "Morning Hub repair, roster preparation and source filing",
+  "domain": "school",
+  "owners": {
+    "execution_owner_ref": "home-codex",
+    "maintenance_owner_ref": "codex-school-maintenance"
+  },
+  "execution": {
+    "executor_ref": "home-codex",
+    "account_refs": [
+      "school-google",
+      "school-ic"
+    ],
+    "required_capabilities": [
+      "school-hub-read",
+      "school-native-browser-read",
+      "school-ic-roster-read",
+      "school-private-filing",
+      "school-hub-authorized-repair"
+    ],
+    "privacy_partition": "school-private",
+    "concurrency_key": "school-shared-browser-and-sources"
+  },
+  "trigger": {
+    "kind": "existing_schedule",
+    "schedule_ref": "Local Codex::morning-roster-check-and-submission-tidy"
+  },
+  "sources": [
+    {
+      "source_ref": "private:hub-today-system-notes",
+      "required": true,
+      "coverage": "bounded",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:current-agenda-bindings",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:ic-current-rosters",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:registered-intake-coverage",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:archive-configuration",
+      "required": true,
+      "coverage": "bounded",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:current-helper-and-feedback-ownership",
+      "required": true,
+      "coverage": "bounded",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:school-current-decisions",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    }
+  ],
+  "outputs": [
+    {
+      "output_ref": "private:morning-preparation-receipt",
+      "kind": "receipt",
+      "verification": "content_and_destination_readback"
+    },
+    {
+      "output_ref": "private:archive-source-destination-index-readback",
+      "kind": "receipt",
+      "verification": "content_and_destination_readback"
+    },
+    {
+      "output_ref": "private:current-hub-issue-checklist",
+      "kind": "report",
+      "verification": "content_and_destination_readback"
+    }
+  ],
+  "policy": {
+    "allowed_actions": [
+      "read-current-hub-report",
+      "verify-complete-roster",
+      "sync-via-authorized-roster-adapter",
+      "repair-authorized-hub-defect",
+      "preview-apply-verify-source-repair",
+      "file-verified-private-copy",
+      "record-current-exception"
+    ],
+    "prohibited_actions": [
+      "copy-credentials-or-profiles",
+      "broaden-sharing",
+      "delete-or-restore-source-history",
+      "infer-absence-from-provider-failure",
+      "retry-uncertain-write",
+      "clear-uncertainty-automatically",
+      "change-teacher-delivery-marks",
+      "invent-identity-or-lesson-match",
+      "create-competing-schedule",
+      "write-ic-grades",
+      "generate-feedback",
+      "send-feedback-email",
+      "send-student-or-guardian-message",
+      "mutate-source-after-cutoff",
+      "move-form-response-original",
+      "alter-student-answers",
+      "create-duplicate-student-folder"
+    ],
+    "dependency_checks": [
+      "Resolve private references and verify exact school identity, tested capability, current authority and sole active owner before dependent work.",
+      "Acquire the shared browser/source lease including external sessions; a declared concurrency key or missing receipt is not proof that another writer is idle.",
+      "Read current authoritative sources and compare relevant revisions immediately before each mutation; stop that mutation on changed, partial or unavailable evidence.",
+      "Keep private records and raw evidence outside Git; a configured task, schema validation or open tab never establishes completed execution.",
+      "Source, content and assignment-binding mutations must finish before 07:00 America/New_York; hold remaining scope at cutoff and continue independent non-racing work.",
+      "IC is canonical. Complete membership evidence and a capability-verified synchronizer are required for roster writes; otherwise report status and preserve last complete roster.",
+      "Keep Study Hall roster-only. Remove verified departures from active operations while preserving originals, historical grades and private Former students copies.",
+      "Use one fresh batched overview with roster and Agenda bookends; never infer missing work or zeros from failed, changed, partial or rate-limited reads.",
+      "Unique fresh course/section/name evidence permits private filing only; grading still requires strict identity and exact assignment evidence.",
+      "Preserve original IDs, Form locations, answers, revisions, access, original dates and source links; use deployed archive and existing preview/apply/verify contracts.",
+      "Use exact current exclusions, shared-Form decisions and Photosynthesis repair-first scope; generic labels or filenames cannot select grading policy.",
+      "Read the current Hub repository START_HERE instructions before code repairs; use established release process and verify deployed behavior separately from local tests."
+    ],
+    "uncertain_write_policy": "stop_and_reconcile"
+  },
+  "success_checks": [
+    "Receipt distinguishes checked, filed, unchanged and held scope, actual cutoff completion, roster status, helper status and unresolved source coverage.",
+    "Every claimed repair has exact current source/destination revisions, saved identity/location/access and native readback; preview or copy alone is insufficient.",
+    "Existing Hub Today/checklist contains current evidence-backed state with teacher text preserved through revision-guarded readback."
+  ],
+  "failure": {
+    "max_safe_read_retries": 2,
+    "continue_independent_work": true,
+    "report_next_step": true
+  },
+  "provenance": {
+    "contract_refs": [
+      "ai-ops/workflow-contracts/school-operations-runbook.md#school-morning-preparation-and-repair",
+      "private:current-automation/morning-roster-check-and-submission-tidy",
+      "private:school-authorized-filing-and-exclusions",
+      "skill:school-assignment-setup"
+    ]
+  }
+}
