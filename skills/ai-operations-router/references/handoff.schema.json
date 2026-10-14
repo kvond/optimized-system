@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Reference-only workflow handoff; not an ownership or execution grant",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "workflow_id", "contract_version", "contract_sha256", "canonical_source_ref", "completed", "remaining", "output_refs", "next_owner_ref", "next_step", "route_status", "route_reason", "execution_attempted", "ownership_transferred"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "workflow_id": {"type": "string", "minLength": 1},
+    "contract_version": {"type": "string", "minLength": 1},
+    "contract_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "canonical_source_ref": {"type": "string", "minLength": 1, "maxLength": 1024},
+    "completed": {
+      "type": "array", "maxItems": 100,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["action", "receipt_ref"],
+        "properties": {"action": {"type": "string", "minLength": 1}, "receipt_ref": {"type": "string", "minLength": 1, "maxLength": 1024}}
+      }
+    },
+    "remaining": {"type": "array", "maxItems": 100, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "output_refs": {"type": "array", "maxItems": 100, "uniqueItems": true, "items": {"type": "string", "minLength": 1, "maxLength": 1024}},
+    "next_owner_ref": {"type": "string", "minLength": 1, "maxLength": 1024},
+    "next_step": {"type": "string", "minLength": 1, "maxLength": 1024},
+    "route_status": {"enum": ["ready", "blocked"]},
+    "route_reason": {"type": "string", "minLength": 1},
+    "execution_attempted": {"const": false},
+    "ownership_transferred": {"const": false}
+  }
+}
