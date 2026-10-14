@@ -90,6 +90,14 @@ stronger existing identity and student folder rather than merging histories.
 Exact source content, canonical identity and registered assignment binding govern
 grading. Filenames, similar titles or cached links alone prove none of these.
 
+Use the existing private class/section/student records layout and one index
+accessible from 00AIHS. The index retains the content-verified work copy, original
+submission, feedback, class/lesson, actual dates and exact holds. Teacher reports
+stay in their configured separate class/section folders and start with the cycle
+number, or 00 for general reports; multi-section Forensics reports remain in the
+Forensics parent. Never delete Student Feedback — Private because copies exist,
+restore Student answers — Biology, or mark a live Form source for deletion.
+
 Before calling work missing, inspect complete selected intake coverage. Distinguish
 verified empty intake, no Form responses, unresolved work elsewhere and incomplete
 coverage. Keep actual untrashed IDs/parents/versions and original Form event dates.
