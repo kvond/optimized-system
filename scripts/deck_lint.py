@@ -66,11 +66,9 @@ ADVISORY checks
 EXCLUSIONS
 ----------
 Teacher-navigation slides ("do not project", "teacher navigation") and the standing
-end-of-lesson reflections ("continuation question:", "relates to me:") are excluded
-from the diagnostic counts, exactly as in `extract_and_grade.py`. The two tuples
-below MUST stay byte-identical to that script's NON_DIAGNOSTIC_MARKERS and
-STANDING_REFLECTION_MARKERS. That grader is retired (see the tuple's comment), so
-this file is now the sole owner of both tuples. See SKILL §7.1.
+end-of-lesson reflections ("continuation question:", "relates to me:", "concept bank")
+are excluded from the diagnostic counts. This file owns both exclusion tuples;
+`extract_and_grade.py` is retired and is not a synchronization target. See SKILL §7.1.
 
 USAGE
 -----
@@ -124,7 +122,7 @@ TIER_HEX_OK = {
     "Mastery":         {"1E8449"},
 }
 
-# MUST stay in sync with extract_and_grade.py NON_DIAGNOSTIC_MARKERS.
+# Teacher-navigation exclusions owned by this linter (SKILL §7.1).
 NON_DIAGNOSTIC = ("do not project", "teacher navigation")
 # Formerly had to stay in sync with extract_and_grade.py's
 # STANDING_REFLECTION_MARKERS. That sync rule is RETIRED: Katherine confirmed
@@ -449,8 +447,8 @@ def _normalize_typography(text):
 def classify_slide(text):
     """Slide type, by the marker strings the teacher prompts already match on.
 
-    Order matters: the exclusion markers are tested first, exactly as
-    extract_and_grade.classify_slide() does.
+    Order matters: teacher and reference slide types take precedence over
+    student-facing diagnostic types. Diagnostic counts separately use is_excluded().
     """
     low = text.lower()
     first = text.split("\n")[0].strip().lower() if text.strip() else ""
@@ -458,8 +456,8 @@ def classify_slide(text):
     # The teacher note is tested FIRST. It is a teacher slide and will normally
     # carry "do not project", so testing the nav markers ahead of it would
     # classify every teacher note as navigation. This ordering governs slide
-    # TYPE only — the diagnostic-count exclusion in is_excluded() keeps the
-    # grader's order untouched.
+    # TYPE only — is_excluded() independently keeps teacher slides out of
+    # diagnostic counts.
     if any(m in low for m in TEACHER_NOTE_MARKERS):
         return "Teacher note"
     # Before the nav markers, for the same reason the note is: this slide
@@ -648,7 +646,7 @@ def lint_deck(path):
     for idx, slide in enumerate(slides, start=1):
         text = texts[idx - 1]
         if is_excluded(text):
-            continue                                # matches the grader exactly
+            continue                                # never count excluded slides
         slide_is_diag = False
 
         if all(lbl in text for lbl in TIER_LABELS):
@@ -693,7 +691,7 @@ def lint_deck(path):
         if lbl not in all_text:
             hard("H-TIER-VERBATIM",
                  "tier label '%s' never appears verbatim anywhere in the deck "
-                 "(a typo or wrong casing breaks grader classification)" % lbl)
+                 "(a typo or wrong casing fails the verbatim tier-label check)" % lbl)
 
     # -- markers present and unbroken (the ellipsis fault, SKILL §3c) -------
     for idx, text in enumerate(texts, start=1):
@@ -712,8 +710,9 @@ def lint_deck(path):
                         break
                 hard("H-MARKER-BROKEN",
                      "marker '%s' broken by typographic punctuation — it matches only "
-                     "after normalising. The grader still classifies this slide and the "
-                     "linter does not, so the two counts drift by one (SKILL §3c). "
+                     "after normalising, so this occurrence does not satisfy the "
+                     "diagnostic marker check. Restore the exact ASCII marker in the "
+                     "deck (SKILL §3c); do not change the prompt. "
                      "Slide text: %r" % (mname, bad), idx)
 
     missing_markers = [m for m in MARKER_ORDER if m not in markers_seen]
