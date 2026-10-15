@@ -26,7 +26,7 @@ The private scheduler registry remains the inventory of provider-level schedule 
 
 ## Next background jobs
 ### Weekly Lesson Preflight — Sunday
-Owner: Claude Code, with deterministic reads delegated where possible. Proposed Sunday run before Monday preparation.
+Owner: ChatGPT (Katherine's decision, 2026-10-15), not a Claude Code scheduled task. Proposed Sunday run before Monday preparation. Uses the school Drive. Claude reviews its outputs and PRs against these rules; it does not run Preflight.
 
 Needs access to: `kvond/lesson-preflight`; school Drive; Master Agenda `Agenda 26-27 CLEAN`; `📤 Turn it in_Google Forms`; next-week VT decks and lesson materials; Schoology read access or a current exported/readable source. It may inspect and report readiness but does not publish or change canonical files without a standing rule/approval.
 
