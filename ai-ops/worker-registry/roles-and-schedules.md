@@ -20,7 +20,7 @@ Updated 2026-10-15. This file is the operational ownership/schedule source. Stan
 | Feedback/print-ready | Local Codex | Weekdays 07:30 Eastern | Prepare/file outputs; physical printing/delivery remains Katherine. |
 | Teaching Hub report follow-up | Local Codex | Weekdays 08:00 Eastern | Reconcile receipts; no inferred success. |
 | Friday I-Tracker | School Claude organization | Friday 14:15 Eastern displayed | Browser blocked in district Claude; I-Tracker note remains hand-triggered. |
-| System Review | Claude Code primary; GitHub Action fallback | Weekly Sunday primary; fallback later | Judgment routine proposes only. Same prompt contract for both paths. |
+| System Review | Claude Code scheduled task (Pro plan) | Weekly Sunday night Eastern | Proposes only. Prompt: `prompts/system-review.md`. |
 
 The private scheduler registry remains the inventory of provider-level schedule records. This file defines ownership and intended cadence; a configured schedule is not proof of a successful run.
 

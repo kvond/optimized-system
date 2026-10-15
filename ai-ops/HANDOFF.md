@@ -15,7 +15,7 @@ Updated 2026-10-15. This section is the current source; older state is Git histo
 - Use only canonical names from `ai-ops/NAMES.md` and Katherine's terms and measures.
 
 ## Current owners and limits
-- System Review: Claude Code is the primary judgment routine. The GitHub Action is fallback only and runs later if the primary report is absent. Both use the same `prompts/system-review.md` contract.
+- System Review: weekly Claude Code scheduled task on Katherine's Pro plan (Sunday night ET), using `prompts/system-review.md`. No GitHub Action, Anthropic API key or Slack webhook.
 - District Claude organization blocks browser use. IC entry and I-Tracker notes remain hand-triggered.
 - Existing 06:30/07:30/08:00 school routines and the 07:00 IC helper remain separate until explicitly changed. See `ai-ops/worker-registry/roles-and-schedules.md`.
 
