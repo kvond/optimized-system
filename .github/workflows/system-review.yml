@@ -1,0 +1,32 @@
+name: System Review
+on:
+  schedule:
+    - cron: "0 3 * * 1"   # Sunday 11pm Eastern (03:00 UTC Monday)
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 50
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run review
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_SYSTEM_REVIEW_WEBHOOK }}
+        run: python tools/system_review.py
+      - name: Save report on a branch
+        run: |
+          git config user.name "system-review"
+          git config user.email "system-review@users.noreply.github.com"
+          B="claude/system-review-$(date +%F)"
+          git checkout -b "$B"
+          git add ai-ops/reports/system-review
+          git commit -m "System Review $(date +%F)" || exit 0
+          git push origin "$B"
