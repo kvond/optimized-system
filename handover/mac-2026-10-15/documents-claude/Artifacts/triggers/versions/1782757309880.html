@@ -1,0 +1,208 @@
+<!DOCTYPE html><script type="application/json" id="cowork-artifact-meta">
+{
+  "name": "Triggers",
+  "schemaVersion": 1,
+  "description": "Triggers panel — tap to run a block's skill (Route · Book Distill · Learning Block Agenda · WilmU Update). Buttons call the matching scheduled task; output lands on the Roam daily page.",
+  "mcpTools": [],
+  "mcpServerNames": []
+}
+</script>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Triggers</title>
+<style>
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #ffffff;
+  color: #1a1a1a;
+  padding: 18px;
+}
+h1 { font-size: 16px; font-weight: 700; margin: 0 0 2px; letter-spacing: .2px; }
+.sub { font-size: 12px; color: #6b6b6b; margin: 0 0 16px; line-height: 1.4; }
+.group { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .6px; color: #9a9a9a; margin: 18px 0 8px; }
+.group:first-of-type { margin-top: 4px; }
+.card {
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.meta { min-width: 0; }
+.name { font-size: 14px; font-weight: 600; margin: 0 0 3px; display: flex; align-items: center; gap: 8px; }
+.badge { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .4px; color: #6b6b6b; background: #ececec; border-radius: 5px; padding: 2px 6px; }
+.desc { font-size: 12px; color: #6b6b6b; margin: 0; line-height: 1.35; }
+button.run {
+  flex: 0 0 auto;
+  border: none;
+  border-radius: 8px;
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 9px 16px;
+  cursor: pointer;
+  transition: background .15s, opacity .15s;
+}
+button.run:hover { background: #333; }
+button.run:disabled { opacity: .55; cursor: default; }
+.status { font-size: 11px; margin-top: 6px; min-height: 14px; }
+.status.ok { color: #1f7a3d; }
+.status.err { color: #b22; }
+.foot { font-size: 11px; color: #9a9a9a; margin-top: 14px; line-height: 1.4; }
+</style>
+</head>
+<body>
+  <h1>Triggers</h1>
+  <p class="sub">Pull, don&rsquo;t push. Out of work in a block? Tap it to see what&rsquo;s next &mdash; one thing, not the whole list. Distills &amp; sweep run on demand too. Output lands on today&rsquo;s Roam daily page.</p>
+
+  <div id="cards"></div>
+  <p class="foot">Runs in the background &mdash; give it a moment, then check your Roam daily note. &ldquo;Auto&rdquo; tasks also run on their own nightly; the button just runs one now.</p>
+
+<script>
+  const GROUPS = [
+    {
+      label: "What’s next (when you run out of gas)",
+      tasks: [
+        {
+          id: "author-block",
+          emoji: "✍️",
+          name: "Author Block",
+          desc: "Your next writing focus — ONE chapter slice (prep → write → place), capped at 2 hr. Not the whole list."
+        },
+        {
+          id: "learning-block-agenda",
+          emoji: "🎧",
+          name: "Learning Block Agenda",
+          desc: "What to practice next — Spanish, voice, ukulele. The deciding you run out of gas on."
+        }
+      ]
+    },
+    {
+      label: "Status refresh",
+      tasks: [
+        {
+          id: "wilmu-update",
+          emoji: "🎓",
+          name: "WilmU Update",
+          desc: "Status-only refresh of [[WilmU Block]] — what’s done · where you are · the single next action."
+        },
+        {
+          id: "aihs-update",
+          emoji: "🍎",
+          name: "AIHS Update",
+          desc: "Status-only refresh of [[AIHS Block]] — what’s done · where you are · the single next action."
+        }
+      ]
+    },
+    {
+      label: "Distills & housekeeping",
+      tasks: [
+        {
+          id: "second-brain-distill",
+          emoji: "📖",
+          name: "Book Distill",
+          desc: "Tags #Book + literature captures into the zettel notes bank + claims (raw → Google Drive). The whole second brain."
+        },
+        {
+          id: "daily-route",
+          emoji: "🧭",
+          name: "Route",
+          badge: "auto · 9:37 pm",
+          desc: "Sweeps untagged blocks off your daily pages to their homes (book → Distill, task → Tasks, personal → 🏡). Tap to run now."
+        },
+        {
+          id: "tags-pages-sweep",
+          emoji: "🧹",
+          name: "Tags-and-Pages Sweep",
+          badge: "auto · 8 pm",
+          desc: "Audit — dedup pages, quarantine orphans, normalize tags vs [[🏷️ TAGS]]. Surfaces ambiguous calls for review. Tap to run now."
+        }
+      ]
+    }
+  ];
+
+  const wrap = document.getElementById("cards");
+
+  GROUPS.forEach(function (g) {
+    const h = document.createElement("div");
+    h.className = "group";
+    h.textContent = g.label;
+    wrap.appendChild(h);
+
+    g.tasks.forEach(function (t) {
+      const card = document.createElement("div");
+      card.className = "card";
+
+      const meta = document.createElement("div");
+      meta.className = "meta";
+
+      const name = document.createElement("p");
+      name.className = "name";
+      const nameText = document.createElement("span");
+      nameText.textContent = t.emoji + "  " + t.name;
+      name.appendChild(nameText);
+      if (t.badge) {
+        const badge = document.createElement("span");
+        badge.className = "badge";
+        badge.textContent = t.badge;
+        name.appendChild(badge);
+      }
+
+      const desc = document.createElement("p");
+      desc.className = "desc";
+      desc.textContent = t.desc;
+
+      const status = document.createElement("div");
+      status.className = "status";
+
+      meta.appendChild(name);
+      meta.appendChild(desc);
+      meta.appendChild(status);
+
+      const btn = document.createElement("button");
+      btn.className = "run";
+      btn.textContent = "Run";
+
+      btn.addEventListener("click", async function () {
+        status.className = "status";
+        status.textContent = "";
+        if (!window.cowork || typeof window.cowork.runScheduledTask !== "function") {
+          status.className = "status err";
+          status.textContent = "Run unavailable in this view.";
+          return;
+        }
+        btn.disabled = true;
+        const label = btn.textContent;
+        btn.textContent = "Running…";
+        try {
+          await window.cowork.runScheduledTask(t.id);
+          status.className = "status ok";
+          status.textContent = "Sent — check your Roam daily note shortly.";
+          btn.textContent = "Run again";
+        } catch (e) {
+          status.className = "status err";
+          status.textContent = "Couldn’t start: " + (e && e.message ? e.message : "unknown error");
+          btn.textContent = label;
+        } finally {
+          btn.disabled = false;
+        }
+      });
+
+      card.appendChild(meta);
+      card.appendChild(btn);
+      wrap.appendChild(card);
+    });
+  });
+</script>
+</body>
+</html>

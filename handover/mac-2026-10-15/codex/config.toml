@@ -1,0 +1,272 @@
+notify = ["/Users/katherinevonduyke/.codex/computer-use/Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient", "turn-ended"]
+model = "gpt-6.1-sol"
+model_reasoning_effort = "low"
+service_tier = "priority"
+
+[marketplaces.openai-bundled]
+source_type = "local"
+source = "/Users/katherinevonduyke/.codex/.tmp/bundled-marketplaces/openai-bundled"
+
+[marketplaces.openai-primary-runtime]
+source_type = "local"
+source = "/Users/katherinevonduyke/.cache/codex-runtimes/codex-primary-runtime/plugins/openai-primary-runtime"
+
+[plugins."visualize@openai-bundled"]
+enabled = true
+
+[plugins."documents@openai-primary-runtime"]
+enabled = true
+
+[plugins."pdf@openai-primary-runtime"]
+enabled = true
+
+[plugins."spreadsheets@openai-primary-runtime"]
+enabled = true
+
+[plugins."presentations@openai-primary-runtime"]
+enabled = true
+
+[plugins."template-creator@openai-primary-runtime"]
+enabled = true
+
+[plugins."codex-app-tools@openai-bundled"]
+enabled = true
+
+[plugins."google-drive@openai-curated"]
+enabled = true
+
+[plugins."gmail@openai-curated"]
+enabled = true
+
+[plugins."browser@openai-bundled"]
+enabled = true
+
+[plugins."chrome@openai-bundled"]
+enabled = true
+
+[plugins."computer-use@openai-bundled"]
+enabled = true
+
+[plugins."unified-computer-use@openai-bundled"]
+enabled = true
+
+[plugins."code-review@openai-bundled"]
+enabled = true
+
+[features]
+memories = true
+js_repl = false
+
+[shell_environment_policy.set]
+NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S = "9230e2bd8b24b7ac7a0ba6774c64bf0d78ecdabbdd91d0ed627b02a587bae2df"
+
+[desktop]
+conversationDetailMode = "STEPS_COMMANDS"
+sansFontSize = 14
+codeFontSize = 13
+ambient-suggestions-enabled = true
+followUpQueueMode = "queue"
+open-link-in-target-preference = "in-app-browser"
+projectlessWorkspaceRoot = "/Users/katherinevonduyke/Documents/Claude"
+preventSleepWhileRunning = true
+agent-usage-reset-enabled = true
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-07-22/let-s-set-up-a-scheduled"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-07-22/te"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-08-01/meal-plan-and-shopping-list-chatgpt"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-08-01/can-you-make-a-2-week"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-08-01/mak"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-08-03/swelling-and-sleep-factors-chatgpt-conversation"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-08-03/tak"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-08-03/wha"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-08-06/wha"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-08-06/u"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/.codex/.chatgpt-projects/g-p-69f746c538708191b0924b625735c036"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-08-08/sites-plugin-sites-openai-bundled-create"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-08-09/sites-plugin-sites-openai-bundled-create"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/.codex/.chatgpt-projects/g-p-6877a62549c08191907d5541cd842b5e"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-08-11/sites-plugin-sites-openai-bundled-create"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-08-21/review-recent-email-and-calendar-activity"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-08-21/review-recent-email-and-calendar-activity-2"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-08-22/whe"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-08-23/d"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-08-23/plugin-creator-users-katherinevonduyke-codex-skills"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-08-23/ppend-today-s-daily-brief-to"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-08-24/plugin-creator-users-katherinevonduyke-codex-skills"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-08-24/plugin-creator-users-katherinevonduyke-codex-skills-2"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-08-25/referenced-chatgpt-conversation-this-is-an"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-08-27/referenced-chatgpt-conversation-this-is-an"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-09-09/referenced-chatgpt-conversation-this-is-an"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-09-13/lo"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-09-14/google-drive-plugin-google-drive-openai"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-09-14/google-drive-plugin-google-drive-openai-2"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-09-14/new-chat"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-09-14/i-d"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-09-16/go"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-09-16/loo"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-09-16/ac"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-09-16/all-the-submissions-went-to-this"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-09-16/i-n"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-09-16/find-x20"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-09-16/find-out-which-email-account-keeps"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-09-17/fix-only-the-current-page-2"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-09-17/continue-my-google-cloud-school-dashboard"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Claude/2026-09-20/run-grading-now"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Codex/2026-09-30/m"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Claude/2026-09-30/th"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Claude/2026-09-30/let-s-set-up-a-scheduled"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Claude/2026-10-01/ca"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Claude/2026-10-02/wh"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Claude/2026-10-02/other-x20"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Claude/2026-10-05/referenced-chatgpt-conversation-this-is-an"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Claude/2026-10-07/remote-desktop-commander-plugin-app-6a057d268ebc81919918d37eec718425"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Claude/2026-10-07/remote-desktop-commander-plugin-app-6a057d268ebc81919918d37eec718425-2"]
+trust_level = "trusted"
+
+[projects."/Users/katherinevonduyke/Documents/Claude/2026-10-07/remote-desktop-commander-plugin-app-6a057d268ebc81919918d37eec718425-3"]
+trust_level = "trusted"
+
+[memories]
+generate_memories = true
+use_memories = true
+
+[mcp_servers.node_repl]
+args = []
+command = "/Applications/ChatGPT.app/Contents/Resources/cua_node/bin/node_repl"
+startup_timeout_sec = 120
+
+[mcp_servers.node_repl.env]
+NODE_REPL_NATIVE_PIPE_CONNECT_TIMEOUT_MS = "1000"
+NODE_REPL_NODE_MODULE_DIRS = "/Applications/ChatGPT.app/Contents/Resources/cua_node/lib/node_modules"
+NODE_REPL_NODE_PATH = "/Applications/ChatGPT.app/Contents/Resources/cua_node/bin/node"
+NODE_REPL_TRUSTED_CODE_PATHS = "/Users/katherinevonduyke/.codex:/Applications/ChatGPT.app/Contents/Resources/cua_node/lib/node_modules"
+CODEX_HOME = "/Users/katherinevonduyke/.codex"
+BROWSER_USE_AVAILABLE_BACKENDS = "chrome,iab,mcpapps"
+BROWSER_USE_TINYSKY_ENABLED = "1"
+NODE_REPL_INSTRUCTIONS_USE_CASE_BROWSER = ""
+NODE_REPL_INSTRUCTIONS_USE_CASE_CHROME = ""
+NODE_REPL_INSTRUCTIONS_USE_CASE_COMPUTER_USE = ""
+BROWSER_USE_CODEX_APP_BUILD_FLAVOR = "prod"
+BROWSER_USE_CODEX_APP_VERSION = "26.1007.21159"
+NODE_REPL_TRUSTED_SERVICES = '{"browser":"/Users/katherinevonduyke/.codex/plugins/cache/openai-bundled/browser/26.1007.21159/scripts/browser-service.mjs","sky":"@oai/sky/service"}'
+SKY_CUA_SERVICE_PATH = "/Users/katherinevonduyke/.codex/computer-use/Codex Computer Use.app"
+CODEX_CLI_PATH = "/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS/codex"
+
+[mcp_servers.computer-use]
+command = "./Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient"
+args = ["mcp"]
+cwd = "."
+enabled = false
+
+[apps.asdk_app_6943b73823548191a9f9216c6790c453.tools."todoist_to_do_list_calendar.complete-tasks"]
+approval_mode = "approve"
+
+[apps.asdk_app_6943b73823548191a9f9216c6790c453.tools."todoist_to_do_list_calendar.update-tasks"]
+approval_mode = "approve"
+
+[apps.connector_5f3c8c41a1e54ad7a76272c89e2554fa.tools."google_drive.batch_update_presentation"]
+approval_mode = "approve"
+
+[apps.asdk_app_6a057d268ebc81919918d37eec718425.tools."remote_desktop_commander.write_file"]
+approval_mode = "approve"
+
+[apps.asdk_app_6a057d268ebc81919918d37eec718425.tools."remote_desktop_commander.start_process"]
+approval_mode = "approve"

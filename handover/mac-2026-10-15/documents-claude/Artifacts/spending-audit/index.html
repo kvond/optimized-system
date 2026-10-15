@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<script type="application/json" id="cowork-artifact-meta">
+{
+  "name": "Spending Audit",
+  "schemaVersion": 1,
+  "description": "Full spending audit from Tiller: income against spending by month, every category versus plan, chronic overspend, unbudgeted categories, the Amazon charge-to-item reconciliation, and the data problems behind the numbers.",
+  "mcpTools": [],
+  "mcpServerNames": []
+}
+</script>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spending audit — 2026 through August 16</title>
+<style>
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 600;
+  font-display: block;
+  src: url(data:font/woff2;base64,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) format('woff2');
+}
+:root {
+  --bg: #FCFCFB;
+  --wash: #F9F9F7;
+  --ink: #2E2C27;
+  --ink-soft: #6B6A63;
+  --ink-grey: #B4B3A8;
+  --hairline: #E4E3DC;
+  --line: #E1E1DF;
+  --clay: #C6613F;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.band-top { background: var(--wash); border-bottom: 1px solid var(--line); }
+.band-bottom { background: var(--bg); }
+.inner { max-width: 860px; margin: 0 auto; padding: 56px 32px 44px; }
+.band-bottom .inner { padding-top: 46px; padding-bottom: 76px; }
+
+.daydate {
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+  margin: 0 0 14px;
+}
+h1 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.22;
+  letter-spacing: -0.01em;
+  margin: 0 0 30px;
+  color: var(--ink);
+}
+.drawing { width: 100%; height: auto; display: block; margin: 4px 0 6px; }
+
+.acts { display: flex; margin-top: 10px; }
+.act { flex: 1 1 0; padding: 0 22px; }
+.act:first-child { padding-left: 0; }
+.act:last-child { padding-right: 0; }
+.act + .act { border-left: 1px solid var(--hairline); }
+.act-time {
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--ink);
+  margin: 0 0 7px;
+}
+.act-note {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+h2 {
+  font-family: -apple-system, "Segoe UI", sans-serif;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: 0 0 20px;
+}
+.list { margin: 0 0 46px; }
+.list:last-child { margin-bottom: 0; }
+.item { display: flex; gap: 18px; padding: 0 0 22px; }
+.num {
+  font-size: 13px;
+  color: var(--ink-grey);
+  min-width: 16px;
+  padding-top: 2px;
+  font-variant-numeric: tabular-nums;
+}
+.item-body { flex: 1; }
+.item-title {
+  font-size: 15.5px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--ink);
+  margin: 0 0 5px;
+}
+.item-title a { color: inherit; text-decoration: none; }
+.item-title a:hover { text-decoration: underline; }
+.item-note {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin: 0;
+}
+.item-note a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--ink-grey);
+  text-underline-offset: 2px;
+}
+.trigger { display: flex; gap: 18px; padding: 0 0 15px; }
+.trigger-label {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--ink);
+  min-width: 178px;
+}
+.trigger-state {
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  flex: 1;
+}
+.trigger-state code {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 13px;
+}
+.ahead { display: flex; gap: 18px; padding: 0 0 13px; }
+.ahead-date {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--ink);
+  min-width: 96px;
+}
+.ahead-what { font-size: 14.5px; line-height: 1.55; color: var(--ink-soft); flex: 1; }
+.plain-note { font-size: 14.5px; line-height: 1.6; color: var(--ink-soft); margin: 0 0 22px; }
+.carry-list { margin: 0; padding: 0 0 0 20px; }
+.carry-list li { font-size: 14.5px; line-height: 1.6; color: var(--ink-soft); margin: 0 0 9px; }
+@media (max-width: 640px) {
+  .trigger, .ahead { display: block; }
+  .trigger-label, .ahead-date { min-width: 0; margin-bottom: 3px; }
+}
+@media (max-width: 640px) {
+  .inner { padding: 40px 22px 34px; }
+  h1 { font-size: 30px; }
+  .acts { display: block; }
+  .act { padding: 0; }
+  .act + .act {
+    border-left: none;
+    border-top: 1px solid var(--hairline);
+    margin-top: 18px;
+    padding-top: 18px;
+  }
+}
+
+table { border-collapse: collapse; width: 100%; margin: 0 0 10px; }
+th { font-size: 11.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+     color: var(--ink-soft); text-align: left; padding: 0 10px 8px 0; border-bottom: 1px solid var(--hairline); }
+th.n, td.n { text-align: right; font-variant-numeric: tabular-nums; }
+td { font-size: 14px; color: var(--ink-soft); padding: 9px 10px 9px 0; border-bottom: 1px solid var(--hairline); }
+td.name { color: var(--ink); font-weight: 600; }
+td.over { color: var(--clay); }
+tr.total td { font-weight: 700; color: var(--ink); border-bottom: none; }
+.bar { display: flex; height: 7px; background: var(--hairline); }
+.bar i { display: block; height: 7px; background: var(--ink); }
+.bar i.over { background: var(--clay); }
+.lede { font-size: 15px; line-height: 1.65; color: var(--ink-soft); margin: 0 0 26px; max-width: 64ch; }
+.sub { font-size: 12.5px; color: var(--ink-grey); margin: 0 0 22px; }
+.big { font-family: 'Fraunces', Georgia, serif; font-size: 30px; color: var(--ink); }
+.big.clay { color: var(--clay); }
+.kpis { display: flex; gap: 40px; margin: 0 0 34px; flex-wrap: wrap; }
+.kpi p { margin: 4px 0 0; font-size: 13px; color: var(--ink-soft); max-width: 24ch; line-height: 1.5; }
+.callout { border-left: 2px solid var(--clay); padding: 2px 0 2px 18px; margin: 0 0 30px; }
+.callout p { font-size: 15px; line-height: 1.65; color: var(--ink-soft); margin: 0 0 10px; max-width: 62ch; }
+.callout p:last-child { margin-bottom: 0; }
+@media (max-width: 640px) { .kpis { gap: 24px; } table { font-size: 13px; } td, th { padding-right: 6px; } }
+</style></head>
+<body>
+
+<div class="band-top"><div class="inner">
+  <p class="daydate">2026 · January 1 through August 16 · every figure counted from 1,800 Tiller transactions</p>
+  <h1>You are $5,573 behind for the year, and two rental capital payments are the whole of it.</h1>
+  <p class="lede">Strip out the GreenSky payoff and the Boulden rental work — both are money moved onto an
+  asset rather than money consumed — and the year runs <strong>$9,326 ahead</strong>, not behind. That single
+  distinction changes what the rest of this page means, so it comes first.</p>
+  <p class="lede">One caveat that cuts the other way: your Savor card reports nothing to this sheet before
+  January 28, and your Prime Visa nothing before February 17. Spending on those cards in January and early
+  February is missing from every figure here, so the true position is somewhat worse than the numbers say.</p>
+  <div class="kpis">
+    <div class="kpi"><span class="big">$59,869</span><p>income received</p></div>
+    <div class="kpi"><span class="big">$65,443</span><p>money out, excluding transfers and card payments</p></div>
+    <div class="kpi"><span class="big clay">−$5,573</span><p>net for the year as counted</p></div>
+    <div class="kpi"><span class="big">+$9,326</span><p>net with rental capital set aside</p></div>
+  </div>
+  <svg class="drawing" viewBox="0 0 840 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Income and spending by month"><rect x="35.5" y="118.8" width="15" height="45.2" fill="#B4B3A8"/><rect x="54.5" y="133.3" width="15" height="30.7" fill="#2E2C27"/><text x="52.5" y="186" text-anchor="middle" font-size="12" fill="#6B6A63" font-family="-apple-system, sans-serif">Jan</text><rect x="140.5" y="114.1" width="15" height="49.9" fill="#B4B3A8"/><rect x="159.5" y="135.4" width="15" height="28.6" fill="#2E2C27"/><text x="157.5" y="186" text-anchor="middle" font-size="12" fill="#6B6A63" font-family="-apple-system, sans-serif">Feb</text><rect x="245.5" y="116.3" width="15" height="47.7" fill="#B4B3A8"/><rect x="264.5" y="126.3" width="15" height="37.7" fill="#2E2C27"/><text x="262.5" y="186" text-anchor="middle" font-size="12" fill="#6B6A63" font-family="-apple-system, sans-serif">Mar</text><rect x="350.5" y="124.5" width="15" height="39.5" fill="#B4B3A8"/><rect x="369.5" y="16.0" width="15" height="148.0" fill="#C6613F"/><text x="367.5" y="186" text-anchor="middle" font-size="12" fill="#6B6A63" font-family="-apple-system, sans-serif">Apr</text><rect x="455.5" y="102.6" width="15" height="61.4" fill="#B4B3A8"/><rect x="474.5" y="126.5" width="15" height="37.5" fill="#2E2C27"/><text x="472.5" y="186" text-anchor="middle" font-size="12" fill="#6B6A63" font-family="-apple-system, sans-serif">May</text><rect x="560.5" y="95.3" width="15" height="68.7" fill="#B4B3A8"/><rect x="579.5" y="112.5" width="15" height="51.5" fill="#2E2C27"/><text x="577.5" y="186" text-anchor="middle" font-size="12" fill="#6B6A63" font-family="-apple-system, sans-serif">Jun</text><rect x="665.5" y="105.2" width="15" height="58.8" fill="#B4B3A8"/><rect x="684.5" y="109.8" width="15" height="54.2" fill="#2E2C27"/><text x="682.5" y="186" text-anchor="middle" font-size="12" fill="#6B6A63" font-family="-apple-system, sans-serif">Jul</text><rect x="770.5" y="149.9" width="15" height="14.1" fill="#B4B3A8"/><rect x="789.5" y="131.1" width="15" height="32.9" fill="#C6613F"/><text x="787.5" y="186" text-anchor="middle" font-size="12" fill="#6B6A63" font-family="-apple-system, sans-serif">Aug</text><line x1="0" y1="164" x2="840" y2="164" stroke="#E1E1DF" stroke-width="1"/></svg>
+  <p class="sub">Grey is income, dark is spending, clay marks a month that spent more than it earned.
+  April carries $10,613 to GreenSky and $2,932 to Boulden Brothers. August is 16 days and one paycheck.</p>
+</div></div>
+
+<div class="band-bottom"><div class="inner">
+
+  <div class="list">
+    <h2>Over plan, by dollars</h2>
+    <p class="lede">Budget is the Jan-through-August portion of each monthly plan on your Categories tab.
+    Dark is spending inside plan; clay is past it.</p>
+    <table>
+      <tr><th>Category</th><th>Group</th><th class="n">Spent</th><th class="n">Planned</th><th class="n">Over</th><th></th></tr>
+      <tr><td class="name">Green Sky 11%</td><td>Rental Capital</td><td class="n">$11,147</td><td class="n">$2,500</td><td class="n over">$8,647</td><td style="width:150px"><span class="bar"><i style="width:22.4%"></i><i class="over" style="width:77.6%"></i></span></td></tr><tr><td class="name">Help Kids</td><td>Spending</td><td class="n">$5,479</td><td class="n">$570</td><td class="n over">$4,909</td><td style="width:150px"><span class="bar"><i style="width:5.1%"></i><i class="over" style="width:44.0%"></i></span></td></tr><tr><td class="name">Groceries</td><td>Spending</td><td class="n">$6,330</td><td class="n">$3,970</td><td class="n over">$2,360</td><td style="width:150px"><span class="bar"><i style="width:35.6%"></i><i class="over" style="width:21.2%"></i></span></td></tr><tr><td class="name">Travel</td><td>Periodic</td><td class="n">$3,531</td><td class="n">$2,056</td><td class="n over">$1,475</td><td style="width:150px"><span class="bar"><i style="width:18.4%"></i><i class="over" style="width:13.2%"></i></span></td></tr><tr><td class="name">AI</td><td>Bills</td><td class="n">$1,851</td><td class="n">$40</td><td class="n over">$1,811</td><td style="width:150px"><span class="bar"><i style="width:0.4%"></i><i class="over" style="width:16.2%"></i></span></td></tr><tr><td class="name">Subscriptions</td><td>Spending</td><td class="n">$1,537</td><td class="n">$40</td><td class="n over">$1,497</td><td style="width:150px"><span class="bar"><i style="width:0.4%"></i><i class="over" style="width:13.4%"></i></span></td></tr><tr><td class="name">Restaurants</td><td>Spending</td><td class="n">$1,595</td><td class="n">$445</td><td class="n over">$1,150</td><td style="width:150px"><span class="bar"><i style="width:4.0%"></i><i class="over" style="width:10.3%"></i></span></td></tr><tr><td class="name">Medical and Dental</td><td>Spending</td><td class="n">$1,451</td><td class="n">$260</td><td class="n over">$1,191</td><td style="width:150px"><span class="bar"><i style="width:2.3%"></i><i class="over" style="width:10.7%"></i></span></td></tr><tr><td class="name">Apple Phone</td><td>Periodic</td><td class="n">$1,073</td><td class="n">$432</td><td class="n over">$641</td><td style="width:150px"><span class="bar"><i style="width:3.9%"></i><i class="over" style="width:5.8%"></i></span></td></tr><tr><td class="name">Car Maintenance</td><td>Periodic</td><td class="n">$1,775</td><td class="n">$1,200</td><td class="n over">$575</td><td style="width:150px"><span class="bar"><i style="width:10.8%"></i><i class="over" style="width:5.2%"></i></span></td></tr>
+    </table>
+    <p class="sub">Green Sky 11%: the April payoff, not a monthly habit · Help Kids: $1,000 on Aug 10, $965 in April, $1,770 in July · Groceries: over plan in all six full months · Travel: April $1,697 and June $1,012 · AI: the plan is $5 a month against $231 actual · Subscriptions: same problem: a plan that was never real · Restaurants: over plan in five of six months · Medical and Dental: over plan in all six · Apple Phone: a single $1,020 Apple Card payment in January · Car Maintenance: Martin Honda $1,056 in January</p>
+  </div>
+
+  <div class="callout">
+    <p><strong>Two of these are not overspending at all.</strong> AI is budgeted at $5 a month against $231
+    of actual, and Subscriptions at $5 against $192. A plan that is wrong by a factor of forty is not a
+    restraint you keep failing; it is a number nobody ever set. Those two lines account for $3,308 of the
+    apparent overage and should be repriced before you read them as behaviour.</p>
+  </div>
+
+  <div class="list">
+    <h2>Where you tend to go over</h2>
+    <p class="lede">Tendency means repetition, so this counts how many of the last six full months came in
+    over plan, paired with the median size of the overage.</p>
+    <table>
+      <tr><th>Category</th><th class="n">Months over</th><th class="n">Median overage</th><th class="n">Mean spend</th><th class="n">Monthly plan</th></tr>
+      <tr><td class="name">Groceries</td><td class="n">6 of 6</td><td class="n over">$369</td><td class="n">$909</td><td class="n">$550</td></tr><tr><td class="name">Restaurants</td><td class="n">5 of 6</td><td class="n over">$288</td><td class="n">$234</td><td class="n">$50</td></tr><tr><td class="name">Help Kids</td><td class="n">5 of 6</td><td class="n over">$195</td><td class="n">$684</td><td class="n">$100</td></tr><tr><td class="name">Medical and Dental</td><td class="n">6 of 6</td><td class="n over">$167</td><td class="n">$228</td><td class="n">$20</td></tr><tr><td class="name">Travel</td><td class="n">3 of 6</td><td class="n over">$734</td><td class="n">$559</td><td class="n">$278</td></tr>
+    </table>
+    <p class="sub">February through July. Only categories with a budget in at least three of those months.</p>
+  </div>
+
+  <div class="list">
+    <h2>Chronic, but the amount is trivial</h2>
+    <p class="lede">These clear plan nearly every month by a few dollars. That is a plan set slightly low,
+    not a habit, and correcting the number removes two false alarms from every future month.</p>
+    <table>
+      <tr><th>Category</th><th class="n">Months over</th><th class="n">Median overage</th><th class="n">Mean spend</th><th class="n">Monthly plan</th></tr>
+      <tr><td class="name">State Farm</td><td class="n">6 of 6</td><td class="n">$6</td><td class="n">$166</td><td class="n">$150</td></tr><tr><td class="name">Balance Fitness</td><td class="n">5 of 6</td><td class="n">$3</td><td class="n">$28</td><td class="n">$29</td></tr>
+    </table>
+  </div>
+
+  <div class="list">
+    <h2>Under plan, and why that is not always good news</h2>
+    <table>
+      <tr><th>Category</th><th class="n">Spent</th><th class="n">Planned</th><th class="n">Under</th><th>What it means</th></tr>
+      <tr><td class="name">Discover debt</td><td class="n">$0</td><td class="n">$5,100</td><td class="n">$5,100</td><td>budgeted $300 a month; the paydown is filed as Card payment, so it reads zero</td></tr><tr><td class="name">Rent - to Jake</td><td class="n">$3,764</td><td class="n">$6,820</td><td class="n">$3,056</td><td>five of eight months show nothing paid</td></tr><tr><td class="name">Singing Lessons</td><td class="n">$0</td><td class="n">$720</td><td class="n">$720</td><td>no charge all year</td></tr><tr><td class="name">2025 Tax Bill</td><td class="n">$0</td><td class="n">$480</td><td class="n">$480</td><td>no charge all year</td></tr><tr><td class="name">Mint Mobile</td><td class="n">$0</td><td class="n">$240</td><td class="n">$240</td><td>no charge all year</td></tr><tr><td class="name">Taxes</td><td class="n">$177</td><td class="n">$480</td><td class="n">$303</td><td></td></tr><tr><td class="name">Gas and Car Care</td><td class="n">$369</td><td class="n">$540</td><td class="n">$171</td><td></td></tr><tr><td class="name">Internet</td><td class="n">$560</td><td class="n">$792</td><td class="n">$232</td><td></td></tr>
+    </table>
+    <p class="sub">$6,640 of plan sits against categories with no spending at all this year.</p>
+  </div>
+
+  <div class="list">
+    <h2>Spending with no budget line</h2>
+    <p class="lede">These categories appear on transactions but have no row on the Categories tab. No plan can
+    attach to them, so over or under is undefined for every dollar below — a fifth of the year.</p>
+    <table>
+      <tr><th>Category</th><th class="n">2026</th><th></th></tr>
+      <tr><td class="name">Boulden's VPI</td><td class="n">$3,752</td><td>rental capital work; collides with the budgeted 'Bouldon Brothers' line</td></tr><tr><td class="name">Rental Bills</td><td class="n">$3,639</td><td>roofing, environmental, utilities at 96 Madison</td></tr><tr><td class="name">Amazon - Supplements</td><td class="n">$1,746</td><td></td></tr><tr><td class="name">Amazon - Tech</td><td class="n">$1,491</td><td></td></tr><tr><td class="name">Amazon - Household</td><td class="n">$780</td><td></td></tr><tr><td class="name">Misc</td><td class="n">$703</td><td></td></tr><tr><td class="name">Pest Control</td><td class="n">$303</td><td></td></tr><tr><td class="name">Amazon - Clothing</td><td class="n">$221</td><td></td></tr><tr><td class="name">Amazon - gifts</td><td class="n">$42</td><td></td></tr><tr><td class="name">Teacher expenses</td><td class="n">$15</td><td></td></tr><tr><td class="name">Aidvantage2024Loan</td><td class="n">$61</td><td></td></tr>
+      <tr class="total"><td>Total</td><td class="n">$12,754</td><td>204 transactions</td></tr>
+    </table>
+  </div>
+
+  <div class="list">
+    <h2>Amazon: the comparison you asked for</h2>
+    <p class="lede">I matched every 2026 Amazon charge in Tiller against every item in your order export,
+    on amount within two cents and date within five days, then made a second pass matching whole orders
+    against single charges. Here is what actually lines up.</p>
+    <table>
+      <tr><th>What</th><th>Count</th><th class="n">Amount</th></tr>
+      <tr><td class="name">Items bought, from the Amazon export</td><td>178 items</td><td class="n">$5,014.59</td></tr><tr><td class="name">Charges seen by Tiller</td><td>140 rows, net of 5 refunds</td><td class="n">$4,310.19</td></tr><tr><td class="name">Matched to each other</td><td>90 charges ↔ 124 items</td><td class="n">$3,302.42</td></tr><tr><td class="name">Tiller charges with no item behind them</td><td>45 charges</td><td class="n">$1,248.55</td></tr><tr><td class="name">Items with no charge behind them</td><td>54 items</td><td class="n">$1,712.17</td></tr>
+    </table>
+    <p class="sub">Seventy-three cents of every charged dollar is now explained by a specific item.</p>
+  </div>
+
+  <div class="list">
+    <h2>Why the two sides do not agree</h2>
+    <table>
+      <tr><th class="n">Amount</th><th>Mechanism</th><th>Evidence</th></tr>
+      <tr><td class="n name">$556.17</td><td class="name">Ordered before the card feed starts</td><td>Your Savor card has no transaction in this sheet before January 28, and your Prime Visa none before February 17. Twelve items were bought before their own card began reporting, including the $219.98 bed frame on January 10. The purchases happened; Tiller simply was not watching those cards yet.</td></tr><tr><td class="n name">$416.58</td><td class="name">Gift-card-funded orders</td><td>Ten items were paid partly with an Amazon gift card, so the card was charged less than the item cost and no charge equals the item price. The Seagate drive at $149.99 and the Dell monitor at $119.99 are in this group.</td></tr><tr><td class="n name">$30.93</td><td class="name">Bought on a card that is not in Tiller</td><td>Two items on June 29 were paid with MasterCard 1593, which has no account in your sheet. These are the only purchases genuinely invisible to your books.</td></tr><tr><td class="n name">$236.93</td><td class="name">Charges with no item at all</td><td>Seven Amazon Prime membership debits of $14.99 from February through August, and three identical $44.00 Amazon.com charges in February, March and April. These are recurring debits with no order behind them.</td></tr><tr><td class="n name">$240.78</td><td class="name">Refunds on the Tiller side only</td><td>Five positive Amazon rows, including $109.95 on April 23 and $65.99 on August 7. The order export does not carry the matching negative.</td></tr><tr><td class="n name">$191.97</td><td class="name">The nine-day blind spot</td><td>Your Amazon export stops August 7; the charges run to August 16. Ten charges fall in that gap with no possible counterpart.</td></tr><tr><td class="n name">$2.14</td><td class="name">Tax and shipping</td><td>Only three pairs show a charge exceeding its item, on a $52 base. The item amounts already include tax, so this is not the explanation I offered earlier.</td></tr>
+    </table>
+  </div>
+
+  <div class="list">
+    <h2>The largest single payments of the year</h2>
+    <table>
+      <tr><th>Date</th><th>Description</th><th>Category</th><th class="n">Amount</th></tr>
+      <tr><td class="name">Apr 28</td><td>Greensky Web Pay</td><td>Green Sky 11%</td><td class="n">$10,613</td></tr><tr><td class="name">Apr 3</td><td>Boulden Brothers, Newark DE</td><td>Boulden's VPI</td><td class="n">$2,932</td></tr><tr><td class="name">Jan 29</td><td>Martin Honda</td><td>Car Maintenance</td><td class="n">$1,056</td></tr><tr><td class="name">Mar 18</td><td>Cooper Roofing, Croydon PA</td><td>Rental Bills</td><td class="n">$1,020</td></tr><tr><td class="name">Jan 12</td><td>Apple Card payment</td><td>Apple Phone</td><td class="n">$1,020</td></tr><tr><td class="name">Aug 10</td><td>Venmo</td><td>Help Kids</td><td class="n">$1,000</td></tr><tr><td class="name">May 7</td><td>Miller Environmental</td><td>Rental Bills</td><td class="n">$1,000</td></tr><tr><td class="name">Apr 20</td><td>Synchrony Bank card payment</td><td>Help Kids</td><td class="n">$965</td></tr><tr><td class="name">Apr 19</td><td>Delta</td><td>Travel</td><td class="n">$845</td></tr>
+    </table>
+  </div>
+
+  <div class="list">
+    <h2>What is wrong with the data</h2>
+    <ul class="carry-list">
+      <li><strong>Both credit card feeds start late.</strong> Savor has no transaction in this sheet before January 28, and Prime Visa none before February 17. Every purchase made on either card before those dates is absent from this audit, in every category, not only Amazon. January and early February are therefore understated by an unknown but real amount, which means the year's net is worse than the figure at the top of this page, not better.</li><li>Eleven categories carrying $12,754 have no row on the Categories tab, so no budget can attach and no report can group them. That is 204 transactions.</li><li>‘Bouldon Brothers’ is budgeted at $100 and shows zero spend, while ‘Boulden's VPI’ carries $3,752 and has no budget. Almost certainly one vendor under two spellings.</li><li>Three transactions have no category at all, $78.48.</li><li>One row has no date: ‘Amazon household’, $125. It sits outside every month and every total here.</li><li>Thirteen pairs share a date, description and amount, including two Amazon Prime charges of $14.99 on April 2. Some are legitimate repeats; the Prime pair looks like a double bill, and a $14.99 refund posted the same day.</li><li>Four categories show negative months where refunds were booked back into an expense line: Help Kids in February, Amazon unsorted in March, Misc in July, Rental Bills in January.</li><li>$6,640 of budget sits against categories with zero spending all year. Discover debt is $5,100 of that, and the paydown is real — it is filed as Card payment, so the budget line can never see it.</li>
+    </ul>
+  </div>
+
+  <div class="list">
+    <h2>What this cannot tell you</h2>
+    <ul class="carry-list">
+      <li>Whether the GreenSky payoff and the Boulden work improved the rental's value. This counts cash out, not what it bought.</li>
+      <li>What $427 of Amazon purchases on two MasterCards did to your actual balances — those cards are not in Tiller at all.</li>
+      <li>Whether the thirteen duplicate-looking pairs are real double charges. Only your card statements settle that.</li>
+      <li>Anything after August 16 for transactions, or after August 7 for Amazon items.</li>
+    </ul>
+  </div>
+
+</div></div>
+</body></html>

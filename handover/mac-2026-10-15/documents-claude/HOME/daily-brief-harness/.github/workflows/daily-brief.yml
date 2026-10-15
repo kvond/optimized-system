@@ -1,0 +1,25 @@
+name: daily-brief
+on:
+  schedule:
+    - cron: "45 10 * * *"     # 05:45 America/Panama (UTC-5, no DST)
+  workflow_dispatch: {}        # manual run button for testing
+
+jobs:
+  brief:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt
+      - name: Build brief (HTML + Roam stamp)
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          ROAM_API_TOKEN: ${{ secrets.ROAM_API_TOKEN }}
+          GOOGLE_OAUTH_JSON: ${{ secrets.GOOGLE_OAUTH_JSON }}
+        run: python -m src.main
+      - name: Deploy to Netlify
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: npx --yes netlify-cli deploy --prod --dir site --no-build

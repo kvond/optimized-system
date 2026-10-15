@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<script type="application/json" id="cowork-artifact-meta">
+{
+  "name": "Answerable Teaching Roadmap",
+  "schemaVersion": 1,
+  "description": "Answerable Teaching pipeline roadmap: monthly Horizon Review ritual, learning thread (July agents → Aug evals → agency-codebook cycles + lit-accuracy), the 🤖 AI Learning block, and phases 0–4 from summer runway through workshop/PD launch, each linked to its owning skill. Revisited and updated monthly.",
+  "mcpTools": [],
+  "mcpServerNames": []
+}
+</script>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Answerable Teaching — Pipeline Roadmap</title>
+<style>
+  :root{
+    --ink:#1c1e21; --muted:#5c6470; --line:#e3e6ea; --bg:#ffffff; --panel:#f7f8fa;
+    --accent:#1f6f6b; --accent-soft:#e6f1f0;
+    --p0:#6b7280; --p1:#1f6f6b; --p2:#2f6db0; --p3:#8a5a2b; --p4:#7a3d8f;
+    --now:#c9861a;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:Arial,Helvetica,"Segoe UI",sans-serif;line-height:1.5;
+    -webkit-font-smoothing:antialiased;}
+  .wrap{max-width:880px;margin:0 auto;padding:44px 26px 72px;}
+  h1{font-size:26px;margin:0 0 4px;letter-spacing:-.2px;}
+  .sub{color:var(--muted);font-size:14px;margin:0 0 26px;}
+  h2{font-size:13px;text-transform:uppercase;letter-spacing:1.4px;color:var(--muted);
+    margin:34px 0 12px;font-weight:700;}
+  p{margin:0 0 10px;}
+  a{color:var(--accent);}
+  .now{border:1px solid var(--now);background:#fdf7ec;border-radius:12px;padding:16px 18px;margin-bottom:8px;}
+  .now .tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:1.2px;
+    text-transform:uppercase;color:#8a5c12;background:#f6e3bf;padding:3px 9px;border-radius:20px;margin-bottom:8px;}
+  .now h3{margin:0 0 4px;font-size:18px;}
+  .now p{margin:0;color:#4a3d22;font-size:14px;}
+  .hint{font-size:12px;color:var(--muted);margin:6px 2px 0;}
+
+  .thread{display:flex;flex-wrap:wrap;gap:8px;align-items:center;
+    background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px;}
+  .step{font-weight:700;font-size:14px;}
+  .arrow{color:var(--muted);font-weight:700;}
+  .step small{display:block;font-weight:400;color:var(--muted);font-size:12px;}
+
+  .blocks{display:flex;flex-wrap:wrap;gap:10px;}
+  .block{border:1px solid var(--line);border-radius:10px;padding:10px 14px;font-size:14px;
+    background:#fff;display:flex;align-items:center;gap:8px;}
+  .block b{font-weight:700;} .block.newb{border-color:var(--accent);background:var(--accent-soft);}
+  .block .ic{font-size:18px;}
+
+  .phase{border:1px solid var(--line);border-radius:12px;padding:16px 18px 14px 20px;margin-bottom:12px;position:relative;overflow:hidden;}
+  .phase:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--pc,#ccc);}
+  .phase.current{box-shadow:0 0 0 2px var(--now) inset;}
+  .phase .when{font-size:12px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;color:var(--pc,#666);}
+  .phase h3{margin:2px 0 8px;font-size:17px;}
+  .phase ul{margin:0;padding-left:18px;} .phase li{margin:3px 0;font-size:14px;}
+  .learn{display:inline-block;margin-top:9px;font-size:12px;color:var(--muted);}
+  .learn b{color:var(--ink);}
+  .chips{margin-top:9px;display:flex;flex-wrap:wrap;gap:6px;}
+  .chip{font-size:11px;font-family:"SF Mono",Consolas,monospace;background:var(--panel);
+    border:1px solid var(--line);color:var(--muted);padding:2px 8px;border-radius:6px;}
+
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  @media(max-width:620px){.two{grid-template-columns:1fr;}}
+  .card{border:1px solid var(--line);border-radius:12px;padding:15px 17px;}
+  .card h4{margin:0 0 6px;font-size:15px;} .card p{font-size:13px;color:var(--muted);margin:0;}
+
+  .ribbon{background:var(--accent-soft);border:1px solid #cfe4e2;border-radius:12px;padding:15px 18px;}
+  .ribbon p{font-size:14px;margin:0;color:#234b48;}
+  .foot{margin-top:30px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--muted);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Answerable Teaching — Pipeline Roadmap</h1>
+  <p class="sub">Work structure &times; learning needs &middot; framed to the 2026&ndash;27 school year</p>
+
+  <div class="now">
+    <span class="tag">This month &middot; July 2026</span>
+    <h3>Foundation</h3>
+    <p>Write + gather (2nd&#8209;brain distill) &middot; learn AI&#8209;agent basics. No slide rewrites yet.</p>
+  </div>
+  <p class="hint">The monthly Horizon Review refreshes this banner and the one-line focus in your morning brief.</p>
+
+  <h2>The monthly conductor — Horizon Review</h2>
+  <p>Once a month (~30 min): run <span class="chip">block-update</span> on AIHS + WilmU, look at the board below,
+  set <b>one</b> #next advance per active track, roll #near&nbsp;&rarr;&nbsp;#next, park the rest. That's the whole ritual —
+  it aims the daily engine you already run at the pipeline.</p>
+
+  <h2>Learning thread</h2>
+  <div class="thread">
+    <span class="step">July — Agents<small>basics of AI agents</small></span>
+    <span class="arrow">&rarr;</span>
+    <span class="step">August — Evals<small>QC gate before Sept build</small></span>
+    <span class="arrow">&rarr;</span>
+    <span class="step">Fall &amp; ongoing<small>agency-codebook cycles + lit-accuracy</small></span>
+  </div>
+
+  <h2>Life blocks</h2>
+  <div class="blocks">
+    <div class="block"><span class="ic">🍎</span><b>AIHS</b></div>
+    <div class="block"><span class="ic">🎓</span><b>WilmU</b></div>
+    <div class="block"><span class="ic">🎯</span><b>Learn</b></div>
+    <div class="block newb"><span class="ic">🤖</span><b>AI Learning</b> <span style="color:var(--muted);font-size:12px;">— new</span></div>
+  </div>
+  <p class="hint">New 🤖 AI Learning block sits beside Learn; give it a <span class="chip">Status::</span> line and an update trigger like AIHS/WilmU when ready.</p>
+
+  <h2>Phased roadmap</h2>
+
+  <div class="phase current" style="--pc:var(--now);">
+    <div class="when">Phase 0 &middot; Now–Aug &middot; Summer runway</div>
+    <h3>Foundation — no rewrites yet</h3>
+    <ul>
+      <li>Continuous: writing + zettel gathering (2nd-brain distill)</li>
+      <li>Learn AI-agent basics (July) → evals (August)</li>
+      <li>Stand up Gmail cross-account triage</li>
+      <li>Open Substack shell; start funnel-from-zettels habit</li>
+      <li>Sketch the canonical VT unit spec on paper (ready for Sept)</li>
+    </ul>
+    <span class="learn"><b>Learning:</b> agents → evals</span>
+    <div class="chips"><span class="chip">writing-block</span><span class="chip">chapter-bank</span><span class="chip">🤖 AI Learning</span></div>
+  </div>
+
+  <div class="phase" style="--pc:var(--p1);">
+    <div class="when">Phase 1 &middot; Sept–Oct &middot; First unit</div>
+    <h3>Ecology to TPT</h3>
+    <ul>
+      <li>VT rewrites begin with Ecology, alongside teaching</li>
+      <li>Add continuity (lezir-style) + tank-and-flow slide sets to the template <em>as options</em></li>
+      <li>Free Ecology unit listed on TPT</li>
+      <li>Run the critical-aspects audit as the unit's QC gate (this is where evals pay off)</li>
+    </ul>
+    <span class="learn"><b>Learning:</b> evals, applied</span>
+    <div class="chips"><span class="chip">vt-insert-slides</span><span class="chip">critical-aspects-audit</span></div>
+  </div>
+
+  <div class="phase" style="--pc:var(--p2);">
+    <div class="when">Phase 2 &middot; Nov–Dec &middot; Catalog + grounding</div>
+    <h3>Paid units + accuracy</h3>
+    <ul>
+      <li>One or two paid units follow the free one</li>
+      <li>Lit-review accuracy — extend <span class="chip">manuscript-ops</span> citation checks into grounded verification</li>
+      <li>First Edutopia / Substack authority pitch</li>
+    </ul>
+    <span class="learn"><b>Learning:</b> retrieval / grounded lit-accuracy</span>
+    <div class="chips"><span class="chip">manuscript-ops</span></div>
+  </div>
+
+  <div class="phase" style="--pc:var(--p3);">
+    <div class="when">Phase 3 &middot; Jan–Feb &middot; Resource + workshop skeleton</div>
+    <h3>The keystone table</h3>
+    <ul>
+      <li>Build the standards &times; VT-move &times; activities table (product + workshop + book all draw on it)</li>
+      <li>Outline the workshop: agent template + walking teachers through fake-student-data feedback</li>
+    </ul>
+    <span class="learn"><b>Learning:</b> packaging a spec others can run</span>
+  </div>
+
+  <div class="phase" style="--pc:var(--p4);">
+    <div class="when">Phase 4 &middot; Spring &middot; Launch</div>
+    <h3>Workshop + PD</h3>
+    <ul>
+      <li>Pilot the workshop</li>
+      <li>Propose the WilmU PD-for-credit course into your 7-class slot</li>
+    </ul>
+  </div>
+
+  <h2>Continuous ribbon — every month, under everything</h2>
+  <div class="ribbon">
+    <p><b>Book &amp; journal</b> (writing-block + hep-scout) &nbsp;·&nbsp; <b>Zettel / 2nd brain</b> (chapter-bank) &nbsp;·&nbsp;
+    <b>Agency-codebook cycles</b>, AI-in-the-loop &nbsp;·&nbsp; <b>Personal practice</b> (learning-block) &nbsp;·&nbsp;
+    <b>Daily engine</b> (daily-agenda · daily-route · task-distill)</p>
+  </div>
+
+  <h2>Friction fixes</h2>
+  <div class="two">
+    <div class="card">
+      <h4>Gmail cross-account triage</h4>
+      <p>Set up in summer, runs daily. Surfaces only what needs <em>you</em> across the 4 accounts — the immediate daily relief.</p>
+    </div>
+    <div class="card">
+      <h4>Lit-review accuracy</h4>
+      <p>Checked weekly during your writing block, built on <span class="chip">manuscript-ops</span> citation checks rather than from scratch.</p>
+    </div>
+  </div>
+
+  <div class="foot">
+    <b>How the flag reaches you:</b> a monthly <em>Horizon Review</em> scheduled task fires on the 1st (America/Panama),
+    pushes to your phone + emails the month's focus, and refreshes the “this month” line in your morning brief.
+    This page is the reference you open when you want the whole picture.
+  </div>
+
+</div>
+</body>
+</html>
