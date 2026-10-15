@@ -32,6 +32,19 @@ CONNECTOR_FOOTER = re.compile(
     r"(?:<@U0C9E4UU1QS(?:\|ChatGPT)?>|Claude)\s*$",
     re.I,
 )
+REQUEST_OPENING = re.compile(
+    r"^\s*[*_]{0,2}(?:<@[A-Z0-9]+(?:\|[^>]+)?>|"
+    r"@(?:claude|chatgpt|openai|codex)\b|"
+    r"(?:claude|chatgpt|openai|codex)\s*:|\[(?:claude|openai)\]|"
+    r"(?:please|task|todo|to-do|need to|remember to|add|fix|repair|implement|audit|"
+    r"reconcile|verify|update|route|send|file|queue|build|make|create|check|run|"
+    r"finish|continue|organize|schedule|review|set|do|help|stop|start|keep|go|use|"
+    r"look|find|change|remove|delete|copy|move|explain|summarize|tell|show|"
+    r"cancel|pause|resume|ignore|skip|read|write|add|confirm|mark|compare|test)\b|"
+    r"(?:what|why|how|when|where|which|who)\b|"
+    r"(?:can|could|would|will)\s+you\b|i\s+(?:need|want)\b)",
+    re.I,
+)
 
 SENSITIVE = re.compile(
     r"\b(password|passcode|api key|secret key|ssn|social security|bank account|routing number|"
@@ -135,9 +148,11 @@ def _destination_name(channel_id: str) -> str:
 
 def automated_message(event: dict) -> bool:
     # Connector posts can carry Katherine's user ID without bot_id/subtype.
+    # A request followed by pasted agent output is ambiguous, not safely ignored.
     text = event.get("text")
     return bool(event.get("bot_id") or event.get("subtype") or event.get("app_id")
-                or (isinstance(text, str) and CONNECTOR_FOOTER.search(text)))
+                or (isinstance(text, str) and CONNECTOR_FOOTER.search(text)
+                    and not REQUEST_OPENING.match(text)))
 
 
 def source_link(channel: str, ts: str) -> str:
@@ -169,6 +184,10 @@ def _process_event(event_id: str, event: dict):
     if SENSITIVE.search(text):
         post(channel, "Held in #optimize-me: sensitive content was not sent to an API or forwarded to another public channel.", thread_ts=ts)
         state().complete_event(event_id, {"held": "sensitive"})
+        return
+    if CONNECTOR_FOOTER.search(text):
+        post(channel, "Held: this looks like a request with pasted agent output. Post your request separately and link the agent message so the router can distinguish them. Nothing was sent to an API or forwarded.", thread_ts=ts)
+        state().complete_event(event_id, {"held": "ambiguous_connector_footer"})
         return
 
     try:

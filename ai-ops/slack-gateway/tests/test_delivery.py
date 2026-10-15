@@ -60,13 +60,50 @@ class DeliveryTests(unittest.TestCase):
     def test_connector_posts_with_owner_identity_are_ignored(self):
         for suffix in ('\n*Sent using* <@U0C9E4UU1QS|ChatGPT>', '\n**Sent using** <@U0C9E4UU1QS>\n',
                        '\n_Sent using_ Claude', '\n_Sent using_ Claude\n*Sent using* Claude'):
-            self.deliver(text='Task: fix the router cache' + suffix)
+            self.deliver(text='Router status: checks passed' + suffix)
         for field in ('app_id', 'bot_id', 'subtype'):
             self.deliver(**{field: 'generated'})
         self.posts.assert_not_called()
         self.provider.assert_not_called()
         with sqlite3.connect(self.state.db_path) as db:
             self.assertEqual(db.execute('SELECT count(*) FROM events').fetchone()[0], 0)
+
+    def test_request_with_pasted_footer_is_held_once_without_provider(self):
+        openings = ('@claude build a schedule for this', '<@U0C9E4UU1QS|ChatGPT> check this',
+                    'claude: review this', 'openai: review this', '[claude] review this',
+                    'Task: fix this', 'Please make a schedule', 'Can you finish this?',
+                    'I need you to check this', 'Build a schedule for this',
+                    'Set up the nightly Slack checker', 'Do the longer wait change',
+                    'Help me fix the router', 'Stop the schedule', 'Explain this result',
+                    'Why is this still failing?')
+        footers = ('\n*Sent using* <@U0C9E4UU1QS|ChatGPT>', '\n_Sent using_ Claude')
+        for i, opening in enumerate(openings):
+            for j, footer in enumerate(footers):
+                with self.subTest(opening=opening, footer=footer):
+                    self.posts.reset_mock()
+                    event_id = f'Ev-pasted-{i}-{j}'
+                    text = opening + '\n\nPasted status: checks passed' + footer
+                    self.deliver(event_id=event_id, text=text)
+                    self.assertTrue(self.deliver(event_id=event_id, text=text).get_json()['duplicate'])
+                    self.posts.assert_called_once()
+                    self.assertEqual(self.posts.call_args.args[0], CHANNELS['optimize'])
+                    self.assertEqual(self.posts.call_args.kwargs['thread_ts'], '1792060000.100000')
+                    self.assertIn('pasted agent output', self.posts.call_args.args[1])
+                    self.assertEqual(self.completed(event_id)['held'], 'ambiguous_connector_footer')
+        self.provider.assert_not_called()
+        with sqlite3.connect(self.state.db_path) as db:
+            self.assertEqual(db.execute('SELECT count(*) FROM cache').fetchone()[0], 0)
+            self.assertEqual(db.execute('SELECT count(*) FROM usage').fetchone()[0], 0)
+
+    def test_pasted_footer_never_overrides_bot_or_owner_boundaries(self):
+        text = '@claude build a schedule\n_Sent using_ Claude'
+        for field in ('app_id', 'bot_id', 'subtype'):
+            self.deliver(event_id='Ev-bot-' + field, text=text, **{field: 'generated'})
+        self.deliver(event_id='Ev-paste-other-user', text=text, user='UOTHER')
+        self.deliver(event_id='Ev-paste-other-channel', text=text, channel=CHANNELS['work_que'])
+        self.posts.assert_not_called()
+        self.provider.assert_not_called()
+        self.assertEqual(self.completed('Ev-paste-other-user')['ignored'], 'outside_owner_intake')
 
     def test_human_mentions_of_chatgpt_still_route(self):
         self.deliver(text='Task: fix the router for <@U0C9E4UU1QS|ChatGPT>')
