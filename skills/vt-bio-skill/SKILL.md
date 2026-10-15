@@ -1689,7 +1689,7 @@ three-file version. Flag it if the drift matters more than the trigger.]
 Katherine's direction, 2026-10-15: build these passes into the deck skill so that
 lessons don't have to be repaired afterward. This section is course-neutral. It
 applies to Biology, Forensics and A&P until the forks in §15 exist. Run the passes in
-order, and finish all four before a deck counts as delivered.
+order, and finish all five before a deck counts as delivered.
 
 The passes keep their existing owners. The workflow contract
 `ai-ops/workflow-contracts/school-lesson-review-and-code-repair.md` names who runs
@@ -1701,6 +1701,7 @@ them. This section is the standard each pass is held to.
 | 16.2 Enhance | `/vt-gemini-enhance` | School Claude Ext |
 | 16.3 Codes | part of `/vt-gemini-enhance` | School Claude Ext |
 | 16.4 Agenda links | after the deck and activities exist | the agent that built them |
+| 16.5 Archive original | last, after all checks and relinks | the agent that ran 16.1 |
 
 Sources for the work: the school Drive course folders and the original lesson
 material in them. Don't use outside copies when the school Drive has the lesson.
@@ -1720,8 +1721,8 @@ This applies to Forensics and A&P, and to any Biology cycle that still has an or
 4. **Keep the deck native.** Merge in Google Slides. Don't round-trip a native deck
    through PowerPoint (it drops codes and links). A `.pptx`-only VT deck is
    converted to Slides first, then merged.
-5. **Archive the original by renaming it, never by trashing it:**
-   `ARCHIVE <date> — <original title>, merged into <VT deck title>` (§9.2 step 3).
+5. **Leave the original live for now.** Don't rename or archive it during 16.1. It is
+   archived in 16.5, after every check and relink has passed.
 6. **Check:** the slide count of the merged deck is at least the VT deck's count
    plus the original's content slides; every image in the original appears in the
    merged deck (count images in both); `deck_lint.py` passes.
@@ -1772,8 +1773,15 @@ Rules:
 - Write only into the row's existing link cells, in the format the row already uses.
   Don't add columns or restructure the tab, and don't change dates, pacing or notes
   (§9.3a: the agenda is Katherine's schedule).
-- Fill a blank link cell, or replace a link that points at an archived or missing
-  file. If a cell already holds a different live link, leave it and ask Katherine.
+- Fill a blank link cell, or replace a link that points at an `ARCHIVE …` file or a
+  file *confirmed* missing. A 404 from one account doesn't prove the file is missing:
+  decks can be invisible to the school connection and still exist under another account.
+  Before replacing a link, check the file's owner and sharing across the authorized
+  accounts. If you still can't tell whether it exists, leave the link, and report it as an
+  access blocker in #kathy with the cell and the file ID.
+- If a cell already holds a different live link, leave it and ask Katherine.
+- Verify each new link with the school account (katherine.vonduyke@redclay.k12.de.us).
+  The agenda and students use that account, not whichever account happens to open the file.
 - Read the row back after writing. Every link must open the intended file, and none
   may point at an `ARCHIVE …` file.
 - §9.3 above still describes the superseded agenda
@@ -1781,5 +1789,19 @@ Rules:
   `Agenda 26-27 CLEAN` (ai-ops/NAMES.md). Before repointing §9.3 itself, get
   Katherine's confirmation, as the open gap in ai-ops/HANDOFF.md records.
 
+### 16.5 Archive the original, last
+
+Do this only after 16.1–16.3 pass their checks, `deck_lint.py` is clean, and the 16.4
+links read back correctly. The order follows §9.3: repoint every caller and verify it
+before archiving.
+
+1. Read back every caller of the original's file ID: the agenda rows, START HERE
+   decks, `/copy` links (§9.3), and a Drive `fullText` search as a first pass, never as
+   proof. None may still point at the original.
+2. Only then rename the original, never trash it:
+   `ARCHIVE <date> — <original title>, merged into <VT deck title>` (§9.2 step 3).
+3. If any earlier step stopped, skip this one. The original stays live and unrenamed,
+   and the stop is reported.
+
 **A deck is delivered when** 16.1–16.3 pass their checks, `deck_lint.py` is clean,
-and the 16.4 agenda links read back correctly.
+the 16.4 agenda links read back correctly, and 16.5 is done.
