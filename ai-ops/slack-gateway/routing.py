@@ -5,7 +5,7 @@ import json
 import re
 from dataclasses import dataclass, asdict
 
-ROUTER_VERSION = "2026-10-15.1"
+ROUTER_VERSION = "2026-10-15.2"
 
 CHANNELS = {
     "optimize": "C0C9AQ2FK3P",
@@ -17,7 +17,11 @@ CHANNELS = {
     "teaching_hub": "C0C9E488BAN",
     "class_reports": "C0C9E489T6E",
     "writing_flow": "C0C9FGVK1DY",
-    "delegated_kathy": "C0C9FL932LS",
+    "work_que": "C0C9FD9QJ4W",
+    "kathy": "C0C9C47UKU5",
+    "exceptions": "C0C9BJ57N13",
+    "decomission": "C0C9BJ4S9HT",
+    "teaching_reflection": "C0C9EMYK6MC",
     "system_review": "C0C9J0NU6LC",
     "lesson_preflight": "C0CA8LQ417A",
     "higher_ed": "C0C9L06CVU4",
@@ -25,6 +29,7 @@ CHANNELS = {
 }
 
 CHANNEL_NAMES = {v: k.replace("_", "-") for k, v in CHANNELS.items()}
+CHANNEL_NAMES[CHANNELS["optimize"]] = "optimize-me"
 
 KINDS = {"thought", "task", "decision", "accomplishment", "question"}
 AREAS = {"ai_ops", "school", "writing", "higher_ed", "research_roam", "personal_admin"}
@@ -68,21 +73,38 @@ def provider_override(text: str) -> tuple[str | None, str]:
 
 def _kind(text: str) -> tuple[str, float]:
     lower = text.lower()
-    if re.search(r"\b(done|finished|completed|accomplished|shipped|fixed|resolved)\b", lower):
-        return "accomplishment", 0.94
-    if re.search(r"\b(decision|decided|choose|chose|we will|rule:)\b", lower):
-        return "decision", 0.92
-    if re.search(r"^(task|todo|to-do|need to|remember to|add to)\b", lower) or re.search(r"\bi need (?:you|us|to)\b", lower):
+    # Requests mentioning a completed/failed item are still requests.
+    if re.search(r"^(?:please\s+)?(?:task|todo|to-do|need to|remember to|add to|fix|repair|implement|audit|reconcile|verify|update|route|send|file|queue)\b", lower) or re.search(r"\bi need (?:you|us|to)\b", lower):
         return "task", 0.90
     if "?" in text or re.match(r"^(what|why|how|when|where|which|who|can|should|does|do)\b", lower):
         return "question", 0.84
-    if re.search(r"\b(idea|thought|reflection|notice|noticing|wondering|i think)\b", lower):
+    if re.search(r"\b(done|finished|completed|accomplished|shipped|fixed|resolved)\b", lower):
+        return "accomplishment", 0.94
+    if re.search(r"\b(decision|decided|chose|we will)\b|^rule:", lower):
+        return "decision", 0.92
+    if re.match(r"^(?:blocked|failure|error|exception|retirement candidate|human action)\s*:", lower):
+        return "thought", 0.86
+    if re.search(r"\b(?:kathy|katherine)\s+(?:needs to|must)\s+(?:approve|choose|decide|sign in|log in)\b", lower):
+        return "task", 0.90
+    if re.search(r"\b(idea|thought|reflection|notice|noticed|noticing|wondering|i think)\b", lower):
         return "thought", 0.82
     return "thought", 0.45
 
 
 def _area_destination(text: str, kind: str) -> tuple[str, str, float]:
     lower = text.lower()
+    # Only explicit routing directives override topic lanes, not incidental mentions.
+    directive = re.match(r"^(?:please\s+)?(?:route|send|file|queue)\s+(?:(?:this|it)\s+)?(?:to|in)\s+(?:<#([A-Z0-9]+)(?:\|[^>]+)?>|#([a-z-]+))(?=\s|:|$)", text, re.I)
+    if directive:
+        destination = directive.group(1) or next((cid for cid, name in CHANNEL_NAMES.items() if name == directive.group(2).lower()), None)
+        if destination in CHANNEL_NAMES:
+            return "ai_ops", destination, 0.96
+    if re.match(r"^human action\s*:", lower) or re.search(r"\b(?:kathy|katherine)\s+(?:needs to|must)\s+(?:approve|choose|decide|sign in|log in)\b", lower):
+        return "personal_admin", CHANNELS["kathy"], 0.94
+    if re.match(r"^(?:blocked|failure|error|exception)\s*:", lower):
+        return "ai_ops", CHANNELS["exceptions"], 0.94
+    if re.match(r"^retirement candidate\s*:", lower):
+        return "ai_ops", CHANNELS["decomission"], 0.94
     if kind == "decision":
         return "ai_ops", CHANNELS["decisions"], 0.88
 
@@ -97,6 +119,8 @@ def _area_destination(text: str, kind: str) -> tuple[str, str, float]:
 
     school = re.search(r"\b(school|biology|forensics|anatomy|student|lesson|schoology|infinite campus|\bic\b|agenda|grade|grading|worksheet|deck|feedback|print|roster)\b", lower)
     if school:
+        if kind == "thought" and re.search(r"\b(reflection|noticed|noticing|notice)\b", lower):
+            return "school", CHANNELS["teaching_reflection"], 0.93
         if re.search(r"\b(vt|variation theory|critical aspect|deck)\b", lower):
             return "school", CHANNELS["vt_decks"], 0.95
         if re.search(r"\b(feedback|revision|itracker)\b", lower):
@@ -113,10 +137,10 @@ def _area_destination(text: str, kind: str) -> tuple[str, str, float]:
         return "ai_ops", CHANNELS["parallel_agents"], 0.91
 
     if re.search(r"\b(api|router|cache|github|cloud run|google cloud|account|subscription|automation|workflow|system|optimi[sz]e|slack)\b", lower):
-        return "ai_ops", CHANNELS["system_review"], 0.90
+        return "ai_ops", CHANNELS["work_que" if kind == "task" else "system_review"], 0.90
 
     if re.search(r"\b(email|calendar|todoist|grocer|order|appointment|bill|admin|home)\b", lower):
-        return "personal_admin", CHANNELS["delegated_kathy"], 0.78
+        return "personal_admin", CHANNELS["work_que" if kind == "task" else "optimize"], 0.78
 
     return "ai_ops", CHANNELS["optimize"], 0.40
 
@@ -175,7 +199,11 @@ def classifier_prompt(text: str) -> str:
         f"destination must be one of: {destinations}. "
         "Use decisions for durable cross-domain decisions; higher-ed for Wilmington/doctoral/graduate work; "
         "research-roam for literature/Roam; writing-flow for Answerable Teaching/book/Substack; school channels for school work; "
-        "system-review for AI systems; parallel-agents only for multi-agent coordination; delegated-kathy for personal admin. "
+        "work-que for planned technical or delegated admin work; system-review for AI system observations/questions; "
+        "parallel-agents only for multi-agent coordination; exceptions for actual failures/blockers; "
+        "decomission for retirement candidates; teaching-reflection for teaching observations. "
+        "Use kathy only for an explicit human action/decision that agents cannot resolve, never ordinary troubleshooting. "
+        "Honor an explicit routing directive to a supported channel, but do not treat incidental channel mentions as directives. "
         "summary must preserve the user's actual intent in <=60 words and must not invent work completed.\n\n"
         f"MESSAGE:\n{clean}"
     )
