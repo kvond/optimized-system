@@ -6,7 +6,7 @@
 
 - Accept only signed Slack Events API requests.
 - Accept only human `message.channels` events from Katherine in `#optimize-me`.
-- Ignore bot/subtype/app events and the known ChatGPT connector footer, including connector posts under Katherine's own user ID, to prevent loops. Ordinary human mentions of ChatGPT remain eligible.
+- Ignore bot/subtype/app events and the known ChatGPT/Claude connector footers, including connector posts under Katherine's own user ID, to prevent loops. Ordinary human mentions of the agents remain eligible.
 - Hold sensitive/oversize input instead of sending it to a model.
 - Use deterministic routing first.
 - If routing is genuinely ambiguous, use the smallest provider model: OpenAI `gpt-6-luna` for operational material; Claude `claude-haiku-5-5` for writing/scholar/research material.

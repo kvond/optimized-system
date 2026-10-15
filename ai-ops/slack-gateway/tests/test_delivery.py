@@ -58,7 +58,8 @@ class DeliveryTests(unittest.TestCase):
         self.provider.assert_not_called()
 
     def test_connector_posts_with_owner_identity_are_ignored(self):
-        for suffix in ('\n*Sent using* <@U0C9E4UU1QS|ChatGPT>', '\n**Sent using** <@U0C9E4UU1QS>\n'):
+        for suffix in ('\n*Sent using* <@U0C9E4UU1QS|ChatGPT>', '\n**Sent using** <@U0C9E4UU1QS>\n',
+                       '\n_Sent using_ Claude', '\n_Sent using_ Claude\n*Sent using* Claude'):
             self.deliver(text='Task: fix the router cache' + suffix)
         for field in ('app_id', 'bot_id', 'subtype'):
             self.deliver(**{field: 'generated'})

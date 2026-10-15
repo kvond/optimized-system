@@ -28,7 +28,8 @@ OWNER_USER = os.environ.get("OPTIMIZE_OWNER_USER_ID", "U0C9C9QESRL")
 MAX_MESSAGE_CHARS = int(os.environ.get("MAX_MESSAGE_CHARS", "12000"))
 WORKSPACE_URL = "https://answerableteaching.slack.com"
 CONNECTOR_FOOTER = re.compile(
-    r"(?:^|\n)\s*\*{0,2}Sent using\*{0,2}\s+<@U0C9E4UU1QS(?:\|ChatGPT)?>\s*$",
+    r"(?:^|\n)\s*[*_]{0,2}Sent using[*_]{0,2}\s+"
+    r"(?:<@U0C9E4UU1QS(?:\|ChatGPT)?>|Claude)\s*$",
     re.I,
 )
 
