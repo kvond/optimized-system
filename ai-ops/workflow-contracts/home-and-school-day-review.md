@@ -13,3 +13,36 @@ At 4:30 a.m. America/New_York each day, prepare Katherine's concise day review f
 The October13 review fully paged the four home calendars and read the actual established school Outlook inbox/calendar in bounded windows. That is a dated receipt, not perpetual source completeness. The saved overlap preference is now `Do not report overlaps.`; schedule, target and ACTIVE state were retained.
 
 Saved prompt SHA256: ceea2d0127e94f432ab420ee7b0eb0859a88a4e56ac7398ff646ba975e381805.
+
+## Consolidation acceptance supplement
+
+This supplement preserves requirements recovered from the separate cloud morning
+brief for a future local consolidation trial. It does not alter the historical
+Saved instructions block, its recorded prompt hash, the current local schedule or
+the original mail window: since the last verified receipt, bounded to the last
+two business days. It does not claim a saved prompt change or completed trial.
+
+For the current-day review, identify actual classes and establish the last class's
+end time from current source evidence. Then identify commitments scheduled after
+that boundary. A generic after-school list is insufficient. If class timing,
+calendar coverage or the boundary cannot be verified, explicitly state what is
+unknown and continue independent readable portions of the review.
+
+Explicitly state whether there is IEP coverage or a covering meeting today. When
+found, give its sourced time and relevant details. State none only when the required
+current sources establish that result; incomplete or inaccessible evidence means
+unknown. Do not infer no coverage from a missing event or a partial inbox.
+
+Verify actual calendar account/owner identity separately from its display title.
+A home-account calendar named School Calendar remains a home-owned source and does
+not establish school-account calendar coverage. Keep home and school identities,
+source versions and coverage distinct. Report source-labeled disagreements about
+class timing, later commitments or coverage without choosing an unsupported winner,
+editing events or turning the disagreement into an unsolicited overlap report.
+
+Consolidation acceptance needs same-date native source evidence and a saved/read-back
+local output containing these explicit checks, alongside the original local review
+requirements. Documented unknowns make partial output truthful; they do not complete
+missing source coverage or authorize consolidation. Root must review actual native
+trial results and ownership separately before any later authorized schedule change.
+This source-only supplement grants no permission to disable the duplicate.

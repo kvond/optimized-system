@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "workflow_id": "personal-calendar-school-email-review",
-  "contract_version": "2026-10-14.1",
+  "contract_version": "2026-10-14.2",
   "title": "Existing daily home calendars and received school-mail review",
   "domain": "personal",
   "owners": {
@@ -88,7 +88,10 @@
       "Verify home and school identities separately; page today and tomorrow completely, including Routine and school commitments.",
       "Read actual received Outlook/Exchange since last verified receipt, bounded to last two business days; Gmail/forwarded messages are partial only.",
       "Do not report overlaps. Identify missing times, school-day markers/duties/classes, preparation deadlines and home commitments.",
-      "Distinguish direct requests from forwarded/self-sent summaries; inaccessible session remains an explicit coverage gap."
+      "Distinguish direct requests from forwarded/self-sent summaries; inaccessible session remains an explicit coverage gap.",
+      "For consolidation acceptance, establish today actual last-class end from current class evidence, then identify following commitments; unresolved class boundary or calendar coverage must remain explicitly unknown.",
+      "For consolidation acceptance, check today IEP coverage/covering-meeting evidence and preserve time/details when found; incomplete sources mean unknown, never none.",
+      "Verify calendar account identity independently of display title. A home-owned School Calendar is a home source, not proof of school-account coverage; retain source-labeled disagreements without editing events."
     ],
     "uncertain_write_policy": "stop_and_reconcile"
   },
@@ -96,7 +99,10 @@
     "One compact daily review includes Eastern times, calendar concerns and few messages needing an answer, with exact available source links.",
     "Coverage describes each separate calendar/mail source and bounded window; no full-inbox claim from partial connectors.",
     "Daily requested review delivered once to existing chat; no reply, event edit or duplicate schedule.",
-    "Record exact request, source revisions, output hash and native destination readback; label remaining coverage gaps."
+    "Record exact request, source revisions, output hash and native destination readback; label remaining coverage gaps.",
+    "Consolidation trial output explicitly identifies the verified last-class end and following commitments, or names the unresolved boundary/coverage; a generic after-school list is insufficient.",
+    "Consolidation trial output explicitly states IEP coverage/covering-meeting status with sourced time/details or unknown if evidence is incomplete.",
+    "Output separates home and school account/calendar coverage and source-labeled disagreements; no automatic event edits or consolidation from an incomplete trial."
   ],
   "failure": {
     "max_safe_read_retries": 1,
@@ -107,7 +113,9 @@
     "contract_refs": [
       "ai-ops/workflow-contracts/home-and-school-day-review.md",
       "private:scheduler-registry-20261014",
-      "ai-ops/workflow-contracts/non-school-contracts.md#personal-calendar-school-email-review"
+      "ai-ops/workflow-contracts/non-school-contracts.md#personal-calendar-school-email-review",
+      "ai-ops/workflow-contracts/home-and-school-day-review.md#consolidation-acceptance-supplement",
+      "private:native-cloud-policy:personal-morning-school-brief"
     ]
   }
 }
