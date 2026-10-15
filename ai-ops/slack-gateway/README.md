@@ -41,3 +41,12 @@ The intended always-on target is the personal project (`graceful-fold-341018`), 
 ```bash
 python3 -m unittest discover -s ai-ops/slack-gateway/tests -v
 ```
+
+## One-time Slack installation gate
+
+1. In Slack API app management, choose **Create New App → From a manifest** and paste `slack-app-manifest.yaml`.
+2. Install **Optimize Router** to the Answerable Teaching workspace.
+3. Store the generated Bot User OAuth Token as `ai-ops-slack-bot-token` and the app Signing Secret as `ai-ops-slack-signing-secret` in Secret Manager in `graceful-fold-341018`. Do not paste either credential into Slack, GitHub, or chat history.
+4. Add the bot to `#optimize-me`. After both secrets are bound to Cloud Run and signature verification is tested, make only this Cloud Run service invokable by `allUsers`; application access remains restricted by Slack HMAC signature + owner/channel checks.
+
+The service URL is `https://ai-ops-slack-router-dvypsqfnpq-uk.a.run.app`; the Events API URL is `/slack/events`.

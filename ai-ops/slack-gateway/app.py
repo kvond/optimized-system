@@ -178,6 +178,7 @@ def _process_event(event_id: str, event: dict):
 
 
 @app.get("/healthz")
+@app.get("/status")
 def healthz():
     return jsonify({"ok": True, "service": "ai-ops-slack-gateway"})
 
