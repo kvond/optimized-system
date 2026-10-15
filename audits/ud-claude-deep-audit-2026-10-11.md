@@ -454,3 +454,21 @@ than in a personal UD account.
 2. Who owns `1fc883da` and `cdb42cb9`. Still the single thing blocking every retirement decision.
 3. What the three UD projects actually contain. The UD session ran outside any project and could see project memory but not project documents.
 4. Which LMS receives the grades.
+
+---
+
+## Settings check, 15 October 2026
+
+Read from claude.ai Settings in the Chrome browser named "UD CHROME AND CLAUDE"
+(Windows), through Claude in Chrome.
+
+| Item | Finding |
+|---|---|
+| Organisation ID | `d260f204-a04f-4988-9d93-560e0ffe5a7e`. The match is now confirmed, not inferred |
+| Plan | Claude Pro (the Account page says the Pro subscription must be cancelled before the account can be deleted) |
+| "Help improve our AI models" | Was **on**. Turned **off** at Katherine's instruction; confirmed off after a reload |
+| Location metadata | On; left unchanged |
+
+This closes open item 1 (plan) and the organisation question. Still open: who
+owns `1fc883da` and `cdb42cb9`, what the three UD projects contain, and which
+LMS receives the grades.
