@@ -59,12 +59,21 @@ account history. Private provenance bindings resolve to:
   and its private per-component source/hash index.
 - `private:scheduler-registry-20261014`: the coordinator's reconciled private schedule
   registry; `private:canonical-overnight-plan-20261014`: the authorized existing plan.
+- `private:native-cloud-policy:<workflow_id>`: the later verified full native task
+  editor policy for that exact workflow. Its prompt, native identity, fingerprints
+  and recurrence/clock fields remain in the private evidence record.
 
 The private handoff gives their actual locations. Raw manuscript, paper, family,
 finance, account-memory and attachment bodies stay outside this repository. Native
 attachment bytes and current source applicability remain distinct from preserved
 extracted text. No source account or attachment is redundant merely because a
 contract exists. Disabled source-account skills are not silently enabled here.
+
+The later native-policy readback supersedes earlier claims that five active cloud
+task bodies were unavailable. It verifies their saved instructions only. It does
+not verify connected data, a working local bridge, actual scheduler timezone,
+source completeness or a successful task output. Backend clock gaps remain open;
+a flexible native time band is not evidence of an exact clock.
 
 Execution references bind to the current owner, not a proposed migration. Current
 Codex has tested local coding/read capability. UD Claude on the home Mac also has
@@ -235,74 +244,146 @@ is a named source gap. Current native manual/assignment acceptance remains open.
 
 ## personal-news-briefing
 
-Exact existing schedule: `Main ChatGPT::6aa2783463288191aa4b53146177bf6c`.
-Resolve its private current prompt and bridge; retain current scheduler owner.
-`runtime/news_check.py` and its saved packet/acknowledgement protocol are the
-canonical deterministic layer. Actual UTC request ID and same Eastern business
-date matter; literal timestamp templates are rejected. Unacknowledged headlines
-remain eligible. Missing receipt/packet after a partial commit requires explicit
-recovery, not refetch with a new identity.
+The recovered native task policy controls the existing schedule and its original
+scope: major US/world developments, economy/markets, AI/education and what matters
+most today. Connect relevant AI/education developments to the book and track useful
+AI-chapter trends. Keep personal finances, debt, balances, retirement allocation
+and personalized financial implications entirely in separate finance runs.
 
-Complete feed metadata does not establish major-news coverage, lawful civic-action
-research or book/AI trend judgment. Keep those original checks and bounded fallback
-gaps explicit. Reuse only fresh complete birthday evidence; News keeps 21/7-day
-thresholds and Birthday keeps its 30-day window. Archived News cart-at-seven-days
-and Birthday no-cart instructions conflict; neither contract grants cart action.
-A local acknowledgement confirms saved text only, not cloud display/delivery.
+The civic scan uses current official Delaware executive and legislative sources,
+with issue priorities resolved privately. Distinguish active decisions from actions
+already taken; identify relevant officials/bodies and practical lawful constituent
+actions, hearings, comment/testimony or rights resources without contacting anyone.
+Complete feed metadata does not establish major-news, civic-action or book-trend
+coverage. Preserve original research/judgment checks and explicit fallback gaps.
 
-Test plan uses existing `test_news*.py` and `test_shared_birthday.py`: stale/day-boundary
-packets, incomplete source preservation, tampered/missing packets, acknowledgement
-and exact-occurrence reuse. Live blocker: exhausted bridge, backend timezone and
-first verified scheduled output. Native/API replacement is possible only after a
-representative destination trial; no live worker was invoked here.
+Gift discovery starts with a broad bounded calendar read, then durable Todoist
+history and previously confirmed family evidence. Personal Hub is not the primary
+gift record. Confirmed family records missing from calendar remain visible internal
+holds; do not replace confirmed dates with invented ones. Calendar-only names do
+not authorize gift research, reporting, tasking or additions. User-facing scope is
+upcoming confirmed-family birthdays within 30 days or confirmed recipients whose
+history record is missing. Omit already-covered, already-recorded past and unrelated
+birthdays. Verified current-year sent/purchased gifts prevent repeated tasks.
+
+Preserve this task's 21-day selection and 7-day price/availability/staging policy.
+The separate Birthday task forbids cart changes. Do not blend those policies: this
+bounded news review grants no cart action; staging requires a separate authorized
+authenticated browser continuation and readback. If unavailable, report ready for
+the browser step; never claim an item was staged. Orders require actual explicit
+approval. No purchase or cart action occurs in contract extraction.
+
+`runtime/news_check.py` retains actual UTC request identity, current Eastern business
+date, encrypted packet and acknowledgement protocol. Unacknowledged headlines remain
+eligible. A missing packet after a partial commit requires reconciliation, not a new
+request identity. Local acknowledgement is not cloud display/delivery. Current
+native worker instructions are recovered, but the exhausted bridge, actual source
+coverage, backend timezone and first verified scheduled output remain gates.
+Tests retain existing news/date/history/receipt coverage and now route the actual
+contract against synthetic missing/partial evidence without dispatch.
 
 ## personal-birthday-gift-review
 
-Exact existing schedule: `Main ChatGPT::6aa9962611648191b900495a9ea89cd8`.
-Follow every-run refresh/write/read in `runbooks/birthday-date-history-gate.md`.
-Verify bound calendar/project/account, complete pagination, actual expanded dates,
-current-business-date evidence and private family crosswalk. Match exact date plus
-confirmed name/alias, never fuzzy identity. Preserve unresolved canonical records
-as scoped holds; any unknown current-window status prevents all-clear.
+The recovered native task policy uses the bound primary calendar for dates and
+Todoist gift history for past/selected gifts, interests and future actions. Scan a
+broad bounded calendar window before recipient filtering, and reconcile confirmed
+family records even when absent from calendar. Resolve actual private dates,
+spellings, aliases and source IDs from the private bindings. Calendar-only names
+never establish family gift relevance. Personal Hub is not the primary record.
 
-`birthday_check.py` reads verified private inputs under encrypted storage and the
-existing 30-day policy. Only exact-occurrence verified sent/purchased/ordered
-receipts close history. Prior-year, planned, pending and selected gifts do not.
-No cart/purchase/contact or automatic choice is authorized. Tests already cover
-date boundaries, incomplete source, exact history and changed-input replay; use
-`test_birthdays.py`, `test_birthday_check.py` and `test_shared_birthday.py`.
-Current Monday time/timezone, bridge and actual scheduled delivery remain unverified.
+Follow the every-run refresh/write/read procedure in
+`runbooks/birthday-date-history-gate.md`; refresh once and reuse verified complete
+same-day evidence. `birthday_check.py` retains its 30-day source/date gate. Current
+native recurrence has a flexible morning band; do not invent an exact clock or
+backend timezone. Worker instructions being present do not prove bridge access.
+
+Report only upcoming confirmed-family birthdays within 30 days or confirmed people
+missing a gift-history record. The prompt also asks for missed-birthday recovery;
+apply its more specific user-facing restriction: past dates may be reconciled
+internally, but already-recorded past birthdays stay out of the report. Upcoming
+confirmed covered gifts require no duplicate suggestion/task and may receive only
+a brief useful covered mention. Unknown current-window history prevents all-clear.
+
+Before any later research, retain current-year interests, budgets, sizes, exclusions
+and preferred spellings from actual history. Ask the user for missing adult-child
+interests or remind them to ask a grandchild's parent when current-year information
+is absent; never contact that parent automatically. A separately verified research
+continuation offers 3–5 current linked/priced options, books first with a strong
+book option when appropriate. No cart additions and no purchases.
+
+After actual user choice, a separate authorized Todoist write continuation updates
+the undated history and one action due exactly seven days before the birthday,
+containing exact item/edition/size/link, budget, birthday and a price/delivery recheck
+note. This review contract does not grant that write. Keep planned/selected/pending
+states separate from confirmed sent/purchased completion; never close the action
+without actual user confirmation for that occurrence. Preserve original IDs and
+verify both target records before treating the later continuation as complete.
+
+Tests cover exact dates/history, incomplete evidence, replay and synthetic route
+admission. Product research, choice-driven Todoist writes, actual bridge, source
+access and scheduled delivery remain separate untested acceptance steps.
 
 ## personal-delaware-education-job-watch
 
-Exact existing schedule: `Main ChatGPT::6ac29fe996ac81918b03a7d59354ef9f`.
-Read the actual current private prompt/criteria and destination before conversion;
-registry retained only the historical worker binding. Reuse `doe_worker.py` and
-`runbooks/doe-operator-check.md`: fixed public grant, bounded acquisition/cleanup,
-encrypted state, immutable source snapshot and idempotent request readback.
-First complete read seeds state; incomplete reads preserve prior listings and NULL
-counts, not inferred closures. A current unchanged listing may still be useful.
+The full native policy and its connected DOE-worker instruction are recovered.
+Search current official employer listings across all Delaware districts and charter
+schools, including the explicitly named employer in the private policy. Preserve
+candidate qualifications, desired student-contact/physical-load balance, included
+job families, full-time and compensation/pension priorities, certification pathways
+and exclusions in that private policy. Do not copy the personal profile into core,
+invent credentials or narrow the search to the DOE feed or one job family.
 
-DOE location-filter coverage is not statewide coverage. Candidate fit is separate
-from source acquisition and needs verified private criteria. Never resurrect the
-paused other job watch. Tests: `test_doe_source.py`, `test_doe_check.py`,
-`test_doe_worker.py` plus vacancy tests. Live recurrence, source-worker binding,
-exact destination and scheduled output still require acceptance.
+`doe_worker.py` and `runbooks/doe-operator-check.md` provide the bounded DOE component:
+fixed public grant, bounded acquisition/cleanup, encrypted state, immutable source
+snapshot and idempotent request readback. Continue original district/charter sources
+after it. A complete DOE packet never establishes complete statewide coverage.
+Native recurrence wording is recorded privately; no exact backend clock/timezone
+or successful scheduled execution follows from it.
+
+Before detailed suitability analysis, compare stable vacancy ID, official URL,
+posted/modified date and relevant fields with verified task-specific reported
+history. Reuse verified fetched pages within the run. Skip unchanged repeat analysis
+only when actual prior analysis/report is established; unchanged source does not
+mean a vacancy was reviewed or reported. Reassess new or materially changed items.
+Missing history is a hold, never empty prior history. Incomplete sources preserve
+prior fingerprints and unknown counts, never inferred closed vacancies or no jobs.
+
+Each strong new match includes employer/title, population and direct student contact,
+full-time/remote status, salary or scale, pension confidence, deadline, certification
+and pathway/qualification fit, physical/on-site requirements and direct application
+link. Ground uncertain suitability facts in actual source evidence. Notify only
+meaningful new matches; remain quiet for no meaningful matches only after adequate
+source and report-history coverage. Do not resurrect the separately paused job watch.
+
+Current policy/worker binding is no longer an unknown prompt. Actual bridge,
+district/charter source coverage, report-history access, destination readback and
+scheduled trial remain unresolved. Existing DOE tests and new synthetic routing
+tests distinguish those operational gates from recovered policy.
 
 ## personal-finance-brief
 
-Exact existing schedule: `Main ChatGPT::6aad057be3548191ab9fb3a994074788`.
-This is explicitly a blocked execution scaffold: source export supplies project
-metadata, not a finance workflow body, and current private task sources/destination
-were not read by this extraction. Do not invent balances, profile, sources, advice
-or completion. Resolve the exact task policy, clock/timezone, restricted source
-identity and destination before operational use. Public news cannot substitute
-for financial-account evidence; unavailable data is not zero/no activity.
+The full native policy is recovered; this is now a source-backed reporting contract,
+not a missing-policy scaffold. It requests a brief action-oriented report from the
+existing connected Finances data: month-to-date spending versus stored budget, key
+category totals, income received, current cash/checking/savings, important credit
+or debt balances and upcoming concerns, and AI/subscription spending or warnings.
+Private financial figures, identities, account details and prompt body stay outside
+core. Actual connected source access and destination are still unverified.
 
-Test plan: an unresolved source binding must block finance execution and return
-its exact next read; resolved synthetic figures must preserve as-of dates and
-stay in the restricted destination. No financial action or advisory calculation
-is implemented/tested by this scaffold. No account or financial data entered Git.
+Verify current reporting date/month boundary, stored budget version, complete
+month-to-date ledger and current balance evidence. Distinguish transfers and
+credit-card payments from true spending so underlying purchases are not counted
+again when money moves or a card is paid. Unresolved classifications remain explicit
+holds; neither missing records nor unavailable balances mean zero/no activity.
+Use current source figures/as-of dates only. No trading, transfer, record mutation,
+invented financial profile or personalized advisory calculation is implemented.
+
+The contract adds required stored-budget and month-to-date-ledger evidence. New
+synthetic router tests show that absent budget, partial ledger, unresolved
+classification dependency and untested executor block the actual contract before
+any operation. They do not calculate a real report. Runtime data normalization,
+transaction reconciliation, live connector capability, backend timezone and actual
+output readback remain acceptance requirements. Public news is no substitute.
 
 ## personal-calendar-school-email-review
 
@@ -323,14 +404,25 @@ source/output acceptance is required; dated prior success is not perpetual acces
 
 ## personal-morning-school-brief
 
-Exact existing schedule: `Main ChatGPT::6acdf6ea52008191b4734193fffcfaf1`.
-Preserve this active cloud task separately until the coordinator reconciles its
-actual saved policy and same-date output with local day review. Registry describes
-classes, after-school schedule, coverage and last-24-hours mail; that summary is
-not a substitute for the full prompt. Do not import the other task's windows,
-disable either owner or declare consolidation complete here. Backend timezone,
-source binding and task output require readback. Test plan: overlapping schedules
-must produce a named ownership conflict and no cutover without verified replacement.
+The full native prompt is recovered. Review today's school day using connected home
+and school calendars/email. Identify actual classes, establish the last class's
+end time, then determine commitments scheduled afterward. A generic after-school
+summary does not satisfy the explicit after-last-class requirement. If the class
+boundary or source coverage cannot be verified, identify that uncertainty.
+
+Explicitly say whether IEP coverage or a covering meeting exists today, with time
+and relevant details when found. Missing/inaccessible coverage sources mean unknown,
+not none. Include school email from the past 24 hours that changes today's schedule,
+coverage, meetings or responsibilities. Keep the resulting brief concise and
+action-oriented, with exact available source links. Do not change events or reply.
+
+Preserve this cloud task separately until the coordinator compares its current
+policy, same-date source coverage and actual output with the local day review.
+Do not import the local task's two-business-day mail window or disable either
+owner from title similarity. Native policy is now verified; backend timezone,
+correct source identities, actual source coverage and output receipt still require
+acceptance. Synthetic router tests hold an unresolved class/coverage dependency;
+no actual calendar/mail or scheduled output was read by this extraction.
 
 ## ops-overnight-optimization-targets-2-5-7-8
 
@@ -361,8 +453,8 @@ python3 -m unittest discover -s ai-ops/runtime/tests -v
 ```
 
 The first command validates all 13 non-school definitions in fresh processes and
-runs synthetic photo acceptance cases. The second exercises the existing runtime
-boundaries as well. Neither test command resolves real private bindings or proves
+runs synthetic photo acceptance cases plus native-policy routing admission tests.
+The second exercises the existing runtime boundaries as well. Neither test command resolves real private bindings or proves
 native editorial quality, grading, scheduled execution or account migration.
 Maintenance owner is the existing technical owner; domain judgment stays with the
 actual author/instructor/private task owner. Change contracts only with versioned

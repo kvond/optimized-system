@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "workflow_id": "personal-morning-school-brief",
-  "contract_version": "2026-10-14.1",
-  "title": "Existing cloud morning brief pending exact-policy reconciliation",
+  "contract_version": "2026-10-14.2",
+  "title": "Current-day school brief with after-last-class and IEP coverage",
   "domain": "personal",
   "owners": {
     "execution_owner_ref": "private:current-owner:personal-morning-school-brief",
@@ -78,16 +78,19 @@
       "Verify current authorization, tested capabilities and one shared writer lease, including independent external sessions.",
       "Read exact source revisions and completeness; unavailable or partial sources never establish no work.",
       "Preserve prior complete state and reconcile uncertain output with its original request ID before any repeat write.",
-      "Current registry reports active configuration only; exact full task policy, backend timezone and output receipt must be resolved before conversion.",
-      "Retained scope is school-day classes, after-school schedule and coverage from connected calendars/mail; last 24 hours mail needs source verification.",
-      "Compare actual same-date output and source coverage with local day review before coordinator selects one owner; do not silently disable either.",
-      "Do not import local day-review windows or historical preferences as if they were this task original prompt."
+      "Recovered native policy requires today school-day review from connected home and school calendars/email; backend timezone and output receipt remain unverified.",
+      "Identify actual classes and last-class end time from current evidence, then determine what is scheduled afterward; do not substitute generic after-school assumptions.",
+      "Explicitly resolve whether IEP coverage or a covering meeting exists today, with time and relevant details when found; unavailable coverage remains unknown, never none.",
+      "Read school email from the past 24 hours for changes to today schedule, coverage, meetings or responsibilities; retain exact source links and current date.",
+      "Keep the brief concise and action-oriented; compare same-date source/output with local day review before coordinator selects one owner.",
+      "Do not import the local day-review two-business-day mail window or silently disable either existing owner."
     ],
     "uncertain_write_policy": "stop_and_reconcile"
   },
   "success_checks": [
-    "Exact existing scope and destination verified, sources paged and coverage gaps explicit.",
-    "One correct existing-task output read back; no duplicate review or consolidation completion claimed from matching titles.",
+    "Brief identifies today classes, verified last-class end time and following commitments; unresolved boundary or calendar coverage is explicit.",
+    "IEP coverage/covering-meeting status is explicit with sourced time/details, or an explicit unknown when the required evidence is inaccessible.",
+    "Relevant past-24-hour school-mail changes are incorporated without replying or editing events; one existing-task output is read back.",
     "Record exact request, source revisions, output hash and native destination readback; label remaining coverage gaps."
   ],
   "failure": {
@@ -99,7 +102,8 @@
     "contract_refs": [
       "private:scheduler-registry-20261014",
       "ai-ops/workflow-contracts/home-and-school-day-review.md",
-      "ai-ops/workflow-contracts/non-school-contracts.md#personal-morning-school-brief"
+      "ai-ops/workflow-contracts/non-school-contracts.md#personal-morning-school-brief",
+      "private:native-cloud-policy:personal-morning-school-brief"
     ]
   }
 }

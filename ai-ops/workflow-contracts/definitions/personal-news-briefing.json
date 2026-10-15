@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "workflow_id": "personal-news-briefing",
-  "contract_version": "2026-10-14.1",
+  "contract_version": "2026-10-14.2",
   "title": "Existing daily news briefing with bounded deterministic retrieval",
   "domain": "personal",
   "owners": {
@@ -83,25 +83,33 @@
       "change-carts",
       "purchase",
       "change-finance-records",
-      "mark-prepared-as-delivered"
+      "mark-prepared-as-delivered",
+      "include-personal-financial-data"
     ],
     "dependency_checks": [
       "Resolve private source, output, account and executor bindings; unresolved required bindings block dependent work.",
       "Verify current authorization, tested capabilities and one shared writer lease, including independent external sessions.",
       "Read exact source revisions and completeness; unavailable or partial sources never establish no work.",
       "Preserve prior complete state and reconcile uncertain output with its original request ID before any repeat write.",
-      "Resolve actual capable worker bridge; exhausted Desktop Commander is unavailable, not repaired by a symbolic executor ref.",
-      "Use existing news_check.py; actual UTC request ID, fresh Eastern business date, fixed approved sources and encrypted state are required.",
-      "Feed metadata completeness is not major-news, civic-action or book-trend completeness; preserve original judgment checks and named fallback coverage.",
-      "Birthday evidence reuse retains News 21/7-day thresholds, distinct from Birthday 30-day policy; unresolved cart conflict grants no cart action.",
-      "Only acknowledge exact final output after readback; local packet acknowledgement never proves cloud/user delivery."
+      "Resolve actual capable worker bridge; exhausted Desktop Commander remains unavailable despite recovered native invocation policy.",
+      "Use existing news_check.py with actual UTC request ID, fresh Eastern business date, approved sources and encrypted state.",
+      "Cover major US/world, economy/markets, AI/education and what matters today; connect relevant AI/education trends to the book and its AI chapter.",
+      "Exclude personal finance, debt, balances, retirement allocation and personalized financial implications; those stay in separate restricted finance runs.",
+      "Review current official Delaware executive/legislative developments against private civic priorities, distinguishing active decisions from actions already taken.",
+      "Identify relevant officials/bodies and practical lawful constituent actions without sending contacts; source links and active-decision status need current evidence.",
+      "Feed metadata completeness is not major-news, civic-action or book-trend completeness; preserve judgment checks and named fallback coverage.",
+      "Use broad bound calendar discovery plus durable gift-history and prior confirmed family evidence; missing confirmed records remain holds, not silently dropped people.",
+      "Only upcoming confirmed-family birthdays within 30 days or confirmed recipients missing history records may appear; omit covered, recorded-past and unrelated calendar entries.",
+      "Retain News 21-day selection and 7-day price/availability/staging intent; cart staging is a separate authenticated authorized action and no order follows without explicit approval.",
+      "This bounded review grants no cart action. If browser staging is unavailable, report ready for the browser step rather than claim it was added.",
+      "Only acknowledge exact final output after destination readback; local packet acknowledgement never proves cloud/user delivery."
     ],
     "uncertain_write_policy": "stop_and_reconcile"
   },
   "success_checks": [
-    "Brief retains actual source links, relevant coverage gaps and original scope; headlines are not silently suppressed before confirmed delivery.",
-    "Task destination has matching actual final text; private packet acknowledgement references that exact output and request.",
-    "Timezone, first scheduled run and source completeness remain separate acceptance facts.",
+    "Brief covers original news/civic/book-trend scope with current source links and explicit coverage gaps, excluding all personal financial content.",
+    "Gift section respects confirmed-family, upcoming/missing-record and covered-gift rules; no duplicate action or claimed staging without actual evidence.",
+    "Task destination matches actual final text and private packet acknowledgement; unacknowledged headlines remain eligible.",
     "Record exact request, source revisions, output hash and native destination readback; label remaining coverage gaps."
   ],
   "failure": {
@@ -116,7 +124,8 @@
       "ai-ops/workflow-contracts/routine-worker-contexts/news.md",
       "ai-ops/workflow-contracts/personal-staged.md",
       "private:scheduler-registry-20261014",
-      "ai-ops/workflow-contracts/non-school-contracts.md#personal-news-briefing"
+      "ai-ops/workflow-contracts/non-school-contracts.md#personal-news-briefing",
+      "private:native-cloud-policy:personal-news-briefing"
     ]
   }
 }

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "workflow_id": "personal-delaware-education-job-watch",
-  "contract_version": "2026-10-14.1",
+  "contract_version": "2026-10-14.2",
   "title": "Existing education job watch with bounded DOE source evidence",
   "domain": "personal",
   "owners": {
@@ -45,6 +45,18 @@
       "required": true,
       "coverage": "complete",
       "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:district-and-charter-current-source-evidence",
+      "required": true,
+      "coverage": "bounded",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:task-specific-reported-vacancy-history",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
     }
   ],
   "outputs": [
@@ -81,18 +93,23 @@
       "Verify current authorization, tested capabilities and one shared writer lease, including independent external sessions.",
       "Read exact source revisions and completeness; unavailable or partial sources never establish no work.",
       "Preserve prior complete state and reconcile uncertain output with its original request ID before any repeat write.",
-      "Resolve current recurrence/timezone, actual worker binding, private criteria and destination; retained historical prompt binding is insufficient.",
-      "Use doe_worker.py and its exact approved source grant; DOE filter coverage is not statewide coverage.",
-      "First complete read seeds state; partial reads preserve prior listings and unknown counts, never inferred closures.",
-      "Keep original candidate criteria private and separate from public source gate; report fit only with verified criteria and actual listing evidence.",
-      "Use bounded child cleanup and immutable snapshot/readback; unknown cleanup or missing atomic artifact blocks refetch."
+      "Recovered native policy confirms the connected DOE worker plus continuing original district/charter searches; actual bridge and source access still need verification.",
+      "Search current official employers across all Delaware districts and charter schools; DOE-only packet never establishes full requested coverage.",
+      "Keep candidate qualifications and fit preferences in the private policy; preserve all inclusion, certification-pathway and exclusion criteria without inferring new credentials.",
+      "Before detailed analysis, compare stable vacancy ID, official URL, posted/modified date and relevant fields with verified task-specific reported history.",
+      "Skip unchanged listings only when prior detailed review/report is verified; source unchanged alone never means the candidate was reviewed or reported.",
+      "Reassess new or materially changed listings and reuse verified pages within the run; missing history is a hold, never an empty prior history.",
+      "First complete DOE source read seeds its source state; partial reads preserve fingerprints and unknown counts, never inferred vacancy closure.",
+      "Use bounded cleanup and immutable source/readback; unknown cleanup or missing atomic artifact blocks refetch.",
+      "Notify only meaningful new matches; no meaningful matches stays quiet only when required source and report-history coverage are complete."
     ],
     "uncertain_write_policy": "stop_and_reconcile"
   },
   "success_checks": [
-    "Packet names exact source coverage and source revision with actual changes or unchanged state.",
-    "Any suitability judgment cites verified current criteria and listing; no notification/application inferred from a packet.",
-    "Existing task destination and private receipt read back; statewide coverage and scheduled success are not claimed from DOE-only acceptance.",
+    "Each strong new match includes employer/title, student population/contact, full-time/remote status, salary/scale, pension confidence, deadline, certification/pathway, qualifications, physical/on-site requirements and direct application link.",
+    "Fit is grounded in verified private criteria and listing evidence; uncertain salary, pension or qualification facts remain explicit.",
+    "Coverage distinguishes DOE and district/charter sources, with observation dates and prior-report comparisons; no false no-jobs claim from failed or partial sources.",
+    "Only meaningful new or materially changed matches enter the existing destination; output readback and task-specific reported history remain distinct from retrieval.",
     "Record exact request, source revisions, output hash and native destination readback; label remaining coverage gaps."
   ],
   "failure": {
@@ -106,7 +123,8 @@
       "ai-ops/runtime/doe_worker.py",
       "ai-ops/workflow-contracts/routine-worker-contexts/doe-watch.md",
       "private:scheduler-registry-20261014",
-      "ai-ops/workflow-contracts/non-school-contracts.md#personal-delaware-education-job-watch"
+      "ai-ops/workflow-contracts/non-school-contracts.md#personal-delaware-education-job-watch",
+      "private:native-cloud-policy:personal-delaware-education-job-watch"
     ]
   }
 }
