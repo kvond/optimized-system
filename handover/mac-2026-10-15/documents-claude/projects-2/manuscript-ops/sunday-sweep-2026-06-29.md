@@ -1,0 +1,37 @@
+- ## 🧹 Sunday-Weekly Sweep — week of [[June 29th, 2026]] → [[July 5th, 2026]]
+  - _Ran Mon Jun 29 (scheduled Sun run executed on next app launch). Read-only review — nothing on the calendar or in Tiller was changed._
+  - ### 📅 Week ahead
+    - **School:** summer break — **no A/B teaching days** this week. Only WilmU summer-term admin + personal items.
+    - **Mon Jun 29** — 9:00–9:15 AM **WilmU Attendance Entry** (first 15 min of WilmU Focus block; recurring through Aug 15)
+    - **Tue Jun 30** — 9:00–9:30 AM **WilmU Scholarly Grades Entry** (first 30 min of Focus block; through Aug 15) · all-day: Christie & Jorge anniversary (2019)
+    - **Wed Jul 1** — 6:00–7:00 PM **READING WEEK** (WilmU) → **note: no live OLI 7106 class block this Wed — it's reading week.** · Christie–BEACH begins (all-day, Jul 1–4, marked free)
+    - **Thu Jul 2** — Christie at beach (no commitments on calendar)
+    - **Fri Jul 3** — Christie at beach · likely Independence Day observed
+    - **Sat Jul 4** — Independence Day · Christie–BEACH last day
+    - **Sun Jul 5** — 7:00–8:00 PM **Pick up Bonnie — Philly Airport, American Airlines** (confirm her arrival time before leaving)
+    - **Conflicts/flags:** none overlapping. Only timed obligations all week are the two WilmU morning entries (Mon/Tue) and the Sun airport run.
+    - **Prep this week:**
+      - Do the **WilmU attendance** entry Mon AM and **scholarly grades** Tue AM (weekly, keep streak through Aug 15).
+      - Confirm **Bonnie's Sun flight time** so the 7 PM pickup block is right.
+  - ### 💵 Finance — from Tiller ([[Katherine von Duyke's Tiller]], live as of Jun 29)
+    - **MARGINS dashboard (June):**
+      - Total Checking $3,950 · movable **leftover ≈ $1,146** (after $1,304 bills + $1,500 margin)
+      - Chase Margin savings $1,501 (target $1,500 ✅) · 360 Checking $4,018 · HYSA $1,344.68 (renter deposit $572 held → **spendable ≈ $772**)
+      - ⚠️ **Cap Savings margin $986 vs $1,100 target — short ~$114.** Top-up candidate.
+    - **This week's transactions (Jun 23–29):** Rental income **+$2,000** (6/26) · AIHS paycheck **+$2,069** (6/26) · Capital One card payment −$2,000 (6/24) · Chase +$2,000 (6/23) · small spend: Venmo "Help Kids" −$40, Frothy Cup −$23, Amazon Tech −$14, Publicrecords −$10.
+    - **Uncategorized rows:** none — register is clean. ✅
+    - **Rental property (June):** Income +$2,000 (6/26). Expenses: Boulden Bros maintenance −$800 (6/6), lawn care −$40 ×2, Boulden VPI −$24.50. Rent-to-Jake −$801 (6/1). Net rental roughly **+$295** for the month before the lawn/VPI bits.
+    - **Recurring bills (next monthly cycle, early–mid July):** Citadel car $400 · Discover $760 · Synchrony $465 · Apple Card $215 · Verizon $80 · Claude.ai $60 · Crunch $20 · Apple.com $15 · Anthropic $10.
+    - **Watch items:**
+      - 💳 **Discover balance ≈ $16.5k** — the debt-paydown target; June leftover/surplus is meant to feed it.
+      - 🤖 **AI category over budget** — $1,489 spent vs $1,200 YTD (−$289). June alone: Anthropic/Claude ≈ $377 + $60. Tiller note flags "ChatGPT runs out July — no more payments from July on," so this should ease.
+      - 🏠 Green Sky 11% loan paid down hard in April (−$10.6k); now ~$267/mo.
+  - ### ⭐ Attend-to-first (top 3 for the week)
+    - 1. **WilmU weekly admin** — Attendance (Mon 9:00) + Scholarly grades (Tue 9:00). No live class Wed (reading week), but keep the entries.
+    - 2. **Finance:** rental $2,000 landed ✅ — move the ~$1,146 Chase leftover toward **Discover ($16.5k)**, and **top up Cap Savings ~$114** to hit the $1,100 margin.
+    - 3. **Sun Jul 5 7 PM airport pickup (Bonnie, Philly, AA)** — verify flight time midweek.
+  - ### 🔎 Assumptions & access notes
+    - Calendars used: **Routine** (kvond12@gmail.com) held all events; **Appts** calendar had no events this week.
+    - Finance source: **"Katherine von Duyke's Tiller"** Google Sheet (live MARGINS + Transactions). Numbers are as-shown in the sheet, not recomputed. No edits made.
+    - **Roam not directly writable in this session** (no Roam connector) — this entry is saved as a paste-ready file for your daily note.
+    - Run-timing: the Sunday-evening schedule executed Mon Jun 29; "week ahead" covers Mon Jun 29 → Sun Jul 5.
