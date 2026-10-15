@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "workflow_id": "personal-finance-brief",
-  "contract_version": "2026-10-14.1",
-  "title": "Restricted existing finance brief source-binding scaffold",
+  "contract_version": "2026-10-14.2",
+  "title": "Daily restricted finance report from verified connected data",
   "domain": "personal",
   "owners": {
     "execution_owner_ref": "private:current-owner:personal-finance-brief",
@@ -43,6 +43,18 @@
       "required": true,
       "coverage": "complete",
       "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:finance-stored-budget",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:finance-month-to-date-ledger",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
     }
   ],
   "outputs": [
@@ -75,16 +87,19 @@
       "Verify current authorization, tested capabilities and one shared writer lease, including independent external sessions.",
       "Read exact source revisions and completeness; unavailable or partial sources never establish no work.",
       "Preserve prior complete state and reconcile uncertain output with its original request ID before any repeat write.",
-      "Source export has finance metadata only; exact current task body, clock/timezone, sources and destination are unverified requirements.",
-      "No finance task may run from this scaffold until current private source scope and authorized destination are actually read under correct identity.",
-      "Use only verified source figures and as-of dates; distinguish unavailable data from zero balances or no activity.",
-      "Do not copy financial history, profiles or account identifiers into core or another provider."
+      "Recovered native policy specifies the report; actual connected Finances bindings, data access, backend timezone and destination readback remain unverified.",
+      "Verify current reporting date, month-to-date boundary, stored budget version and source coverage before calculating spending versus budget.",
+      "Classify transfers and credit-card payments separately from true spending; reconcile their ledger representation so the same spending is not counted twice.",
+      "Use source-backed category totals, received income, cash/checking/savings, important credit/debt balances, upcoming concerns and AI/subscription spending or warnings.",
+      "Use only verified figures and as-of dates; unresolved classification or unavailable data is an explicit gap, never zero or guessed spending.",
+      "Keep the report brief and action-oriented in its restricted existing destination; do not copy financial history, identifiers or profiles into core or another provider."
     ],
     "uncertain_write_policy": "stop_and_reconcile"
   },
   "success_checks": [
-    "Summary uses only resolved current source evidence, explicitly marks missing coverage and stays in restricted existing destination.",
-    "No balance, source, recommendation, delivery or successful scheduled execution is fabricated from metadata.",
+    "Report covers month-to-date spending versus stored budget, key categories, received income, current cash/checking/savings, important credit/debt concerns and AI/subscription spending or warnings.",
+    "Spending reconciliation excludes transfers and card payments already represented by underlying purchases; uncertain classifications remain visible.",
+    "Every figure has current source/as-of evidence; missing coverage is explicit and no financial action, advice or delivery is inferred from recovered policy.",
     "Record exact request, source revisions, output hash and native destination readback; label remaining coverage gaps."
   ],
   "failure": {
@@ -97,7 +112,8 @@
       "ai-ops/workflow-contracts/personal-staged.md",
       "private:source-project-audit-20261014",
       "private:scheduler-registry-20261014",
-      "ai-ops/workflow-contracts/non-school-contracts.md#personal-finance-brief"
+      "ai-ops/workflow-contracts/non-school-contracts.md#personal-finance-brief",
+      "private:native-cloud-policy:personal-finance-brief"
     ]
   }
 }

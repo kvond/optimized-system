@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "workflow_id": "personal-birthday-gift-review",
-  "contract_version": "2026-10-14.1",
+  "contract_version": "2026-10-14.2",
   "title": "Existing birthday source refresh and gift planning review",
   "domain": "personal",
   "owners": {
@@ -89,18 +89,24 @@
       "Verify current authorization, tested capabilities and one shared writer lease, including independent external sessions.",
       "Read exact source revisions and completeness; unavailable or partial sources never establish no work.",
       "Preserve prior complete state and reconcile uncertain output with its original request ID before any repeat write.",
-      "Page bound calendar and project/history sources completely; source identity and current Eastern business-date observations are required.",
-      "Use birthday_check.py after its runbook refresh; 30-day window and exact date plus exact confirmed name/alias crosswalk control.",
-      "Only verified sent/purchased/ordered evidence for exact occurrence closes it; prior-year, pending, selected or unknown purchase detail cannot.",
-      "Keep scoped holds visible; any current-window unknown prevents all-clear. No fuzzy family identity or inferred leap-day occurrence.",
-      "Resolve current schedule time/timezone and capable source refresh bridge; later user gift decisions are separate from this read-only review."
+      "Page the bound calendar broadly before filtering recipients; use bound Todoist gift history as durable authority, not Personal Hub.",
+      "Use birthday_check.py after one fresh-source refresh; reuse verified same-day complete evidence and preserve exact date/name or confirmed alias crosswalk.",
+      "Include a recipient only with existing gift-history record or prior user-confirmed family evidence; calendar-only names grant no research, reporting, task or add permission.",
+      "Previously confirmed family records missing from calendar remain reconciliation holds; retain confirmed dates privately until actual corrected source evidence.",
+      "User-facing scope is upcoming family birthdays within 30 days or confirmed recipients missing history; omit recorded past and unrelated birthdays. Upcoming covered gifts may receive only a brief useful mention.",
+      "Preserve current-year interests, budget, size, exclusions and preferred name spelling; unanswered adult-child interests or grandchild-parent questions go to the user, never automatic contacts.",
+      "When a separately verified research continuation is available, offer 3-5 current linked/priced choices, books first and a strong book option when appropriate.",
+      "After actual user choice, a separate authorized write continuation may update the undated history and one action due seven days before the birthday; preserve exact item details and recheck-price/delivery note.",
+      "Only confirmed exact-occurrence sent/purchased evidence closes an action; selected/planned/pending or prior-year records cannot.",
+      "Current-window unknown prevents all-clear; the native flexible morning band is not an exact clock. Resolve actual executor, timezone and destination trial."
     ],
     "uncertain_write_policy": "stop_and_reconcile"
   },
   "success_checks": [
-    "Private normalized inputs and output packet read back under same request identity; repeated changed inputs with same ID fail closed.",
-    "Known eligible occurrences and unresolved holds remain distinct; partial source never becomes an empty or completed family list.",
-    "Existing task output matches saved packet; no cart, purchase, contact or automatic Todoist choice applied.",
+    "Private normalized inputs and packet read back under same request identity; changed inputs with the same ID fail closed.",
+    "Report follows verified family and upcoming/missing-record eligibility; broad internal reconciliation does not publish unrelated or already-recorded past birthdays.",
+    "Known eligible occurrences and scoped holds remain distinct; no duplicate suggestion/task for an already confirmed current-year gift.",
+    "Review preserves unresolved interests and user choice gates; no cart, purchase, contact, Todoist choice-write or action completion is performed by this review contract.",
     "Record exact request, source revisions, output hash and native destination readback; label remaining coverage gaps."
   ],
   "failure": {
@@ -114,7 +120,8 @@
       "ai-ops/runtime/birthday_check.py",
       "ai-ops/workflow-contracts/routine-worker-contexts/birthday.md",
       "private:scheduler-registry-20261014",
-      "ai-ops/workflow-contracts/non-school-contracts.md#personal-birthday-gift-review"
+      "ai-ops/workflow-contracts/non-school-contracts.md#personal-birthday-gift-review",
+      "private:native-cloud-policy:personal-birthday-gift-review"
     ]
   }
 }
