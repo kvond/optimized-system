@@ -1,7 +1,7 @@
 name: System Review fallback
 on:
   schedule:
-    - cron: "0 7 * * 1"   # fallback after the Sunday Claude Code primary
+    - cron: "0 7 * * 1"   # Monday fallback after the Sunday Claude Code primary
   workflow_dispatch: {}
 permissions:
   contents: write
@@ -16,11 +16,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Skip if Claude Code primary already produced this week's report
+      - name: Skip if Claude Code primary completed
         id: gate
         run: |
-          D=$(date +%F)
-          if [ -f "ai-ops/reports/system-review/$D.md" ]; then
+          D=$(date -d 'yesterday' +%F)
+          REF="refs/heads/claude/system-review-$D"
+          if git ls-remote --exit-code --heads origin "$REF" >/dev/null 2>&1; then
             echo "run=false" >> "$GITHUB_OUTPUT"
           else
             echo "run=true" >> "$GITHUB_OUTPUT"
