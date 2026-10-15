@@ -472,3 +472,17 @@ Read from claude.ai Settings in the Chrome browser named "UD CHROME AND CLAUDE"
 This closes open item 1 (plan) and the organisation question. Still open: who
 owns `1fc883da` and `cdb42cb9`, what the three UD projects contain, and which
 LMS receives the grades.
+
+## The other organisation, 15 October 2026
+
+Katherine was asked whether `1fc883da` was a WilmU organisation. Her answer: the
+other Claude account is a free teacher account. It is not a WilmU one.
+
+So the hypothesis above is ruled out. Nothing found so far shows that WilmU has
+its own Claude organisation. The usage pattern also fits a free plan:
+`1fc883da` reached 98% of its weekly window on 30 Sep.
+
+Still open: which login holds the free teacher account (probably the Red Clay
+address, not confirmed), whether `cdb42cb9` is the same account or a second
+dormant one, what the three UD projects contain, and which LMS receives the
+grades.
