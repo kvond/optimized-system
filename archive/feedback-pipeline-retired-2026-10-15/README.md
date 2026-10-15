@@ -15,6 +15,6 @@ Moved here unchanged (history is also in Git):
   The idea (Agenda prompt cells, Manual §12 and the Prompt Library must agree) is worth porting.
 - `skills-formative-pipeline-v2/`: the old pipeline skill.
 
-Still in `scripts/` on purpose: `extract_and_grade.py`. `deck_lint.py` keeps its
-`NON_DIAGNOSTIC_MARKERS` / `STANDING_REFLECTION_MARKERS` in sync with it. Port those lists
-into `deck_lint.py` before retiring it.
+Still in `scripts/` on purpose: `extract_and_grade.py` is outside this retirement list and remains
+unchanged. `deck_lint.py` owns its exclusion tuples independently; there is no synchronization
+requirement between the two files.
