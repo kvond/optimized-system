@@ -121,6 +121,22 @@ class NativePolicyAdmissionTests(unittest.TestCase):
             check['state'] = 'unknown'
             self.assertEqual(self.route(data)['reason'], 'dependency_unverified')
 
+    def test_local_day_review_cannot_skip_consolidation_checks_or_calendar_identity(self):
+        baseline = self.fixture('personal-calendar-school-email-review')
+        self.assertEqual(self.route(baseline)['status'], 'ready')
+        for prefix in ('For consolidation acceptance, establish today',
+                       'For consolidation acceptance, check today IEP',
+                       'Verify calendar account identity independently'):
+            with self.subTest(check=prefix):
+                data = copy.deepcopy(baseline)
+                check = next(c for c in data[1]['dependencies'] if c['check'].startswith(prefix))
+                check['state'] = 'unknown'
+                self.assertEqual(self.route(data)['reason'], 'dependency_unverified')
+                # Evidence that an incomplete source was explicitly handled is
+                # separate from pretending the source establishes no commitment.
+                check['state'] = 'passed'
+                self.assertEqual(self.route(data)['status'], 'ready')
+
     def test_review_policy_never_grants_gift_writes_or_news_finance_access(self):
         for workflow_id, operation in (
                 ('personal-birthday-gift-review', 'update-todoist-gift-choice'),
