@@ -5,7 +5,7 @@ import json
 import re
 from dataclasses import dataclass, asdict
 
-ROUTER_VERSION = "2026-10-15.2"
+ROUTER_VERSION = "2026-10-16.1"
 
 CHANNELS = {
     "optimize": "C0C9AQ2FK3P",
@@ -22,6 +22,7 @@ CHANNELS = {
     "exceptions": "C0C9BJ57N13",
     "decomission": "C0C9BJ4S9HT",
     "teaching_reflection": "C0C9EMYK6MC",
+    "needs_rerouting": "C0C9QPBHDE1",
     "system_review": "C0C9J0NU6LC",
     "lesson_preflight": "C0CA8LQ417A",
     "higher_ed": "C0C9L06CVU4",
@@ -153,7 +154,11 @@ def deterministic_route(text: str) -> RouteDecision | None:
     if override:
         return None
     if confidence < 0.78:
-        return None
+        # Unclear messages go to #needs-rerouting for Katherine, not to a paid model.
+        # A model is called only when the message asks for one ([openai]/[claude]).
+        destination = CHANNELS["needs_rerouting"]
+        if kind_conf < 0.78:
+            kind = "thought"
     summary = normalized(clean)
     if len(summary) > 500:
         summary = summary[:497].rstrip() + "..."

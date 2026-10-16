@@ -47,6 +47,8 @@ The intended always-on target is the personal project (`graceful-fold-341018`), 
 python3 -m unittest discover -s ai-ops/slack-gateway/tests -v
 ```
 
+Unclear messages (keyword confidence below 0.78) go to `#needs-rerouting` for Katherine with no model call. A model is called only when a message starts with `[openai]`, `openai:`, `[claude]` or `claude:` (Katherine, 2026-10-16).
+
 Delivery tests use temporary SQLite state, signed HTTP requests, and mocked Slack/provider calls. They cover persisted event deduplication, connector filtering, source links, current destinations, model cache reuse, invalid output and failure without a second provider. They incur no model charges. Passing them does not prove Cloud Run deployment, Firestore concurrency or a live paid provider call; those remain separate acceptance checks after review/merge/deployment. Existing claimed-but-incomplete events still require investigation rather than blind replay after a Slack delivery error.
 
 ## One-time Slack installation gate

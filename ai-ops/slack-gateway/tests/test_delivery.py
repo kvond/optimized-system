@@ -119,8 +119,8 @@ class DeliveryTests(unittest.TestCase):
     def test_mocked_provider_result_is_cached_without_second_call(self):
         self.provider.side_effect = None
         self.provider.return_value = (json.dumps(dict(kind='task', area='ai_ops', destination='work-que', summary='Review the ambiguous request')), {'input_tokens': 10, 'output_tokens': 5})
-        self.deliver(event_id='Ev-api-1', text='Where should this go?')
-        self.deliver(event_id='Ev-api-2', text='Where should this go?')
+        self.deliver(event_id='Ev-api-1', text='[openai] Where should this go?')
+        self.deliver(event_id='Ev-api-2', text='[openai] Where should this go?')
         self.provider.assert_called_once()
         self.assertFalse(self.completed('Ev-api-1')['cache_hit'])
         self.assertTrue(self.completed('Ev-api-2')['cache_hit'])
@@ -130,18 +130,18 @@ class DeliveryTests(unittest.TestCase):
 
     def test_provider_failure_does_not_try_another_provider(self):
         self.provider.side_effect = ProviderError('test failure')
-        self.deliver(text='Where should this go?')
+        self.deliver(text='[openai] Where should this go?')
         self.provider.assert_called_once()
         self.posts.assert_called_once()
         self.assertIn('nothing was forwarded', self.posts.call_args.args[1])
         self.assertEqual(self.completed()['held'], 'classification_failed')
-        self.deliver(text='Where should this go?')
+        self.deliver(text='[openai] Where should this go?')
         self.provider.assert_called_once()
 
     def test_invalid_model_output_is_held_and_not_cached(self):
         self.provider.side_effect = None
         self.provider.return_value = ('{"kind":"task","area":"ai_ops","destination":"not-a-channel","summary":"invalid"}', {})
-        self.deliver(text='Where should this go?')
+        self.deliver(text='[openai] Where should this go?')
         self.posts.assert_called_once()
         self.assertEqual(self.completed()['held'], 'classification_failed')
         with sqlite3.connect(self.state.db_path) as db:
