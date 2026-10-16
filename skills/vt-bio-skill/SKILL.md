@@ -1710,6 +1710,24 @@ material in them. Don't use outside copies when the school Drive has the lesson.
 
 This applies to Forensics and A&P, and to any Biology cycle that still has an original deck.
 
+**A&P is original-first (Katherine, 2026-10-15).** For Anatomy, Week 8 to the end of the
+year, the original free Biology Corner deck is the backbone, not the VT deck. Steps 2 and
+6 below change for A&P:
+
+- **Spine.** Keep the original deck whole and in its own order, with every slide,
+  picture, diagram and video. Insert the existing VT question slides into it at the point
+  where the original teaches that critical aspect. Do not rebuild the lesson from a
+  shortened reconstruction.
+- **Less telling, more doing.** Use the matching guided notes to turn reference slides
+  into student work placed before the slide that tells: students type an answer, or move
+  parts of the slide to match or label. Then show the original slide as the answer.
+- **Logic check.** Read the merged deck once for critical-aspect logic: each VT question
+  sits after the material it depends on and before the answer it would give away.
+- **Check (replaces step 6 for A&P).** The merged deck has at least the original's slide
+  and image counts plus the inserted VT and activity slides, and `deck_lint.py` passes.
+
+The rest of §16 (codes, Agenda links, archive last) is unchanged.
+
 1. **Find both decks** in the week/cycle folder: the VT deck and the original lesson
    deck (including `.pptx` originals and `Copy of …` decks).
 2. **Merge into the VT deck.** Use the VT structure (§1, §2) as the spine. Carry
