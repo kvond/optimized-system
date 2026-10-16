@@ -122,3 +122,7 @@ ai-ops/runtime/tests/__pycache__/
 !/ai-ops/workflow-contracts/definitions/technical-catalog-validation.json
 !/skills/ai-operations-router/references/handoff.schema.json
 !/skills/ai-operations-router/references/routing-rules.json
+
+# book-ops results are committed by .github/workflows/book-ops.yml
+!book-ops/inventory.json
+!book-ops/sweeps/*.json
