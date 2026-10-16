@@ -1,0 +1,1 @@
+=SUMPRODUCT(COUNTIF(FILTER(Categories!$A$2:$A$100,Categories!$B$2:$B$100="Rental Bills"),Transactions!$D$2:$D$5011)*(Transactions!$B$2:$B$5011>=DATE(2026,7,1))*(Transactions!$B$2:$B$5011<DATE(2026,8,1))*(Transactions!$F$2:$F$5011="Savor")*Transactions!$E$2:$E$5011)

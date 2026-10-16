@@ -1,0 +1,374 @@
+<!doctype html><script type="application/json" id="cowork-artifact-meta">
+{
+  "name": "Habit Calendar",
+  "schemaVersion": 1,
+  "description": "Live month-grid habit calendar (Strength · Uke · Swim · Spanish) with current streaks, pulling rows fresh from the [[Habit Tracker]] page in Roam each time it opens. Rows are written nightly by the nightly-distill task.",
+  "mcpTools": [],
+  "mcpServerNames": []
+}
+</script>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Habit Calendar</title>
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #ffffff;
+    --ink: #1c2024;
+    --muted: #6b7280;
+    --line: #e6e8eb;
+    --done: #2f9e44;
+    --done-bg: #e7f6ec;
+    --rest: #b08900;
+    --rest-bg: #fbf3d6;
+    --miss-bg: #f4f5f6;
+    --today: #1971c2;
+    --card: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 18px 16px 40px; }
+  header.top { display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom: 4px; }
+  h1 { font-size: 19px; margin: 0; font-weight: 650; }
+  .sub { color: var(--muted); font-size: 13px; margin: 2px 0 18px; }
+  .controls { display:flex; align-items:center; gap:10px; margin-bottom:14px; }
+  .controls button {
+    border:1px solid var(--line); background:var(--card); color:var(--ink);
+    border-radius:8px; padding:6px 12px; font-size:14px; cursor:pointer;
+  }
+  .controls button:hover { background:#f7f8f9; }
+  .controls .month { font-weight:600; min-width:150px; text-align:center; }
+  .controls .refresh { margin-left:auto; }
+  .streaks { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:18px; }
+  .streak {
+    border:1px solid var(--line); border-radius:10px; padding:10px 14px; min-width:120px; background:var(--card);
+  }
+  .streak .name { font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; }
+  .streak .val { font-size:22px; font-weight:700; margin-top:2px; }
+  .streak .val small { font-size:12px; font-weight:500; color:var(--muted); }
+  .gridwrap { overflow-x:auto; border:1px solid var(--line); border-radius:12px; }
+  table { border-collapse:collapse; width:100%; font-size:12px; }
+  th, td { text-align:center; padding:0; }
+  th.daynum { color:var(--muted); font-weight:500; height:30px; width:26px; border-bottom:1px solid var(--line); }
+  th.daynum.today { color:var(--today); font-weight:700; }
+  th.habit, td.habit {
+    text-align:left; white-space:nowrap; padding:0 12px; font-weight:600;
+    position:sticky; left:0; background:var(--card); border-right:1px solid var(--line); min-width:92px;
+  }
+  td.cell { height:30px; width:26px; border-bottom:1px solid #f0f1f2; border-left:1px solid #f5f6f7; }
+  td.cell .dot { display:inline-block; width:18px; height:18px; line-height:18px; border-radius:5px; font-size:12px; }
+  td.cell.done .dot { background:var(--done-bg); color:var(--done); }
+  td.cell.rest .dot { background:var(--rest-bg); color:var(--rest); }
+  td.cell.miss .dot { background:var(--miss-bg); color:#c9ccd1; }
+  td.cell.future .dot { background:transparent; }
+  td.cell.today { box-shadow: inset 0 0 0 2px var(--today); }
+  td.cell.editable { cursor:pointer; }
+  td.cell.editable:hover .dot { outline: 1px solid var(--today); }
+  td.cell.pending { opacity:.4; }
+  td.cell.locked .dot { cursor:not-allowed; }
+  tr:last-child td { border-bottom:none; }
+  .legend { display:flex; gap:16px; flex-wrap:wrap; margin-top:14px; color:var(--muted); font-size:12px; }
+  .legend span { display:inline-flex; align-items:center; gap:6px; }
+  .chip { width:14px; height:14px; border-radius:4px; display:inline-block; }
+  .empty { padding:30px 14px; color:var(--muted); text-align:center; }
+  .err { color:#c92a2a; }
+  .note { color:var(--muted); font-size:12px; margin-top:18px; }
+  .toast { position:fixed; bottom:16px; right:16px; background:#1c2024; color:#fff; padding:8px 14px; border-radius:8px; font-size:13px; opacity:0; transition:opacity .2s; pointer-events:none; }
+  .toast.show { opacity:.95; }
+  .toast.toast-err { background:#c92a2a; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>🌙 Habit Calendar</h1>
+  </header>
+  <div class="sub">Strength · Uke · Voice · Spanish — click a cell to log it. Reads/writes live, straight off each day's <strong>End-of-Day</strong> block — nothing else to keep running.</div>
+
+  <div class="controls">
+    <button id="prev">‹ Prev</button>
+    <div class="month" id="monthLabel">—</div>
+    <button id="next">Next ›</button>
+    <button id="refresh" class="refresh">⟳ Refresh</button>
+  </div>
+
+  <div class="streaks" id="streaks"></div>
+  <div class="gridwrap"><div id="grid" class="empty">Loading from Roam…</div></div>
+
+  <div class="legend">
+    <span><i class="chip" style="background:var(--done-bg);border:1px solid var(--done)"></i> ✓ did it (click to cycle)</span>
+    <span><i class="chip" style="background:var(--rest-bg);border:1px solid var(--rest)"></i> rest (day off — keeps streak)</span>
+    <span><i class="chip" style="background:var(--miss-bg);border:1px solid #d6d9dd"></i> ✗ not done / not recorded</span>
+  </div>
+  <div class="note" id="note"></div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+const HABITS = ["Strength","Uke","Voice","Spanish"];
+const LABEL_WORDS = ["Strength","Uke","Voice","Swim","Spanish"]; // Swim = legacy name for Voice, retired July 9 2026
+const LEGACY_CUTOFF = "2026-07-09"; // Voice replaced Swim on/after this date
+const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+const CYCLE = ["miss","done","rest"];
+const TOKEN = { done:"✓", rest:"rest", miss:"✗" };
+
+let view = loadView();
+function loadView(){
+  try { const v = JSON.parse(localStorage.getItem("habitcal_view")||"null"); if(v && typeof v.y==="number") return v; } catch(e){}
+  const d = new Date(); return { y: d.getFullYear(), m: d.getMonth() };
+}
+function saveView(){ try{ localStorage.setItem("habitcal_view", JSON.stringify(view)); }catch(e){} }
+
+function ordToDate(s){
+  const m = s.match(/([A-Za-z]+)\s+(\d{1,2})(?:st|nd|rd|th)?,?\s+(\d{4})/);
+  if(!m) return null;
+  const mi = MONTHS.indexOf(m[1]);
+  if(mi<0) return null;
+  return { y:+m[3], m:mi, d:+m[2] };
+}
+function key(y,m,d){ return y+"-"+String(m+1).padStart(2,"0")+"-"+String(d).padStart(2,"0"); }
+function stripTime(d){ return new Date(d.getFullYear(), d.getMonth(), d.getDate()); }
+
+function normToken(t){
+  t = (t||"").trim().toLowerCase();
+  if(t.includes("✓")||t==="y"||t==="yes"||t==="done"||t.includes("did it")||t.includes("worked out")) return "done";
+  if(t.includes("rest")||t==="off") return "rest";
+  return "miss";
+}
+
+// ---- Roam read: one datomic query for every End-of-Day block + its children ----
+const EOD_QUERY = `[:find ?page-title ?eod-uid ?child-uid ?child-string ?child-order
+ :where
+ [?eod :block/string ?eod-str]
+ [(clojure.string/includes? ?eod-str "End-of-Day")]
+ [?eod :block/uid ?eod-uid]
+ [?eod :block/page ?page]
+ [?page :node/title ?page-title]
+ [?eod :block/children ?child]
+ [?child :block/uid ?child-uid]
+ [?child :block/string ?child-string]
+ [?child :block/order ?child-order]]`;
+
+async function callTool(name, args){
+  return window.cowork.callMcpTool(name, args);
+}
+
+function unwrapMatches(r){
+  if(!r) return [];
+  let matches;
+  if(Array.isArray(r)) matches = r;
+  else if(r.matches) matches = r.matches;
+  else if(r.structuredContent && r.structuredContent.matches) matches = r.structuredContent.matches;
+  else if(r.content && r.content[0] && r.content[0].text){
+    try { const parsed = JSON.parse(r.content[0].text); matches = parsed.matches || parsed; } catch(e){ matches = []; }
+  } else matches = [];
+  return matches.map(m => {
+    if(typeof m === "string") { try { return JSON.parse(m); } catch(e){ return null; } }
+    if(m && typeof m.content === "string") { try { return JSON.parse(m.content); } catch(e){ return null; } }
+    return m;
+  }).filter(Boolean);
+}
+
+function extractLabel(str){
+  for(const w of LABEL_WORDS){
+    const re = new RegExp("\\b"+w+"\\b");
+    if(re.test(str)) return w;
+  }
+  return null;
+}
+function extractPrefix(str){
+  let idx = str.indexOf("::");
+  if(idx >= 0) return str.slice(0, idx+2);
+  idx = str.indexOf(":");
+  if(idx >= 0) return str.slice(0, idx+1);
+  return null;
+}
+
+let rawData = {};   // dateKey -> { LabelWord: {uid, prefix, token, state, order} }
+let eodUid = {};     // dateKey -> uid of that day's End-of-Day block
+
+function parseQueryRows(rows){
+  rawData = {}; eodUid = {};
+  for(const row of rows){
+    if(!Array.isArray(row) || row.length < 5) continue;
+    const [pageTitle, eUid, childUid, childString, childOrder] = row;
+    const dt = ordToDate(pageTitle);
+    if(!dt) continue;
+    const k = key(dt.y, dt.m, dt.d);
+    eodUid[k] = eUid;
+    const label = extractLabel(childString);
+    if(!label) continue;
+    const prefix = extractPrefix(childString);
+    const token = prefix ? childString.slice(prefix.length).trim() : childString.trim();
+    rawData[k] = rawData[k] || {};
+    // if duplicate label blocks exist on a day, keep the one with lowest order (first)
+    if(!rawData[k][label] || childOrder < rawData[k][label].order){
+      rawData[k][label] = { uid: childUid, prefix, token, state: normToken(token), order: childOrder };
+    }
+  }
+}
+
+// Resolve which raw label a display column reads from for a given day
+function sourceLabelFor(habit, k){
+  if(habit !== "Voice") return habit;
+  const day = rawData[k] || {};
+  if(day.Voice) return "Voice";
+  if(k < LEGACY_CUTOFF && day.Swim) return "Swim";
+  return "Voice"; // default target for new writes
+}
+
+function getEntry(habit, k){
+  const label = sourceLabelFor(habit, k);
+  const day = rawData[k];
+  return day ? day[label] : undefined;
+}
+
+async function fetchAll(){
+  const r = await callTool("mcp__roam__roam_datomic_query", { query: EOD_QUERY });
+  const rows = unwrapMatches(r).map(m => {
+    // matches may arrive as {content:"[...]"} strings already parsed by unwrapMatches, or as raw arrays
+    if(Array.isArray(m)) return m;
+    return null;
+  }).filter(Boolean);
+  parseQueryRows(rows);
+}
+
+// ---- render ----
+function render(){
+  document.getElementById("monthLabel").textContent = MONTHS[view.m] + " " + view.y;
+  const today = new Date(); const tKey = key(today.getFullYear(), today.getMonth(), today.getDate());
+  const days = new Date(view.y, view.m+1, 0).getDate();
+
+  renderStreaks(today);
+
+  let html = "<table><thead><tr><th class='habit'>&nbsp;</th>";
+  for(let d=1; d<=days; d++){
+    const isT = key(view.y,view.m,d)===tKey;
+    html += "<th class='daynum"+(isT?" today":"")+"'>"+d+"</th>";
+  }
+  html += "</tr></thead><tbody>";
+  for(const h of HABITS){
+    html += "<tr><td class='habit'>"+h+"</td>";
+    for(let d=1; d<=days; d++){
+      const k = key(view.y,view.m,d);
+      const entry = getEntry(h,k);
+      const cellDate = new Date(view.y, view.m, d);
+      const isFuture = cellDate > stripTime(today);
+      const isT = k===tKey;
+      const editable = !isFuture && !!eodUid[k];
+      let cls="miss", glyph="";
+      if(isFuture && !entry){ cls="future"; glyph=""; }
+      else if(entry){ cls=entry.state; glyph = entry.state==="done"?"✓":entry.state==="rest"?"·":"✗"; }
+      else { cls="miss"; glyph=""; }
+      const cellClass = "cell "+cls+(isT?" today":"")+(editable?" editable":" locked");
+      html += "<td class='"+cellClass+"' data-habit='"+h+"' data-key='"+k+"' data-editable='"+(editable?"1":"0")+"'><span class='dot'>"+glyph+"</span></td>";
+    }
+    html += "</tr>";
+  }
+  html += "</tbody></table>";
+  const g = document.getElementById("grid");
+  g.className = "";
+  g.innerHTML = html;
+
+  const total = Object.keys(rawData).length;
+  document.getElementById("note").textContent = total
+    ? (total+" day"+(total>1?"s":"")+" of End-of-Day data found. Click any past/today cell to log or correct it — writes straight to that day's real habit block, no nightly job involved.")
+    : "No End-of-Day blocks found yet.";
+}
+
+function renderStreaks(today){
+  const wrap = document.getElementById("streaks");
+  wrap.innerHTML = "";
+  for(const h of HABITS){
+    let streak=0; const cur = stripTime(today);
+    for(let i=0;i<400;i++){
+      const d = new Date(cur); d.setDate(cur.getDate()-i);
+      const k = key(d.getFullYear(), d.getMonth(), d.getDate());
+      const entry = getEntry(h,k);
+      if(!entry){ if(i===0) continue; break; }
+      if(entry.state==="done") streak++;
+      else if(entry.state==="rest") continue;
+      else break;
+    }
+    const el = document.createElement("div");
+    el.className="streak";
+    el.innerHTML = "<div class='name'>"+h+"</div><div class='val'>"+streak+" <small>day"+(streak===1?"":"s")+"</small></div>";
+    wrap.appendChild(el);
+  }
+}
+
+function toast(msg, isErr){
+  const t = document.getElementById("toast");
+  t.textContent = msg;
+  t.className = "toast show"+(isErr?" toast-err":"");
+  clearTimeout(toast._h);
+  toast._h = setTimeout(()=>{ t.className="toast"; }, 2200);
+}
+
+let writing = false;
+async function handleCellClick(td){
+  if(writing) return;
+  const habit = td.getAttribute("data-habit");
+  const k = td.getAttribute("data-key");
+  if(td.getAttribute("data-editable") !== "1") return;
+  const eUid = eodUid[k];
+  if(!eUid) return;
+
+  const label = sourceLabelFor(habit, k);
+  const entry = getEntry(habit, k);
+  const curState = entry ? entry.state : "miss";
+  const nextState = CYCLE[(CYCLE.indexOf(curState)+1)%CYCLE.length];
+  const newString = (entry && entry.prefix ? entry.prefix.trim() : label+"::") + " " + TOKEN[nextState];
+
+  writing = true;
+  td.classList.add("pending");
+  try{
+    if(entry && entry.uid){
+      await callTool("mcp__roam__roam_process_batch_actions", {
+        actions: [{ action:"update-block", uid: entry.uid, string: newString }]
+      });
+      entry.state = nextState; entry.token = TOKEN[nextState];
+    } else {
+      const res = await callTool("mcp__roam__roam_process_batch_actions", {
+        actions: [{ action:"create-block", uid: "{{uid:new1}}", location:{ "parent-uid": eUid, order:"last" }, string: newString }]
+      });
+      let newUid = null;
+      if(res && res.uid_map && res.uid_map.new1) newUid = res.uid_map.new1;
+      else if(res && res.structuredContent && res.structuredContent.uid_map) newUid = res.structuredContent.uid_map.new1;
+      rawData[k] = rawData[k] || {};
+      rawData[k][label] = { uid:newUid, prefix:label+"::", token:TOKEN[nextState], state:nextState, order:99 };
+    }
+    render();
+  }catch(e){
+    toast("Couldn't write to Roam: "+(e&&e.message?e.message:e), true);
+  }finally{
+    writing = false;
+  }
+}
+
+async function load(){
+  try{
+    await fetchAll();
+    render();
+  }catch(e){
+    document.getElementById("grid").innerHTML = "<div class='empty err'>Couldn't load End-of-Day data from Roam: "+(e&&e.message?e.message:e)+"</div>";
+  }
+}
+
+document.getElementById("prev").onclick = ()=>{ view.m--; if(view.m<0){view.m=11;view.y--;} saveView(); render(); };
+document.getElementById("next").onclick = ()=>{ view.m++; if(view.m>11){view.m=0;view.y++;} saveView(); render(); };
+document.getElementById("refresh").onclick = ()=>{ load(); };
+document.getElementById("grid").addEventListener("click", (e)=>{
+  const td = e.target.closest("td.cell.editable");
+  if(td) handleCellClick(td);
+});
+
+load();
+</script>
+</body>
+</html>

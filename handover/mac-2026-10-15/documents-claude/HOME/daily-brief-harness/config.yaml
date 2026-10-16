@@ -1,0 +1,43 @@
+# Daily Brief cheap-lane harness — configuration
+# Secrets never live here; they are GitHub Actions secrets (see README).
+
+timezone: America/Panama
+
+# ── Sources ──────────────────────────────────────────────────────────
+master_agenda_sheet_id: "1Tqh7eB_I3z-eP9FYMCPvNVclmR9VGXVaae0ZdRICy1g"
+master_agenda_tab: ""            # blank = first tab; set if the week grid lives on a named tab
+
+roam_graph: "REPLACE_WITH_GRAPH_NAME"
+
+gmail:
+  lookback_days: 3               # inbox window for needs-attention candidates
+  sent_silence_days: 3           # her sent mail unanswered this long becomes a candidate
+
+calendar:
+  lookahead_days: 14             # all calendars are read; Appts is not optional
+
+# ── Bell schedule / day typing (from SKILL.md CONFIG) ────────────────
+bell:
+  arrival: "7:25"
+  pd1: "7:30-9:00"
+  pd2: "9:05-10:35"
+  pd3: "10:40-12:10"
+  lunch: "12:15-12:45"
+  pd4: "12:45-14:15"
+day_type: { Mon: A, Wed: A, Tue: B, Thu: B, Fri: agenda }   # Fri read from agenda
+writing_cap_hours: 2
+mint_review:
+  tag: "minted-live"
+  page: "📋 Live mints — review queue"
+  age_escalation_days: 7
+emit_order: [route, book-distill, mint-review, learning-block-agenda, wilmu-update, aihs-update, tasks, sweep]
+
+# ── Model (judgment calls only: mail triage, headline, acts) ─────────
+llm:
+  base_url: "https://api.deepseek.com"   # OpenAI-compatible; swap for Moonshot or Anthropic compat layer
+  model: "deepseek-chat"                 # aliases current V4 Flash tier — verify at platform.deepseek.com
+  max_tokens: 4000
+  # api key comes from env LLM_API_KEY
+
+# ── Delivery ─────────────────────────────────────────────────────────
+site_url: "https://REPLACE.netlify.app"  # the stable URL; also written into the Roam stamp

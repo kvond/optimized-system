@@ -1,0 +1,4 @@
+interface:
+  display_name: "School Assignment Setup"
+  short_description: "Complete Forms, folders, lesson links, and LMS setup"
+  default_prompt: "Use $school-assignment-setup once to finish the selected classes and marking periods from the live Agenda, verify every required part, and repair what is missing."

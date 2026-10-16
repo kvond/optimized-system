@@ -1,0 +1,10 @@
+version = 1
+id = "calendar-and-school-email-review"
+kind = "heartbeat"
+name = "Calendar and school email review"
+prompt = "Run the existing personal-calendar-school-email-review workflow, contract 2026-10-14.2, in this same chat on the current home Mac. Its existing America/New_York cadence, owner and notification preference remain in force. Use the accessible canonical checkout /Users/katherinevonduyke/Documents/Claude/2026-10-11/remote-desktop-commander-plugin-app-6a057d268ebc81919918d37eec718425-5/work/core. First run this read-only identity check:\n\npython3 /Users/katherinevonduyke/Documents/Claude/2026-10-11/remote-desktop-commander-plugin-app-6a057d268ebc81919918d37eec718425-5/work/core/ai-ops/runtime/workflow_cutover.py verify --candidate /Users/katherinevonduyke/Documents/Claude/2026-10-02/wh/outputs/overnight-optimization-2026-10-14/agent09/personal-calendar-school-email-review/candidate.private.json --checkout /Users/katherinevonduyke/Documents/Claude/2026-10-11/remote-desktop-commander-plugin-app-6a057d268ebc81919918d37eec718425-5/work/core --workflow-id personal-calendar-school-email-review --contract-sha256 9259c648263ad62803af96c3c227fa601284ffd541e33d943883584db0737232\n\nThen read its returned contract, procedures and private bindings; resolve current authority, native source revisions, capability and shared ownership from the single referenced private registry and existing records. The check itself grants no write. Follow the versioned procedure through actual native output readback. Resume exact pending questions immediately when Katherine answers after rereading sources; keep independent work moving. Preserve existing grade/email ownership and uncertain-write holds; never resend or retry an uncertain save. If the checkout, pin, binding or executor is unavailable, hold only dependent work and report the exact next safe check; do not substitute a cloud-only local path, create a job or change schedules."
+status = "ACTIVE"
+rrule = "RRULE:FREQ=DAILY;BYHOUR=4;BYMINUTE=30;BYSECOND=0"
+target_thread_id = "01a12da9-6a96-7171-8dc0-de2c0c7940bd"
+created_at = 1791849921007
+updated_at = 1792027301357

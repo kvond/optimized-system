@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<script type="application/json" id="cowork-artifact-meta">
+{
+  "name": "Tank And Flow Model",
+  "schemaVersion": 1,
+  "description": "Interactive stock-and-flow (\"tank and fill\") model for biology: a tank (stock) with inflow/outflow sliders and an optional insulin-style regulator. Presets for atmospheric carbon (Cycle 4), blood glucose (Cycle 9), and trophic energy (Cycle 3). Teaching point built in: the level changes on the difference between the flows, not their size.",
+  "mcpTools": [],
+  "mcpServerNames": []
+}
+</script>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tank & Flow — Stock-and-Flow Model</title>
+<style>
+  :root{ --teal:#028090; --ink:#111; --muted:#666; --line:#ccc; --box:#f2f6f9; --warn:#c0392b; --ok:#1e8449; }
+  *{box-sizing:border-box}
+  body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;margin:0;padding:24px;line-height:1.4}
+  h1{color:var(--teal);font-size:22px;margin:0 0 2px}
+  .sub{color:var(--muted);font-size:14px;margin:0 0 18px}
+  .wrap{display:flex;gap:28px;flex-wrap:wrap;align-items:flex-start;max-width:900px}
+  .panel{flex:1 1 300px;min-width:280px}
+  label{display:block;font-weight:bold;font-size:14px;margin:14px 0 4px}
+  select,input[type=range]{width:100%}
+  select{padding:6px;font-size:15px;border:1px solid var(--line);border-radius:6px}
+  .row{display:flex;justify-content:space-between;font-size:13px;color:var(--muted)}
+  .val{font-variant-numeric:tabular-nums;color:var(--ink);font-weight:bold}
+  .tankwrap{display:flex;flex-direction:column;align-items:center}
+  .tank{position:relative;width:150px;height:300px;border:3px solid var(--teal);border-top:none;border-radius:0 0 14px 14px;background:#fafcfd;overflow:hidden}
+  .fluid{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(180deg,#5bb3bd,#028090);transition:height .12s linear}
+  .flowlabel{font-size:13px;font-weight:bold}
+  .inflow{color:var(--ok)} .outflow{color:var(--warn)}
+  .arrow{font-size:26px;line-height:1}
+  .readout{margin-top:10px;font-size:15px;text-align:center}
+  .big{font-size:30px;font-weight:bold;font-variant-numeric:tabular-nums}
+  button{font-family:inherit;font-size:14px;padding:8px 16px;border:1px solid var(--teal);background:var(--teal);color:#fff;border-radius:6px;cursor:pointer;margin-top:14px}
+  button.ghost{background:#fff;color:var(--teal);margin-left:8px}
+  .note{background:var(--box);border:1px solid var(--line);border-radius:8px;padding:12px 14px;font-size:14px;margin-top:16px;max-width:900px}
+  .chk{font-weight:normal;font-size:13px;margin-top:8px;display:flex;align-items:center;gap:6px}
+  .status{font-weight:bold}
+</style>
+</head>
+<body>
+<h1>Tank &amp; Flow</h1>
+<p class="sub">A stock is a tank. Flows fill it and drain it. Watch what actually changes the level.</p>
+
+<label for="preset">Model</label>
+<select id="preset" style="max-width:340px">
+  <option value="carbon">Atmospheric carbon (Cycle 4)</option>
+  <option value="glucose">Blood glucose (Cycle 9)</option>
+  <option value="energy">Energy in a trophic level (Cycle 3)</option>
+</select>
+
+<div class="wrap">
+  <div class="tankwrap">
+    <div class="arrow inflow" title="inflow">▼</div>
+    <div class="tank"><div class="fluid" id="fluid" style="height:50%"></div></div>
+    <div class="arrow outflow" title="outflow">▼</div>
+    <div class="readout"><span id="stockLabel">Stock</span><br><span class="big" id="stockVal">50</span> <span id="unit">units</span></div>
+    <div class="readout status" id="status"></div>
+  </div>
+
+  <div class="panel">
+    <label id="inLabel" for="inflow">Inflow</label>
+    <input id="inflow" type="range" min="0" max="20" value="8" step="0.5">
+    <div class="row"><span id="inName">in</span><span class="val"><span id="inVal">8</span>/s</span></div>
+
+    <label id="outLabel" for="outflow">Outflow</label>
+    <input id="outflow" type="range" min="0" max="20" value="8" step="0.5">
+    <div class="row"><span id="outName">out</span><span class="val"><span id="outVal">8</span>/s</span></div>
+
+    <label class="chk"><input type="checkbox" id="homeo"> Homeostasis: let the outflow adjust to the level (a regulator, e.g. insulin)</label>
+
+    <div>
+      <button id="play">Pause</button>
+      <button class="ghost" id="reset">Reset</button>
+    </div>
+
+    <div class="note" id="note"></div>
+  </div>
+</div>
+
+<div class="note">
+  <b>The one thing to notice:</b> the level rises only when inflow is <i>bigger</i> than outflow, falls when it is smaller, and holds steady when they are equal — no matter how large either flow is. Two huge flows that match keep the tank perfectly still. Most people get this wrong; that is the whole point of the model.
+</div>
+
+<script>
+const PRESETS = {
+  carbon:{stockLabel:"Atmospheric carbon",unit:"GtC",inName:"Respiration + burning fossil fuels",outName:"Photosynthesis",start:50,
+    note:"The air is the tank. Living things and burning fuel add carbon; photosynthesis removes it. Adding a little more inflow than outflow, every year, is why the level climbs — the flows are close, but not equal."},
+  glucose:{stockLabel:"Blood glucose",unit:"mg/dL",inName:"Absorption from a meal",outName:"Uptake into muscle & fat",start:50,
+    note:"Your blood is the tank. A meal adds glucose; your cells take it out. Turn on Homeostasis to see how insulin works — it speeds the outflow when the level is high, pulling the tank back toward steady. It never 'pushes' glucose in; it opens more drains."},
+  energy:{stockLabel:"Energy stored in this level",unit:"kcal",inName:"Energy eaten from the level below",outName:"Lost as heat + used to live",start:50,
+    note:"Each trophic level is a tank. Energy comes in from the level below; most leaves as heat. Because the outflow is large, only a little is left to pass up — which is why the pyramid narrows. Try setting inflow to 10 and outflow to 9: the tank barely fills."}
+};
+let stock=50, playing=true, t;
+const $=id=>document.getElementById(id);
+function applyPreset(k){
+  const p=PRESETS[k];
+  $("stockLabel").textContent=p.stockLabel; $("unit").textContent=p.unit;
+  $("inName").textContent=p.inName; $("outName").textContent=p.outName;
+  $("inLabel").textContent="Inflow — "+p.inName; $("outLabel").textContent="Outflow — "+p.outName;
+  $("note").innerHTML=p.note; stock=p.start; $("homeo").checked=(k==="glucose");
+}
+function step(){
+  const inflow=parseFloat($("inflow").value);
+  let outflow=parseFloat($("outflow").value);
+  if($("homeo").checked){ outflow = outflow*(0.4+ stock/60); } // regulator: drain faster when full
+  $("inVal").textContent=inflow.toFixed(1);
+  $("outVal").textContent=outflow.toFixed(1);
+  if(playing){ stock += (inflow-outflow)*0.12; }
+  stock=Math.max(0,Math.min(100,stock));
+  $("fluid").style.height=stock+"%";
+  $("stockVal").textContent=Math.round(stock);
+  const net=inflow-outflow;
+  const s=$("status");
+  if(Math.abs(net)<0.3){ s.textContent="steady — flows balanced"; s.style.color="#666"; }
+  else if(net>0){ s.textContent="rising ▲ — inflow wins"; s.style.color="#1e8449"; }
+  else { s.textContent="falling ▼ — outflow wins"; s.style.color="#c0392b"; }
+}
+$("preset").addEventListener("change",e=>applyPreset(e.target.value));
+$("play").addEventListener("click",()=>{playing=!playing;$("play").textContent=playing?"Pause":"Play";});
+$("reset").addEventListener("click",()=>{applyPreset($("preset").value);});
+applyPreset("carbon");
+t=setInterval(step,120);
+</script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!doctype html>
+<script type="application/json" id="cowork-artifact-meta">
+{
+  "name": "Habit Calendar",
+  "schemaVersion": 1,
+  "description": "Live month-grid habit calendar (Strength · Uke · Swim · Spanish) with current streaks, pulling rows fresh from the [[Habit Tracker]] page in Roam each time it opens. Rows are written nightly by the nightly-distill task.",
+  "mcpTools": [
+    "mcp__roam__roam_fetch_page_by_title"
+  ],
+  "mcpServerNames": [
+    "roam"
+  ]
+}
+</script>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Habit Calendar</title>
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #ffffff;
+    --ink: #1c2024;
+    --muted: #6b7280;
+    --line: #e6e8eb;
+    --done: #2f9e44;
+    --done-bg: #e7f6ec;
+    --rest: #b08900;
+    --rest-bg: #fbf3d6;
+    --miss-bg: #f4f5f6;
+    --today: #1971c2;
+    --card: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 18px 16px 40px; }
+  header.top { display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom: 4px; }
+  h1 { font-size: 19px; margin: 0; font-weight: 650; }
+  .sub { color: var(--muted); font-size: 13px; margin: 2px 0 18px; }
+  .controls { display:flex; align-items:center; gap:10px; margin-bottom:14px; }
+  .controls button {
+    border:1px solid var(--line); background:var(--card); color:var(--ink);
+    border-radius:8px; padding:6px 12px; font-size:14px; cursor:pointer;
+  }
+  .controls button:hover { background:#f7f8f9; }
+  .controls .month { font-weight:600; min-width:150px; text-align:center; }
+  .streaks { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:18px; }
+  .streak {
+    border:1px solid var(--line); border-radius:10px; padding:10px 14px; min-width:120px; background:var(--card);
+  }
+  .streak .name { font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; }
+  .streak .val { font-size:22px; font-weight:700; margin-top:2px; }
+  .streak .val small { font-size:12px; font-weight:500; color:var(--muted); }
+  .gridwrap { overflow-x:auto; border:1px solid var(--line); border-radius:12px; }
+  table { border-collapse:collapse; width:100%; font-size:12px; }
+  th, td { text-align:center; padding:0; }
+  th.daynum { color:var(--muted); font-weight:500; height:30px; width:26px; border-bottom:1px solid var(--line); }
+  th.daynum.today { color:var(--today); font-weight:700; }
+  th.habit, td.habit {
+    text-align:left; white-space:nowrap; padding:0 12px; font-weight:600;
+    position:sticky; left:0; background:var(--card); border-right:1px solid var(--line); min-width:92px;
+  }
+  td.cell { height:30px; width:26px; border-bottom:1px solid #f0f1f2; border-left:1px solid #f5f6f7; }
+  td.cell .dot { display:inline-block; width:18px; height:18px; line-height:18px; border-radius:5px; font-size:12px; }
+  td.cell.done .dot { background:var(--done-bg); color:var(--done); }
+  td.cell.rest .dot { background:var(--rest-bg); color:var(--rest); }
+  td.cell.miss .dot { background:var(--miss-bg); color:#c9ccd1; }
+  td.cell.future .dot { background:transparent; }
+  td.cell.today { box-shadow: inset 0 0 0 2px var(--today); }
+  tr:last-child td { border-bottom:none; }
+  .legend { display:flex; gap:16px; flex-wrap:wrap; margin-top:14px; color:var(--muted); font-size:12px; }
+  .legend span { display:inline-flex; align-items:center; gap:6px; }
+  .chip { width:14px; height:14px; border-radius:4px; display:inline-block; }
+  .empty { padding:30px 14px; color:var(--muted); text-align:center; }
+  .err { color:#c92a2a; }
+  .note { color:var(--muted); font-size:12px; margin-top:18px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>🌙 Habit Calendar</h1>
+  </header>
+  <div class="sub">Strength · Uke · Swim · Spanish — logged nightly from your End-of-Day reflection. Source: <strong>[[Habit Tracker]]</strong> in Roam.</div>
+
+  <div class="controls">
+    <button id="prev">‹ Prev</button>
+    <div class="month" id="monthLabel">—</div>
+    <button id="next">Next ›</button>
+  </div>
+
+  <div class="streaks" id="streaks"></div>
+  <div class="gridwrap"><div id="grid" class="empty">Loading from Roam…</div></div>
+
+  <div class="legend">
+    <span><i class="chip" style="background:var(--done-bg);border:1px solid var(--done)"></i> ✓ did it</span>
+    <span><i class="chip" style="background:var(--rest-bg);border:1px solid var(--rest)"></i> rest (day off — keeps streak)</span>
+    <span><i class="chip" style="background:var(--miss-bg);border:1px solid #d6d9dd"></i> ✗ not done / not recorded</span>
+  </div>
+  <div class="note" id="note"></div>
+</div>
+
+<script>
+const HABITS = ["Strength","Uke","Swim","Spanish"];
+const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+// state: which month is shown
+let view = loadView();
+function loadView(){
+  try { const v = JSON.parse(localStorage.getItem("habitcal_view")||"null"); if(v && typeof v.y==="number") return v; } catch(e){}
+  const d = new Date(); return { y: d.getFullYear(), m: d.getMonth() };
+}
+function saveView(){ try{ localStorage.setItem("habitcal_view", JSON.stringify(view)); }catch(e){} }
+
+function ordToDate(s){
+  // "June 18th, 2026" -> {y,m,d}
+  const m = s.match(/([A-Za-z]+)\s+(\d{1,2})(?:st|nd|rd|th)?,?\s+(\d{4})/);
+  if(!m) return null;
+  const mi = MONTHS.indexOf(m[1]);
+  if(mi<0) return null;
+  return { y:+m[3], m:mi, d:+m[2] };
+}
+function key(y,m,d){ return y+"-"+String(m+1).padStart(2,"0")+"-"+String(d).padStart(2,"0"); }
+
+function normToken(t){
+  t = (t||"").trim().toLowerCase();
+  if(t.includes("✓")||t==="y"||t==="yes"||t==="done") return "done";
+  if(t.includes("rest")||t==="off") return "rest";
+  return "miss";
+}
+
+async function fetchTracker(){
+  const r = await window.cowork.callMcpTool("mcp__roam__roam_fetch_page_by_title", {title:"Habit Tracker", format:"markdown"});
+  let md = "";
+  if(r){
+    if(typeof r==="string") md=r;
+    else if(typeof r.structuredContent==="string") md=r.structuredContent;
+    else if(r.structuredContent && r.structuredContent.markdown) md=r.structuredContent.markdown;
+    else if(r.content && r.content[0] && r.content[0].text) md=r.content[0].text;
+  }
+  return md;
+}
+
+function parseRows(md){
+  const data = {}; // dateKey -> {Strength,Uke,Swim,Spanish}
+  const lines = md.split(/\r?\n/);
+  for(const line of lines){
+    if(!/Strength/.test(line) || !/Spanish/.test(line)) continue;
+    const dm = line.match(/\[\[(.+?)\]\]/);
+    if(!dm) continue;
+    const dt = ordToDate(dm[1]);
+    if(!dt) continue;
+    const rec = {};
+    for(const h of HABITS){
+      const re = new RegExp(h+"\\s*([^·|\\n]+)");
+      const mm = line.match(re);
+      rec[h] = normToken(mm ? mm[1] : "");
+    }
+    data[key(dt.y,dt.m,dt.d)] = rec;
+  }
+  return data;
+}
+
+function render(data){
+  // month label + controls
+  document.getElementById("monthLabel").textContent = MONTHS[view.m] + " " + view.y;
+  const today = new Date(); const tKey = key(today.getFullYear(), today.getMonth(), today.getDate());
+  const days = new Date(view.y, view.m+1, 0).getDate();
+
+  // streaks (computed across all data, ending today)
+  renderStreaks(data, today);
+
+  // grid
+  let html = "<table><thead><tr><th class='habit'>&nbsp;</th>";
+  for(let d=1; d<=days; d++){
+    const isT = key(view.y,view.m,d)===tKey;
+    html += "<th class='daynum"+(isT?" today":"")+"'>"+d+"</th>";
+  }
+  html += "</tr></thead><tbody>";
+  for(const h of HABITS){
+    html += "<tr><td class='habit'>"+h+"</td>";
+    for(let d=1; d<=days; d++){
+      const k = key(view.y,view.m,d);
+      const rec = data[k];
+      const cellDate = new Date(view.y, view.m, d);
+      const isFuture = cellDate > stripTime(today);
+      const isT = k===tKey;
+      let cls="miss", glyph="";
+      if(isFuture && !rec){ cls="future"; glyph=""; }
+      else if(rec){ const st=rec[h]; cls=st; glyph = st==="done"?"✓":st==="rest"?"·":"✗"; }
+      else { cls="miss"; glyph=""; }
+      html += "<td class='cell "+cls+(isT?" today":"")+"'><span class='dot'>"+glyph+"</span></td>";
+    }
+    html += "</tr>";
+  }
+  html += "</tbody></table>";
+  const g = document.getElementById("grid");
+  g.className = "";
+  g.innerHTML = html;
+
+  const total = Object.keys(data).length;
+  document.getElementById("note").textContent = total
+    ? (total+" day"+(total>1?"s":"")+" logged so far. The nightly distill adds tonight's row at 9:30pm.")
+    : "No rows yet — your first night logs after tonight's reflection.";
+}
+
+function stripTime(d){ return new Date(d.getFullYear(), d.getMonth(), d.getDate()); }
+
+function renderStreaks(data, today){
+  const wrap = document.getElementById("streaks");
+  wrap.innerHTML = "";
+  for(const h of HABITS){
+    let streak=0; const cur = stripTime(today);
+    // walk back from today; ✓ adds, rest skips, miss/no-record breaks
+    for(let i=0;i<400;i++){
+      const d = new Date(cur); d.setDate(cur.getDate()-i);
+      const rec = data[key(d.getFullYear(), d.getMonth(), d.getDate())];
+      if(!rec){ if(i===0) continue; break; } // allow today not-yet-logged without breaking
+      const st = rec[h];
+      if(st==="done") streak++;
+      else if(st==="rest") continue;
+      else break;
+    }
+    const el = document.createElement("div");
+    el.className="streak";
+    el.innerHTML = "<div class='name'>"+h+"</div><div class='val'>"+streak+" <small>day"+(streak===1?"":"s")+"</small></div>";
+    wrap.appendChild(el);
+  }
+}
+
+async function load(){
+  try{
+    const md = await fetchTracker();
+    const data = parseRows(md||"");
+    render(data);
+    window._habitData = data;
+  }catch(e){
+    document.getElementById("grid").innerHTML = "<div class='empty err'>Couldn't load [[Habit Tracker]] from Roam: "+(e&&e.message?e.message:e)+"</div>";
+  }
+}
+
+document.getElementById("prev").onclick = ()=>{ view.m--; if(view.m<0){view.m=11;view.y--;} saveView(); if(window._habitData) render(window._habitData); };
+document.getElementById("next").onclick = ()=>{ view.m++; if(view.m>11){view.m=0;view.y++;} saveView(); if(window._habitData) render(window._habitData); };
+
+load();
+</script>
+</body>
+</html>
