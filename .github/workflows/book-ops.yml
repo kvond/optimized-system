@@ -1,0 +1,67 @@
+# Book-ops maintenance, replacing the two Cowork scheduled tasks that ran on the MacBook Air.
+# Deterministic scripts only: no model, no Roam writes. Results are committed to book-ops/.
+#   Weekly (Sunday 03:00 Eastern): rebuild the inventory the on_create_check mint gate reads.
+#   Monthly (first Sunday): the full all-pairs dedup sweep; candidates for Katherine's ruling.
+# Needs the repository secret ROAM_API_TOKEN (a READ-scoped Roam token) and the variable ROAM_GRAPH.
+name: book-ops
+
+on:
+  schedule:
+    - cron: "0 7 * * 0"   # Sunday 07:00 UTC = 03:00 EDT / 02:00 EST
+  workflow_dispatch:
+    inputs:
+      full_sweep:
+        description: "Also run the full dedup sweep"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: book-ops
+  cancel-in-progress: false
+
+jobs:
+  book-ops:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      ROAM_GRAPH: ${{ vars.ROAM_GRAPH }}
+      ROAM_API_TOKEN: ${{ secrets.ROAM_API_TOKEN }}
+      SCRIPTS: skills/book-ops/scripts
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check the secret and variable are set
+        run: |
+          if [ -z "$ROAM_API_TOKEN" ] || [ -z "$ROAM_GRAPH" ]; then
+            echo "::error::Set the ROAM_API_TOKEN secret and the ROAM_GRAPH variable (Settings > Secrets and variables > Actions)."
+            exit 1
+          fi
+
+      - name: Rebuild the inventory
+        run: python3 "$SCRIPTS/roam_pull.py" --out book-ops/inventory.json --with-edges
+
+      - name: Full dedup sweep (first Sunday of the month, or on request)
+        if: ${{ inputs.full_sweep || (github.event_name == 'schedule' && github.event.schedule == '0 7 * * 0') }}
+        run: |
+          if [ "${{ inputs.full_sweep }}" != "true" ] && [ "$(date -u +%d)" -gt 7 ]; then
+            echo "Not the first Sunday; skipping the full sweep."
+            exit 0
+          fi
+          python3 "$SCRIPTS/dedup_sweep.py" --inventory book-ops/inventory.json \
+            --out "book-ops/sweeps/$(date -u +%Y-%m)-candidates.json"
+
+      - name: Commit results
+        run: |
+          git config user.name "book-ops bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add book-ops
+          if git diff --cached --quiet; then echo "No change."; exit 0; fi
+          git commit -m "book-ops: inventory $(date -u +%Y-%m-%d)"
+          git push
