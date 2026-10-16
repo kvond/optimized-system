@@ -49,3 +49,18 @@ class CurrentChannelsTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class NeedsReroutingTests(unittest.TestCase):
+    def test_unclear_message_goes_to_needs_rerouting_without_a_model(self):
+        decision = deterministic_route("Where should this go?")
+        self.assertIsNotNone(decision)
+        self.assertEqual(decision.destination_id, CHANNELS["needs_rerouting"])
+        self.assertTrue(decision.deterministic)
+
+    def test_explicit_model_request_still_uses_the_model(self):
+        self.assertIsNone(deterministic_route("[openai] Where should this go?"))
+
+    def test_clear_message_keeps_its_lane(self):
+        decision = deterministic_route("Fix the Teaching Hub roster page")
+        self.assertNotEqual(decision.destination_id, CHANNELS["needs_rerouting"])
