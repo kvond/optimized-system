@@ -1,0 +1,16 @@
+# Inventory continuation — October 12, 2026
+
+The bounded accessible gap pass is finished. Full inventory remains **partial** at named source/service access boundaries. Step 2, the private operations home, is complete; no raw history enters it.
+
+| Scope | New evidence |
+|---|---|
+| Original 84 repository gaps |79 valid metadata entries verified. The remaining five are now classified and preserved, with four mirrored branch/HEAD recovery pointers and a verified legacy sibling. Their originals were not repaired. [Recovery receipt](https://github.com/kvond/optimized-system/blob/32bfbf143b908263dac2247879d542cbab34752c/ai-ops/reports/inventory-repo-recovery-2026-10-12.json). |
+| Broken-copy preservation |Five complete affected folders plus two shared recovery Git directories, 13,824,604 bytes, have source/copy/readback hashes. Private per-file manifests remain encrypted. One recovered Page2 copy has 21 tracked changes and 3 untracked; preserve those. |
+| Protected Finder roots |Three known roots/direct hidden entries checked. Two independent source-acquired hub-pr39 snapshots match all 737 regular-file hashes and 7,378,069 bytes. Three `.DS_Store` files total the earlier 20,492-byte discrepancy; historical timing remains unproven. Eight private outputs also preserved. [Parity receipt](https://github.com/kvond/optimized-system/blob/32bfbf143b908263dac2247879d542cbab34752c/ai-ops/reports/inventory-finder-parity-2026-10-12.json). |
+| Local consumer dependencies |Four active skills still point to the original skills checkout; legacy publisher remains loaded with a missing script and exit 127. No consumer disabled/redirected. [Dependency receipt](https://github.com/kvond/optimized-system/blob/32bfbf143b908263dac2247879d542cbab34752c/ai-ops/reports/inventory-local-dependencies-2026-10-12.json). |
+| Render |Normal existing kvond12 Google sign-in returned “Google account does not exist. Please sign up.” No account created. Other login methods and live service/disk/consumer metadata remain unverified. [Cloud continuation](https://github.com/kvond/optimized-system/blob/32bfbf143b908263dac2247879d542cbab34752c/ai-ops/reports/inventory-cloud-continuation-2026-10-12.md). |
+| Cloud Scheduler |Both relevant project console pages reached the API Enable screen. APIs unchanged; job inventory blocked, not verified empty. |
+
+All 84 earlier gap entries have now been either verified or classified/preserved. That is not complete whole-Mac/all-service coverage, nor a claim that the incomplete legacy `.git` has been restored. Exact protected-source historical hashes and external-service coverage remain explicit limitations. Normal Finder copy access and background terminal denial are distinct observations; the cause of denial remains unknown.
+
+Following this bounded pass, work advanced to the existing deterministic DOE collector/gate operator command. Account histories remain pending [current acquisition](https://github.com/kvond/optimized-system/blob/32bfbf143b908263dac2247879d542cbab34752c/ai-ops/reports/exports-pending-2026-10-12.json), and [build-order acceptance](https://github.com/kvond/optimized-system/blob/32bfbf143b908263dac2247879d542cbab34752c/ai-ops/reports/build-order-acceptance-2026-10-12.md) distinguishes completed foundations from staging and live integration.

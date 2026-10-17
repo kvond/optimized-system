@@ -1,0 +1,11 @@
+# Existing repository metadata gaps — preserved recovery map
+
+All five missing-metadata inventory entries are now explained and preserved. Four are mirrored worktree copies whose `.git` markers retain the original Documents/Codex location. Their corresponding complete worktree metadata and branch references exist in Documents/Claude/Codex; read-only Git commands verified each branch, commit and current change counts through that metadata. No marker was repointed.
+
+The remaining legacy Answerable copy lacks `.git/HEAD`. A complete same-project sibling verifies its recovery commit, but exact content equivalence is not asserted. An optional full sibling-content comparison encountered a pending source read and was stopped; the affected folder's complete content was already preserved.
+
+Before any reconstruction, all five affected folders and both shared recovery Git directories were copied into the verified encrypted archive. The preserved total is 13,824,604 bytes. Private per-file manifests verify source/copy checksums and independent readback; original filenames and source bodies remain outside Git. The [sanitized receipt](https://github.com/kvond/optimized-system/blob/547b301c5918e82580b7ea849f96e45c28866525/ai-ops/reports/inventory-repo-recovery-2026-10-12.json) records exact recovery pointers, commits, aggregate counts and private manifest hashes. No access-denial evidence was observed in these five entries.
+
+No repair, reset, initialization, prune, deletion, remote fetch or original modification occurred. The inventory can classify these as known preserved broken copies with verified recovery pointers. Any later reconstruction should use an isolated copy and independently review its intended branch and changed content.
+
+The bounded provenance follow-up found existing canonical bindings already recorded: the Substack bank and August 23 chat are distinct sources; generalized grading and historical Summer OLI rubrics remain separate; historical book decisions have an exact encrypted source binding. Existing preserved evidence does not establish the missing stored Substack script, preferred-voice acceptance, a current assignment denominator or the separate Scholarly Writing final-paper rubric. None was inferred or activated.
