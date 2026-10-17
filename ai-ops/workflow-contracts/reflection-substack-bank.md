@@ -31,3 +31,12 @@ Preserve the source's execution owners: the preferred writing/voice session, AI 
 Prompt/model changes may shorten scaffolding only after testing and dating the replacement and archiving the old invocation. Preserve substantive preservation, placement, novelty, spacing and ownership rules.
 
 A future authorized run needs exact source revision, current chapter/destination, original-preservation receipt, placement record, published/banked comparison, queue readback and explicit final state. Unverified preferred voice or inaccessible published/banked inventory remains a named gap. Do not claim a deployed workflow, saved chapter, scheduled post or published post from policy consolidation alone.
+
+
+## October 15 instructions reconciled October 17
+
+Later [writing-flow instructions](https://answerableteaching.slack.com/archives/C0C9FGVK1DY/p1792067854760649) update the October 11 ledger: discuss naturally in ChatGPT; save developed reflection in #teaching-reflection; use Roam as an archive/source. The ledger remains the existing placement/bank record rather than a reason to build another tracker. Its older capture wording is historical where it differs.
+
+Draft only the affected section and show substantive suggestions before canonical saves. Candidate manuscript material remains HUMAN REVIEW until Katherine accepts or revises it. She retains the draft pass and final chapter/book passes. Apply `../knowledge/writing-voice.md` and its full-source editing boundary. Do not revive retired contribution tags under the name of provenance: source/placement receipts are operational records, not prose authorship labels.
+
+These instructions resolve policy conflicts; they do not prove completed integration, review, reuse checks or publication. The live ledger read October 17 contains the workflow and empty entry/queue templates, not evidence that the pipeline has processed the pending reflections.
