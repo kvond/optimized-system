@@ -23,6 +23,8 @@ Keep the prose accessible; do not make the concepts average. Clarity is required
 
 A fusion pass must preserve distinctions that carry explanatory work. Treat every distinction as potentially intentional until the chapter shows it is truly redundant. Do not replace a causal chain with a theme, slogan, or reader-friendly abstraction.
 
+When this pass uses the claim that pedagogy is **experientially conditional**, `experience` does not mean merely exposure, activity, or having done more things. It means accumulated participation in which materials, dialogue, prior noticing, comparison, language, repeated encounters, and intellectual accompaniment have been worked into meaning. The same pedagogy can therefore function very differently depending on what experiences, participation, dialogue, materials, prior noticing, and intellectual accompaniment a learner has had access to before the lesson begins. Preserve that definition rather than sliding back into class, age, developmental stage, or generic background knowledge as the explanatory variable.
+
 ## What to look for
 
 Read the chapter as an argument in motion. Track:
