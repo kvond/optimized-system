@@ -27,6 +27,31 @@ The guide's measured frequencies describe a historical corpus. They are diagnost
 
 R22 requires checking student visibility wherever a chapter discusses dialogic methods, exact move names against The Moves, causal scope and equity caution. Keep these as checks of Katherine's existing constructs, not new rubric criteria. Historical chapter numbers must be checked against the live manuscript.
 
+## PhD-level thinking: preserve complexity, do not average it
+
+The prose can be accessible without reducing the conceptual level. Do not edit Katherine toward an imagined average-reader understanding by collapsing distinctions, shortening causal chains, or replacing mechanisms with themes. When the thinking is complex, the job is to make the complexity legible, not to remove it.
+
+- Keep the prose accessible; do not make the concepts average.
+- Treat every distinction Katherine introduces as potentially intentional until it has been established as redundant. Do not silently collapse neighboring constructs such as class, economic margin, participation history, attention, dialogue, perception, pacing, legibility, agency, or pseudo-agency into one explanatory label.
+- Follow causal mechanisms all the way through rather than replacing them with a thematic summary. If the argument is that pace determines permitted time, time affects accumulated attention, attention affects discernment, fixed pacing turns temporal differences into apparent competence differences, remediation increases teacher control, and control reshapes agency, preserve the chain rather than reducing it to a slogan.
+- Ask what construct is doing the explanatory work at each step. Distinguish the developmental mechanism from the social distribution of opportunities for that mechanism. Economic or racial patterning may change probabilities and margins without becoming the developmental variable itself.
+- Notice when cases are doing more than illustrating a claim. A case may function as a naturally occurring comparison, a counterexample, a boundary condition, or evidence that the same pedagogical affordance functions differently under different developmental histories.
+- Preserve Katherine's uncertainty when the evidence warrants it. Phrases such as “I could be wrong” can mark epistemic status rather than weakness. Do not convert an inference into certainty for authority, fluency, or reader reassurance.
+- Pressure-test claims against alternative explanations and relevant research without turning the manuscript into a literature review. Theory should be used dialogically: what does it explain, what does it fail to explain, and what does Katherine's evidence add?
+- When a passage appears to constitute a larger theoretical claim than Katherine has explicitly named, point that out rather than simplifying it. Examples include pedagogy being developmentally conditional; institutional categories systematically misclassifying forms of agency; and pacing converting differences in accumulated attention into apparent differences in competence.
+
+Katherine's standing rule: do not make the writing certain, cheery, interesting, or simple unless doing so serves something substantive. Clarity is required. Simplification is not.
+
+## Fusion is a structural obligation
+
+Katherine often develops an argument through scenes, cases, theory, counterexamples, classroom practice, and distinctions that accumulate across a section. Do not assume the reader will perform the final coordination alone. After the pieces have been illustrated and explained, add a bounded synthesis that states what those pieces jointly establish and how the mechanisms relate. This is fusion, not repetition.
+
+Fusion should preserve the causal architecture and distinctions that preceded it. It should not flatten the section into a slogan, recap every paragraph, announce a roadmap, or add a tidy moral. The useful question is: after seeing these pieces separately, what can the reader now understand only by holding them together?
+
+Use local fusion paragraphs after appropriate major sections when the argument has accumulated across multiple constructs. In particular, preserve syntheses that connect pacing, attention, discernment, competence judgments, remediation/control, legibility, and pseudo-agency; that distinguish developmental mechanisms from socioeconomic distribution; that show how institutional categories can invert the meaning of observable agency; and that show why the same progressive affordance can function differently depending on whether a learner has already been apprenticed into using it.
+
+The final chapter is intended to be a full fusion chapter: its primary job is to coordinate the book's developed constructs rather than introduce another independent strand of theory. Keep a running bank of candidate fusion thoughts as the manuscript develops so that chapter can synthesize rather than merely summarize.
+
 ## Authorship and workflow
 
 R6 retires contribution tags, contribution ledgers and the old provenance disclosure. Do not reintroduce them. Operational source/placement and review records remain separate from manuscript authorship tagging. Keep review suggestions visibly separate from prose presented as finished.
