@@ -22,7 +22,7 @@ Updated 2026-10-15. This section is the current source; older state is Git histo
 ## Open gaps
 - `skills/vt-bio-skill/SKILL.md` still cites superseded Master Agenda v9 (`1i6D-QT5nQWdVpltW14XB7OZ9lWFrMbMO8ZnZQvpUw-w`) instead of Master Agenda `Agenda 26-27 CLEAN` (`1m4qhXb5M7y0nMNJHeuxu2J4eFXokIKYxiGVyOfpg-uY`).
 - The morning-tabs userscript points at a missing Sheet (`1XGcv-SCueqJrSIsiMC6Y_9LpAGoeTIhnb7NSNpp3q-A`).
-- Weekly Lesson Preflight and the daily Feedback Pipeline B1-output check are the next background jobs to build; neither is active until its access and acceptance checks are satisfied.
+- Weekly Lesson Preflight (owner: ChatGPT, school Drive) and the daily Feedback Pipeline B1-output check (owner: Claude Code) are the next background jobs to build; neither is active until its access and acceptance checks are satisfied.
 
 ## Source pointers
 - Names: `ai-ops/NAMES.md`
