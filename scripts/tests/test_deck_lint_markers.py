@@ -17,6 +17,11 @@ SPEC = importlib.util.spec_from_file_location("deck_lint", LINTER_PATH)
 deck_lint = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(deck_lint)
 
+EXTRACTOR_PATH = LINTER_PATH.with_name("extract_and_grade.py")
+EXTRACTOR_SPEC = importlib.util.spec_from_file_location("extract_and_grade", EXTRACTOR_PATH)
+extract_and_grade = importlib.util.module_from_spec(EXTRACTOR_SPEC)
+EXTRACTOR_SPEC.loader.exec_module(extract_and_grade)
+
 
 class MarkerDiagnosticsTests(unittest.TestCase):
     def lint_texts(self, *texts):
@@ -67,6 +72,22 @@ class MarkerDiagnosticsTests(unittest.TestCase):
                 self.assertEqual(result["diagnostic_slides"], 0)
                 self.assertEqual(result["markers_present"], "")
                 self.assertEqual(self.broken_markers(result), [])
+
+    def test_extractor_fallback_does_not_relax_active_lint_policy(self):
+        # The extractor remains unchanged by the 2026-10-15 retirement decision.
+        # Its broader heading recognition is not the linter's marker contract.
+        for heading, canonical, broken in (
+            ("What if?", True, False),
+            ("What if…", False, True),
+            ("What if", False, False),
+            ("What-if", False, False),
+        ):
+            with self.subTest(heading=heading):
+                text = heading + "\nWater is unavailable."
+                self.assertEqual(extract_and_grade.classify_slide(text), "what_if")
+                result = self.lint_texts(text)
+                self.assertEqual(result["diagnostic_slides"], int(canonical))
+                self.assertEqual(bool(self.broken_markers(result)), broken)
 
     def test_teacher_and_reflection_slides_stay_excluded(self):
         for exclusion in ("Do not project", "Teacher navigation",
