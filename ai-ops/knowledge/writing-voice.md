@@ -56,11 +56,11 @@ The final chapter is intended to be a full fusion chapter: its primary job is to
 
 R6 retires contribution tags, contribution ledgers and the old provenance disclosure. Do not reintroduce them. Operational source/placement and review records remain separate from manuscript authorship tagging. Keep review suggestions visibly separate from prose presented as finished.
 
-The October 15 writing flow is: discuss reflections, preserve developed thinking in #teaching-reflection, extract nuggets/sections, propose bounded placement in the canonical Google Docs manuscript, and keep candidates under HUMAN REVIEW until Katherine accepts or revises them. Continue the developing chapter instead of repeatedly regenerating earlier chapters. Substack adaptation is a distinct one-thought candidate with published/banked reuse checks; publication remains separate.
+The October 17 writing flow is: discuss reflections; preserve developed thinking directly in the single canonical Google Doc **Answerable Teaching — Full added notes**; extract nuggets/sections; propose bounded placement there; and keep candidates under HUMAN REVIEW until Katherine accepts or revises them. Continue the developing chapter instead of repeatedly regenerating earlier chapters. Do not maintain a second live Google Docs manuscript. GitHub is the backup/version-history layer. Substack adaptation is a distinct one-thought candidate with published/banked reuse checks; publication remains separate.
 
 ## Evidence and remaining limits
 
-Read October 17: full legacy voice guide through GitHub; repository Project Instructions and revision rulings; October 15 Slack voice inventory and writing-flow reconciliation; live Reflection Ledger + Substack Bank. The live working manuscript was also readable and still contains the old provenance header and contribution tags. This is an open reconciliation item, not permission to remove passages blindly.
+Read October 17: full legacy voice guide through GitHub; repository Project Instructions and revision rulings; October 15 Slack voice inventory and writing-flow reconciliation; live Reflection Ledger + Substack Bank. The single live book source is **Answerable Teaching — Full added notes**. Older Working Copy documents and exports are historical recovery sources, not competing current manuscripts.
 
 The guide's historical clean-corpus statistics and acceptance claims have not been independently re-established. The September Substack draft profile remains inferred; locating a preferred session is not author acceptance. Account-wide chat/project coverage and the currently developing chapter remain unverified.
 
@@ -72,4 +72,4 @@ Sources:
 - [October 15 voice inventory](https://answerableteaching.slack.com/archives/C0C9C47UKU5/p1792078645355899)
 - [October 15 writing-flow reconciliation](https://answerableteaching.slack.com/archives/C0C9FGVK1DY/p1792067854760649)
 - [Reflection Ledger + Substack Bank](https://docs.google.com/document/d/1OG25stqpcUmSFCdAMrZrofZL5LnjCWx_DWIla2O2mfM/edit)
-- [Working manuscript](https://docs.google.com/document/d/1RuY6yj9mhqBajj-UYhF_WCQwEpvLKinMma9fKNAStlM/edit)
+- [Single live Answerable Teaching source](https://docs.google.com/document/d/1O5it34GtqSnwNu5CReDt_5X7Kx05m8xEWUcROD9cgk8/edit)
