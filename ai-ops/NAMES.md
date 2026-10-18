@@ -24,20 +24,20 @@ A new tool gets a row here before it is built. Decisions about names are recorde
 | Master Agenda = `Agenda 26-27 CLEAN` | `1m4qhXb5M7y0nMNJHeuxu2J4eFXokIKYxiGVyOfpg-uY` | School account. Workflow contracts read this. |
 | superseded: `Master_Agenda__2026-27_v9 — LIVE (app reads this)` | `1i6D-QT5nQWdVpltW14XB7OZ9lWFrMbMO8ZnZQvpUw-w` | kvd@answerableteaching.com, last edited 2026-09-03. Still cited in `skills/vt-bio-skill/SKILL.md`; confirm before repointing. |
 | `📤 TurnIt in Folders` | `1KvWrI5EbYG_pzWxv3lQLzQ2tVkMFWaBq` | Submissions by course: 🌿 Biology, 🫀 A&P, 🔬 Forensics, 📥 UNSORTED submissions. Formerly noted as "00 ALL TURN IN" / "00 REAL ALL TURN IN". |
-| `📤 Turn it in_Google Forms` | `1XempHqoETg-Pv0O0-7vACtABa7wIzABN` | Holds `Assignment Google Forms` (`176_HMDjg7fqacEal6giPsjuHqaVPs8vB`): one Turn In Form per week/cycle. |
+| `📤 Turn it in_Google Forms` | `1XempHqoETg-Pv0O0-7vACtABa7wIzABN` | Holds `Assignment Google Forms` (`176_HMDjg7fqacEal6giPsjuHqaVPs8vB`): preserve each actual lesson/assignment's exact Form and source binding, even when lessons share a week or folder. |
 | Answerable Teaching Manual | `1kUWjxAnxK1qrTNlmI72ugYYOj85EGRA2gc5M0bwhYZA` | Feedback formats, §12 and Appendices B and F. |
 
 ## Repositories
 | Canonical | Formerly |
 |---|---|
 | `kvond/optimized-system` | `kvond/answerable-skills` |
-| `kvond/lesson-preflight` | `kvond/Lesson-Audits` (renamed 2026-10-15) |
-| `kvond/school-workflow-hub` | (Teaching Hub code) |
+| `kvond/lesson-preflight` | `kvond/Lesson-Audits` (renamed 2026-10-15); retirement candidate, not the implementation home. See the conditional retirement gate in `ai-ops/worker-registry/roles-and-schedules.md`. |
+| `kvond/school-workflow-hub` | Teaching Hub code, including Weekly Lesson Preflight / Week ahead. |
 
 ## Accounts
 | Account | Use |
 |---|---|
-| katherine.vonduyke@redclay.k12.de.us | School. Pipeline outputs, Forms, course folders. Browser use disabled by district. |
+| katherine.vonduyke@redclay.k12.de.us | School. Pipeline outputs, Forms, course folders. The IC helper runs in this account's Chrome profile on Katherine's home Mac; it is unavailable on her school computer. District Claude browser limits are separate from home Mac capabilities. See `ai-ops/worker-registry/roles-and-schedules.md`. |
 | kvond12@gmail.com | Composio Drive/Gmail; all Gmail drafts; canonical scripts. |
 | kvd@answerableteaching.com | Answerable product; A&P "ANATOMY" resources. |
 | answerableteaching.slack.com | Decisions and discussion. No student names, grades or feedback text. |
