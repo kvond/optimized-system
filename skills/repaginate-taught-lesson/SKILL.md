@@ -9,7 +9,7 @@ Bring revision instructions, teacher indexes, speaker notes, and other slide ref
 
 ## Bind the lesson and scope
 
-- Read the repository's `AGENTS.md`, `ai-ops/NAMES.md`, `ai-ops/HANDOFF.md`, and ownership guide before acting. Use the connected account authorized for the selected teacher file.
+- Read the repository's `AGENTS.md`, `ai-ops/NAMES.md`, `ai-ops/HANDOFF.md`, and `ai-ops/worker-registry/roles-and-schedules.md` before acting. Use the connected account authorized for the selected teacher file.
 - Bind course, lesson title/cycle, exact teacher deck ID, and the relevant Master Agenda row(s). Use current `Agenda 26-27 CLEAN` from `ai-ops/NAMES.md`; older VT examples cite a superseded Agenda.
 - A week is a scheduling container, not lesson identity. Keep two lessons in one week separate; a lesson spanning two weeks remains one lesson. Do not merge decks, infer identity from week number alone, or change teaching/due dates.
 - Confirm that this is the intended taught teacher version, not an older original, repair draft, public release, or student copy. If the supplied link and Agenda disagree, explain the exact conflicting IDs and resolve the target before writing.
