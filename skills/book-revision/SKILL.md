@@ -15,8 +15,9 @@ A pass takes one dated snapshot of the manuscript, runs six lanes over it in par
 
 | What | Where | Account or route |
 |---|---|---|
-| The current draft (68,000 words, Preface through Chapter 11 plus a capstone stub) | Google Doc "(4 and 5 next 6 , first 3 chapters feed website)AnswerableTeachingPrefaceCh5 (Working Copy)", id `1RuY6yj9mhqBajj-UYhF_WCQwEpvLKinMma9fKNAStlM` | owned by kvond@udel.edu; shared to the Red Clay and kvond12 accounts |
-| The snapshot a pass works from | `revision/manuscript/working-copy-<date>.md` in `kvond/Answerable-Teaching` | git; export the Doc to markdown at the start of a pass |
+| The single live working copy and canonical source | Google Doc "Answerable Teaching — Full added notes", id `1O5it34GtqSnwNu5CReDt_5X7Kx05m8xEWUcROD9cgk8` | higher-ed Drive (`kvond@udel.edu`); this is the only live source |
+| The earlier Working Copy | Google Doc id `1RuY6yj9mhqBajj-UYhF_WCQwEpvLKinMma9fKNAStlM` | historical only; recover from it only when Katherine explicitly asks |
+| The snapshot a pass works from | `revision/manuscript/working-copy-<date>.md` in `kvond/Answerable-Teaching` | git backup/version-history layer; export from the live Doc at the start of a pass; never treat as a competing source |
 | The AI chapter as assembled 2026-09-11 ("Doable, Not the Doer") | `book-compile/ch6-doable-not-the-doer-assembled.md` in `kvond/Answerable-Teaching` | git; not yet in the Doc |
 | The practice chapter ("Before Inquiry", subtitle "Inquiry Has Prerequisites"), missing from the Doc | `book-compile/ch6-intellectual-mentorship-rewrite.md` (Aug 23, the fuller form) and `revision/reference/ch05-earlier-draft-2026-05.md` (May, her supply of 2026-09-12) in `kvond/Answerable-Teaching` | git; R16, R20, and R21 in the ledger |
 | Rulings recovered from the retired provenance register (title, "the adult who lingers", the pseudonym ledger and name-change log, Moore-Anderson placements) | `revision/reference/rulings-from-register-2026-08.md` in `kvond/Answerable-Teaching` | git |
@@ -29,7 +30,7 @@ A pass takes one dated snapshot of the manuscript, runs six lanes over it in par
 | Lane packets and the integrator's output | `revision/packets/<lane>/<chapter>.md` and `revision/integrated/` in `kvond/Answerable-Teaching` | git |
 | Roam graph `kvond`, "Answerable Teaching/" pages, and the repo's `source/` and `writing/` folders | older exports (last nightly publish 2026-07-02). Not the current draft. Reconciliation is decision P18. | read only during a pass |
 
-Engine start: a Cowork session reaches the repos through the GitHub connector and the Doc through the Drive connector on the kvond12 or Red Clay account. A Claude Code session on the Mac reads this skill through `~/.claude/skills` (a symlink into `~/code/answerable-skills/skills`) and works in the clone of `kvond/Answerable-Teaching` (`SYNC.md` names `~/Documents/projects/Answerable-Teaching`, but on 2026-09-12 that folder held only the nightly-publish log; where the clone now lives is an open item for her). If a path here does not resolve, the account or the clone is wrong; the skill is not broken.
+Engine start: a Cowork session reaches the repos through the GitHub connector and the canonical Doc through the higher-ed Drive connection. A Claude Code session on the Mac reads this skill through `~/.claude/skills` (a symlink into `~/code/answerable-skills/skills`) and works in the clone of `kvond/Answerable-Teaching` (`SYNC.md` names `~/Documents/projects/Answerable-Teaching`, but on 2026-09-12 that folder held only the nightly-publish log; where the clone now lives is an open item for her). If a path here does not resolve, the account or the clone is wrong; the skill is not broken.
 
 ## The four documents that govern every lane
 
@@ -41,7 +42,7 @@ Engine start: a Cowork session reaches the repos through the GitHub connector an
 
 ## The prose rule
 
-Her words are not altered except mechanically and grammatically, with minor phrasing and removal of redundancies. Everything else appears in the manuscript only inside [brackets] as a suggestion she chooses to act on or not, including any challenge to her thinking. Her latest draft is always canonical. No new marker system is introduced: no provenance tags (retired 2026-09-11), no status codes in prose. A bracket is the only thing an agent adds to her text.
+Her words are not altered except mechanically and grammatically, with minor phrasing and removal of redundancies. Everything else appears in the manuscript only inside [brackets] as a suggestion she chooses to act on or not, including any challenge to her thinking. The single live Google Doc is always canonical. No new marker system is introduced: no provenance tags (retired 2026-09-11), no status codes in prose. A bracket is the only thing an agent adds to her text.
 
 What the integrator may apply directly: agreement and pronoun slips, doubled words, homophones, spacing, punctuation, citation format and missing years, a comma-spliced appositive resolved with parentheses or a second sentence, redundant restatement within a paragraph, an em dash replaced by the hinge she uses (colon, semicolon, comma, parentheses, period), a ruled rename applied at every occurrence (R2, R9), an ordering or relocation of her own unaltered words when a ruling or the canonical-home convention calls for it, and deletion of editorial residue that is not prose once its content is logged in the ledger.
 
@@ -97,12 +98,12 @@ Run `python3 scripts/manuscript_check.py --in <snapshot> --packets revision/pack
 
 ## Running a pass
 
-1. Snapshot. Export the Working Copy to markdown into `revision/manuscript/working-copy-<date>.md`; commit. Run the checker into `revision/reports/check-<date>.md`; commit.
+1. Snapshot. Export the single live Google Doc to markdown into `revision/manuscript/working-copy-<date>.md`; commit it as backup/version history. Run the checker into `revision/reports/check-<date>.md`; commit.
 2. Read the ledger. If a P-item you depend on has been ruled since the last pass, the ruling wins.
 3. Launch the six lanes, one agent each, on all chapters or on a chapter range. In Claude Code: `claude "Load the book-revision skill, then the book-lane-arc skill, and run it on chapters 1 through 5 of the current snapshot."` (one line per lane; the lane names are in the table above). In Cowork: start a session with the same sentence.
 4. When the lanes have committed their packets, run the integrator on each chapter. It produces `revision/integrated/<chapter-id>.md` (the chapter text with direct fixes applied and brackets in place) and `revision/integrated/<chapter-id>-changes.md` (every applied change, every bracket, every open item).
 5. Rerun the checker on the integrated text and compare with the first report: dash density down, residue at zero, no pointer to a chapter that does not exist, duplicates only where the ledger says the return is deliberate.
-6. Write-back to the Doc follows decision P18.
+6. When Katherine authorizes write-back, write only to the same live Google Doc. Do not create or update a second live Google Doc. Then preserve the resulting state in GitHub as the backup/version-history layer.
 
 ## What an agent never does
 
