@@ -16,7 +16,7 @@ Updated 2026-10-18. This section is the current source; older state is Git histo
 
 ## Current owners and limits
 - System Review: weekly Claude Code scheduled task on Katherine's Pro plan (Sunday night ET), using `prompts/system-review.md`. No GitHub Action, Anthropic API key or Slack webhook.
-- District Claude organization blocks browser use. IC entry and I-Tracker notes remain hand-triggered.
+- The school computer cannot run the IC helper. Use Katherine's home Mac and its authenticated school Chrome profile for the existing helper; district Claude browser limits do not prohibit that separate executor. The weekday 07:00 opt-in path has standing authority, subject to its exact mapping, keep-higher, flag and saved-readback limits. A phone request can initiate work on the home Mac; the phone is not a second IC writer. See the current home-computer recovery rule in `ai-ops/worker-registry/roles-and-schedules.md`. I-Tracker remains a separate workflow and gains no authority from this clarification.
 - Existing 06:30/07:30/08:00 school routines and the 07:00 IC helper remain separate until explicitly changed. See `ai-ops/worker-registry/roles-and-schedules.md`.
 
 ## Remote connection evidence
@@ -27,7 +27,7 @@ Updated 2026-10-18. This section is the current source; older state is Git histo
 ## Open gaps
 - `skills/vt-bio-skill/SKILL.md` still cites superseded Master Agenda v9 (`1i6D-QT5nQWdVpltW14XB7OZ9lWFrMbMO8ZnZQvpUw-w`) instead of Master Agenda `Agenda 26-27 CLEAN` (`1m4qhXb5M7y0nMNJHeuxu2J4eFXokIKYxiGVyOfpg-uY`).
 - The morning-tabs userscript points at a missing Sheet (`1XGcv-SCueqJrSIsiMC6Y_9LpAGoeTIhnb7NSNpp3q-A`).
-- Weekly Lesson Preflight (owner: ChatGPT, school Drive) and the daily Feedback Pipeline B1-output check (owner: Claude Code) are the next background jobs to build; neither is active until its access and acceptance checks are satisfied.
+- The Hub owns the Weekly Lesson Preflight implementation and Thursday packet production. The proposed Sunday ChatGPT check is read-only freshness/access validation, not another packet producer. Its activation and the separate repository's retirement still require the acceptance gates in `ai-ops/worker-registry/roles-and-schedules.md`. The daily Feedback Pipeline B1-output check remains a separate proposed job owned by Claude Code.
 
 ## Source pointers
 - Names: `ai-ops/NAMES.md`
@@ -35,3 +35,4 @@ Updated 2026-10-18. This section is the current source; older state is Git histo
 - Technical authorization, independent review and merge: `ai-ops/review-and-merge.md`
 - Workflow contracts: `ai-ops/workflow-contracts/INDEX.md`
 - Historical evidence: `ai-ops/reports/` and Git history
+- Current human clarification: [Katherine's October 17 home-computer and preflight answers](https://answerableteaching.slack.com/archives/C0C8ZJ4FTAT/p1792285329701299).
