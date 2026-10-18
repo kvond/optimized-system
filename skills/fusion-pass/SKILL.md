@@ -25,6 +25,19 @@ A fusion pass must preserve distinctions that carry explanatory work. Treat ever
 
 When this pass uses the claim that pedagogy is **experientially conditional**, `experience` does not mean merely exposure, activity, or having done more things. It means accumulated participation in which materials, dialogue, prior noticing, comparison, language, repeated encounters, and intellectual accompaniment have been worked into meaning. The same pedagogy can therefore function very differently depending on what experiences, participation, dialogue, materials, prior noticing, and intellectual accompaniment a learner has had access to before the lesson begins. Preserve that definition rather than sliding back into class, age, developmental stage, or generic background knowledge as the explanatory variable.
 
+## Required analytical focus — author correction, October 18, 2026
+
+Strip fusion down to the **unit of analysis, dimensions of the problem, and relevant research**. Do not re-explain details already developed in the chapter.
+
+- **Unit of analysis:** Identify what must be studied together to explain the problem. Distinguish this unit from the individual on whom the outcome is measured. Make changes of analytical level explicit without retelling each level's operation.
+- **Dimensions:** Name the distinct dimensions already established and show their relationship. Preserve causal dependencies, but do not replay examples, classroom procedures, or the chapter's narrative. A shorter recap is still not fusion.
+- **Relevant research:** Identify which established research illuminates which dimension, and what becomes visible when those contributions are considered together. Distinguish the researchers' findings from Katherine's synthesis; do not imply that any one study establishes the entire cross-level explanation. Verify attributions and avoid a literature-review digression.
+- **Result:** State the explanatory relationship that emerges from coordinating the unit, dimensions, and research. Omit repeated takeaways, rhetorical padding, and announcements of the next chapter.
+
+For the current Chapter 4 request, preserve Katherine's requested movement: pacing guide → teacher → classroom → district → DOE → student. Treat this as a movement across analytical levels, not an invitation to explain each again. Locate her equity argument at the DOE level; do not relocate responsibility solely to the individual teacher or student. Do not claim that DOE authors every pacing guide without evidence.
+
+Apply these requirements to the requested scope: when Katherine requests one fusion paragraph, return one concise paragraph in a copyable writing block, not a whole rewritten chapter. Keep source-check notes outside the prose.
+
 ## What to look for
 
 Read the chapter as an argument in motion. Track:
