@@ -1,6 +1,6 @@
 # Workflow ownership and schedule guide
 
-Updated 2026-10-17 for home IC helper and Weekly Lesson Preflight ownership. This file is the operational ownership/schedule source. Standards themselves live in the pinned Slack posts and the Claude Doc `Classroom System Standards — Slides, Grades, Rosters`; do not duplicate them here.
+Updated 2026-10-18. This file is the operational ownership/schedule source. Standards themselves live in the pinned Slack posts and the Claude Doc `Classroom System Standards — Slides, Grades, Rosters`; do not duplicate them here.
 
 ## Standing boundaries
 - Canonical names: `ai-ops/NAMES.md`.
@@ -8,7 +8,7 @@ Updated 2026-10-17 for home IC helper and Weekly Lesson Preflight ownership. Thi
 - Code, skills, prompts, scheduled jobs: this repository.
 - No student names, grades, or feedback text in Slack.
 - No publishing, sending, grading into IC, deleting, or changing a canonical file without a standing rule or Katherine's approval.
-- Claude/Codex changes are draft PRs on their own prefixed branches; neither merges.
+- Claude/Codex use draft PRs on prefixed branches. Routine reversible technical work within Katherine's stated goals has standing authorization through independent review, current checks and merge under [review and merge](../review-and-merge.md). Katherine reviews results after the fact; per-PR or batch permission is not required.
 - District Claude browser limits and the school computer's unavailable IC helper do not describe Katherine's home Mac. The existing Chrome helper on the home Mac remains the sole IC score writer. I-Tracker remains separate.
 
 ## Current recurring ownership

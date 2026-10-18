@@ -26,7 +26,8 @@ each run. When Katherine adds a specification, it goes into §17 first.
 
 - **One writer per deck.** Each deck is claimed by one agent in #work-que before any
   write, following the #parallel-agents process (issue, file claim, draft PR for repo
-  changes). Katherine merges and releases.
+  changes). Routine repository merges follow [review and merge](../../ai-ops/review-and-merge.md);
+  classroom deck publishing and release keep their existing authorization and acceptance gates.
 - **Pilot first:** one deck per course passes §17.6 and Claude's review before the
   rest of that course is dispatched.
 - **Order within a course:** the decks for the coming two weeks first, then forward
