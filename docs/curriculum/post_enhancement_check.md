@@ -7,7 +7,7 @@ what Claude runs, where each thing lives, and what the result means.
 
 ## 1. Definitions
 
-- **Marker string.** An exact piece of text the grading scripts search for to decide what
+- **Marker string.** An exact piece of text Workflow A and the deck checks search for to decide what
   kind of slide they are looking at: `Critical aspect:`, `Pattern break`,
   `Finish this sentence as a rule`, `What if?`, `Keep going`, `Compensatory pair`,
   `Conflict case`, and the three tier labels `Getting Started` / `Working On It` /

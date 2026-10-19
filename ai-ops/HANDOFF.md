@@ -27,7 +27,7 @@ Updated 2026-10-18. This section is the current source; older state is Git histo
 ## Open gaps
 - `skills/vt-bio-skill/SKILL.md` still cites superseded Master Agenda v9 (`1i6D-QT5nQWdVpltW14XB7OZ9lWFrMbMO8ZnZQvpUw-w`) instead of Master Agenda `Agenda 26-27 CLEAN` (`1m4qhXb5M7y0nMNJHeuxu2J4eFXokIKYxiGVyOfpg-uY`).
 - The morning-tabs userscript points at a missing Sheet (`1XGcv-SCueqJrSIsiMC6Y_9LpAGoeTIhnb7NSNpp3q-A`).
-- The Hub owns the Weekly Lesson Preflight implementation and Thursday packet production. The proposed Sunday ChatGPT check is read-only freshness/access validation, not another packet producer. Its activation and the separate repository's retirement still require the acceptance gates in `ai-ops/worker-registry/roles-and-schedules.md`. The daily Feedback Pipeline B1-output check remains a separate proposed job owned by Claude Code.
+- The Hub owns the Weekly Lesson Preflight implementation and Thursday packet production. The proposed Sunday ChatGPT check is read-only freshness/access validation, not another packet producer. Its activation and the separate repository's retirement still require the acceptance gates in `ai-ops/worker-registry/roles-and-schedules.md`.
 
 ## Source pointers
 - Names: `ai-ops/NAMES.md`
