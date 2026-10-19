@@ -30,7 +30,7 @@ from pptx.util import Emu, Pt
 MARKER_RE = re.compile(r"\[\[[A-Z-]+:[^\]]*\]\]")
 BANK_HEAD = "Define these in your own words"
 
-# Slide-type strings from vt-bio-skill section 7. The id slug follows the type
+# Slide-type strings from vt-skill section 7. The id slug follows the type
 # where the slide has one, so an id says what kind of question it names.
 TYPE_SLUG = [
     ("Getting Started", "TIERNOTES"),

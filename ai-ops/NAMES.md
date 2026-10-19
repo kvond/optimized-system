@@ -14,6 +14,7 @@ A new tool gets a row here before it is built. Decisions about names are recorde
 | System Review | Weekly scheduled review of the whole system | review routine |
 | VT | Variation Theory | Visible Thinking (wrong) |
 | VT deck / cycle deck | Lesson deck built to VT structure | lesson slides |
+| vt-skill | Deck-finishing skill, `skills/vt-skill/` (renamed 2026-10-19) | vt-bio-skill, VT_Bio_skill |
 | Answerable Teaching | Katherine's method; the Answerable Teaching Manual | AT |
 | IC | Infinite Campus gradebook | eSchool, TAC |
 | I-Tracker | I-Tracker Pro family contact notes | parent log |
@@ -22,7 +23,7 @@ A new tool gets a row here before it is built. Decisions about names are recorde
 | Canonical | ID | Notes |
 |---|---|---|
 | Master Agenda = `Agenda 26-27 CLEAN` | `1m4qhXb5M7y0nMNJHeuxu2J4eFXokIKYxiGVyOfpg-uY` | School account. Workflow contracts read this. |
-| superseded: `Master_Agenda__2026-27_v9 — LIVE (app reads this)` | `1i6D-QT5nQWdVpltW14XB7OZ9lWFrMbMO8ZnZQvpUw-w` | kvd@answerableteaching.com, last edited 2026-09-03. Still cited in `skills/vt-bio-skill/SKILL.md`; confirm before repointing. |
+| superseded: `Master_Agenda__2026-27_v9 — LIVE (app reads this)` | `1i6D-QT5nQWdVpltW14XB7OZ9lWFrMbMO8ZnZQvpUw-w` | kvd@answerableteaching.com, last edited 2026-09-03. Read only to trace old links; `skills/vt-skill/SKILL.md` repointed to Master Agenda 2026-10-19. |
 | `📤 TurnIt in Folders` | `1KvWrI5EbYG_pzWxv3lQLzQ2tVkMFWaBq` | Submissions by course: 🌿 Biology, 🫀 A&P, 🔬 Forensics, 📥 UNSORTED submissions. Formerly noted as "00 ALL TURN IN" / "00 REAL ALL TURN IN". |
 | `📤 Turn it in_Google Forms` | `1XempHqoETg-Pv0O0-7vACtABa7wIzABN` | Holds `Assignment Google Forms` (`176_HMDjg7fqacEal6giPsjuHqaVPs8vB`): preserve each actual lesson/assignment's exact Form and source binding, even when lessons share a week or folder. |
 | Answerable Teaching Manual | `1kUWjxAnxK1qrTNlmI72ugYYOj85EGRA2gc5M0bwhYZA` | Feedback formats, §12 and Appendices B and F. |

@@ -118,9 +118,9 @@ question.**
 
 [Resolved 2026-08-29. This file previously said two conditional structures and called
 the stock-and-flow model "tank-and-fill"; both were out of date. The Biology skill file
-now agrees: vt-bio-skill §1 reads "The 4 conditional slide types". Note that this file
+now agrees: vt-skill §1 reads "The 4 conditional slide types". Note that this file
 refers above to "the Biology and Anatomy skill files" — there is no Anatomy VT skill file
-in this repo, only vt-bio-skill. Anatomy decks currently have no skill to read this count
+in this repo, only vt-skill. Anatomy decks currently have no skill to read this count
 from.]
 
 **Slide type: The Case.**

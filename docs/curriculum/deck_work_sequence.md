@@ -6,10 +6,10 @@ Written 2026-08-29. Four jobs. Each one depends on the one before it.
 
 ## Correction carried into all of this
 
-`deck_lint.py` exists and is the last gate under `vt-bio-skill`. The work below
+`deck_lint.py` exists and is the last gate under `vt-skill`. The work below
 extends it. It does not replace it.
 
-The vocabulary is **5 core questions** and **slide types**. `vt-bio-skill` §1
+The vocabulary is **5 core questions** and **slide types**. `vt-skill` §1
 forbids "beat" in a deck, in the manual, in sales copy, and in the skill file.
 
 **The nine, resolved 2026-08-29:** five core questions, plus four conditional
@@ -27,7 +27,7 @@ carries. See `08_nine_moves_attribution.md`.]
 ## Job 1 — Inventory run (read-only)
 
 **What it does.** Walks the 20 cycle folders. For each live deck, found by the
-`.pptx` twin test in `vt-bio-skill` §0, emits: cycle number, deck name,
+`.pptx` twin test in `vt-skill` §0, emits: cycle number, deck name,
 CORE or EXTEND, slide count, slide types present in order, which of the 5 core
 questions appear and for which critical aspect, whether a Continuity question is
 present, whether a Stock-and-flow model is present, whether a Concept Bank is

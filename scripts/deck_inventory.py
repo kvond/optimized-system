@@ -7,7 +7,7 @@ Job 1 of `deck_work_order_of_operations.md`. Walks the cycle folders under
 plus a readable Markdown summary. It touches nothing: no deck is opened for
 write, no deck is modified, no file outside the two report paths is created.
 
-Vocabulary follows `vt-bio-skill`: **5 core questions** and **slide types**.
+Vocabulary follows `vt-skill`: **5 core questions** and **slide types**.
 The word "beat" is forbidden as a structural noun (spec, Vocabulary); this
 script reports where it appears rather than using it.
 
@@ -810,7 +810,7 @@ def write_markdown(rows, path, root, csv_path):
     A("")
     A("Read-only pass over `%s`. Generated %s."
       % (root, datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
-    A("Vocabulary follows `vt-bio-skill`: **5 core questions**, **slide types**.")
+    A("Vocabulary follows `vt-skill`: **5 core questions**, **slide types**.")
     A("Full data: `%s` (%d columns, %d rows)."
       % (os.path.basename(csv_path), len(rows[0]) if rows else 0, len(rows)))
     A("")

@@ -1,12 +1,12 @@
 ---
 name: renew-lesson-slides
-description: "Bring an existing Biology, Forensics or A&P lesson deck up to Katherine's current lesson renewal standard (vt-bio-skill §17): a morpheme word-part activity at the start, own-words definitions then a mind map, every \"Relates to me\" page with its Notes code, working links, and AI duPont domain viewer sharing. Use on the deck Katherine has open (\"renew this deck\", \"apply the new slide specs here\") or on a coordinated batch of decks. Triggers - \"renew lesson slides\", \"renew this deck\", \"apply the renewal\", \"morpheme slide\", \"relates to me pages\", \"sweep the decks\"."
+description: "Bring an existing Biology, Forensics or A&P lesson deck up to Katherine's current lesson renewal standard (vt-skill §17): a morpheme word-part activity at the start, own-words definitions then a mind map, every \"Relates to me\" page with its Notes code, working links, and AI duPont domain viewer sharing. Use on the deck Katherine has open (\"renew this deck\", \"apply the new slide specs here\") or on a coordinated batch of decks. Triggers - \"renew lesson slides\", \"renew this deck\", \"apply the renewal\", \"morpheme slide\", \"relates to me pages\", \"sweep the decks\"."
 ---
 
 # Renew lesson slides
 
 This skill applies the standard; it does not hold it. The standard is
-`skills/vt-bio-skill/SKILL.md` §17, and §16 for codes and Agenda links. Read §17 fresh
+`skills/vt-skill/SKILL.md` §17, and §16 for codes and Agenda links. Read §17 fresh
 each run. When Katherine adds a specification, it goes into §17 first.
 
 ## One deck (the deck Katherine has open)

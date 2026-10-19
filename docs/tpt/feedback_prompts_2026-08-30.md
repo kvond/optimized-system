@@ -51,7 +51,7 @@ Reported as bonus, never scored.
 single NOTES item.
 
 [A note on this one, because it caused a real deletion. Section 3b of
-`vt-bio-skill` says the Concept Bank "carries no slide-type marker from section
+`vt-skill` says the Concept Bank "carries no slide-type marker from section
 7". Section 7 markers are the diagnostic strings — `Pattern break`, `Getting
 Started` and so on — and a `[[BANK:…]]` tag is not one of those; it is a grading
 marker like `[[NOTES:…]]`. The two rules do not conflict, but they read as though
