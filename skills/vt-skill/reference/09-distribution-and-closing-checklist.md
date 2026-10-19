@@ -103,14 +103,22 @@ them. Repoint both on every deck, before archiving the old file.
 Master Agenda `Agenda 26-27 CLEAN` (`1m4qhXb5M7y0nMNJHeuxu2J4eFXokIKYxiGVyOfpg-uY`,
 school account; ai-ops/NAMES.md). One tab per course: `🌿 Biology` (gid
 `2088972437`), `🫀 A&P` (gid `170607847`), `🔬 Forensics` (gid `1634834686`).
-Header row 3. The deck ID is written **once per lesson row**, as a plain URL in
-column **Q** (`_teacherURL`). Column **P** (`_studentURL`) derives the `/copy` link
-from Q by formula, and the display columns **L** (🎞 Student deck) and **M**
-(👩‍🏫 Teacher deck) are `HYPERLINK` formulas over P and Q. Folder is R
-(`_folderURL`), activity S (`_extraURL`). Repoint a deck by writing Q only; never
-overwrite the formulas in L, M or P. The list tabs and the Dashboard read P, so
-check them after the write. Read cells with the formula render option and write
-plain URLs as user-entered values. Verified against the sheet 2026-10-19.
+The deck ID is written **once per lesson row**, as a plain URL in column **Q**
+(`_teacherURL`), on all three tabs. Column **P** (`_studentURL`) derives the `/copy`
+link from Q by formula, and the display columns **L** (🎞 Student deck) and **M**
+(👩‍🏫 Teacher deck) are `HYPERLINK` formulas over P and Q. Repoint a deck by writing
+Q only; never overwrite the formulas in L, M or P. The other columns differ by tab, so
+read that tab's header row before writing anything else:
+
+| Tab | Header row | Folder URL | Extra/activity URL | Turn-in URL |
+|---|---|---|---|---|
+| `🌿 Biology` | 3 | R (`_folderURL`) | S (`_extraURL`) | U (`_turnInURL`) |
+| `🫀 A&P` | 4 | R (`_folderURL`) | S (`_extraURL`) | U (`_turnInURL`) |
+| `🔬 Forensics` | 4 | S (`_folderURL`; R is blank) | T (`_extraURL`) | V (`_turnInURL`) |
+
+The list tabs (`Bio as List`, `A&P as List`, `Forensics as List`, `🌿 Biology List`)
+read P, so check them after the write. Read cells with the formula render option and
+write plain URLs as user-entered values. Verified against the sheet 2026-10-19.
 
 The superseded v9 agenda (`1i6D-QT5nQWdVpltW14XB7OZ9lWFrMbMO8ZnZQvpUw-w`, tab
 `🌿 Biology Agenda 26-27`, one `/copy` HYPERLINK per class day in column G) is no

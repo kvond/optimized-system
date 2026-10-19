@@ -99,7 +99,7 @@ Master Agenda `Agenda 26-27 CLEAN`
 (`1m4qhXb5M7y0nMNJHeuxu2J4eFXokIKYxiGVyOfpg-uY`, school account) on that course's
 tab, in the row for each class day that teaches the lesson:
 
-- the deck (the teacher deck, and the student `/copy` link where the row has one);
+- the deck: the teacher deck URL in Q (§9.3); the student `/copy` link in P fills in from it;
 - each activity, worksheet or lab created for the lesson;
 - the week/cycle folder.
 

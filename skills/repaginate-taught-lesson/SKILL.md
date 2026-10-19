@@ -26,7 +26,7 @@ The selected deck's reference edits are within a request to repaginate it. An Ag
 
 Preserve internal links that already use the correct stable target ID; update their stale displayed number only. A positional or broken link can be repaired when its intended target is established. Do not replace an unrelated live destination or normalize every URL. For an ambiguous/deleted target, leave that reference intact, record the exact source slide/cell and candidate targets, and continue independent unambiguous repairs. Ask only for the smallest unresolved decision.
 
-Reference precedents: `skills/vt-skill/reference/02-slide-order.md` §2.0b **Renumbering** and `skills/vt-skill/SKILL.md` §11 require checking prose and speaker-note references against the render. Its §16.4 supplies Agenda preservation rules. Consult those relevant passages; this skill does not invoke the full renewal, content-rewrite, code-embedding, or archive workflow.
+Reference precedents: `skills/vt-skill/reference/02-slide-order.md` §2.0b **Renumbering** and `skills/vt-skill/SKILL.md` §11 require checking prose and speaker-note references against the render. Its §16.4 (`skills/vt-skill/reference/16-restore-enhance-codes-agenda.md`) supplies Agenda preservation rules. Consult those relevant passages; this skill does not invoke the full renewal, content-rewrite, code-embedding, or archive workflow.
 
 ## Apply and verify
 
