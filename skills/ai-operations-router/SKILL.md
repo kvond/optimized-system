@@ -1,6 +1,6 @@
 ---
 name: ai-operations-router
-description: Resolve a workflow's domain, exact operation, current owner and tested executor from the canonical AI operations contracts, then prepare an evidence-gated route or reference-only handoff. Use for cross-account workflow selection, delegation, resumption or automation routing; ordinary work with an already verified owner does not need a new routing exercise.
+description: Resolve a workflow's domain, exact operation, current owner and tested executor from the canonical AI operations contracts, then prepare an evidence-gated route or reference-only handoff. Use for cross-account workflow selection, delegation, resumption or automation routing; ordinary work with an already verified owner does not need a new routing exercise. Triggers - "route this workflow", "who owns this workflow", "delegate this workflow", "resume this workflow", "automation routing".
 ---
 
 # AI Operations Router

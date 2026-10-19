@@ -3,8 +3,8 @@ name: learning-block
 description: >
   Stamp today's practice slice onto the daily page: 4 Spanish tasks + one-tick Voice + one-tick
   Ukulele with micro-prompts, from the protocols on [[Learn Block]]. Separate from the morning
-  brief. Triggers: "learning block", "practice block", "what do I practice today", brief trigger
-  link, scheduled.
+  brief. Triggers: "learning block", "practice block", "what do I practice today", 🎧 LEARNING BLOCK
+  AGENDA trigger line, scheduled learning-block run.
 ---
 
 # learning-block — the daily Practice slice

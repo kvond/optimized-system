@@ -3,7 +3,7 @@ name: github-maintenance
 description: >
   Review and steer the monthly maintenance of the kvond GitHub account: read the latest
   report, decide which proposals to approve, start archive or enforce runs, change a
-  retention rule, undo an action, or renew the token. Trigger on "maintenance report",
+  retention rule, undo an action, or renew the token. Triggers: "maintenance report",
   "stale repos", "archive that repo", "GitHub cleanup", "retention rule", "MAINT_TOKEN",
   or any question about what the maintenance process did or will do.
 ---

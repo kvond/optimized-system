@@ -4,7 +4,7 @@ description: >
   Distill open {{[[TODO]]}}s on [[📋 TASKS]] into one ordered two-way view — area → month → day,
   rendered as embeds (not refs) so ticks propagate. Composes with daily-agenda; leaves Admin Queue
   + registry untouched. Triggers: "distill my tasks", "task distill", "rebuild the task view",
-  scheduled run.
+  scheduled task-distill run.
 ---
 
 # task-distill — one ordered, two-way view of the task page

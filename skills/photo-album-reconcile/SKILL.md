@@ -2,9 +2,8 @@
 name: photo-album-reconcile
 description: >
   Catalog the local photo library and verify per-kid album picks resolve to real files, flagging
-  misses before anything is ordered, edited, or arranged. Trigger on any album-selection, photo-
-  manifest, or pick-reconciliation work, and before any step that copies or arranges selected
-  photos.
+  misses before anything is ordered, edited, or arranged. Use before any step that copies or
+  arranges selected photos. Triggers: album selection, photo manifest, pick reconciliation, "check my album picks".
 ---
 
 # Photo Album Reconcile

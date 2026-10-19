@@ -4,7 +4,7 @@ description: >
   Critique any Beyond Motivation / Answerable Teaching chapter, section, proposal, or prospectus
   as a Harvard Education Press acquisitions scout, scored against HEP's actual criteria. Apply to
   ALL book-manuscript critique — even a bare "what do you think?" — without waiting for "HEP" by
-  name.
+  name. Triggers: "HEP scout", "critique this chapter", "critique the proposal", "what do you think?" on manuscript text.
 ---
 
 # HEP Scout — critique the book as Harvard Education Press would

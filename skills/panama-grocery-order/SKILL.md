@@ -1,6 +1,6 @@
 ---
 name: panama-grocery-order
-description: Default Panama grocery/delivery order for Katherine when staying near P.H. DOVLE Cincuentenario, Panama City. Use whenever she asks to reorder groceries in Panama, says "usual Panama order," or asks for a grocery delivery run there without specifying items. Produces the cheapest single-store delivery that covers as many items as possible, applying the dietary constraints below.
+description: Default Panama grocery/delivery order for Katherine when staying near P.H. DOVLE Cincuentenario, Panama City. Use whenever she asks to reorder groceries in Panama, says "usual Panama order," or asks for a grocery delivery run there without specifying items. Produces the cheapest single-store delivery that covers as many items as possible, applying the dietary constraints below. Triggers - "usual Panama order", "reorder groceries in Panama", "Panama grocery delivery".
 ---
 
 # Panama Grocery Order (default)
