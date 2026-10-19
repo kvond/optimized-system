@@ -1249,14 +1249,20 @@ The deck ID is written **once per lesson row**, as a plain URL in column **Q**
 (`_teacherURL`), on all three tabs. Column **P** (`_studentURL`) derives the `/copy`
 link from Q by formula, and the display columns **L** (🎞 Student deck) and **M**
 (👩‍🏫 Teacher deck) are `HYPERLINK` formulas over P and Q. Repoint a deck by writing
-Q only; never overwrite the formulas in L, M or P. The other columns differ by tab, so
+Q only; never overwrite the formulas in L, M or P. Before writing Q, confirm that P, L and M
+in that row are still formulas. If any holds typed text instead, leave the row and report the
+cell to Katherine (as §16.4 does for a different live link): writing Q would change nothing
+students or the list tabs see. The other columns differ by tab, so
 read that tab's header row before writing anything else:
 
 | Tab | Header row | Folder URL | Extra/activity URL | Turn-in URL |
 |---|---|---|---|---|
 | `🌿 Biology` | 3 | R (`_folderURL`) | S (`_extraURL`) | U (`_turnInURL`) |
 | `🫀 A&P` | 4 | R (`_folderURL`) | S (`_extraURL`) | U (`_turnInURL`) |
-| `🔬 Forensics` | 4 | S (`_folderURL`; R is blank) | T (`_extraURL`) | V (`_turnInURL`) |
+| `🔬 Forensics` | 4 | S (`_folderURL`) | T (`_extraURL`) | V (`_turnInURL`) |
+
+On `🔬 Forensics`, R has no header but holds the second-deck URL that O (🎞 2nd deck)
+displays. Treat it like Q: write it only to repoint a second deck.
 
 The list tabs (`Bio as List`, `A&P as List`, `Forensics as List`, `🌿 Biology List`)
 read P, so check them after the write. Read cells with the formula render option and
