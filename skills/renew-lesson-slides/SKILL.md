@@ -6,7 +6,7 @@ description: "Bring an existing Biology, Forensics or A&P lesson deck up to Kath
 # Renew lesson slides
 
 This skill applies the standard; it does not hold it. The standard is
-`skills/vt-skill/SKILL.md` §17, and §16 for codes and Agenda links. Read §17 fresh
+`skills/vt-skill/reference/17-lesson-renewal.md` (§17), and `reference/16-restore-enhance-codes-agenda.md` (§16) for codes and Agenda links. Read §17 fresh
 each run. When Katherine adds a specification, it goes into §17 first.
 
 ## One deck (the deck Katherine has open)
