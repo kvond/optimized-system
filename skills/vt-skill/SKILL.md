@@ -1,9 +1,9 @@
 ---
-name: vt-bio-skill
+name: vt-skill
 description: Finish an Answerable VT cycle deck to the shipping standard (Biology; §16 and the §17 lesson renewal standard also cover Forensics and A&P until their forks exist). Covers the 5 core questions, the four conditional slide types, the teacher note, response slides and revision prompt, What if, Concept Bank, images, icons, marker strings, links slide, /copy distribution, restoring original lessons into VT decks without losing pictures or material (/restore-vt-slides), the enhance pass (/vt-gemini-enhance), embedded codes for new student textboxes ([[BANK:CYCLE:TERM]]), adding deck and activity links to the Master Agenda, and the checks before delivery. Use it to build, repair, merge, enhance, code or complete a cycle deck, or to ask whether a deck is ready. Triggers - "VT deck", "finish the deck", "restore VT slides", "merge original and VT", "gemini enhance", "embed codes", "add agenda links", "is this deck ready".
 ---
 
-# vt-bio-skill — VT Deck Finishing, Biology
+# vt-skill — VT Deck Finishing
 
 Run this skill after the text of a cycle is final. Run it before you give the
 deck to Katherine. It covers slide order, response slides, images, icons,
@@ -1242,12 +1242,35 @@ A deck ID lives in **two kinds of surface**, and a Drive search finds only some 
 them. Repoint both on every deck, before archiving the old file.
 
 **A. The Master Agenda spreadsheet — the larger carrier.**
-`1i6D-QT5nQWdVpltW14XB7OZ9lWFrMbMO8ZnZQvpUw-w`, tab `🌿 Biology Agenda 26-27`
-(gid `901875884`). Column **G**, one `=HYPERLINK("…/copy","🎞 Deck ↗")` per class
-day, so **two or three cells per cycle**, not one. Cycle 02 was G6, G7, G8. The tab
-references 25 distinct deck IDs. These are ordinary formulas: read with
-`GOOGLESHEETS_VALUES_GET` at `value_render_option: FORMULA`, write with
-`GOOGLESHEETS_BATCH_UPDATE` at `valueInputOption: USER_ENTERED`.
+Master Agenda `Agenda 26-27 CLEAN` (`1m4qhXb5M7y0nMNJHeuxu2J4eFXokIKYxiGVyOfpg-uY`,
+school account; ai-ops/NAMES.md). One tab per course: `🌿 Biology` (gid
+`2088972437`), `🫀 A&P` (gid `170607847`), `🔬 Forensics` (gid `1634834686`).
+The deck ID is written **once per lesson row**, as a plain URL in column **Q**
+(`_teacherURL`), on all three tabs. Column **P** (`_studentURL`) derives the `/copy`
+link from Q by formula, and the display columns **L** (🎞 Student deck) and **M**
+(👩‍🏫 Teacher deck) are `HYPERLINK` formulas over P and Q. Repoint a deck by writing
+Q only; never overwrite the formulas in L, M or P. Before writing Q, confirm that P, L and M
+in that row are still formulas. If any holds typed text instead, leave the row and report the
+cell to Katherine (as §16.4 does for a different live link): writing Q would change nothing
+students or the list tabs see. The other columns differ by tab, so
+read that tab's header row before writing anything else:
+
+| Tab | Header row | Folder URL | Extra/activity URL | Turn-in URL |
+|---|---|---|---|---|
+| `🌿 Biology` | 3 | R (`_folderURL`) | S (`_extraURL`) | U (`_turnInURL`) |
+| `🫀 A&P` | 4 | R (`_folderURL`) | S (`_extraURL`) | U (`_turnInURL`) |
+| `🔬 Forensics` | 4 | S (`_folderURL`) | T (`_extraURL`) | V (`_turnInURL`) |
+
+On `🔬 Forensics`, R has no header but holds the second-deck URL that O (🎞 2nd deck)
+displays. Treat it like Q: write it only to repoint a second deck.
+
+The list tabs (`Bio as List`, `A&P as List`, `Forensics as List`, `🌿 Biology List`)
+read P, so check them after the write. Read cells with the formula render option and
+write plain URLs as user-entered values. Verified against the sheet 2026-10-19.
+
+The superseded v9 agenda (`1i6D-QT5nQWdVpltW14XB7OZ9lWFrMbMO8ZnZQvpUw-w`, tab
+`🌿 Biology Agenda 26-27`, one `/copy` HYPERLINK per class day in column G) is no
+longer written. Read it only to trace an old link.
 
 **B. The five START HERE decks.** Every `/copy` link sits on **slide 4** of each,
 as a hyperlink on a text run — see §9.2 step 4 for how to change one.
@@ -1635,8 +1658,9 @@ This file covers **Biology only**. From 2026-08-18 Katherine labels the
 deck-finishing skills by course. Forensics and Anatomy & Physiology get their own
 files, forked from this one.
 
-**Naming.** `vt-bio-skill`, and on the same pattern `vt-forensics-skill` and
-`vt-anatomy-skill`. Each description names its course and says the other two exist,
+**Naming.** Renamed `vt-skill` on 2026-10-19 on Katherine's instruction (formerly
+`vt-bio-skill`). The planned course forks keep their names, `vt-forensics-skill` and
+`vt-anatomy-skill`, until they exist. Each description names its course and says the other two exist,
 so a request that names a course loads one file and not three.
 
 The `name` field takes lowercase letters, digits and hyphens only. Write it that
@@ -1783,7 +1807,7 @@ Master Agenda `Agenda 26-27 CLEAN`
 (`1m4qhXb5M7y0nMNJHeuxu2J4eFXokIKYxiGVyOfpg-uY`, school account) on that course's
 tab, in the row for each class day that teaches the lesson:
 
-- the deck (the teacher deck, and the student `/copy` link where the row has one);
+- the deck: the teacher deck URL in Q (§9.3); the student `/copy` link in P fills in from it;
 - each activity, worksheet or lab created for the lesson;
 - the week/cycle folder.
 
@@ -1802,10 +1826,6 @@ Rules:
   The agenda and students use that account, not whichever account happens to open the file.
 - Read the row back after writing. Every link must open the intended file, and none
   may point at an `ARCHIVE …` file.
-- §9.3 above still describes the superseded agenda
-  (`1i6D-QT5nQWdVpltW14XB7OZ9lWFrMbMO8ZnZQvpUw-w`). New links go to
-  `Agenda 26-27 CLEAN` (ai-ops/NAMES.md). Before repointing §9.3 itself, get
-  Katherine's confirmation, as the open gap in ai-ops/HANDOFF.md records.
 
 ### 16.5 Archive the original, last
 

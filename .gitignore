@@ -126,3 +126,5 @@ ai-ops/runtime/tests/__pycache__/
 # book-ops results are committed by .github/workflows/book-ops.yml
 !book-ops/inventory.json
 !book-ops/sweeps/*.json
+
+__pycache__/

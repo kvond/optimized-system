@@ -27,7 +27,7 @@ import json
 import os
 import re
 
-# Section 7 of vt-bio-skill. The feedback prompts and the type detector both
+# Section 7 of vt-skill. The feedback prompts and the type detector both
 # match on these literally. A rewritten heading is a broken slide.
 TYPE_STRINGS = {
     "3-Tier Question": ["Getting Started", "Working On It", "Mastery"],

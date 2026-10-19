@@ -7,7 +7,7 @@ inventory prompt that was never committed here.
 
 ## What changed, and why it matters
 
-The original prompt assumed the `.pptx` twin test from `vt-bio-skill` §0 — a
+The original prompt assumed the `.pptx` twin test from `vt-skill` §0 — a
 `.pptx` sitting beside its live Slides file in each cycle folder. That is not the
 layout on disk.
 
@@ -32,7 +32,7 @@ than assume they match the live decks.
 ## The prompt
 
 ```
-Read ~/.claude/skills/vt-bio-skill/SKILL.md first. It defines the 5 core
+Read ~/.claude/skills/vt-skill/SKILL.md first. It defines the 5 core
 questions, the slide types, the marker strings, and the format tokens. Use its
 vocabulary exactly: these are "core questions" and "slide types". The word
 "beat" is not used.
@@ -41,7 +41,7 @@ Also read ~/.claude/skills/vt-fusion-retrofit/SKILL.md for the definitions of
 separation, fusion, synchronic and diachronic simultaneity, and the three
 coordination structures.
 
-IGNORE the .pptx twin test in vt-bio-skill §0. It describes a layout that no
+IGNORE the .pptx twin test in vt-skill §0. It describes a layout that no
 longer exists. The source files are all in one flat archive folder, named
 below.
 
@@ -63,7 +63,7 @@ For each of the 24 files record:
   - filename, cycle number and sublabel as they appear in the name
   - slide count
   - the ordered list of slide types you can identify, by title text and by
-    the marker strings vt-bio-skill specifies
+    the marker strings vt-skill specifies
   - which of the 5 core questions are present, and for which critical aspect
   - Continuity question present? (yes/no)
   - Stock-and-flow model present? (yes/no)
@@ -77,7 +77,7 @@ For each of the 24 files record:
 Then three judgments, all advisory. Record what you find; propose nothing.
 
   a. STRUCTURE MATCH. Does this file look like a VT cycle deck built to the
-     vt-bio-skill standard, or like a pre-VT lecture deck? State which and
+     vt-skill standard, or like a pre-VT lecture deck? State which and
      give your evidence. The folder is named "original builds" and the
      sublettering (07a/07b, 15a/15b, 16a-16d) does not match the current
      20-cycle structure, so some of these may predate the VT restructure.
@@ -132,7 +132,7 @@ Two questions the output should settle, and both change what comes next:
 
 1. **How many of the 24 are actually VT decks?** If a substantial number are
    pre-VT lecture builds, the retrofit job is larger than adding fusion slides —
-   it includes converting them, which `vt-bio-skill` already covers.
+   it includes converting them, which `vt-skill` already covers.
 
 2. **Do the archived files match the live Slides decks?** The inventory reads
    the archive. Students see the Slides files. If the archive predates edits made

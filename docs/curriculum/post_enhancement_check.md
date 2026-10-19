@@ -12,7 +12,7 @@ what Claude runs, where each thing lives, and what the result means.
   `Finish this sentence as a rule`, `What if?`, `Keep going`, `Compensatory pair`,
   `Conflict case`, and the three tier labels `Getting Started` / `Working On It` /
   `Mastery`. The list is `TYPE_STRINGS` in `scripts/live_deck_check.py` and §7 of
-  `vt-bio-skill`. Matching is by machine, character for character. A curly apostrophe, an
+  `vt-skill`. Matching is by machine, character for character. A curly apostrophe, an
   ellipsis in place of a question mark, or a Gemini rewrite of a heading breaks the match
   without anything looking wrong.
 - **Live check.** `scripts/live_deck_check.py`. Reads the live Slides file through the
@@ -21,7 +21,7 @@ what Claude runs, where each thing lives, and what the result means.
   compares against `docs/live_baseline.json`. Run it first. It reads text only, so it cannot
   see speaker notes, hyperlinks, pictures, or QR codes.
 - **Linter.** `scripts/deck_lint.py`. Reads a built or exported `.pptx`. Two tiers since
-  2026-08-29. It is a script, not a skill; the skill that governs it is `vt-bio-skill`.
+  2026-08-29. It is a script, not a skill; the skill that governs it is `vt-skill`.
 - **Grader.** `scripts/extract_and_grade.py`. What will later score student copies. Its
   `classify_slide()` and the live check must agree on which slides are diagnostic.
 - **Link check.** `scripts/deck_link_check.py`. Walks hyperlinks on text runs in a `.pptx`.
@@ -36,7 +36,7 @@ what Claude runs, where each thing lives, and what the result means.
 
 The rule that follows: **a post-enhancement fix is made in place, in the live file, through
 the Slides API. Never by rebuilding a `.pptx` and uploading it.** Rebuild and upload is the
-`vt-bio-skill` §14 route for a new deck; it creates a new ID and forces the whole §9 relink.
+`vt-skill` §14 route for a new deck; it creates a new ID and forces the whole §9 relink.
 
 ## 2. Where everything is
 
@@ -60,7 +60,7 @@ That line is enough for the read-only pass. If a full pass is wanted, or the dec
 Post-enhancement check. Deck: ▶ LIVE — Cycle NN — <title> (VT).
 ID: <from the URL>.
 Run live_deck_check, then the export pass (lint, grader classify, link check, notes, stubs,
-render). Report against vt-bio-skill §7 and §11. List every fix as an in-place Slides API
+render). Report against vt-skill §7 and §11. List every fix as an in-place Slides API
 edit and wait for my yes. No new file, no re-upload.
 ```
 
@@ -107,7 +107,7 @@ font `Inter` on 8 runs; 9 runs above 26pt. `Pattern Break ×1` detected.
 | Slides, size | 25, 4:3 | Standard |
 | Markers | `Critical aspect:` and `Pattern break`, both on slide 14, ASCII | Intact. Gemini did not touch them |
 | Live check, linter, grader agree | All three count one diagnostic slide (14, `pattern_break`) | Only slide 14 is scorable |
-| Tier labels, Build a Rule, What if?, Concept Bank, day dividers, Teacher Prep, links slide, credits | Absent | Never built to the standard; `vt-bio-skill` §0 already records Cycle 01 as the cycle that needs Katherine's eye. Her decision 2026-09-02: slide 14 alone is the scoring surface for this launch cycle |
+| Tier labels, Build a Rule, What if?, Concept Bank, day dividers, Teacher Prep, links slide, credits | Absent | Never built to the standard; `vt-skill` §0 already records Cycle 01 as the cycle that needs Katherine's eye. Her decision 2026-09-02: slide 14 alone is the scoring surface for this launch cycle |
 | Speaker notes | None on any slide | Slide 14 has no revision prompt (§3). Fix: the wording in `set_revision_prompt.py`, applied through the API |
 | Hyperlinks | Lab Sim (slide 3) HTTP 200. PurposeGames (slide 25) HTTP 200, attached to the picture, invisible to `deck_link_check.py` | Both live |
 | Turn in link | None. The folder exists beside the deck: `18Zk-agYcfbqKmyTkeGbUgUPhRBGYVwNV` | Missing on the revision page |
@@ -122,7 +122,7 @@ the next run compares against today.
 ## 6. Two things only Katherine can do
 
 1. **Refresh the claude.ai skill uploads.** On 2026-09-02 the copies claude.ai holds are
-   behind the repo for `vt-bio-skill` (72 KB against 92 KB; the old one still points scripts
+   behind the repo for `vt-skill` (72 KB against 92 KB; the old one still points scripts
    at Drive), `vt-deck-authoring`, and `vt-fusion-retrofit`, and `hep-scout` and
    `vt-post-import` are not uploaded at all. Re-upload from
    `~/code/answerable-skills/skills/<name>/` after `git pull`.

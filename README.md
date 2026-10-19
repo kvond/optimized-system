@@ -3,7 +3,7 @@
 Canonical source for the skills, specifications, prompts, and working documents
 behind the Answerable Teaching curriculum and book.
 
-**Private repository.** `skills/vt-bio-skill/SKILL.md` contains Google Drive
+**Private repository.** `skills/vt-skill/SKILL.md` contains Google Drive
 file IDs, and several skills touch student work.
 
 ---
@@ -66,7 +66,7 @@ python3 tools/skills_audit.py --path skills
 
 ## Open items
 
-- `vt-bio-skill/SKILL.md` is 72KB. Split decision rules from run-time detail
+- `vt-skill/SKILL.md` is 72KB. Split decision rules from run-time detail
   into `reference/`.
 - `vt-forensics-skill` and `vt-anatomy-skill` are referenced but do not exist.
 - Live Slides decks are newer than the archived `.pptx` files. Export needed

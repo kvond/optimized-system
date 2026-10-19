@@ -1,11 +1,11 @@
 ---
 name: vt-fusion-retrofit
-description: Diagnose an existing VT cycle deck for coordination work and propose a fusion slide for Katherine to accept or reject. Reads the deck, names the critical aspects it finds, judges whether those aspects can vary simultaneously and by what structure (stock-and-flow, compensatory pair, conflict case, or none), drafts one candidate slide plus its companion what-if, and stops. Never inserts a slide without approval. Diagnoses rather than inserts because a representation can be added to any cycle that accumulates while a case set has to be found in the content. Also drafts the teacher note slide for the cycle, with its seven declarations including which simultaneity the cycle works on and the visibility rung. Use when adding a fusion device to an existing deck, when auditing whether a cycle reaches coordination, when assigning visibility, or when building the fusion table across the arc. This skill does not build new decks — that is vt-deck-authoring. It does not finish decks to shipping standard — that is vt-bio-skill. Triggers - "fusion retrofit", "does this cycle fuse", "add a fusion slide", "fusion table", "coordination audit".
+description: Diagnose an existing VT cycle deck for coordination work and propose a fusion slide for Katherine to accept or reject. Reads the deck, names the critical aspects it finds, judges whether those aspects can vary simultaneously and by what structure (stock-and-flow, compensatory pair, conflict case, or none), drafts one candidate slide plus its companion what-if, and stops. Never inserts a slide without approval. Diagnoses rather than inserts because a representation can be added to any cycle that accumulates while a case set has to be found in the content. Also drafts the teacher note slide for the cycle, with its seven declarations including which simultaneity the cycle works on and the visibility rung. Use when adding a fusion device to an existing deck, when auditing whether a cycle reaches coordination, when assigning visibility, or when building the fusion table across the arc. This skill does not build new decks — that is vt-deck-authoring. It does not finish decks to shipping standard — that is vt-skill. Triggers - "fusion retrofit", "does this cycle fuse", "add a fusion slide", "fusion table", "coordination audit".
 ---
 
 # vt-fusion-retrofit
 
-Run this after `vt-bio-skill` has brought a deck to standard. Run it one deck at
+Run this after `vt-skill` has brought a deck to standard. Run it one deck at
 a time, with Katherine present. It is not a batch job, and section 6 says why.
 
 `deck_lint.py` remains the last gate.
@@ -55,7 +55,7 @@ a different question with a different failure mode.
 
 ### 2a. One representation
 
-**Stock-and-flow model.** A conditional slide type in `vt-bio-skill` §1; the form
+**Stock-and-flow model.** A conditional slide type in `vt-skill` §1; the form
 comes from Moore-Anderson. The student reads or builds a model, and the
 coordination is rate against amount — a stubborn confusion in its own right,
 independent of biology content (Booth Sweeney and Sterman's bathtub studies found
@@ -87,7 +87,7 @@ front of the student without asking her to relate any of it - she is not ready
 for that at that step. The conflict case is the next thing she meets, and it is
 where the relating is asked for, on content rather than on vocabulary. This
 supersedes section 3b's "the Concept Bank is the last slide above the divider"
-in `vt-bio-skill`, which is annotated there. Use
+in `vt-skill`, which is annotated there. Use
 where no arithmetic relationship exists — most of Biology, nearly all of
 Forensics.
 
@@ -100,7 +100,7 @@ biology's central conceptual obstacle.
 the reason.
 
 [Marker strings for the two case structures — proposed 2026-08-30, not yet
-Katherine's decision. Section 7 of `vt-bio-skill` fixes an exact string for
+Katherine's decision. Section 7 of `vt-skill` fixes an exact string for
 Pattern break, Build a Rule, What if and Getting Started, and section 3b fixes
 `CONCEPT BANK` for the bank. It fixes nothing for these two, which means a
 script cannot find them and the slide index cannot name them. The suggestion is
@@ -166,7 +166,7 @@ Three constraints:
    answer is "none".
 4. If no, say so plainly and give the reason. Do not manufacture a device.
 5. Draft **one** candidate slide, cloned from the matching template slide type,
-   never built by hand. Design tokens per `vt-bio-skill` §13.
+   never built by hand. Design tokens per `vt-skill` §13.
 6. Draft the **companion what-if** for that structure — individual, written,
    naming what changes and what is held, mechanism fixed and condition varied
    (section 2c). It travels with the proposal, not after it.
