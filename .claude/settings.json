@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Remote_Desktop_Commander__list_devices",
+      "mcp__Remote_Desktop_Commander__who_am_i",
+      "mcp__Remote_Desktop_Commander__start_process",
+      "mcp__Remote_Desktop_Commander__read_process_output",
+      "mcp__Remote_Desktop_Commander__interact_with_process",
+      "mcp__Remote_Desktop_Commander__list_directory",
+      "mcp__Remote_Desktop_Commander__read_file",
+      "mcp__Remote_Desktop_Commander__get_file_info",
+      "mcp__Remote_Desktop_Commander__start_search",
+      "mcp__Remote_Desktop_Commander__get_more_search_results"
+    ]
+  }
+}
