@@ -1,6 +1,6 @@
 # Workflow ownership and schedule guide
 
-Updated 2026-10-18. This file is the operational ownership/schedule source. Standards themselves live in the pinned Slack posts and the Claude Doc `Classroom System Standards — Slides, Grades, Rosters`; do not duplicate them here.
+Updated 2026-10-19. This file is the operational ownership/schedule source. Standards themselves live in the pinned Slack posts and the Claude Doc `Classroom System Standards — Slides, Grades, Rosters`; do not duplicate them here.
 
 ## Standing boundaries
 - Canonical names: `ai-ops/NAMES.md`.
@@ -15,14 +15,18 @@ Updated 2026-10-18. This file is the operational ownership/schedule source. Stan
 | Routine | Owner | When | Boundary |
 |---|---|---|---|
 | Home and school day review | Local Codex | Daily 04:30 Eastern | Read/brief only within its existing contract. |
-| Roster and submission tidy | Local Codex | Weekdays 06:30 Eastern | Preparation/repair; no IC write. |
+| Roster and submission tidy | Local Codex (automation `morning-roster-check-and-submission-tidy`, "Morning Hub issue repair, roster and submission tidy") | Weekdays 06:30 Eastern | Preparation/repair; no IC write. |
 | Eligible IC entry | Existing Chrome helper in the school profile on Katherine's home Mac | Weekdays 07:00 Eastern standing contract | Automatic path requires the helper's saved weekday-morning opt-in; no repeated per-assignment approval. Preserve exact mapping, keep-higher, flags and save/reload/readback limits. Manual recovery stays with the same helper. Current readiness and actual execution must be verified separately. |
-| Feedback/print-ready | Local Codex | Weekdays 07:30 Eastern | Prepare/file outputs; physical printing/delivery remains Katherine. |
+| Feedback/print-ready | Local Codex (automation `morning-student-feedback-and-print-checklist`) | Weekdays 06:30 Eastern (observed 2026-10-19; previously listed as 07:30) | Prepare/file outputs; physical printing/delivery remains Katherine. |
 | Teaching Hub report follow-up | Local Codex | Weekdays 08:00 Eastern | Reconcile receipts; no inferred success. |
+| Nightly Codex Slack worker | Local Codex (automation `nightly-codex-slack-worker`) | Daily 21:00 Eastern | Carries out Katherine's Codex requests from Slack; Katherine-only scope per its prompt; no grade entry or external sends beyond standing contracts. |
+| Slack task checks through October | Local Codex (automation `nightly-slack-chatgpt-asks`) | Daily 00/02/04/08/12/16/20 Eastern; ends 2026-10-31 | Answers ChatGPT-addressed Slack asks; does not run after October 31. |
 | Friday I-Tracker | School Claude organization | Friday 14:15 Eastern displayed | Browser blocked in district Claude; I-Tracker note remains hand-triggered. |
 | System Review | Claude Code scheduled task (Pro plan) | Weekly Sunday night Eastern | Proposes only. Prompt: `prompts/system-review.md`. |
 | Hub week-ahead check and Monday packet | Cloud Run Job `hub-weekly-preflight`, started by Cloud Scheduler `hub-weekly-preflight-thursday` (project school-workflow-hub-54879) | Thursdays 15:00 Eastern | Deterministic: no AI, no browser, no teacher sign-in. Added 2026-10-16 (Hub PR #168). Replaces the Mac's Thursday Claude Code task, which stays on until the 22 Oct cloud run is verified. |
 | Book-ops inventory and monthly full sweep | GitHub Action `.github/workflows/book-ops.yml` in this repo | Sundays 03:00 Eastern; full sweep on the first Sunday | Deterministic: no AI, no Roam writes; results committed to `book-ops/`. Added 2026-10-16 (PRs #26, #27). Replaces two Cowork tasks on the Mac, which are still to be switched off. |
+
+Observed 2026-10-19 on Katherine's MacBook Air (`~/.codex/automations`): the four local Codex automations named above, all ACTIVE, all using the default model `gpt-6.1-sol` (none pinned to the retired GPT-5.5). The 04:30 home and school day review and the 08:00 Teaching Hub report follow-up were not found on that device; their host is unverified, not proven absent.
 
 The private scheduler registry remains the inventory of provider-level schedule records. This file defines ownership and intended cadence; a configured schedule is not proof of a successful run.
 
@@ -47,13 +51,6 @@ Acceptance before Sunday activation: source IDs resolve and the intended Monday 
 Katherine [approved decommissioning conditionally on the Hub handling the work](https://answerableteaching.slack.com/archives/C0C8ZJ4FTAT/p1792285329701299). `kvond/lesson-preflight` is a retirement candidate, not a second implementation home. It was empty and unarchived when checked October 17; that fact alone does not establish replacement coverage.
 
 Before retirement, verify the Hub's intended coverage and actual result for the reported gaps: G1 teaching dates against student slides; G2 link destinations and duplicate/misleading labels; G3 Notes/DRAFT due dates against each distinct lesson's revision/last teaching day; G4 slide-number reference drift; G5 missing worksheet documents and duplicate copies. Reuse the existing proposal/tests at Hub commit `30189ea` where appropriate, with separate implementation ownership; do not count a proposed port as completed. Preserve required source/history, check callers and schedules, record the replacement receipt in `#decomission`, then retire only the proven redundant component. No deletion, archive or schedule change is performed by this documentation update.
-
-### Feedback Pipeline B1-output check — daily
-Owner: deterministic check first; Claude Code only for exceptions/judgment.
-
-Needs access to: school Drive location where Workflow B1 outputs land; the B1 run/output identifier or expected-output rule; read access to the corresponding upstream run state. It checks that expected B1 output landed and reports exceptions only. It does not send feedback, grade into IC, or write I-Tracker notes.
-
-Acceptance: each expected B1 run can be paired to its output without student data in Slack; missing output is distinguished from delayed/unreadable; successful days can stay silent or emit a non-student-data receipt.
 
 ## Historical state
 Detailed October 12–14 observations, old schedules, prior names, and acceptance receipts remain in Git history and `ai-ops/reports/`. They are evidence, not current instructions. Do not restore retired routines from history without a new decision.

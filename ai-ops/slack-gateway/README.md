@@ -10,8 +10,8 @@
 - When a message starts with a direct agent mention, provider prefix or request wording but ends in a connector footer, record one held receipt in its source thread. It may be Katherine's request with pasted agent output, so never silently drop it or send the ambiguous text to a model/another channel. Reposting the request separately with a link resolves that ambiguity; duplicate event delivery does not repeat the receipt.
 - Hold sensitive/oversize input instead of sending it to a model.
 - Use deterministic routing first.
-- If routing is genuinely ambiguous, use the smallest provider model: OpenAI `gpt-6-luna` for operational material; Claude `claude-haiku-5-5` for writing/scholar/research material.
-- Prefix an intake with `openai:` or `claude:` to force that provider for ambiguous classification.
+- If routing is genuinely ambiguous (keyword confidence below 0.78), file the message in `#needs-rerouting` for Katherine; no paid model is called (Katherine's instruction, 2026-10-16).
+- A model is called only when the message asks for one: prefix it with `openai:` (smallest model `gpt-6-luna`) or `claude:` (`claude-haiku-5-5`).
 - Cache classification by router version + normalized input + provider/model.
 - Post a receipt in the source thread and a concise categorized note with an original-message link in the destination channel.
 - No destructive/external action executor is exposed here. This service captures/routes only.

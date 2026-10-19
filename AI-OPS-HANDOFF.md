@@ -1,5 +1,5 @@
-# Continue Katherine's AI-system consolidation
+# AI-system handoff — pointer
 
-Read [the current handoff](ai-ops/HANDOFF.md), [AI job and schedule table](ai-ops/worker-registry/roles-and-schedules.md) and [machine-readable checkpoint](ai-ops/status/continuation-2026-10-12.json). The private repository is now `kvond/optimized-system`, renamed from `answerable-skills`. Work is staged on `reset-night-2026-10-11` in [draft PR 1](https://github.com/kvond/optimized-system/pull/1).
+The current handoff is [ai-ops/HANDOFF.md](ai-ops/HANDOFF.md). Ownership and schedules: [ai-ops/worker-registry/roles-and-schedules.md](ai-ops/worker-registry/roles-and-schedules.md). Canonical names: [ai-ops/NAMES.md](ai-ops/NAMES.md).
 
-This repository holds sanitized reusable knowledge and code. Raw private history, credentials and runtime state belong in protected private storage.
+This file is kept only so old links resolve. The October 11–12 consolidation state it used to describe (draft PR 1, `reset-night-2026-10-11`, `ai-ops/status/continuation-2026-10-12.json`) is history, not instruction.

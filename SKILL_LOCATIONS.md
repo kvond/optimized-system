@@ -12,9 +12,10 @@ and pushed. See Retired.
 ## Here — `skills/`
 
 Every skill used interactively. This repo is the canonical one:
-`kvond/answerable-skills`, cloned at `~/code/answerable-skills`.
+`kvond/optimized-system` (formerly `kvond/answerable-skills`), cloned at
+`~/code/optimized-system`.
 
-`~/.claude/skills` is a symlink to `~/code/answerable-skills/skills`,
+`~/.claude/skills` is a symlink to `~/code/optimized-system/skills`,
 so editing through `~/.claude/skills` edits the repo. Commit and push
 to update every machine. If that symlink ever points somewhere else,
 edits are landing outside the repo — repoint it.
