@@ -1,6 +1,6 @@
 ---
 name: repaginate-taught-lesson
-description: "Repair slide-number references after Katherine teaches a lesson and adds or rearranges slides. Use for post-teaching repagination of a selected teacher deck while retaining added material and separate lesson identities. This is reference cleanup, not lesson renewal or publication."
+description: "Repair slide-number references after Katherine teaches a lesson and adds or rearranges slides. Use for post-teaching repagination of a selected teacher deck while retaining added material and separate lesson identities. This is reference cleanup, not lesson renewal or publication. Triggers: \"repaginate\", \"repaginate the deck\", \"fix slide numbers after teaching\", \"slide references are off\"."
 ---
 
 # Repaginate a taught lesson

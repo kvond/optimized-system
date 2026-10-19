@@ -1,6 +1,6 @@
 ---
 name: activity-scout
-description: Katherine's monthly opportunity calendar. Sweeps a verified source registry plus the login-gated sites (Meetup, Facebook Events, Instagram, Eventbrite) for activities that build her long-term capabilities, scores them against the life-design spec, and renders one tickable HTML calendar covering two horizons — next month day-by-day, and four months out for anything with a registration deadline. Runs the last Sunday of each month. Triggers: "activity scout", "opportunity calendar", "what's on next month", "run the scout", scheduled monthly run.
+description: Katherine's monthly opportunity calendar. Sweeps a verified source registry plus the login-gated sites (Meetup, Facebook Events, Instagram, Eventbrite) for activities that build her long-term capabilities, scores them against the life-design spec, and renders one tickable HTML calendar covering two horizons — next month day-by-day, and four months out for anything with a registration deadline. Runs the last Sunday of each month. Triggers - "activity scout", "opportunity calendar", "what's on next month", "run the scout", scheduled monthly run.
 ---
 
 # Activity Scout

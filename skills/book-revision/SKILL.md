@@ -1,6 +1,6 @@
 ---
 name: book-revision
-description: The spine for revising Answerable Teaching. Load it first in any session that revises, restructures, tightens, or checks the manuscript. It sets the rules every revision agent shares (where the text lives, the prose rule, the argument arc, the glossary and its analytical levels, the claim types, the decisions ledger, the lane system and packet format), and it tells an agent which lane to load next. Triggers - "revise the book", "revision pass", "tighten the argument", "run a lane", "integrate the packets", "book-revision".
+description: The spine for revising Answerable Teaching. Load it first in any session that revises, restructures, tightens, or checks the manuscript. It sets the rules every revision agent shares (where the text lives, the prose rule, the argument arc, the glossary and its analytical levels, the claim types, the decisions ledger, the lane system and packet format), and it tells an agent which lane to load next. Triggers - "revise the book", "revision pass", "run a lane", "book-revision".
 ---
 
 # Book revision: the spine

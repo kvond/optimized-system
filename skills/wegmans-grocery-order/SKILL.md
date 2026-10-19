@@ -1,6 +1,6 @@
 ---
 name: wegmans-grocery-order
-description: Katherine's home grocery run at Wegmans Wilmington (371 Buckley Mill Rd), built as a pickup order in her connected Chrome session. Use whenever she asks to build, rebuild, restock, or repair a Wegmans order, says "the usual Wegmans run," or asks for groceries at home without naming items. Carries the verified product catalog and the write protocol that keeps the Wegmans cart from silently dropping items.
+description: Katherine's home grocery run at Wegmans Wilmington (371 Buckley Mill Rd), built as a pickup order in her connected Chrome session. Use whenever she asks to build, rebuild, restock, or repair a Wegmans order, says "the usual Wegmans run," or asks for groceries at home without naming items. Carries the verified product catalog and the write protocol that keeps the Wegmans cart from silently dropping items. Triggers - "the usual Wegmans run", "Wegmans order", "rebuild the Wegmans cart".
 ---
 
 # Wegmans Grocery Order (Wilmington)

@@ -3,8 +3,8 @@ name: writing-block
 description: >
   Build the ≤2-hour Writing Brief — separate from the morning brief. Reads each chapter's Writing
   Status, picks ONE focus chapter, sequences prep → write → place, flags overflow past 2h.
-  Triggers: "writing brief", "author block", "what do I write today", brief trigger link,
-  scheduled run.
+  Triggers: "writing brief", "author block", "what do I write today", writing-brief trigger link,
+  scheduled writing-brief run.
 ---
 
 # writing-block — the ≤2h Writing Brief + the chapter pipeline
