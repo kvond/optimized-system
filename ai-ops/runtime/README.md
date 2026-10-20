@@ -2,7 +2,7 @@
 
 ## October 14 integration candidate
 
-The [21-definition catalog](../workflow-contracts/INDEX.md) and [router interface](../../skills/ai-operations-router/references/interface.md) are now connected by one [bounded executor bridge](../runbooks/workflow-executor.md): **local catalog validation only** through the existing Controller, encrypted storage and native result/receipt readback. This is not a domain-workflow dispatcher. Additional school/provider operations remain unsupported until their own adapter, ownership, capability and output evidence are accepted.
+The [22-definition catalog](../workflow-contracts/INDEX.md) and [router interface](../../skills/ai-operations-router/references/interface.md) are now connected by one [bounded executor bridge](../runbooks/workflow-executor.md): **local catalog validation only** through the existing Controller, encrypted storage and native result/receipt readback. This is not a domain-workflow dispatcher. Additional school/provider operations remain unsupported until their own adapter, ownership, capability and output evidence are accepted.
 
 The [school read package](../runbooks/school-repetitive-execution.md) is separate evidence tooling. Its real home-Codex connector trial does not establish School Claude execution, a report date/run ID or completed morning work. See the [dated release note](../reports/overnight-integration-2026-10-14.md) for source tests versus actual bounded acceptance and remaining publication/install gates. Existing commands below retain their narrower scope; earlier totals are dated checkpoints.
 

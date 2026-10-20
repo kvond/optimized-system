@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "workflow_id": "school-feedback-print-ready",
-  "contract_version": "2026-10-14.1",
-  "title": "Individual feedback, dated packets and teacher-only delivery",
+  "contract_version": "2026-10-20.1",
+  "title": "Spreadsheet feedback: source-backed reports and private filing",
   "domain": "school",
   "owners": {
     "execution_owner_ref": "home-codex",
@@ -11,15 +11,13 @@
   "execution": {
     "executor_ref": "home-codex",
     "account_refs": [
-      "school-google",
-      "school-ic"
+      "school-google"
     ],
     "required_capabilities": [
-      "school-hub-read",
-      "school-native-browser-read",
+      "school-drive-read",
+      "school-sheets-read-write",
       "school-feedback-generation",
-      "school-private-filing",
-      "school-gmail-outbox-send"
+      "school-private-filing"
     ],
     "privacy_partition": "school-private",
     "concurrency_key": "school-shared-browser-and-sources"
@@ -42,39 +40,27 @@
       "max_age_seconds": 300
     },
     {
-      "source_ref": "private:ic-current-roster-flags-and-extensions",
-      "required": true,
-      "coverage": "complete",
-      "max_age_seconds": 300
-    },
-    {
-      "source_ref": "private:feedback-catalog-and-checklist",
-      "required": true,
-      "coverage": "complete",
-      "max_age_seconds": 300
-    },
-    {
-      "source_ref": "private:print-ready-email-outbox",
-      "required": true,
-      "coverage": "complete",
-      "max_age_seconds": 300
-    },
-    {
-      "source_ref": "private:approved-feedback-adapter-config",
+      "source_ref": "private:approved-feedback-models-and-executor",
       "required": true,
       "coverage": "bounded",
       "max_age_seconds": 300
     },
     {
-      "source_ref": "private:teacher-only-email-authorization",
+      "source_ref": "private:student-feedback-links-sheet",
       "required": true,
       "coverage": "bounded",
       "max_age_seconds": 300
     },
     {
-      "source_ref": "private:current-deterministic-missing-work-and-eligibility-policy",
+      "source_ref": "private:current-verified-roster-evidence",
       "required": true,
       "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:feedback-writer-ownership",
+      "required": true,
+      "coverage": "bounded",
       "max_age_seconds": 300
     }
   ],
@@ -85,23 +71,8 @@
       "verification": "content_and_destination_readback"
     },
     {
-      "output_ref": "private:dated-all-class-print-packet",
-      "kind": "artifact",
-      "verification": "content_and_destination_readback"
-    },
-    {
       "output_ref": "private:feedback-index-checklist-readback",
       "kind": "receipt",
-      "verification": "content_and_destination_readback"
-    },
-    {
-      "output_ref": "private:school-only-email-mime-receipt",
-      "kind": "receipt",
-      "verification": "content_and_destination_readback"
-    },
-    {
-      "output_ref": "private:biology-dtgss-and-teacher-analysis",
-      "kind": "report",
       "verification": "content_and_destination_readback"
     }
   ],
@@ -110,10 +81,8 @@
       "generate-eligible-source-backed-feedback",
       "reuse-unchanged-verified-feedback",
       "file-verified-private-feedback",
-      "compile-verified-dated-packet",
       "update-made-after-readback",
-      "send-teacher-only-outbox-batch-once",
-      "confirm-exact-email-mime-readback"
+      "update-exact-feedback-link-and-version-status"
     ],
     "prohibited_actions": [
       "copy-credentials-or-profiles",
@@ -134,35 +103,31 @@
       "retry-uncertain-model-call",
       "retry-uncertain-email-send",
       "retroactively-email-historical-baseline",
-      "infer-growth-from-file-dates"
+      "infer-growth-from-file-dates",
+      "modify-working-hub-extension",
+      "launch-overlapping-claude-catchup",
+      "send-feedback-email",
+      "invent-writing-sample-or-rating"
     ],
     "dependency_checks": [
-      "Resolve private references and verify exact school identity, tested capability, current authority and sole active owner before dependent work.",
-      "Acquire the shared browser/source lease including external sessions; a declared concurrency key or missing receipt is not proof that another writer is idle.",
-      "Read current authoritative sources and compare relevant revisions immediately before each mutation; stop that mutation on changed, partial or unavailable evidence.",
-      "Keep private records and raw evidence outside Git; a configured task, schema validation or open tab never establishes completed execution.",
-      "Read outbox before and after generation so eligible previously verified new documents can be delivered despite independent generation holds.",
-      "Current teacher-only email instructions override the older mandatory Hub Print direction; recipient and sender resolve to the one explicitly authorized school address, with no CC/BCC.",
-      "Preserve the pinned approved adapter/runtime and deployed outbox contract; never forge authentication, replace baseline or force configuration checks to pass.",
-      "Reuse verified unchanged drafts/PDFs without another model call; interrupted model/save response requires exact readback and no blind retry or rebilling.",
-      "Critical-aspect and science-writing reports stay separate. Attributed evidence, actual review chronology and current approved formats govern; not-assessed is not Beginning.",
-      "Missing-work contracts require complete fresh coverage and current roster/flags/due dates; exclude Exempt, unassigned, newly joined, future-due and verified extended work.",
-      "Individual private filing and content/destination/index verification precede Made; Made this run requires a newly saved exact report revision.",
-      "Daily packet uses actual Eastern saved-feedback date, entire PDF readback and manifest. Include current student report types; exclude teacher reports and only proven duplicate representations.",
-      "Before send, verify immutable PDF/manifest and current expiry, durably record intent and obtain the first successful send_allowed_once claim for the exact batch.",
-      "One claim allows one Gmail send only. Confirm with actual SENT/raw MIME, exact sender/recipient/subject/attachment hash and private claim token; any uncertainty stops sending and holds the batch.",
-      "Drain at most ten newly eligible batches; packet expansion sends only new contributions. Never use Printed/Handed marks as deduplication or delivery evidence.",
-      "Resolve current deployed deterministic missing-work-zero and two-week submission-window policy; eligible automatic zeros and later higher-only replacements require its complete-coverage, original-event and exclusion gates.",
-      "Never choose the eligibility-window anchor from discovery or modified dates. If authoritative policy or coverage is unavailable, hold dependent zero/replacement decisions; exact Photosynthesis empty intake still waits."
+      "Resolve exact private account/source/folder bindings and tested operation capability before dependent work; no credential copying or access expansion.",
+      "Read Claude catch-up and external writer claims for this exact scope; no takeover without reconciled completion or handback and current shared ownership.",
+      "Each generation scope freezes one exact student, lesson, original submission and revision, with complete identity and saved-report history evidence for that scope.",
+      "A blank Feedback/Writing link is not absence; search existing student records and reuse unchanged reviewed report versions before generating.",
+      "Read current Agenda prompts, teaching manual and approved exemplar models; retain separate critical-aspect and science-writing judgments with attributed source evidence.",
+      "Use the existing authorized assistant/provider only; verify capability and budget before generation, with no new paid provider or uncertain model-call retry.",
+      "Reopen and visually verify each saved report, its private student-folder destination and exact source/version mapping before Made and spreadsheet status.",
+      "Partial or failed reads preserve prior rows/history. An inaccessible source is not missing work, zero, Beginning or an invented writing sample.",
+      "Run school-feedback-packet-assembly independently when generation is held; never drop generation evidence requirements to make a route pass.",
+      "IC checks require exact existing-helper readback evidence, not report scores or packet inclusion; this workflow cannot enter grades or alter helper state.",
+      "Keep teacher Printed/Handed marks and existing auxiliary report history; optional email, Hub health and IC availability are not feedback or packet prerequisites."
     ],
     "uncertain_write_policy": "stop_and_reconcile"
   },
   "success_checks": [
-    "Every Made report has exact saved private file, content/source/date/index readback; new counts exclude reused historical reports.",
-    "Dated all-class PDF has verified full content, source manifest, page order and private destination; teacher analyses remain separate.",
-    "Each reported sent batch has the exact native Gmail SENT/raw-MIME and canonical outbox confirmed receipt; reserved/uncertain is not sent.",
-    "Printed and Handed-out marks, teaching-plan notes and historical checklist groups are unchanged; email is not physical delivery.",
-    "After confirmed email direct the teacher to its attachment; give Hub recovery controls only on a real delivery failure or request."
+    "Every new report has exact reviewed source/version, saved private destination/content/render readback and matching spreadsheet link; reused history is counted separately.",
+    "Claude overlap and unresolved source scopes remain explicit without a duplicate writer, guessed match or replaced historical row.",
+    "New verified report versions remain yellow until independent exact packet inclusion is verified; IC and teacher delivery states remain separate."
   ],
   "failure": {
     "max_safe_read_retries": 2,
@@ -171,9 +136,9 @@
   },
   "provenance": {
     "contract_refs": [
-      "ai-ops/workflow-contracts/school-operations-runbook.md#school-feedback-print-ready",
+      "prompts/school-spreadsheet-feedback.md",
       "private:current-automation/morning-student-feedback-and-print-checklist",
-      "private:current-print-ready-email-contract",
+      "private:student-feedback-links-sheet",
       "private:current-science-writing-format"
     ]
   }

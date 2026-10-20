@@ -15,6 +15,7 @@ EXPECTED = {
     'school-morning-preparation-and-repair',
     'school-ic-higher-only-entry',
     'school-feedback-print-ready',
+    'school-feedback-packet-assembly',
     'school-morning-report-resolution',
     'school-lesson-readiness',
     'school-assignment-setup',
@@ -106,21 +107,24 @@ class SchoolWorkflowDefinitionsTest(unittest.TestCase):
         for name in ('school-lesson-readiness', 'school-assignment-setup'):
             self.assertEqual(self.contracts[name]['trigger'], {'kind': 'on_demand'})
 
-    def test_feedback_delivery_keeps_send_fence_and_current_override(self):
+    def test_feedback_and_packet_do_not_depend_on_email_or_hub(self):
         c = self.contracts['school-feedback-print-ready']
         self.assertTrue({'retry-uncertain-email-send', 'retroactively-email-historical-baseline',
                          'retry-uncertain-model-call', 'physically-print',
                          'regenerate-unchanged-feedback', 'send-student-or-guardian-message'} <= set(c['policy']['prohibited_actions']))
-        self.assertIn('send-teacher-only-outbox-batch-once', c['policy']['allowed_actions'])
-        checks = ' '.join(c['policy']['dependency_checks'])
-        for needed in ('send_allowed_once', 'expiry', 'SENT/raw MIME', 'claim token',
-                       'ten newly eligible batches', 'Printed/Handed',
-                       'override the older mandatory Hub Print direction'):
-            self.assertIn(needed, checks)
-        self.assertIn('private:school-only-email-mime-receipt', {x['output_ref'] for x in c['outputs']})
-        for name, other in self.contracts.items():
-            if name != c['workflow_id']:
-                self.assertNotIn('send-teacher-only-outbox-batch-once', other['policy']['allowed_actions'])
+        for name in ('school-feedback-print-ready', 'school-feedback-packet-assembly'):
+            contract = self.contracts[name]
+            self.assertNotIn('school-hub-read', contract['execution']['required_capabilities'])
+            self.assertNotIn('school-gmail-outbox-send', contract['execution']['required_capabilities'])
+            self.assertNotIn('school-ic', contract['execution']['account_refs'])
+            self.assertNotIn('send-teacher-only-outbox-batch-once', contract['policy']['allowed_actions'])
+            self.assertNotIn('private:print-ready-email-outbox', {x['source_ref'] for x in contract['sources']})
+        packet = self.contracts['school-feedback-packet-assembly']
+        self.assertEqual(packet['trigger'], {'kind': 'on_demand'})
+        self.assertNotIn('school-feedback-generation', packet['execution']['required_capabilities'])
+        self.assertIn('generate-feedback', packet['policy']['prohibited_actions'])
+        self.assertIn('clear-yellow-before-pdf-readback', packet['policy']['prohibited_actions'])
+        self.assertIn('modify-working-hub-extension', c['policy']['prohibited_actions'])
 
     def test_questions_resume_without_whole_scope_certification(self):
         c = self.contracts['school-morning-report-resolution']
@@ -146,7 +150,7 @@ class SchoolWorkflowDefinitionsTest(unittest.TestCase):
         self.assertIn('private:current-friday-task-authority-and-owner', {x['source_ref'] for x in c['sources']})
 
     def test_missing_work_zero_and_window_require_authoritative_policy(self):
-        for name in ('school-ic-higher-only-entry', 'school-feedback-print-ready',
+        for name in ('school-ic-higher-only-entry',
                      'school-morning-report-resolution'):
             c = self.contracts[name]
             policy = [x for x in c['sources'] if x['source_ref'] ==

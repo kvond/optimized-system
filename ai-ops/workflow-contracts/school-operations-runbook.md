@@ -1,12 +1,13 @@
 # Portable school operations
 
-These seven definitions preserve the current school procedures for a fresh
+These school definitions preserve the current school procedures for a fresh
 executor. They are requirements, not a dispatcher, active schedule, credential
 store, new permission grant or proof of completed school work. They extend the
 existing `school-current.json` and historical task contracts without rewriting
-those snapshots. The October 14 persisted preparation/follow-up prompts and
-October 13 teacher-email/science-writing amendments take precedence over older
-text copied into those snapshots.
+those snapshots. The October 20 split supersedes older Hub/email-first instructions for the two
+daily tasks. Use the fresh Hub and spreadsheet prompts below; historical snapshots
+and earlier task text remain provenance, not live overrides. The working Hub
+extension and sole 07:00 IC helper stay unchanged.
 
 Use the existing deployed Hub and its deterministic preview/apply/verify
 contracts. Do not reimplement grading, create a second job or use a general
@@ -155,33 +156,10 @@ all assignments from one checked panel.
 
 ## school-morning-preparation-and-repair
 
-1. Verify current date, selected Agenda week, school account and sole ownership.
-   Read current Today/System, teacher Notes and actual grade/feedback state.
-2. Obtain complete IC roster evidence first. Reconcile through only the verified
-   authorized synchronizer; otherwise record status, exact stale/inaccessible
-   source and preserved complete baseline. Continue independent verified work.
-3. Gather one fresh selected Agenda/intake overview with bookends. Inspect exact
-   source IDs, original events, shared routes and current folder inventory.
-   Investigate holds before labeling student work. Known accepted shared-folder
-   decisions require no new teacher question.
-4. Apply already-authorized exact stale-link/source-binding/folder repairs only
-   through existing preview/apply/verify contracts. Preserve original Form
-   upload locations and all versions. Loose-file moves require proven identity,
-   destination and unchanged access. Private archive filing uses deployed rules
-   and content-verified copies of each distinct revision in existing folders.
-5. Finish all source/content/binding mutations before 07:00 Eastern. At cutoff,
-   stop those writes even if unfinished, record exact remaining scope in the
-   existing checklist for the next safe window and continue independent reads or
-   non-racing UI/code repair. This routine neither enters grades nor generates
-   feedback, sends email/messages or prints.
-6. For a technical issue, use the current Hub code/release workflow, appropriate
-   tests and deployed behavior checks. Keep native source/destination proof
-   separate from code/deployment readiness.
-7. Verify changed source/destination IDs, revision/content, private access and
-   index; update the same Hub/checklist with guarded Notes readback. Report actual
-   checked/filed/unchanged/held scope, roster state, before-07:00 completion,
-   actual helper evidence and exact remaining actions. A successful single class
-   or changed configuration cannot complete all-class source/IC requests.
+Use [Teaching Hub operations](../../prompts/school-hub-operations.md), the fresh
+06:30 weekday task. It owns roster/folder/filing/completion preparation and actual
+helper receipt reconciliation; feedback and packet judgments are separate.
+Protect the working extension, its settings/protocol and the 07:00 sole writer.
 
 ## school-ic-higher-only-entry
 
@@ -207,70 +185,20 @@ This is a contract for the existing helper, not a new Codex grade writer.
 
 ## school-feedback-print-ready
 
-1. Read current outbox status before generation; eligible already verified new
-   documents can progress independently of a source/model hold. Verify the
-   existing trusted adapter and pinned runtime through private configuration.
-   Do not replace its baseline, forge authentication or force checks to pass.
-2. For each class's latest closed lesson/newly completed eligible revision,
-   verify current Agenda Prompt 2, exact received source, canonical membership
-   and assessment identity. Reuse unchanged verified drafts/PDFs without another
-   model call. Preserve prior reports and any interrupted provider/save receipt.
-3. Create only the approved source-backed report types. Critical-aspect feedback
-   keeps its approved one-page format, attributed evidence, one focused question,
-   reflection instruction and writing space. Biology science-writing remains
-   separate, covering vocabulary, concepts, evidence and reasoning. Do not infer
-   chronology from first/revised boxes, filenames or file creation dates.
-4. The current science-writing amendment uses saved attributed observations,
-   not an unrequested rerating. Show one point per distinct reviewed piece in
-   each of four graphs, including distinct same-lesson pieces and explicit
-   unrated gaps. Do not average them into lesson points or call one point a
-   trend. Its separate practice page supplies three reviewed science facts and
-   an accessible CER with lines; supplied practice facts are not student evidence.
-   Paper practice is unassessed until returned paper is actually reviewed.
-5. Derive supportive missing-work contracts only from complete fresh coverage,
-   current roster/flags and factual due dates. Exclude Exempt, unassigned, newly
-   joined, future-due and extended work. Located work closes the corresponding
-   contract. If extension state is unavailable use a dated factual work-not-located
-   invitation, never an asserted missing-work finding or grade change. Combine
-   that student's current lessons on one page; old contracts cannot prove absence.
-6. Save each new exact report version once in the existing private student/class
-   folder beside actual copied work. Verify complete content, destination/access
-   and index. A filing failure preserves the saved report; do not regenerate it.
-   Keep Biology DTGSS class data without named evidence, separate private student
-   writing analysis and teacher action reports. Preserve teacher plans/notes.
-7. Update the existing index and four-class checklist. `Made` requires saved
-   exact student/report/revision readback. `Made this run` means actual new/revised
-   individually filed work, not recompilation of history. Keep report groups,
-   dates, source links and historical revisions; never reset/infer Printed or
-   Handed out, including after email.
-8. Finalize the immutable all-class packet for the actual Eastern saved-feedback
-   date. Include verified student critical-aspect, science-writing and eligible
-   current-work-contract reports; exclude teacher analyses and only suppress
-   proven duplicates. Read the entire saved PDF, page order, manifest and private
-   destination; link the exact packet in existing Today/current Agenda records.
-9. Drain the canonical teacher-only outbox using its existing adapter and exact
-   school Gmail sender/recipient resolved privately. No CC/BCC or student/guardian
-   delivery. Prepare one immutable incremental packet of eligible unsent versions,
-   verify complete bytes/hash/manifest and preserve the activation baseline and
-   existing confirmed corrected-report receipt. If that baseline/setup proof is
-   absent, hold rather than resend historical work.
-10. Immediately before one send, obtain the first successful `begin_send` reply
-    with `send_allowed_once`, preserve its claim privately, record durable intent
-    and compare current UTC to the returned expiry. Status or a repeat claim
-    readback is not new send authority. Send the exact prepared subject/attachment
-    once. Read actual Gmail SENT/raw MIME and verify exact sender, recipient,
-    subject, bytes/hash and source manifest before `confirm_sent`. Lost response,
-    expired evidence or uncertain delivery calls `hold_uncertain` when possible
-    and stops all sending. Never auto-retry, re-bill or reconstruct a reservation.
-11. Prepare the next eligible incremental batch only after confirmation, at most
-    ten batches per run. An A-to-A+B expansion sends only B; teacher marks never
-    deduplicate email. The existing normal limit is 200 reports/10 MB; when split,
-    number the body parts without changing the outbox's exact subject. Report
-    partial coverage if the bound leaves pending items. No empty email.
-12. Read outbox again. Confirmed delivery points the teacher to the emailed
-    attachment; it overrides older directions to click Hub Print. Only genuine
-    delivery failure or a requested reprint uses exact dated Hub recovery.
-    Do not print physically or claim handing-out. Notify only actionable change.
+Use [Spreadsheet feedback](../../prompts/school-spreadsheet-feedback.md), the
+rewritten 07:30 weekday task. Read the current Claude catch-up claim first; do not
+overlap its report/cell scopes. Generate and file only source-backed missing
+report versions using the current approved models. Hub health, Gmail and IC
+availability are not prerequisites. Preserve exact identity/history gates.
+
+## school-feedback-packet-assembly
+
+Stage B of the same spreadsheet task, also available on demand; no third schedule.
+Its separate definition routes saved-report assembly without generation capability.
+Use the same [spreadsheet procedure](../../prompts/school-spreadsheet-feedback.md).
+Verify exact PDF bytes/manifest/render and native link readback before included
+versions turn white. Newer report versions turn yellow again; teacher Printed
+and Handed marks and IC verification remain independent.
 
 ## school-morning-report-resolution
 

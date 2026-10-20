@@ -7,6 +7,8 @@ A new tool gets a row here before it is built. Decisions about names are recorde
 | Canonical | What it is | Read as, never write |
 |---|---|---|
 | Teaching Hub | Cloud Run app that reads Turn-in Forms and scores Notes and Revision | schoolwork hub, the dashboard. `school-workflow-hub` is only its repo and service name |
+| Teaching Hub operations | Daily roster, filing and completion preparation; `prompts/school-hub-operations.md` | |
+| Spreadsheet feedback | Source-backed feedback/writing reports and independent printable packets; `prompts/school-spreadsheet-feedback.md` | |
 | Feedback Pipeline | Workflows A, B, B1, B2 | grading scripts, feedback system |
 | Workflow A | Extracts student answers from Slides answer boxes | the parser, the extractor |
 | Workflow B1 | Personalized rewrite feedback docs and emails | feedback emails |

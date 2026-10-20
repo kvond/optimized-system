@@ -173,7 +173,7 @@ def invocation(candidate, candidate_path):
                '--workflow-id', candidate['workflow_id'],
                '--contract-sha256', candidate['contract']['sha256']]
     binding_rule = (
-        "Resolve the existing approved outbox adapter/runtime, exact request/result protocol and confirmed baseline from the private bindings; never invent a path or replacement worker. "
+        "Resolve the current spreadsheet, verified report/source records and Claude catch-up ownership from private bindings. Use prompts/school-spreadsheet-feedback.md; route saved-report packet assembly independently of generation, Hub, email and IC availability. "
         if candidate['workflow_id'] == 'school-feedback-print-ready' else ''
     )
     return (
