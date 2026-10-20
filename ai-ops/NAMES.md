@@ -15,6 +15,7 @@ A new tool gets a row here before it is built. Decisions about names are recorde
 | VT | Variation Theory | Visible Thinking (wrong) |
 | VT deck / cycle deck | Lesson deck built to VT structure | lesson slides |
 | vt-skill | Deck-finishing skill, `skills/vt-skill/` (renamed 2026-10-19) | vt-bio-skill, VT_Bio_skill |
+| vt-deck-completion | School Claude skill that finishes a partly updated VT deck (enhance, textboxes, codes), `skills/vt-deck-completion/` (added 2026-10-20) | deck repair |
 | Answerable Teaching | Katherine's method; the Answerable Teaching Manual | AT |
 | IC | Infinite Campus gradebook | eSchool, TAC |
 | I-Tracker | I-Tracker Pro family contact notes | parent log |
