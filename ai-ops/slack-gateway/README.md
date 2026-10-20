@@ -20,6 +20,8 @@ Current category lanes are encoded in `routing.py`. Planned technical/delegated 
 
 Explicit `Send to #channel: ...` / `Route this to #channel ...` directives (including Slack channel mentions) take priority. Clear `Blocked:`, `Failure:`, `Error:` and `Exception:` reports go to `#exceptions`; `Retirement candidate:` goes to `#decomission` (the workspace's spelling); teaching observations go to `#teaching-reflection`. Durable decisions retain `#decisions`. `Human action:` or an explicit statement that Kathy/Katherine must approve, choose, decide or sign in can route to `#kathy`; the router does not invent an approval request or decide that an agent has exhausted recovery options.
 
+Leading Slack user mentions do not hide the opening request or an explicit routing directive. Completion words in the request's supporting context do not turn an addressed task into an accomplishment. Mentions remain in the captured summary and do not enable a paid provider.
+
 These are routing rules, not execution or completion signals. The separate Slack workers read source threads and verify authority/ownership before doing work.
 
 ## Secrets

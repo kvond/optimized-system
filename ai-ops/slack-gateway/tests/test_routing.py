@@ -36,5 +36,36 @@ class RoutingTests(unittest.TestCase):
     def test_ambiguous_operational_defaults_openai(self):
         self.assertEqual(default_provider_for("Where should this go?"), ("openai", "gpt-6-luna"))
 
+    def test_addressed_requests_take_precedence_over_completion_context(self):
+        for address in ("<@U00000001>", "<@U00000001|Helper>", "<@U00000001>, <@U00000002>:"):
+            for request in (
+                "please update the GitHub tracker.\nDone: the router was fixed.",
+                "Please repair the failed Slack workflow",
+            ):
+                with self.subTest(address=address, request=request):
+                    message = f"{address} {request}"
+                    result = deterministic_route(message)
+                    self.assertEqual(result.kind, "task")
+                    self.assertEqual(result.destination_id, CHANNELS["work_que"])
+                    self.assertTrue(result.deterministic)
+                    self.assertIsNone(result.model)
+                    self.assertIn(address, result.summary)
+
+    def test_addressed_explicit_directive_beats_incidental_topic(self):
+        for directive in (
+            "Route this to #work-que:",
+            f"Send to <#{CHANNELS['work_que']}|work-que>:",
+        ):
+            with self.subTest(directive=directive):
+                result = deterministic_route(f"<@U00000001|Helper> {directive} the biology deck is finished")
+                self.assertEqual(result.kind, "task")
+                self.assertEqual(result.destination_id, CHANNELS["work_que"])
+
+    def test_address_does_not_turn_status_or_ambiguity_into_a_task(self):
+        result = deterministic_route("<@U00000001|Helper> the router is finished")
+        self.assertEqual(result.kind, "accomplishment")
+        self.assertEqual(result.destination_id, CHANNELS["system_review"])
+        self.assertEqual(deterministic_route("<@U00000001> this one").destination_id, CHANNELS["needs_rerouting"])
+
 if __name__ == "__main__":
     unittest.main()
