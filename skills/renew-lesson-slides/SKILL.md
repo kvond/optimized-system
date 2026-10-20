@@ -1,6 +1,6 @@
 ---
 name: renew-lesson-slides
-description: "Bring an existing Biology, Forensics or A&P lesson deck up to Katherine's current lesson renewal standard (vt-skill §17): a morpheme word-part activity at the start, own-words definitions then a mind map, every \"Relates to me\" page with its Notes code, working links, and AI duPont domain viewer sharing. Use on the deck Katherine has open (\"renew this deck\", \"apply the new slide specs here\") or on a coordinated batch of decks. Triggers - \"renew lesson slides\", \"renew this deck\", \"apply the renewal\", \"morpheme slide\", \"relates to me pages\", \"sweep the decks\"."
+description: "Bring an existing Biology, Forensics or A&P lesson deck up to Katherine's current lesson renewal standard (vt-skill §17): morphemes, definitions and mind maps; personal-connection Notes; visual reasoning, response modes and assertion/evidence titles; provisional 90-minute days; links, sharing and release checks. Use on the deck Katherine has open (\"renew this deck\", \"apply the new slide specs here\") or on a coordinated batch of decks. Triggers - \"renew lesson slides\", \"renew this deck\", \"apply the renewal\", \"morpheme slide\", \"relates to me pages\", \"sweep the decks\"."
 ---
 
 # Renew lesson slides
@@ -14,13 +14,16 @@ each run. When Katherine adds a specification, it goes into §17 first.
 1. Identify the deck: course, week or cycle from the current Master Agenda
    (`Agenda 26-27 CLEAN`), and the exact deck ID. If Katherine is editing it right now,
    only propose; do not write.
-2. Inventory every gap against §17.1–17.5, slide by slide. That includes every
-   "Relates to me" page, not a sample.
+2. Inventory every gap against §17.1–17.9, slide by slide. That includes every
+   "Relates to me" page, each student-response mode, every run of two or more writing
+   slides, before/during/after-discernment titles, and activity-aware 90-minute day
+   divisions. Record deferred teacher-edited decks; do not audit only a sample.
 3. Make the smallest changes that close the gaps. Take a fresh revision check before
    writing, and keep originals, media, student copies, codes unrelated to §17, and
    grades unchanged.
-4. Run §17.6 and report exactly what passed, with the deck link and any item left for
-   Katherine.
+4. Run §17.6 and report exactly what passed, with the deck link and remaining owner
+   actions. Follow §17.9 for authorized release order and school-account readback;
+   distinguish reviewed-deck readiness from verified Agenda/Schoology completion.
 
 ## A batch (the retrospective sweep)
 

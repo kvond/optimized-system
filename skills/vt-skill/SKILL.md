@@ -227,6 +227,14 @@ A deck is not finished when it has the correct slide types in the correct order.
 deck is finished when each slide does one job, and when the title of the slide
 names that job.
 
+**Apply the current learning-design standard during initial construction as well
+as renewal.** Read [§17.7–17.9](reference/17-lesson-renewal.md#177-visual-reasoning-response-mode-and-titles)
+before designing slides: visual relationships, deliberate response modes,
+before/during/after discernment, provisional 90-minute days, and verified release
+links are required review steps. Older examples do not override these later
+requirements. Preserve the original-first course rules in §16.1 when applying
+the organization advice below.
+
 Read your deck against Cycle 02. Its content slides have the titles "Makers and
 eaters", "Zoom out from your plate", and "Where does the other 90% go?". Each title
 tells the student what the slide is for.
@@ -385,6 +393,8 @@ customer.
 6. Compare the slide count to the page count of the render. The two must be equal.
 7. Run `validate.py out.pptx --original src.pptx`.
 8. Run `deck_link_check.py out.pptx`.
+   Also complete the learning-design, pacing and release checks in §17.6–17.9;
+   marker and link scripts cannot establish those outcomes.
 9. Run `scripts/deck_lint.py` from the repository clone. It is the last gate: zero HARD
    findings or the deck does not ship; read the ADVISORY block and the `markers present:`
    line either way (§3c). `deck_link_check.py` is beside it at `scripts/deck_link_check.py`
