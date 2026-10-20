@@ -68,6 +68,12 @@ or short fur?" produces an answer, and *then* "why did you choose?" opens it.
 Put the variation inside the question. Do not name the aspect on slide 1 and wait
 for the Contrast Set on slide 2 to supply the difference.
 
+Show that difference as well: each VT comparison slide needs pictures that let
+students inspect the cases. Add them when absent, retain suitable existing
+pictures, and check the contrast at final size without revealing the answer.
+For sourcing, attribution and layout, use [the image standard](../vt-skill/reference/06-images.md)
+and [the shared initial-build/renewal rule](../vt-skill/reference/17-lesson-renewal.md#177-visual-reasoning-response-mode-and-titles).
+
 **The check, and it is mechanical.** Does the Critical Aspect question text itself
 contain a comparison, a choice between named alternatives, or a stated change
 condition? If it does not, it is structurally the polar bear question, whatever
@@ -528,6 +534,8 @@ positions, so a deck built this way cannot drift.
 - Every example in a contrast set differs in exactly one dimension.
 - The Critical Aspect question carries a difference in its own text — a
   comparison, named alternatives, or a stated change condition.
+- Every VT comparison has useful case pictures showing the intended difference;
+  missing pictures have been added and visually checked (§2).
 - The Pattern Break actually strains the rule the Build a Rule slide produces.
 - The fusion case cannot be answered from one aspect.
 - The what-if is individual and written, and it names what changes and what is

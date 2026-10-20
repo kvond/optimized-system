@@ -5,6 +5,14 @@
 A deck is not austere text. Put graphics through the deck where they teach. A slide
 that has text only is not finished.
 
+**Pictures for differences and contrasts (Katherine, 2026-10-20).** In both initial
+deck setup and updates to existing lessons, inspect every VT slide that asks
+students to compare cases or discern a difference. If it lacks pictures that show
+the intended contrast, add them. A decorative picture or icon does not satisfy
+this requirement. Keep suitable existing pictures rather than adding duplicates.
+See [the renewal acceptance rule](17-lesson-renewal.md#177-visual-reasoning-response-mode-and-titles),
+which applies to Biology, Forensics and A&P.
+
 **Where to put an image**
 
 - Contrast slides and case-pair slides. Use one image for each case. Use the same
@@ -19,8 +27,9 @@ that has text only is not finished.
 
 **Where not to put an image**
 
-- Question slides and writing slides stay white. The plain look is deliberate and
-  distracts the student less.
+- Question slides and writing slides keep an uncluttered white background and
+  clear response space. A comparison question still needs the case pictures that
+  make its difference visible; the plain-background rule does not exclude them.
 - Never put a decorative photograph on an information slide. If the image does not
   make the idea clear, leave the space empty.
 
@@ -43,6 +52,11 @@ that has text only is not finished.
 2. Crop each image from the center to the target ratio. The image then keeps its
    proportions.
 3. Render the slides you changed. Look at them. No image can touch a writing box.
+4. Inspect every comparison slide at its final size: each case is visible, the
+   intended difference can be discerned, and scale/crop/placement do not introduce
+   an unintended competing difference. Labels must not reveal an answer students
+   have yet to attempt. Record unresolved picture gaps by slide; a text dump or
+   image count alone does not establish this pass.
 
 **What to record.** Record `LicenseShortName`, `Artist`, `LicenseUrl`, and the URL
 of the Commons page for each image. Record them when you get the image. Make two

@@ -432,6 +432,11 @@ customer.
   A question that names the aspect and waits for the Contrast Set on the next
   slide is structurally the polar bear question and the room will go quiet before
   the contrast arrives. This is mechanically checkable.
+- **Every VT comparison has useful case pictures.** Inspect each slide asking
+  students to discern differences or contrasts; add missing pictures and verify
+  the visible comparison in the saved render. Follow §6 and §17.7 for sources,
+  neutral labels and preserved response space. Text and image counts alone do not
+  establish this check.
 
 [Only the teacher note slide's presence is a hard failure. The other four are
 advisory: they are reported and they do not stop a deck shipping. Most decks will
