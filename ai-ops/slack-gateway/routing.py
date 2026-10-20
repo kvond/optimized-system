@@ -5,7 +5,7 @@ import json
 import re
 from dataclasses import dataclass, asdict
 
-ROUTER_VERSION = "2026-10-16.1"
+ROUTER_VERSION = "2026-10-19.1"
 
 CHANNELS = {
     "optimize": "C0C9AQ2FK3P",
@@ -72,7 +72,13 @@ def provider_override(text: str) -> tuple[str | None, str]:
     return None, value
 
 
+def _without_addressees(text: str) -> str:
+    # Slack addresses are metadata before the request, not part of its wording.
+    return re.sub(r"^(?:\s*<@[A-Z0-9]+(?:\|[^>]+)?>[\s,:]*)+", "", text, flags=re.I)
+
+
 def _kind(text: str) -> tuple[str, float]:
+    text = _without_addressees(text)
     lower = text.lower()
     # Requests mentioning a completed/failed item are still requests.
     if re.search(r"^(?:please\s+)?(?:task|todo|to-do|need to|remember to|add to|fix|repair|implement|audit|reconcile|verify|update|route|send|file|queue)\b", lower) or re.search(r"\bi need (?:you|us|to)\b", lower):
@@ -93,6 +99,7 @@ def _kind(text: str) -> tuple[str, float]:
 
 
 def _area_destination(text: str, kind: str) -> tuple[str, str, float]:
+    text = _without_addressees(text)
     lower = text.lower()
     # Only explicit routing directives override topic lanes, not incidental mentions.
     directive = re.match(r"^(?:please\s+)?(?:route|send|file|queue)\s+(?:(?:this|it)\s+)?(?:to|in)\s+(?:<#([A-Z0-9]+)(?:\|[^>]+)?>|#([a-z-]+))(?=\s|:|$)", text, re.I)
