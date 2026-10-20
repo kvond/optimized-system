@@ -4,14 +4,18 @@ Consolidated October 17, 2026. Private operational guidance, without manuscript 
 
 ## Authority and editing boundary
 
-Katherine's current instructions and latest draft control. Apply the rulings in `skills/book-revision/reference/decisions.md`, especially R6, R7, R12 and R22. Read the full [voice guide](https://github.com/kvond/Answerable-Teaching/blob/main/book-compile/voice-guide.md) and [tics list](https://github.com/kvond/Answerable-Teaching/blob/main/book-compile/tics-list.md) before drafting or editing; both remain preserved in the legacy repository. The shorter October 15 handover copy of the guide lacks later material and is not the full editing contract.
+Katherine's current instructions and latest draft control. Read the current live manuscript as the primary voice evidence before drafting; a generic style summary alone is insufficient. Apply the rulings in `skills/book-revision/reference/decisions.md`, especially R6, R7, R12 and R22, together with the [October 17 author corrections](https://github.com/kvond/optimized-system/issues/37#issuecomment-6241303886). Read the full [voice guide](https://github.com/kvond/Answerable-Teaching/blob/main/book-compile/voice-guide.md) and [tics list](https://github.com/kvond/Answerable-Teaching/blob/main/book-compile/tics-list.md) before drafting or editing; both remain preserved in the legacy repository. The shorter October 15 handover copy of the guide lacks later material and is not the full editing contract.
 
 Preserve her wording. Fix mechanics, grammar, minor phrasing and redundant restatement. Put substantive changes and challenges in brackets as suggestions; do not silently replace her argument. Show the exact passage and change before a canonical manuscript save. AI scaffolding does not become body text until she rewrites it. Her draft pass and final chapter/book passes remain hers.
+
+Katherine controls what belongs in the text. An editor's preferred structure is not authority to drop, relocate, merge, compress or replace a substantive point. Flag a proposed structural change before applying it. Distinguish true redundant restatement from development of an argument; retain the latter rather than cutting it as repetition.
 
 ## Voice to preserve
 
 - First-person, working-teacher prose. A real scene carries the argument when author-supplied evidence is available; never invent a student, exchange, classroom detail or personal anecdote to satisfy a style pattern.
 - Preserve self-implication, the fairness concession, dry humor and colloquial or acid lines. Flag a reviewer risk rather than removing her words.
+- Use normal multi-sentence paragraphs. A one-sentence paragraph is rare and reserved for an actual hinge, major point or transition question.
+- Do not manufacture warmth, empathy, uplift, drama or moral feeling. Preserve feeling and the dry or sardonic edge when supplied by Katherine; do not add sentiment or jokes to imitate them.
 - Plain declaratives; each sentence adds information. Keep long accretive sentences, semicolon chains, colons, parentheses and her existing fragments. Use sparse dashes. Do not add fragments to imitate her rhythm.
 - Rhetorical questions turn the argument. Define coined terms on arrival and keep distinctions in the field's vocabulary. Do not substitute metaphors for available terms.
 - Ground theory in classroom particulars. Keep scholarly apparatus largely in endnotes. Verify attribution to the specific finding or term; flag unsupported citations rather than filling them in.
@@ -26,6 +30,8 @@ The guide's measured frequencies describe a historical corpus. They are diagnost
 ## Concept checks that travel with the voice
 
 R22 requires checking student visibility wherever a chapter discusses dialogic methods, exact move names against The Moves, causal scope and equity caution. Keep these as checks of Katherine's existing constructs, not new rubric criteria. Historical chapter numbers must be checked against the live manuscript.
+
+The October 17 author corrections also govern the current developing section's order, developmental mechanism, structural opportunity conditions and theoretical framing. Read those [section-specific rulings](https://github.com/kvond/optimized-system/issues/37#issuecomment-6241303886) against the actual live passage before proposing changes. Older chapter findings and AI rewrites do not supersede them. The source link preserves the exact instructions without reproducing manuscript cases here.
 
 ## PhD-level thinking: preserve complexity, do not average it
 
@@ -73,3 +79,4 @@ Sources:
 - [October 15 writing-flow reconciliation](https://answerableteaching.slack.com/archives/C0C9FGVK1DY/p1792067854760649)
 - [Reflection Ledger + Substack Bank](https://docs.google.com/document/d/1OG25stqpcUmSFCdAMrZrofZL5LnjCWx_DWIla2O2mfM/edit)
 - [Single live Answerable Teaching source](https://docs.google.com/document/d/1O5it34GtqSnwNu5CReDt_5X7Kx05m8xEWUcROD9cgk8/edit)
+- [October 17 author corrections](https://github.com/kvond/optimized-system/issues/37#issuecomment-6241303886)

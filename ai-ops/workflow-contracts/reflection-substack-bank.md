@@ -4,7 +4,7 @@ Status: reusable policy consolidated October 12, 2026 from a verified live sourc
 
 ## Source and preservation
 
-Use [Answerable Teaching — Reflection Ledger + Substack Bank](https://docs.google.com/document/d/1OG25stqpcUmSFCdAMrZrofZL5LnjCWx_DWIla2O2mfM/edit), modified October 11, 2026 at 17:32:24 UTC, as the verified canonical reflection/bank source. Before distillation, preserve the full original reflection and original date in that source. Retain provenance and history. Portable contracts contain generalized rules only; keep draft prose and identifying cases out of Git.
+The October 11 source was [Answerable Teaching — Reflection Ledger + Substack Bank](https://docs.google.com/document/d/1OG25stqpcUmSFCdAMrZrofZL5LnjCWx_DWIla2O2mfM/edit), modified October 11, 2026 at 17:32:24 UTC. Preserve that record and its history. The later October 17 writing-flow correction below governs current capture and manuscript work; the ledger remains the existing placement/bank record. Before distillation, preserve the full original reflection and original date in the single current source. Retain operational source history separately from retired manuscript authorship tags. Portable contracts contain generalized rules only; keep draft prose and identifying cases out of Git.
 
 ## Manuscript integration
 
@@ -36,6 +36,8 @@ A future authorized run needs exact source revision, current chapter/destination
 ## October 15 instructions reconciled October 17
 
 Later [writing-flow instructions](https://answerableteaching.slack.com/archives/C0C9FGVK1DY/p1792067854760649) update the October 11 ledger: discuss naturally in ChatGPT; save developed reflection in #teaching-reflection; use Roam as an archive/source. The ledger remains the existing placement/bank record rather than a reason to build another tracker. Its older capture wording is historical where it differs.
+
+The subsequent October 17 correction, recorded in [current writing-voice guidance](../knowledge/writing-voice.md) and the [book-revision source table](../../skills/book-revision/SKILL.md), establishes **Answerable Teaching — Full added notes** ([single live Google Doc](https://docs.google.com/document/d/1O5it34GtqSnwNu5CReDt_5X7Kx05m8xEWUcROD9cgk8/edit)) as the canonical capture/manuscript source. Preserve developed thinking and propose bounded placements there. The earlier Working Copy is historical recovery material, not a second live manuscript; the older Slack capture instruction does not create another canonical copy. GitHub remains the backup/version-history layer under the existing privacy rules. These repository instructions identify the destination; they do not establish a fresh live read or saved integration.
 
 Draft only the affected section and show substantive suggestions before canonical saves. Candidate manuscript material remains HUMAN REVIEW until Katherine accepts or revises it. She retains the draft pass and final chapter/book passes. Apply `../knowledge/writing-voice.md` and its full-source editing boundary. Do not revive retired contribution tags under the name of provenance: source/placement receipts are operational records, not prose authorship labels.
 
