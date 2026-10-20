@@ -10,6 +10,11 @@ deck to Katherine. It covers slide order, response slides, images, icons,
 appendix slides, and link tests. It sits above `deck_lint.py`. `deck_lint.py`
 stays the last gate.
 
+Before finishing, review student-facing wording on every slide type under
+[§17.10](reference/17-lesson-renewal.md#1710-clear-student-facing-wording-on-every-slide):
+short, explicit conditions and one clear ask at a time, suited to the course and
+students without reducing the reasoning demand or revealing the answer.
+
 Katherine established this skill on 2026-08-06, on Cycle 2. Its dated revision history is in
 [`reference/00-revision-history.md`](reference/00-revision-history.md).
 
