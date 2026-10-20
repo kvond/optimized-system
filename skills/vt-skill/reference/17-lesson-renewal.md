@@ -2,7 +2,7 @@
 
 ## 17. Lesson renewal standard (added 2026-10-16)
 
-Katherine's specifications of October 16–17 for every lesson deck in Biology, Forensics and
+Katherine's specifications of October 16–20 for every lesson deck in Biology, Forensics and
 A&P. They apply to new decks as they are built and to already-made decks through the
 `renew-lesson-slides` skill, which runs this section on one deck or a batch. A deck is
 not ready until §17.6 passes. When Katherine adds a specification, it goes here first,
@@ -94,8 +94,9 @@ deck public, and never give edit access to the domain.
    Slide-number references still point where they say (§11).
 7. A saved readback of the changed slides. Report exactly what was checked, never a
    whole-deck pass from a partial look.
-8. Visual reasoning, response mode, consecutive-writing review and
-   before/during/after-discernment titles pass 17.7 on every relevant slide.
+8. Visual reasoning, comparison-picture coverage, response mode, consecutive-writing
+   review and before/during/after-discernment titles pass 17.7 on every relevant
+   slide. Verify the actual pictures in the saved render, not just their count.
 9. Provisional day divisions pass the 90-minute activity-aware review in 17.8.
 10. Report reviewed-deck readiness separately from classroom release. A lesson is
     not complete until the authorized Agenda and Schoology link checks in 17.9
@@ -108,6 +109,16 @@ three courses. The [initial-build additions](https://answerableteaching.slack.co
 and [renewal additions](https://answerableteaching.slack.com/archives/C0C8YU5RDDM/p1792161778598399)
 record Katherine's October 17 requirements.
 
+- **Pictures for differences and contrasts (October 20):** in initial deck setup
+  and renewal, inspect every VT slide that asks students to compare or discern a
+  difference. If pictures illustrating that contrast are absent, add them. Retain
+  useful existing pictures; decoration and icons do not count as comparison
+  evidence. Put the cases side by side with comparable size, crop and placement
+  so the intended feature is visible without introducing unrelated differences.
+  Keep labels neutral until students attempt the question and preserve editable
+  response space. Use the sourcing, attribution and visual checks in
+  [§6](06-images.md). This is required even when the comparison is on a question
+  slide. [Katherine's request](https://answerableteaching.slack.com/archives/C0C8YU5RDDM/p1792509885252479).
 - **Show the thinking.** Represent relationships visually, place comparison cases
   side by side, show change with sequence/arrows/before-and-after states, and make
   mechanisms visible. Reserve most text for questions, assertions, labels and
