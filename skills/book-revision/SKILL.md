@@ -7,6 +7,8 @@ description: The spine for revising Answerable Teaching. Load it first in any se
 
 Read this before any lane. It is short on purpose; the lanes carry the work lists.
 
+Before drafting or running a lane, read the current live manuscript and [current writing-voice guidance](../../ai-ops/knowledge/writing-voice.md), including the linked October 17 author corrections. The manuscript is the primary voice evidence. Later author rulings govern over older findings or an editor's preferred structure; structural suggestions remain suggestions until authorized.
+
 ## What a revision pass is
 
 A pass takes one dated snapshot of the manuscript, runs six lanes over it in parallel, and then runs one integration step. A lane is a single concern (the argument arc, the terms, the claims, the notes and attributions, the continuity of cases and pointers, the residue and mechanics). Each lane reads the snapshot and writes packets, one packet per chapter, into its own folder. No lane touches the manuscript. The integrator reads every packet for a chapter, applies what the prose rule allows, and leaves the rest in brackets for Katherine. Several agents can run at once because they never write to the same place: a lane owns its packet folder and nothing else.
