@@ -47,6 +47,12 @@ Write down the dependency.
 
 ## 2. The 5 core questions
 
+During origination, apply the shared [clear-wording standard](../vt-skill/reference/17-lesson-renewal.md#1710-clear-student-facing-wording-on-every-slide)
+to every slide type, not only these questions. State necessary conditions in short
+sentences and give one clear ask at a time. Match the course, topic and student
+level while preserving the scientific reasoning demand and neutral wording before
+discernment.
+
 In this order, once for each critical aspect.
 
 1. **Critical Aspect question.** Opens the aspect.
@@ -67,6 +73,12 @@ or short fur?" produces an answer, and *then* "why did you choose?" opens it.
 
 Put the variation inside the question. Do not name the aspect on slide 1 and wait
 for the Contrast Set on slide 2 to supply the difference.
+
+Show that difference as well: each VT comparison slide needs pictures that let
+students inspect the cases. Add them when absent, retain suitable existing
+pictures, and check the contrast at final size without revealing the answer.
+For sourcing, attribution and layout, use [the image standard](../vt-skill/reference/06-images.md)
+and [the shared initial-build/renewal rule](../vt-skill/reference/17-lesson-renewal.md#177-visual-reasoning-response-mode-and-titles).
 
 **The check, and it is mechanical.** Does the Critical Aspect question text itself
 contain a comparison, a choice between named alternatives, or a stated change
@@ -525,9 +537,13 @@ positions, so a deck built this way cannot drift.
 
 ## 9. Before you teach it
 
+- Every slide type has the student-facing wording review in §17.10; the saved
+  wording is concise and appropriate without losing conditions or giving answers.
 - Every example in a contrast set differs in exactly one dimension.
 - The Critical Aspect question carries a difference in its own text — a
   comparison, named alternatives, or a stated change condition.
+- Every VT comparison has useful case pictures showing the intended difference;
+  missing pictures have been added and visually checked (§2).
 - The Pattern Break actually strains the rule the Build a Rule slide produces.
 - The fusion case cannot be answered from one aspect.
 - The what-if is individual and written, and it names what changes and what is

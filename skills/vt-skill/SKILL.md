@@ -10,6 +10,11 @@ deck to Katherine. It covers slide order, response slides, images, icons,
 appendix slides, and link tests. It sits above `deck_lint.py`. `deck_lint.py`
 stays the last gate.
 
+Before finishing, review student-facing wording on every slide type under
+[§17.10](reference/17-lesson-renewal.md#1710-clear-student-facing-wording-on-every-slide):
+short, explicit conditions and one clear ask at a time, suited to the course and
+students without reducing the reasoning demand or revealing the answer.
+
 Katherine established this skill on 2026-08-06, on Cycle 2. Its dated revision history is in
 [`reference/00-revision-history.md`](reference/00-revision-history.md).
 
@@ -432,6 +437,11 @@ customer.
   A question that names the aspect and waits for the Contrast Set on the next
   slide is structurally the polar bear question and the room will go quiet before
   the contrast arrives. This is mechanically checkable.
+- **Every VT comparison has useful case pictures.** Inspect each slide asking
+  students to discern differences or contrasts; add missing pictures and verify
+  the visible comparison in the saved render. Follow §6 and §17.7 for sources,
+  neutral labels and preserved response space. Text and image counts alone do not
+  establish this check.
 
 [Only the teacher note slide's presence is a hard failure. The other four are
 advisory: they are reported and they do not stop a deck shipping. Most decks will

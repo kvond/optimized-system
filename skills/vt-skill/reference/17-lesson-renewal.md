@@ -2,7 +2,7 @@
 
 ## 17. Lesson renewal standard (added 2026-10-16)
 
-Katherine's specifications of October 16–17 for every lesson deck in Biology, Forensics and
+Katherine's specifications of October 16–20 for every lesson deck in Biology, Forensics and
 A&P. They apply to new decks as they are built and to already-made decks through the
 `renew-lesson-slides` skill, which runs this section on one deck or a batch. A deck is
 not ready until §17.6 passes. When Katherine adds a specification, it goes here first,
@@ -94,12 +94,16 @@ deck public, and never give edit access to the domain.
    Slide-number references still point where they say (§11).
 7. A saved readback of the changed slides. Report exactly what was checked, never a
    whole-deck pass from a partial look.
-8. Visual reasoning, response mode, consecutive-writing review and
-   before/during/after-discernment titles pass 17.7 on every relevant slide.
+8. Visual reasoning, comparison-picture coverage, response mode, consecutive-writing
+   review and before/during/after-discernment titles pass 17.7 on every relevant
+   slide. Verify the actual pictures in the saved render, not just their count.
 9. Provisional day divisions pass the 90-minute activity-aware review in 17.8.
 10. Report reviewed-deck readiness separately from classroom release. A lesson is
     not complete until the authorized Agenda and Schoology link checks in 17.9
     are verified; a deferred release stays explicitly open.
+11. Every slide type has the clear, course-appropriate student-facing wording
+    review in 17.10. Record exact coverage and inspect saved renders of changed
+    slides; a few improved core questions do not establish a whole-deck pass.
 
 ### 17.7 Visual reasoning, response mode and titles
 
@@ -108,6 +112,16 @@ three courses. The [initial-build additions](https://answerableteaching.slack.co
 and [renewal additions](https://answerableteaching.slack.com/archives/C0C8YU5RDDM/p1792161778598399)
 record Katherine's October 17 requirements.
 
+- **Pictures for differences and contrasts (October 20):** in initial deck setup
+  and renewal, inspect every VT slide that asks students to compare or discern a
+  difference. If pictures illustrating that contrast are absent, add them. Retain
+  useful existing pictures; decoration and icons do not count as comparison
+  evidence. Put the cases side by side with comparable size, crop and placement
+  so the intended feature is visible without introducing unrelated differences.
+  Keep labels neutral until students attempt the question and preserve editable
+  response space. Use the sourcing, attribution and visual checks in
+  [§6](06-images.md). This is required even when the comparison is on a question
+  slide. [Katherine's request](https://answerableteaching.slack.com/archives/C0C8YU5RDDM/p1792509885252479).
 - **Show the thinking.** Represent relationships visually, place comparison cases
   side by side, show change with sequence/arrows/before-and-after states, and make
   mechanisms visible. Reserve most text for questions, assertions, labels and
@@ -182,3 +196,46 @@ and bulk-dispatch gates remain in `renew-lesson-slides` and
 [issue #33](https://github.com/kvond/optimized-system/issues/33). A reviewed
 draft, passing linter or completed plan is not a released lesson: keep any unverified
 Agenda/Schoology transition open, and archive nothing before verified relinking.
+
+### 17.10 Clear student-facing wording on every slide
+
+Apply this during new-deck origination and finishing, and when renewing this year's
+existing Biology, Forensics and A&P decks. Katherine's [wording request](https://answerableteaching.slack.com/archives/C0C8YU5RDDM/p1792514789742109)
+and [all-slides, all-decks clarification](https://answerableteaching.slack.com/archives/C0C8YU5RDDM/p1792516114272639)
+cover every slide type, not just the 5 core questions. Her Body Tissues example
+shows the desired outcome: necessary conditions in short sentences, followed by
+one clear ask at a time.
+
+- Inspect titles, explanations, case/data labels, directions, questions and
+  response prompts. Use language suited to the course, topic and students; retain
+  scientific terms students are learning and clarify an unfamiliar term when the
+  task needs it. Leave wording that is already clear alone.
+- State the situation and necessary conditions before the question. Name the cases
+  and what changes or stays the same explicitly. Break stacked clauses and several
+  embedded asks into short sentences or a short numbered sequence, preserving their
+  order and relationships. Directions name the action and target.
+- Preserve the scientific point and reasoning demand: prediction, comparison,
+  explanation, justification, rule-building and transfer remain the same tasks.
+  Keep variable/invariant conditions and the limits of a model or inference.
+  Do not replace an explanation with a recall question, add grading criteria, or
+  give students the conclusion they are meant to discern. A clearer question must
+  remain neutral before discernment (17.7).
+- For example, instead of “Which should allow faster diffusion? Explain which one
+  condition changes,” state the actual comparison: “The barriers differ only in
+  thickness. A is 1 unit thick. B is 2 units thick. [Keep the source's other stated
+  conditions.] Which lets gas through faster? Then name the one difference.” The
+  bracketed instruction is for the author, never text to paste into a deck. Do not
+  copy example facts or proposed answers into an unrelated lesson.
+- For an existing deck, read the current source before editing; Katherine may have
+  already simplified it. Make object-precise changes only where needed. Preserve
+  answer keys, teacher notes, media, response space, stable marker strings and
+  response bindings. Keep source-original and student work intact. Record the
+  slide/object ID, before/after wording and reason for each change; use a fresh
+  revision guard, saved readback and changed-slide render QA.
+
+For a retrospective batch, keep one writer per exact deck and independently review
+one concrete wording pilot per course before expansion. This narrow wording review
+does not replace the full renewal pilot/Claude review or classroom-release gates.
+Track decks and slides audited, edited, unchanged, deferred and unavailable
+separately. Protected teacher-edited decks remain deferred; uncertain lesson/source
+identity remains unresolved rather than being inferred from a title or week.

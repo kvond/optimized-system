@@ -14,10 +14,13 @@ each run. When Katherine adds a specification, it goes into §17 first.
 1. Identify the deck: course, week or cycle from the current Master Agenda
    (`Agenda 26-27 CLEAN`), and the exact deck ID. If Katherine is editing it right now,
    only propose; do not write.
-2. Inventory every gap against §17.1–17.9, slide by slide. That includes every
+2. Inventory every gap against §17.1–17.10, slide by slide. That includes every
    "Relates to me" page, each student-response mode, every run of two or more writing
-   slides, before/during/after-discernment titles, and activity-aware 90-minute day
-   divisions. Record deferred teacher-edited decks; do not audit only a sample.
+   slides, pictures illustrating each VT difference/contrast (add them where
+   absent, §17.7 and §6), before/during/after-discernment titles, and activity-aware
+   90-minute day divisions. Record deferred teacher-edited decks; do not audit only
+   a sample. Apply §17.10 to student-facing wording on all slide types, keeping
+   clear wording and the scientific reasoning demand intact.
 3. Make the smallest changes that close the gaps. Take a fresh revision check before
    writing, and keep originals, media, student copies, codes unrelated to §17, and
    grades unchanged.
