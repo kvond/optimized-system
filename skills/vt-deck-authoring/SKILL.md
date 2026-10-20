@@ -47,6 +47,12 @@ Write down the dependency.
 
 ## 2. The 5 core questions
 
+During origination, apply the shared [clear-wording standard](../vt-skill/reference/17-lesson-renewal.md#1710-clear-student-facing-wording-on-every-slide)
+to every slide type, not only these questions. State necessary conditions in short
+sentences and give one clear ask at a time. Match the course, topic and student
+level while preserving the scientific reasoning demand and neutral wording before
+discernment.
+
 In this order, once for each critical aspect.
 
 1. **Critical Aspect question.** Opens the aspect.
@@ -531,6 +537,8 @@ positions, so a deck built this way cannot drift.
 
 ## 9. Before you teach it
 
+- Every slide type has the student-facing wording review in §17.10; the saved
+  wording is concise and appropriate without losing conditions or giving answers.
 - Every example in a contrast set differs in exactly one dimension.
 - The Critical Aspect question carries a difference in its own text — a
   comparison, named alternatives, or a stated change condition.
