@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "workflow_id": "school-feedback-packet-assembly",
+  "contract_version": "2026-10-20.1",
+  "title": "Assemble saved feedback and writing reports independently",
+  "domain": "school",
+  "owners": {
+    "execution_owner_ref": "home-codex",
+    "maintenance_owner_ref": "codex-school-maintenance"
+  },
+  "execution": {
+    "executor_ref": "home-codex",
+    "account_refs": [
+      "school-google"
+    ],
+    "required_capabilities": [
+      "school-drive-read",
+      "school-sheets-read-write",
+      "school-private-filing",
+      "school-pdf-assembly"
+    ],
+    "privacy_partition": "school-private",
+    "concurrency_key": "school-shared-browser-and-sources"
+  },
+  "trigger": {
+    "kind": "on_demand"
+  },
+  "sources": [
+    {
+      "source_ref": "private:frozen-verified-report-selection",
+      "required": true,
+      "coverage": "complete",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:student-feedback-links-sheet",
+      "required": true,
+      "coverage": "bounded",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:verified-private-packet-destination",
+      "required": true,
+      "coverage": "bounded",
+      "max_age_seconds": 300
+    },
+    {
+      "source_ref": "private:feedback-writer-ownership",
+      "required": true,
+      "coverage": "bounded",
+      "max_age_seconds": 300
+    }
+  ],
+  "outputs": [
+    {
+      "output_ref": "private:dated-all-class-print-packet",
+      "kind": "artifact",
+      "verification": "content_and_destination_readback"
+    },
+    {
+      "output_ref": "private:exact-packet-manifest-and-readback",
+      "kind": "receipt",
+      "verification": "content_and_destination_readback"
+    },
+    {
+      "output_ref": "private:feedback-sheet-packet-inclusion-readback",
+      "kind": "receipt",
+      "verification": "content_and_destination_readback"
+    }
+  ],
+  "policy": {
+    "allowed_actions": [
+      "reuse-unchanged-verified-packet",
+      "compile-verified-dated-packet",
+      "record-exact-packet-version-inclusion",
+      "publish-verified-spreadsheet-pdf-link"
+    ],
+    "prohibited_actions": [
+      "copy-credentials-or-profiles",
+      "broaden-sharing",
+      "delete-or-restore-source-history",
+      "infer-absence-from-provider-failure",
+      "retry-uncertain-write",
+      "clear-uncertainty-automatically",
+      "change-teacher-delivery-marks",
+      "invent-identity-or-lesson-match",
+      "create-competing-schedule",
+      "write-ic-grades",
+      "move-original-submission",
+      "alter-source-content",
+      "send-student-or-guardian-message",
+      "physically-print",
+      "regenerate-unchanged-feedback",
+      "retry-uncertain-model-call",
+      "retry-uncertain-email-send",
+      "retroactively-email-historical-baseline",
+      "infer-growth-from-file-dates",
+      "modify-working-hub-extension",
+      "launch-overlapping-claude-catchup",
+      "send-feedback-email",
+      "invent-writing-sample-or-rating",
+      "generate-feedback",
+      "rerate-saved-writing",
+      "clear-yellow-before-pdf-readback",
+      "claim-current-intake-coverage-from-saved-reports"
+    ],
+    "dependency_checks": [
+      "Verify school identity, private destination, frozen exact saved-report selection and sole actual writer; never package a document currently being edited.",
+      "Use exact saved verified report versions with known source/review chronology; whole-class completeness is not inferred from latest-available saved reports.",
+      "This independent operation requires no generation/model capability, Hub health, email outbox or live IC read; do not relax generation gates to assemble saved reports.",
+      "Preserve prior packets and student files. Reopen the entire saved PDF, verify its hash, page order, readability, manifest and private destination before publishing the link.",
+      "Turn only included matching report versions white after complete packet readback; newer versions stay yellow, and interrupted or failed builds never clear readiness.",
+      "Keep explicit omitted/held scopes and actual original dates; report selection is latest verified coverage, not all latest submissions assessed.",
+      "Update the same spreadsheet with exact PDF/version inclusion and native readback; Hub-link publication can follow independently without blocking that saved result.",
+      "No physical print, email send, IC write, grade verification inference or teacher Printed/Handed mutation follows from packet inclusion."
+    ],
+    "uncertain_write_policy": "stop_and_reconcile"
+  },
+  "success_checks": [
+    "One saved readable PDF is linked in the existing spreadsheet with exact included report versions, page ranges/hash and explicit omitted coverage.",
+    "Only exact included versions receive verified packet status; newer/unincluded versions retain yellow and unavailable work remains explicit.",
+    "An unchanged rerun reuses the exact packet without duplicate assessment, filing or changes to IC/Printed/Handed status."
+  ],
+  "failure": {
+    "max_safe_read_retries": 2,
+    "continue_independent_work": true,
+    "report_next_step": true
+  },
+  "provenance": {
+    "contract_refs": [
+      "prompts/school-spreadsheet-feedback.md",
+      "private:current-automation/morning-student-feedback-and-print-checklist",
+      "private:student-feedback-links-sheet",
+      "private:current-science-writing-format"
+    ]
+  }
+}

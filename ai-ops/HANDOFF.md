@@ -1,6 +1,6 @@
 # Classroom system — current handoff
 
-Updated 2026-10-18. This section is the current source; older state is Git history, not an active instruction.
+Updated 2026-10-20. This section is the current source; older state is Git history, not an active instruction.
 
 ## Homes
 - Decisions: Slack `answerableteaching.slack.com`. `#decisions` is the decision log; area channels are `#system-review`, `#feedback-pipeline`, `#teaching-hub`, `#lesson-preflight`, `#vt-decks`, `#class-reports`. Standards for an area are the pinned post in that channel. No student names, grades, or feedback text in Slack.
@@ -17,7 +17,7 @@ Updated 2026-10-18. This section is the current source; older state is Git histo
 ## Current owners and limits
 - System Review: weekly Claude Code scheduled task on Katherine's Pro plan (Sunday night ET), using `prompts/system-review.md`. No GitHub Action, Anthropic API key or Slack webhook.
 - The school computer cannot run the IC helper. Use Katherine's home Mac and its authenticated school Chrome profile for the existing helper; district Claude browser limits do not prohibit that separate executor. The weekday 07:00 opt-in path has standing authority, subject to its exact mapping, keep-higher, flag and saved-readback limits. A phone request can initiate work on the home Mac; the phone is not a second IC writer. See the current home-computer recovery rule in `ai-ops/worker-registry/roles-and-schedules.md`. I-Tracker remains a separate workflow and gains no authority from this clarification.
-- Existing 06:30/07:30/08:00 school routines and the 07:00 IC helper remain separate until explicitly changed. See `ai-ops/worker-registry/roles-and-schedules.md`.
+- Katherine authorized the October 20 daily-task split: [Hub operations](../prompts/school-hub-operations.md) at 06:30 and [Spreadsheet feedback](../prompts/school-spreadsheet-feedback.md) at 07:30 weekdays Eastern, reusing the two existing task IDs/threads. Claude retains its active spreadsheet catch-up until exact scope handback. The working extension, sole 07:00 IC helper and separate follow-up remain unchanged. Saved scheduler readback and first execution remain distinct from these definitions. See `ai-ops/worker-registry/roles-and-schedules.md`.
 
 ## Remote connection evidence
 - An open app/process does not establish usable remote-channel access. At the start of an active remote task, obtain a fresh device listing and one authorized read-only metadata result before reporting the connection as usable.

@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "timezone": "America/New_York",
+  "configuration_only": true,
+  "tasks": [
+    {
+      "automation_id": "morning-roster-check-and-submission-tidy",
+      "name": "Teaching Hub operations",
+      "weekdays": ["MO", "TU", "WE", "TH", "FR"],
+      "local_time": "06:30",
+      "prompt_file": "prompts/school-hub-operations.md",
+      "workflow_id": "school-morning-preparation-and-repair"
+    },
+    {
+      "automation_id": "morning-student-feedback-and-print-checklist",
+      "name": "Spreadsheet feedback and print packet",
+      "weekdays": ["MO", "TU", "WE", "TH", "FR"],
+      "local_time": "07:30",
+      "prompt_file": "prompts/school-spreadsheet-feedback.md",
+      "workflow_id": "school-feedback-print-ready",
+      "independent_packet_workflow_id": "school-feedback-packet-assembly"
+    }
+  ],
+  "preserve": ["existing_target_threads", "notification_preferences", "working_hub_extension", "existing_0700_ic_helper", "uncertain_write_state", "claude_catchup_ownership"],
+  "acceptance": "Read back both native scheduler records after updating; configuration does not prove a completed scheduled run."
+}

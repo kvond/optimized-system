@@ -59,6 +59,37 @@ class RouterTests(unittest.TestCase):
     def route(self, data=None, **kwargs):
         return route_workflow(*(data or fixture()), now=NOW, **kwargs)
 
+    def school_contract_fixture(self, name, operation):
+        workflow = json.loads((RUNTIME.parent / 'workflow-contracts' / 'definitions' / (name + '.json')).read_text())
+        _, request, evidence = fixture('school', operation=operation)
+        request.update(workflow_id=name)
+        request['ownership']['owner_ref'] = workflow['owners']['execution_owner_ref']
+        request['sources'] = [dict(source_ref=s['source_ref'], expected_revision='frozen-v1', revision='frozen-v1',
+                                   coverage=s['coverage'], observed_at=stamp()['observed_at'], evidence_ref='synthetic:readback')
+                              for s in workflow['sources'] if s['required']]
+        request['dependencies'] = [dict(stamp(), check=check, state='passed') for check in workflow['policy']['dependency_checks']]
+        evidence['routes'][0].update(account_refs=workflow['execution']['account_refs'], privacy_partition='school-private',
+                                    capabilities=workflow['execution']['required_capabilities'])
+        return workflow, request, evidence
+
+    def test_saved_packet_routes_when_generation_capability_is_unavailable(self):
+        generation = self.school_contract_fixture('school-feedback-print-ready', 'generate-eligible-source-backed-feedback')
+        generation[2]['routes'][0]['capabilities'] = ['school-drive-read', 'school-sheets-read-write', 'school-private-filing']
+        self.assertEqual(self.route(generation)['reason'], 'capability_insufficient')
+        packet = self.school_contract_fixture('school-feedback-packet-assembly', 'compile-verified-dated-packet')
+        self.assertEqual(self.route(packet)['status'], 'ready')
+        self.assertFalse(self.route(packet)['execution_attempted'])
+
+    def test_packet_independence_does_not_waive_report_source_or_writer_proof(self):
+        for change in ('missing-source', 'changed-version', 'competing-writer', 'uncertain-save'):
+            with self.subTest(change=change):
+                data = self.school_contract_fixture('school-feedback-packet-assembly', 'compile-verified-dated-packet')
+                if change == 'missing-source': data[1]['sources'].pop(0)
+                elif change == 'changed-version': data[1]['sources'][0]['revision'] = 'changed-v2'
+                elif change == 'competing-writer': data[1]['ownership']['state'] = 'competing'
+                else: data[1]['receipt']['state'] = 'uncertain'
+                self.assertEqual(self.route(data)['status'], 'blocked')
+
     def test_representative_domains_remain_exact_and_read_only(self):
         for domain in ('school', 'book', 'higher-ed', 'photo', 'personal', 'ai-ops'):
             with self.subTest(domain=domain):

@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "workflow_id": "school-morning-preparation-and-repair",
-  "contract_version": "2026-10-14.1",
-  "title": "Morning Hub repair, roster preparation and source filing",
+  "contract_version": "2026-10-20.1",
+  "title": "Teaching Hub operations: roster, filing and completion preparation",
   "domain": "school",
   "owners": {
     "execution_owner_ref": "home-codex",
@@ -116,7 +116,11 @@
       "mutate-source-after-cutoff",
       "move-form-response-original",
       "alter-student-answers",
-      "create-duplicate-student-folder"
+      "create-duplicate-student-folder",
+      "modify-working-hub-extension",
+      "replace-ic-helper",
+      "change-helper-settings-or-protocol",
+      "judge-writing-quality"
     ],
     "dependency_checks": [
       "Resolve private references and verify exact school identity, tested capability, current authority and sole active owner before dependent work.",
@@ -130,7 +134,10 @@
       "Unique fresh course/section/name evidence permits private filing only; grading still requires strict identity and exact assignment evidence.",
       "Preserve original IDs, Form locations, answers, revisions, access, original dates and source links; use deployed archive and existing preview/apply/verify contracts.",
       "Use exact current exclusions, shared-Form decisions and Photosynthesis repair-first scope; generic labels or filenames cannot select grading policy.",
-      "Read the current Hub repository START_HERE instructions before code repairs; use established release process and verify deployed behavior separately from local tests."
+      "Read the current Hub repository START_HERE instructions before code repairs; use established release process and verify deployed behavior separately from local tests.",
+      "Preserve the working installed Hub extension, package, settings, 07:00 helper schedule, recovery state and extension-facing protocol unchanged.",
+      "Prepare completion with existing deterministic rules only; feedback and writing judgments belong to the spreadsheet task and cannot hold independent Hub operations.",
+      "Consume exact helper readback evidence for IC status; this task is not a second grade writer."
     ],
     "uncertain_write_policy": "stop_and_reconcile"
   },
@@ -146,6 +153,7 @@
   },
   "provenance": {
     "contract_refs": [
+      "prompts/school-hub-operations.md",
       "ai-ops/workflow-contracts/school-operations-runbook.md#school-morning-preparation-and-repair",
       "private:current-automation/morning-roster-check-and-submission-tidy",
       "private:school-authorized-filing-and-exclusions",

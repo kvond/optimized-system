@@ -1,6 +1,6 @@
 # Workflow ownership and schedule guide
 
-Updated 2026-10-19. This file is the operational ownership/schedule source. Standards themselves live in the pinned Slack posts and the Claude Doc `Classroom System Standards — Slides, Grades, Rosters`; do not duplicate them here.
+Updated 2026-10-20. This file is the operational ownership/schedule source. Standards themselves live in the pinned Slack posts and the Claude Doc `Classroom System Standards — Slides, Grades, Rosters`; do not duplicate them here.
 
 ## Standing boundaries
 - Canonical names: `ai-ops/NAMES.md`.
@@ -15,9 +15,9 @@ Updated 2026-10-19. This file is the operational ownership/schedule source. Stan
 | Routine | Owner | When | Boundary |
 |---|---|---|---|
 | Home and school day review | Local Codex | Daily 04:30 Eastern | Read/brief only within its existing contract. |
-| Roster and submission tidy | Local Codex (automation `morning-roster-check-and-submission-tidy`, "Morning Hub issue repair, roster and submission tidy") | Weekdays 06:30 Eastern | Preparation/repair; no IC write. |
+| Teaching Hub operations | Local Codex (`morning-roster-check-and-submission-tidy`) | Weekdays 06:30 Eastern | Fresh [Hub prompt](../../prompts/school-hub-operations.md); roster/folders/filing/completion. Extension untouched; helper alone writes IC. |
 | Eligible IC entry | Existing Chrome helper in the school profile on Katherine's home Mac | Weekdays 07:00 Eastern standing contract | Automatic path requires the helper's saved weekday-morning opt-in; no repeated per-assignment approval. Preserve exact mapping, keep-higher, flags and save/reload/readback limits. Manual recovery stays with the same helper. Current readiness and actual execution must be verified separately. |
-| Feedback/print-ready | Local Codex (automation `morning-student-feedback-and-print-checklist`) | Weekdays 06:30 Eastern (observed 2026-10-19; previously listed as 07:30) | Prepare/file outputs; physical printing/delivery remains Katherine. |
+| Spreadsheet feedback | Local Codex (`morning-student-feedback-and-print-checklist`) | Weekdays 07:30 Eastern | Fresh [feedback prompt](../../prompts/school-spreadsheet-feedback.md); Claude catch-up claim respected; independent verified PDF and spreadsheet status. Email optional; Printed/Handed teacher-controlled. |
 | Teaching Hub report follow-up | Local Codex | Weekdays 08:00 Eastern | Reconcile receipts; no inferred success. |
 | Nightly Codex Slack worker | Local Codex (automation `nightly-codex-slack-worker`) | Daily 21:00 Eastern | Carries out Katherine's Codex requests from Slack; Katherine-only scope per its prompt; no grade entry or external sends beyond standing contracts. |
 | Slack task checks through October | Local Codex (automation `nightly-slack-chatgpt-asks`) | Daily 00/02/04/08/12/16/20 Eastern; ends 2026-10-31 | Answers ChatGPT-addressed Slack asks; does not run after October 31. |
@@ -54,3 +54,19 @@ Before retirement, verify the Hub's intended coverage and actual result for the 
 
 ## Historical state
 Detailed October 12–14 observations, old schedules, prior names, and acceptance receipts remain in Git history and `ai-ops/reports/`. They are evidence, not current instructions. Do not restore retired routines from history without a new decision.
+
+## October 20 daily-task replacement
+
+Katherine selected 06:30 Hub and 07:30 feedback weekdays in America/New_York. Replace
+the saved prompts on those exact existing IDs, retaining target threads and
+notification preferences. Do not create duplicate jobs. The native schedules had
+03:30/04:00 values conflicting with old prompt prose; the explicit October 20
+selection governs the replacement. Definitions and native scheduler readback
+are configuration proof, not proof of a completed first run.
+
+The spreadsheet task reads its current Claude catch-up claim before mutations;
+no automatic takeover, duplicate report generation or bulk replacement. It owns
+feedback/writing assessment and packet assembly; Hub retains operational chores
+and links. The existing Chrome helper schedule, extension package, settings,
+protocol and uncertainty state are protected from this rework. Existing 08:00
+follow-up, Slack jobs and Thursday packet production remain separate.
