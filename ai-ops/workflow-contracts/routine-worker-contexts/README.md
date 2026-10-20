@@ -2,6 +2,15 @@
 
 These four appendices are supplemental inputs to the named existing workers. Preserve the complete original task prompt, criteria, account, approved sources, destination and privacy boundaries. No replacement prompt, new schedule, candidate profile or financial source body is provided here.
 
+The saved `writing-on-demand.md` and its manifest row are historical generated artifacts.
+Their writing-voice digest predates the October 17/19 guidance reconciliation, and their
+Ledger-as-capture wording is superseded by [current writing-voice guidance](../../knowledge/writing-voice.md)
+and the [reflection contract](../reflection-substack-bank.md). Do not append or replay this
+saved context. The existing verifier must hold on changed bundles or missing private source
+bytes; regenerate and deliberately revalidate the context and manifest together from the
+authorized source environment before reuse. This note does not refresh hashes, waive source
+verification or establish manuscript/voice acceptance.
+
 For a local worker, generate fresh verified context before work:
 
 ```sh

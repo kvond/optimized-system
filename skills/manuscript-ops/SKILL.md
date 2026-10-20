@@ -1,6 +1,6 @@
 ---
 name: manuscript-ops
-description: "Operations over the manuscript files: stage/export chapters from Roam, render reading copies, run continuity + citation checks against the sources manifest, compile deliverable docx. Never generates or edits prose. Triggers: staging/exporting the manuscript, consistency or citation pass, \"compile for editor/committee\"."
+description: "Operations over the current manuscript: stage verified read-only inputs, render reading copies, run continuity checks, report citation gaps, and compile derived deliverable docx. Roam exports are historical reconciliation inputs. Never generates or edits prose. Triggers: staging/exporting the manuscript, consistency or citation pass, \"compile for editor/committee\"."
 ---
 
 # Manuscript-Ops — operations over the manuscript files
@@ -9,15 +9,19 @@ The mechanical, structural work around the manuscript, kept strictly separate fr
 thinking. This skill never writes prose and never edits a chapter — argument generation and
 revision stay in the Book Project. Here Cowork only renders, checks, compiles, and flags.
 
-Roam is canonical. `source/` is the faithful export (links intact, the backup); `writing/`
-is the tag-stripped reading copy. Neither is ever hand-edited — edits happen in Roam, and
-these are regenerated downstream, the same discipline as RAW_ORIGINALS.
+Read [current writing-voice guidance](../../ai-ops/knowledge/writing-voice.md), the
+[book-revision source table](../book-revision/SKILL.md) and the
+[manuscript operations contract](../../ai-ops/workflow-contracts/definitions/book-manuscript-operations.json).
+The single live manuscript is **Answerable Teaching — Full added notes**, at the existing
+Google Doc bound in that source table. Katherine's latest draft controls. Roam, older
+Working Copy documents and `source/`/`writing/` exports are historical reconciliation
+sources, never a replacement for current text. The September P18 observation is history,
+not an instruction to reopen the source decision.
 
-Standing caveat (2026-09-12): the last nightly publish from Roam ran 2026-07-02, and the
-drafting since then has happened in the Working Copy Google Doc and in `book-compile/`.
-Until decision P18 in the revision ledger (`skills/book-revision/reference/decisions.md`)
-is ruled, treat the Doc as the current draft and this skill's Roam jobs as the
-reconciliation route, not the source of the latest text.
+GitHub backup/version history belongs in the designated private manuscript repository under
+its [delivery rule](https://github.com/kvond/Answerable-Teaching/blob/main/revision/MANUSCRIPT-DELIVERY-RULE.md).
+This skill produces derived checks/artifacts only; it does not perform canonical writeback,
+backup commits or publishing. Keep private prose and identifying cases out of this repo.
 
 ## Authorship (ruled Sept 11, 2026)
 
@@ -48,9 +52,12 @@ Run the scripts for the deterministic work; let Claude judgment enter only where
 
 ## Defaults for this manuscript
 
-- **Source** — the chapter pages in Roam, pulled via the Roam MCP (scoped to chapters, not
-  the whole graph).
-- **Layout** — `source/` faithful export, `writing/` tag-stripped reading copy, both under git.
+- **Source** — a complete, fresh, read-only snapshot of the bound current manuscript,
+  with revision and exact chapter/section recorded. An unavailable source blocks dependent
+  work; never substitute an old export. Consult Roam only for explicitly scoped reconciliation.
+- **Layout** — preserve the snapshot and derived artifacts in the authorized private working
+  location. Existing `source/` and `writing/` paths describe the legacy Roam-export layout,
+  not a reason to export prose into this repository or overwrite the manuscript backup.
 - **Tracked terms** for the consistency pass (refreshed 2026-09-12 to the public pseudonym
   set, corrected 2026-09-12 to the Aug 23 ruling): Angie, Nancy, John, Toma, Heidi, Marcus,
   Priya, Malik, Ben, Brian, Peter (the greenhouse student), Paul (son), Eli (retired name for
@@ -65,23 +72,22 @@ Run the scripts for the deterministic work; let Claude judgment enter only where
 
 ## Version retention (Drive working copies)
 
-Roam stays canonical; the compiled Google Doc is a downstream reading/deliverable copy, not
-a second source of truth. One rule keeps the Drive side from fragmenting into the kind of
-`(final) + X` swarm that accumulated during the June apparatus passes:
+The existing Full added notes Doc remains the single live manuscript. Preserve its identity,
+history and current author text; derived deliverables do not become additional live copies.
 
-- **One LIVE doc.** Exactly one Google Doc is the current manuscript, named
-  `Answerable Teaching — LIVE`. Apparatus, formatting, APA-7, and HEP-flag passes happen
+- **One live doc.** Use the existing **Answerable Teaching — Full added notes** binding;
+  do not rename it to the historical `Answerable Teaching — LIVE` title. Authorized
+  apparatus, formatting, APA-7, and HEP-flag passes happen
   *in place* in that doc, versioned through File → Version history (name each version per
   pass: "Ch2 notes renumbered", "APA-7", "mechanical + HEP flags"). Never clone-and-suffix
   into a new copy — that habit is what produced the swarm.
-- **Archive, don't delete.** A genuinely superseded doc moves to `HOME/book/archive/`
-  (dated) and stays there as version history. Deletion is reserved for confirmed
-  byte-duplicates (the same pass copied into two accounts) and only after verifying identity.
-- **One account owns it.** LIVE doc and archive live in a single canonical account (udel),
-  so ownership and version history don't split across kvond@udel / kvond12@gmail.
-- **Reconcile back to Roam.** If a pass happens in the Doc rather than Roam (as the June
-  passes did), flow it back so `source/`/`writing/` stay faithful — the Doc is never allowed
-  to become a silent parallel master.
+- **Preserve history.** This invocation does not move, delete, rename or change access to
+  existing documents. Any separate archive action follows its own authorization.
+- **Preserve the binding.** Verify the account/source specified by the source table rather
+  than creating another copy or changing ownership.
+- **No Roam paste-back.** Roam remains archive/source. Current manuscript delivery follows
+  the designated repository's GitHub-first rule, with exact commit and Doc readback; this
+  derived-check invocation does not execute that write sequence.
 
 Retention convention only — never touches argument or wording.
 
@@ -96,15 +102,16 @@ to the manuscript without showing you the result first:
 
 ## Job 2 — staging / export (the foundation)
 
-1. Pull the chapter pages via the Roam MCP (the `roam_pull.py` query shapes from book-ops,
-   scoped to chapter pages) and write each to `source/`.
-2. `python3 scripts/render_reading.py --in source/ --out writing/`
-3. Commit `source/` and `writing/` to git, then push to the private remote so the reading
-   copy is browsable on GitHub.
+1. Resolve the current source/account and shared writer lease under the operations contract.
+   Read the exact current revision completely and preserve a read-only private snapshot.
+2. Select the checker for the actual supported input: `book-revision`'s manuscript checker
+   for a current manuscript snapshot; the bundled reading renderer/consistency checker only
+   for the explicitly requested legacy Roam-export layout. Do not treat a rendered export
+   as current manuscript or editorial acceptance.
+3. Read back the derived artifact, source revision and private destination; report coverage
+   gaps. Do not commit source prose or derived private content into optimized-system.
 
-The weekly `#book` distill is a separate scheduled local task (same machinery as
-daily-agenda): pull the week's `#book` captures, organize them, drop them where the writing
-session expects. The MCP pull + git wrapping is the piece to wire on first run.
+No weekly distill, publish job or schedule is created, resumed or verified by this skill.
 
 ## Job 1 — consistency pass (on-demand, e.g. pre-submission)
 
@@ -113,14 +120,14 @@ session expects. The MCP pull + git wrapping is the piece to wire on first run.
 Then read the report and flag the judgment calls: does each cross-reference's claim actually
 live where it points; is "double booking" used consistently with its definition; are the
 anchor students characterized consistently. Surface findings for the user; never edit the
-manuscript — propose changes for Roam. For a full pass over the current draft, use the
-revision skills instead: `book-revision` and its lanes.
+manuscript — propose changes against the current Doc with exact locations. For a full pass
+over the current draft, use the revision skills instead: `book-revision` and its lanes.
 
 ## Job 3 — citation integrity (on-demand)
 
-Maintain the sources manifest. `check_citations.py` extracts every in-text citation and
-diffs against it, flagging cited-but-missing and present-but-unused. Normalize author-name
-variants (Scott / J.C. Scott / Scott 1998) before diffing.
+`check_citations.py` is planned, not implemented. Report that limit rather than claiming
+the command ran. Use an authorized current source manifest to identify actual citation gaps;
+do not invent references or silently normalize uncertain author/year matches.
 
 ## Job 4 — deliverables (on-demand)
 
@@ -132,9 +139,9 @@ manuscript.
 
 ## Safety
 
-- Never edit the manuscript. `writing/` and every report are derived and advisory; fixes go
-  into Roam, by the user.
-- `source/` is the faithful backup; before any git operation confirm it reflects the current
-  Roam state.
+- Never edit the manuscript. Reading copies and reports are derived and advisory; canonical
+  changes require their own accepted change list and authorized writeback/readback.
+- Verify the current Doc revision and completeness before checks; historical `source/`
+  exports do not establish current state or authorize a backup commit.
 - The reading render is a convenience copy, not a typeset proof — an inline editorial aside
   left next to a stripped `{{TODO}}` may survive into `writing/`. Don't treat it as final.
