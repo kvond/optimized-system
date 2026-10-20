@@ -1,8 +1,8 @@
-<!-- Part of vt-skill. Moved verbatim from SKILL.md on 2026-10-19; section numbers unchanged. -->
+<!-- Part of vt-skill. Split from SKILL.md on 2026-10-19; updated with the October 17 learning-design requirements. -->
 
 ## 17. Lesson renewal standard (added 2026-10-16)
 
-Katherine's specifications of 2026-10-16 for every lesson deck in Biology, Forensics and
+Katherine's specifications of October 16–17 for every lesson deck in Biology, Forensics and
 A&P. They apply to new decks as they are built and to already-made decks through the
 `renew-lesson-slides` skill, which runs this section on one deck or a batch. A deck is
 not ready until §17.6 passes. When Katherine adds a specification, it goes here first,
@@ -81,8 +81,9 @@ deck public, and never give edit access to the domain.
 
 ### 17.6 Renewal checks: a deck is ready when all of these pass
 
-1. Morpheme slide at the start, then the activity, then own-words definitions, then
-   the mind map, in that order (17.1, 17.2).
+1. Introductory morpheme breakdown near the start; movable practice before own-words
+   definitions, followed by the mind map (17.1, 17.2). Preserve a verified later
+   practice/reveal placement; do not move all vocabulary work to the beginning.
 2. Word parts, questions and keys are scientifically right; keys hold answers only.
 3. Cards and boxes are editable and movable, at native size, with nothing clipped or
    colliding (render and look, §11 check 5).
@@ -93,3 +94,91 @@ deck public, and never give edit access to the domain.
    Slide-number references still point where they say (§11).
 7. A saved readback of the changed slides. Report exactly what was checked, never a
    whole-deck pass from a partial look.
+8. Visual reasoning, response mode, consecutive-writing review and
+   before/during/after-discernment titles pass 17.7 on every relevant slide.
+9. Provisional day divisions pass the 90-minute activity-aware review in 17.8.
+10. Report reviewed-deck readiness separately from classroom release. A lesson is
+    not complete until the authorized Agenda and Schoology link checks in 17.9
+    are verified; a deferred release stays explicitly open.
+
+### 17.7 Visual reasoning, response mode and titles
+
+These rules apply to initial lesson construction and retrospective renewal in all
+three courses. The [initial-build additions](https://answerableteaching.slack.com/archives/C0C8YU5RDDM/p1792045219351809)
+and [renewal additions](https://answerableteaching.slack.com/archives/C0C8YU5RDDM/p1792161778598399)
+record Katherine's October 17 requirements.
+
+- **Show the thinking.** Represent relationships visually, place comparison cases
+  side by side, show change with sequence/arrows/before-and-after states, and make
+  mechanisms visible. Reserve most text for questions, assertions, labels and
+  response directions. Ask whether a student could recover the central
+  relationship if most of the prose disappeared; if not, improve the representation
+  before final QA. In Anatomy, each picture must have an intellectual job: locating,
+  comparing, labeling, tracing or connecting structure to function when appropriate.
+- **Choose the response mode on every student-response slide:** writing,
+  annotation/manipulation of the representation, or a short combination. Prefer
+  annotation/manipulation for noticing, locating, comparing, change/invariance,
+  sequencing, connecting, tracing flow, selecting evidence, pattern/pattern-break,
+  structure/function and mechanism. Use writing for explanation, justification,
+  generalization, rule-building, synthesis and transfer when marks alone cannot
+  express the thinking. An existing textbox is not a reason to retain that mode.
+- **Review every run of two or more writing slides.** Deliberately retain writing
+  when it best expresses the thinking; otherwise improve the sequence, for example
+  mark/notice → connect/trace → write the rule/explanation. Do not change modes
+  merely for variety.
+- **Directions name the action and target.** Examples: circle the part that
+  changes; box what stays the same; trace the flow of matter; connect structure to
+  function; number the steps; mark where the pattern breaks; underline evidence
+  and connect it to the claim. Prefer acting on the scientific representation
+  itself over a detached response box. Avoid vague “annotate this” directions and
+  directions that give away the answer.
+- **Before discernment:** title the question, phenomenon or contrast without
+  revealing the answer or conceptual assertion.
+- **During discernment:** provide visual evidence and a meaningful student
+  response. Do not reveal a conclusion merely to make every title a claim.
+- **After discernment:** use an Alley-style sentence assertion naming the full
+  conceptual takeaway, supported by the visual evidence. Explanation, synthesis and
+  return slides use this form. On an annotated explanation slide, the title is the
+  claim and annotations supply its evidence/reasoning. The final return crystallizes
+  what the variation made visible rather than merely repeating an answer.
+
+Preserve existing response bindings, marker identities, student work and grading
+policy. A visual response is not proof that the current text-reading pipeline can
+assess it. Record any parser/response-evidence gap for review rather than dropping
+an existing scored response, inventing codes or claiming ingestion from layout.
+Morpheme, definition and mind-map practice remains unscored; personal-connection
+Notes treatment remains governed by 17.3.
+
+### 17.8 Provisional DAY 1 / DAY 2 / DAY 3 divisions
+
+Place teacher-adjustable day dividers at coherent conceptual boundaries, not equal
+slide counts. Each proposed day must plausibly fill a **90-minute class**, including
+its linked labs, investigations, guided notes, manipulatives, videos, discussion and
+other companion work.
+
+Before placing a divider, inventory that stretch of slides and attached activities.
+Review the load qualitatively: direct instruction, annotation/manipulation,
+discussion, transitions/setup, substantial activity time, cleanup and synthesis.
+Avoid a thin day of a few slides beside an overloaded day. Keep a question with its
+response/reveal, a manipulation with the synthesis it supports, and mechanism
+sequences intact. Introduce an activity before students do it and preserve time for
+the activity and its immediate sense-making. Dividers are pacing recommendations
+for Katherine to adjust; they do not authorize date or assignment-setting changes.
+
+### 17.9 Finalization and classroom links
+
+Use this order within the existing authorized release scope and current ownership:
+deck pass → rendered/saved readback and link/sharing checks → live deck and
+student-copy links in `Agenda 26-27 CLEAN` → corresponding Schoology lesson/material
+links. Follow §16.4–16.5 for exact lesson/source identity, existing-link conflicts,
+preserving originals and saved readback. Distinct lessons retain distinct sources
+and Forms even when they share a week or folder.
+
+Verify final destinations from the school account. Do not change dates, pacing,
+grades or assignment settings during the link pass. Respect Katherine's current
+School Claude handoff for Schoology; prepare the exact reviewed targets and report
+the remaining owner action rather than starting a competing writer. Pilot acceptance
+and bulk-dispatch gates remain in `renew-lesson-slides` and
+[issue #33](https://github.com/kvond/optimized-system/issues/33). A reviewed
+draft, passing linter or completed plan is not a released lesson: keep any unverified
+Agenda/Schoology transition open, and archive nothing before verified relinking.
