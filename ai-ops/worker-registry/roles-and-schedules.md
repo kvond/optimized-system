@@ -30,6 +30,14 @@ Observed 2026-10-19 on Katherine's MacBook Air (`~/.codex/automations`): the fou
 
 The private scheduler registry remains the inventory of provider-level schedule records. This file defines ownership and intended cadence; a configured schedule is not proof of a successful run.
 
+### Roster changes and student folders (roster and submission tidy)
+Katherine's October 19 instruction for the `morning-roster-check-and-submission-tidy` automation. After each complete IC roster read, the job:
+- updates each `Rosters` tab to match IC exactly, adding each new student with a start date and moving each student no longer in IC to the `Former students` tab with the date;
+- creates the private student folder in the section's existing student-records folder for each new active student, with no duplicate folders;
+- renames the student folder of each student who has left the school (absent from all of Katherine's IC rosters) so it begins with `~delete `.
+
+Never delete or move such a folder, and keep all work, feedback and grade history. A student who only changed class keeps their folder. A partial or failed IC read changes nothing. Codex applies this text to its own automation; a merged change here is the record, not proof the automation was updated.
+
 ### Home-computer IC recovery
 Katherine's [October 17 clarification](https://answerableteaching.slack.com/archives/C0C8ZJ4FTAT/p1792285329701299) confirms the home Mac as the expected host, including when she requests recovery from her phone. Verify that host is awake/reachable, the school Chrome profile and helper opt-in are current, and no competing writer or unresolved uncertainty block is present. An open Hub tab or remote connection alone proves none of those facts.
 
