@@ -110,6 +110,15 @@ report score, packet, helper readiness, old whole-assignment stamp or checkbox.
 Unverified components stay unverified; this task never enters IC grades or creates
 an IC assignment. Packet inclusion and IC verification are independent.
 
+The spreadsheet's `IC check` tab (added 2026-10-21 at Katherine's request) reads
+the Hub's `Scores entered` record live through one IMPORTRANGE and lists each IC
+assignment (Form ID) with its latest helper readback, the helper's per-section
+entered/raised/left counts, any hand mark from the Hub and a status. It updates
+itself; do not repaint, rewrite or duplicate it. It is assignment-level evidence:
+"left" scores still need Katherine's hand check, and it does not confirm an
+individual student's score. Lesson columns are not bound to IC assignments there,
+because students often turn a deck in through another week's Form.
+
 Preserve existing Biology DTGSS/teacher-analysis and supportive-contract history.
 Any still-authorized auxiliary report work remains separate from packet readiness;
 missing-work claims require their own complete fresh roster/due-date/extension
