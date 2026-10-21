@@ -1,0 +1,76 @@
+{
+ "layout": "writing_cer",
+ "kicker": "FORENSICS / SCIENCE WRITING / Prepared 2026-01-16",
+ "name": "Sam R.",
+ "sources": [
+  {
+   "short": "S1",
+   "lesson": "Example lesson A",
+   "date": "2026-01-08"
+  },
+  {
+   "short": "S2",
+   "lesson": "Example lesson B",
+   "date": "2026-01-15"
+  }
+ ],
+ "areas": [
+  {
+   "area": "Science vocabulary",
+   "source": "S2 Example lesson B",
+   "level": "Developing",
+   "where": "Mastery - revised answer",
+   "quote": "Synthetic quoted student words.",
+   "comment": "Synthetic comment: what works and one next move.",
+   "points": [
+    null,
+    "Developing"
+   ]
+  },
+  {
+   "area": "Conceptual explanation",
+   "source": "S2 Example lesson B",
+   "level": "Proficient",
+   "where": "Mastery - revised answer",
+   "quote": "Synthetic quoted student words.",
+   "comment": "Synthetic comment: what works and one next move.",
+   "points": [
+    "Developing",
+    "Proficient"
+   ]
+  },
+  {
+   "area": "Specific evidence",
+   "source": "S2 Example lesson B",
+   "level": "Developing",
+   "where": "Mastery - revised answer",
+   "quote": "Synthetic quoted student words.",
+   "comment": "Synthetic comment: what works and one next move.",
+   "points": [
+    "Beginning",
+    "Developing"
+   ]
+  },
+  {
+   "area": "Scientific reasoning",
+   "source": "S2 Example lesson B",
+   "level": "Evidence unavailable",
+   "where": "Mastery - revised answer",
+   "quote": "",
+   "comment": "This box was blank, so there is nothing to rate yet.",
+   "points": [
+    null,
+    "Evidence unavailable"
+   ]
+  }
+ ],
+ "cer": {
+  "lesson": "Example lesson B",
+  "question": "Synthetic why/how question on the lesson's core idea?",
+  "facts": [
+   "Synthetic fact one from the lesson slides.",
+   "Synthetic fact two.",
+   "Synthetic fact three."
+  ]
+ }
+}

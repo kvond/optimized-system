@@ -128,3 +128,9 @@ ai-ops/runtime/tests/__pycache__/
 !book-ops/sweeps/*.json
 
 __pycache__/
+
+# Synthetic report examples for the student-feedback renderer (invented content only).
+!/skills/student-feedback/examples/ap-lessons-grouped.json
+!/skills/student-feedback/examples/biology-lesson.json
+!/skills/student-feedback/examples/biology-writing.json
+!/skills/student-feedback/examples/forensics-writing-cer.json
