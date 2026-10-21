@@ -169,8 +169,8 @@ def check(r):
             levels += [a["level"] for a in lesson["aspects"]]
     else:
         sources = r["work"] if layout == "writing_bio" else r["sources"]
-        if layout == "writing_cer" and len(r["areas"]) != WRITING_AREAS:
-            raise ReportError("writing_cer needs exactly four writing areas.")
+        if len(r["areas"]) != WRITING_AREAS:
+            raise ReportError("%s needs exactly four writing areas." % layout)
         for a in r["areas"]:
             if len(a["points"]) != len(sources):
                 raise ReportError("%s has %d points for %d sources." % (a["area"], len(a["points"]), len(sources)))

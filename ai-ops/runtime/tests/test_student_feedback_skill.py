@@ -54,8 +54,11 @@ class StudentFeedbackSkillTest(unittest.TestCase):
         grouped['lessons'][0]['aspects'] = grouped['lessons'][0]['aspects'] * 2
         lesson = json.loads((SKILL / 'examples' / 'biology-lesson.json').read_text())
         lesson['aspects'][0]['level'] = 'Almost there'
+        bio = json.loads((SKILL / 'examples' / 'biology-writing.json').read_text())
+        bio['areas'] = bio['areas'][:3]
         with tempfile.TemporaryDirectory() as tmp:
-            for data, message in ((grouped, 'at most three'), (lesson, 'outside the scale')):
+            for data, message in ((grouped, 'at most three'), (lesson, 'outside the scale'),
+                                  (bio, 'four writing areas')):
                 out = Path(tmp) / 'out.pdf'
                 result = self._render(data, out)
                 self.assertNotEqual(result.returncode, 0)

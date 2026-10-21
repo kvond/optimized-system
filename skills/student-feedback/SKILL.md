@@ -15,7 +15,10 @@ uses must be in the GitHub directions. This skill is that home.
   When the two disagree, this skill wins. Change the skill first, then the items in
   that tab's "Update together" row: the Agenda Prompt 2 cell, the Answerable
   Teaching Manual (§12 and Appendices B and F, the feedback formats), the copyable
-  prompts and the worked example.
+  prompts and the worked example. Two items on that row no longer need a separate
+  update: this skill replaces "Skill 4" (no standalone copy was located on
+  2026-10-06), and the Teaching Hub no longer renders feedback, so there is no
+  dashboard rendering to change.
 - **Approved exemplars:** one per format, listed in the private Doc
   `Feedback exemplars — private locator`
   (`1vuhyFO_r9oKy2WwcWeLah3dj696MrTweTfxtPH9qIcM`). They are student reports, so
@@ -121,7 +124,8 @@ Data fields for each layout are shown in [examples/](examples/); the examples us
 invented content only. Render one report:
 
 ```
-python3 skills/student-feedback/scripts/render.py /private/scratch/report.json /private/scratch/out.pdf
+SCRATCH=$(mktemp -d)   # private, outside the repository
+python3 skills/student-feedback/scripts/render.py "$SCRATCH/report.json" "$SCRATCH/out.pdf"
 ```
 
 Keep report JSON and PDFs in a private scratch folder outside any Git checkout:
