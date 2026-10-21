@@ -1,5 +1,5 @@
 """Per marker slide, print each deck's lines that are not shared template text.
-usage: unique.py name=path [name=path ...]  (paths are Slides JSON dumps or answers.py 'all' dumps)"""
+usage: unique.py name=path [name=path ...]  (paths are Slides API read_presentation JSON dumps)"""
 import json, re, sys, collections
 def slides_of(path):
     raw = json.load(open(path)); slides = (raw.get('content') or raw).get('slides', [])

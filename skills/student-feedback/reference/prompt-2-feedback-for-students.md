@@ -3,8 +3,9 @@
 Canonical copy of the Master Agenda `Feedback Prompts` tab, row "Feedback — Prompt 2",
 read 2026-10-21. From this date the skill is the source; the Agenda tab is Katherine's
 quick reference. Change this file first, then refresh the Agenda cell to match.
-The only edit from the Agenda text is the name example in NAMES, which now uses an
-invented name.
+The rules and wording are the Agenda's. Two kinds of edit: the name example in
+NAMES now uses an invented name, and some lists are reformatted for Markdown (a
+few list lead-ins such as "Give" or "Include" are folded into the list line).
 
 ---
 

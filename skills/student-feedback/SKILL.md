@@ -12,8 +12,14 @@ uses must be in the GitHub directions. This skill is that home.
 - **Source:** this skill. Prompt 2 is in
   [reference/prompt-2-feedback-for-students.md](reference/prompt-2-feedback-for-students.md).
 - **Quick reference:** Master Agenda `Agenda 26-27 CLEAN`, tab `Feedback Prompts`.
-  When the two disagree, this skill wins. Change the skill first, then refresh the
-  Agenda cell to match.
+  When the two disagree, this skill wins. Change the skill first, then the items in
+  that tab's "Update together" row: the Agenda Prompt 2 cell, the Answerable
+  Teaching Manual (§12 and Appendices B and F, the feedback formats), the copyable
+  prompts and the worked example.
+- **Approved exemplars:** one per format, listed in the private Doc
+  `Feedback exemplars — private locator`
+  (`1vuhyFO_r9oKy2WwcWeLah3dj696MrTweTfxtPH9qIcM`). They are student reports, so
+  they stay in Drive.
 - **Who runs it:** the weekday [Spreadsheet feedback](../../prompts/school-spreadsheet-feedback.md)
   task, or any agent asked for feedback. The Teaching Hub does not write feedback.
   Packets, the yellow/white status colours and the IC check belong to that prompt,
@@ -26,9 +32,9 @@ a Form, a deck or a student's original work.
 
 1. Resolve the class, the exact lesson and the student's exact submission from the
    Master Agenda, the `🔗 Lesson names` tab and the turn-in records. Never match on
-   week number alone. Forensics Drive and Forms run one week ahead of the Agenda
-   from Week 9; A&P Forms run one week behind from Cell Structure; Biology Forms
-   use Cycle numbers. A&P "Cell Structure" and "Cell Structure (continued)" are one
+   week number alone. Forensics folders and Forms run one week ahead of the Agenda
+   from Mock Crime Scene on; A&P folders and Forms run one week behind from Cell
+   Structure on; Biology Forms use Cycle numbers. A&P "Cell Structure" and "Cell Structure (continued)" are one
    grade but two lessons.
 2. List the student's folder. If a report already exists for the same student,
    lesson, report type and reviewed submission, reuse it. Never save a second report
@@ -76,9 +82,9 @@ reviewed is a gap, not a zero. Do not re-rate saved work just to redraw a chart.
 
 ## 4. Formats by class
 
-Katherine supplied one approved exemplar per format on 2026-10-20; the exemplars
-are student reports and stay in her private Drive. The layouts below reproduce
-them, and [scripts/render.py](scripts/render.py) draws them.
+Katherine supplied one approved exemplar per format on 2026-10-20 (see the private
+locator above). The layouts below reproduce them, and
+[scripts/render.py](scripts/render.py) draws them.
 
 | Class | Lesson feedback | Science writing |
 |---|---|---|
@@ -88,15 +94,18 @@ them, and [scripts/render.py](scripts/render.py) draws them.
 
 - **`lesson_onepage`** (one page, Prompt 2 Step 4): class kicker, student's first
   name and last initial, lesson and submission date; 1 Your growth (one dot scale per
-  critical aspect, Evidence unavailable shown as text with no dot); 2 How you did
+  critical aspect at its current level, Evidence unavailable shown as text with no
+  dot, under the exemplar's line "A single report does not establish a growth
+  trend"; like the exemplar, it does not plot earlier lessons); 2 How you did
   (two or three sentences in "you", quoting or paraphrasing the student); 3 One
   question to think about (one contrast question built on the student's own words)
   with writing lines; 4 What I understand now that I didn't before; 5 How I can
   improve my responses next time.
 - **`lessons_grouped`** (A&P, two pages): page 1 lists each lesson as a band with up
   to three critical aspects, the current level and what the answer shows. Page 2:
-  how my thinking changed (only when an earlier submission supports it), one
-  question, evidence quotes with their slide, and reflection lines.
+  how my thinking changed (only when an earlier submission supports it; otherwise
+  leave `thinking_changed` out and the page says no earlier submission is
+  available), one question, evidence quotes with their slide, and reflection lines.
 - **`writing_bio`** (two pages): page 1 lists the reviewed work (L1, L2…) and, per
   area, the prompt, level, lesson/date/code, the quote, the comment and a small
   chart. Page 2: **10 pts summative extra credit** in large type, the challenge
@@ -112,11 +121,17 @@ Data fields for each layout are shown in [examples/](examples/); the examples us
 invented content only. Render one report:
 
 ```
-python3 skills/student-feedback/scripts/render.py report.json out.pdf
+python3 skills/student-feedback/scripts/render.py /private/scratch/report.json /private/scratch/out.pdf
 ```
 
-The renderer needs `reportlab` and draws charts as vector graphics, so a report is
-a few kilobytes.
+Keep report JSON and PDFs in a private scratch folder outside any Git checkout:
+they hold student names, quotes and levels, and the renderer refuses an output path
+inside a checkout. It also stops with an error, rather than drawing a wrong page,
+when a level is outside Katherine's scale, an A&P lesson has more than three
+aspects, a writing report does not have four areas or one point per source, or the
+PDF does not come out at the layout's page count (1, 2, 2 and 3 pages). The
+renderer needs `reportlab` and draws charts as vector graphics, so a report is a
+few kilobytes.
 
 ## 5. Teacher-only notes
 
@@ -127,6 +142,10 @@ teacher-only growth record or notes beside the reports (Prompt 2 Steps 3, 5 and 
 Authorship alerts reach a student only after Katherine approves the wording.
 
 ## 6. Files
+
+Prompt 2 names a student feedback Doc. For the student reports, the PDF formats in
+this skill are what gets filed and printed. The growth record and the class growth
+summary remain teacher-only Docs, as Prompt 2 Steps 5 and 6 describe.
 
 - One PDF per report, saved in the student's existing folder under the class
   records folder:

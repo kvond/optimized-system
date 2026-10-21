@@ -40,8 +40,9 @@ is still mandatory. A whole-class missing-work claim needs whole-class evidence.
 - For a genuinely unreviewed eligible submitted piece, provide critical-aspect
   feedback and science-writing assessment where applicable using
   `skills/student-feedback` (the canonical feedback prompt, scale and class
-  formats; the Agenda Feedback Prompts tab is Katherine's quick reference) and
-  the teaching manual. Read those models, not just their filenames. Keep the
+  formats; the Agenda Feedback Prompts tab is Katherine's quick reference), the
+  teaching manual and the approved exemplar reports the skill locates. Read those
+  models, not just their filenames. Keep the
   two judgments distinct. Preserve attributed student evidence, substantive explanation, useful graphics,
   accessible practice and writing space from the established formats. Do not
   invent quotations, scores, improvement, source dates or a writing sample.

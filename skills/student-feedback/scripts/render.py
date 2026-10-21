@@ -1,6 +1,8 @@
 """Render student feedback PDFs in the four approved layouts.
 
-Input is one JSON report (see ../SKILL.md section 6 and ../examples/). Usage:
+Input is one JSON report (see ../SKILL.md section 4 and ../examples/). Keep report JSON and
+PDFs in a private folder outside any Git checkout; the renderer refuses an output path inside one.
+Usage:
     python3 render.py report.json out.pdf
 Layouts (report["layout"]):
     lesson_onepage  - one-lesson critical-aspect feedback (Biology, Forensics)
@@ -9,6 +11,7 @@ Layouts (report["layout"]):
     writing_cer     - science-writing report, 3 pages: four areas, source charts, CER practice
 """
 import json
+import os
 import sys
 
 from reportlab.graphics.shapes import Circle, Drawing, Line, String  # noqa: E402
@@ -22,7 +25,12 @@ from reportlab.platypus import (KeepTogether, PageBreak, Paragraph, SimpleDocTem
 
 LEVELS = ["Beginning", "Developing", "Proficient", "Extending"]
 LEVEL_COLOR = {"Beginning": "#b45309", "Developing": "#7c3aed", "Proficient": "#15803d",
-               "Extending": "#1d4ed8", "Almost there": "#c2410c", "Evidence unavailable": "#6b7280"}
+               "Extending": "#1d4ed8", "Evidence unavailable": "#6b7280"}
+VALID_LEVELS = set(LEVEL_COLOR)
+PAGES = {"lesson_onepage": 1, "lessons_grouped": 2, "writing_bio": 2, "writing_cer": 3}
+WRITING_AREAS = 4
+NO_COMPARISON = ("No earlier submission of this work is available, so this report describes your "
+                 "current answers only.")
 INK, MUTED, RULE = colors.HexColor("#1f2d3d"), colors.HexColor("#5b6b7c"), colors.HexColor("#c9d6e3")
 AREA_COLORS = ["#0f766e", "#7e22ce", "#047857", "#c2410c"]
 
@@ -115,9 +123,61 @@ def area_chart(points, labels, color, w=3.1, h=1.45):
     return d
 
 
+class ReportError(ValueError):
+    """The report data or the rendered page count does not fit the approved layout."""
+
+
 def doc_for(path):
     return SimpleDocTemplate(path, pagesize=letter, pageCompression=1, leftMargin=0.75 * inch, rightMargin=0.75 * inch,
                              topMargin=0.6 * inch, bottomMargin=0.75 * inch)
+
+
+def build(path, story, foot, layout):
+    """Build the PDF and keep it only when it has the layout's page count."""
+    doc = doc_for(path)
+    doc.build(story, onFirstPage=footer_fn(foot), onLaterPages=footer_fn(foot))
+    if doc.page != PAGES[layout]:
+        os.remove(path)
+        raise ReportError("%s rendered %d pages; the approved layout has %d. Shorten the text."
+                          % (layout, doc.page, PAGES[layout]))
+
+
+def inside_git_checkout(path):
+    folder = os.path.dirname(os.path.abspath(path))
+    while True:
+        if os.path.exists(os.path.join(folder, ".git")):
+            return True
+        parent = os.path.dirname(folder)
+        if parent == folder:
+            return False
+        folder = parent
+
+
+def check(r):
+    """Reject levels outside Katherine's scale and content the layout would drop."""
+    layout = r.get("layout")
+    if layout not in PAGES:
+        raise ReportError("Unknown layout %r." % layout)
+    levels = []
+    if layout == "lesson_onepage":
+        levels = [a["level"] for a in r["aspects"]]
+    elif layout == "lessons_grouped":
+        for lesson in r["lessons"]:
+            if len(lesson["aspects"]) > 3:
+                raise ReportError("%s has %d critical aspects; choose at most three."
+                                  % (lesson["lesson"], len(lesson["aspects"])))
+            levels += [a["level"] for a in lesson["aspects"]]
+    else:
+        sources = r["work"] if layout == "writing_bio" else r["sources"]
+        if layout == "writing_cer" and len(r["areas"]) != WRITING_AREAS:
+            raise ReportError("writing_cer needs exactly four writing areas.")
+        for a in r["areas"]:
+            if len(a["points"]) != len(sources):
+                raise ReportError("%s has %d points for %d sources." % (a["area"], len(a["points"]), len(sources)))
+            levels += [a["level"]] + [p for p in a["points"] if p is not None]
+    bad = sorted(set(levels) - VALID_LEVELS)
+    if bad:
+        raise ReportError("Levels outside the scale: %s." % ", ".join(bad))
 
 
 def lesson_onepage(r, path):
@@ -144,8 +204,7 @@ def lesson_onepage(r, path):
           Paragraph("4 &nbsp;WHAT I UNDERSTAND NOW THAT I DIDN'T BEFORE", h2),
           Paragraph("Write this yourself, then hand this page back to me. This is the part I read.", small), lines(4),
           Paragraph("5 &nbsp;HOW I CAN IMPROVE MY RESPONSES NEXT TIME", h2), lines(3)]
-    doc_for(path).build(s, onFirstPage=footer_fn(r.get("footer", "Conceptual feedback is not a grade.")),
-                        onLaterPages=footer_fn(r.get("footer", "Conceptual feedback is not a grade.")))
+    build(path, s, r.get("footer", "Conceptual feedback is not a grade."), "lesson_onepage")
 
 
 def lessons_grouped(r, path):
@@ -157,7 +216,7 @@ def lessons_grouped(r, path):
         rows = [[Paragraph('<font color="white"><b>%s</b></font>' % esc(lesson["lesson"]), base), "", ""],
                 [Paragraph("<b>Critical aspect</b>", small), Paragraph("<b>Current evidence</b>", small),
                  Paragraph("<b>What this answer shows</b>", small)]]
-        for a in lesson["aspects"][:3]:
+        for a in lesson["aspects"]:
             rows.append([Paragraph(esc(a["name"]), base), Paragraph(level_span(a["level"]), base),
                          Paragraph(esc(a["shows"]), base)])
         t = Table(rows, colWidths=[1.9 * inch, 1.1 * inch, 4.0 * inch])
@@ -166,7 +225,7 @@ def lessons_grouped(r, path):
                                ("TOPPADDING", (0, 0), (-1, -1), 4), ("BOTTOMPADDING", (0, 0), (-1, -1), 4)]))
         s += [KeepTogether([t]), Spacer(1, 8)]
     s += [PageBreak(), Paragraph(esc(r["name"]), h2), Paragraph(esc(r["page2_label"]), small),
-          Paragraph("How my thinking changed", h2), Paragraph(esc(r["thinking_changed"]), base),
+          Paragraph("How my thinking changed", h2), Paragraph(esc(r.get("thinking_changed") or NO_COMPARISON), base),
           Paragraph("One question to think about", h2), Paragraph(esc(r["question"]), base), Spacer(1, 4), lines(3),
           Paragraph("Evidence for my conceptual understanding", h2)]
     for ev in r["evidence"]:
@@ -176,7 +235,7 @@ def lessons_grouped(r, path):
           Paragraph("Write three things or ideas you understand now. This reflection is for you; it is not a new submission.", small),
           lines(3)]
     foot = r.get("footer", "Student feedback")
-    doc_for(path).build(s, onFirstPage=footer_fn(foot), onLaterPages=footer_fn(foot))
+    build(path, s, foot, "lessons_grouped")
 
 
 def writing_bio(r, path):
@@ -191,7 +250,8 @@ def writing_bio(r, path):
     for i, a in enumerate(r["areas"]):
         left = [Paragraph("%s - %s" % (esc(a["prompt"]), level_span(a["level"])), h3),
                 Paragraph("%s | %s | %s" % (esc(a["lesson"]), esc(a["date"]), esc(a["code"])), small),
-                Paragraph("From your submitted work: “%s”" % esc(a["quote"]), base), Spacer(1, 2),
+                Paragraph("From your submitted work: “%s”" % esc(a["quote"]), base) if a.get("quote")
+                else Paragraph("No answer to quote in this source.", small), Spacer(1, 2),
                 Paragraph(esc(a["comment"]), base)]
         right = [Paragraph('<font color="%s"><b>%s</b></font>' % (AREA_COLORS[i], esc(a["area"])), small),
                  Paragraph("%d rated work sample%s." % (sum(p in LEVELS for p in a["points"]),
@@ -210,7 +270,7 @@ def writing_bio(r, path):
           Paragraph("My explanation", h2), lines(10), Paragraph("One question I want to discuss", h2), lines(3), Spacer(1, 6),
           Paragraph(esc(r["page2_note"]), small)]
     foot = "Source dates identify the work. Prepared %s." % r["prepared"]
-    doc_for(path).build(s, onFirstPage=footer_fn(foot), onLaterPages=footer_fn(foot))
+    build(path, s, foot, "writing_bio")
 
 
 def writing_cer(r, path):
@@ -221,7 +281,8 @@ def writing_cer(r, path):
     for a in r["areas"]:
         s += [Paragraph(esc(a["area"]), h2),
               Paragraph("%s - %s" % (esc(a["source"]), level_span(a["level"])), base),
-              Paragraph("Your words (%s): “%s”" % (esc(a["where"]), esc(a["quote"])), quote),
+              Paragraph("Your words (%s): “%s”" % (esc(a["where"]), esc(a["quote"])), quote) if a.get("quote")
+              else Paragraph("No answer to quote in this source.", small),
               Paragraph(esc(a["comment"]), base)]
     s += [PageBreak(), Paragraph(esc(r["kicker"]), small), Spacer(1, 6), Paragraph(esc(r["name"]), title),
           Paragraph("Submitted sources - four writing areas", h2),
@@ -251,12 +312,22 @@ def writing_cer(r, path):
           Paragraph("Reasoning: Explain how each fact connects to your claim. Use the science idea and because.", h3), lines(4),
           Paragraph("Write this yourself and hand this page back. Your paper CER is not assessed in this report.", small)]
     foot = "Saved writing observations, not a grade or a completed CER assessment."
-    doc_for(path).build(s, onFirstPage=footer_fn(foot), onLaterPages=footer_fn(foot))
+    build(path, s, foot, "writing_cer")
 
 
 LAYOUTS = {"lesson_onepage": lesson_onepage, "lessons_grouped": lessons_grouped,
            "writing_bio": writing_bio, "writing_cer": writing_cer}
 
+def render(report, path):
+    """Validate one report and write its PDF; raises ReportError instead of a wrong page."""
+    if inside_git_checkout(path):
+        raise ReportError("Write reports outside the repository; %s is inside a Git checkout." % path)
+    check(report)
+    LAYOUTS[report["layout"]](report, path)
+
+
 if __name__ == "__main__":
-    report = json.load(open(sys.argv[1]))
-    LAYOUTS[report["layout"]](report, sys.argv[2])
+    try:
+        render(json.load(open(sys.argv[1])), sys.argv[2])
+    except ReportError as error:
+        sys.exit("render.py: %s" % error)
