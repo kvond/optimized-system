@@ -1,0 +1,44 @@
+{
+ "layout": "lessons_grouped",
+ "heading": "A&P FEEDBACK",
+ "name": "Sam R.",
+ "subhead": "Example unit: Cells and Tissues",
+ "intro": "Synthetic example. Your current understanding, organized by lesson.",
+ "lessons": [
+  {
+   "lesson": "Example lesson 1",
+   "aspects": [
+    {
+     "name": "Structure fits function",
+     "level": "Proficient",
+     "shows": "Synthetic: links a cell part to the job it does."
+    },
+    {
+     "name": "Membranes control what enters",
+     "level": "Developing",
+     "shows": "Synthetic: names the membrane; the mechanism is partly explained."
+    }
+   ]
+  },
+  {
+   "lesson": "Example lesson 2",
+   "aspects": [
+    {
+     "name": "Tissues are cells working together",
+     "level": "Evidence unavailable",
+     "shows": "No answer in this box."
+    }
+   ]
+  }
+ ],
+ "page2_label": "Page 2 - your thinking",
+ "thinking_changed": "Synthetic example: only describe a change when an earlier submission supports it.",
+ "question": "Synthetic example question tied to the student's own words?",
+ "evidence": [
+  {
+   "label": "Revised answer, slide 6",
+   "text": "Synthetic quoted student words."
+  }
+ ],
+ "footer": "Student feedback"
+}

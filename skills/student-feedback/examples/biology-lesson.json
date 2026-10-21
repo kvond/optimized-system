@@ -1,0 +1,20 @@
+{
+ "layout": "lesson_onepage",
+ "kicker": "BIOLOGY / FEEDBACK",
+ "name": "Sam R.",
+ "lesson": "Example lesson: Cycles of Matter",
+ "date": "2026-01-15",
+ "aspects": [
+  {
+   "name": "Carbon moves from the air into living things",
+   "level": "Developing"
+  },
+  {
+   "name": "Matter cycles, energy does not",
+   "level": "Evidence unavailable"
+  }
+ ],
+ "how_you_did": "Synthetic example text. You trace carbon dioxide into the sugars a plant builds. The second question was left blank, so there is no evidence yet about energy.",
+ "question": "Synthetic example: if the carbon atoms in burning wood do not disappear, where do they go?",
+ "footer": "Conceptual feedback is not a grade."
+}

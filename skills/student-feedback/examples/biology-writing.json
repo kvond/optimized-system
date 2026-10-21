@@ -1,0 +1,81 @@
+{
+ "layout": "writing_bio",
+ "kicker": "BIOLOGY / SCIENCE WRITING",
+ "name": "Sam R.",
+ "prepared": "2026-01-16",
+ "work": [
+  {
+   "short": "L1",
+   "lesson": "Example lesson A",
+   "date": "2026-01-08"
+  },
+  {
+   "short": "L2",
+   "lesson": "Example lesson B",
+   "date": "2026-01-15"
+  }
+ ],
+ "areas": [
+  {
+   "area": "Vocabulary",
+   "prompt": "Use science words accurately",
+   "level": "Developing",
+   "lesson": "Example lesson B",
+   "date": "2026-01-15",
+   "code": "CA1",
+   "quote": "Synthetic quoted student words.",
+   "comment": "Synthetic comment: what works and one next move.",
+   "points": [
+    null,
+    "Developing"
+   ]
+  },
+  {
+   "area": "Concepts",
+   "prompt": "Explain the science idea",
+   "level": "Developing",
+   "lesson": "Example lesson B",
+   "date": "2026-01-15",
+   "code": "CA1",
+   "quote": "Synthetic quoted student words.",
+   "comment": "Synthetic comment: what works and one next move.",
+   "points": [
+    null,
+    "Developing"
+   ]
+  },
+  {
+   "area": "Evidence",
+   "prompt": "Use specific evidence",
+   "level": "Developing",
+   "lesson": "Example lesson B",
+   "date": "2026-01-15",
+   "code": "CA1",
+   "quote": "Synthetic quoted student words.",
+   "comment": "Synthetic comment: what works and one next move.",
+   "points": [
+    null,
+    "Developing"
+   ]
+  },
+  {
+   "area": "Reasoning",
+   "prompt": "Explain why your evidence supports the claim",
+   "level": "Developing",
+   "lesson": "Example lesson B",
+   "date": "2026-01-15",
+   "code": "CA1",
+   "quote": "Synthetic quoted student words.",
+   "comment": "Synthetic comment: what works and one next move.",
+   "points": [
+    null,
+    "Developing"
+   ]
+  }
+ ],
+ "challenge": {
+  "title": "Example challenge",
+  "task": "Synthetic task tied to the student's latest lesson."
+ },
+ "page2_note": "Synthetic note about how the challenge is returned."
+}

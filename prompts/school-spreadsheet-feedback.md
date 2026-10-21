@@ -38,10 +38,11 @@ is still mandatory. A whole-class missing-work claim needs whole-class evidence.
   newer student work was assessed. Reuse unchanged reviewed reports, including
   Claude's saved catch-up work, without another assessment or duplicate file.
 - For a genuinely unreviewed eligible submitted piece, provide critical-aspect
-  feedback and science-writing assessment where applicable using the current
-  Agenda feedback prompts, teaching manual and approved exemplar reports. Read
-  those models, not just their filenames. Keep the two judgments distinct.
-  Preserve attributed student evidence, substantive explanation, useful graphics,
+  feedback and science-writing assessment where applicable using
+  `skills/student-feedback` (the canonical feedback prompt, scale and class
+  formats; the Agenda Feedback Prompts tab is Katherine's quick reference) and
+  the teaching manual. Read those models, not just their filenames. Keep the
+  two judgments distinct. Preserve attributed student evidence, substantive explanation, useful graphics,
   accessible practice and writing space from the established formats. Do not
   invent quotations, scores, improvement, source dates or a writing sample.
   Unassessed writing remains unassessed; N/A is not a zero or Beginning.
