@@ -71,6 +71,12 @@ marker layer and the deck disagree, fix the deck, never the prompt.
 
 ### 16.3 Embedded codes, including new student textboxes
 
+**Dated exception:** before applying paired NOTES/DRAFT defaults or the prompt
+below, check [§17.11](17-lesson-renewal.md#1711-audit-first-course-specific-renewal-and-paper-revisions-2026-10-25).
+Explicitly authorized paper-only revision lessons, beginning with new Biology C08,
+retain first-answer codes but do not recreate digital DRAFT boxes or requirements.
+Existing distributed copies and historical assessments retain their own contracts.
+
 The enhance pass also checks the embedded codes. The syntax comes from Master Agenda
 `Agenda 26-27 CLEAN`, tab **Feedback Prompts**, **Prompt 00 (Embed Codes)**. Read it
 fresh each time and don't copy it here. The observed schema is `[[NOTES:CYCLE:ID]]`

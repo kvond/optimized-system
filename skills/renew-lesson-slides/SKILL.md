@@ -14,7 +14,8 @@ each run. When Katherine adds a specification, it goes into §17 first.
 1. Identify the deck: course, week or cycle from the current Master Agenda
    (`Agenda 26-27 CLEAN`), and the exact deck ID. If Katherine is editing it right now,
    only propose; do not write.
-2. Inventory every gap against §17.1–17.10, slide by slide. That includes every
+2. Before editing, produce the defect list required by §17.11 and inventory every
+   gap against §17.1–17.11, slide by slide. That includes every
    "Relates to me" page, each student-response mode, every run of two or more writing
    slides, pictures illustrating each VT difference/contrast (add them where
    absent, §17.7 and §6), before/during/after-discernment titles, and activity-aware
@@ -24,7 +25,8 @@ each run. When Katherine adds a specification, it goes into §17 first.
 3. Make the smallest changes that close the gaps. Take a fresh revision check before
    writing, and keep originals, media, student copies, codes unrelated to §17, and
    grades unchanged.
-4. Run §17.6 and report exactly what passed, with the deck link and remaining owner
+4. Run §17.6 together with §17.11's course-specific, teacher-pack and paper-revision
+   processability checks, and report exactly what passed, with the deck link and remaining owner
    actions. Follow §17.9 for authorized release order and school-account readback;
    distinguish reviewed-deck readiness from verified Agenda/Schoology completion.
 

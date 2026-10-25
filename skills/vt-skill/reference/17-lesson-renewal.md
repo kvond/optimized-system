@@ -239,3 +239,111 @@ does not replace the full renewal pilot/Claude review or classroom-release gates
 Track decks and slides audited, edited, unchanged, deferred and unavailable
 separately. Protected teacher-edited decks remain deferred; uncertain lesson/source
 identity remains unresolved rather than being inferred from a title or week.
+
+### 17.11 Audit-first, course-specific renewal and paper revisions (2026-10-25)
+
+Source: Katherine's direct October 25 lesson-renewal instructions, consolidated
+in her 14:11 UTC request for a systematic checklist and usable teaching outputs,
+with the same-day follow-on scope, alignment and access clarifications below.
+This dated clarification supplements §§17.1–17.10; it supersedes conflicting
+digital-revision defaults only for explicitly authorized paper-revision lessons,
+beginning with Biology C08. It does not retroactively change distributed copies,
+C02–C07 assessments, student work, grades or delivery history.
+
+**Audit before editing.** Read the actual source deck, companion resources and
+teacher notes in order. First produce a slide/object-specific defect list covering
+logic and transitions, scientific accuracy, completeness, text density, visual
+evidence and editable response space. Audit NGSS alignment, needed vocabulary and
+the expected reasoning demand before editing; preserve the intended demand rather
+than substituting recall or inventing standards coverage. Distinguish a verified defect from an
+unresolved teaching decision. Fix authorized defects rather than pasting audit
+language, repair instructions or internal status into the teaching body. Keep the
+existing one-writer claim and revision guards; this rule grants no new access,
+publishing or grading authority.
+
+**Course-specific sequence, not one template for all courses.**
+
+- **Biology:** plan the opening lab/investigation for approximately 30 minutes
+  within a 90-minute lesson, including realistic setup and cleanup. For C08 use
+  case → organelle evidence → student noticing → huddle; the teacher records or
+  consolidates ideas only after students offer them. For other Biology lessons,
+  use the relevant biological evidence rather than forcing an organelle case.
+  Keep the whole 90-minute plan explicit, including discussion, transitions and
+  synthesis; the lab is not an additional 30 minutes outside that total.
+- **Forensics:** write for grades 11–12. Build a 90-minute case sequence with an
+  initial position/vote, evidence-based debate, further evidence and a revisit of
+  the original position. Preserve uncertainty and alternative interpretations.
+  Do not impose Biology's lab-first or organelle format.
+- **Anatomy:** the original-source deck remains the backbone in its original
+  order (§16.1). Map every original slide, image, diagram, video, table and linked
+  activity to its retained location. VT questions and active review add to that
+  source, never replace it with a shortened reconstruction. Counts alone do not
+  establish coverage; inspect each original element.
+
+**Rolling scope and observation material.** Maintain the renewal/preflight window
+of two lessons ahead and one lesson behind the current teaching point, using the
+verified lesson sequence rather than guessing from filenames. Queue respiration
+for its future place in that sequence; this clarification is not an instruction
+to redo it immediately. Observation cases and images support classroom talk and
+noticing. They are not automatically new student assignments or a generic
+optional activity; preserve their actual instructional purpose and create no
+submission or grading requirement without authorization.
+
+**Before every instructional question.** Place an active, editable pre-review
+immediately before the question, using the evidence and prerequisites it needs.
+Students notice, sort, label, compare, move or trace before answering; a passive
+summary or a review elsewhere in the deck is insufficient. Do not reveal the
+answer the question is intended to elicit. Retain existing unscored practice and
+scored-response distinctions rather than inventing participation marks.
+
+**Resources and teacher delivery.** Use readable 18-point icon/resource-link
+labels and verify the actual target, including resources enhanced with Google's
+tools. Enhancement is not evidence of accuracy, accessibility or useful placement.
+The existing per-lesson teacher pack must explain purpose, background, teacher and
+student actions, transitions, grouping plans and directly usable print links.
+Put delivery guidance in the appropriate speaker notes and teacher pack, not
+student-facing repair prose. Preserve §17.1's answer-only morpheme notes. Review
+the pack against the final deck order; it must be usable to teach, not just an
+audit or a list of links.
+
+**Paper-only revision override and C08 processing gate.**
+
+- For the authorized Biology lesson, remove digital second-answer boxes,
+  revision-prompt speaker notes and paper-revision reminders from the deck.
+  Preserve the original first-answer NOTES and BANK fields. Keep the revision
+  questions/identities in the teacher pack and give each lesson its own separate
+  Schoology paper-revision assignment; never borrow another lesson's assignment.
+- For new C08, remove only the authorized DRAFT bindings
+  `CA1-MASTERY`, `CA2-MASTERY`, `WHATIF`. Reconcile the one readable
+  first-slide inventory shape to the actual retained codes, with
+  `DRAFT=0 DRAFT_IDS=-`; do not leave an inventory only in speaker notes.
+  The currently reviewed C08 counts are NOTES=17, OPTIONAL=1, BANK_TERMS=7;
+  verify those counts and exact IDs against the saved source, not this prose alone.
+- Preflight the actual downstream behavior before release: digital revision is
+  not applicable (`None`), never a zero or three missing responses. Use the exact
+  digital NOTES-only mapping and separate paper-revision mapping/evidence;
+  verify that absence handling cannot generate a digital revision zero.
+  A paper teaching-readiness role does not establish assessment compatibility.
+- Verify a supported feedback path for the intended first-answer/paper evidence.
+  The existing DRAFT-dependent feedback route is not automatically compatible.
+  Do not fabricate DRAFT evidence, restore removed boxes to satisfy a parser,
+  bypass a hold or claim end-to-end readiness from marker counts alone. Route an
+  integration gap to the existing Teaching Hub owner; keep release status explicit.
+
+**Access clarification (2026-10-25).** §17.5's default remains: preserve existing
+access unless explicitly authorized otherwise. An explicit user grant to restrict
+the exact lesson materials to district-only access permits removal of public
+`ANYONE` access while preserving the owner and named collaborators; verify the
+intended district viewer permission and read back the result. Do not infer that
+grant from this checklist or remove other permissions. Purchased materials must
+not be made public; use their authorized access and licensing conditions.
+
+**Final evidence and usable outcome.** Re-read the final ordered native outline,
+render the saved changed slides and inspect the whole instructional sequence.
+Check scientific content, original-element coverage, density, visuals, editability,
+speaker notes, teacher-pack usability, all links, intended-account access and
+Teaching Hub processability. Apply §17.9's existing Agenda/Schoology release order
+and permissions. Report each defect as fixed with exact saved/render/readback
+evidence, still open with its repair owner, or awaiting a specific user decision.
+Do not report a plan, linter pass, partial sample or draft link as a released,
+processable lesson.
