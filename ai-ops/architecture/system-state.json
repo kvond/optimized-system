@@ -282,6 +282,28 @@
       "next_action": "Check for an existing verified Form, roster/assignment binding and feedback-routing test before creating replacements",
       "teacher_action": "None newly requested; preserve current recovery coordination.",
       "blocker": "The dated checkpoint reports missing Form, unverified mapping/ingestion and no release acceptance"
+    },
+    {
+      "id": "slides_links",
+      "trunk": "slides",
+      "label": "Lesson to Agenda to Schoology links",
+      "state": "unverified",
+      "owner": "Existing lesson/assignment setup owner; preserve source and date mappings",
+      "observed_at": "2026-10-24T20:18:50Z",
+      "evidence": [
+        {
+          "label": "Original architecture dependency request",
+          "url": "https://answerableteaching.slack.com/archives/C0C9E488BAN/p1792873130228959"
+        },
+        {
+          "label": "Current work priorities",
+          "url": "https://answerableteaching.slack.com/archives/C0C9E488BAN/p1792880397813739"
+        }
+      ],
+      "recovery_ref": "Canonical Master Agenda, existing lesson/Turn-in registry and saved Schoology page history",
+      "next_action": "After reviewed lesson readiness, verify exact source, date, Form and section before updating links; keep original materials and receipts",
+      "teacher_action": "None now; review a concrete lesson only when ready",
+      "blocker": "Current exact link/source/date acceptance has not been verified; this does not authorize Schoology grade sync"
     }
   ],
   "dependencies": [
@@ -326,6 +348,18 @@
       "to": "slides_lab",
       "state": "blocked",
       "reason": "Exact Form and roster/assignment mapping required"
+    },
+    {
+      "from": "slides_pilot",
+      "to": "slides_links",
+      "state": "blocked",
+      "reason": "Reviewed lesson and exact source links required"
+    },
+    {
+      "from": "hub_bindings",
+      "to": "slides_links",
+      "state": "blocked",
+      "reason": "Agenda date, Form and section proof required"
     }
   ],
   "costs": {
@@ -333,5 +367,8 @@
     "Google Cloud": "Usage unavailable; no current billing export, trend or cost per verified operation was read. Deployment success does not establish savings.",
     "Subscriptions": "Usage unavailable; no fresh subscription invoice or allowance measurement was read. Do not infer relative savings."
   },
-  "my_actions": "None newly required by this map. The existing recovery owner must first establish the current eligible posting scope and whether the school login actually needs attention. I-Tracker access/recipient approval comes only after a validated delivery preview; pilot review comes only after a concrete lesson is ready. No weekend execution obligation is assigned."
+  "my_actions": {
+    "summary": "None newly required; later actions remain conditional",
+    "detail": "None newly required by this map. The existing recovery owner must first establish the current eligible posting scope and whether the school login actually needs attention. I-Tracker access/recipient approval comes only after a validated delivery preview; pilot review comes only after a concrete lesson is ready. No weekend execution obligation is assigned."
+  }
 }

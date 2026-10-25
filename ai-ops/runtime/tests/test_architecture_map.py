@@ -35,6 +35,8 @@ class ArchitectureMapTests(unittest.TestCase):
         for title in module.TRUNKS.values(): self.assertIn(title, document)
         self.assertIn('## My actions', document)
         self.assertIn('None newly required', document)
+        self.assertIn('classroom --> my_actions', document)
+        self.assertIn('Schoology', document)
         self.assertIn('linkStyle', document)
         self.assertIn('Usage unavailable', document)
         self.assertIn('not a live health check', document)
@@ -82,6 +84,7 @@ class ArchitectureMapTests(unittest.TestCase):
 
     def test_duplicate_nodes_and_dangling_or_duplicate_edges_are_refused(self):
         changes = [lambda d: d['nodes'].append(deepcopy(d['nodes'][0])),
+                   lambda d: d['nodes'][0].update(id='classroom'),
                    lambda d: d['dependencies'][0].update(to='missing'),
                    lambda d: d['dependencies'].append(deepcopy(d['dependencies'][0]))]
         for change in changes:

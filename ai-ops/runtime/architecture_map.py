@@ -67,7 +67,8 @@ def validate(data):
         if not isinstance(node, dict) or set(node) != {'id', 'trunk', 'label', 'state', 'owner', 'observed_at', 'evidence', 'recovery_ref', 'next_action', 'teacher_action', 'blocker'}:
             raise ValueError('Invalid node fields.')
         ident = node['id']
-        if not isinstance(ident, str) or not re.fullmatch(r'[a-z][a-z0-9_]{0,40}', ident) or ident in ids:
+        if (not isinstance(ident, str) or not re.fullmatch(r'[a-z][a-z0-9_]{0,40}', ident)
+                or ident in ids or ident in {'classroom', 'my_actions'}):
             raise ValueError('Invalid or duplicate node id.')
         ids.add(ident)
         if node['trunk'] not in TRUNKS or node['state'] not in STATES:
@@ -97,7 +98,11 @@ def validate(data):
     if not isinstance(data['costs'], dict) or set(data['costs']) != {'API', 'Google Cloud', 'Subscriptions'}:
         raise ValueError('Keep all three cost categories explicit.')
     for value in data['costs'].values(): text(value)
-    text(data['my_actions'])
+    if not isinstance(data['my_actions'], dict) or set(data['my_actions']) != {'summary', 'detail'}:
+        raise ValueError('My actions needs a concise branch summary and full conditions.')
+    text(data['my_actions']['summary']); text(data['my_actions']['detail'])
+    if len(data['my_actions']['summary']) > 150:
+        raise ValueError('Keep the My actions branch concise.')
     return data
 
 
@@ -113,12 +118,15 @@ def render(data):
     validate(data)
     lines = ['# Classroom system: evidence and next steps', '',
         f"Snapshot: **{data['updated_at']}**. These are dated observations, not a live health check or an execution grant.", '',
-        '## My actions', '', md(data['my_actions']), '',
+        '## My actions', '', md(data['my_actions']['detail']), '',
         '## Dependency map', '', 'Red arrows identify held dependencies; the exact blocker is written on the arrow and below. Clickable evidence and recovery references follow the diagram.', '',
         '```mermaid', 'flowchart TB', '  classroom["Classroom system"]']
     for node in data['nodes']:
         lines.append(f"  {node['id']}[{label(node['label'] + ' — ' + STATES[node['state']])}]")
-    links = 0
+    lines.append(f"  my_actions[{label('My actions: ' + data['my_actions']['summary'])}]")
+    lines.append('  classroom --> my_actions')
+    lines.append('  style my_actions fill:#f3e8ff,stroke:#7e22ce,color:#43146d;')
+    links = 1
     for trunk in TRUNKS:
         lines.append(f'  classroom --> {trunk}'); links += 1
     for node in data['nodes']:

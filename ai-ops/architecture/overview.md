@@ -27,6 +27,10 @@ flowchart TB
   slides_audit["Cycle08 model and NGSS baseline — Unverified"]
   slides_pilot["Revised pilot and classroom evidence — Blocked"]
   slides_lab["Independent enzyme lab release — Blocked"]
+  slides_links["Lesson to Agenda to Schoology links — Unverified"]
+  my_actions["My actions: None newly required; later actions remain conditional"]
+  classroom --> my_actions
+  style my_actions fill:#f3e8ff,stroke:#7e22ce,color:#43146d;
   classroom --> ic
   classroom --> hub
   classroom --> slides
@@ -41,6 +45,7 @@ flowchart TB
   slides --- slides_audit
   slides --- slides_pilot
   slides --- slides_lab
+  slides --- slides_links
   hub_bindings -->|"Source, roster and exact destination proof missing"| ic_post
   hub_bindings -->|"Agenda and Form/date/section bindings required"| ic_assign
   ic_post -->|"Native saved-grade readback required"| ic_parent
@@ -48,6 +53,8 @@ flowchart TB
   hub_feedback -->|"Active app.js claim must be handed back"| hub_prep
   slides_audit -->|"Verified baseline must precede revised pilot"| slides_pilot
   hub_bindings -->|"Exact Form and roster/assignment mapping required"| slides_lab
+  slides_pilot -->|"Reviewed lesson and exact source links required"| slides_links
+  hub_bindings -->|"Agenda date, Form and section proof required"| slides_links
   classDef verified_done fill:#e8f5e9,stroke:#2e7d32,color:#163d20;
   classDef in_progress fill:#e3f2fd,stroke:#1565c0,color:#123b62;
   classDef blocked fill:#ffebee,stroke:#b42318,color:#7a1910;
@@ -68,7 +75,8 @@ flowchart TB
   class slides_audit unverified;
   class slides_pilot blocked;
   class slides_lab blocked;
-  linkStyle 14,15,16,17,18,19,20 stroke:#b42318,stroke-width:3px;
+  class slides_links unverified;
+  linkStyle 16,17,18,19,20,21,22,23,24 stroke:#b42318,stroke-width:3px;
 ```
 
 ## Owners, evidence and remaining work
@@ -101,6 +109,7 @@ flowchart TB
 | Cycle08 model and NGSS baseline<br>**Unverified** | Existing Cycle08 lesson owner | 2026-10-24T19:39:01Z<br>[Model\-first Phase A gate](https://answerableteaching.slack.com/archives/C0C9E488BAN/p1792870741466259) | Original Cycle08 source, current native deck, models and Teaching Notes. Next: Inspect existing model behavior and standards/question crosswalk; link the actual baseline report. Hold: A completed Phase A baseline with exact slide/model evidence has not been verified here | None newly requested; preserve current recovery coordination\. |
 | Revised pilot and classroom evidence<br>**Blocked** | Existing lesson owner; independent teaching\-logic reviewer | 2026-10-24T19:39:01Z<br>[Pilot acceptance gates](https://answerableteaching.slack.com/archives/C0C9E488BAN/p1792870741466259) | Preserved original lesson and reviewed pilot/revision evidence. Next: After baseline acceptance, verify pilot links, source preservation, student access and actual explanations. Hold: Phase A evidence, reviewed pilot and classroom learning evidence must precede wider rollout | Review a concrete pilot only when its evidence and links are ready; no weekend execution obligation now\. |
 | Independent enzyme lab release<br>**Blocked** | Existing lab owner and authorized Form/mapping builder | 2026-10-24T21:44:21Z<br>[Unreleased lab checkpoint](https://answerableteaching.slack.com/archives/C0C9E488BAN/p1792878261870839); [Lab design boundaries](https://answerableteaching.slack.com/archives/C0C9E488BAN/p1792879433477229) | Canonical Demo/Independent Lab source folders; exact Form registry and original student artifacts. Next: Check for an existing verified Form, roster/assignment binding and feedback\-routing test before creating replacements. Hold: The dated checkpoint reports missing Form, unverified mapping/ingestion and no release acceptance | None newly requested; preserve current recovery coordination\. |
+| Lesson to Agenda to Schoology links<br>**Unverified** | Existing lesson/assignment setup owner; preserve source and date mappings | 2026-10-24T20:18:50Z<br>[Original architecture dependency request](https://answerableteaching.slack.com/archives/C0C9E488BAN/p1792873130228959); [Current work priorities](https://answerableteaching.slack.com/archives/C0C9E488BAN/p1792880397813739) | Canonical Master Agenda, existing lesson/Turn\-in registry and saved Schoology page history. Next: After reviewed lesson readiness, verify exact source, date, Form and section before updating links; keep original materials and receipts. Hold: Current exact link/source/date acceptance has not been verified; this does not authorize Schoology grade sync | None now; review a concrete lesson only when ready |
 
 ## Costs
 
