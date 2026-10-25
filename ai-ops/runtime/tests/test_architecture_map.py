@@ -92,6 +92,10 @@ class ArchitectureMapTests(unittest.TestCase):
         for address in ['javascript:alert(1)', 'https://github.com@evil.example/kvond/optimized-system',
                         'https://user:password@github.com/kvond/optimized-system',
                         'https://github.com/kvond/optimized-system?token=private',
+                        'https://github.com/kvond/optimized-system/../../someone/another-repo',
+                        'https://github.com/kvond/optimized-system#x)![remote](https://example.invalid/pixel)',
+                        'https://github.com/kvond/optimized-system#space fragment',
+                        'https://github.com/kvond/optimized-system//ambiguous',
                         'https://drive.google.com/file/d/private', 'file:///private/history',
                         'https://answerableteaching.slack.com/client/private']:
             data = deepcopy(self.data); data['nodes'][0]['evidence'][0]['url'] = address

@@ -37,10 +37,15 @@ def text(value):
 
 def url(value):
     value = text(value)
+    if re.search(r'[\s<>()\[\]`"\\]', value):
+        raise ValueError('Unsafe evidence URL characters.')
     parsed = urlsplit(value)
     if (parsed.scheme != 'https' or parsed.username or parsed.password or parsed.port
             or parsed.query or parsed.netloc not in {'github.com', 'answerableteaching.slack.com'}):
         raise ValueError('Evidence must use a canonical GitHub or public Slack reference.')
+    if (any(part in {'.', '..'} for part in parsed.path.split('/')) or '//' in parsed.path
+            or (parsed.fragment and not re.fullmatch(r'[A-Za-z0-9_-]{1,160}', parsed.fragment))):
+        raise ValueError('Unsafe evidence path or fragment.')
     if parsed.netloc == 'github.com':
         if not re.fullmatch(r'/kvond/(?:optimized-system|school-workflow-hub)(?:/[A-Za-z0-9_./-]+)?', parsed.path):
             raise ValueError('Unrecognized repository reference.')
