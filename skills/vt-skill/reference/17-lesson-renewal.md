@@ -290,6 +290,12 @@ optional activity; preserve their actual instructional purpose and create no
 submission or grading requirement without authorization.
 
 **Support material serves the next question (clarified 2026-10-25, 22:52 UTC).**
+
+Katherine's exact principles (2026-10-25, 23:46 UTC):
+
+> You’re controlling when students encounter information so they have something concrete to think with when you ask the question.
+> Don't proliferate activities that don't serve a purpose
+
 Katherine's instruction to make this rule canonical refines the existing
 pre-review requirement, not the course-specific sequences above. In Biology,
 place the relevant clinic/case/organelle reference near its corresponding
