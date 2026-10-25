@@ -289,12 +289,29 @@ noticing. They are not automatically new student assignments or a generic
 optional activity; preserve their actual instructional purpose and create no
 submission or grading requirement without authorization.
 
-**Before every instructional question.** Place an active, editable pre-review
-immediately before the question, using the evidence and prerequisites it needs.
-Students notice, sort, label, compare, move or trace before answering; a passive
-summary or a review elsewhere in the deck is insufficient. Do not reveal the
-answer the question is intended to elicit. Retain existing unscored practice and
-scored-response distinctions rather than inventing participation marks.
+**Support material serves the next question (clarified 2026-10-25, 22:52 UTC).**
+Katherine's instruction to make this rule canonical refines the existing
+pre-review requirement, not the course-specific sequences above. In Biology,
+place the relevant clinic/case/organelle reference near its corresponding
+reasoning question rather than collecting references into large standalone
+blocks. Reference and noticing slides support looking and discussion; they are
+not automatically extra activities, submitted answers or graded assignments.
+The observed sequence is rough-ER reference → smooth-ER reference → prerequisite
+review → reasoning question. Use that relationship, not those organelles, when
+the next question concerns different content.
+
+Immediately before every instructional question, place active, editable review
+that rehearses precisely the prerequisites needed for that question. Students
+notice, sort, label, compare, move or trace as appropriate; a passive summary,
+a generic activity or review elsewhere in the deck is insufficient. Do not
+manufacture extra assignments or reveal the reasoning answer. Retain existing
+unscored practice and scored-response distinctions, with no new participation
+marks. Acceptance: in the ordered native outline and saved render, identify each
+question's relevant nearby support and immediately preceding prerequisite
+review, and verify that reference/noticing slides gained no submission demand.
+Inspect every actual answer slide for its existing response-bound embedded code
+and reconcile the inventory under §16.3 and the paper-only override below;
+do not add assessment codes to reference/review slides merely because they exist.
 
 **Resources and teacher delivery.** Use readable 18-point icon/resource-link
 labels and verify the actual target, including resources enhanced with Google's
