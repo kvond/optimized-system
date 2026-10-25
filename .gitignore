@@ -134,3 +134,6 @@ __pycache__/
 !/skills/student-feedback/examples/biology-lesson.json
 !/skills/student-feedback/examples/biology-writing.json
 !/skills/student-feedback/examples/forensics-writing-cer.json
+
+# Reviewed classroom map references only; never private execution receipts.
+!/ai-ops/architecture/system-state.json

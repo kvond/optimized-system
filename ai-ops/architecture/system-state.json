@@ -1,0 +1,374 @@
+{
+  "schema": "classroom-map/v1",
+  "updated_at": "2026-10-25T00:02:58Z",
+  "trunks": {
+    "ic": "IC interactions",
+    "hub": "Teaching Hub",
+    "slides": "Lesson Slides"
+  },
+  "nodes": [
+    {
+      "id": "ic",
+      "trunk": "ic",
+      "label": "IC interactions",
+      "state": "unverified",
+      "owner": "Existing I-12 recovery coordinator; Chrome helper is the sole grade writer",
+      "observed_at": "2026-10-24T20:09:16Z",
+      "evidence": [
+        {
+          "label": "Existing recovery checkpoint",
+          "url": "https://answerableteaching.slack.com/archives/C0C9E488BAN/p1792872556341569"
+        }
+      ],
+      "recovery_ref": "Existing private I-12 operations record and immutable run history; resolve through the recovery coordinator",
+      "next_action": "Verify the current source, roster, exact destination and native saved readback",
+      "teacher_action": "None newly requested; preserve current recovery coordination.",
+      "blocker": "Current saved-grade acceptance is not established by the referenced deployment or browser visibility"
+    },
+    {
+      "id": "ic_post",
+      "trunk": "ic",
+      "label": "Eligible posting and native readback",
+      "state": "blocked",
+      "owner": "Existing Chrome helper under the current recovery owner",
+      "observed_at": "2026-10-24T20:09:16Z",
+      "evidence": [
+        {
+          "label": "Existing execution handoff",
+          "url": "https://answerableteaching.slack.com/archives/C0C9E488BAN/p1792860170045849"
+        },
+        {
+          "label": "Recovery checkpoint",
+          "url": "https://answerableteaching.slack.com/archives/C0C9E488BAN/p1792872556341569"
+        }
+      ],
+      "recovery_ref": "Existing private I-12 operations record and immutable run history; resolve through the recovery coordinator",
+      "next_action": "Reconcile current ownership and exact eligible queue; preserve higher scores and uncertain-save fences",
+      "teacher_action": "None newly requested; preserve current recovery coordination.",
+      "blocker": "Required source/roster/private mapping and exact authenticated score-panel acceptance remain unverified"
+    },
+    {
+      "id": "ic_csv",
+      "trunk": "ic",
+      "label": "Morning posting CSV and Posting log",
+      "state": "still_needed",
+      "owner": "Existing recovery coordinator; implementation task321",
+      "observed_at": "2026-10-24T11:39:55Z",
+      "evidence": [
+        {
+          "label": "CSV task321",
+          "url": "https://github.com/kvond/school-workflow-hub/issues/321"
+        }
+      ],
+      "recovery_ref": "Existing private assessment records and Posting log; CSV is a derivative",
+      "next_action": "Inspect and reuse verified source and posting records; implement privately after claim reconciliation",
+      "teacher_action": "None newly requested; preserve current recovery coordination.",
+      "blocker": "A feature request is not a generated export or a posted score"
+    },
+    {
+      "id": "ic_assign",
+      "trunk": "ic",
+      "label": "Assignment creation and date alignment",
+      "state": "blocked",
+      "owner": "Existing IC owner after Agenda binding acceptance",
+      "observed_at": "2026-10-24T15:19:10Z",
+      "evidence": [
+        {
+          "label": "Dependency order",
+          "url": "https://answerableteaching.slack.com/archives/C0C9E488BAN/p1792855150386299"
+        }
+      ],
+      "recovery_ref": "Existing private I-12 operations record and immutable run history; resolve through the recovery coordinator",
+      "next_action": "Verify Agenda date, Form, week, section and component before any assignment action",
+      "teacher_action": "None newly requested; preserve current recovery coordination.",
+      "blocker": "Exact deployed Agenda/Turn-in bindings and private readback must precede assignment changes"
+    },
+    {
+      "id": "ic_parent",
+      "trunk": "ic",
+      "label": "Parent dashboard and I-Tracker delivery",
+      "state": "blocked",
+      "owner": "Existing authorized school communication owner",
+      "observed_at": "2026-10-24T15:19:10Z",
+      "evidence": [
+        {
+          "label": "Parent-delivery gates",
+          "url": "https://answerableteaching.slack.com/archives/C0C9E488BAN/p1792855150386299"
+        }
+      ],
+      "recovery_ref": "Existing private recipient, preview and delivery records",
+      "next_action": "Prepare only from reconciled data; verify recipients and preview before separately authorized delivery",
+      "teacher_action": "Only later, when a validated preview is ready: review recipients/scope and open I-Tracker if requested. None now.",
+      "blocker": "Verified grade/feedback data and delivery scope/preview are not established"
+    },
+    {
+      "id": "hub",
+      "trunk": "hub",
+      "label": "Teaching Hub",
+      "state": "in_progress",
+      "owner": "Existing Codex recovery coordinator; source and feedback owners preserved",
+      "observed_at": "2026-10-24T20:09:16Z",
+      "evidence": [
+        {
+          "label": "Deployed checkpoint",
+          "url": "https://answerableteaching.slack.com/archives/C0C9E488BAN/p1792872556341569"
+        },
+        {
+          "label": "Open recovery264",
+          "url": "https://github.com/kvond/school-workflow-hub/issues/264"
+        }
+      ],
+      "recovery_ref": "Existing private I-12 operations record and immutable run history; resolve through the recovery coordinator",
+      "next_action": "Keep deployed read UI separate from source, grading, feedback and delivery receipts",
+      "teacher_action": "None newly requested; preserve current recovery coordination.",
+      "blocker": "Deployment/read rendering is verified; live recovery acceptance remains open"
+    },
+    {
+      "id": "hub_notes",
+      "trunk": "hub",
+      "label": "Class notes: deployed and readable",
+      "state": "verified_done",
+      "owner": "Existing Teaching Hub code/integration owner",
+      "observed_at": "2026-10-24T20:08:34Z",
+      "evidence": [
+        {
+          "label": "Deployment and native read evidence",
+          "url": "https://github.com/kvond/school-workflow-hub/issues/314#issuecomment-6388959844"
+        }
+      ],
+      "recovery_ref": "Versioned Hub source and original private class-note CAS/history",
+      "next_action": "Obtain real changed-text Save/reload proof during ordinary teacher use without inserting test policies",
+      "teacher_action": "None newly requested; preserve current recovery coordination.",
+      "blocker": "Changed-text Agenda/class-note saves remain unexercised in this checkpoint"
+    },
+    {
+      "id": "hub_feedback",
+      "trunk": "hub",
+      "label": "Saved-feedback review repair",
+      "state": "in_progress",
+      "owner": "Existing feedback-recovery PR324 owner; implementation is not live grading",
+      "observed_at": "2026-10-24T23:29:51Z",
+      "evidence": [
+        {
+          "label": "Reviewed feedback repair324",
+          "url": "https://github.com/kvond/school-workflow-hub/pull/324"
+        },
+        {
+          "label": "Exact-head CI",
+          "url": "https://github.com/kvond/school-workflow-hub/actions/runs/40142898513"
+        }
+      ],
+      "recovery_ref": "Existing private I-12 operations record and immutable run history; resolve through the recovery coordinator",
+      "next_action": "Integrate through the existing owner and verify source-bound native reports and printables",
+      "teacher_action": "None newly requested; preserve current recovery coordination.",
+      "blocker": "PR324 remains draft/unmerged at the observed review; no live report acceptance follows from CI"
+    },
+    {
+      "id": "hub_bindings",
+      "trunk": "hub",
+      "label": "Source, roster and Turn-in bindings",
+      "state": "unverified",
+      "owner": "Existing I-12 source/roster recovery owner",
+      "observed_at": "2026-10-24T20:09:16Z",
+      "evidence": [
+        {
+          "label": "Current evidence boundary",
+          "url": "https://answerableteaching.slack.com/archives/C0C9E488BAN/p1792872556341569"
+        }
+      ],
+      "recovery_ref": "Existing private I-12 operations record and immutable run history; resolve through the recovery coordinator",
+      "next_action": "Read current exact Form, lesson source, roster and section/component evidence",
+      "teacher_action": "None newly requested; preserve current recovery coordination.",
+      "blocker": "Current private mapping and source/roster reconciliation were not established by the checkpoint"
+    },
+    {
+      "id": "hub_prep",
+      "trunk": "hub",
+      "label": "Lesson Prep notes and next-week reminders",
+      "state": "blocked",
+      "owner": "Task323; serialize with current PR324 UI claim",
+      "observed_at": "2026-10-24T23:57:00Z",
+      "evidence": [
+        {
+          "label": "Prep task323",
+          "url": "https://github.com/kvond/school-workflow-hub/issues/323"
+        },
+        {
+          "label": "Active app.js claim324",
+          "url": "https://github.com/kvond/school-workflow-hub/pull/324"
+        }
+      ],
+      "recovery_ref": "Canonical Master Agenda and existing lesson/material links; no second prep tracker",
+      "next_action": "After app.js handback, implement Agenda-backed BUY/PULL/PRINT and conditional Biology pathways",
+      "teacher_action": "None newly requested; preserve current recovery coordination.",
+      "blocker": "Task323 UI overlaps the active feedback-repair app.js claim; no prep implementation/deployment is established"
+    },
+    {
+      "id": "slides",
+      "trunk": "slides",
+      "label": "Lesson Slides",
+      "state": "still_needed",
+      "owner": "Existing lesson owner; Dot oversight and bounded Codex implementation",
+      "observed_at": "2026-10-24T19:39:01Z",
+      "evidence": [
+        {
+          "label": "Current Cycle08 direction",
+          "url": "https://answerableteaching.slack.com/archives/C0C9E488BAN/p1792870741466259"
+        },
+        {
+          "label": "Existing renewal322",
+          "url": "https://github.com/kvond/school-workflow-hub/issues/322"
+        }
+      ],
+      "recovery_ref": "Original source decks, Teaching Notes, lesson folders and Git/source revision history",
+      "next_action": "Locate existing baseline evidence before changing the pilot; preserve Cycle07 and completed Cycle06",
+      "teacher_action": "None newly requested; preserve current recovery coordination.",
+      "blocker": "Current direction is a gate, not proof that a revised student lesson has passed acceptance"
+    },
+    {
+      "id": "slides_audit",
+      "trunk": "slides",
+      "label": "Cycle08 model and NGSS baseline",
+      "state": "unverified",
+      "owner": "Existing Cycle08 lesson owner",
+      "observed_at": "2026-10-24T19:39:01Z",
+      "evidence": [
+        {
+          "label": "Model-first Phase A gate",
+          "url": "https://answerableteaching.slack.com/archives/C0C9E488BAN/p1792870741466259"
+        }
+      ],
+      "recovery_ref": "Original Cycle08 source, current native deck, models and Teaching Notes",
+      "next_action": "Inspect existing model behavior and standards/question crosswalk; link the actual baseline report",
+      "teacher_action": "None newly requested; preserve current recovery coordination.",
+      "blocker": "A completed Phase A baseline with exact slide/model evidence has not been verified here"
+    },
+    {
+      "id": "slides_pilot",
+      "trunk": "slides",
+      "label": "Revised pilot and classroom evidence",
+      "state": "blocked",
+      "owner": "Existing lesson owner; independent teaching-logic reviewer",
+      "observed_at": "2026-10-24T19:39:01Z",
+      "evidence": [
+        {
+          "label": "Pilot acceptance gates",
+          "url": "https://answerableteaching.slack.com/archives/C0C9E488BAN/p1792870741466259"
+        }
+      ],
+      "recovery_ref": "Preserved original lesson and reviewed pilot/revision evidence",
+      "next_action": "After baseline acceptance, verify pilot links, source preservation, student access and actual explanations",
+      "teacher_action": "Review a concrete pilot only when its evidence and links are ready; no weekend execution obligation now.",
+      "blocker": "Phase A evidence, reviewed pilot and classroom learning evidence must precede wider rollout"
+    },
+    {
+      "id": "slides_lab",
+      "trunk": "slides",
+      "label": "Independent enzyme lab release",
+      "state": "blocked",
+      "owner": "Existing lab owner and authorized Form/mapping builder",
+      "observed_at": "2026-10-24T22:03:53.477229Z",
+      "evidence": [
+        {
+          "label": "Unreleased lab checkpoint",
+          "url": "https://answerableteaching.slack.com/archives/C0C9E488BAN/p1792878261870839"
+        },
+        {
+          "label": "Lab design boundaries",
+          "url": "https://answerableteaching.slack.com/archives/C0C9E488BAN/p1792879433477229"
+        }
+      ],
+      "recovery_ref": "Canonical Demo/Independent Lab source folders; exact Form registry and original student artifacts",
+      "next_action": "Check for an existing verified Form, roster/assignment binding and feedback-routing test before creating replacements",
+      "teacher_action": "None newly requested; preserve current recovery coordination.",
+      "blocker": "The dated checkpoint reports missing Form, unverified mapping/ingestion and no release acceptance"
+    },
+    {
+      "id": "slides_links",
+      "trunk": "slides",
+      "label": "Lesson to Agenda to Schoology links",
+      "state": "unverified",
+      "owner": "Existing lesson/assignment setup owner; preserve source and date mappings",
+      "observed_at": "2026-10-24T22:19:57.813739Z",
+      "evidence": [
+        {
+          "label": "Original architecture dependency request",
+          "url": "https://answerableteaching.slack.com/archives/C0C9E488BAN/p1792873130228959"
+        },
+        {
+          "label": "Current work priorities",
+          "url": "https://answerableteaching.slack.com/archives/C0C9E488BAN/p1792880397813739"
+        }
+      ],
+      "recovery_ref": "Canonical Master Agenda, existing lesson/Turn-in registry and saved Schoology page history",
+      "next_action": "After reviewed lesson readiness, verify exact source, date, Form and section before updating links; keep original materials and receipts",
+      "teacher_action": "None now; review a concrete lesson only when ready",
+      "blocker": "Current exact link/source/date acceptance has not been verified; this does not authorize Schoology grade sync"
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "hub_bindings",
+      "to": "ic_post",
+      "state": "blocked",
+      "reason": "Source, roster and exact destination proof missing"
+    },
+    {
+      "from": "hub_bindings",
+      "to": "ic_assign",
+      "state": "blocked",
+      "reason": "Agenda and Form/date/section bindings required"
+    },
+    {
+      "from": "ic_post",
+      "to": "ic_parent",
+      "state": "blocked",
+      "reason": "Native saved-grade readback required"
+    },
+    {
+      "from": "hub_feedback",
+      "to": "ic_parent",
+      "state": "blocked",
+      "reason": "Reconciled feedback and reviewed preview required"
+    },
+    {
+      "from": "hub_feedback",
+      "to": "hub_prep",
+      "state": "blocked",
+      "reason": "Active app.js claim must be handed back"
+    },
+    {
+      "from": "slides_audit",
+      "to": "slides_pilot",
+      "state": "blocked",
+      "reason": "Verified baseline must precede revised pilot"
+    },
+    {
+      "from": "hub_bindings",
+      "to": "slides_lab",
+      "state": "blocked",
+      "reason": "Exact Form and roster/assignment mapping required"
+    },
+    {
+      "from": "slides_pilot",
+      "to": "slides_links",
+      "state": "blocked",
+      "reason": "Reviewed lesson and exact source links required"
+    },
+    {
+      "from": "hub_bindings",
+      "to": "slides_links",
+      "state": "blocked",
+      "reason": "Agenda date, Form and section proof required"
+    }
+  ],
+  "costs": {
+    "API": "Usage unavailable in this map; no current provider/model/job cost, cache or retry measurement was read. Existing cumulative caps remain in force.",
+    "Google Cloud": "Usage unavailable; no current billing export, trend or cost per verified operation was read. Deployment success does not establish savings.",
+    "Subscriptions": "Usage unavailable; no fresh subscription invoice or allowance measurement was read. Do not infer relative savings."
+  },
+  "my_actions": {
+    "summary": "None newly required; later actions remain conditional",
+    "detail": "None newly required by this map. The existing recovery owner must first establish the current eligible posting scope and whether the school login actually needs attention. I-Tracker access/recipient approval comes only after a validated delivery preview; pilot review comes only after a concrete lesson is ready. No weekend execution obligation is assigned."
+  }
+}
