@@ -243,7 +243,8 @@ identity remains unresolved rather than being inferred from a title or week.
 ### 17.11 Audit-first, course-specific renewal and paper revisions (2026-10-25)
 
 Source: Katherine's direct October 25 lesson-renewal instructions, consolidated
-in her 14:11 UTC request for a systematic checklist and usable teaching outputs.
+in her 14:11 UTC request for a systematic checklist and usable teaching outputs,
+with the same-day follow-on scope, alignment and access clarifications below.
 This dated clarification supplements §§17.1–17.10; it supersedes conflicting
 digital-revision defaults only for explicitly authorized paper-revision lessons,
 beginning with Biology C08. It does not retroactively change distributed copies,
@@ -252,7 +253,9 @@ C02–C07 assessments, student work, grades or delivery history.
 **Audit before editing.** Read the actual source deck, companion resources and
 teacher notes in order. First produce a slide/object-specific defect list covering
 logic and transitions, scientific accuracy, completeness, text density, visual
-evidence and editable response space. Distinguish a verified defect from an
+evidence and editable response space. Audit NGSS alignment, needed vocabulary and
+the expected reasoning demand before editing; preserve the intended demand rather
+than substituting recall or inventing standards coverage. Distinguish a verified defect from an
 unresolved teaching decision. Fix authorized defects rather than pasting audit
 language, repair instructions or internal status into the teaching body. Keep the
 existing one-writer claim and revision guards; this rule grants no new access,
@@ -276,6 +279,15 @@ publishing or grading authority.
   activity to its retained location. VT questions and active review add to that
   source, never replace it with a shortened reconstruction. Counts alone do not
   establish coverage; inspect each original element.
+
+**Rolling scope and observation material.** Maintain the renewal/preflight window
+of two lessons ahead and one lesson behind the current teaching point, using the
+verified lesson sequence rather than guessing from filenames. Queue respiration
+for its future place in that sequence; this clarification is not an instruction
+to redo it immediately. Observation cases and images support classroom talk and
+noticing. They are not automatically new student assignments or a generic
+optional activity; preserve their actual instructional purpose and create no
+submission or grading requirement without authorization.
 
 **Before every instructional question.** Place an active, editable pre-review
 immediately before the question, using the evidence and prerequisites it needs.
@@ -317,6 +329,14 @@ audit or a list of links.
   Do not fabricate DRAFT evidence, restore removed boxes to satisfy a parser,
   bypass a hold or claim end-to-end readiness from marker counts alone. Route an
   integration gap to the existing Teaching Hub owner; keep release status explicit.
+
+**Access clarification (2026-10-25).** §17.5's default remains: preserve existing
+access unless explicitly authorized otherwise. An explicit user grant to restrict
+the exact lesson materials to district-only access permits removal of public
+`ANYONE` access while preserving the owner and named collaborators; verify the
+intended district viewer permission and read back the result. Do not infer that
+grant from this checklist or remove other permissions. Purchased materials must
+not be made public; use their authorized access and licensing conditions.
 
 **Final evidence and usable outcome.** Re-read the final ordered native outline,
 render the saved changed slides and inspect the whole instructional sequence.
