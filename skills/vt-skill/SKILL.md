@@ -5,6 +5,15 @@ description: Finish an Answerable VT cycle deck to the shipping standard (Biolog
 
 # vt-skill — VT Deck Finishing
 
+**Current course/file precedence (2026-10-26).** For original-first native Anatomy
+work, apply [§16.1](reference/16-restore-enhance-codes-agenda.md) and the later
+[§17 renewal requirements](reference/17-lesson-renewal.md), not historical
+PPTX-only, filename-twin, shortened-rebuild/content-removal or Cycle 02 4:3
+defaults. Preserve the verified native source and its format, original material
+and order. This scoped clarification does not globally replace legacy PPTX
+instructions for other work. Biology and Forensics retain their distinct §17.11
+sequences. Read the current applicable rules before acting.
+
 Run this skill after the text of a cycle is final. Run it before you give the
 deck to Katherine. It covers slide order, response slides, images, icons,
 appendix slides, and link tests. It sits above `deck_lint.py`. `deck_lint.py`

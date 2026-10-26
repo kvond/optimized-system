@@ -274,6 +274,15 @@ publishing or grading authority.
   initial position/vote, evidence-based debate, further evidence and a revisit of
   the original position. Preserve uncertainty and alternative interpretations.
   Do not impose Biology's lab-first or organelle format.
+  Carry prior knowledge into new cases, including evidence limitations, chain
+  of custody and expert claims. Use visible evidence and purposeful comparison
+  before explanation without imposing fixed dialogue roles; retain the existing
+  lesson substance, morpheme work and usable teacher setup/safety/print guidance.
+  [Captured course instructions](https://answerableteaching.slack.com/archives/C0CC33UKH1A/p1792934342368039).
+  The later [staged crime-scene decision](https://answerableteaching.slack.com/archives/C0CC33UKH1A/p1792935061681869)
+  supersedes that post's immediate fingerprinting plan, not the standing course
+  rules. Fingerprinting stays preserved for later without an invented date;
+  packet/assignment completion needs separate evidence.
 - **Anatomy:** the original-source deck remains the backbone in its original
   order (§16.1). Map every original slide, image, diagram, video, table and linked
   activity to its retained location. VT questions and active review add to that

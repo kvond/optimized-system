@@ -1,5 +1,17 @@
 # Spreadsheet feedback and printable packets
 
+**Current operational reference (2026-10-26):** read the
+[Slack CURRENT SKILL — Feedback](https://answerableteaching.slack.com/archives/C0C9E488BAN/p1792976967534889)
+first, with its [matching backup](../skills/student-feedback/SKILL.md). The dated
+Slack-first source hierarchy supersedes older GitHub-first wording below.
+Routine feedback/writing finishes, files, links and becomes print-ready without
+teacher pre-review; authorship allegations, actual teaching choices and required
+source/identity/privacy/final-grade safeguards remain distinct. Historical
+prompt content below is retained, not permission to invent approval holds,
+unsupported AI-authorship probabilities or replacement sources. See the
+consolidated skill for explicit format/method/source conflicts.
+
+
 Run the existing `morning-student-feedback-and-print-checklist` task on Katherine's
 home Mac. This file replaces its accumulated email/Hub-first prompt. The existing
 student lesson/feedback/writing spreadsheet is the teacher-facing index; resolve

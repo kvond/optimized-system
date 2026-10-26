@@ -1,5 +1,17 @@
 # Prompt 2 — feedback for students (v4)
 
+**Current operational reference (2026-10-26):** read the
+[Slack CURRENT SKILL — Feedback](https://answerableteaching.slack.com/archives/C0C9E488BAN/p1792976967534889)
+first, with its [matching backup](../SKILL.md). The dated
+Slack-first source hierarchy supersedes older GitHub-first wording below.
+Routine feedback/writing finishes, files, links and becomes print-ready without
+teacher pre-review; authorship allegations, actual teaching choices and required
+source/identity/privacy/final-grade safeguards remain distinct. Historical
+prompt content below is retained, not permission to invent approval holds,
+unsupported AI-authorship probabilities or replacement sources. See the
+consolidated skill for explicit format/method/source conflicts.
+
+
 Canonical copy of the Master Agenda `Feedback Prompts` tab, row "Feedback — Prompt 2",
 read 2026-10-21. From this date the skill is the source; the Agenda tab is Katherine's
 quick reference. Change this file first, then refresh the Agenda cell to match.

@@ -63,6 +63,18 @@ The rest of §16 (codes, Agenda links, archive last) is unchanged.
 
 ### 16.2 Enhance: `/vt-gemini-enhance`
 
+**Current native route (2026-10-26).** Katherine clarified that Gemini enhancement
+uses the school Chrome workflow: choose **Ask Gemini** (the Gemini star) at the
+top right of Google Slides. [Google's current instructions](https://support.google.com/docs/answer/16961475?hl=en)
+describe prompting an edit to the current slide, reviewing its preview, then
+choosing Replace or Insert. `/vt-gemini-enhance` is the internal workflow name,
+not Google's product/button name. Retain the existing School Claude Ext owner;
+this is not generic image generation or proof of live access or a completed pass.
+Retain the exclusions and verification checks below. The
+[original enhancement instruction](https://answerableteaching.slack.com/archives/C0C8YU5RDDM/p1792071866363439)
+and [missing-enhancement correction](https://answerableteaching.slack.com/archives/C0C8YU5RDDM/p1792504327839689)
+remain captured requirements, not proof that any deck has been enhanced.
+
 Run it on the merged deck. The rules already in this skill hold: the enhance pass skips
 answer slides; enhanced textboxes get no gray; answer textbox colours stay unchanged;
 marker strings stay intact (§3c, §7). After the pass, run the post-enhancement check

@@ -84,6 +84,24 @@ substitution; its mere availability is insufficient.
 
 ## book-manuscript-operations
 
+### Substantive-additions channel capture (2026-10-26)
+
+At the start of a manuscript session, read the existing substantive-additions
+channel and current authorized dossier. Group ready-to-integrate reflections by
+the verified current manuscript outline, retain the author's original why, and
+distinguish source observations, interpretation and untested hypotheses.
+Propose insertion points without changing manuscript prose. Preserve uncertainty,
+criticism and difficult observations rather than sanitizing them; verify
+references and comparison claims before publication. Do not invent citations.
+
+The [later dossier decision](https://answerableteaching.slack.com/archives/C0CBVND8QKU/p1792866886603409)
+supersedes the earlier working synthesis, not its source observations.
+The [current handoff](https://answerableteaching.slack.com/archives/C0CBVND8QKU/p1792930513809959)
+defers actual integration until school priorities stabilize and the author
+authorizes it. Keep working-dossier bindings and substantive material private.
+These instructions are captured; author acceptance, integration, citation checks
+and receipt/execution remain separately evidenced, not completed by documentation.
+
 Read `skills/manuscript-ops/SKILL.md`, `skills/book-revision/SKILL.md`, the current
 voice/tics/decision sources and `knowledge/writing-voice.md`. The later working-copy
 Google Doc/current author draft controls; the old Roam/export-canonical wording is
