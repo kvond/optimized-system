@@ -11,6 +11,46 @@ Updated 2026-10-20. This file is the operational ownership/schedule source. Stan
 - Claude/Codex use draft PRs on prefixed branches. Routine reversible technical work within Katherine's stated goals has standing authorization through independent review, current checks and merge under [review and merge](../review-and-merge.md). Katherine reviews results after the fact; per-PR or batch permission is not required.
 - District Claude browser limits and the school computer's unavailable IC helper do not describe Katherine's home Mac. The existing Chrome helper on the home Mac remains the sole IC score writer. I-Tracker remains separate.
 
+## October 26 runtime reconciliation and backup scope
+
+For scheduled tasks only, the actual saved task is canonical and GitHub is its
+matching backup. No Slack scheduled-task prompt copy is required. This does not
+change the channel-first rule for general skills or shared agreements.
+
+Current bounded observations supersede older active-state claims below:
+- The existing 07:30 weekday `morning-student-feedback-and-print-checklist` task
+  was located by the local owner. Its requested prompt update is not verified
+  saved: the local update path was denied placement. The desired
+  [feedback prompt](../../prompts/school-spreadsheet-feedback.md) remains pending
+  native save/readback; do not claim this repository is its current deployed text.
+- The historical 06:30 `morning-roster-check-and-submission-tidy` task was absent
+  from the inspected local catalogs, and no matching morning successor appeared
+  in the accessible dot automation list. These are bounded observations, not a
+  proof of absence across every host. The desired
+  [Hub prompt](../../prompts/school-hub-operations.md) is a pending specification,
+  not an active schedule. Resolve the existing runtime/owner before any separately
+  authorized repair or replacement; do not start a duplicate.
+- Existing 07:00 Helper ownership and the separate 07:30 feedback scope remain
+  unchanged. This documentation update performs no runtime mutation.
+
+Before declaring either backup synchronized, record the exact saved task identity,
+host/owner, timezone/cadence, prompt comparison and readback time in existing
+private operational evidence. Keep that evidence free of credentials.
+
+### Bounded obsolete-copy review
+
+The October 12 `reports/school-scheduler.md` and
+`reports/school-schedule-verification-2026-10-12.json` are historical observations,
+not current prompt backups. They remain referenced by completion/audit reports.
+`workflow-contracts/school-current.json` is retained provenance referenced by
+the workflow INDEX, current operations runbook and knowledge rules. None is
+proven unreferenced or redundant, so none is deleted in this change.
+Archive/handover trees were not exhaustively reference-audited and are not
+authorized deletion targets by inference. Keep Git history; remove a file only
+after its replacement and absence of needed callers/provenance are verified.
+Do not accumulate additional dated prompt copies: maintain the two existing
+prompt paths above and use Git history for their prior versions.
+
 ## Current recurring ownership
 | Routine | Owner | When | Boundary |
 |---|---|---|---|
