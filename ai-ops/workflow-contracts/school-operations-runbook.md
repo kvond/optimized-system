@@ -17,33 +17,50 @@ This operations repository is not the Hub source or its private configuration.
 
 ## Shared workflow checklist — 2026-10-26
 
-Apply these eight checks to every requested Teaching Hub, IC and feedback job,
-including writing reports. This shared checklist supplements, never replaces,
-the workflow-specific safeguards below and the current governing prompts.
-The visible per-job checklist is the existing Feedback Checklist's
-**Workflow checklist** tab; resolve its private binding through existing records.
-This GitHub procedure is its matching general rule source, not a student ledger.
+Slack-first operational reference: [CURRENT SKILL — Teaching Hub, IC and Feedback Workflow](https://answerableteaching.slack.com/archives/C0C9E488BAN/p1792973736205739). This section is its matching backup; publication, pinning and runtime adoption require separate readback.
 
-1. Review existing completed outcomes and evidence first; identify only the exact remaining gaps. Do not repeat unchanged information or completed items. Keep completed work closed unless new material evidence requires reopening.
-2. Before processing, verify student identity/current roster, exact lesson and source submission, and teacher assessment instructions.
-3. Search existing saved assessments, feedback and writing reports; reuse matching verified artifacts and prevent duplicate generation or filing.
-4. Resolve or isolate exceptions before Hub processing. Turn the concrete failing case into a tested durable fix; preserve safety and uncertainty blocks, fabricate no data, and continue unaffected ready work.
-5. Use one write owner per scope and consult existing approvals. Do not invent gates or approval holds Katherine has not requested, beyond genuinely required policy, source, identity, privacy and final-grade safeguards. If an optional gate is proposed and Katherine says no, respect that no and do not ask again absent material change. Routine feedback/writing must finish, file, link and become print-ready without her pre-review; she reviews after printing. Parent sending remains separately authorized.
-6. Finish routine feedback and writing, file them, link them and make them print-ready without Katherine’s pre-review. Read back applicable saved IC values, filed reports and accessible correct links; retain required source, identity, final-grade and privacy checks. Distinguish print-ready, printed/handed out and parent publication. Computer records do not establish what Katherine has done offline: unknown offline activity is not 'not done'.
-7. Mark done only when the actual requested outcome is verified. Otherwise record the exact blocker, owner and next step—not a code/deployment milestone as completion. Completed work stays closed unless new material evidence changes it. Do not repeatedly surface unchanged information or completed items.
+Use these nine checks before every requested Hub/IC/feedback job, including writing reports. Report against the existing private Feedback Checklist’s Workflow checklist tab, keeping execution evidence in existing job/issue records. This is the same workflow, not a new tracker.
 
-8. When a job stalls, proactively identify system-level causes in communication, workflow, tools or skills. Recommend a concrete preventive fix with expected benefit, risk and a verification plan; surface unavoidable human decisions instead of relying on Katherine to diagnose the problem. Refine this checklist from verified lessons.
+1. **Read current instructions and reuse completed work.**
+Before starting AND freshly before morning reporting, read the [Kathy and Dot agreements](https://answerableteaching.slack.com/archives/C0CC18AGYR0/p1792975896161269), new #teaching-hub messages and relevant thread replies, the [Feedback skill](https://answerableteaching.slack.com/archives/C0C9E488BAN/p1792976967534889), and recorded approvals. Reconstruct applicable earlier instructions and respect current corrections and course distinctions. Review existing outcomes first and identify only remaining gaps. Keep completed work closed unless new material evidence requires reopening. Do not repeat unchanged information or make Katherine restate decisions.
 
-Consult this checklist before each Hub/IC/feedback job and report against it.
-Record cause/evidence, preventive fix, benefit/risk, owner and effectiveness check
-in the existing job/issue record, not a new tracking system.
+2. **Start with actual submitted work.**
+For each current student and relevant lesson, inspect the student folder and complete permitted original intake/upload locations. Verify current roster/section, identity, exact lesson/Form, source ID/version and teacher assessment instructions. Deduplicate identical source IDs without discarding distinct submissions or history. A missing link, inaccessible file, unchecked folder or empty lookup is unknown—not proof of no work. Respect actual eligibility, exemptions and authorized source boundaries.
 
-Keep costs bounded: batch relevant reads, reuse current verified evidence, avoid
-redundant paid generation, and return useful verified partial outcomes early.
-An approval applies only to its documented scope; it does not waive source,
-identity, privacy, uncertainty, course, grading or sole-writer safeguards.
-A technical repair follows existing case-grounded tests, independent review and
-release/readback gates. A merged fix does not establish a student outcome.
+3. **Match saved Hub completion scores AND reviewed assessments.**
+Read both applicable saved completion scores and reviewed assessment records; they are distinct stores, and neither alone proves an IC save. Match class/week/Form/file and the actual submission version. Search existing feedback and writing reports before generating anything. Match the actual submission/version to the applicable assessment’s source, date, component and score, not merely a filename, rightmost lesson column or newer modification date. Separate deterministic completion grades from conceptual feedback/writing levels. Identify stale assessments and unmatched sources, reuse valid artifacts and prevent duplicate assessment or filing. Preserve course-specific instructions and nonrequired-component treatment; do not invent zeros or grades.
+
+4. **Compare with the actual saved IC grade.**
+Match student, section, term, exact assignment and component. Record the displayed saved value/status and checked time, distinguishing unchecked, blank, flagged, matched and different. A Helper aggregate, assignment-level stamp, report score or empty comparison column does not verify an individual grade. Use the existing authorized reader/operator, preserve higher retained values and Katherine’s accepted manual entries, and do not repeatedly recheck closed individual cases. Any authorized transfer uses established teacher-approved grades, exact matching and saved/reopened readback; no new grading judgments. Uncertain saves require reconciliation before retry.
+
+**Morning repair trigger:** If the Feedback Checklist says no grade in IC, treat that as a reason to investigate—not as proof. Confirm whether the student’s latest eligible submitted work already has its exact saved IC grade. If it does, repair the misleading checklist/status. If it does not, identify why the established grade failed to pass through Hub and Hub Helper to IC, repair the authorized cause, run the existing approved transfer when eligible, and verify saved/reopened values. Solve authorized recoverable problems before reporting them; report only genuine remaining decisions or unresolved exceptions. Do not overwrite higher grades, reopen accepted completed manual entries, invent scores, duplicate uncertain saves or bypass required safeguards.
+
+5. **Repair the specific break without stalling everything.**
+Resolve or isolate exceptions before Hub processing. Identify whether the break is intake/filing, identity, lesson mapping, assessment, Helper transfer, saved-grade verification or reporting. State the concrete fix, owner, expected benefit, risk and verification test; carry out authorized repairs through the existing owner and turn the actual failing case into a durable tested fix. Check current official product documentation and actual access before asserting a missing capability. Diagnose communication/workflow/tool/skill causes, not just symptoms. Preserve required safety and uncertainty blocks, fabricate no data, and continue unaffected ready work.
+Use one write owner per scope and consult existing approvals. Do not invent gates or approval holds beyond genuinely required policy, source, identity, privacy and final-grade safeguards. A declined optional gate stays declined absent material change. Surface only genuinely unavoidable user decisions; do not rely on Katherine to design the repair. Refine this checklist from verified lessons.
+
+6. **Finish and verify feedback and writing.**
+Reuse matching verified reports or complete missing routine reports under the existing course-specific Feedback skill. Finish, file, link and make them print-ready WITHOUT Katherine’s pre-review; she reads after printing. Verify correct student/lesson/source, student-facing content, saved file/version, private destination and working accessible links by reopening the reports and reading back exact checklist cells. Keep teacher-only evidence separate. Filing failure resumes from saved artifacts, not another generation. Parent sending remains separately authorized.
+
+7. **Make printing usable without inventing physical completion.**
+Provide direct links in Katherine’s authorized private records/chat to verified reports or packets and exact page, set and unique-student counts. Reuse saved packets where valid and label incomplete coverage. Keep print-ready distinct from printed, handed out and parent publication. Preserve teacher-controlled Printed/Handed history. Computer records do not establish offline actions: unknown is not “not done.”
+
+8. **Keep one private reconciliation record.**
+The Roster is Katherine’s printable roster, not the assistant’s record-keeping surface. Keep internal processing/reconciliation records at the back of the existing Feedback Checklist, separate from its teacher-facing printable views. Do not clutter or restructure the printable Roster for assistant bookkeeping.
+Use the existing authorized sheet, not a duplicate tracker. For each student/lesson record source link/version, applicable Hub assessment/component/score, actual saved IC value/status, feedback/writing links, checked time, coverage/exception, repair owner and next action. Separate source missing, source unavailable, awaiting processing, report missing, link missing and IC unchecked. Keep student details and private artifact/sheet links OUT of public Slack. Record new, reused, filed, linked and packaged outcomes separately.
+
+9. **Report actual outcomes against this checklist.**
+Before the morning report, freshly check agreements and channel updates as in step 1, then lead with current-student eligible-work grade coverage: checked, matched, legitimately excepted and still unknown, with exact scope and checked times. State remaining repairs and genuinely needed decisions, provide direct print links, then a separate concise personal to-do. Mark done only when the requested outcome is established, not when code merges, a deployment finishes or a task is merely queued. Do not convert unchecked data or aggregate totals into “all graded.” Give useful partial results without repeating unchanged blockers or completed items.
+
+**Overnight review fallback**
+If an unfinished independent review stalls overnight, use Claude Code as an authorized fallback within existing task scope and limited usage. Check the current review/owner first; do not repeat completed reviews, duplicate an active reviewer or bypass a denied operation or required safeguards.
+
+**Cost and safety boundaries**
+Batch relevant reads, reuse verified results, avoid redundant paid generation, conserve usage and share useful partial outcomes early. Existing source, identity, privacy, uncertainty, course and sole-writer safeguards remain. Parent publication is separate. A code merge is not a student outcome.
+
+**Captured instructions, not completed work:** this update records the checking workflow; it does not claim student reconciliation, grade posting, reports, printing or parent delivery are complete.
+
+Every skill change must be backed up in its matching GitHub source and pinned in its relevant Slack channel. Verify the Slack edit, pin and GitHub backup separately; none is established by this repository change.
 
 ## Invocation and private resolution
 
