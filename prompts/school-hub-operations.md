@@ -81,3 +81,36 @@ ordinary merge and deployment/readback process. No separately billed model calls
 feedback email, student/guardian messages, sharing expansion, physical printing,
 or changes to teacher-controlled Printed/Handed marks. Surface only a concrete
 unresolved teaching/identity decision or unavoidable access action.
+
+## October 26 workflow clarification
+
+Before work and freshly before the morning report, read the current Kathy and Dot
+agreements, Teaching Hub channel/thread instructions, Feedback skill and applicable
+recorded approvals. Use the [shared workflow checklist](../ai-ops/workflow-contracts/school-operations-runbook.md#shared-workflow-checklist--2026-10-26).
+
+A checklist entry saying no grade in IC is an investigation trigger, not proof.
+Match the student's latest eligible original submission and version to both the
+applicable saved Hub completion score and reviewed assessment; these are distinct
+stores, and neither proves an IC save. Verify the actual saved IC student,
+section, term, assignment and component through the existing authorized reader.
+If already saved, correct the misleading checklist/status. Otherwise diagnose why
+the established grade failed through Hub and the existing Hub Helper, repair the
+authorized cause through its current owner and approved process, and use only the
+existing eligible transfer path. Save, reopen and read back the exact result.
+Preserve accepted manual entries, higher grades, flags and comments. Do not invent
+scores, grading judgments, a second writer or a retry of an uncertain save. Keep
+frozen-input windows, recovery blocks and the protected extension unchanged.
+Solve authorized recoverable failures before reporting; remaining exceptions name
+the exact cause, owner and next step rather than claiming unchecked completion.
+
+The Roster is Katherine's teacher-facing printable list, not assistant bookkeeping.
+Internal processing/reconciliation records belong at the back of the existing
+Feedback Checklist, separate from printable views; do not create another tracker.
+Keep student details and private artifact links out of public Slack and GitHub.
+
+If an unfinished independent review stalls overnight, Claude Code is an authorized
+fallback within the existing scope and limited usage. Check ownership and current
+review state first; never duplicate an active or completed review or bypass a
+denied operation, required check or permission boundary. Skill changes require a
+matching GitHub backup and a verified pin in the relevant Slack channel; verify
+these separately. This clarification changes no schedule or live execution state.
