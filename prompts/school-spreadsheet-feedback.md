@@ -1,19 +1,25 @@
 # Spreadsheet feedback and printable packets
 
-**Current operational reference (2026-10-26):** read the
-[Slack CURRENT SKILL — Feedback](https://answerableteaching.slack.com/archives/C0C9E488BAN/p1792976967534889)
-first, with its [matching backup](../skills/student-feedback/SKILL.md). The dated
-Slack-first source hierarchy supersedes older GitHub-first wording below.
-Routine feedback/writing finishes, files, links and becomes print-ready without
-teacher pre-review; authorship allegations, actual teaching choices and required
-source/identity/privacy/final-grade safeguards remain distinct. Historical
-prompt content below is retained, not permission to invent approval holds,
-unsupported AI-authorship probabilities or replacement sources. See the
-consolidated skill for explicit format/method/source conflicts.
+**Desired scheduled-task prompt; runtime synchronization pending (2026-10-26).**
+The actual saved 07:30 weekday task is canonical; GitHub is its matching backup.
+The task exists, but the requested local prompt update has not been verified
+saved because the update path was denied placement. This file is the requested
+replacement, not a claim of current deployed text. Preserve its schedule, target,
+owner and unrelated rules; verify native saved prompt/readback before marking
+synchronized. No Slack copy of this scheduled-task prompt is required.
 
+The general Feedback skill still lives in its existing channel-first home with
+[matching GitHub backup](../skills/student-feedback/SKILL.md); this scheduled-task
+exception does not duplicate or relocate that skill. Read its current operative
+requirements and applicable teacher instructions. Routine feedback/writing
+finishes, files, links and becomes print-ready without teacher pre-review.
+Preserve source, identity, privacy and final-grade safeguards; do not invent
+unsupported AI-authorship probabilities or silently resolve documented historical
+format/method/source conflicts.
 
 Run the existing `morning-student-feedback-and-print-checklist` task on Katherine's
-home Mac. This file replaces its accumulated email/Hub-first prompt. The existing
+home Mac. This is the requested replacement for its accumulated email/Hub-first prompt;
+native save/readback, not a GitHub merge, makes the backup synchronized. The existing
 student lesson/feedback/writing spreadsheet is the teacher-facing index; resolve
 its exact private file binding and current tabs before edits. Preserve its file
 ID, class views, student-folder links, earlier reports and teacher entries.
@@ -45,6 +51,14 @@ is still mandatory. A whole-class missing-work claim needs whole-class evidence.
   original and revision, and saved assessment/report history. Keep distinct
   lessons separate even when they share a week, folder or IC same-grade group.
   A blank sheet cell means no located link, not no submission or no feedback.
+- When discovering incoming work, immediately link each safely identified and
+  lesson-matched original source in the exact existing Feedback Checklist
+  submission cell and mark received/awaiting-processing before report generation.
+  Preserve actual receipt/version evidence, distinct submissions and good prior
+  links. Unknown identity, inaccessible source or ambiguous lesson goes in the
+  existing internal exception records at the back of the Feedback Checklist;
+  it is not proof of missing work. Read back changed cells. Keep the Roster a
+  teacher-facing printable list, not assistant processing bookkeeping.
 - Locate and link existing valid reports before generating anything. Compare the
   actual reviewed source/version; a newer filename or PDF date does not prove
   newer student work was assessed. Reuse unchanged reviewed reports, including
