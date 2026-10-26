@@ -1,12 +1,47 @@
 # Spreadsheet feedback and printable packets
 
-**Desired scheduled-task prompt; runtime synchronization pending (2026-10-26).**
-The actual saved 07:30 weekday task is canonical; GitHub is its matching backup.
-The task exists, but the requested local prompt update has not been verified
-saved because the update path was denied placement. This file is the requested
-replacement, not a claim of current deployed text. Preserve its schedule, target,
-owner and unrelated rules; verify native saved prompt/readback before marking
-synchronized. No Slack copy of this scheduled-task prompt is required.
+## Current saved runtime task — sanitized backup
+
+The actual saved scheduled task is canonical. This is its matching GitHub backup,
+not a Slack scheduled-task copy. Exported by the existing local owner at
+2026-10-26T14:58:00.157088948Z; task last updated 2026-10-20T22:48:31.951Z.
+The sanitized export SHA256, including its final newline, is
+`398be8a3a83da0c7c8da28a8d3b8d45dad1e9cabde8365ad3eee787e5589600d`.
+Only the existing private checklist URL is redacted below; retain its verified
+runtime binding outside GitHub. This hash identifies the sanitized export, not
+an unredacted runtime prompt hash. ACTIVE is saved configuration, not execution.
+
+```json
+{
+  "canonical_source": "existing_saved_runtime_task",
+  "backup_only": true,
+  "private_binding_redactions": {
+    "{{PRIVATE_FEEDBACK_CHECKLIST_URL}}": "Retain the existing verified private Feedback Checklist binding in the runtime task; resolve outside GitHub."
+  },
+  "saved_fields": {
+    "version": 1,
+    "id": "morning-student-feedback-and-print-checklist",
+    "kind": "heartbeat",
+    "name": "Spreadsheet feedback and print packet",
+    "prompt": "Run Spreadsheet feedback and print packet at 7:30 a.m. America/New_York every weekday on Katherine's home Mac. This completely replaces the older Hub/email-first feedback task. The teacher-facing record is the existing spreadsheet {{PRIVATE_FEEDBACK_CHECKLIST_URL}} ; preserve its file ID, class views, historical links and teacher entries.\n\nRead current merged main https://github.com/kvond/optimized-system/blob/main/prompts/school-spreadsheet-feedback.md and the school-feedback-print-ready and school-feedback-packet-assembly contracts. Use connected GitHub tools if the local checkout is stale; never reset another writer's changes. Katherine has Claude doing the catch-up: reconcile its actual exact report/cell claim and handoff before every write. Do not overlap, assume completion or automatically take over stale claims. Reuse the existing ownership records and shared-browser lease where needed.\n\nUse verified direct school Drive/Sheets access and the current approved Agenda feedback prompts, teaching manual and exemplar models. For each eligible submitted student/lesson/source revision, find existing reports first, reuse unchanged reviewed feedback/writing without re-assessment, and create only genuinely missing eligible reports. Keep critical-aspect feedback and writing judgments distinct, substantive and tied to actual student evidence. No invented quotes, scores, dates or improvement; unassessed is not zero or Beginning. No new paid provider, billing increase or rubric. Save each exact report version once in the verified private student folder, reopen/compare/render it and update the exact spreadsheet links and version records. A filing failure resumes from the saved artifact, not regeneration.\n\nAlways evaluate saved-report packet assembly independently, even if generation, Hub, Gmail or IC is held. Produce or reuse ONE dated readable PDF grouped by class/student with each current student's latest reviewed feedback and writing report/scores, showing the source lesson/date and explicit remaining gaps. Verify full saved bytes, manifest, page order/layout and private destination. Link it prominently in this spreadsheet, then Hub when available. Do not call a partial/latest-available packet all latest work assessed.\n\nYellow means a verified new report version awaits packet inclusion; white means that exact version is included in a saved reopened checked PDF. Newer versions turn yellow again; failed builds never clear yellow. Missing/N/A/unavailable work remains explicit. IC checks require exact existing-helper grade/component readback, not report scores or packet inclusion. This task never writes IC, changes the working extension or helper settings, or infers entry. Preserve source/history and teacher Printed/Handed marks. Email is optional and outside this task; no physical printing or student/guardian messages.\n\nPerform supported steps and native readback, preserve uncertain writes for reconciliation, and report new/revised/reused/filed/packaged counts separately by class/type, the exact printable link and precise remaining implementation/source holds. A configured task is not proof of feedback or delivery.",
+    "status": "ACTIVE",
+    "rrule": "RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;BYHOUR=7;BYMINUTE=30;BYSECOND=0",
+    "target_thread_id": "01a0f4ed-2d87-7e62-9056-46f5ac441ef3",
+    "created_at": 1790816246798,
+    "updated_at": 1792536511951
+  }
+}
+```
+
+## Pending requested instructions — not confirmed saved to the task
+
+The local update path was denied placement. Append instructions were supplied to
+Katherine on October 26; no subsequent save confirmation/readback is established.
+The desired instructions below must not be represented as the currently saved
+prompt above. Its existing reference to this repository does not prove that the
+runtime prompt was updated or a run consumed these changes. Preserve its schedule,
+target, owner and unrelated rules; read back actual saved state before marking
+the pending update adopted. No new schedule or task is created by this document.
 
 The general Feedback skill still lives in its existing channel-first home with
 [matching GitHub backup](../skills/student-feedback/SKILL.md); this scheduled-task
