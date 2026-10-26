@@ -17,7 +17,7 @@ This operations repository is not the Hub source or its private configuration.
 
 ## Shared workflow checklist — 2026-10-26
 
-Slack-first operational reference: [CURRENT SKILL — Teaching Hub, IC and Feedback Workflow](https://answerableteaching.slack.com/archives/C0C9E488BAN/p1792973736205739). This section is its matching backup; publication, pinning and runtime adoption require separate readback.
+Slack-first operational reference: [CURRENT SKILL — Teaching Hub, IC and Feedback Workflow](https://answerableteaching.slack.com/archives/C0C9E488BAN/p1793018605056689). The October 26, 12:43 UTC message supersedes the earlier workflow message while preserving its history. This section is its matching backup; publication, pinning and runtime adoption require separate readback.
 
 Use these nine checks before every requested Hub/IC/feedback job, including writing reports. Report against the existing private Feedback Checklist’s Workflow checklist tab, keeping execution evidence in existing job/issue records. This is the same workflow, not a new tracker.
 
