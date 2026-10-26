@@ -17,7 +17,7 @@ This operations repository is not the Hub source or its private configuration.
 
 ## Shared workflow checklist — 2026-10-26
 
-Apply these seven checks to every requested Teaching Hub, IC and feedback job,
+Apply these eight checks to every requested Teaching Hub, IC and feedback job,
 including writing reports. This shared checklist supplements, never replaces,
 the workflow-specific safeguards below and the current governing prompts.
 The visible per-job checklist is the existing Feedback Checklist's
@@ -31,6 +31,12 @@ This GitHub procedure is its matching general rule source, not a student ledger.
 5. Use one write owner for each scope. Consult the shared approvals ledger before asking again; respect bounded approvals and obtain required human decisions before dependent actions.
 6. Read back the requested outcomes: saved IC values, filed feedback and writing, and correct accessible checklist links. Verify only applicable outputs; distinguish saved, published, printed and handed out.
 7. Mark done only when the actual requested outcome is verified. Otherwise record the exact blocker, owner and next step—not a code/deployment milestone as completion.
+
+8. When a job stalls, proactively identify system-level causes in communication, workflow, tools or skills. Recommend a concrete preventive fix with expected benefit, risk and a verification plan; surface unavoidable human decisions instead of relying on Katherine to diagnose the problem. Refine this checklist from verified lessons.
+
+Consult this checklist before each Hub/IC/feedback job and report against it.
+Record cause/evidence, preventive fix, benefit/risk, owner and effectiveness check
+in the existing job/issue record, not a new tracking system.
 
 Keep costs bounded: batch relevant reads, reuse current verified evidence, avoid
 redundant paid generation, and return useful verified partial outcomes early.
