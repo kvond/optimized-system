@@ -38,6 +38,21 @@ The current shared agreements live in [Kathy and Dot](https://answerableteaching
 
 Instruction captured is not execution completed. Review these agreements and relevant current channel/thread instructions freshly before the morning report as well as before work.
 
+## Scheduled-task source of truth — October 26
+
+The actual saved scheduled task is canonical for its deployed instructions,
+schedule, owner and target. GitHub is its matching backup; do not create or
+maintain a Slack copy of a scheduled-task prompt. This exception applies only to
+scheduled tasks: project skills and shared agreements keep their existing
+channel-first homes and matching GitHub backups.
+
+Read the actual task before replacing its prompt. Preserve cadence, timezone,
+owner, target and unrelated rules unless separately authorized. Read back the
+saved task and compare exact prompt content or hash before labeling this backup
+synchronized. A repository merge is not deployment. New teacher instructions
+remain authoritative requirements to reconcile into the runtime task; a stale
+saved prompt is not permission to ignore them.
+
 ## Current owners and limits
 - System Review: weekly Claude Code scheduled task on Katherine's Pro plan (Sunday night ET), using `prompts/system-review.md`. No GitHub Action, Anthropic API key or Slack webhook.
 - The school computer cannot run the IC helper. Use Katherine's home Mac and its authenticated school Chrome profile for the existing helper; district Claude browser limits do not prohibit that separate executor. The weekday 07:00 opt-in path has standing authority, subject to its exact mapping, keep-higher, flag and saved-readback limits. A phone request can initiate work on the home Mac; the phone is not a second IC writer. See the current home-computer recovery rule in `ai-ops/worker-registry/roles-and-schedules.md`. I-Tracker remains a separate workflow and gains no authority from this clarification.
