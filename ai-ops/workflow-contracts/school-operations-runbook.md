@@ -24,13 +24,13 @@ The visible per-job checklist is the existing Feedback Checklist's
 **Workflow checklist** tab; resolve its private binding through existing records.
 This GitHub procedure is its matching general rule source, not a student ledger.
 
-1. Review existing completed outcomes and evidence first; identify only the exact gaps in the requested job.
+1. Review existing completed outcomes and evidence first; identify only the exact remaining gaps. Do not repeat unchanged information or completed items. Keep completed work closed unless new material evidence requires reopening.
 2. Before processing, verify student identity/current roster, exact lesson and source submission, and teacher assessment instructions.
 3. Search existing saved assessments, feedback and writing reports; reuse matching verified artifacts and prevent duplicate generation or filing.
 4. Resolve or isolate exceptions before Hub processing. Turn the concrete failing case into a tested durable fix; preserve safety and uncertainty blocks, fabricate no data, and continue unaffected ready work.
-5. Use one write owner for each scope. Consult the shared approvals ledger before asking again; respect bounded approvals and obtain required human decisions before dependent actions.
-6. Read back the requested outcomes: saved IC values, filed feedback and writing, and correct accessible checklist links. Verify only applicable outputs; distinguish saved, published, printed and handed out.
-7. Mark done only when the actual requested outcome is verified. Otherwise record the exact blocker, owner and next step—not a code/deployment milestone as completion.
+5. Use one write owner per scope and consult existing approvals. Do not invent gates or approval holds Katherine has not requested, beyond genuinely required policy, source, identity, privacy and final-grade safeguards. If an optional gate is proposed and Katherine says no, respect that no and do not ask again absent material change. Routine feedback/writing must finish, file, link and become print-ready without her pre-review; she reviews after printing. Parent sending remains separately authorized.
+6. Finish routine feedback and writing, file them, link them and make them print-ready without Katherine’s pre-review. Read back applicable saved IC values, filed reports and accessible correct links; retain required source, identity, final-grade and privacy checks. Distinguish print-ready, printed/handed out and parent publication. Computer records do not establish what Katherine has done offline: unknown offline activity is not 'not done'.
+7. Mark done only when the actual requested outcome is verified. Otherwise record the exact blocker, owner and next step—not a code/deployment milestone as completion. Completed work stays closed unless new material evidence changes it. Do not repeatedly surface unchanged information or completed items.
 
 8. When a job stalls, proactively identify system-level causes in communication, workflow, tools or skills. Recommend a concrete preventive fix with expected benefit, risk and a verification plan; surface unavoidable human decisions instead of relying on Katherine to diagnose the problem. Refine this checklist from verified lessons.
 
