@@ -1,7 +1,15 @@
 # Teaching Hub operations
 
+**Desired scheduled-task prompt; runtime synchronization pending (2026-10-26).**
+The actual saved scheduled task is canonical; this file is its intended GitHub
+backup, not proof of deployment. The historical 06:30 task was absent from the
+inspected catalogs, with no verified successor. Resolve its actual runtime and
+owner before an authorized update/replacement; do not create a duplicate or claim
+this text is running. No Slack copy of this scheduled-task prompt is needed.
+
 Run the existing `morning-roster-check-and-submission-tidy` task on Katherine's
-home Mac. This file replaces its accumulated operational prompt. Resolve current
+home Mac. This is the requested replacement for its accumulated operational prompt;
+it becomes a synchronized backup only after native task save/readback. Resolve current
 private bindings and read `school-morning-preparation-and-repair`; preserve its
 source, identity, privacy and uncertainty checks. Use the saved schedule, not a
 time inferred from an old task name or historical report.
@@ -45,6 +53,19 @@ change the extension during this task.
    versions. File verified revision copies using existing archive preview/apply/
    readback operations; refresh the existing index without replacing good history
    after a failed read. Do not guess matches from filenames or week numbers.
+   Before Hub processing, complete the current source/identity/lesson preflight:
+   verify the actual original intake event, student/current section, exact Form
+   and lesson binding, readable source/version and applicable teacher instructions.
+   Isolate unresolved scope without inventing matches or blocking unaffected work.
+   As soon as an incoming source is identified and safely matched, add its direct
+   private source link to the exact existing Feedback Checklist submission cell,
+   with received/awaiting-processing status and actual receipt/source evidence.
+   Do not wait for grading or feedback generation to make received work visible.
+   Deduplicate by source identity while retaining distinct submissions/history;
+   preserve existing good links and teacher entries. Unmatched or inaccessible
+   intake is an explicit exception in internal records at the back of that same
+   checklist, not missing work. Read back each changed link/status; never put
+   assistant bookkeeping on the teacher-facing printable Roster.
 4. Prepare completion scores through the existing deterministic Hub rules and
    exact lesson exclusions. Count usable coded responses, retain coded blanks
    in their own denominators and treat a zero denominator as N/A. Do not judge
