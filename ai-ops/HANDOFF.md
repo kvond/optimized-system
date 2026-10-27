@@ -29,6 +29,16 @@ Matching backup of the owner-approved updates saved to **Current Working Agreeme
 
 17. *Act on diagnosed problems.* Before routine reporting, freshly read these agreements, the relevant skill and owner-approved corrections. Before raising an unfinished concern, go as far as existing authorization allows without Katherine’s input: verify and count the available evidence, deduplicate and reconcile it, write the visible record in the existing Feedback Checklist, and advance recoverable work. A missing-IC flag requires checking the actual latest eligible work and saved IC evidence, diagnosing the Hub/Helper/IC or reporting break, and carrying out authorized recoverable fixes—not returning the same obstacle to Katherine. Record coverage and distinguish unknown or inaccessible evidence from a verified zero or unfinished outcome. Preserve accepted manual completions and required safeguards; report the remaining blocker with an owner and next action. This does not authorize new grading judgments, spending, sharing, permission changes or safeguard removal.
 
+## Check fix and verify — October 27, 2026
+
+Matching sanitized backup of the owner-approved canonical Page additions saved October 27. These additions extend the existing instructions; historical source text below is preserved. Private Page bindings and live student evidence remain outside GitHub. This documentation does not grant new authority or establish a successful school run.
+
+Apply this loop to every school batch, including work governed by these agreements. Read the current agreements and applicable skill first; define the promised outputs, coverage and cutoff in the existing run record. Finish priority student outputs before optional maintenance. Compare actual saved outcomes with those promises and the skill’s completion evidence; a trigger, draft, code merge or passing test is not the user outcome.
+
+Diagnose ordinary failures and fix their cause within existing approvals, using the established sole writer. Make one bounded recovery pass, then isolate any remaining genuine blocker with evidence, owner and next action; do not loop indefinitely, duplicate completed work or retry a denied action through another route. Continue unaffected eligible work. Code repairs require independent review and required passing tests before authorized merge, plus a focused regression check. No new grading judgments or policy, student-data sharing, credentials, permissions, spending or safeguard changes; broader changes need Katherine’s decision.
+
+Record changed, tested and live-verified separately in existing run records or Feedback Checklist, with timestamps and private evidence links; no new spreadsheet. Update the relevant canonical skill with proven procedural learning, then its existing Slack skill thread and matching sanitized GitHub backup under agreement 14, verifying each separately. Preserve later user edits. Assign the next applicable actual run to recheck recurrence and record its live result; tests alone do not close that verification. Consolidate each batch into one result with verified outcomes and only real user-needed decisions, while reporting urgent access or required-approval blockers promptly.
+
 ## Homes
 - Decisions: Slack `answerableteaching.slack.com`. `#decisions` is the decision log; area channels are `#system-review`, `#feedback-pipeline`, `#teaching-hub`, `#lesson-preflight`, `#vt-decks`, `#class-reports`. Standards for an area are the pinned post in that channel. No student names, grades, or feedback text in Slack.
 - Code, skills, prompts, and scheduled jobs: `kvond/optimized-system`. Canonical names: `ai-ops/NAMES.md`. Agent rules: `AGENTS.md` and `CLAUDE.md`.
@@ -105,3 +115,4 @@ Before acting or reporting, consult the [current Teaching Hub workflow update](h
 - Workflow contracts: `ai-ops/workflow-contracts/INDEX.md`
 - Historical evidence: `ai-ops/reports/` and Git history
 - Current human clarification: [Katherine's October 17 home-computer and preflight answers](https://answerableteaching.slack.com/archives/C0C8ZJ4FTAT/p1792285329701299).
+
