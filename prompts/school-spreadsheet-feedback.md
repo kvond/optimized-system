@@ -198,3 +198,103 @@ student/guardian sending, sharing changes or automatic Printed/Handed marks.
 If the colour/packet-link/IC-status bridge is not implemented and verified, perform
 the independent supported steps and record that precise implementation gap. A new
 prompt or GitHub merge is not proof that these live integrations executed.
+
+## 2026-10-27 run payload: observed, private bindings redacted
+
+**Status:** The following instructions were supplied to and executed by the recurring
+automation on October 27, 2026. This is verified **run-payload provenance**,
+not a separate native scheduler settings readback. The earlier `saved_fields`
+section above remains a historical October 20 native configuration snapshot,
+and its pending/confirmed distinction must not be silently rewritten.
+The saved scheduled task is canonical. This document is a sanitized GitHub
+backup only, not another Slack copy or another scheduled task.
+
+**Name:** Spreadsheet feedback and print packet
+
+**Schedule:** Monday-Friday, 7:30 a.m., America/New_York
+
+**Current observed task instructions:**
+
+Run on Katherine's home Mac using verified school Drive/Sheets access. Before
+working and before reporting, read the current Kathy and Dot agreements,
+Teaching Hub instructions and relevant new thread replies, and the current
+Feedback skill. Follow recorded approvals without asking again for unchanged
+approved actions. Respect existing owners; do not start competing writers.
+
+Use the existing Feedback Checklist, preserving its file ID, class tabs,
+historical links and Katherine's entries:
+`{{PRIVATE_FEEDBACK_CHECKLIST_URL}}`.
+
+1. Check current students' latest actual submissions and their checklist links.
+   Include confirmed incoming work that has not yet been linked. Match student,
+   class, lesson and source version using existing mappings. A missing link or
+   inaccessible file is unverified, not evidence that the student submitted
+   nothing. Investigate ambiguous matches; do not guess or overwrite distinct
+   submissions.
+2. Find existing feedback and writing reports first. Reuse valid reports for
+   unchanged work. Generate only missing or genuinely outdated reports using
+   the current approved Agenda prompts, teaching manual, rubrics and exemplars.
+   Keep conceptual feedback, writing feedback and completion grades distinct.
+   Do not invent quotations, scores, progress or authorship claims. Do not
+   require Katherine to review routine feedback before it becomes print-ready.
+3. If instructions, identity or lesson connections are missing, investigate
+   and repair the authorized problem through the existing owner. Continue
+   unaffected students' work. Do not create new review gates, change rubrics,
+   expand permissions or introduce paid services. Use Claude Code as a bounded
+   fallback for an unfinished independent review that stalls, not to repeat a
+   completed review.
+4. Save each finished report in the correct student folder. Reopen and check
+   its contents, student/lesson identity, layout and access. Put direct feedback
+   and writing links in the exact Feedback Checklist cells. Keep teacher-only
+   analysis separate. If filing fails, resume from the saved report rather than
+   generating it again.
+5. Independently assemble or reuse one dated, readable print PDF, grouped by
+   class and student, containing the latest verified feedback and writing
+   reports. Check page order, layout, saved contents and report versions. Link
+   the packet prominently in the Feedback Checklist and provide direct
+   individual report links as a fallback. State any omitted or unassessed work;
+   never label a partial packet complete coverage.
+6. Preserve the existing version-based print colors: yellow means a verified
+   report version awaits packet inclusion; white means that exact version is
+   included in a saved, reopened, checked PDF. New report versions become
+   yellow again. Failed packet builds never clear yellow. Do not mark anything
+   physically printed or handed out unless Katherine reports it.
+7. If the checklist says a grade is missing from IC, check the latest submitted
+   source against both applicable saved Hub completion scores and reviewed
+   assessments, then verify the actual saved IC grade for the exact student,
+   section, term, assignment and component. Lesson-level logs or report scores
+   are not individual IC proof. Preserve accepted manual entries and higher
+   existing grades. Mark unchecked results unverified, not missing.
+8. This feedback task does not write IC or change Helper settings. Send
+   confirmed missing transfers to the existing authorized Hub/Helper owner
+   for posting, diagnosis, repair and saved-grade readback. Preserve
+   uncertain-save safeguards. Keep feedback generation and print preparation
+   moving while that separate work is resolved.
+9. The roster is Katherine's printable artifact. Keep internal bookkeeping
+   at the back of the existing Feedback Checklist, not on her roster.
+   Maintain source/version, report links, checked times, exceptions, owner
+   and next action in existing records; do not create another spreadsheet.
+10. Report verified new, revised, reused, filed and packaged counts separately.
+    Give the direct print-packet link, individual fallback links, exact remaining
+    exceptions and any genuinely necessary decision. Separate Katherine's short
+    to-do from the project report. Do not repeat completed work or claim
+    deployment/tests prove grades, feedback delivery or parent notification.
+
+Do not send parent messages, email, physically print, change sharing, or modify
+grades in this task. The saved scheduled task is canonical. Keep its matching
+backup in GitHub, with private bindings redacted where appropriate; do not
+create a Slack copy of the scheduled task. Preserve history and distinguish
+proposed changes from changes actually saved.
+
+### Execution receipt, 2026-10-27
+
+The October 27 run reused previously reviewed pages in a dated 114-page
+**partial** packet covering 38 current-student report sets, with 111
+copied report pages and a three-page guide/index. The verified, exact
+private Drive file ID, per-student page entries, SHA-256, and remaining
+exceptions are recorded in the existing private Feedback Checklist's
+`Workflow checklist` and hidden `Packet versions (internal)` tabs.
+This public backup deliberately does not include identifiable student
+records, access links, or private output bindings. This receipt does not
+establish missing-work status, current eligibility for newer submissions,
+IC saves, physical printing, handout, or parent contact.
