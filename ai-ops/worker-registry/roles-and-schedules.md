@@ -51,7 +51,41 @@ after its replacement and absence of needed callers/provenance are verified.
 Do not accumulate additional dated prompt copies: maintain the two existing
 prompt paths above and use Git history for their prior versions.
 
-## October 27, 21:08 UTC — latest saved configuration
+## Grades–IC update — October 27 2026
+
+Latest owner timing: daily at 8 AM America/New_York, replacing the earlier nightly proposal. Saved and enabled October 27; first scheduled date October 28. A successful creation receipt was received; no next-run timestamp or first execution result was supplied. Native Page attachment is not applicable for this task environment, so the timetable documents the enabled schedule without claiming a native attachment.
+
+School Operations Schedule now includes a Grades–IC section with a reusable /grades-ic prompt label (not a registered browser slash command), the setup needed, and the confirmation loop. Home Mac must be awake, online and connected; school Chrome must be open and signed into Infinite Campus. Spreadsheets need not all remain open because connected school Drive is used. Preserve one browser operator and the existing morning routines.
+
+Grading and Roster now requires: after exact saved/read-back IC confirmation, mark the corresponding Grading Checklist IC cell green, save private confirmation evidence/time and close the handoff row in the same run. Explicit owner completion confirmations retain user-confirmed provenance. Sending the handoff never turns cells green. If a grade save succeeds but the Checklist write fails, repair the Checklist from evidence without reposting the grade.
+
+Daily Grades–IC only posts already-prepared eligible scores under existing authorization. No new grading judgments, rounding policy, overwrites, duplicate combined credit or paper-revision credit before returned evidence. Required access/approval blockers remain pending and not green; no bypass or invented optional gate. A configured trigger is not proof of unattended execution.
+
+### Canonical Schedule instructions — sanitized mirror
+
+## Grades–IC
+
+Daily 8 AM catch-up for prepared grades at A. I. du Pont High School. The morning routine remains unchanged. Each run uses the existing IC handoff and one browser operator, then updates the matching Grading Checklist IC cells after confirmation.
+
+### What to leave ready
+
+- Keep the home Mac awake, connected to the internet and connected to dot.
+
+- Leave school Chrome open and signed into Infinite Campus for A. I. du Pont High School. Complete any school sign-in prompt that requires you.
+
+- Do not run another grade-entry task at the same time. The spreadsheets do not all need open tabs; dot reads the connected school Drive.
+
+### My prompt
+
+**/grades-ic** is a reusable prompt label here, not a registered browser slash command. To run it manually, paste:
+
+Run Grades–IC for A. I. du Pont High School. Read our Current Working Agreements and Grading and Roster skill. Use the dated IC handoff linked from Grading Checklist Start here. Match each prepared entry to the exact student, class and assignment; check the existing score and flags; enter only eligible missing approved scores. Preserve existing or higher grades and isolate conflicting or combined-assignment credit without duplicating it. Save and read back each entry. Then mark its matching Grading Checklist IC cell green, record the confirmation and close the handoff row. Do not turn a cell green just because the handoff was sent. Report the completed count and only genuine remaining decisions.
+
+### Confirmation and access
+
+Dot owns the comparison; Katherine is not asked to check existing grades as routine work. A matching saved/read-back IC score or Katherine’s explicit completion confirmation closes that entry with its actual provenance. If access, authentication or a required approval prevents a row, keep it pending and not green; continue independent work and report the exact affected blocker without bypassing it. A saved daily trigger is not proof of unattended posting.
+
+## October 27, 21:08 UTC — prior saved configuration
 
 Current instructions remain Page-first as described below. The parent coordinator reports all five canonical school Skills Pages and School Operations Schedule saved and exact-text readback verified. The four existing routine prompts were updated and remained enabled at 21:06 UTC, with unchanged times: weekday 06:30 intake, weekday 07:30 grades/feedback/printing, Thursday flexible preparation around 15:00, and Friday 16:00, all America/New_York. Full updated routine prompts were not supplied for this sanitized backup; this is a configuration receipt, not a claim of exact full-prompt synchronization or completed runs.
 
