@@ -66,6 +66,28 @@ Matching backup of the generic **School Operations Schedule** handoff instructio
 
 - **Friday Parent Notes**: Friday 4 PM, current Biology students only. Dot uses the latest available individual Revision Paper, Growth of Concepts and Growth of Writing links from the Feedback Checklist, including an unreturned Revision Paper for weekend follow-up after reconciling receipts. Apply the verified assignment due date plus 14 calendar days in America/New_York: the cutoff date is the last eligible day; later dates are closed, not actionable grading/extra-credit reminders. Resolve uncertain dates from Agenda/IC. Retain closed history, verify the correct student/family and private access, and do not expand the audience or create an extra send.
 
+## Current skill completion evidence — October 27, 2026
+
+Matching sanitized backup of the owner-approved canonical Page additions saved October 27. These additions extend the existing instructions; historical source text below is preserved. Private Page bindings and live student evidence remain outside GitHub. This documentation does not grant new authority or establish a successful school run.
+
+Apply [Current Working Agreements](../HANDOFF.md#check-fix-and-verify--october-27-2026) to each batch.
+
+### Grading and Roster — check fix and verify
+
+Apply the Current Working Agreements check fix and verify loop to each 6:30 AM or 7:30 AM batch. Completion evidence is the affected Feedback Checklist rows, reconciled coverage/counts and source/output versions; printable roster changes when due; verified individual IC save/readback or an explicitly unposted handoff; and the accessible new-only packet and delivered versions. Keep return/scan receipts, supported growth outputs and physical printing/distribution distinct. Verify the next applicable actual run does not repeat the repaired failure or redeliver unchanged work.
+
+### Friday Parent Notes — check fix and verify
+
+Apply the Current Working Agreements check fix and verify loop to each Friday batch. Completion evidence is the privately recorded eligible Biology coverage, reconciled due-date cutoffs and returns, correct student/guardian and private-link checks, and saved iTracker publication readback with duplicate prevention. Prepared text is not sent. Verify the next actual Friday run does not repeat the repaired failure, duplicate a note or revive closed opportunities.
+
+### VT Decks — check fix and verify
+
+Apply the Current Working Agreements check fix and verify loop to each deck batch. Completion evidence is the exact deck/version’s original-element coverage, saved ordered render, editable responses, correct bindings and downstream processability, teacher pack and school-account link/access checks. Keep reviewed readiness separate from verified Agenda/Schoology release. Preserve protected decks and sole writers. Verify the next applicable actual deck/lesson run does not repeat the repaired defect; a linter or isolated test alone is insufficient.
+
+### Two Week Lesson Preparation — check fix and verify
+
+Apply the Current Working Agreements check fix and verify loop to each preparation batch. Completion evidence is the existing lesson-by-lesson readiness list for the verified next 14 calendar days, with teaching dates, actual materials/deck/print links, school-account access, exact remaining gaps and owners, plus the VT checks where applicable. Do not turn a plan into a ready or taught claim. Verify the next actual preparation run retains the repair and correct handoffs without duplicating materials.
+
 ## Current workflow update — October 27, 2026
 
 Matching backup of the [October 27 update to the current Teaching Hub workflow](https://answerableteaching.slack.com/archives/C0C9E488BAN/p1793108553190989).
@@ -546,3 +568,4 @@ replace the working owner with an untested destination to satisfy a migration
 checkbox. Rollback for this catalog is reverting its scoped commit; no runtime
 or native school rollback is needed because publishing these definitions makes
 no school changes.
+
