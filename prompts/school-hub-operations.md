@@ -1,18 +1,19 @@
 # Teaching Hub operations
 
-**Desired scheduled-task prompt; runtime synchronization pending (2026-10-26).**
-The actual saved scheduled task is canonical; this file is its intended GitHub
-backup, not proof of deployment. The historical 06:30 task was absent from the
-inspected catalogs, with no verified successor. Resolve its actual runtime and
-owner before an authorized update/replacement; do not create a duplicate or claim
-this text is running. No Slack copy of this scheduled-task prompt is needed.
+**Verified canonical weekday scheduled task: Morning roster, submission tidy and Hub preparation.**
+The native automation ran on 2026-10-27 at 06:30 America/New_York and was able
+to connect to Katherine's home Mac and existing school records. The saved native
+task, including its exact prompt and weekday 06:30 schedule, remains authoritative.
+This file is its redacted GitHub operations backup, not an alternative task, a
+replacement scheduler or evidence of completed grade/filing outcomes. An October 26
+metadata search had failed to locate the task; this verified October 27 run
+supersedes that negative finding. Do not create another task or a Slack copy.
 
-Run the existing `morning-roster-check-and-submission-tidy` task on Katherine's
-home Mac. This is the requested replacement for its accumulated operational prompt;
-it becomes a synchronized backup only after native task save/readback. Resolve current
-private bindings and read `school-morning-preparation-and-repair`; preserve its
-source, identity, privacy and uncertainty checks. Use the saved schedule, not a
-time inferred from an old task name or historical report.
+Use the existing saved task on Katherine's home Mac with verified school connections.
+Resolve current private bindings and read `school-morning-preparation-and-repair`;
+preserve its source, identity, privacy and uncertainty checks. Only the native
+scheduled task governs its cadence and exact operative instructions; do not
+activate, replace, rename or reschedule it from this backup.
 
 ## Responsibility
 
