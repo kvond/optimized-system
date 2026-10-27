@@ -51,7 +51,49 @@ after its replacement and absence of needed callers/provenance are verified.
 Do not accumulate additional dated prompt copies: maintain the two existing
 prompt paths above and use Git history for their prior versions.
 
-## October 27, 16:46 UTC — latest verified snapshot
+## October 27, 21:08 UTC — latest saved configuration
+
+Current instructions remain Page-first as described below. The parent coordinator reports all five canonical school Skills Pages and School Operations Schedule saved and exact-text readback verified. The four existing routine prompts were updated and remained enabled at 21:06 UTC, with unchanged times: weekday 06:30 intake, weekday 07:30 grades/feedback/printing, Thursday flexible preparation around 15:00, and Friday 16:00, all America/New_York. Full updated routine prompts were not supplied for this sanitized backup; this is a configuration receipt, not a claim of exact full-prompt synchronization or completed runs.
+
+School Operations Weekly Review was separately saved and enabled at 21:08 UTC. This snapshot supersedes earlier configuration observations only where stated; it does not change other routines, sole writers or safeguards. The weekly review is distinct from both the weekly AI Dashboard Journal review and the historical System Review routine; neither is altered here.
+
+### School Operations Schedule — updated outcome-recording step
+
+4. Record actual outcomes and direct private evidence links in the existing approved records. Distinguish prepared, attempted, saved and read back, and blocked. A fired trigger, draft, tracker entry, or attempted click is not completion. Apply the Current Working Agreements check fix and verify loop and the relevant skill’s completion evidence: diagnose and repair within existing authority, record changed/tested/live-verified separately, and assign recurrence verification to the next applicable actual run. Keep the ledger in existing records, not a new spreadsheet.
+
+| When | Routine | Verified status |
+| --- | --- | --- |
+| Saturday morning around 8 AM, first October 31 | School Operations Weekly Review of prior-week outcomes and authorized improvements | Enabled and saved October 27; first scheduled October 31, not yet run |
+
+### Weekly improvement review
+
+School Operations Weekly Review checks the prior week’s actual school outcomes, recurring failures and handoffs after priority student work. Saved and enabled October 27 at 21:08 UTC: Saturday morning around 8 AM America/New_York, first scheduled October 31 2026. This is configured coverage, not a completed review; no next-run timestamp was returned. This is distinct from the weekly AI Dashboard Journal review and does not change that review.
+
+### School Operations Weekly Review — sanitized canonical text
+
+Improve the school system’s actual results using the previous week’s existing run evidence, not a second audit dashboard. Read Current Working Agreements, School Operations Schedule and the applicable canonical Skills Pages. This review is separate from the weekly AI Dashboard Journal account/workstream continuity review; do not alter that review.
+
+#### Weekly routine
+
+1. Use the previous seven days of existing run records, Feedback Checklist and Lessons/Agenda readiness records. Prioritize pending student outputs before maintenance. Check promised versus saved outcomes, cross-step failures, duplicate work, ownership/handoffs, user friction, regressed repairs, and stale skill, schedule or backup instructions. Investigate unexplained usage only when actual metrics are available; unknown usage is not zero and does not justify a new monitoring system.
+
+2. Apply the Current Working Agreements check fix and verify loop. Diagnose causes, then perform only authorized reversible repairs with the existing sole writer. Use one bounded recovery pass; isolate unresolved blockers and continue unaffected work. Code repairs require independent review, required passing tests and regression checks. No new grades or grading policy, curriculum decisions, student-data sharing, credentials, permissions, spending, safeguard removal or denied-action bypass. Suggestions outside existing authority require Katherine’s decision.
+
+3. Update proven procedural learning surgically in the canonical skill, its existing Slack skill thread and matching sanitized GitHub backup; verify each destination independently. Reconcile schedule documentation against actual saved automation state without inventing coverage or changing cadence outside authorization. Preserve later edits, accepted manual completions and unchanged closed work.
+
+4. Use existing run records and this review’s dated summary for the evidence ledger, not a new spreadsheet. Record what changed, what was tested and what was live-verified separately, with the affected workflow/version, evidence, owner and next action. Assign recurrence checks to the next applicable actual run; keep them pending until its live result is verified. A passed test or successful review run alone does not establish operational success.
+
+5. Give Katherine one short weekly summary: useful fixes, live-verified results, pending next-run checks and only remaining genuine decisions. Do not send an exhaustive audit dump or routine fragments. Raise urgent access or required-approval blockers promptly; keep student details and private links only in approved private records.
+
+#### Schedule and status
+
+Saved and enabled October 27 2026 at 21:08 UTC: Improve school operations runs weekly on Saturday morning around 8 AM America/New_York, first scheduled October 31 2026, with flexible timing. The saved automation receipt confirms configuration, not a completed review; no next-run timestamp was returned and no weekly run or operational outcome is claimed.
+
+#### Review record
+
+October 27 2026 setup: all five canonical school Skills Pages and School Operations Schedule were updated and exact text readback verified. The four existing routine prompts were updated and remained enabled at 21:06 UTC with unchanged times; the weekly automation was saved and enabled at 21:08 UTC. These are configuration checks, not live workflow tests. Slack thread and GitHub backup synchronization are tracked separately. Next applicable actual-run verification remains pending.
+
+## October 27, 16:46 UTC — historical verified snapshot
 
 Current visible instructions live in the private School Operations Schedule Page's
 central Skills section. The four task prompts now read **Current Working
@@ -281,3 +323,4 @@ feedback/writing assessment and packet assembly; Hub retains operational chores
 and links. The existing Chrome helper schedule, extension package, settings,
 protocol and uncertainty state are protected from this rework. Existing 08:00
 follow-up, Slack jobs and Thursday packet production remain separate.
+
