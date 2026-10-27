@@ -53,6 +53,8 @@ prompt paths above and use Git history for their prior versions.
 
 ## October 27, 16:22 UTC — current saved triggers
 
+**Later status qualification:** Katherine subsequently reported deleting three tasks; which tasks remains unresolved. The 16:22 saved responses below are the latest verified snapshot, not proof those triggers remain enabled now. No deletion, recreation or current-state lookup is performed by this documentation update. Recheck the actual selected task before relying on its timing.
+
 The owner-visible private schedule Page is the central routine index; short timed
 triggers read that Page and then the current owner-approved Slack skill. GitHub
 mirrors the public-safe instructions and saved trigger definitions. The private
@@ -213,6 +215,27 @@ Implementation home: `kvond/school-workflow-hub`, currently `src/hub_v2/weekly_p
 **Resolved division:** the Thursday Hub job remains the sole Monday-packet producer. Sunday checks freshness and classroom access, reuses the existing packet when inputs are unchanged, and reports changed inputs for a scoped refresh by the same producer. It does not render/send a second packet or create another listener, cache or schedule. This was recorded in the [PR16 review](https://github.com/kvond/optimized-system/pull/16#issuecomment-6227862177); PR16 is now merged, but that is not Sunday activation evidence.
 
 Acceptance before Sunday activation: source IDs resolve and the intended Monday is explicit; compare the saved baseline against current Agenda scope, source identities/revisions, folder membership, Form bindings, roster quantities and rules/packet versions. `GET /v2/api/weekly-preflight` reads saved state and cannot itself prove freshness. Unavailable/incomplete sources stay unresolved rather than falling back to an older success; unchanged inputs keep the same packet with no render/send. Verify the structured result and artifact, not exit status alone. Report in `#lesson-preflight` with no student data and private artifact pointers where needed. Keep the October 22 cloud-run retirement gate unchanged.
+
+### October 27 visible two-week preparation skill
+
+Source: https://answerableteaching.slack.com/archives/C0CA8LQ417A/p1793118426108739
+
+This is a faithful source mirror, not a new schedule or second packet producer. Its dated saved-trigger statement remains subject to the later task-removal uncertainty above.
+
+TWO WEEK LESSON PREPARATION — CURRENT SKILL
+
+Scope: Biology, Anatomy and Forensics over the next 14 calendar days, using the verified school calendar and Agenda. Respect holidays, A/B days and Katherine’s changes. This planning horizon is separate from the VT renewal scope of two lessons ahead and one lesson behind.
+
+1. Read the current #vt-decks skill and course-specific rules. Check existing owners and saved work before launching anything. Preserve the established packet producer; do not start a competing writer.
+2. List planned lessons and actual teaching dates. Find original decks, labs, cases, companion activities, images, guided notes, teacher materials and printing resources in existing folders before creating duplicates.
+3. Check scientific accuracy, conceptual sequence, original content coverage, 90-minute pacing, required materials and supplies, print links, student links, and assessment/lesson connections. Use the course-specific rules rather than imposing Biology’s structure on Anatomy or Forensics.
+4. Prepare authorized missing materials and repairs. Search externally only for specific gaps, with suitable sources and reuse rights. Do not invent curriculum decisions or new grading policy.
+5. Verify final deck order, original elements, response functionality, source bindings, teacher pack and school-account link access. A review, plan or linter pass is not a ready lesson.
+6. Maintain a concise lesson-by-lesson readiness list in the existing Lessons/Agenda preparation view: teaching date, source/deck link, ready/in progress/blocked, exact missing item, owner and needed-by date. Preserve uncertainty rather than marking unchecked lessons ready.
+7. Report genuine teacher decisions early. Reuse unchanged verified outputs; refresh changed inputs with the existing owner. Keep course-channel history, but use the consolidated #vt-decks instructions as the current visible specification.
+Timing: the new Thursday afternoon trigger was saved October 27, flexible around 3 p.m. Eastern, and reads the private School Operations Schedule page. It must reconcile existing Hub packet production before creating anything. No successful new run is claimed. Deleting its task removes the timed trigger; the skill itself is not a schedule.
+
+Current VT specification: https://answerableteaching.slack.com/archives/C0C8YU5RDDM/p1793117382779019
 
 ### Separate preflight repository retirement
 Katherine [approved decommissioning conditionally on the Hub handling the work](https://answerableteaching.slack.com/archives/C0C8ZJ4FTAT/p1792285329701299). `kvond/lesson-preflight` is a retirement candidate, not a second implementation home. It was empty and unarchived when checked October 17; that fact alone does not establish replacement coverage.
