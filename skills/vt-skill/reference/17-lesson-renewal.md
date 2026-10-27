@@ -5,8 +5,10 @@
 Katherine's specifications of October 16–20 for every lesson deck in Biology, Forensics and
 A&P. They apply to new decks as they are built and to already-made decks through the
 `renew-lesson-slides` skill, which runs this section on one deck or a batch. A deck is
-not ready until §17.6 passes. When Katherine adds a specification, it goes here first,
-with its acceptance check, and `renew-lesson-slides` picks it up from here.
+not ready until §17.6 passes. When Katherine adds a specification, record it in the current visible Slack skill
+with its date, source and acceptance check, then mirror that text/version here.
+`renew-lesson-slides` reads this matching backup; GitHub is not a separate hidden
+rule source. See §17.12 for the October 27 visible consolidation and provenance.
 
 Never write to a deck Katherine is editing herself. The Photosynthesis reference deck
 (`1CVdbvDC20ZSShGPA9SLh018A54JnF0tkaRwzP75bJ1A`) is hers: read it, never write it.
@@ -379,3 +381,92 @@ and permissions. Report each defect as fixed with exact saved/render/readback
 evidence, still open with its repair owner, or awaiting a specific user decision.
 Do not report a plan, linter pass, partial sample or draft link as a released,
 processable lesson.
+
+
+### 17.12 October 27 visible consolidation — matching backup
+
+The following two records mirror the posted Slack text, preserving its historical/current distinction. They extend the existing skill rather than silently discarding earlier applicable requirements or scoped overrides. Status statements inside the copied posts describe their publication time, not proof of current implementation, pinning, synchronization or deck readiness. This repository change alone establishes no release or schedule.
+
+#### Historical record
+
+Posted source: https://answerableteaching.slack.com/archives/C0C8YU5RDDM/p1793117378481429
+
+Canvas A — Original recorded VT standard (historical, not current)
+This is the earliest complete #vt-decks standards post found, dated October 15, 2026, 02:20 EDT. It is reproduced verbatim below, not represented as the original August skill. GitHub states that the skill was established August 6, but the exact August 6 version was not retrieved. Do not label a reconstructed summary “the original skill.”
+
+Source: https://answerableteaching.slack.com/archives/C0C8YU5RDDM/p1792045219351809
+
+Standards — VT Decks
+• Six-stage pipeline: plan → VT inserts → interactive explorations → companion activities → reference extraction → Lesson Index update.
+• Biology is the reference line. A&P has locked differences: 16:9, content-dependent critical aspects, Concept Bank slides, unit exam slide in the second deck of each unit.
+• Yellow answer boxes for Workflow A. Marker strings intact.
+• `(VT)` suffix only after Google Slides conversion.
+• Review: check each slide targets its stated critical aspect before layout QA.
+• Gemini enhance pass skips answer slides; no gray on enhanced textboxes; answer textbox colours unchanged.
+• When the marker layer conflicts with the deck, fix the deck, never the prompt.
+• Skills live in kvond/answerable-skills; vt-bio-skill is current.
+Open
+• Skill drift: installed vt-deck-finishing is superseded; single-file vs per-course skill decision pending.
+• deck_lint.py and extract_and_grade.py match "What if?" differently.
+End of verbatim historical record. Subsequent requirements and current locations are below. Historical open items are not current status determinations.
+
+#### Current visible specification
+
+Posted source: https://answerableteaching.slack.com/archives/C0C8YU5RDDM/p1793117382779019
+
+Canvas B — VT Decks: current consolidated working specification
+Draft consolidation as of October 27, 2026. Applies to both new-deck origination and renewal of existing decks. This is a readable operational specification, not a claim that lessons have passed it.
+
+Visibility and change control
+Slack is Katherine's visible working specification. Record durable approved changes in this canvas with date, source-message link and acceptance check; mirror the same text/version to GitHub as its backup. Do not make Katherine consult GitHub to discover the current rule. Keep the historical original separate and unchanged. Display last synchronized version and outstanding differences honestly; none has been synchronized by this draft.
+
+Each operations canvas should show purpose, current instructions, scope and exclusions, source links, owner/executor, actual schedule plus timezone, last verified run/result, and unresolved blockers. Mark an unverified schedule “unverified” and a suggested schedule “proposed.”
+
+Audit before edits
+Read the exact live source deck, companion resources and notes in order. Identify lesson/source IDs from the current Agenda, not filename similarity. Produce a slide/object-specific defect list for scientific accuracy, critical aspects, conceptual sequence, original-element coverage, text density, visible evidence, editable response space, vocabulary and reasoning demand. Distinguish defects from unresolved teaching choices. Preserve the protected teacher-edited Photosynthesis deck; one writer per exact deck, revision guards and existing ownership/handoff gates.
+
+Common learning design
+• Retain the six-stage pipeline: plan, VT inserts, interactive explorations, companion activities, reference extraction, Lesson Index update.
+• Critical aspects drive order and visible evidence. Show relationships visually, comparisons side by side, changes as sequence/before–after/arrows, mechanisms as visible mechanisms. Pictures must do intellectual work, not decorate.
+• Before discernment, title the question/phenomenon/contrast without revealing the answer. During discernment show evidence and an appropriate student action. After discernment use a sentence assertion supported by that same evidence. The return slide crystallizes what students can now see.
+• Use short explicit conditions and one clear ask at a time on EVERY slide type without lowering scientific demand. Add useful comparison pictures where absent; placeholders and image counts do not pass.
+• Choose writing, annotation/manipulation, or a short combination for every response. Direct the action and target: circle the difference, trace the pathway, connect structure to function. Avoid vague “annotate.” Review every run of 2+ writing slides, changing only when the thinking is better represented another way.
+• Preserve the five core questions where applicable: Critical Aspect question, Contrast Set, Build a Rule, Pattern Break, 3-Tier Question. Conditional slide types belong only where content supports them, not by quota. Course-specific structures below override indiscriminate Biology templating.
+Retain morphemes and purposeful practice
+One new morpheme per lesson, with prior ones recurring. Begin with the word-part breakdown; use movable cards and separate, generously spaced construction boxes. Directions:
+“Move each word-part card beside its meaning.”
+“Then combine the parts to build the two words asked for from this lesson.”
+Follow with own-words definitions and a movable-word mind map. Retain useful later practice/reveal placement. Verify scientific word parts; morpheme answer notes contain only the actual answers. Morpheme, definition and mind-map work stays unscored: no codes, participation marks or invented assignments.
+
+Biology
+Plan an approximately 30-minute opening lab/investigation INSIDE the 90-minute class, including setup/cleanup. For C08, use concrete clinic/case → relevant organelle image/evidence → student noticing → huddle, with teacher consolidation after students' ideas. Use other appropriate biological evidence for other lessons.
+
+Keep the relevant clinic/case/organelle reference close to its corresponding reasoning question. Immediately before each instructional question, place active editable review of precisely its prerequisites: notice, sort, label, compare, move or trace. Do not cluster all review at the top, substitute a passive summary, or reveal the reasoning answer. References/noticing support classroom talk; they are not automatically assignments or graded submissions. “Don't proliferate activities that don't serve a purpose.”
+
+Anatomy and Physiology
+The verified native original source and its existing format/order are the backbone. Retain every original slide, image, diagram, video, table and linked activity; map each element to its retained location. Add VT questions and active review into that original, never substitute a shortened reconstruction. Preserve meaningful reference routes and show how original material supports the reasoning. Pictures need an explicit intellectual job such as locate, label, compare, trace, or connect structure and function. Preserve applicable Concept Bank and unit-exam requirements; verify them against source/course rather than imposing obsolete Biology dimensions.
+The October 26 GitHub precedence explicitly overrides old PPTX-only, filename-twin, shortened-rebuild and Cycle 02 4:3 defaults for original-first native Anatomy.
+
+Forensics
+Write at grades 11–12 level. Plan a meaningful 90-minute case/evidence sequence: initial controversial question or case and tentative position/vote, debate, further evidence, then revisit the position. Preserve uncertainty, alternative interpretations and strong existing lesson material. Carry prior knowledge forward, including evidence limits, chain of custody and expert claims. Use visible evidence and purposeful comparison before explanation. Do not impose Biology's lab-first/organelle structure or fixed dialogue roles. Retain morphemes and practical setup, supplies, safety, print links and question progression.
+
+Current-week correction, not a standing sequence change: October 25 staged crime-scene work superseded that morning's fingerprinting plan. Preserve fingerprinting for later with no invented date. Do not repeat the superseded “fingerprinting this week” plan.
+
+Teacher materials and pacing
+Plan coherent 90-minute days including investigations, labs, guided notes, discussion, transitions, cleanup and synthesis, not equal slide-count chunks. Keep questions with responses/reveals and activities with preparation and sense-making. Day dividers are provisional, teacher-adjustable.
+Provide a separate usable teacher pack per lesson: purpose, conceptual background/critical aspects, question progression, teacher/student actions, grouping, transitions, setup, supplies, safety, and direct print links. Reconcile the pack against final deck order. Keep teacher-only/print links distinct from student /copy and turn-in links. Resource labels are readable (18-point per current standard). Do not paste repair instructions into teaching slides.
+
+Markers, assessment and access
+Preserve actual response-bound identities, inventory, student work and grading policy. Verify every actual answer slide, not reference/review slides just because they exist. Personal-connection pages follow the established NOTES rule and stable IDs, without a fabricated reflection answer key. Visual evidence is not proof that the parser can process it.
+Keep the authorized Biology C08 paper-only exception scoped: retain original first-answer NOTES/BANK, remove only authorized DRAFT bindings, verify DRAFT=0 and downstream digital revision “not applicable,” not zero. Separate lesson-specific paper-revision mapping and supported feedback path; never recreate DRAFT to satisfy a parser or bypass a hold.
+Verify intended-account/domain-viewer access and preserve collaborators. No new permission changes, public sharing, grades, publishing authority or student-data sharing is granted by this canvas.
+
+Ready is evidence, not announcement
+Inspect ordered native outline and saved render; verify all original elements, science, response editability, image usefulness, notes, print pack and every link. Check code bindings/inventory, current linter, slide references and actual downstream processability. Report full coverage vs partial sampling.
+Reviewed deck readiness is separate from classroom release. Within existing authorization and ownership: deck QA → saved/render/link/access checks → Agenda live/student-copy links → Schoology material links; verify from school account. Keep dates, settings, grades and pacing unchanged in a link pass. A draft, plan or passing linter is not a released lesson.
+
+
+
+Schedule: the existing renewal scope is two lessons ahead and one behind. A separate two-week preparation horizon belongs in #lesson-preflight. The consolidated timed tasks are under review; do not claim a new Thursday run is active yet.
+
+Current instructions for Anatomy and Forensics are consolidated here. Preserve the old course-channel history. GitHub synchronization is pending; this post does not claim that backup has been updated.
