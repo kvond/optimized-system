@@ -15,6 +15,34 @@ model to calculate completion in a chat. Before implementation repairs, read the
 current canonical Hub checkout's `docs/START_HERE.md` and repository instructions.
 This operations repository is not the Hub source or its private configuration.
 
+## Current workflow update — October 27, 2026
+
+Matching backup of the [October 27 update to the current Teaching Hub workflow](https://answerableteaching.slack.com/archives/C0C9E488BAN/p1793108553190989).
+This extends the existing workflow. Where older text assumes Hub/Helper must
+process or post every grade, this update supersedes that assumption. Existing
+source, privacy, scoring and sole-writer safeguards remain. The approved target
+below does not itself establish a cutover or authorize an unverified replacement
+writer; reconcile actual current ownership before dependent work.
+
+1. Target architecture: Hub keeps daily Agenda and Lessons. A separate cloud student-work process handles intake, matching, completion scores, paper revisions, returned scans, feedback/writing and CSV preparation. This is the approved target, not a claim that the replacement is live.
+2. Start with actual school Drive submissions. Reconcile student aliases, lesson identities and misplaced work using source evidence and the current roster. Preserve originals, provenance and distinct lessons. A shared Form is not a lesson identity, and a newer different lesson is not a redraft. Isolate genuine ambiguity while continuing unaffected work.
+3. Preserve established completion-scoring rules. Model assistance may identify answer-bearing items with cited evidence, but must not silently introduce new grading judgments or change denominators. Blank, unknown, exempt and zero are different states.
+4. Generate targeted paper revision questions using the existing model documents. Review of the new template is design review only, not a standing teacher pre-review gate for routine feedback. Match returned scans to student and lesson, then provide completion evidence, conceptual growth across the unit and writing feedback. Track extra-credit returns under the established policy, without inventing values or categories.
+5. Deliver a dated morning score CSV and direct print links. No new scores means no posting job. New feedback can still need printing without a score change. CSV prepared, entry attempted and saved in IC are distinct. Native IC CSV import is unverified; browser-assisted entry must use exact targets and saved/reopened readback. Do not re-enter already saved scores.
+6. Keep Feedback Checklist as the visible record and its back tabs for internal reconciliation. Keep Roster teacher-printable. No extra dashboard, database or competing tracker. Reuse saved reports and completed work.
+7. Friday parent notes are scheduled for 4 p.m. Eastern through iTracker Pro. Include verified total grade, missing work under too late/on fire/still workable, and separate direct links to the latest revision questions, conceptual feedback and writing sheets for the most recent turned-in lesson. No extra email layer. Preserve authorized access and distinguish class-handout routine from verified individual handout history.
+8. Follow Claude’s architecture, with dot building and one operator per write scope. Test first on the four outstanding source cases. Proposed shadow durations, new teacher checks, 05:15 timing and new spending caps are not automatic requirements or approvals. Do not add routine gates or shift work back to Katherine unnecessarily.
+9. Retire old components only after the replacement demonstrates correct real-submission outcomes. Inventory Cloud Run, schedules, Helper alarms and shared state first. Preserve class notes, lesson summaries, student files, audit history and rollback. Do not delete shared Firestore or archive live dependencies just because UI pages disappear.
+10. Scheduled runtime definitions are canonical, with matching GitHub backups. Do not create Slack copies of scheduled-task prompts or duplicate morning tasks. The existing Friday task is verified at 4 p.m.; replacement morning schedules are not yet verified saved.
+11. Before acting or reporting, consult current working agreements, this skill and relevant updates. Reuse verified evidence and approvals. Limit repetitive reads, broad scans and parallel work. When attempts stop yielding useful evidence, stop the loop, reassess and choose the simplest authorized route. Context and loops can increase usage, but not every later step necessarily costs more.
+12. Report outcomes, not just activity: source reconciled, score established, IC saved, feedback filed/linked, print-ready and parent note published each need their own evidence. Keep completed manual entries closed. Unknown is not missing work. Send concise results, exact unavoidable blockers and direct links.
+
+**Observed implementation status at this update:** replacement is in read-only
+shadow testing, not cut over. Existing completed grades and reports remain valid.
+This documentation backup does not prove pinning, schedule adoption, production
+readiness, CSV import capability or student outcomes. The architecture source is
+linked from the Slack update; no separate architecture or tracker is created here.
+
 ## Shared workflow checklist — 2026-10-26
 
 Slack-first operational reference: [CURRENT SKILL — Teaching Hub, IC and Feedback Workflow](https://answerableteaching.slack.com/archives/C0C9E488BAN/p1793018605056689). The October 26, 12:43 UTC message supersedes the earlier workflow message while preserving its history. This section is its matching backup; publication, pinning and runtime adoption require separate readback.
