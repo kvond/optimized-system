@@ -470,3 +470,5 @@ Reviewed deck readiness is separate from classroom release. Within existing auth
 Schedule: the existing renewal scope is two lessons ahead and one behind. A separate two-week preparation horizon belongs in #lesson-preflight. The consolidated timed tasks are under review; do not claim a new Thursday run is active yet.
 
 Current instructions for Anatomy and Forensics are consolidated here. Preserve the old course-channel history. GitHub synchronization is pending; this post does not claim that backup has been updated.
+
+**Schedule status correction, October 27 at 16:22 UTC:** the copied post's earlier pending-Thursday statement is historical. A short Thursday two-week preparation trigger has now been saved/enabled, alongside weekday 06:30 and 07:30 triggers; the Friday prompt points to the same private schedule Page. See the [dated schedule backup](../../../ai-ops/worker-registry/roles-and-schedules.md#october-27-1622-utc--current-saved-triggers). This is configuration, not a completed lesson run, replacement packet producer or deck readiness. The separate midnight update reported that task unavailable; no replacement is claimed.
