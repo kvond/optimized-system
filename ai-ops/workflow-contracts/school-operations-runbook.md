@@ -15,6 +15,10 @@ model to calculate completion in a chat. Before implementation repairs, read the
 current canonical Hub checkout's `docs/START_HERE.md` and repository instructions.
 This operations repository is not the Hub source or its private configuration.
 
+## Current source policy — October 27, 16:46 UTC
+
+Read the private Current Working Agreements Page, then School Operations Schedule and its assigned skill in the central Skills section. This Page-first policy supersedes earlier Slack-first wording; Slack is discussion/provenance and GitHub the matching backup. See the [working-instructions source](../HANDOFF.md#current-instruction-source--october-27-1646-utc). Literal dated Slack mirrors below are retained as historical evidence, not a competing current home. Private Page bindings stay outside GitHub. No changed schedule, pin or school outcome is established by this documentation update.
+
 ## Current workflow update — October 27, 2026
 
 Matching backup of the [October 27 update to the current Teaching Hub workflow](https://answerableteaching.slack.com/archives/C0C9E488BAN/p1793108553190989).
