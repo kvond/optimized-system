@@ -19,6 +19,10 @@ This operations repository is not the Hub source or its private configuration.
 
 Read the private Current Working Agreements Page, then School Operations Schedule and its assigned skill in the central Skills section. This Page-first policy supersedes earlier Slack-first wording; Slack is discussion/provenance and GitHub the matching backup. See the [working-instructions source](../HANDOFF.md#current-instruction-source--october-27-1646-utc). Literal dated Slack mirrors below are retained as historical evidence, not a competing current home. Private Page bindings stay outside GitHub. No changed schedule, pin or school outcome is established by this documentation update.
 
+### Current Friday wording clarification — October 27, 2026
+
+The canonical **Friday Parent Notes** Page explicitly preserves **10 formative extra-credit points for each of the two eligible current-work opportunities**, without changing IC categories. This clarifies the current backup; it does not rewrite the historical Slack source quoted below, create a new credit policy, authorize an IC category change or establish that points were posted. Keep the existing current-work eligibility, separate feedback/revision-question and writing links, privacy, single-owner and saved-publication checks. Resolve the private Page binding outside GitHub.
+
 ## Current workflow update — October 27, 2026
 
 Matching backup of the [October 27 update to the current Teaching Hub workflow](https://answerableteaching.slack.com/archives/C0C9E488BAN/p1793108553190989).
