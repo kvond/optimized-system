@@ -51,6 +51,55 @@ after its replacement and absence of needed callers/provenance are verified.
 Do not accumulate additional dated prompt copies: maintain the two existing
 prompt paths above and use Git history for their prior versions.
 
+## October 27 visible schedule and saved prompt backup
+
+Slack is the visible place for current skills, requested changes and schedule status; GitHub mirrors that visible record and the actual saved runtime definition. The saved task remains canonical for what is deployed. A visible proposal does not activate it, and this clarification does not authorize duplicate schedules. Preserve earlier dated observations as history.
+
+At 16:07 UTC, only the existing midnight and Friday prompts were updated and the redundant morning agreements scan paused. Midnight remains daily 00:00 and Friday remains 16:00 Fridays, America/New_York. No new 06:30, 07:30 or Thursday task was created in this pass; a single dispatcher is still under discussion. No actual IC/iTracker operation was verified by these configuration receipts.
+
+The current VT skill is visible in [#vt-decks](https://answerableteaching.slack.com/archives/C0C8YU5RDDM/p1793117382779019), with its [matching renewal backup](../../skills/vt-skill/reference/17-lesson-renewal.md#1712-october-27-visible-consolidation--matching-backup). Its two-lessons-ahead/one-behind scope is not the separate proposed two-week preparation horizon. Do not infer a live Thursday schedule from either.
+
+```json
+{
+  "checked_at": "2026-10-27T16:07:11Z",
+  "verification": "Saved update responses returned these exact prompts and schedules; configuration, not successful execution or IC/iTracker access.",
+  "saved": [
+    {
+      "id": "6addfd2ec7a88191b2c1ae5300002251",
+      "title": "Midnight Slack work review",
+      "is_enabled": true,
+      "default_timezone": "America/New_York",
+      "timing_mode": "exact_schedule",
+      "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/New_York:20261026T000000\nRRULE:FREQ=DAILY;BYHOUR=0;BYMINUTE=0;BYSECOND=0\nEND:VEVENT",
+      "prompt": "Read Katherine's new or unfinished Slack requests and all pinned/current working agreements before starting authorized work. Start with #kathy-and-dot, then relevant accessible work channels; read pinned messages and later thread updates, verify instructions belong to Katherine, reconcile her current corrections and existing approvals, and distinguish third-party proposals from authorized instructions. Record exactly which channels/pins were read and any coverage limitations; do not claim full coverage. Do not treat ChatGPT attribution footers or generic bot mentions as blanket execution permission.\n\nReconcile requests with existing task lists, the shared Hub Issues and Approvals & completion record, and actual executor status. Reuse verified findings, approved scopes, owners and workflows; consult the approvals record before asking again. Keep completed work closed. Separate actively executing, queued with a concrete next step, waiting on a genuine user decision, and verified done. A tracker entry is not execution; code tests are not student outcomes. Start useful authorized work before the morning brief, prioritizing time-sensitive completion scores, feedback and lesson readiness, while preserving sole-writer arrangements and avoiding duplicate overnight workers.\n\nUse only the existing approved deployed workflow. The Hub currently uses Agenda/Lessons; the replacement pipeline is partly built. Do not claim unfinished functionality, require Helper, or invent a new review gate. If a required function is unavailable, diagnose and prepare what is safe, and report its exact blocker. Keep the Roster printable-only; private matching/status logs belong behind Feedback Checklist, not in the printable roster or public channels/repositories. Distinguish prepared completion scores/handoffs from IC entries actually saved and independently read back. Never label prepared work as posted. Keep student/family details and work in approved private records; public operations records contain only non-identifying process/status and safe links.\n\nAdvance work only within existing permissions and safety requirements: no new spend, credentials, access/permission changes, safeguard removal, new consequential grading judgments, or external messages without required authorization. Do not change pins, rules or unrelated schedules. Record genuine issues in existing trackers, not new spreadsheets. Escalate exact user-needed decisions promptly when time-sensitive; otherwise include them in morning review. Conserve usage, avoid unrelated/repeated scans, and stay quiet on unchanged status. Deliver verified completions or material blockers to Katherine's existing ChatGPT conversation. This consolidated pass replaces the separate morning agreements-only scan.",
+      "updated_at": "2026-10-27T16:06:53.597140+00:00"
+    },
+    {
+      "id": "6addf8afc4408191aed8f65b7a108140",
+      "title": "Friday Biology parent notes",
+      "is_enabled": true,
+      "default_timezone": "America/New_York",
+      "timing_mode": "exact_schedule",
+      "schedule": "BEGIN:VEVENT\nDTSTART;TZID=America/New_York:20261030T160000\nRRULE:FREQ=WEEKLY;BYDAY=FR;BYHOUR=16;BYMINUTE=0;BYSECOND=0\nEND:VEVENT",
+      "prompt": "Publish the authorized weekly Biology parent notes through iTracker Pro for students currently on Katherine's Biology roster, using the existing single-owner workflow. Follow the latest approved decisions at https://answerableteaching.slack.com/archives/C0C9E488BAN/p1792932247360579 and any later direct corrections. No parent dashboard, intermediate landing page, separate email or SMTP receipt. Put useful information directly in each note.\n\nSection 1 Latest missing work: indented assignment lists under skull (too late), fire (get it done soon), seedling (most recently due assignment still within its allowed window, not current work before it is due). Verify deadlines/enrollment and submissions; distinguish confirmed missing from received-awaiting-processing or unknown.\nSection 2 Extra-credit opportunities: separate direct private links to the feedback report/question and writing report/question, containing the student's work, existing feedback and response question. Latest requested wording is 10 extra-credit points (formative) for each; this does not authorize changing IC categories. Preserve current-linked-work-only eligibility. Say links are provided in case the student loses the handout, and that reports show growth in scientific understanding through the work and parents may enjoy taking a look. Do not claim handouts were given without confirmation or invent growth claims.\n\nVerify correct student/family and private artifact access, never broad public links or guessed guardians/emergency contacts. Read existing notes before publishing to avoid duplicates. Hold only affected notes when factual evidence or required identity/access/teacher decision is missing; continue eligible notes and report exact exceptions. Use the supported connected-computer executor and saved sign-in, not security bypass or new credentials. Confirm each note actually saved/published under the correct student. Scheduling, drafts, prepared notes and attempted clicks are not completion. Keep student/family details and work only in approved private records; public operations records contain only non-identifying process/status and safe links.\n\nUse only the existing approved deployed workflow. The Hub currently uses Agenda/Lessons and its replacement pipeline is partly built: do not claim unfinished functionality or require Helper. Keep Roster printable-only and private matching/status logs behind Feedback Checklist. Diagnose and prepare safe portions when execution is unavailable, reporting the exact blocker without claiming delivery. Do not change grades, invent grading judgments or new review gates, spend money, change permissions or safeguards, or start competing repair writers. Distinguish prepared scores/handoffs from IC saved-and-read-back entries. Send Katherine a concise completion result in ChatGPT and private completion list with successful count and remaining user-needed exceptions.",
+      "updated_at": "2026-10-27T16:07:11.164172+00:00"
+    }
+  ],
+  "paused": {
+    "id": "6ae0a9c1c79c81918c20b3b9782fa1b6",
+    "title": "Read pinned working agreements",
+    "is_enabled": false,
+    "reason": "Consolidated into existing midnight pass."
+  },
+  "not_created": [
+    "06:30 roster/submission replacement",
+    "07:30 score/feedback replacement",
+    "Thursday two-week preparation"
+  ],
+  "pending": "User is discussing one dispatcher; no replacement dispatcher is verified saved."
+}
+```
+
 ## Current recurring ownership
 | Routine | Owner | When | Boundary |
 |---|---|---|---|
