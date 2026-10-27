@@ -43,6 +43,56 @@ This documentation backup does not prove pinning, schedule adoption, production
 readiness, CSV import capability or student outcomes. The architecture source is
 linked from the Slack update; no separate architecture or tracker is created here.
 
+## October 27 callable skills — visible source mirrors
+
+The following non-student instructions mirror the current channel posts. They govern conflicting older procedural assumptions within their stated scope; earlier source, privacy, scoring, uncertainty and sole-writer safeguards remain. Their timing paragraphs record saved triggers as of October 27, not a fresh claim that tasks remain enabled after Katherine's reported removals. No runtime state was changed or rechecked by this documentation update.
+
+### Grading and roster
+
+Source: https://answerableteaching.slack.com/archives/C0CCDUWQSJ1/p1793118415477659
+
+GRADING AND ROSTER — CURRENT SKILL
+October 27, 2026. Use this with Kathy and Dot’s current working agreements. This channel is the visible instruction source; GitHub is its matching backup. A saved schedule is not proof of a successful run.
+
+1. Roster: compare current enrollment with IC and update Katherine’s clean printable roster. Keep former students as history, not current missing-work cases. Do not assume new students owe pre-enrollment work. Put processing records and verified aliases in supporting Feedback Checklist records, not the printed roster.
+2. Intake: find new/changed Drive submissions, including wrong folders. Match student, course, actual lesson and source version. A common Form or similar title must not collapse different lessons. Tidy verified matches without losing originals or changing sharing. Isolate ambiguous matches while other work proceeds.
+3. Checklist: immediately link each identified submission and its received/modified date. Track work received, score prepared, revision sheet ready, feedback/writing ready and IC saved/read back separately. Unknown is not zero. Do not infer Printed or Handed Out.
+4. Lesson connections: verify original questions/instructions, Agenda, Schoology and exact IC destinations before scoring/posting. Each lesson needs separate Notes and Summative Revisions targets where applicable. Keep History and Courtroom distinct. Check category, points, dates and section. Resolve ordinary defects under approved scope; escalate genuine policy choices only.
+5. Notes scoring: apply established completion rules to actual answer-required slides, not teaching/reference/practice slides. Preserve source evidence, accepted manual scores and higher grades. Do not manufacture zeros from failed discovery or missing instructions. Do not invent consequential grading decisions.
+6. Paper revisions: use actual answers and existing model documents. Include the relevant question/response, specific feedback, targeted questions and writing room. Preserve established colored dots and readable print layout. Routine feedback needs normal quality checks, not Katherine’s pre-review. Template review is not a per-student gate.
+7. File and print: save finished pages to the correct student folder, link them on the Feedback Checklist and update the daily print list. IC posting must not hold up feedback. Verify links under approved access; no unapproved sharing changes. Handouts may be distributed throughout the week.
+8. IC reconciliation: compare submitted work, prepared score and the individual IC entry. A lesson-level lookup or total count is not posting evidence. Use the exact student/section/assignment, check existing values and flags, prevent duplication, save and read back. Hub Helper is not mandatory. Wrong-assignment saves remain unfinished until reconciled; do not silently delete or relocate them. If posting cannot finish, provide the exact remaining handoff.
+9. Returned scans: match to student, lesson and original response, distinguish duplicates, apply established completion-credit rules and prepare any resulting entries without duplicate credit.
+10. Growth and writing: ground concept-growth feedback and writing reports in actual work over time. Distinguish absent evidence from no improvement. File, link and refresh the print list. For DTGSS, show improvement alongside participation and comparable-submission counts; use the existing checklist and generate an upload report when requested.
+11. Prevention: before processing, check identities, sources, answer requirements and assignment destinations. One failure must not block the class. Record cause, owner and next action; repair recurring causes with regression checks and independent review, then verify student outcomes. Preserve safeguards and sole writers; do not invent approval gates.
+12. Reporting: keep identifying student/family records and private links out of public channels. Report actual completions, exact gaps and genuine user decisions with private evidence. Do not repeat closed issues or equate a merge/test/trigger with a saved grade.
+CALLABLE REQUESTS
+Update the printable roster; check new submissions; check lesson connections; score submitted notes; prepare revision sheets; refresh the feedback print list; reconcile work/scores/IC; post prepared grades; process returned revisions; update growth feedback and writing reports.
+
+SCHEDULE
+Weekday 6:30 a.m. Eastern: roster/intake/matching/tidy/checklist.
+Weekday 7:30 a.m. Eastern: scores/IC/feedback/printing.
+These short triggers were saved October 27. Their current enabled state must be checked if Katherine removes tasks. The private School Operations Schedule page holds the timetable. The replacement pipeline is still under construction; do not claim unattended completion.
+
+### Friday parent notes
+
+Source: https://answerableteaching.slack.com/archives/C0CCDUWQSJ1/p1793118422768779
+
+FRIDAY PARENT NOTES — CURRENT SKILL
+
+Scope: students currently on the Biology roster, through iTracker Pro. This is a separate callable routine within #grading-roster, not a new dashboard or separate email system.
+
+1. Read the current roster, verified IC total grade, submission evidence and current deadlines. Do not confuse work awaiting processing with missing work or hold a new student responsible for pre-enrollment assignments.
+2. Check existing published notes to avoid duplicate messages.
+3. Put the current grade in the note. List missing assignments under skull/too late, fire/get it done soon and seedling/still workable. Use actual deadlines and the most recently due eligible work, not future work marked missing.
+4. Keep extra-credit opportunities separate: direct private links to the feedback/revision-question page and writing page for the latest relevant submitted lesson. Use Katherine’s approved wording and credit policy, not a newly invented IC category. Explain that links are available if the student loses the handout and that parents can see growth in scientific understanding. Do not claim a handout was given without confirmation.
+5. Verify student/guardian identity and access. Do not guess guardians or substitute emergency contacts. If no work is available for feedback, say so only after verified reconciliation, not after a failed search.
+6. Publish the authorized note in iTracker Pro and read back its saved publication. A draft, prepared text or attempted click is not sent. Continue eligible students while isolating genuine exceptions.
+7. Record publication privately and give Katherine a concise completion count plus exact remaining exceptions. Never post student details or private artifact links in this public channel.
+No routine teacher-review gate, extra dashboard, separate SMTP email receipt or Hub Helper requirement. Use the existing single-owner workflow and supported signed-in browser. No security bypass, new credentials, spending, grade changes or permission changes.
+
+Timing: Friday 4 p.m. America/New_York. The existing task was updated October 27 to read the private School Operations Schedule page, then this skill. Deleting that task removes its timed trigger; posting this skill alone does not schedule publication. End-to-end unattended publication remains unverified.
+
 ## Shared workflow checklist — 2026-10-26
 
 Slack-first operational reference: [CURRENT SKILL — Teaching Hub, IC and Feedback Workflow](https://answerableteaching.slack.com/archives/C0C9E488BAN/p1793018605056689). The October 26, 12:43 UTC message supersedes the earlier workflow message while preserving its history. This section is its matching backup; publication, pinning and runtime adoption require separate readback.
