@@ -53,6 +53,10 @@ synchronized. A repository merge is not deployment. New teacher instructions
 remain authoritative requirements to reconcile into the runtime task; a stale
 saved prompt is not permission to ignore them.
 
+## October 27 working-instructions reference
+
+Before acting or reporting, consult the [current Teaching Hub workflow update](https://answerableteaching.slack.com/archives/C0C9E488BAN/p1793108553190989) and its [matching runbook backup](workflow-contracts/school-operations-runbook.md#current-workflow-update--october-27-2026). It governs conflicting older Hub/Helper-only assumptions while preserving source, privacy, scoring, sole-writer and existing completed-work safeguards. Reuse current evidence and approvals; limit repetitive reads, broad scans and parallel work. Stop unproductive loops, reassess and choose the simplest authorized route. The separate student-work architecture is an approved target in read-only shadow testing, not a verified cutover. This reference changes no runtime schedule, pin or production state.
+
 ## Current owners and limits
 - System Review: weekly Claude Code scheduled task on Katherine's Pro plan (Sunday night ET), using `prompts/system-review.md`. No GitHub Action, Anthropic API key or Slack webhook.
 - The school computer cannot run the IC helper. Use Katherine's home Mac and its authenticated school Chrome profile for the existing helper; district Claude browser limits do not prohibit that separate executor. The weekday 07:00 opt-in path has standing authority, subject to its exact mapping, keep-higher, flag and saved-readback limits. A phone request can initiate work on the home Mac; the phone is not a second IC writer. See the current home-computer recovery rule in `ai-ops/worker-registry/roles-and-schedules.md`. I-Tracker remains a separate workflow and gains no authority from this clarification.
