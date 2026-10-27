@@ -5,10 +5,13 @@
 Katherine's specifications of October 16–20 for every lesson deck in Biology, Forensics and
 A&P. They apply to new decks as they are built and to already-made decks through the
 `renew-lesson-slides` skill, which runs this section on one deck or a batch. A deck is
-not ready until §17.6 passes. When Katherine adds a specification, record it in the current visible Slack skill
-with its date, source and acceptance check, then mirror that text/version here.
+not ready until §17.6 passes. When Katherine adds a specification, record it in the private central Skills
+section's VT Decks Page with its date, source and acceptance check, then mirror
+that text/version here. Read Current Working Agreements, Schedule and assigned
+skill Page first. Slack is discussion/provenance, not the current skill home.
 `renew-lesson-slides` reads this matching backup; GitHub is not a separate hidden
-rule source. See §17.12 for the October 27 visible consolidation and provenance.
+rule source. This October 27, 16:46 policy supersedes earlier Slack-first wording.
+See §17.12 for retained historical consolidation and provenance.
 
 Never write to a deck Katherine is editing herself. The Photosynthesis reference deck
 (`1CVdbvDC20ZSShGPA9SLh018A54JnF0tkaRwzP75bJ1A`) is hers: read it, never write it.
