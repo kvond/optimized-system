@@ -2,6 +2,23 @@
 
 Updated 2026-10-20. This section is the current source; older state is Git history, not an active instruction.
 
+## Current instruction source — October 27, 16:46 UTC
+
+Katherine's private **School Operations Schedule** Page and its central **Skills**
+section are the current visible home, superseding the earlier Slack-first policy.
+The five saved/read-back child documents are **Current Working Agreements**,
+**Grading and Roster**, **Friday Parent Notes**, **VT Decks**, and **Two Week Lesson
+Preparation**. Before execution, read Current Working Agreements, then the
+Schedule, then the assigned skill Page. Resolve their existing private bindings
+outside this repository; no private Page URL or ID is published here.
+
+Slack is discussion and provenance; GitHub is the matching backup, not a second
+rule source. Dated literal Slack mirrors below remain historical source records;
+do not silently rewrite them or apply their old source-hierarchy wording over this
+decision. Current explicit teacher corrections and required safeguards still
+govern. This policy change does not itself demonstrate any student outcome,
+classroom release, pinning or production cutover.
+
 ## Homes
 - Decisions: Slack `answerableteaching.slack.com`. `#decisions` is the decision log; area channels are `#system-review`, `#feedback-pipeline`, `#teaching-hub`, `#lesson-preflight`, `#vt-decks`, `#class-reports`. Standards for an area are the pinned post in that channel. No student names, grades, or feedback text in Slack.
 - Code, skills, prompts, and scheduled jobs: `kvond/optimized-system`. Canonical names: `ai-ops/NAMES.md`. Agent rules: `AGENTS.md` and `CLAUDE.md`.
@@ -52,6 +69,10 @@ saved task and compare exact prompt content or hash before labeling this backup
 synchronized. A repository merge is not deployment. New teacher instructions
 remain authoritative requirements to reconcile into the runtime task; a stale
 saved prompt is not permission to ignore them.
+
+## October 27 working-instructions reference
+
+Before acting or reporting, consult the [current Teaching Hub workflow update](https://answerableteaching.slack.com/archives/C0C9E488BAN/p1793108553190989) and its [matching runbook backup](workflow-contracts/school-operations-runbook.md#current-workflow-update--october-27-2026). It governs conflicting older Hub/Helper-only assumptions while preserving source, privacy, scoring, sole-writer and existing completed-work safeguards. Reuse current evidence and approvals; limit repetitive reads, broad scans and parallel work. Stop unproductive loops, reassess and choose the simplest authorized route. The separate student-work architecture is an approved target in read-only shadow testing, not a verified cutover. This reference changes no runtime schedule, pin or production state.
 
 ## Current owners and limits
 - System Review: weekly Claude Code scheduled task on Katherine's Pro plan (Sunday night ET), using `prompts/system-review.md`. No GitHub Action, Anthropic API key or Slack webhook.
