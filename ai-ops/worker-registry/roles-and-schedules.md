@@ -51,6 +51,27 @@ after its replacement and absence of needed callers/provenance are verified.
 Do not accumulate additional dated prompt copies: maintain the two existing
 prompt paths above and use Git history for their prior versions.
 
+## October 27, 16:46 UTC — latest verified snapshot
+
+Current visible instructions live in the private School Operations Schedule Page's
+central Skills section. The four task prompts now read **Current Working
+Agreements → Schedule → assigned skill Page**. Slack remains discussion/provenance;
+GitHub is the matching backup. Resolve private Page bindings outside this repo.
+
+The parent coordinator reports successful saved/enabled responses for all four
+prompt updates at 16:46 UTC, with times unchanged: weekday 06:30 roster/intake,
+weekday 07:30 grades/feedback/printing, Thursday flexible preparation around
+15:00, and Friday 16:00, all America/New_York. Midnight is off; no active midnight
+trigger is claimed. This supersedes the earlier unresolved-deletion and
+midnight-status observations below as of this check, not forever.
+
+These are configuration receipts, not successful runs or proof of authenticated
+IC/iTracker operations. Exact updated prompt text was not supplied in this
+documentation handoff; earlier Page-pointer prompt snapshots below are historical,
+not falsely labeled the current exact text. No new runtime changes are made here.
+Preserve sole writers, existing packet production, source/privacy/scoring rules
+and saved-readback requirements.
+
 ## October 27, 16:22 UTC — current saved triggers
 
 **Later status qualification:** Katherine subsequently reported deleting three tasks; which tasks remains unresolved. The 16:22 saved responses below are the latest verified snapshot, not proof those triggers remain enabled now. No deletion, recreation or current-state lookup is performed by this documentation update. Recheck the actual selected task before relying on its timing.
