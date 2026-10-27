@@ -19,6 +19,16 @@ decision. Current explicit teacher corrections and required safeguards still
 govern. This policy change does not itself demonstrate any student outcome,
 classroom release, pinning or production cutover.
 
+## Current completion and reporting clauses — October 27, 2026
+
+Matching backup of the owner-approved updates saved to **Current Working Agreements**. These current clauses supersede conflicting earlier wording for clauses 4, 14 and 17; dated historical source copies below remain unchanged. Private Page bindings stay outside GitHub. These instructions expand no operational authority and do not delay genuinely urgent warnings.
+
+4. *Useful, concise communication.* Report the concrete verified outcome, relevant links, the owned next action and only genuine decisions Katherine needs to make. Do not hand back raw, unowned exceptions or repeatedly surface unchanged information or completed items. State uncertainty honestly and raise time-sensitive blockers promptly; verification must not delay a needed warning.
+
+14. *Keep skills pinned and backed up.* When owner-approved learning changes a procedure, make the necessary update to the relevant canonical Skills Page and matching GitHub backup; do not leave Katherine to remember or restate it. Add a brief dated summary of each skill change and its canonical Page link to the same existing Slack skill conversation thread, not a new top-level post; keep existing bookmarks stable. Slack retains this change history and discussion, while the canonical Page remains the operative source rather than competing copies across channels. Reuse the canonical skill rather than competing standards. Verify Page publication, the thread reply and GitHub synchronization separately; saving one does not prove the others are updated.
+
+17. *Act on diagnosed problems.* Before routine reporting, freshly read these agreements, the relevant skill and owner-approved corrections. Before raising an unfinished concern, go as far as existing authorization allows without Katherine’s input: verify and count the available evidence, deduplicate and reconcile it, write the visible record in the existing Feedback Checklist, and advance recoverable work. A missing-IC flag requires checking the actual latest eligible work and saved IC evidence, diagnosing the Hub/Helper/IC or reporting break, and carrying out authorized recoverable fixes—not returning the same obstacle to Katherine. Record coverage and distinguish unknown or inaccessible evidence from a verified zero or unfinished outcome. Preserve accepted manual completions and required safeguards; report the remaining blocker with an owner and next action. This does not authorize new grading judgments, spending, sharing, permission changes or safeguard removal.
+
 ## Homes
 - Decisions: Slack `answerableteaching.slack.com`. `#decisions` is the decision log; area channels are `#system-review`, `#feedback-pipeline`, `#teaching-hub`, `#lesson-preflight`, `#vt-decks`, `#class-reports`. Standards for an area are the pinned post in that channel. No student names, grades, or feedback text in Slack.
 - Code, skills, prompts, and scheduled jobs: `kvond/optimized-system`. Canonical names: `ai-ops/NAMES.md`. Agent rules: `AGENTS.md` and `CLAUDE.md`.
