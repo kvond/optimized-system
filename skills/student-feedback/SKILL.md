@@ -1,8 +1,10 @@
 ---
 name: student-feedback
-description: Write students' lesson feedback and science-writing reports for Biology, Forensics and A&P in Katherine's approved formats, and render them as printable PDFs. Holds the canonical feedback prompt (Prompt 2), the rating scale, the class-by-class report layouts, the teacher-only flag rules and the renderer. Slack CURRENT SKILL — Feedback is the first operational reference; this file is its matching GitHub backup and program entrypoint. Use for any feedback or writing report on student work, a catch-up of lessons without feedback, or a question about which format a class uses. Triggers - "feedback", "writing feedback", "feedback on latest work", "catch up feedback", "science writing report", "which feedback format".
+description: Write students' lesson feedback and science-writing reports for Biology, Forensics and A&P in Katherine's approved formats, and render them as printable PDFs. Holds the canonical feedback prompt (Prompt 2), the rating scale, the class-by-class report layouts, the teacher-only flag rules and the renderer. Read the private central Current Working Agreements, School Operations Schedule and assigned skill Page first; Slack is discussion/provenance and this file the matching GitHub backup and program entrypoint. Use for any feedback or writing report on student work, a catch-up of lessons without feedback, or a question about which format a class uses. Triggers - "feedback", "writing feedback", "feedback on latest work", "catch up feedback", "science writing report", "which feedback format".
 ---
 
+
+**Source-policy update, October 27 at 16:46 UTC:** the private central Skills section is the current visible home; read Working Agreements → Schedule → assigned skill Page. This supersedes older Slack-first statements retained in the source mirrors below. No separate new Feedback Page is asserted; use the actual assigned skill and existing course-specific requirements. Private Page bindings stay outside GitHub. [Matching working-instructions policy](../../ai-ops/HANDOFF.md#current-instruction-source--october-27-1646-utc).
 # Student feedback and science-writing reports
 
 Revision 2026-10-26. Katherine's latest source hierarchy makes the
