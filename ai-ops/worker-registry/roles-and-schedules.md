@@ -51,6 +51,14 @@ after its replacement and absence of needed callers/provenance are verified.
 Do not accumulate additional dated prompt copies: maintain the two existing
 prompt paths above and use Git history for their prior versions.
 
+## October 28 — current school prompt update
+
+Katherine’s central timetable and Skills section for school operations. Start every routine by reading Current Working Agreements and the relevant skill below. Finish with committed self-improvement as well as repairs: identify worthwhile improvements from actual results and Katherine’s experience, make authorized bounded changes, record and verify the outcome, and measure benefit or recurrence on the next applicable actual run. Do not force unnecessary changes, create endless loops or add approval gates. All times use **America/New_York**. As of October 27 2026, these private Pages replace Slack as the visible canonical instructions; Slack retains discussion and source history, with matching GitHub backups. No separate overnight agreements-reading task is recommended.
+
+The coordinator reports that all six active school task prompts were saved and read back with Current Working Agreements and the applicable skill first, and committed proactive improvement at the end, including useful changes when nothing failed. All six exact schedule strings, enabled states and owning threads were preserved. This is a configuration receipt, not an exact full-prompt mirror or proof that the routines executed. The current Friday Parent Notes skill was checked and remains unchanged; its existing privacy, eligibility and publication checks still apply.
+
+Grades–IC uses the supported local executor and Desktop Commander for Google SSO with the correct school account and existing autofill/saved sign-in. No password retrieval/exposure, credential or permission changes, or MFA/approval bypass. Katherine reports IC open; that report was not independently checked during setup. No browser or grade actions were performed by this documentation backup.
+
 ## Grades–IC update — October 27 2026
 
 Latest owner timing: daily at 8 AM America/New_York, replacing the earlier nightly proposal. Saved and enabled October 27; first scheduled date October 28. A successful creation receipt was received; no next-run timestamp or first execution result was supplied. Native Page attachment is not applicable for this task environment, so the timetable documents the enabled schedule without claiming a native attachment.
@@ -71,7 +79,7 @@ Daily 8 AM catch-up for prepared grades at A. I. du Pont High School. The mornin
 
 - Keep the home Mac awake, connected to the internet and connected to dot.
 
-- Leave school Chrome open and signed into Infinite Campus for A. I. du Pont High School. Complete any school sign-in prompt that requires you.
+- Leave school Chrome open on the home Mac. If IC signs out, Dot uses Desktop Commander through the supported local executor to choose Google SSO and the correct school account, using existing autofill or saved sign-in. Dot does not retrieve or expose passwords, change credentials or permissions, or bypass MFA or required approvals. Katherine handles only a sign-in step that actually requires her.
 
 - Do not run another grade-entry task at the same time. The spreadsheets do not all need open tabs; dot reads the connected school Drive.
 
