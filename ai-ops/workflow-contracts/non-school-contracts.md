@@ -123,13 +123,45 @@ no lane writes the manuscript. Mechanical changes follow the current prose rule;
 new claims or substantive changes remain bracketed proposals. Do not re-argue ruled
 R-items; label actual P-item assumptions. Current native voice sources and editorial
 acceptance must be read before a full pass. A later writeback needs the accepted
-chapter change list, current destination revision and native readback.
+chapter change list and current destination revision, and follows the current
+[Manuscript delivery rule](https://github.com/kvond/Answerable-Teaching/blob/main/revision/MANUSCRIPT-DELIVERY-RULE.md):
+commit the authorized revision to the designated private manuscript repository,
+retrieve and verify that exact commit, then update and verify the same live Doc.
+A scoped check does not automatically launch the six-lane pipeline; when that full
+pipeline is invoked, preserve its required packets and ownership boundaries.
 
 Test plan: use synthetic chapters with one valid cross-reference, one missing
 reference and duplicate Find strings; confirm the existing checker reports them
 without altering the snapshot. A source-version change invalidates the candidate.
 Live gate: current Doc, voice/tics and source manifest bindings; no new export or
 manuscript operation was performed by this extraction.
+
+### Recursive review of the book workflow
+
+At the existing book review or completed revision handoff, review the connected
+path from source reflections and current draft through editing, integration,
+citation checks, authorized delivery and later retrieval. Use existing private
+pass reports, change lists and author feedback, not another dashboard or schedule.
+Check for lost or repeated material, conflicting instructions, stale source
+pointers, handoff failures, duplicate agents, unclear ownership and unnecessary
+author supervision. Use actual usage or cost evidence only when available.
+
+First revisit the last system improvement on the next applicable real book task:
+keep, revise or reverse it within existing authorization according to observed
+results; retain an untested change as pending rather than claiming success.
+Choose a bounded improvement only when worthwhile, record its evidence, expected
+benefit, owner, verification and next actual-use check in the existing review
+record, and check whether the review itself reduced errors or burden. Consolidate
+or retire redundant steps only within current authority; preserve sole-writer
+ownership, distinct privacy boundaries and any invoked full-pipeline checks.
+Do not create competing workers, invent metrics, add gates or spending, or
+repeatedly review an unchanged result.
+
+The latest author draft and decisions control. Preserve voice, substantive
+distinctions and approved passages; do not use process improvement to rewrite
+the manuscript or overrule Katherine. Keep mechanical checks, author acceptance,
+canonical writeback and verified delivery as separate outcomes. Private prose,
+identifying cases and individual review evidence stay out of the public core.
 
 ## book-vocabulary-review
 
