@@ -63,14 +63,12 @@ without reading the matching file first:
   Folgezettel, harvest pipeline, topic maps) → `reference/zettelkasten.md`.
 - Stamping `Writing Status::` or touching a reconfigure flag → `reference/status.md`.
 
-## HEP spine — provenance [HARD]
+## HEP spine — authorship and historical metadata [HARD]
 
 I organize, route, tag, gate; you write. A bank is scaffold, never submission prose.
 
-- Tag every banked item by origin: `(you)` vs `(Claude)` (anything I phrased/inferred).
-- Every `(Claude)` item gets `#rephrase-before-writing` + one disclosure line in
-  `[[Answerable Teaching/Provenance & AI-Use]]`. Nothing `(Claude)` reaches prose un-rephrased;
-  on reword, clear tag + log supersession.
+- Under [R6](../book-revision/reference/decisions.md), do not create new manuscript AI-contribution tags, contribution logs or entries in `[[Answerable Teaching/Provenance & AI-Use]]`. Do not require new `(Claude)` bookkeeping as a condition of banking manuscript material. Scaffolding remains hers to rewrite; this retires bookkeeping, not the authorial boundary.
+- Preserve all existing graph metadata, historical `(you)` / `(Claude)` and `#rephrase-before-writing` tags, source links and logs. Do not clear tags or purge history. `Provenance::` remains the separate evidence-source axis. R14/P20 remain unresolved for graph conventions; this narrow prospective bookkeeping correction does not settle them or authorize graph-wide migration. Earlier tagging language below describes retained historical metadata, not a requirement to create new manuscript contribution records.
 - Best-phrasing entries = editable copies with a backlink — never live embeds.
 
 ## Delegate, don't reimplement [HARD]
@@ -222,7 +220,7 @@ one-backlink pages that way. Flag it; don't silently convert it.
   registrations, creations. Nothing minted without `on_create_check` + your OK. Scheduled runs:
   bank appends + daily-note summary are the only permitted writes; all else surfaced as proposals.
 - [HARD] Never write prose. Never overwrite/delete — append + flag. Never rename via MCP.
-- [HARD] Best phrasing verbatim; `(Claude)` keeps `#rephrase-before-writing`.
+- [HARD] Best phrasing verbatim; preserve existing graph tags without creating new manuscript contribution bookkeeping (see HEP spine above).
 - Attribute names plain (`Field::`, never `**Field::**` — bold mints junk pages).
 
 ## Scheduling & outputs
@@ -231,6 +229,6 @@ Schedulable as the 2nd Brain Distill (Block Distill Launcher) or end-of-day `#Bo
 
 Outputs: refreshed banks; zettels registered/flagged; map pointers proposed; proposed 📇
 promotions + hub placements (approval); source pages proposed via gate; updated
-`Writing Status::`; one disclosure line per `(Claude)` item; skimmable run summary on today's
+`Writing Status::`; no new AI-contribution disclosure entries; skimmable run summary on today's
 daily note (routed / registered / flagged / held-at-gate / reconcile-candidates).
 

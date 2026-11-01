@@ -33,7 +33,7 @@ Read first: `book-revision/SKILL.md` (the prose rule, the ownership table, the p
 
 7. **The Revised Taxonomy section (P17).** When integrating Chapter 2, cut the "Revised Taxonomy: Standing as a Knower" section out of the manuscript into `revision/reference/revised-taxonomy-2026-09-12.md` and leave one bracket at the cut naming the file. Its paste-ready passages are scaffolding for her Chapter 2 rewrite; they do not enter the chapter.
 
-8. **Write-back (P18).** Do not write to the Doc or to Roam. The integrated file and the change list are the deliverable. When she has read the change list and says so, the write-back for that chapter follows P18's route, and the ledger records that Roam is behind.
+8. **Authorized delivery.** This integration step does not write to the Doc or to Roam; its deliverables are the integrated file and change list. After Katherine authorizes write-back, the existing delivery owner follows the current [Manuscript delivery rule](https://github.com/kvond/Answerable-Teaching/blob/main/revision/MANUSCRIPT-DELIVERY-RULE.md): commit the authorized revision to the designated manuscript repository, retrieve and verify that exact commit, then update and verify the same live Google Doc. Preserve newer author edits, the one current manuscript backup and the separate dated lane-input snapshots. P18 is historical reconciliation context, not the delivery route. An integrated file or commit alone is not a verified Doc update.
 
 ## What you never do
 

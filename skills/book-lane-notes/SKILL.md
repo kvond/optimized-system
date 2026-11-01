@@ -19,7 +19,7 @@ Read first: `book-revision/SKILL.md`; `decisions.md` (R3, R11, R22; P16, P21); `
 
 4. **The reframing epistemic agency note (R2).** Once: supply to the terms lane, and put in `revision/packets/notes/epistemic-agency-literature.md`, the sources for the learning-sciences usage the book departs from (Stroupe 2014; Miller, Manz, Russ, Stroupe & Berland 2018; Ko & Krist 2019; Damşa, Kirschner, Andriessen, Erkens & Sins 2010 are the ones project memory already names; verify each and add what the search turns up), with one line each on what the term means there. This becomes the endnote at the canonical home. Outline only.
 
-5. **Citations.** Every in-text citation in the chapter: present in a note or reference list, year present, format consistent (cf. not c.f.; period outside the parentheses; author named once in a sentence). Missing years are `fix-direct` when the source is unambiguous and verified, `open-item` otherwise. Build `revision/sources.json` (author, year, title, container, where cited) as you go; every lane's chapter adds to it; the file is the manifest the citation check runs against.
+5. **Citations.** Every in-text citation in the chapter: present in a note or reference list, year present, format consistent (cf. not c.f.; period outside the parentheses; author named once in a sentence). Missing years are `fix-direct` when the source is unambiguous and verified, `open-item` otherwise. Each chapter worker supplies a source delta (author, year, title, container, where cited) in its own notes packet. One designated notes-lane integrating writer alone updates the shared `revision/sources.json` manifest after collecting those deltas; chapter workers never write it concurrently. The writer reads the latest manifest, merges and deduplicates verified entries while preserving unrelated sources and citation locations, records unresolved attribution conflicts rather than guessing, and reads back the saved manifest.
 
 6. **Cross-references into notes.** Where a body sentence points the reader to a note that does not exist, or a note refers to a body sentence that was cut ("the cut item (c)"), one row each.
 
@@ -59,7 +59,7 @@ Each is a row in the chapter where it lives; verify, do not assume the flag is r
 
 ## Packet
 
-`revision/packets/notes/<chapter-id>.md` in the spine's format. Relocation rows carry the note text (her words) and the Find string of the carrying sentence. Attribution rows carry the verdict and the bracket. `revision/sources.json` is updated in the same commit.
+`revision/packets/notes/<chapter-id>.md` in the spine's format. Relocation rows carry the note text (her words) and the Find string of the carrying sentence. Attribution rows carry the verdict and the bracket. Include the chapter's source delta in that packet commit. The designated notes-lane integrating writer commits the merged `revision/sources.json` separately after reconciling the chapter deltas; a packet commit is not proof the shared manifest was updated.
 
 ## Self-check
 
