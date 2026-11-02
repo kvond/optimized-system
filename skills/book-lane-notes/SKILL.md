@@ -9,53 +9,31 @@ You own the apparatus: the notes, the citations, what the book says a scholar sa
 
 Read first: `book-revision/SKILL.md`; `decisions.md` (R3, R11, R22; P16, P21); `book-revision/reference/manuscript-checks.md` (her checks 7 and 8 are this lane's: Matusov and von Duyke is cited as 2010 and as 2014 and each citation must carry the right year, Lima and von Duyke 2016 likewise, and the claims attributed to them must be what those works say; "lurking" is Katherine's term and Ito et al. (2010) get hanging out, messing around, geeking out and nothing more); the voice guide's marker 10 (theory in the endnotes, teacher in the body; every theoretical term touches a concrete classroom object within two sentences) and Part 3's attribution rule (check every attribution on every pass, at the level of the specific term or finding). Then the chapter, with the checker's endnote-marker list and cross-reference list beside it.
 
+## Entry: scope and degrees of freedom
+
+Always preserve the current source, author wording, citation integrity and notes-lane ownership. This skill writes packets, not manuscript text. Chapter workers supply deltas; only the designated notes-lane integrating writer updates the shared manifest. Read the chapter procedure before running a citation pass; use the flagged-attribution reference only for relevant passages.
+
+- **Low freedom — sources and verification:** verify exact works, years, quotations and attribution; unresolved evidence stays open, never guessed. Preserve unrelated manifest entries and verify its saved result.
+- **Medium freedom — approved process:** choose the relevant chapter and order of evidence checks, retaining all checks required for that scope.
+- **High freedom — requested brainstorming only:** suggest research avenues or apparatus options as proposals; never invent sources or substitute speculation for verification.
+
+## Contents — read only what this task needs
+
+Always read the entry constraints first. Then load only the selected detail; do not crawl every reference.
+
+| Task | Read |
+|---|---|
+| Every invocation | Entry, packet and self-check in this file |
+| Run notes/citation pass | [Chapter procedure](reference/chapter-procedure.md) |
+| Check a known flagged passage | [Flagged attributions](reference/flagged-attributions.md), relevant rows only |
+
 ## Procedure, per chapter
 
-1. **Convention (P16).** Confirm what the chapter uses now (superscript markers, bracketed numbers, plain numerals, asterisks, no notes). One row per chapter, class `fix-direct`, stating the conversion to the volume convention: superscript numerals in the body, numbered from 1 in order of appearance, notes at chapter end under "Notes — Chapter N". Then one row per marker out of order, reused, or unanchored, with the Find string of the sentence it sits on and the note it should carry. The continuity pass, section G, lists the known cases in Chapters 1, 2, 3, and 4.
-
-2. **Apparatus to the notes (R3).** Read the body for theory discussions, literature comparisons, definitional disputes, and lists of citations that do not touch a classroom object within two sentences. For each, one `relocate` row: the block that moves (her words, unaltered), the note it becomes, and the carrying sentence that stays, quoted from her own text (never written new; if no sentence of hers can carry it, the row is a `bracket` proposing where she might write one). The Preface, Introduction, and Chapter 1 were already thinned this way in August (Lampert; classic versus radical constructivism; the epistemic-agency literature); Chapters 2, 3, 4, 8, and 10 are where the apparatus still sits in the body.
-
-3. **Attributions.** For every named researcher in the chapter, one row: what the text says they claimed, the source you checked (web search for published work is allowed; the dissertation is not reachable and gets `open-item: she checks`), and the verdict: `stands`, `narrows` (the text overstates), `drifts` (the text says something adjacent), or `misattributed`. Where the verdict is not `stands`, the Proposed column carries the bracket: what the source actually says and where. The voice guide names the ones a scholarly reviewer will catch first: Bakhtin's otvetstvennost, Bateson's unit of mind, Reeve's agentic engagement construct, Mortimer and Scott's communicative approaches, Emanuelsson's constitutive framing, Patall's backfire finding.
-
-4. **The reframing epistemic agency note (R2).** Once: supply to the terms lane, and put in `revision/packets/notes/epistemic-agency-literature.md`, the sources for the learning-sciences usage the book departs from (Stroupe 2014; Miller, Manz, Russ, Stroupe & Berland 2018; Ko & Krist 2019; Damşa, Kirschner, Andriessen, Erkens & Sins 2010 are the ones project memory already names; verify each and add what the search turns up), with one line each on what the term means there. This becomes the endnote at the canonical home. Outline only.
-
-5. **Citations.** Every in-text citation in the chapter: present in a note or reference list, year present, format consistent (cf. not c.f.; period outside the parentheses; author named once in a sentence). Missing years are `fix-direct` when the source is unambiguous and verified, `open-item` otherwise. Each chapter worker supplies a source delta (author, year, title, container, where cited) in its own notes packet. One designated notes-lane integrating writer alone updates the shared `revision/sources.json` manifest after collecting those deltas; chapter workers never write it concurrently. The writer reads the latest manifest, merges and deduplicates verified entries while preserving unrelated sources and citation locations, records unresolved attribution conflicts rather than guessing, and reads back the saved manifest.
-
-6. **Cross-references into notes.** Where a body sentence points the reader to a note that does not exist, or a note refers to a body sentence that was cut ("the cut item (c)"), one row each.
+Before a notes pass, read the [chapter procedure](reference/chapter-procedure.md); apply its exact citation and source-manifest ownership requirements.
 
 ## Attributions already flagged
 
-Each is a row in the chapter where it lives; verify, do not assume the flag is right.
-
-| Where | Find | The question |
-|---|---|---|
-| Chapter 2 | `Ito's "agency genres," as she calls them` | Ito et al. call them genres of participation; "genres of agency" is Katherine's |
-| Chapter 6A | `Marton's line is the one I keep returning to` | "a difference that makes a difference" is Bateson's; does Marton use it, or should both be credited |
-| Chapter 2, 4, 9 | `Patall (2024) offers a detailed account of engaged agency` | which Patall paper; her construct is agentic engagement and autonomy support, not "engaged agency" |
-| Chapter 4 | `Patall, Cooper, and Wynn (2010) found` | is the competence moderation in the 2010 classroom study or the 2008 meta-analysis |
-| Chapter 7 | `disproportionately the students most exposed to stereotype threat` | are both moderators (achievement; stereotype threat) in Patall, Kennedy et al. 2022 |
-| Chapter 4 | `perceived their teachers as less supportive of their autonomy` | which 2022 paper: Kennedy et al. or Zambrano et al.; keep them distinct |
-| Chapter 5 | `two communicative approaches` | Mortimer and Scott's scheme has two dimensions and four classes |
-| Chapter 5 | `dances the tension` | Moore-Anderson: year and edition |
-| Chapter 2, 8 | `benevolent control`; `benevolent dictators` | Matusov quoted two ways; which, and what year |
-| Chapter 2, note 4 | `first described in Llewellyn's` | zombies, zombification, and "agency sickness": what Llewellyn actually wrote (P21) |
-| Chapter 2 | `Mostly dead, but not all dead` | the Princess Bride line as spoken |
-| Chapter 3 | `turn-off to curiosity` | Greenberg 1985: which book |
-| Chapter 3 | `catalyzed by John Holt's` | Growing Without Schooling began in 1977; the free-school wave predates it |
-| Chapter 3 | `approaching its fourth decade` | The Circle School's founding year |
-| Chapter 4 | `which I will refer to as the Germantown study` | Neuman and Celano's neighborhoods were Chestnut Hill and the Badlands; is "Germantown" her label or a slip (eleven occurrences) |
-| Chapter 3 | `The third goal echoes the Enlightenment aspiration` | Labaree's social mobility goal is the credentialing goal; the Enlightenment aspiration maps to democratic equality |
-| Chapter 9 | `destroyed property` | Lewin, Lippitt, and White 1939: what the paper records when the adult left |
-| Chapter 9 | `concentric circles of participation` | not a standard Habermas image; confirm or reattribute |
-| Chapter 9 | `Two education professors once observed` | the Oregon Trail anecdote has no source |
-| Chapter 9 | `In museum education, researchers followed a father and daughter` | the heart-exhibit study has no source |
-| Chapter 2, note 1 | `no alibi in Being` | edition and wording |
-| Chapter 10 | Bhaer and Tom quotations | against the dissertation: `open-item: she checks` |
-| Chapter 10 | Berlin, Sen, Arendt | invoked without citations; the notes carry them |
-| Chapter 3, note 4 | `"Effortful agency" is my own term` | coined in Matusov, von Duyke, and Kayumova 2016 (P21); note anchored to the wrong sentence |
-| Chapter 7 | Raver, Blair, and Willoughby 2013; Bibok, Carpendale, and Müller 2009 | the executive-function claims: what each study supports |
-| Chapter 9 | Big Picture Learning; Mastery Transcript Consortium | current status and URLs |
-| Chapter 4 | KIPP outcomes; the SAT and income; Neuman and Celano | what the cited work supports |
+When a passage matches a known attribution concern, consult [flagged attributions](reference/flagged-attributions.md). These are questions to verify, not established corrections.
 
 ## Packet
 

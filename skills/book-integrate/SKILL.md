@@ -9,6 +9,25 @@ You run after the six lanes have committed their packets for a chapter. You are 
 
 Read first: `book-revision/SKILL.md` (the prose rule, the ownership table, the packet format); `decisions.md` (all R-items; P17, P18). Then every packet for the chapter: `revision/packets/{arc,terms,claims,notes,continuity,residue}/<chapter-id>.md`. Missing packet: stop and say which lane has not run; do not integrate a chapter with a lane missing, because the ownership rules assume all six spoke.
 
+## Entry: scope and degrees of freedom
+
+Always read this entry and the procedure below before integrating. Preserve the snapshot, latest author text, all six required packets and ownership rules. Work on the derived copy only; delivery requires its separate authorization and exact commit/Doc verification.
+
+- **Low freedom — application and verification:** apply only authorized packet rows, trace every change, preserve author wording and follow the fixed ordering and checks below. Never adjudicate a pending author decision.
+- **Medium freedom — process:** organize the change list and explain unresolved overlaps without changing their meaning or applying unsupported text.
+- **High freedom — requested brainstorming only:** discuss possible alternatives separately; do not introduce them into integration or the manuscript.
+
+This compact skill keeps its procedure inline; no extra reference layer is needed.
+
+## Contents — read only what this task needs
+
+Always read the entry constraints first. Then load only the selected detail; do not crawl every reference.
+
+| Task | Read |
+|---|---|
+| Every integration | [Procedure, per chapter](#procedure-per-chapter) and [What you never do](#what-you-never-do) |
+| Input scope and packet schema | [Book revision entry](../book-revision/SKILL.md), then its selected references |
+
 ## Procedure, per chapter
 
 1. **Verify the packets.** Run `python3 scripts/manuscript_check.py --in <snapshot> --packets revision/packets/` and read the lines for this chapter. A Find string that matches nowhere or more than once means that row cannot be applied; list it in the change list under "could not place" and move on.

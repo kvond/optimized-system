@@ -9,38 +9,38 @@ Read this before any lane. It is short on purpose; the lanes carry the work list
 
 Before drafting or running a lane, read the current live manuscript and [current writing-voice guidance](../../ai-ops/knowledge/writing-voice.md), including the linked October 17 author corrections. The manuscript is the primary voice evidence. Later author rulings govern over older findings or an editor's preferred structure; structural suggestions remain suggestions until authorized.
 
+## Entry: scope and degrees of freedom
+
+Always read this entry, including the prose rule, ownership boundaries and completion loop, before selecting detail. Read the latest author draft and rulings before editorial work. Do not infer write-back, publication, merge or graph-change authority from this skill.
+
+- **Low freedom — integrity and delivery:** exact source/version, citations, author-text preservation, lane ownership, approved changes and save/readback evidence. Follow the current delivery rule; no invented facts or unverified completion.
+- **Medium freedom — approved editorial process:** choose the smallest relevant lane/chapter scope and useful order of checks within the requested pass. Do not change her meaning or bypass the prose rule.
+- **High freedom — requested brainstorming only:** explore alternatives when Katherine asks; label them as proposals, not accepted text. No autonomous substantive rewrite.
+
+Load only the references required by the selected work below, not every file. A requested full-lane pass still requires all six packets.
+
+## Contents — read only what this task needs
+
+Always read the entry constraints first. Then load only the selected detail; do not crawl every reference.
+
+| Task | Read |
+|---|---|
+| Every invocation | Entry, prose rule, ownership and completion loop in this file |
+| Find current inputs | [Source map](reference/source-map.md) |
+| Run a lane or analyze claims/terms/argument | [Lane framework](reference/lane-framework.md), then selected lane |
+| Write/check packets; run full pass; authorized delivery | [Pass protocol](reference/pass-protocol.md) |
+
 ## What a revision pass is
 
 A requested full-lane revision pass takes one dated snapshot of the manuscript, runs six lanes over it in parallel, and then runs one integration step. A narrowly scoped editing or checking request does not automatically launch all six lanes; use only the work needed for that request and do not describe it as a complete six-lane pass. Once the full-lane pipeline is invoked, preserve its six-packet integration requirements. A lane is a single concern (the argument arc, the terms, the claims, the notes and attributions, the continuity of cases and pointers, the residue and mechanics). Each lane reads the snapshot and writes packets, one packet per chapter, into its own folder. No lane touches the manuscript. The integrator reads every packet for a chapter, applies what the prose rule allows, and leaves the rest in brackets for Katherine. Several agents can run at once because they never write to the same place: a lane owns its packet folder and nothing else.
 
 ## Where things are
 
-| What | Where | Account or route |
-|---|---|---|
-| The single live working copy and canonical source | Google Doc "Answerable Teaching — Full added notes", id `1O5it34GtqSnwNu5CReDt_5X7Kx05m8xEWUcROD9cgk8` | higher-ed Drive (`kvond@udel.edu`); this is the only live source |
-| The earlier Working Copy | Google Doc id `1RuY6yj9mhqBajj-UYhF_WCQwEpvLKinMma9fKNAStlM` | historical only; recover from it only when Katherine explicitly asks |
-| The snapshot a pass works from | `revision/manuscript/working-copy-<date>.md` in `kvond/Answerable-Teaching` | git backup/version-history layer; export from the live Doc at the start of a pass; never treat as a competing source |
-| The AI chapter as assembled 2026-09-11 ("Doable, Not the Doer") | `book-compile/ch6-doable-not-the-doer-assembled.md` in `kvond/Answerable-Teaching` | git; not yet in the Doc |
-| The practice chapter ("Before Inquiry", subtitle "Inquiry Has Prerequisites"), missing from the Doc | `book-compile/ch6-intellectual-mentorship-rewrite.md` (Aug 23, the fuller form) and `revision/reference/ch05-earlier-draft-2026-05.md` (May, her supply of 2026-09-12) in `kvond/Answerable-Teaching` | git; R16, R20, and R21 in the ledger |
-| Rulings recovered from the retired provenance register (title, "the adult who lingers", the pseudonym ledger and name-change log, Moore-Anderson placements) | `revision/reference/rulings-from-register-2026-08.md` in `kvond/Answerable-Teaching` | git |
-| The voice instruction and the hard bans | `book-compile/voice-guide.md` (marker 15 and four Part 3 checks added by her on 2026-09-12), `book-compile/tics-list.md` in `kvond/Answerable-Teaching` | git |
-| Her manuscript checks of 2026-09-12 (nine checks: student visibility, move names, the theory-movements-moves pipeline, causal overclaims, equity caution, the doubt passage, the IPD citations, the Ito framework, AI voice resistance) | `reference/manuscript-checks.md` beside this file, a verbatim copy of the file inside her `book-compile/answerable-teaching-review.zip` (the review skill she built for another tool; its SKILL.md is not used here) | git; R22 in the ledger |
-| The argument arc, the glossary, the six analytical levels | `reference/argument-arc-and-glossary.md` beside this file | git (`kvond/answerable-skills`) |
-| The decisions ledger | `reference/decisions.md` beside this file | git |
-| The findings the lanes work from | `reference/findings/` beside this file (the external reader's review and the continuity pass of 2026-09-12) | git |
-| The mechanical checker | `scripts/manuscript_check.py` beside this file | run it on the snapshot before and after a pass |
-| Lane packets and the integrator's output | `revision/packets/<lane>/<chapter>.md` and `revision/integrated/` in `kvond/Answerable-Teaching` | git |
-| Roam graph `kvond`, "Answerable Teaching/" pages, and the repo's `source/` and `writing/` folders | older exports (last nightly publish 2026-07-02). Not the current draft. Reconciliation is decision P18. | read only during a pass |
-
-Engine start: a Cowork session reaches the repos through the GitHub connector and the canonical Doc through the higher-ed Drive connection. A Claude Code session on the Mac reads this skill through `~/.claude/skills` (a symlink into `~/code/answerable-skills/skills`) and works in the clone of `kvond/Answerable-Teaching` (`SYNC.md` names `~/Documents/projects/Answerable-Teaching`, but on 2026-09-12 that folder held only the nightly-publish log; where the clone now lives is an open item for her). If a path here does not resolve, the account or the clone is wrong; the skill is not broken.
+Before locating or reading manuscript inputs, read the [source map](reference/source-map.md). Resolve current bindings; do not substitute historical copies.
 
 ## The four documents that govern every lane
 
-1. **The voice guide** (`voice-guide.md`, with `tics-list.md`). What her prose sounds like, what never goes into the book, and what to fix versus flag. Part 3 of it is the editing pass rule and is repeated in the next section because nothing else matters as much.
-2. **The argument arc and glossary** (`reference/argument-arc-and-glossary.md`). Twelve propositions the book advances, the chapter that advances each, the load-bearing terms with their "not this" boundaries, and the six analytical levels every term belongs to, under the master concept, standing as a knower. Katherine ratified this as the spine of the pass on 2026-09-11.
-3. **The decisions ledger** (`reference/decisions.md`). Rulings she has made (R-items) and defaults applied until she rules (P-items). A lane never re-argues an R-item. A lane applies a P-item's default and writes `assumes P-nn` in the packet row so the integrator can find every consequence if she rules the other way.
-4. **The findings** (`reference/findings/`). The external reader's critique and the continuity pass. The lanes have already taken their work items from these; go back to them for the reasoning behind an item, not for new items.
-5. **Her manuscript checks** (`reference/manuscript-checks.md`, 2026-09-12; R22). Nine checks in her words. Each lane runs the ones it owns (arc: 1, 3, 6; terms: 2, 8; claims: 4, 5; notes: 7, 8; every lane and the integrator: 9, the test that a suggestion which sounds like fluent conventional teacher-talk is probably wrong). Where a check names a chapter number, R20's numbering governs (The Moves is Chapter 12, the capstone 13); the move names themselves are the authority, not the number.
+Before running any lane, read the [governing documents and analytical framework](reference/lane-framework.md), then the applicable existing linked sources.
 
 ## The prose rule
 
@@ -54,15 +54,15 @@ Never invent a student scene or a classroom detail. Never invent a citation. Nev
 
 ## Claim types
 
-Every categorical statement in the book is one of five kinds, and the revision seats each in its kind rather than flattening it. An **interpretive** claim reads a case: what Nancy's arrangement was doing. A **normative** claim says what teaching or schooling ought to recognize. An **empirical** claim says what generally occurs across schools and needs a source or a scope. A **causal** claim says what a condition produces and needs the mechanism stated. A **rhetorical** diagnosis makes a professional experience vivid and is allowed to overreach in a single clause as voice, with the reviewer risk marked. The claims lane owns this work; every lane respects the seating it proposes.
+For claim analysis, read the claim types in [lane framework](reference/lane-framework.md).
 
 ## The analytical levels
 
-Every term belongs to one level, and a reader should always be able to tell which is in play. Student–object relation (origination, sense making, meaning making, the five generative configurations). Teacher response (recognition, uptake, answerability, dialogism, the moves). Object design (shared object, critical aspect, Variation Theory, control of variation). Developmental process (lurking, messing around, geeking out, adjacent agency, intellectual apprenticeship). Institutional condition (legibility in Scott's sense, chronotope, governance, credit, pacing). Breakdown (pseudo-agency, dysfunctional agency, the double bind). The master concept, standing as a knower, is what all of it describes; agency is its capacity side, not the whole. The terms lane owns this; every lane writes with it.
+For term or conceptual analysis, read the analytical levels in [lane framework](reference/lane-framework.md).
 
 ## The argument, in twelve lines
 
-Students make bids to act as knowers. Schools recognize legible completion before live thinking. That produces systematic misrecognition, not isolated error. Misrecognition damages standing as a knower. Standing is unevenly distributed through the apprenticeships students get. Answerable teaching (dialogism, Variation Theory, intellectual apprenticeship) is the classroom response. The capacity develops in phases and through bridges. AI matters only insofar as it offloads production and returns presence. Classroom craft hits institutional ceilings. Agency develops in the held tension, not in one ethic winning. Teachers need moves, not only perception. All of it is an apprenticeship in intellectual authorship. The full statements and the chapter map are in the reference file; every chapter must visibly advance at least one line, and the arc lane checks that.
+For argument analysis, read the argument in [lane framework](reference/lane-framework.md).
 
 ## The lanes and who owns what
 
@@ -80,32 +80,11 @@ If two lanes propose different things for the same sentence, the owning lane's r
 
 ## The packet
 
-A packet is one markdown file per chapter per lane: `revision/packets/<lane>/<chapter-id>.md`, where the chapter id is the number or letter as the snapshot names it (`preface`, `intro`, `ch01`, `ch06a`, `ch11`); the practice chapter, which is not in the snapshot, is `before-inquiry`, and its text is the Aug file named in the table above; the AI chapter in its assembled form (P19), also not in the snapshot, is `doable-not-the-doer`, with the Doc's [6A], [6B], and the principles table read beside it for what the assembly absorbed and what it did not. It opens with a five-line header and then one table.
-
-```
-Lane: terms
-Chapter: ch02 (Chapter 2 — What Is Agency? Why Do We Want It?)
-Snapshot: revision/manuscript/working-copy-2026-09-12.md
-Assumes: P4, P5, P7
-Checker run: revision/reports/check-2026-09-12.md
-```
-
-| ID | Find | Class | What | Proposed | Why |
-|---|---|---|---|---|---|
-| terms-ch02-01 | `Decision-making and capability drop out of this definition` | bracket | agency is defined five times and the components disagree | [text of the bracket] | glossary: agency; canonical home |
-
-The columns mean this. **ID** is lane, chapter, running number. **Find** is a string the integrator pastes into Ctrl+F, long enough to match once, copied exactly from the snapshot (curly quotes and all). **Class** is one of `fix-direct` (mechanical), `relocate` (her unaltered words move; say where), `delete-duplicate` (one of two copies goes; say which home keeps it), `rename` (a ruled rename), `bracket` (a suggestion or challenge she decides), `decision` (needs a ruling; name the P-item or propose a new one), `open-item` (something only she can supply). **What** states the observation in one or two sentences. **Proposed** carries the exact replacement text for a fix, the exact bracket text for a bracket, or the outline for scaffolding; it is empty for a pure observation. **Why** names the governing thing: a proposition number, a glossary term, a claim type, a ruling, a voice-guide marker, a findings item.
-
-Run `python3 scripts/manuscript_check.py --in <snapshot> --packets revision/packets/` before handing a packet in; every Find string must match exactly once.
+Before writing or checking a packet, read the exact [packet and pass protocol](reference/pass-protocol.md).
 
 ## Running a pass
 
-1. Snapshot. Export the single live Google Doc to markdown into `revision/manuscript/working-copy-<date>.md`; commit it as backup/version history. Run the checker into `revision/reports/check-<date>.md`; commit.
-2. Read the ledger. If a P-item you depend on has been ruled since the last pass, the ruling wins.
-3. Launch the six lanes, one agent each, on all chapters or on a chapter range. In Claude Code: `claude "Load the book-revision skill, then the book-lane-arc skill, and run it on chapters 1 through 5 of the current snapshot."` (one line per lane; the lane names are in the table above). In Cowork: start a session with the same sentence.
-4. When the lanes have committed their packets, run the integrator on each chapter. It produces `revision/integrated/<chapter-id>.md` (the chapter text with direct fixes applied and brackets in place) and `revision/integrated/<chapter-id>-changes.md` (every applied change, every bracket, every open item).
-5. Rerun the checker on the integrated text and compare with the first report: dash density down, residue at zero, no pointer to a chapter that does not exist, duplicates only where the ledger says the return is deliberate.
-6. When Katherine authorizes write-back, follow the current [Manuscript delivery rule](https://github.com/kvond/Answerable-Teaching/blob/main/revision/MANUSCRIPT-DELIVERY-RULE.md): commit the authorized revision to the designated private manuscript repository, retrieve and verify that exact commit, then update and verify the same live Google Doc. Do not create or update a second live Google Doc. Keep the one current manuscript backup required by that rule; dated lane-input snapshots remain a separate input to this pipeline. A prepared revision or commit is not a verified Doc update.
+Before a full revision pass or authorized delivery, read the [pass protocol](reference/pass-protocol.md). Scope still follows this entry; do not launch six lanes for a narrow request.
 
 ## Recursive improvement after actual use
 

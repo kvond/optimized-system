@@ -23,6 +23,24 @@ its [delivery rule](https://github.com/kvond/Answerable-Teaching/blob/main/revis
 This skill produces derived checks/artifacts only; it does not perform canonical writeback,
 backup commits or publishing. Keep private prose and identifying cases out of this repo.
 
+## Entry: scope and degrees of freedom
+
+Always read this entry and its Safety section. This is a derived-check/artifact skill: no prose edits, canonical write-back, publishing or backup commits. Preserve the latest author draft and exact source binding; use historical exports only for explicitly scoped reconciliation. Read only the selected job reference, plus the staging/defaults reference when obtaining inputs or choosing a checker.
+
+- **Low freedom — source and artifact integrity:** exact revision, complete authorized inputs, supported checker, citations and verified output. Do not represent a planned checker as executable or a derived file as accepted manuscript text.
+- **Medium freedom — approved process:** choose an appropriate existing checker/rendering route and useful report organization within the requested job.
+- **High freedom — requested brainstorming only:** propose future checks or presentation options; no new claim, implementation, prose change or publication follows automatically.
+
+## Contents — read only what this task needs
+
+Always read the entry constraints first. Then load only the selected detail; do not crawl every reference.
+
+| Task | Read |
+|---|---|
+| Every invocation | Entry, authorship, retention and Safety in this file |
+| Stage inputs or select supported tools | [Staging and tools](reference/staging-and-tools.md) |
+| Consistency or citation check; derived deliverable | [Checks and derived deliverables](reference/check-and-deliver.md), selected job only |
+
 ## Authorship (ruled Sept 11, 2026)
 
 The provenance record keeping is retired. No [Y] / [CO] / [C] tags, no contribution ledger,
@@ -33,42 +51,11 @@ drafting, conversation with AI, and her redrafting. The voice file
 
 ## Bundled scripts
 
-Run the scripts for the deterministic work; let Claude judgment enter only where noted.
-
-- `scripts/render_reading.py` — built. Roam export → clean reading prose: brackets removed,
-  workflow tags stripped, components/block-refs/attributes/highlight gone, bullets flattened
-  to paragraphs; headings/bold/italics kept. Inline content tags keep their words; workflow
-  tags (`#next #near #book #[[parking lot]]`…) are removed whole.
-- `scripts/check_consistency.py` — built. Extracts chapter cross-references (and whether the
-  target chapter exists), vague back-references with no number, and every tracked-term
-  occurrence with context, into one report. Extraction only — Claude adjudicates. The
-  fuller checker for a whole-manuscript snapshot (dashes, bans, residue, pseudonyms,
-  duplicates, note markers) is `book-revision/scripts/manuscript_check.py`; use it for
-  revision passes and keep this one for the Roam-export layout.
-- `scripts/check_citations.py` — planned. Extract in-text citations, set-difference against
-  the sources manifest, flag orphans and unused entries. Author-name variants normalized by
-  the same dedup logic as book-ops.
-- Deliverables use the built-in **docx skill**, not a bundled script.
+Before selecting a checker or renderer, read [staging and tools](reference/staging-and-tools.md); planned tools must not be reported as run.
 
 ## Defaults for this manuscript
 
-- **Source** — a complete, fresh, read-only snapshot of the bound current manuscript,
-  with revision and exact chapter/section recorded. An unavailable source blocks dependent
-  work; never substitute an old export. Consult Roam only for explicitly scoped reconciliation.
-- **Layout** — preserve the snapshot and derived artifacts in the authorized private working
-  location. Existing `source/` and `writing/` paths describe the legacy Roam-export layout,
-  not a reason to export prose into this repository or overwrite the manuscript backup.
-- **Tracked terms** for the consistency pass (refreshed 2026-09-12 to the public pseudonym
-  set, corrected 2026-09-12 to the Aug 23 ruling): Angie, Nancy, John, Toma, Heidi, Marcus,
-  Priya, Malik, Ben, Brian, Peter (the greenhouse student), Paul (son), Eli (retired name for
-  Peter; find and rename), Zara, Noelle, Gustov, Lezir, Karen, Dana, Cindy, Mike; and the terms legibility,
-  sense-making, meaning-making, time-world, chronotope, adjacent agency, intellectual
-  authorship, intellectual apprenticeship, critical aspect, shared object, reframing
-  epistemic agency, standing as a knower. Add to this list as coined concepts stabilize;
-  the same list lives in `manuscript_check.py` and the two must agree.
-- **Sources manifest** — `revision/sources.json` in the book repo once the notes lane has
-  built it (`sources.json` or `.bib` before then): Bakhtin, Scott, Lareau, Ito, Variation Theory…
-- No external Python dependencies; the scripts are standard library only.
+Before obtaining input, read the exact source and artifact defaults in [staging and tools](reference/staging-and-tools.md).
 
 ## Version retention (Drive working copies)
 
@@ -102,40 +89,19 @@ to the manuscript without showing you the result first:
 
 ## Job 2 — staging / export (the foundation)
 
-1. Resolve the current source/account and shared writer lease under the operations contract.
-   Read the exact current revision completely and preserve a read-only private snapshot.
-2. Select the checker for the actual supported input: `book-revision`'s manuscript checker
-   for a current manuscript snapshot; the bundled reading renderer/consistency checker only
-   for the explicitly requested legacy Roam-export layout. Do not treat a rendered export
-   as current manuscript or editorial acceptance.
-3. Read back the derived artifact, source revision and private destination; report coverage
-   gaps. Do not commit source prose or derived private content into optimized-system.
-
-No weekly distill, publish job or schedule is created, resumed or verified by this skill.
+For staging, read [staging and tools](reference/staging-and-tools.md).
 
 ## Job 1 — consistency pass (on-demand, e.g. pre-submission)
 
-`python3 scripts/check_consistency.py --in writing/ --out consistency_report.md`
-
-Then read the report and flag the judgment calls: does each cross-reference's claim actually
-live where it points; is "double booking" used consistently with its definition; are the
-anchor students characterized consistently. Surface findings for the user; never edit the
-manuscript — propose changes against the current Doc with exact locations. For a full pass
-over the current draft, use the revision skills instead: `book-revision` and its lanes.
+For consistency checks, read the relevant job in [checks and derived deliverables](reference/check-and-deliver.md).
 
 ## Job 3 — citation integrity (on-demand)
 
-`check_citations.py` is planned, not implemented. Report that limit rather than claiming
-the command ran. Use an authorized current source manifest to identify actual citation gaps;
-do not invent references or silently normalize uncertain author/year matches.
+For citation checks, read [checks and derived deliverables](reference/check-and-deliver.md); the planned checker limitation remains mandatory.
 
 ## Job 4 — deliverables (on-demand)
 
-Use the docx skill to compile `writing/` into a formatted .docx — full manuscript or
-per-chapter — with table of contents and front matter, in the editor's required manuscript
-format. The format is set once; this is a transform, not a judgment. Compile with
-`SKIP_PROVENANCE=1` (or leave `provenance.md` out): no provenance note goes in front of the
-manuscript.
+For a derived reading deliverable, read [checks and derived deliverables](reference/check-and-deliver.md); this grants no manuscript-write authority.
 
 ## Safety
 
