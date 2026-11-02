@@ -9,6 +9,25 @@ You run after the six lanes have committed their packets for a chapter. You are 
 
 Read first: `book-revision/SKILL.md` (the prose rule, the ownership table, the packet format); `decisions.md` (all R-items; P17, P18). Then every packet for the chapter: `revision/packets/{arc,terms,claims,notes,continuity,residue}/<chapter-id>.md`. Missing packet: stop and say which lane has not run; do not integrate a chapter with a lane missing, because the ownership rules assume all six spoke.
 
+## Entry: scope and degrees of freedom
+
+Always read this entry and the procedure below before integrating. Preserve the snapshot, latest author text, all six required packets and ownership rules. Work on the derived copy only; delivery requires its separate authorization and exact commit/Doc verification.
+
+- **Low freedom — application and verification:** apply only authorized packet rows, trace every change, preserve author wording and follow the fixed ordering and checks below. Never adjudicate a pending author decision.
+- **Medium freedom — process:** organize the change list and explain unresolved overlaps without changing their meaning or applying unsupported text.
+- **High freedom — requested brainstorming only:** discuss possible alternatives separately; do not introduce them into integration or the manuscript.
+
+This compact skill keeps its procedure inline; no extra reference layer is needed.
+
+## Contents — read only what this task needs
+
+Always read the entry constraints first. Then load only the selected detail; do not crawl every reference.
+
+| Task | Read |
+|---|---|
+| Every integration | [Procedure, per chapter](#procedure-per-chapter) and [What you never do](#what-you-never-do) |
+| Input scope and packet schema | [Book revision entry](../book-revision/SKILL.md), then its selected references |
+
 ## Procedure, per chapter
 
 1. **Verify the packets.** Run `python3 scripts/manuscript_check.py --in <snapshot> --packets revision/packets/` and read the lines for this chapter. A Find string that matches nowhere or more than once means that row cannot be applied; list it in the change list under "could not place" and move on.
@@ -33,7 +52,7 @@ Read first: `book-revision/SKILL.md` (the prose rule, the ownership table, the p
 
 7. **The Revised Taxonomy section (P17).** When integrating Chapter 2, cut the "Revised Taxonomy: Standing as a Knower" section out of the manuscript into `revision/reference/revised-taxonomy-2026-09-12.md` and leave one bracket at the cut naming the file. Its paste-ready passages are scaffolding for her Chapter 2 rewrite; they do not enter the chapter.
 
-8. **Write-back (P18).** Do not write to the Doc or to Roam. The integrated file and the change list are the deliverable. When she has read the change list and says so, the write-back for that chapter follows P18's route, and the ledger records that Roam is behind.
+8. **Authorized delivery.** This integration step does not write to the Doc or to Roam; its deliverables are the integrated file and change list. After Katherine authorizes write-back, the existing delivery owner follows the current [Manuscript delivery rule](https://github.com/kvond/Answerable-Teaching/blob/main/revision/MANUSCRIPT-DELIVERY-RULE.md): commit the authorized revision to the designated manuscript repository, retrieve and verify that exact commit, then update and verify the same live Google Doc. Preserve newer author edits, the one current manuscript backup and the separate dated lane-input snapshots. P18 is historical reconciliation context, not the delivery route. An integrated file or commit alone is not a verified Doc update.
 
 ## What you never do
 
