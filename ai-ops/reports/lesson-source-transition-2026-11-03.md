@@ -101,3 +101,115 @@ The native deck IDs, note contents and source links remain unchanged. Other than
 - Pilot one *older* lesson per course, then systematically cover all source-matched teacher masters and account for all accessible/inaccessible decks. Every deck needs specific slide-level changes and rendered readback before being marked renewed.
 - Synchronize verified current slide revisions into their VT Questions Teaching Notes. The central private VT Decks Skills Page revision 11 remains unverified; GitHub commits do not establish that it is synced.
 
+
+
+## 2026-11-03 execution: four additional RETROFIT DRAFT masters saved and checked
+
+**Actual changes, not release:** Three older-lesson pilots were executed (one each in Biology, A&P and Forensics), followed by an additional older A&P lesson. Rather than modify masters that already have student copies or live links, each native teacher source was copied **in its original course folder** and edited under an explicitly labelled `RETROFIT DRAFT` title. The four original source IDs and their live callers were left intact. These are **partial renewals with saved pedagogical changes**, not course completion or §17.6 release certification.
+
+| Course / older lesson | Unmodified source ID; slides | New draft ID; slides | Saved content changes (native slide object IDs) | Companion historical VT note copied and annotated |
+| --- | --- | --- | --- | --- |
+| Biology C02 — Ecosystems | `1aTfajRO2lX8DrC_oUFm6q3esbv4aABcwxYm8FT6Xh0o`; 30 | [draft](https://docs.google.com/presentation/d/1ej3t7618bZLIUNJEiAjKeTuZcRARhKjeP0sT4v_3JnY/edit); 33 | Added `retro_b02_morph`, `retro_b02_define`, `retro_b02_map` at slides 6–8; fixed stray '4' on original slide 8 (`g3fa7a6b70d1_6_18`), scientific error that organisms *make energy* on original 9 (`g3fa7a6b70d1_6_41`), and broken vocabulary/rule helper on original 11 (`g3fa7a6b70d1_6_69`); skipped original teacher-only slides `c02_response_manifest_20260914` and `g3f8adb8b078_3_0`. | [draft note](https://docs.google.com/document/d/1VC7h1Y2EqIoFBLwdL0ZqHevSCIBA1x36lNsZwSHvnUs/edit) |
+| A&P W02 — Homeostasis | `1lwA1_VItBLs4x1Jj71HzWkQvbltu7MOgx3lhcoE7TnU`; 43 | [draft](https://docs.google.com/presentation/d/1DiufoMIJDIFnLL6NU70EO_gVJykULMnyQJfiM48RJ9o/edit); 46 | Added `retro_a02_morph`, `retro_a02_define`, `retro_a02_map` at slides 8–10; corrected underdetermined two-runner question on original slide 15 `p12` (now 18), added missing control-center relationship to negative feedback on original slide 24 `p21` (now 27), distinguished vital signs from sodium lab test on original slide 27 `p24` (now 30); teacher-only `p2`, `p1` skipped. | [draft note](https://docs.google.com/document/d/1ime8i3chBo1UftMq1NIdXi1wiSWsb6OIHVrc2KlGwlM/edit) |
+| Forensics W04 — Eyewitness | `13Ize9wEZ-H_5vzQ6svJKZnnqfoti3bccOYz9P016kZI`; 21 | [draft](https://docs.google.com/presentation/d/1_jYLVg1vRF6B9Q-rflt-NhUIwT9KlQiTlzqTDeGGwJU/edit); 25 | Added `retro_f04_morph`, `retro_f04_define`, `retro_f04_map` at slides 4–6 plus `retro_f04_question_comparison_20261103` at slide 12. The new controlled comparison holds witness/event/viewing conditions fixed while changing neutral vs leading question. The original Ronald Cotton case and original text stay intact. This is a focused causal comparison, **not** a newly invented conflict case. | [draft note](https://docs.google.com/document/d/1lt2X33oMgTIUEFgDe2i1IRXAr-PyZbM8swsUmZSjmZY/edit) |
+| A&P W03 — Anatomical language and gummy bear lab (continued batch) | `1qfEUtyN5wUZBt5jStCcF-FTimLxI9bzXoZNvMMhwq_c`; 38 | [draft](https://docs.google.com/presentation/d/1hDla_ZWFRA-bXQYCTSM9jjBn7wKNL4k10IO-5oNYHL0/edit); 38 | On original slide 22 `p22`, corrected the false equivalence of a swelling gelatin gummy bear with a cell membrane and clarified osmosis across living selectively permeable membranes while retaining the experiment, Kati sodium explanation, anatomical cavity consequence and original question. Skipped original teacher-only `p1`, `p2`. No slide added or reordered. | [draft note](https://docs.google.com/document/d/1Fk4iLGXm7Z6KowJcLM7vAYehaucjuHGQTmJe7rh5Bo0/edit) |
+
+**Verified quantitative QA for four drafts:** 132/132 original native slide object IDs remain in their original relative order; original image counts **19, 15, 10, 20** respectively (64 total) are identical in the drafts; 10 new slides were added in the first three drafts and no original was deleted. The original marker strings/IDs compare equal in each source–draft pair. **101 original native hyperlink targets** extracted from actual `link.url` properties are preserved exactly in the copies (4 / 49 / 10 / 38); this does **not** test whether external destinations still open. All newly created shape bounding boxes (110 page elements over 10 slides) were checked numerically against their page dimensions, with zero out-of-slide bounding boxes. All 17 specifically changed/added content slides requested fresh full-size Google-rendered 1600px thumbnails successfully: Biology 6, A&P W02 6, Forensics W04 4, A&P W03 1. Visual pixel-by-pixel QA and text-overflow acceptance are **not verified**: rendering availability alone does not prove visual approval. The three new morphology answer keys and Forensics controlled-comparison explanation were written to native speaker-note objects and read back. Four separate companion draft VT note files were copied, given precise source-versus-new slide-number mappings, new draft IDs and factual change logs, and verified by saved readback. The four canonical/current VT notes were not overwritten and no live link was repointed.
+
+**Scope and exclusions:** No student files, existing student work/grades, live master slides, assignment settings, Schoology material, forms, calendars or Agenda cells were changed. The protected Biology Photosynthesis master `1CVdbvDC20ZSShGPA9SLh018A54JnF0tkaRwzP75bJ1A` was **not** edited. The earlier seven Forensics `isSkipped=true` changes are separate and were NOT repeated or counted as complete-deck renewal. The 30 already-migrated legacy unit agenda documents in `~delete` were not moved again. No PowerPoint duplicate was archived in this run, because unique content and live caller equivalence are not yet proved.
+
+**Important remaining acceptance gates:** These four are partial instructional retrofits, not fully completed §17.6 releases. Finish source/purchased-deck fidelity and asset rights checks, rendered **visual** review including text overflow, paper-revision pathway and marker processing, all external resource/link and school-account access checks, print pack and student response editability checks, and current VT note promotion after acceptance. Biology C02's and A&P W02's older digital-revision prose remains in their draft copies until reconciled with the present paper-revision policy. The central private Skills Page revision 11 still could not be synchronized: Browser read returned `Browser access requires the originating browser context`. No authoritative-page write was claimed. The GitHub skill backups reflect the restored retrospective policy; this does not prove the private Page is synced.
+
+### Inventory of the 71 canonical Agenda source IDs (triage, not a final master/source-classification audit)
+
+The prior audit yielded **20 Biology** and **25 A&P** accessible native IDs, plus **26 Forensics** entries: **10 native** and **16 not native-accessible through the same Agenda ID**. Two Forensics entries (W05 Types of Evidence; W10 Arson) are known **PowerPoint originals** readable with Drive's PPTX reader, leaving **14 inaccessible Agenda source IDs**. The nine distinct Forensics alternative LIVE/teacher sources below were separately located by the earlier audit. This inventory labels the position in the historical week sequence, **not** confirmed teaching dates or release status. Names/ownership/source-completeness still need checking for all non-pilots; in particular "earlier" does not automatically prove the work was assigned.
+
+| Course | Agenda week(s) | Original Agenda deck ID | Source slide count | Source kind | Position | Current action/status |
+| --- | --- | --- | ---: | --- | --- | --- |
+| Biology | Wk 01 | `1oh5o937szpulmviqCQ-uNjgeUe7O4DxAY_lEuMqUUy4` | 9 | native | earlier | teacher master candidate; awaiting exact source QA |
+| Biology | Wk 02 | `1aTfajRO2lX8DrC_oUFm6q3esbv4aABcwxYm8FT6Xh0o` | 30 | native | earlier | retrofit draft saved (C02) |
+| Biology | Wk 03, Wk 04 | `1MVX2pg7IqS8x04ESfKWcFdmt34NS4eeLUEngcoJ4NHM` | 38 | native | earlier | teacher master candidate; awaiting exact source QA |
+| Biology | Wk 05 | `1Le0Qf8JEferpcq0GsEwlFYHtuSUy58ontw273p931Sk` | 34 | native | earlier | teacher master candidate; awaiting exact source QA |
+| Biology | Wk 06 | `1CVdbvDC20ZSShGPA9SLh018A54JnF0tkaRwzP75bJ1A` | 39 | native | earlier | protected Photosynthesis; read-only |
+| Biology | Wk 07, Wk 08, Wk 19 | `1T_T_NqLy3spEaoj0AxBREZm09nk3GeSu6CwuWoo1y6c` | 48 | native | earlier | teacher master candidate; awaiting exact source QA |
+| Biology | Wk 09 | `1OL8oNP1dbgqyboO6R52k0hSP11ljafRwbJ4Lrj3n5fI` | 33 | native | earlier | teacher master candidate; awaiting exact source QA |
+| Biology | Wk 10, Wk 12, Wk 13 | `167aT-Xysv8iCQ0ls7fj1q2QigJer7phhPNeq7q3Tuv8` | 84 | native | near-term | teacher master candidate; awaiting exact source QA |
+| Biology | Wk 15, Wk 16 | `1RukmpUkUEzi2YZyB09-qI46ds4omy7CW5ysdtHR2kOU` | 39 | native | later | teacher master candidate; awaiting exact source QA |
+| Biology | Wk 17, Wk 18 | `189YlTOuF2K9CRbe2ECYdxO8GW-YBUOAZ-VNh3sHvkF8` | 35 | native | later | teacher master candidate; awaiting exact source QA |
+| Biology | Wk 20, Wk 21, Wk 22 | `1QP67RSEujgC5Pf_xZLNYwOZ1O_7Ko5s0ZmGetn56tdM` | 35 | native | later | teacher master candidate; awaiting exact source QA |
+| Biology | Wk 23 | `1lAtQxV4ofC6Ghc7ZIazeUUFMDOcpgWf-KADzu6Qlcd8` | 38 | native | later | teacher master candidate; awaiting exact source QA |
+| Biology | Wk 24, Wk 25, Wk 26, Wk 27 | `1tCPGT4_4CPtHfX7Qg8it3FYgz89PEpLBZ3Oyfh1f-9g` | 33 | native | later | teacher master candidate; awaiting exact source QA |
+| Biology | Wk 28, Wk 29 | `1-LcspqHnhO3lx__KVTqqFNCL5Eg2h_sg3nyD8jk0y_o` | 33 | native | later | teacher master candidate; awaiting exact source QA |
+| Biology | Wk 30 | `1Yo1TK_OiCj8nkI53I8z_kOL-hnZQCdX48Fzt23OG4uE` | 33 | native | later | teacher master candidate; awaiting exact source QA |
+| Biology | Wk 32 | `1axyIkBPxpsVEJuC5vU5zDx0UiYkMg9Brs8axhZQxLik` | 33 | native | later | teacher master candidate; awaiting exact source QA |
+| Biology | Wk 33, Wk 34 | `1QUnwQX2DbdV4awPH6wKIUuNdehgANW3y7scfKSI97VQ` | 33 | native | later | teacher master candidate; awaiting exact source QA |
+| Biology | Wk 35, Wk 36 | `1XbVqhaQfJuEz2UW6_fQO521JF-PeOuw3uK2upZ2L5Ao` | 33 | native | later | teacher master candidate; awaiting exact source QA |
+| Biology | Wk 37, Wk 38 | `1kzCBAq90Yukf8Zr5fnTOO7DcuNaj8Gi37En9OrVeHtU` | 34 | native | later | teacher master candidate; awaiting exact source QA |
+| Biology | Wk 40, Wk 41 | `1IpwazS54m3PB88ry70VOTtfZbb6EbQUZoNEsmcyKaAQ` | 32 | native | later | teacher master candidate; awaiting exact source QA |
+| A&P | Wk 02 | `1lwA1_VItBLs4x1Jj71HzWkQvbltu7MOgx3lhcoE7TnU` | 43 | native | earlier | retrofit draft saved (A02) |
+| A&P | Wk 03 | `1qfEUtyN5wUZBt5jStCcF-FTimLxI9bzXoZNvMMhwq_c` | 38 | native | earlier | retrofit draft saved (A03) |
+| A&P | Wk 05, Wk 06 | `156PXwK-BwS_rFXlmZQ5hcD7S7ybGqyY-W9IhmH4KCI8` | 127 | native | earlier | teacher master candidate; awaiting exact source QA |
+| A&P | Wk 07 | `1X7_5iBObAWLso-EoBYQvh2V3Q5_pi7-SqFy6sC3r9Hg` | 117 | native | earlier | teacher master candidate; awaiting exact source QA |
+| A&P | Wk 08 | `15s_JFA7BCs8EALTA7fsOP0idki2OMqY7PPxvY2O_eN0` | 95 | native | earlier | teacher master candidate; awaiting exact source QA |
+| A&P | Wk 09 | `1kOQI5F9Uuehl1du8_kRxvzfViMZhsr2VcSfzV2yrMlc` | 83 | native | earlier | teacher master candidate; awaiting exact source QA |
+| A&P | Wk 10 | `1mvhANN84UPuqzhwAUusBBXMeYKge3KNNMJ6vUcyM1sI` | 60 | native | near-term | teacher master candidate; awaiting exact source QA |
+| A&P | Wk 11 | `1gxjILBy0TFtV8aDWtgQpwjCy1nqNSnjxKubRI9z6WAk` | 65 | native | near-term | teacher master candidate; awaiting exact source QA |
+| A&P | Wk 12 | `1CRCP1sqknP444kjuC7xihvoA3st-zQo4JkL_wjQBjX8` | 62 | native | near-term | teacher master candidate; awaiting exact source QA |
+| A&P | Wk 14 | `1ZfcB-lUeaShOE5kJnBWleUAc4IrE2v2El8iR5VSAUzw` | 65 | native | later | teacher master candidate; awaiting exact source QA |
+| A&P | Wk 15 | `1anXP4LVSPWecqbtuZ0KsdtKQUFw42-geLk7SWHz63Vo` | 57 | native | later | teacher master candidate; awaiting exact source QA |
+| A&P | Wk 16 | `1qI2TQPOi7cJzXoKR4W5uGNcq0X15au5x9Bsz2zrSe8c` | 62 | native | later | teacher master candidate; awaiting exact source QA |
+| A&P | Wk 16b | `1i3f4jVZh7pG-VsdFCMp5EA5coPeePvHJ50l-l_nzdk8` | 71 | native | later | teacher master candidate; awaiting exact source QA |
+| A&P | Wk 19, Wk 20 | `14UE680BisIavr6NsXVAkIm6a2-SZQrtSXbY0JR-K3yo` | 132 | native | later | teacher master candidate; awaiting exact source QA |
+| A&P | Wk 21, Wk 22 | `1V46MSPn6Kewf0d_wtIk702kdnKIz1OfAoRiGVAq7sOs` | 80 | native | later | teacher master candidate; awaiting exact source QA |
+| A&P | Wk 23 | `15Xfuw5yZ1KNvlc-WtG7TemBnoKBOaaL8_Yik0B1vAXQ` | 46 | native | later | teacher master candidate; awaiting exact source QA |
+| A&P | Wk 24, Wk 25 | `1PR4HuwMrUJLejTycrkpQvFkZ0OBYi4gG6FVIcoF8JTc` | 83 | native | later | teacher master candidate; awaiting exact source QA |
+| A&P | Wk 26 | `1TOULq16PTUyK5s48KqG6LVdgpVyN35lIFVyRZ2ObViI` | 61 | native | later | teacher master candidate; awaiting exact source QA |
+| A&P | Wk 27 | `16XzvA0UAlxMPqLPEPbFU__Rd9KAucTWWquCbiglobzE` | 67 | native | later | teacher master candidate; awaiting exact source QA |
+| A&P | Wk 28 | `1CUUCu-R1z8IZJC9ilF-GV-KcqYghSNnP2LKjZUqYEmc` | 48 | native | later | teacher master candidate; awaiting exact source QA |
+| A&P | Wk 30 | `11yv7iwlMpwuFThUIxmI5TwO4duwJcPKGwOHkCK6skq4` | 91 | native | later | teacher master candidate; awaiting exact source QA |
+| A&P | Wk 31 | `1bMFQA7U5U9hKviAtpknqT4XnVXT3YgA5t0R09EbhamM` | 85 | native | later | teacher master candidate; awaiting exact source QA |
+| A&P | Wk 32, Wk 33 | `1z6kILkkkDiaLrxgv_aV10SLXZHwDlpGdiaHnxVFi9fI` | 82 | native | later | teacher master candidate; awaiting exact source QA |
+| A&P | Wk 34, Wk 35 | `1nPyf080MN8J9q1yeawtLKOD3fogyUp_6a_j4GExa5KI` | 85 | native | later | teacher master candidate; awaiting exact source QA |
+| A&P | Wk 36, Wk 37 | `1FnjrbqxIRwRTr9KctNKGE_7lDg3UrTLAPPVrdRnblfo` | 130 | native | later | teacher master candidate; awaiting exact source QA |
+| Forensics | Wk 01 | `1SaAM2OUwyqrWYtugmZgSluxqstre5Xaxes8Yuu4DjkY` | 7 | native | earlier | teacher master candidate; awaiting exact source QA |
+| Forensics | Wk 02 | `1R2juNZ4T13m30FW64LLyHWXHkJ-jN1nKIj8cI-O-UbI` | 22 | native | earlier | teacher master candidate; awaiting exact source QA |
+| Forensics | Wk 03 | `1dIvE31dT0ns-Sfpw9sX6XFgh_y0C0Vsze90bnksJ_wg` | 30 | native | earlier | teacher master candidate; awaiting exact source QA |
+| Forensics | Wk 04 | `13Ize9wEZ-H_5vzQ6svJKZnnqfoti3bccOYz9P016kZI` | 21 | native | earlier | retrofit draft saved (F04) |
+| Forensics | Wk 05 | `1Ohdm3Vyc37CneOAb3Nyq1j9HXRdCUp-u` | ? | PPTX source | earlier | PPTX source |
+| Forensics | Wk 06 | `1DOr4-cIdv3WfzL09qzQGL7SiZMKTD9ZYloAEoeM_cwg` | 54 | native | earlier | teacher master candidate; awaiting exact source QA |
+| Forensics | Wk 07 | `1UNlFK4zod3lVmumxE3eQxdfQAMHateYgRc01Hw4dXsY` | 44 | native | earlier | teacher master candidate; awaiting exact source QA |
+| Forensics | Wk 08 | `1xCK4jmYkGbc7VeX2ShQfdBlHZ8_AnJ6904Jt320FwWo` | 41 | native | earlier | teacher master candidate; awaiting exact source QA |
+| Forensics | Wk 10 | `1874XCImJzXs2Bz00Owd8LFBJoSKKTTBy` | ? | PPTX source | near-term | PPTX source |
+| Forensics | Wk 11 | `1WLHJAZ8a4S-19KBPx_jfOmY4lAIneISAHn5wRybT0GI` | ? | inaccessible Agenda ID | near-term | inaccessible Agenda ID |
+| Forensics | Wk 12 | `16X42i_LgSIQ2A7EBIZeAQqgRrUJJC-kHi4vcJR2sq7I` | ? | inaccessible Agenda ID | near-term | inaccessible Agenda ID |
+| Forensics | Wk 14 | `1okLRKGBqiHN2ZNrr-hGOwTsNn4L32RkgBkQ1NzYPoag` | ? | inaccessible Agenda ID | later | inaccessible Agenda ID |
+| Forensics | Wk 15 | `1ib5r9w2asXNgJGOLrJOgixpJSVxzn_sMQtc38GYo9x4` | ? | inaccessible Agenda ID | later | inaccessible Agenda ID |
+| Forensics | Wk 16b | `1SjZz1OsukLlGwJnl7Vwi6-YmLqTfJ6q-TLn4p2p-HkU` | ? | inaccessible Agenda ID | later | inaccessible Agenda ID |
+| Forensics | Wk 17 | `1jq0qwDcfxcOREMKn3nxJPRC_AtxPctug8mG2xctjMns` | ? | inaccessible Agenda ID | later | inaccessible Agenda ID |
+| Forensics | Wk 18, Wk 19, Wk 22, Wk 23 | `1oBr9K8-Ac7sxklN1X5NFJLjmXnRp50d4wY8fSLl2X1U` | ? | inaccessible Agenda ID | later | inaccessible Agenda ID |
+| Forensics | Wk 24 | `1HswH502I1eYLbyf4NtncKWXgkVzGD9CFBE-sRKFHXQw` | ? | inaccessible Agenda ID | later | inaccessible Agenda ID |
+| Forensics | Wk 25 | `1Ac05bd8VuXD9Mk5l6pHLYnTY4CG2aKA3oLFumKfd47g` | 25 | native | later | teacher master candidate; awaiting exact source QA |
+| Forensics | Wk 26 | `16mHzbH9VSToSpHJaf2AvnTMiwnZHcAHD2c7bwG9hRB4` | ? | inaccessible Agenda ID | later | inaccessible Agenda ID |
+| Forensics | Wk 27 | `1KmbHUXdcV6yrq36A6RCwj-z2vwUGwE-Tet2xguyoE64` | ? | inaccessible Agenda ID | later | inaccessible Agenda ID |
+| Forensics | Wk 28 | `1f4TrN7AYT9-1q_vvBIuwHWrBj3ifVRSmJUOx3G5PtAw` | 24 | native | later | teacher master candidate; awaiting exact source QA |
+| Forensics | Wk 30 | `1R1GhZa_FCuK13vUhSy9cgMYaeacHeyz7hc43KAFt8Sk` | 41 | native | later | teacher master candidate; awaiting exact source QA |
+| Forensics | Wk 31 | `18G3CJXHkkbiLKz8HfptE5DGjroxj6eSAFDdtMlsYIz4` | ? | inaccessible Agenda ID | later | inaccessible Agenda ID |
+| Forensics | Wk 33 | `1TuSrBkj6t2UlQpuCB2KO84IAtZvnwrql_CPptARCtGg` | ? | inaccessible Agenda ID | later | inaccessible Agenda ID |
+| Forensics | Wk 34 | `1sbT6z6zDgZyURg1QMek_6tz8uEg7qFHkASjQPq-pePQ` | ? | inaccessible Agenda ID | later | inaccessible Agenda ID |
+| Forensics | Wk 35, Wk 36 | `1ajqhzbmaq43OZPg0yQT4qTTR47neKBOATHX3jMu1WTY` | ? | inaccessible Agenda ID | later | inaccessible Agenda ID |
+
+### Forensics alternate source candidates (not replacements for inaccessible Agenda IDs without exact match)
+
+| Lesson | Alternative source ID | Type / qualification |
+| --- | --- | --- |
+| Wk11 Ballistics | `1tWNXehW_nPbXzhfocPwi38TfWWweMe8k` | PPTX alternate |
+| Wk17 Fibers | `1x0t6P1auY5WYqbr14Jdm8r84STVuI8XA` | PPTX alternate; teacher fix-me slide |
+| Wk24 Toxicology | `1XRmnf7Eb-xI1-RoI79lYuUd6Jf_te-qJukwHBw_r2Fs` | native alternate; prior teacher slide skipped |
+| Wk27 Death | `1qPzDc82Z-CDCgRWbUVc9caDHayFOF33EoWiGcSxax9o` | native alternate; prior teacher slide skipped |
+| Wk31 Autopsy | `1GPDdC2kOfSAY9ZOrDUR9N-fk4hHE4sUBrCaoOVDJNHY` | native alternate; prior teacher slide skipped |
+| Wk34 Entomology | `10-kyNrFk0RWaEH__CYXX3sfWmTButoypTXkQu7YTkNw` | native alternate; prior teacher slide skipped |
+| Wk35 Anthropology | `1aHMHaCcxTXArvJNshR4j-RMpfAbiwmk2xozXzJqyMyI` | native alternate; prior teacher slide skipped |
+| Wk35 Skull | `1RTJnzXuy12aBsdaajMj5q1PNNtQA2N_7HVyG7yUl-ek` | native alternate; prior teacher slide skipped |
+| Wk36 Pelvis | `1gf1l-voVtxMPG443ZBV5ImDET5PoNhdX_P7Aud1Jyy4` | native alternate; prior teacher slide skipped |
+
+**Queue accounting:** 71 canonical unique IDs have inventory rows; 57 canonical presentations were text-accessible in the earlier audit (20+25+10 native plus 2 PPTX), 14 remain source-ID inaccessible; 9 alternate IDs bring the earlier source-text examination to 66 distinct presentations. **Four new separate teacher retrofit drafts** are now saved and specifically documented above. Their existence does not turn 4/71 original masters into released replacements. The remainder is queued for full slide-by-slide source, fidelity, notes, visual and interaction work. Teacher-only source/duplicate classifications for non-pilots are provisional, not inferred from filename alone.
