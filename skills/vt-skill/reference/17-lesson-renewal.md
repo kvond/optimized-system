@@ -3,8 +3,7 @@
 ## 17. Lesson renewal standard (added 2026-10-16)
 
 Katherine's specifications of October 16–20 for every lesson deck in Biology, Forensics and
-A&P. They apply to new decks as they are built and to already-made decks through the
-`renew-lesson-slides` skill, which runs this section on one deck or a batch. A deck is
+A&P. They now apply to **new and currently active** native decks, when Katherine explicitly requests an update, through the `renew-lesson-slides` skill. The former retrospective sweep of old lessons is discontinued under the November 3 decision (§17.13). A deck is
 not ready until §17.6 passes. When Katherine adds a specification, record it in the private central Skills
 section's VT Decks Page with its date, source and acceptance check, then mirror
 that text/version here. Read Current Working Agreements, Schedule and assigned
@@ -113,16 +112,14 @@ deck public, and never give edit access to the domain.
    slide. Verify the actual pictures in the saved render, not just their count.
 9. Provisional day divisions pass the 90-minute activity-aware review in 17.8.
 10. Report reviewed-deck readiness separately from classroom release. A lesson is
-    not complete until the authorized Agenda and Schoology link checks in 17.9
-    are verified; a deferred release stays explicitly open.
+    not complete until the authorized VT-note resource and Schoology link checks in 17.9 are verified; legacy Agenda links also require checks where still used; a deferred release stays explicitly open.
 11. Every slide type has the clear, course-appropriate student-facing wording
     review in 17.10. Record exact coverage and inspect saved renders of changed
     slides; a few improved core questions do not establish a whole-deck pass.
 
 ### 17.7 Visual reasoning, response mode and titles
 
-These rules apply to initial lesson construction and retrospective renewal in all
-three courses. The [initial-build additions](https://answerableteaching.slack.com/archives/C0C8YU5RDDM/p1792045219351809)
+These rules apply to initial lesson construction and explicitly authorized active/native deck updates in all three courses, not historical deck renovation. The [initial-build additions](https://answerableteaching.slack.com/archives/C0C8YU5RDDM/p1792045219351809)
 and [renewal additions](https://answerableteaching.slack.com/archives/C0C8YU5RDDM/p1792161778598399)
 record Katherine's October 17 requirements.
 
@@ -240,12 +237,11 @@ the remaining owner action rather than starting a competing writer. Pilot accept
 and bulk-dispatch gates remain in `renew-lesson-slides` and
 [issue #33](https://github.com/kvond/optimized-system/issues/33). A reviewed
 draft, passing linter or completed plan is not a released lesson: keep any unverified
-Agenda/Schoology transition open, and archive nothing before verified relinking.
+VT-notes/Schoology transition open, retain any still-used legacy Agenda callers, and archive no source before verified relinking.
 
 ### 17.10 Clear student-facing wording on every slide
 
-Apply this during new-deck origination and finishing, and when renewing this year's
-existing Biology, Forensics and A&P decks. Katherine's [wording request](https://answerableteaching.slack.com/archives/C0C8YU5RDDM/p1792514789742109)
+Apply this during new-deck origination and finishing, and to an explicitly requested current Biology, Forensics or A&P lesson. Do not reopen old decks solely to retrofit this wording standard. Katherine's [wording request](https://answerableteaching.slack.com/archives/C0C8YU5RDDM/p1792514789742109)
 and [all-slides, all-decks clarification](https://answerableteaching.slack.com/archives/C0C8YU5RDDM/p1792516114272639)
 cover every slide type, not just the 5 core questions. Her Body Tissues example
 shows the desired outcome: necessary conditions in short sentences, followed by
@@ -278,8 +274,7 @@ one clear ask at a time.
   slide/object ID, before/after wording and reason for each change; use a fresh
   revision guard, saved readback and changed-slide render QA.
 
-For a retrospective batch, keep one writer per exact deck and independently review
-one concrete wording pilot per course before expansion. This narrow wording review
+For any authorized batch of active/new decks, keep one writer per exact deck and independently review one concrete wording pilot per course before expansion. This narrow wording review
 does not replace the full renewal pilot/Claude review or classroom-release gates.
 Track decks and slides audited, edited, unchanged, deferred and unavailable
 separately. Protected teacher-edited decks remain deferred; uncertain lesson/source
@@ -334,9 +329,7 @@ publishing or grading authority.
   source, never replace it with a shortened reconstruction. Counts alone do not
   establish coverage; inspect each original element.
 
-**Rolling scope and observation material.** Maintain the renewal/preflight window
-of two lessons ahead and one lesson behind the current teaching point, using the
-verified lesson sequence rather than guessing from filenames. Queue respiration
+**Rolling scope and observation material.** Maintain the preparation window of two lessons ahead, using the verified lesson sequence rather than guessing from filenames. The old one-lesson-behind retrofit rule is retired; a prior lesson reopens only if Katherine explicitly requests it for current teaching. Queue respiration
 for its future place in that sequence; this clarification is not an instruction
 to redo it immediately. Observation cases and images support classroom talk and
 noticing. They are not automatically new student assignments or a generic
