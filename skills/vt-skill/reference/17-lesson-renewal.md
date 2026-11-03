@@ -13,6 +13,15 @@ skill Page first. Slack is discussion/provenance, not the current skill home.
 rule source. This October 27, 16:46 policy supersedes earlier Slack-first wording.
 See §17.12 for retained historical consolidation and provenance.
 
+**Current superseding decision, November 3, 2026:** The retrospective repair sweep of
+older decks stops. Do not fix an older lesson presentation solely to satisfy §17's
+new-design checklist. §17 remains the standard for current/new native Google Slides
+and their companion VT Questions Teaching Notes, but the archival and teacher-notes
+policy in §17.13 controls which sources to use and which old files to retire.
+The authoritative private VT Decks Skills Page revision 11 must be synchronized
+and verified separately; a GitHub commit is a versioned backup, not proof that
+Page has been updated.
+
 Never write to a deck Katherine is editing herself. The Photosynthesis reference deck
 (`1CVdbvDC20ZSShGPA9SLh018A54JnF0tkaRwzP75bJ1A`) is hers: read it, never write it.
 
@@ -161,6 +170,33 @@ record Katherine's October 17 requirements.
   claim and annotations supply its evidence/reasoning. The final return crystallizes
   what the variation made visible rather than merely repeating an answer.
 
+#### What-if dialogue and real conflict cases (Katherine clarification, 2026-11-03)
+
+- **Conditional what-if:** Once students show they can coordinate the lesson's
+  critical aspects, a teacher may change one condition while explicitly holding
+  the relevant others stable, and ask what changes, why, and what remains true.
+  This is primarily a responsive *spoken dialogue move*, not a new required
+  student-response slide in every deck. Put it on a slide only when the actual
+  concept, student work, or evidence sequence calls for one. A technical `WHATIF`
+  response marker is not evidence of a pedagogically sound conditional question.
+- **Genuine conflict case:** Within *one* situation, two critical aspects that
+  the lesson has already taught point toward *different conclusions*. Students
+  must recognize and coordinate both rather than dismiss one, and make an
+  evidence-based resolution. A surprising example, disagreement about prior
+  belief, or two competing guesses alone does not make a genuine conflict case.
+  Katherine's Lezier snake story is the comparison reference; do not invent
+  substitute story details.
+- **Selective placement, not quota:** Conflict cases must arise from the actual
+  subject matter and may properly be absent. The historical design explicitly
+  included cycles without one. If a conflict case does belong, preserve enough
+  instructional setup that both aspects are taught before the conflict, and
+  request an individual written response when demonstrating coordination is
+  important. Otherwise a timely oral what-if may do the work. Note the design
+  decision (included or deliberately absent) in the VT Questions Teaching Notes.
+  Never append a what-if or conflict slide merely because a keyword scan
+  returned nothing. Keep the whole → aspect → contrast → pattern break →
+  return logic and the separate purposes of prediction versus reconciliation.
+
 Preserve existing response bindings, marker identities, student work and grading
 policy. A visual response is not proof that the current text-reading pipeline can
 assess it. Record any parser/response-evidence gap for review rather than dropping
@@ -186,10 +222,14 @@ for Katherine to adjust; they do not authorize date or assignment-setting change
 
 ### 17.9 Finalization and classroom links
 
-Use this order within the existing authorized release scope and current ownership:
-deck pass → rendered/saved readback and link/sharing checks → live deck and
-student-copy links in `Agenda 26-27 CLEAN` → corresponding Schoology lesson/material
-links. Follow §16.4–16.5 for exact lesson/source identity, existing-link conflicts,
+For NEW and ACTIVE lessons, use this order within authorized release scope:
+current native deck + VT teacher-note readback → rendered/link/sharing checks →
+verified lesson/resource links in the **VT Questions Teaching Notes** → matching
+Schoology lesson/material links. `Agenda 26-27 CLEAN` is a *legacy administrative
+carrier*, not the instructional source of truth. Existing Agenda, Forms, grading,
+Schoology and automation callers must be inventoried and repointed before that
+spreadsheet can be retired; until then preserve their links and assignments.
+Do not turn a document title or week-number match into presumed link equivalence. Follow §16.4–16.5 for exact lesson/source identity, existing-link conflicts,
 preserving originals and saved readback. Distinct lessons retain distinct sources
 and Forms even when they share a week or folder.
 
@@ -475,3 +515,35 @@ Schedule: the existing renewal scope is two lessons ahead and one behind. A sepa
 Current instructions for Anatomy and Forensics are consolidated here. Preserve the old course-channel history. GitHub synchronization is pending; this post does not claim that backup has been updated.
 
 **Schedule status correction, October 27 at 16:22 UTC:** the copied post's earlier pending-Thursday statement is historical. A short Thursday two-week preparation trigger has now been saved/enabled, alongside weekday 06:30 and 07:30 triggers; the Friday prompt points to the same private schedule Page. See the [dated schedule backup](../../../ai-ops/worker-registry/roles-and-schedules.md#october-27-1622-utc--current-saved-triggers). This is configuration, not a completed lesson run, replacement packet producer or deck readiness. The separate midnight update reported that task unavailable; no replacement is claimed.
+
+### 17.13 Source transition and reversible retirement (2026-11-03)
+
+- **Instructional authority:** The current per-lesson **VT Questions Teaching Notes**
+  document, cross-checked against the live native Google Slides deck and its
+  verified identifiers, takes over the role previously assigned to per-lesson
+  agendas. Keep one note document per actual lesson, with accurate source deck
+  link, lesson/course identity, critical aspects, the teaching sequence and
+  links to resources/print materials. Do not replace the verified school calendar
+  or course rotation with a note document that does not contain dates.
+- **Do not retrofit older slides:** Stop older-deck corrective work. Edit only
+  actively used native decks that Katherine explicitly requests; maintain new
+  decks under the revised standard. Existing student work, grades, assessment
+  marker identities and release receipts are out of scope for cleanup.
+- **Retire by move, not deletion:** Move obsolete teacher-owned predecessor
+  decks and per-lesson Agenda documents to a `~delete` holding folder once an
+  exact current native/notes replacement is identified and all relevant live
+  callers are checked. This includes PowerPoint `.pptx` counterparts of
+  verified native Google Slides updates. Do not move student copies, original
+  source material needed for fidelity or licenses, unique slides, unmerged
+  sources, or anything whose replacement is not verified. Maintain a move log
+  with old/new IDs, former folder, destination, matched replacement and blockers.
+  No permanent trash/delete operation is authorized by this decision.
+- **Transition gate:** Do not move the master `Agenda 26-27 CLEAN` spreadsheet
+  until the code prompt, scheduled school brief, Schoology/Forms, deck lookup
+  and other automation references have functioning replacements and readback.
+  It may remain as a temporary compatibility source without regaining
+  instructional authority. Clearly report every unconverted dependency.
+- **Version control:** Change the central Skills Page when accessible and mirror
+  it to this GitHub backup; record the sync as unverified until confirmed.
+  Do not claim a GitHub write, draft plan or file move completes classroom
+  release or migration.
