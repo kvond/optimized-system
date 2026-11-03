@@ -70,3 +70,34 @@ The contents of each old agenda were appended to the matching VT teaching note(s
 - `skills/vt-deck-completion/SKILL.md`
 
 **Status:** The 30 listed historical agenda moves and five backup skill changes are completed and verified. The unpaired Cycle 01 agenda, deprecated-deck matching/moves, central Skills Page sync, master spreadsheet dependency migration, all-destination link QA and existing VT notes' current-lesson metadata backfill remain open.
+
+## Later November 3 reversal: retrospective slide renovation reinstated
+
+**Superseding policy:** Katherine reversed the same-day no-old-slide-repairs rule. *Previously taught and older lesson masters must now be systematically updated*, alongside current/new lessons, across Biology, Forensics and Anatomy & Physiology. The 30 previously moved historical unit/cycle Agenda docs remain in reversible `~delete` and their text is preserved in VT teacher notes; those moves did not remove teaching decks. The master administrative Agenda spreadsheet remains live because external code, scheduling, Schoology and Forms callers have not been migrated.
+
+The governing updated skill is `skills/vt-skill/reference/17-lesson-renewal.md` §17.14. Corresponding backup updates also went into `renew-lesson-slides`, `vt-deck-completion`, `vt-teaching-notes` and the §16 source-preservation workflow. These policy changes permit actual retrospective repairs, but do not authorize modifying student submissions, changing grading histories, silently replacing active file IDs, or overwriting the separately protected Photosynthesis reference. Older lessons are eligible for a complete pedagogical renewal; duplicates only may be held in `~delete` after exact replacement and link verification.
+
+### Native Google Slides changes completed in the first correction pass
+
+The following *seven* teacher-only slides were found by actual presentation outline inspection and skipped in presentation mode using `updateSlideProperties.isSkipped=true`. Every change was revision-guarded and independently read back; slide counts and the underlying teacher-note material were retained. These are first verified corrections, **not a claim that all seven decks have received complete §17 renewal**.
+
+| Course and lesson | Native deck ID | Slide skipped | Readback |
+| --- | --- | ---: | --- |
+| Forensics Week 24 — Introduction to Toxicology | `1XRmnf7Eb-xI1-RoI79lYuUd6Jf_te-qJukwHBw_r2Fs` | 37 | confirmed |
+| Forensics Week 35 — The Human Skull | `1RTJnzXuy12aBsdaajMj5q1PNNtQA2N_7HVyG7yUl-ek` | 33 | confirmed |
+| Forensics Week 27 — Death and the Human Body | `1qPzDc82Z-CDCgRWbUVc9caDHayFOF33EoWiGcSxax9o` | 31 | confirmed |
+| Forensics Week 31 — The Autopsy | `1GPDdC2kOfSAY9ZOrDUR9N-fk4hHE4sUBrCaoOVDJNHY` | 24 | confirmed |
+| Forensics Week 34 — Forensic Entomology | `10-kyNrFk0RWaEH__CYXX3sfWmTButoypTXkQu7YTkNw` | 26 | confirmed |
+| Forensics Week 35 — Introduction to Forensic Anthropology | `1aHMHaCcxTXArvJNshR4j-RMpfAbiwmk2xozXzJqyMyI` | 26 | confirmed |
+| Forensics Week 36 — The Human Pelvic Bone | `1gf1l-voVtxMPG443ZBV5ImDET5PoNhdX_P7Aud1Jyy4` | 22 | confirmed |
+
+The native deck IDs, note contents and source links remain unchanged. Other than the seven presentation-mode visibility properties, no student-facing slide content has yet been rewritten under this *newly reinstated* retrospective policy. The full-course content update remains open.
+
+### Renewal and documentation gates
+
+- Start from the prior 66-deck text/structure audit, but render and examine every slide and its source before writing. A missing keyword never proves that a lesson lacks a pedagogically valid what-if or genuine conflict case.
+- Check actual sources, response markers, prior teaching records and source completeness; preserve original A&P material, Forensics case evidence and Biology scientific sequence.
+- When a verified master was already distributed as student copies, preserve those existing work copies/grades and, where necessary, create a distinct revised teacher version rather than rewriting historical student material.
+- Pilot one *older* lesson per course, then systematically cover all source-matched teacher masters and account for all accessible/inaccessible decks. Every deck needs specific slide-level changes and rendered readback before being marked renewed.
+- Synchronize verified current slide revisions into their VT Questions Teaching Notes. The central private VT Decks Skills Page revision 11 remains unverified; GitHub commits do not establish that it is synced.
+
