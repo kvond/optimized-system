@@ -13,6 +13,12 @@ school task (`ai-ops/workflow-contracts/school-lesson-review-and-code-repair.md`
 task `trig_01A9JrvwJsRizEc7fnTakTCp`), or when Katherine asks on the deck she has open.
 It adds no schedule of its own.
 
+**Policy update (2026-11-03):** This pass applies only to currently active/new
+native lessons with explicit repair authorization, not older decks awaiting
+retirement. Use the current VT Questions Teaching Notes for lesson identity
+and source links; the Master Agenda is legacy compatibility data. See VT
+§§17.7, 17.13 for what-if/conflict-case selection and reversible archiving.
+
 It holds no new standard. Read the current vt-skill §16.2 (enhance), §16.3 (codes),
 §7 (marker strings), §13 (design tokens), §17 (lesson renewal), and the #vt-decks
 standards post fresh each run. Use §17.7 comparison pictures and §17.10 clear wording
@@ -21,8 +27,10 @@ or classroom release; report unmet renewal checks separately.
 
 ## 1. Identify the deck
 
-- Exact file ID, course, week/cycle, from Master Agenda `Agenda 26-27 CLEAN`
-  (`1m4qhXb5M7y0nMNJHeuxu2J4eFXokIKYxiGVyOfpg-uY`) or the deck Katherine has open.
+- Exact file ID, course, week/cycle, from the current `VT Questions Teaching
+  Notes` lesson record and matching native deck, or the deck Katherine has
+  explicitly opened. Use the legacy Agenda only for still-live dependencies.
+  A retired/older deck is not eligible for this completion pass.
 - Confirm the account is `katherine.vonduyke@redclay.k12.de.us`.
 - Reconcile the current School Claude handoff and exact deck writer claim before
   writing. Check saved receipts so earlier completed edits are not repeated; an
