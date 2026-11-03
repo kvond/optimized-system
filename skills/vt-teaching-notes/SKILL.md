@@ -15,6 +15,14 @@ Forensics. With the decks done, she reviews these before class.
 ID `1jQRWW8vYGWcpU8ok6XE7wvvbRMOk2AV7IAm2xRVsq0U`. If this file and the example
 disagree on form, the example wins.
 
+**Current policy (2026-11-03): these teacher notes replace per-lesson agendas as
+Katherine's instructional source of truth.** A note document is the working
+lesson index and teaching plan, bound to the exact current native Google Slides
+file. It does not replace the district calendar, attendance schedule or a verified
+Schoology/Form connection. Existing legacy Agenda-linked code workflows must be
+migrated and verified before the master spreadsheet is retired. Record the sharper
+what-if and genuine conflict-case distinctions described in vt-skill §17.7.
+
 This skill reads decks and creates or refreshes one doc per lesson. It changes no
 deck, Agenda cell, Form, grade or student file. Katherine's October 20 follow-up,
 "use these better questions for teaching notes", authorizes refreshing existing notes
@@ -22,12 +30,15 @@ from the approved clearer questions; use the current vt-skill §17.10 wording ru
 
 ## 1. Find the lesson and its deck
 
-- Resolve the lesson from Master Agenda `Agenda 26-27 CLEAN`
-  (`1m4qhXb5M7y0nMNJHeuxu2J4eFXokIKYxiGVyOfpg-uY`): course tab, week, lesson name,
-  teacher deck link. Use the `🔗 Lesson names` tab to match names across the Agenda,
-  folders and decks. Never match on week number alone (A&P folders run one week
-  behind the Agenda from Cell Structure on; Forensics one week ahead from Mock Crime
-  Scene on).
+- Resolve the lesson from its existing `VT Questions Teaching Notes` in the
+  course/week folder, matching the exact active/native Google Slides file ID,
+  course, cycle/week and lesson title. For an entirely new lesson, first verify
+  the current native deck and create one matching teacher-note record.
+  Use the legacy `Agenda 26-27 CLEAN` only as a compatibility cross-check while
+  its downstream links remain active; it is no longer the instructional source.
+  Never match on week number alone (A&P folders can run behind the historical
+  Agenda; Forensics can run ahead). An unresolved conflicting link is a hold,
+  not permission to guess.
 - Biology deck IDs: `docs/decks_live_ids.csv`. A&P from Week 8 on: the original-first
   merged deck (vt-skill §16.1), not the old VT-only deck.
 - One doc per lesson. Two lessons in one week folder get two docs.
@@ -80,6 +91,21 @@ Sections, in this order (the example's structure):
    answer.
 7. **Visibility.** Private writing first, partner, teacher-chosen sharing; no
    readiness inferred from the week number.
+
+Then **What-if and conflict-case decision**: distinguish a contingent oral
+what-if (change one condition and hold others fixed) from a genuine conflict
+case (two previously taught critical aspects in one situation point toward
+opposing interpretations). State whether a content-grounded conflict is used
+or intentionally absent, and when students should respond orally versus in
+individual writing. Do not invent a Lezier snake-story variant or require a
+what-if slide in every deck.
+
+Then **Current lesson record**: exact native deck ID/link and reviewed revision,
+course and lesson identity, teaching/resource/print links, preparations and
+supplies, next-day teaching sequence, Schoology/student-copy link status,
+separate administrative date reference if verified, and any blockers. Mark
+unverified destinations rather than presenting links as ready. Preserve the
+existing example's seven-section structure and Katherine's additions.
 
 Then **Science checks before you teach** (slide-numbered wording that is inaccurate or
 would undercut a later cycle; omit the section if there are none), and
