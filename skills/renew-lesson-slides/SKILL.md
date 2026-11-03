@@ -36,7 +36,7 @@ Skills Page is authoritative when accessible; GitHub updates require sync verifi
 4. Run §17.6 together with §17.11's course-specific, teacher-pack and paper-revision
    processability checks, and report exactly what passed, with the deck link and remaining owner
    actions. Follow §17.9 for authorized release order and school-account readback;
-   distinguish reviewed-deck readiness from verified Agenda/Schoology completion.
+   distinguish reviewed-deck readiness from verified VT-notes/Schoology delivery, with any still-used Agenda caller independently checked.
 
 ## A batch of active/new lessons (not an older-deck repair sweep)
 
