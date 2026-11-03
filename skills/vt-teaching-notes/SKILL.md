@@ -23,6 +23,13 @@ Schoology/Form connection. Existing legacy Agenda-linked code workflows must be
 migrated and verified before the master spreadsheet is retired. Record the sharper
 what-if and genuine conflict-case distinctions described in vt-skill §17.7.
 
+**Later November 3 policy:** The whole-course retrospective sweep now includes
+previously taught/older teacher lesson masters, not just forthcoming lessons.
+When each old master is updated, refresh its matching VT teaching note to
+reflect the *verified saved* slide sequence, actual critical aspects, and the
+inclusion/intentional absence of a genuine conflict case or responsive oral
+what-if. Never describe a proposed edit as already in the deck.
+
 This skill reads decks and creates or refreshes one doc per lesson. It changes no
 deck, Agenda cell, Form, grade or student file. Katherine's October 20 follow-up,
 "use these better questions for teaching notes", authorizes refreshing existing notes
@@ -137,8 +144,10 @@ commit alone does not prove the school task's saved prompt or live docs were upd
 - Claim the batch in #work-que before writing, one writer per course. Run the folder
   search in §2 immediately before each create, so a parallel or earlier run never makes
   a duplicate.
-- Order within a course: the coming two weeks first, then forward through the year,
-  then earlier weeks.
+- Order within a course: the coming two weeks first, then systematically
+  revisit earlier lessons as the retrospective renewal moves through the year.
+  Update notes against the verified older lesson masters, not just the
+  historical agendas.
 - Report in the request thread: one line per lesson (doc link, or the reason it was
   skipped: no deck, deck not yet merged, current doc verified, refresh held). State
   created, refreshed and partial coverage separately. Course and week only; no
