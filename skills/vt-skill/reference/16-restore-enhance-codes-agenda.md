@@ -11,13 +11,14 @@ order, and finish all five before a deck counts as delivered.
 `VT Questions Teaching Notes` replaces the old lesson-Agenda instructions;
 the legacy `Agenda 26-27 CLEAN` remains only as a compatibility source for
 live administrative, code-prompt and assessment integrations until those
-callers are migrated and verified. Do **not** retrospectively repair old
-presentation decks to satisfy renewal items. Keep §16's content-preservation
-and code requirements for active/new native decks. Archive verified obsolete
+callers are migrated and verified. **Later November 3 direction supersedes
+that same-day pause:** retrospectively renew older teacher-owned lesson masters
+as well, with the same content-preservation and code safeguards (§17.14).
+The source transition does not authorize changing historical assignments. Archive verified obsolete
 teacher-owned PPTX or native predecessor files by moving to `~delete`, not by
 permanent deletion, after exact native replacements and all live links are
-checked. See §17.13 for controlling gates. Historical steps below must not
-cause old decks or the master sheet to be rewritten or retired prematurely.
+checked. See §17.13 for controlling gates. Historical steps below must not cause unverified or student copies to be
+rewritten or retired, and must not cause the master sheet to be retired prematurely.
 
 The passes keep their existing owners. The workflow contract
 `ai-ops/workflow-contracts/school-lesson-review-and-code-repair.md` names who runs
@@ -173,11 +174,12 @@ before archiving.
 3. If any earlier step stopped, skip this one. The original stays live and unrenamed,
    and the stop is reported.
 
-**Current delivery rule (November 3):** An authorized new/active native deck is
+**Later November 3 delivery rule:** An authorized new, active **or older** native teacher deck is
 delivered only after its applicable restoration, code and render checks, verified
 VT Questions Teaching Notes/resource links, and necessary Schoology/student
 link readbacks. Preserve and check any surviving master Agenda caller until
 its replacement works. A predecessor is moved into `~delete` only after a
-verified replacement and no live references; this is not a requirement to
-repair older decks. Historical delivery requirements above remain a record
-of the former procedure, not a live retrospective sweep.
+verified replacement and no live references; older *lesson masters* should be
+renewed under §17.14 rather than retired just because of their age. Historical
+delivery requirements remain evidence of earlier practice, not an exclusion
+from the restored retrospective sweep.
