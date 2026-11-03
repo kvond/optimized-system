@@ -28,7 +28,7 @@ them. This section is the standard each pass is held to.
 | 16.1 Restore | `/restore-vt-slides` | School ChatGPT (Katherine) |
 | 16.2 Enhance | `/vt-gemini-enhance` | School Claude Ext |
 | 16.3 Codes | part of `/vt-gemini-enhance` | School Claude Ext |
-| 16.4 Agenda links | after the deck and activities exist | the agent that built them |
+| 16.4 VT note/resource links; old Agenda compatibility only | after the deck and activities exist | the agent that built them |
 | 16.5 Archive original | last, after all checks and relinks | the agent that ran 16.1 |
 
 Sources for the work: the school Drive course folders and the original lesson
@@ -54,7 +54,9 @@ year, the original free Biology Corner deck is the backbone, not the VT deck. St
 - **Check (replaces step 6 for A&P).** The merged deck has at least the original's slide
   and image counts plus the inserted VT and activity slides, and `deck_lint.py` passes.
 
-The rest of §16 (codes, Agenda links, archive last) is unchanged.
+Preserve the remaining code and original-source safeguards. For current/new
+lessons §17.13 supersedes the old Agenda-as-instruction and blanket old-deck
+archive workflow; still-live legacy code/link callers must be verified.
 
 1. **Find both decks** in the week/cycle folder: the VT deck and the original lesson
    deck (including `.pptx` originals and `Copy of …` decks).
@@ -171,5 +173,11 @@ before archiving.
 3. If any earlier step stopped, skip this one. The original stays live and unrenamed,
    and the stop is reported.
 
-**A deck is delivered when** 16.1–16.3 pass their checks, `deck_lint.py` is clean,
-the 16.4 agenda links read back correctly, and 16.5 is done.
+**Current delivery rule (November 3):** An authorized new/active native deck is
+delivered only after its applicable restoration, code and render checks, verified
+VT Questions Teaching Notes/resource links, and necessary Schoology/student
+link readbacks. Preserve and check any surviving master Agenda caller until
+its replacement works. A predecessor is moved into `~delete` only after a
+verified replacement and no live references; this is not a requirement to
+repair older decks. Historical delivery requirements above remain a record
+of the former procedure, not a live retrospective sweep.
