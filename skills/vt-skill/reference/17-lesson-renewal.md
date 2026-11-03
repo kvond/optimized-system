@@ -3,7 +3,7 @@
 ## 17. Lesson renewal standard (added 2026-10-16)
 
 Katherine's specifications of October 16–20 for every lesson deck in Biology, Forensics and
-A&P. They now apply to **new and currently active** native decks, when Katherine explicitly requests an update, through the `renew-lesson-slides` skill. The former retrospective sweep of old lessons is discontinued under the November 3 decision (§17.13). A deck is
+A&P. They apply to **all teacher-owned lesson masters, including previously taught/older lessons**, as well as current and new lessons. Katherine's later November 3 direction explicitly reinstates the retrospective full-deck update sweep. §17.14 overrides the earlier stop in §17.13. Historical student work and original instructional substance remain protected. A deck is
 not ready until §17.6 passes. When Katherine adds a specification, record it in the private central Skills
 section's VT Decks Page with its date, source and acceptance check, then mirror
 that text/version here. Read Current Working Agreements, Schedule and assigned
@@ -12,12 +12,7 @@ skill Page first. Slack is discussion/provenance, not the current skill home.
 rule source. This October 27, 16:46 policy supersedes earlier Slack-first wording.
 See §17.12 for retained historical consolidation and provenance.
 
-**Current superseding decision, November 3, 2026:** The retrospective repair sweep of
-older decks stops. Do not fix an older lesson presentation solely to satisfy §17's
-new-design checklist. §17 remains the standard for current/new native Google Slides
-and their companion VT Questions Teaching Notes, but the archival and teacher-notes
-policy in §17.13 controls which sources to use and which old files to retire.
-The authoritative private VT Decks Skills Page revision 11 must be synchronized
+**Later decision, November 3, 2026, supersedes the earlier same-day restriction:** The retrospective slide-renewal sweep is restored for Biology, Forensics and A&P. Update older lesson masters too using §17.7 and §17.14's preservation, workflow and verification gates. The authoritative private VT Decks Skills Page revision 11 must be synchronized
 and verified separately; a GitHub commit is a versioned backup, not proof that
 Page has been updated.
 
@@ -119,7 +114,7 @@ deck public, and never give edit access to the domain.
 
 ### 17.7 Visual reasoning, response mode and titles
 
-These rules apply to initial lesson construction and explicitly authorized active/native deck updates in all three courses, not historical deck renovation. The [initial-build additions](https://answerableteaching.slack.com/archives/C0C8YU5RDDM/p1792045219351809)
+These rules apply to initial lesson construction and the authorized full retrospective renovation of historical teacher-owned lesson masters in all three courses, not distributed student copies. The [initial-build additions](https://answerableteaching.slack.com/archives/C0C8YU5RDDM/p1792045219351809)
 and [renewal additions](https://answerableteaching.slack.com/archives/C0C8YU5RDDM/p1792161778598399)
 record Katherine's October 17 requirements.
 
@@ -241,7 +236,7 @@ VT-notes/Schoology transition open, retain any still-used legacy Agenda callers,
 
 ### 17.10 Clear student-facing wording on every slide
 
-Apply this during new-deck origination and finishing, and to an explicitly requested current Biology, Forensics or A&P lesson. Do not reopen old decks solely to retrofit this wording standard. Katherine's [wording request](https://answerableteaching.slack.com/archives/C0C8YU5RDDM/p1792514789742109)
+Apply this during new-deck origination, finishing and the expressly authorized retrospective upgrade of older Biology, Forensics and A&P teacher-owned lesson masters. Katherine's [wording request](https://answerableteaching.slack.com/archives/C0C8YU5RDDM/p1792514789742109)
 and [all-slides, all-decks clarification](https://answerableteaching.slack.com/archives/C0C8YU5RDDM/p1792516114272639)
 cover every slide type, not just the 5 core questions. Her Body Tissues example
 shows the desired outcome: necessary conditions in short sentences, followed by
@@ -274,7 +269,7 @@ one clear ask at a time.
   slide/object ID, before/after wording and reason for each change; use a fresh
   revision guard, saved readback and changed-slide render QA.
 
-For any authorized batch of active/new decks, keep one writer per exact deck and independently review one concrete wording pilot per course before expansion. This narrow wording review
+For the authorized comprehensive batch including older decks, keep one writer per exact deck and independently review one concrete wording pilot per course before expansion. This narrow wording review
 does not replace the full renewal pilot/Claude review or classroom-release gates.
 Track decks and slides audited, edited, unchanged, deferred and unavailable
 separately. Protected teacher-edited decks remain deferred; uncertain lesson/source
@@ -329,7 +324,7 @@ publishing or grading authority.
   source, never replace it with a shortened reconstruction. Counts alone do not
   establish coverage; inspect each original element.
 
-**Rolling scope and observation material.** Maintain the preparation window of two lessons ahead, using the verified lesson sequence rather than guessing from filenames. The old one-lesson-behind retrofit rule is retired; a prior lesson reopens only if Katherine explicitly requests it for current teaching. Queue respiration
+**Rolling scope and observation material.** Prepare the coming two lessons first, then systematically update older lessons throughout all three courses, using verified lesson identities rather than filename guesses. Queue respiration
 for its future place in that sequence; this clarification is not an instruction
 to redo it immediately. Observation cases and images support classroom talk and
 noticing. They are not automatically new student assignments or a generic
@@ -518,10 +513,7 @@ Current instructions for Anatomy and Forensics are consolidated here. Preserve t
   link, lesson/course identity, critical aspects, the teaching sequence and
   links to resources/print materials. Do not replace the verified school calendar
   or course rotation with a note document that does not contain dates.
-- **Do not retrofit older slides:** Stop older-deck corrective work. Edit only
-  actively used native decks that Katherine explicitly requests; maintain new
-  decks under the revised standard. Existing student work, grades, assessment
-  marker identities and release receipts are out of scope for cleanup.
+- **Superseded by §17.14:** Earlier restrictions on retrospective lesson-master edits no longer apply. Older teacher masters are in scope. Existing student work, grades, marker identities and release receipts remain protected.
 - **Retire by move, not deletion:** Move obsolete teacher-owned predecessor
   decks and per-lesson Agenda documents to a `~delete` holding folder once an
   exact current native/notes replacement is identified and all relevant live
@@ -540,3 +532,14 @@ Current instructions for Anatomy and Forensics are consolidated here. Preserve t
   it to this GitHub backup; record the sync as unverified until confirmed.
   Do not claim a GitHub write, draft plan or file move completes classroom
   release or migration.
+
+### 17.14 Reinstated retrospective renewal of older lessons (later 2026-11-03 decision)
+
+This subsection **supersedes all same-day instructions to stop editing previously taught lessons** in §§16–17 and related skills. Katherine explicitly reversed that policy: update older lessons now, too. Improve each verified *teacher lesson master* rather than moving an old lesson just because of age.
+
+1. **All three courses, all lessons.** Reconcile the 71 Agenda-linked IDs, alternate native sources and per-lesson VT Questions Teaching Notes; classify current native teacher master, predecessor/original, obsolete duplicate, student copy, or inaccessible. Teaching notes are the pedagogical source of truth, while the master Agenda remains a temporary administrative compatibility source.
+2. **Audit every slide before updating.** Inspect native slide order, render, teacher notes, original source and student-response fields. Fix verified content, scientific, sequencing, visualization, clarity, response-mode, morpheme/definition/mind-map, transition and teacher-delivery gaps, with appropriate course-specific Variation Theory progression. Do not indiscriminately add activities.
+3. **Sharpened pedagogy:** A conditional what-if generally belongs in responsive dialogue, changes one condition and holds relevant others; it is not necessarily an additional slide. A genuine conflict case involves *two already-taught critical aspects within one situation* pointing to different conclusions, demanding coordination; a lesson may legitimately have none. Preserve existing strong cases. Record inclusion or intentional absence in the teacher notes and require individual written coordination where the content warrants it.
+4. **Preserve live and historical work.** Update the verified native Google Slides teaching master using revision guards, or first create a clearly named new master when existing student submissions, live assignments or past grade records could be affected. Protect original images, cases, source slides, maps, laboratories, tables, external links, student copies and response IDs. Katherine's specifically protected Photosynthesis reference remains read-only absent distinct authorization.
+5. **Distinct retirement policy:** Superseded, redundant PPTX or old native duplicates with a verified current replacement and no remaining active callers may still be moved to reversible `~delete`; previously taught but unique lesson masters must be updated, not archived by age. Do not touch student copies, unmerged/licensed sources or anything without a proven replacement.
+6. **Batch and release:** One writer per exact deck; one pilot per course before scaling, then all older decks. Prioritize next teaching lessons followed by older curriculum. For each deck verify revision, slide/image preservation, rendering, interactive elements, marker inventory, links, source notes, teacher pack and downstream processability. Log slide/object IDs changed, before/after reasoning and remaining blockers. Do not change dates, grades, assignment settings or student files. Keep linked VT notes in sync. The private central Skills Page must be synchronized and separately verified; a GitHub commit alone is not sufficient.
