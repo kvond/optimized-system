@@ -7,6 +7,18 @@ lessons don't have to be repaired afterward. This section is course-neutral. It
 applies to Biology, Forensics and A&P until the forks in §15 exist. Run the passes in
 order, and finish all five before a deck counts as delivered.
 
+**2026-11-03 superseding source/retirement policy:** Per-lesson
+`VT Questions Teaching Notes` replaces the old lesson-Agenda instructions;
+the legacy `Agenda 26-27 CLEAN` remains only as a compatibility source for
+live administrative, code-prompt and assessment integrations until those
+callers are migrated and verified. Do **not** retrospectively repair old
+presentation decks to satisfy renewal items. Keep §16's content-preservation
+and code requirements for active/new native decks. Archive verified obsolete
+teacher-owned PPTX or native predecessor files by moving to `~delete`, not by
+permanent deletion, after exact native replacements and all live links are
+checked. See §17.13 for controlling gates. Historical steps below must not
+cause old decks or the master sheet to be rewritten or retired prematurely.
+
 The passes keep their existing owners. The workflow contract
 `ai-ops/workflow-contracts/school-lesson-review-and-code-repair.md` names who runs
 them. This section is the standard each pass is held to.
@@ -110,9 +122,14 @@ counts and ID lists, and report which slides you changed.
 **Check:** each student textbox has exactly one code; NOTES/DRAFT pair by ID, not by
 slide position; and the inventory counts match the codes found.
 
-### 16.4 Agenda links: after lessons and activities are created
+### 16.4 Legacy Agenda links: compatibility only after lessons and activities are created
 
-Once a deck and its activities exist in the course folder, link them from the
+For active/new lessons, write the verified lesson/deck/resource links into
+its current `VT Questions Teaching Notes` as the instructional record. Where
+an existing Schoology, Form, scheduled workflow or code consumer STILL relies
+on the master sheet, preserve its existing link and explicitly migrate and
+verify the caller before moving the sheet. The historical workflow below is
+retained solely for unconverted consumers. Previously the deck was linked from
 Master Agenda `Agenda 26-27 CLEAN`
 (`1m4qhXb5M7y0nMNJHeuxu2J4eFXokIKYxiGVyOfpg-uY`, school account) on that course's
 tab, in the row for each class day that teaches the lesson:
@@ -137,7 +154,7 @@ Rules:
 - Read the row back after writing. Every link must open the intended file, and none
   may point at an `ARCHIVE …` file.
 
-### 16.5 Archive the original, last
+### 16.5 Move superseded source into `~delete` only after replacement verification
 
 Do this only after 16.1–16.3 pass their checks, `deck_lint.py` is clean, and the 16.4
 links read back correctly. The order follows §9.3: repoint every caller and verify it
@@ -146,8 +163,11 @@ before archiving.
 1. Read back every caller of the original's file ID: the agenda rows, START HERE
    decks, `/copy` links (§9.3), and a Drive `fullText` search as a first pass, never as
    proof. None may still point at the original.
-2. Only then rename the original, never trash it:
-   `ARCHIVE <date> — <original title>, merged into <VT deck title>` (§9.2 step 3).
+2. Only then move the verified obsolete teacher-owned original into the
+   `~delete` holding folder, retaining its original name and recording the
+   source parent, file ID, exact replacement ID and destination. Do not
+   permanently delete; do not move original material that has unique
+   unmerged content or ongoing reference/rights value.
 3. If any earlier step stopped, skip this one. The original stays live and unrenamed,
    and the stop is reported.
 
