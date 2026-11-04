@@ -1,5 +1,21 @@
 # Lesson source transition — 2026-11-03
 
+## Overnight production checkpoint: November 4, 2026, 01:59 UTC (in progress)
+
+This is the latest execution checkpoint; the dated November 3 sections below are retained history, not a claim that the overnight run is finished. Katherine's attached overnight instructions authorize retrospective native teacher-draft edits, with the existing eight drafts first and 6–9 additional older lessons targeted afterward. Deadline: November 4 at 6:30 AM Eastern (11:30 UTC).
+
+- Existing drafts and companion note identities are being reused, with one assigned writer per deck. No competing replacement report or second copy of these eight has been created.
+- All 372 original canonical source slides and all 382 starting draft slides have complete native snapshots and full PDF renders. Every starting draft slide has now been visually inspected. This establishes review coverage, not final acceptance of repaired versions.
+- New repair batches have been saved in seven existing drafts: Biology C02/C03/C04, Forensics W04/W08, and A&P W02/W03. Native readback has succeeded on those saved batches. Final instructional repairs, note synchronization and post-edit visual acceptance are still in progress. A&P Cells is still being repaired after original-source comparison exposed inherited missing material and misleading image crops.
+- Full-source comparison found that earlier image totals were not consistently recursive. W02 Homeostasis contains 30 original image objects, W04 Eyewitness contains 12, W03 Anatomical Language 20 and Cells 108. Final totals will use one stated counting method; the older 231-image aggregate below is not the current corrected count.
+- Six possible additional lessons have read-only source snapshots and complete renders prepared: Biology Cellular Respiration/Fermentation (48 slides), Population Ecology (33); Forensics Observation/Deductive Reasoning (22), Inductive/Deductive Reasoning (30); A&P Body Tissues (117), Body Tissues continuation (95). No new draft copy or write to these six has occurred at this checkpoint.
+- Forensics W02/W03 note matching was checked against actual note content: note `1gaXuocSSQSc4mkM_qXBvgw-p5pfdLIk1w69Kou2QCCE` explicitly names Observation_Deductive_Reasoning_VT_CSI_1_markered; note `1oDCm7ZR5dn2XPaSgCqv18oqBSbC1by69RrX-WKjd7mA` explicitly names Inductive_Deductive_Forensics_Google_Slides. Their week/title labels differ, but their source-content match is not the title-only mismatch inferred in the November 3 crosswalk below. No schedule or caller was changed.
+- The central VT Skills Page is now accessible and was read at actual revision 19, not revision 11. An attempted synchronization write was denied before execution because the proposed persistent scope wording was not clearly authorized as a Page-level policy change. The Page is unchanged; this optional synchronization remains blocked. No retry or alternate write route has been used.
+- No Photosynthesis, original master, distributed/student work, grade, Schoology, calendar, date or permission changes have been made. No prior seven Forensics skip fixes or thirty agenda migrations have been repeated. No duplicate PPTX has been moved.
+
+**Current completion status:** none of the eight is yet reported as fully accepted or classroom-released for this overnight run. Final per-deck records will list exact changes, saved versions, rendered acceptance, note links and any unresolved dependencies. Marker identities remain preserved under the latest request; historical digital-revision or OPTIONAL-policy discrepancies will not be silently migrated.
+
+
 ## Authority and pedagogy
 
 - This record implements Katherine's 2026-11-03 decision to stop retrospective repair of older lesson slides, retire only proven superseded teacher files into a reversible School Drive `~delete` holding folder, and use per-lesson `VT Questions Teaching Notes` rather than separate lesson agendas as the instructional record.
